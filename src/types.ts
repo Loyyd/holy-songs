@@ -19,6 +19,7 @@ export interface SongData {
   key?: string;
   sections: SongSection[];
   sourcePath: string;
+  source: string;
 }
 
 export interface SongIndexEntry {

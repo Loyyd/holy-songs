@@ -30,6 +30,7 @@ a {
 @media (max-width: 960px) {
   .app-shell {
     grid-template-columns: 1fr;
+    padding: 16px 14px 28px;
   }
 }
 
@@ -46,9 +47,21 @@ h1 {
   font-size: 24px;
 }
 
+@media (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 h2 {
   margin: 0 0 10px;
   font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 17px;
+  }
 }
 
 input {
@@ -99,6 +112,12 @@ button {
   flex-wrap: wrap;
 }
 
+@media (max-width: 640px) {
+  .controls {
+    gap: 6px;
+  }
+}
+
 .chip {
   display: inline-flex;
   align-items: center;
@@ -109,25 +128,67 @@ button {
   font-size: 13px;
 }
 
+@media (max-width: 640px) {
+  .chip {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+
 .song {
   font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  white-space: pre-wrap;
+  white-space: normal;
   line-height: 1.6;
 }
 
-.song .line {
+.song-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.line {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  line-height: 1;
+  align-items: flex-end;
+}
+
+.token {
+  display: inline-flex;
   flex-direction: column;
-  margin-bottom: 2px;
+  align-items: flex-start;
+  line-height: 1;
+  vertical-align: bottom;
 }
 
-.chords {
+.chord {
   font-weight: 700;
-  letter-spacing: 0.5px;
+  font-size: 0.9em;
+  color: #0f172a;
+  min-height: 1.2em;
+  line-height: 1;
+  display: block;
 }
 
-.lyrics {
-  margin-top: -2px;
+.lyric {
+  line-height: 1.4;
+  white-space: pre;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .song {
+    font-size: 15px;
+  }
+  
+  .chord {
+    font-size: 0.85em;
+  }
+  
+  .line {
+    margin-bottom: 10px;
+  }
 }
 
 .section-title {
@@ -141,4 +202,35 @@ button {
   border-radius: 8px;
   padding: 4px 8px;
   font-size: 12px;
+}
+
+.editor {
+  margin: 10px 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editor textarea {
+  width: 100%;
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  resize: vertical;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecdd3;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.note {
+  font-size: 13px;
+  color: #475569;
 }

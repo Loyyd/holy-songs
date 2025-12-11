@@ -2,23 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Fuse from 'fuse.js';
 import { SongData, SongIndexEntry, SongLineToken } from './types';
 import { transposeTokens } from './lib/chords';
-
-function padChordLine(tokens: SongLineToken[]) {
-  let chords = '';
-  let lyrics = '';
-  for (const token of tokens) {
-    if (token.chord) {
-      chords += token.chord;
-      const lyricLength = token.lyric.length;
-      const padding = Math.max(lyricLength - token.chord.length + 1, 1);
-      chords += ' '.repeat(padding);
-    } else {
-      chords += ' '.repeat(token.lyric.length);
-    }
-    lyrics += token.lyric;
-  }
-  return { chords, lyrics };
-}
+import { parseChordPro } from './lib/parseChordPro';
 
 function SongView({ song, transpose }: { song: SongData; transpose: number }) {
   return (
@@ -28,11 +12,15 @@ function SongView({ song, transpose }: { song: SongData; transpose: number }) {
           <div className="section-title">{section.name}</div>
           {section.lines.map((line, idx) => {
             const transposedTokens = transposeTokens(line.tokens, transpose);
-            const { chords, lyrics } = padChordLine(transposedTokens);
+            
             return (
               <div className="line" key={`${section.name}-${idx}`}>
-                <div className="chords">{chords}</div>
-                <div className="lyrics">{lyrics}</div>
+                {transposedTokens.map((token, i) => (
+                  <span key={i} className="token">
+                    {token.chord && <span className="chord">{token.chord}</span>}
+                    <span className="lyric">{token.lyric || '\u00A0'}</span>
+                  </span>
+                ))}
               </div>
             );
           })}
@@ -48,6 +36,9 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [song, setSong] = useState<SongData | null>(null);
   const [transpose, setTranspose] = useState(0);
+  const [isEditing, setIsEditing] = useState(false);
+  const [editText, setEditText] = useState('');
+  const [editError, setEditError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('/data/songs.index.json')
@@ -63,7 +54,12 @@ export default function App() {
     if (!selectedId) return;
     fetch(`/data/songs/${selectedId}.json`)
       .then((res) => res.json())
-      .then((data: SongData) => setSong(data))
+      .then((data: SongData) => {
+        setSong(data);
+        setEditText(data.source ?? '');
+        setIsEditing(false);
+        setEditError(null);
+      })
       .catch((err) => console.error(err));
   }, [selectedId]);
 
@@ -84,6 +80,18 @@ export default function App() {
   const handleSelect = (id: string) => {
     setSelectedId(id);
     setTranspose(0);
+  };
+
+  const applyEdit = () => {
+    if (!song) return;
+    try {
+      const parsed = parseChordPro(editText, song.sourcePath ?? 'inline');
+      setSong({ ...parsed, id: song.id });
+      setEditError(null);
+      setIsEditing(false);
+    } catch (err) {
+      setEditError((err as Error).message ?? 'Failed to parse song');
+    }
   };
 
   return (
@@ -123,8 +131,29 @@ export default function App() {
                 <button onClick={() => setTranspose(0)}>Reset</button>
                 <button onClick={() => setTranspose((n) => n + 1)}>+</button>
               </div>
+              <button onClick={() => setIsEditing((open) => !open)}>
+                {isEditing ? 'Close editor' : 'Edit chords/lyrics'}
+              </button>
             </div>
-            <SongView song={song} transpose={transpose} />
+            {isEditing && (
+              <div className="editor">
+                <textarea
+                  value={editText}
+                  onChange={(e) => setEditText(e.target.value)}
+                  rows={12}
+                  spellCheck={false}
+                />
+                {editError && <div className="error">{editError}</div>}
+                <div className="controls" style={{ marginTop: 8 }}>
+                  <button onClick={applyEdit}>Apply to preview</button>
+                  <button onClick={() => setIsEditing(false)}>Close</button>
+                </div>
+                <div className="note">Edits stay local; rerun build to persist to disk.</div>
+              </div>
+            )}
+            <div className="song-container">
+              <SongView song={song} transpose={transpose} />
+            </div>
           </>
         ) : (
           <p>Loading song...</p>
