@@ -63,6 +63,10 @@ export default function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState('');
   const [editError, setEditError] = useState<string | null>(null);
+  const [starred, setStarred] = useState<Set<string>>(() => {
+    const saved = localStorage.getItem('starred-songs');
+    return saved ? new Set(JSON.parse(saved)) : new Set();
+  });
 
   useEffect(() => {
     fetch('/data/songs.index.json')
@@ -101,6 +105,25 @@ export default function App() {
     return fuse.search(query).map((hit) => hit.item);
   }, [fuse, index, query]);
 
+  const sortedResults = useMemo(() => {
+    const starredSongs = results.filter(song => starred.has(song.id));
+    const unstarredSongs = results.filter(song => !starred.has(song.id));
+    return [...starredSongs, ...unstarredSongs];
+  }, [results, starred]);
+
+  const toggleStar = (id: string) => {
+    setStarred(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      localStorage.setItem('starred-songs', JSON.stringify([...next]));
+      return next;
+    });
+  };
+
   const handleSelect = (id: string) => {
     setSelectedId(id);
     setTranspose(0);
@@ -129,14 +152,28 @@ export default function App() {
           onChange={(e) => setQuery(e.target.value)}
         />
         <ul className="song-list">
-          {results.map((entry) => (
+          {sortedResults.map((entry) => (
             <li key={entry.id}>
               <button
                 className={entry.id === selectedId ? 'active' : ''}
                 onClick={() => handleSelect(entry.id)}
               >
-                <div style={{ fontWeight: 700 }}>{entry.title}</div>
-                <div style={{ fontSize: 13, opacity: 0.75 }}>Key: {entry.key ?? '—'}</div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <div style={{ fontWeight: 700 }}>{entry.title}</div>
+                    <div style={{ fontSize: 13, opacity: 0.75 }}>Key: {entry.key ?? '—'}</div>
+                  </div>
+                  <span
+                    className={`star-icon ${starred.has(entry.id) ? 'filled' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleStar(entry.id);
+                    }}
+                    title={starred.has(entry.id) ? 'Unstar song' : 'Star song'}
+                  >
+                    {starred.has(entry.id) ? '★' : '☆'}
+                  </span>
+                </div>
               </button>
             </li>
           ))}
