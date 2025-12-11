@@ -1,0 +1,275 @@
+{
+  "id": "happy-heart",
+  "title": "Happy Heart",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "There’s a certain "
+            },
+            {
+              "chord": "Dmaj7",
+              "lyric": "sound"
+            }
+          ],
+          "raw": "[D]There’s a certain [Dmaj7]sound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Always follows me a"
+            },
+            {
+              "chord": "G",
+              "lyric": "round;"
+            }
+          ],
+          "raw": "[D7]Always follows me a[G]round;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "When you're close to "
+            },
+            {
+              "chord": "D",
+              "lyric": "me you will "
+            },
+            {
+              "chord": "A7",
+              "lyric": "hear it."
+            }
+          ],
+          "raw": "[Gm]When you're close to [D]me you will [A7]hear it."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "It's the sound that "
+            },
+            {
+              "chord": "C",
+              "lyric": "lovers "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "finally will dis"
+            },
+            {
+              "chord": "Am",
+              "lyric": "cover"
+            }
+          ],
+          "raw": "[F]It's the sound that [C]lovers [Dm]finally will dis[Am]cover"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "When there is no "
+            },
+            {
+              "chord": "F",
+              "lyric": "other for their "
+            },
+            {
+              "chord": "A7",
+              "lyric": "love."
+            }
+          ],
+          "raw": "[Bb]When there is no [F]other for their [A7]love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "It's my happy "
+            },
+            {
+              "chord": "Em",
+              "lyric": "heart you hear,"
+            }
+          ],
+          "raw": "[Bm]It's my happy [Em]heart you hear,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Singing loud and "
+            },
+            {
+              "chord": "D",
+              "lyric": "singing clear,"
+            }
+          ],
+          "raw": "[A]Singing loud and [D]singing clear,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And it's "
+            },
+            {
+              "chord": "C",
+              "lyric": "all be"
+            },
+            {
+              "chord": "F",
+              "lyric": "cause you're "
+            },
+            {
+              "chord": "A7",
+              "lyric": "near me, my love."
+            }
+          ],
+          "raw": "[G]And it's [C]all be[F]cause you're [A7]near me, my love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Take my happy "
+            },
+            {
+              "chord": "Em",
+              "lyric": "heart away,"
+            }
+          ],
+          "raw": "[Bm]Take my happy [Em]heart away,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Make me love you "
+            },
+            {
+              "chord": "D",
+              "lyric": "night and day"
+            }
+          ],
+          "raw": "[A]Make me love you [D]night and day"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "In your "
+            },
+            {
+              "chord": "C",
+              "lyric": "arms I "
+            },
+            {
+              "chord": "F",
+              "lyric": "want to "
+            },
+            {
+              "chord": "A7",
+              "lyric": "stay, oh my love."
+            }
+          ],
+          "raw": "[G]In your [C]arms I [F]want to [A7]stay, oh my love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Feeling more and more"
+            }
+          ],
+          "raw": "Feeling more and more"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Like I’ve never felt before"
+            }
+          ],
+          "raw": "Like I’ve never felt before"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You have changed my life so completely."
+            }
+          ],
+          "raw": "You have changed my life so completely."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Music fills my soul now, I've lost all control now,"
+            }
+          ],
+          "raw": "Music fills my soul now, I've lost all control now,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I’m not half, I’m whole now with your love."
+            }
+          ],
+          "raw": "I’m not half, I’m whole now with your love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/happy-heart.pro",
+  "source": "{title: Happy Heart}\n{key: D}\n\n[D]There’s a certain [Dmaj7]sound\n[D7]Always follows me a[G]round;\n[Gm]When you're close to [D]me you will [A7]hear it.\n[F]It's the sound that [C]lovers [Dm]finally will dis[Am]cover\n[Bb]When there is no [F]other for their [A7]love.\n\n{section: Chorus}\n[Bm]It's my happy [Em]heart you hear,\n[A]Singing loud and [D]singing clear,\n[G]And it's [C]all be[F]cause you're [A7]near me, my love.\n[Bm]Take my happy [Em]heart away,\n[A]Make me love you [D]night and day\n[G]In your [C]arms I [F]want to [A7]stay, oh my love.\n\nFeeling more and more\nLike I’ve never felt before\nYou have changed my life so completely.\nMusic fills my soul now, I've lost all control now,\nI’m not half, I’m whole now with your love.\n"
+}

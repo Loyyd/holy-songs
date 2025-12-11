@@ -10,6 +10,8 @@ interface SongEditorProps {
 
 export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps) {
   const [source, setSource] = useState(initialSource);
+  const [mode, setMode] = useState<'visual' | 'raw'>('visual');
+  
   const lines = source.split(/\r?\n/);
 
   const handleLineChange = (index: number, newLine: string) => {
@@ -21,31 +23,71 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
   return (
     <div className="song-editor">
       <div className="editor-toolbar">
-        <button onClick={() => onSave(source)}>Save & Apply</button>
-        <button onClick={onCancel}>Cancel</button>
+        <div className="toolbar-group">
+            <button onClick={() => setMode(m => m === 'visual' ? 'raw' : 'visual')}>
+                {mode === 'visual' ? 'Raw Text' : 'Visual Editor'}
+            </button>
+        </div>
+        <div className="toolbar-group">
+            <button onClick={() => onSave(source)}>Save & Apply</button>
+            <button onClick={onCancel}>Cancel</button>
+        </div>
       </div>
-      <div className="editor-content">
-        {lines.map((line, i) => (
-          <LineEditor
-            key={i}
-            line={line}
-            onChange={(newLine) => handleLineChange(i, newLine)}
-          />
-        ))}
-      </div>
+      
+      {mode === 'visual' ? (
+        <div className="editor-content">
+            {lines.map((line, i) => (
+            <LineEditor
+                key={i}
+                line={line}
+                onChange={(newLine) => handleLineChange(i, newLine)}
+            />
+            ))}
+        </div>
+      ) : (
+        <textarea
+            className="raw-editor"
+            value={source}
+            onChange={e => setSource(e.target.value)}
+            spellCheck={false}
+        />
+      )}
+
       <style>{`
         .song-editor {
           display: flex;
           flex-direction: column;
           gap: 1rem;
           background: #1e1e1e;
+          color: #e5e5e5;
           padding: 1rem;
           border-radius: 8px;
+        }
+        .editor-toolbar {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .toolbar-group {
+            display: flex;
+            gap: 0.5rem;
         }
         .editor-content {
           font-family: monospace;
           font-size: 14px;
           overflow-x: auto;
+          max-height: 70vh;
+          overflow-y: auto;
+        }
+        .raw-editor {
+            font-family: monospace;
+            font-size: 14px;
+            background: rgba(0,0,0,0.2);
+            color: inherit;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 1rem;
+            min-height: 400px;
+            resize: vertical;
         }
         .line-editor {
           position: relative;
@@ -58,7 +100,8 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
           left: 0;
           width: 100%;
           height: 1.5em;
-          pointer-events: none; /* Let clicks pass through to input if needed, but chords need pointer-events */
+          pointer-events: auto;
+          cursor: text; /* Indicate clickable */
         }
         .chord-pill {
           position: absolute;
@@ -83,7 +126,7 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
           width: 100%;
           background: transparent;
           border: none;
-          color: inherit;
+          color: #e5e5e5;
           padding: 0;
           margin: 0;
           outline: none;
@@ -91,6 +134,15 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
         }
         .lyrics-input:focus {
           background: rgba(255, 255, 255, 0.05);
+        }
+        .drop-indicator {
+          position: absolute;
+          top: -1.5em;
+          width: 2px;
+          height: 2.8em;
+          background-color: #fbbf24;
+          pointer-events: none;
+          z-index: 5;
         }
       `}</style>
     </div>
@@ -104,6 +156,7 @@ interface LineEditorProps {
 
 function LineEditor({ line, onChange }: LineEditorProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [dropIndex, setDropIndex] = useState<number | null>(null);
   
   // Parse line into lyrics and chords with positions
   const tokens = parseTokens(line);
@@ -205,10 +258,23 @@ function LineEditor({ line, onChange }: LineEditorProps) {
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
+    
+    if (!containerRef.current) return;
+    
+    const rect = containerRef.current.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
+    
+    setDropIndex(newCharIndex);
+  };
+  
+  const handleDragLeave = () => {
+    setDropIndex(null);
   };
 
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
+    setDropIndex(null);
     const chordIdxStr = e.dataTransfer.getData('chordIndex');
     if (!chordIdxStr) return;
     
@@ -221,29 +287,42 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     const rect = containerRef.current.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
     
-    // Assuming monospace font with approx 8.4px width (depends on font size)
-    // Better to measure a character
-    const charWidth = 8.4; // Approximation for 14px monospace. 
-    // To be precise, we should measure it.
-    
-    // Let's measure 'M' width dynamically
-    const measureSpan = document.createElement('span');
-    measureSpan.style.fontFamily = 'monospace';
-    measureSpan.style.fontSize = '14px';
-    measureSpan.style.visibility = 'hidden';
-    measureSpan.style.position = 'absolute';
-    measureSpan.textContent = 'M';
-    document.body.appendChild(measureSpan);
-    const exactCharWidth = measureSpan.getBoundingClientRect().width;
-    document.body.removeChild(measureSpan);
-    
-    const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / exactCharWidth), lyrics.length));
+    const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
     
     // Update chords array
     const newChords = [...chords];
     newChords[chordArrIndex] = { ...chordToMove, index: newCharIndex };
     
     reconstructLine(lyrics, newChords);
+  };
+
+  const handleChordClick = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
+    const chord = chords[index];
+    const newName = prompt('Edit chord (clear to delete):', chord.name);
+    if (newName === null) return; // Cancelled
+    
+    const newChords = [...chords];
+    if (newName.trim() === '') {
+        // Delete chord
+        newChords.splice(index, 1);
+    } else {
+        newChords[index] = { ...chord, name: newName };
+    }
+    reconstructLine(lyrics, newChords);
+  };
+
+  const handleLayerClick = (e: React.MouseEvent) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    const charIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
+    
+    const name = prompt('Add chord:');
+    if (name) {
+        const newChords = [...chords, { name, index: charIndex, originalTokenIndex: -1 }];
+        reconstructLine(lyrics, newChords);
+    }
   };
 
   // Measure char width on mount
@@ -266,9 +345,19 @@ function LineEditor({ line, onChange }: LineEditorProps) {
       className="line-editor" 
       ref={containerRef}
       onDragOver={handleDragOver}
+      onDragLeave={handleDragLeave}
       onDrop={handleDrop}
     >
-      <div className="chords-layer">
+      {dropIndex !== null && (
+        <div 
+            className="drop-indicator" 
+            style={{ left: `${dropIndex * charWidth}px` }}
+        />
+      )}
+      <div 
+        className="chords-layer"
+        onClick={handleLayerClick}
+      >
         {chords.map((chord, i) => (
           <div
             key={i}
@@ -276,7 +365,8 @@ function LineEditor({ line, onChange }: LineEditorProps) {
             style={{ left: `${chord.index * charWidth}px` }}
             draggable
             onDragStart={(e) => handleDragStart(e, i)}
-            title="Drag to move"
+            onClick={(e) => handleChordClick(e, i)}
+            title="Drag to move, click to edit"
           >
             {chord.name}
           </div>

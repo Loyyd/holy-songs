@@ -1,0 +1,371 @@
+{
+  "id": "lean-on-me",
+  "title": "Lean On Me",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Sometimes in our "
+            },
+            {
+              "chord": "G",
+              "lyric": "lives we all have "
+            },
+            {
+              "chord": "D",
+              "lyric": "pain"
+            }
+          ],
+          "raw": "[D]Sometimes in our [G]lives we all have [D]pain"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "We all have "
+            },
+            {
+              "chord": "A",
+              "lyric": "sorrow. But if we are "
+            },
+            {
+              "chord": "D",
+              "lyric": "wise "
+            },
+            {
+              "chord": "G",
+              "lyric": ""
+            }
+          ],
+          "raw": "[F#m]We all have [A]sorrow. But if we are [D]wise [G]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We know that there's "
+            },
+            {
+              "chord": "A",
+              "lyric": "always to"
+            },
+            {
+              "chord": "D",
+              "lyric": "morrow"
+            }
+          ],
+          "raw": "[D]We know that there's [A]always to[D]morrow"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Lean on me, when "
+            },
+            {
+              "chord": "G",
+              "lyric": "you're not strong"
+            }
+          ],
+          "raw": "[D]Lean on me, when [G]you're not strong"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "And I'll be your "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "friend, I'll help you carry "
+            },
+            {
+              "chord": "A",
+              "lyric": "on"
+            }
+          ],
+          "raw": "[D]And I'll be your [F#m]friend, I'll help you carry [A]on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "For it won't be "
+            },
+            {
+              "chord": "G",
+              "lyric": "long 'til I'm gonna "
+            },
+            {
+              "chord": "D",
+              "lyric": "need"
+            }
+          ],
+          "raw": "[D]For it won't be [G]long 'til I'm gonna [D]need"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Somebody to "
+            },
+            {
+              "chord": "G",
+              "lyric": "lean "
+            },
+            {
+              "chord": "A",
+              "lyric": "on "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A]Somebody to [G]lean [A]on [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Please swallow your pride"
+            }
+          ],
+          "raw": "Please swallow your pride"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "If I have things you need to borrow"
+            }
+          ],
+          "raw": "If I have things you need to borrow"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "For no one can fill those of your needs"
+            }
+          ],
+          "raw": "For no one can fill those of your needs"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That you won't let show"
+            }
+          ],
+          "raw": "That you won't let show"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "You just call on me "
+            },
+            {
+              "chord": "G",
+              "lyric": "brother, when you need a "
+            },
+            {
+              "chord": "D",
+              "lyric": "hand"
+            }
+          ],
+          "raw": "[D]You just call on me [G]brother, when you need a [D]hand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "We all need some"
+            },
+            {
+              "chord": "G",
+              "lyric": "body to "
+            },
+            {
+              "chord": "A",
+              "lyric": "lean "
+            },
+            {
+              "chord": "D",
+              "lyric": "on"
+            }
+          ],
+          "raw": "[A]We all need some[G]body to [A]lean [D]on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "You just might have a "
+            },
+            {
+              "chord": "D",
+              "lyric": "problem that I'll understand"
+            }
+          ],
+          "raw": "[G]You just might have a [D]problem that I'll understand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "We all need some"
+            },
+            {
+              "chord": "G",
+              "lyric": "body to "
+            },
+            {
+              "chord": "A",
+              "lyric": "lean "
+            },
+            {
+              "chord": "D",
+              "lyric": "on"
+            }
+          ],
+          "raw": "[A]We all need some[G]body to [A]lean [D]on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Lean on me..."
+            }
+          ],
+          "raw": "Lean on me..."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You just call on me brother..."
+            }
+          ],
+          "raw": "You just call on me brother..."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "If there is a load you have to bear that you can't carry,"
+            }
+          ],
+          "raw": "If there is a load you have to bear that you can't carry,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'm right up the road, I'll share your load,"
+            }
+          ],
+          "raw": "I'm right up the road, I'll share your load,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "If you just call me."
+            }
+          ],
+          "raw": "If you just call me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Lean on me..."
+            }
+          ],
+          "raw": "Lean on me..."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/lean-on-me.pro",
+  "source": "{title: Lean On Me}\n{key: D}\n\n[D]Sometimes in our [G]lives we all have [D]pain\n[F#m]We all have [A]sorrow. But if we are [D]wise [G]\n[D]We know that there's [A]always to[D]morrow\n\n[D]Lean on me, when [G]you're not strong\n[D]And I'll be your [F#m]friend, I'll help you carry [A]on\n[D]For it won't be [G]long 'til I'm gonna [D]need\n[A]Somebody to [G]lean [A]on [D]\n\nPlease swallow your pride\nIf I have things you need to borrow\nFor no one can fill those of your needs\nThat you won't let show\n\n[D]You just call on me [G]brother, when you need a [D]hand\n[A]We all need some[G]body to [A]lean [D]on\n[G]You just might have a [D]problem that I'll understand\n[A]We all need some[G]body to [A]lean [D]on\n\nLean on me...\nYou just call on me brother...\n\nIf there is a load you have to bear that you can't carry,\nI'm right up the road, I'll share your load,\nIf you just call me.\n\nLean on me...\n"
+}

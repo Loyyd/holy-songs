@@ -1,0 +1,271 @@
+{
+  "id": "morning-has-broken",
+  "title": "Morning Has Broken",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Morning has "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "broken, "
+            },
+            {
+              "chord": "G",
+              "lyric": "like the first "
+            },
+            {
+              "chord": "F",
+              "lyric": "morn"
+            },
+            {
+              "chord": "C",
+              "lyric": "ing"
+            }
+          ],
+          "raw": "[C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Blackbird has "
+            },
+            {
+              "chord": "Am",
+              "lyric": "spoken, "
+            },
+            {
+              "chord": "D",
+              "lyric": "like the first "
+            },
+            {
+              "chord": "G",
+              "lyric": "bird"
+            }
+          ],
+          "raw": "[Em]Blackbird has [Am]spoken, [D]like the first [G]bird"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Praise for the "
+            },
+            {
+              "chord": "F",
+              "lyric": "singing, "
+            },
+            {
+              "chord": "C",
+              "lyric": "praise for the "
+            },
+            {
+              "chord": "Am",
+              "lyric": "morn"
+            },
+            {
+              "chord": "G",
+              "lyric": "ing"
+            }
+          ],
+          "raw": "[C]Praise for the [F]singing, [C]praise for the [Am]morn[G]ing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Praise for them "
+            },
+            {
+              "chord": "C",
+              "lyric": "springing "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "fresh "
+            },
+            {
+              "chord": "G",
+              "lyric": "from the "
+            },
+            {
+              "chord": "C",
+              "lyric": "Word "
+            },
+            {
+              "chord": "F",
+              "lyric": " "
+            },
+            {
+              "chord": "C",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G]Praise for them [C]springing [Dm]fresh [G]from the [C]Word [F] [C]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Sweet the rain's new fall, sunlit from heaven"
+            }
+          ],
+          "raw": "Sweet the rain's new fall, sunlit from heaven"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Like the first dew fall, on the first grass"
+            }
+          ],
+          "raw": "Like the first dew fall, on the first grass"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Praise for the sweetness of the wet garden"
+            }
+          ],
+          "raw": "Praise for the sweetness of the wet garden"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Sprung in completeness where his feet pass"
+            }
+          ],
+          "raw": "Sprung in completeness where his feet pass"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Mine is the sunlight, mine is the morn-ing"
+            }
+          ],
+          "raw": "Mine is the sunlight, mine is the morn-ing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Born of the one light, Eden saw play"
+            }
+          ],
+          "raw": "Born of the one light, Eden saw play"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Praise with elation, praise every morning"
+            }
+          ],
+          "raw": "Praise with elation, praise every morning"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "God's recreation of the new day"
+            }
+          ],
+          "raw": "God's recreation of the new day"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Morning has broken, like the first morning"
+            }
+          ],
+          "raw": "Morning has broken, like the first morning"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Blackbird has spoken, like the first bird"
+            }
+          ],
+          "raw": "Blackbird has spoken, like the first bird"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Praise for the singing, praise for the morning"
+            }
+          ],
+          "raw": "Praise for the singing, praise for the morning"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Praise for them springing fresh from the world"
+            }
+          ],
+          "raw": "Praise for them springing fresh from the world"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/morning-has-broken.pro",
+  "source": "{title: Morning Has Broken}\n{key: C}\n\n[C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing\n[Em]Blackbird has [Am]spoken, [D]like the first [G]bird\n[C]Praise for the [F]singing, [C]praise for the [Am]morn[G]ing\n[G]Praise for them [C]springing [Dm]fresh [G]from the [C]Word [F] [C]\n\nSweet the rain's new fall, sunlit from heaven\nLike the first dew fall, on the first grass\nPraise for the sweetness of the wet garden\nSprung in completeness where his feet pass\n\nMine is the sunlight, mine is the morn-ing\nBorn of the one light, Eden saw play\nPraise with elation, praise every morning\nGod's recreation of the new day\n\nMorning has broken, like the first morning\nBlackbird has spoken, like the first bird\nPraise for the singing, praise for the morning\nPraise for them springing fresh from the world\n"
+}

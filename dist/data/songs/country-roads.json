@@ -1,0 +1,309 @@
+{
+  "id": "country-roads",
+  "title": "Country Roads",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Almost heaven, "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "West Virginia,"
+            }
+          ],
+          "raw": "[A]Almost heaven, [F#m]West Virginia,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Blue Ridge Mountains, "
+            },
+            {
+              "chord": "D",
+              "lyric": "Shenandoah "
+            },
+            {
+              "chord": "A",
+              "lyric": "River."
+            }
+          ],
+          "raw": "[E]Blue Ridge Mountains, [D]Shenandoah [A]River."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Life is "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "old there, older than the trees,"
+            }
+          ],
+          "raw": "Life is [F#m]old there, older than the trees,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Younger than the "
+            },
+            {
+              "chord": "D",
+              "lyric": "mountains, blowin' like a "
+            },
+            {
+              "chord": "A",
+              "lyric": "breeze."
+            }
+          ],
+          "raw": "[E]Younger than the [D]mountains, blowin' like a [A]breeze."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Country roads, take me "
+            },
+            {
+              "chord": "E",
+              "lyric": "home,"
+            }
+          ],
+          "raw": "[A]Country roads, take me [E]home,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "To the place where I "
+            },
+            {
+              "chord": "D",
+              "lyric": "belong:"
+            }
+          ],
+          "raw": "[F#m]To the place where I [D]belong:"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "West Virginia, mountain "
+            },
+            {
+              "chord": "E",
+              "lyric": "momma,"
+            }
+          ],
+          "raw": "[A]West Virginia, mountain [E]momma,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Take me home, "
+            },
+            {
+              "chord": "A",
+              "lyric": "country roads."
+            }
+          ],
+          "raw": "[D]Take me home, [A]country roads."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "All my mem'ries, gather 'round her,"
+            }
+          ],
+          "raw": "All my mem'ries, gather 'round her,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Miner's lady, stranger to blue water."
+            }
+          ],
+          "raw": "Miner's lady, stranger to blue water."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Dark and dusty, painted on the sky,"
+            }
+          ],
+          "raw": "Dark and dusty, painted on the sky,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Misty taste of moonshine, teardrop in my eye."
+            }
+          ],
+          "raw": "Misty taste of moonshine, teardrop in my eye."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I hear her voice, in the "
+            },
+            {
+              "chord": "E",
+              "lyric": "mornin' hours she "
+            },
+            {
+              "chord": "A",
+              "lyric": "calls me,"
+            }
+          ],
+          "raw": "[F#m]I hear her voice, in the [E]mornin' hours she [A]calls me,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "The radio re"
+            },
+            {
+              "chord": "A",
+              "lyric": "minds me of my home far "
+            },
+            {
+              "chord": "E",
+              "lyric": "away."
+            }
+          ],
+          "raw": "[D]The radio re[A]minds me of my home far [E]away."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "And drivin' down the "
+            },
+            {
+              "chord": "G",
+              "lyric": "road,"
+            }
+          ],
+          "raw": "[F#m]And drivin' down the [G]road,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I get a feelin' that I "
+            },
+            {
+              "chord": "A",
+              "lyric": "should have been home "
+            },
+            {
+              "chord": "E",
+              "lyric": "yesterday,"
+            }
+          ],
+          "raw": "[D]I get a feelin' that I [A]should have been home [E]yesterday,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Yesterday."
+            }
+          ],
+          "raw": "[E7]Yesterday."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/country-roads.pro",
+  "source": "{title: Country Roads}\n{key: A}\n\n{section: Verse 1}\n[A]Almost heaven, [F#m]West Virginia,\n[E]Blue Ridge Mountains, [D]Shenandoah [A]River.\nLife is [F#m]old there, older than the trees,\n[E]Younger than the [D]mountains, blowin' like a [A]breeze.\n\n{section: Chorus}\n[A]Country roads, take me [E]home,\n[F#m]To the place where I [D]belong:\n[A]West Virginia, mountain [E]momma,\n[D]Take me home, [A]country roads.\n\n{section: Verse 2}\nAll my mem'ries, gather 'round her,\nMiner's lady, stranger to blue water.\nDark and dusty, painted on the sky,\nMisty taste of moonshine, teardrop in my eye.\n\n{section: Bridge}\n[F#m]I hear her voice, in the [E]mornin' hours she [A]calls me,\n[D]The radio re[A]minds me of my home far [E]away.\n[F#m]And drivin' down the [G]road,\n[D]I get a feelin' that I [A]should have been home [E]yesterday,\n[E7]Yesterday.\n\n"
+}

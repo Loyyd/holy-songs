@@ -1,0 +1,307 @@
+{
+  "id": "if-i-had-a-hammer",
+  "title": "If I Had A Hammer",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": ""
+            },
+            {
+              "chord": "C",
+              "lyric": "If I had a "
+            },
+            {
+              "chord": "Em",
+              "lyric": "hammer, "
+            },
+            {
+              "chord": "F",
+              "lyric": "I'd hammer in the "
+            },
+            {
+              "chord": "G",
+              "lyric": "morning,"
+            }
+          ],
+          "raw": "[G7][C]If I had a [Em]hammer, [F]I'd hammer in the [G]morning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I'd hammer in the "
+            },
+            {
+              "chord": "Em",
+              "lyric": "evening, "
+            },
+            {
+              "chord": "F",
+              "lyric": "all over this "
+            },
+            {
+              "chord": "G",
+              "lyric": "land."
+            }
+          ],
+          "raw": "[C]I'd hammer in the [Em]evening, [F]all over this [G]land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I'd hammer out "
+            },
+            {
+              "chord": "Am",
+              "lyric": "danger, I'd hammer out a warning,"
+            }
+          ],
+          "raw": "[C]I'd hammer out [Am]danger, I'd hammer out a warning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "I'd hammer out "
+            },
+            {
+              "chord": "C",
+              "lyric": "love between my "
+            },
+            {
+              "chord": "F",
+              "lyric": "brothers and my "
+            },
+            {
+              "chord": "C",
+              "lyric": "sisters,"
+            }
+          ],
+          "raw": "[F]I'd hammer out [C]love between my [F]brothers and my [C]sisters,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "All "
+            },
+            {
+              "chord": "C",
+              "lyric": "over "
+            },
+            {
+              "chord": "G",
+              "lyric": "this "
+            },
+            {
+              "chord": "C",
+              "lyric": "land. "
+            },
+            {
+              "chord": "Em",
+              "lyric": " "
+            },
+            {
+              "chord": "F",
+              "lyric": " "
+            },
+            {
+              "chord": "G",
+              "lyric": ""
+            }
+          ],
+          "raw": "[F]All [C]over [G]this [C]land. [Em] [F] [G]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "If I had a bell, I'd ring it in the morning,"
+            }
+          ],
+          "raw": "If I had a bell, I'd ring it in the morning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'd ring it in the evening, all over this land,"
+            }
+          ],
+          "raw": "I'd ring it in the evening, all over this land,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'd ring out danger, I'd ring out a warning,"
+            }
+          ],
+          "raw": "I'd ring out danger, I'd ring out a warning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'd ring out love between my brothers and my sisters,"
+            }
+          ],
+          "raw": "I'd ring out love between my brothers and my sisters,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "All over this land."
+            }
+          ],
+          "raw": "All over this land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "If I had a song, I'd sing it in the morning"
+            }
+          ],
+          "raw": "If I had a song, I'd sing it in the morning"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'd sing it in the evening, all over this land"
+            }
+          ],
+          "raw": "I'd sing it in the evening, all over this land"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'd sing out danger I'd sing out a warning"
+            }
+          ],
+          "raw": "I'd sing out danger I'd sing out a warning"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'd sing out love between my brothers and my sisters"
+            }
+          ],
+          "raw": "I'd sing out love between my brothers and my sisters"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "All over this land"
+            }
+          ],
+          "raw": "All over this land"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Well, I've got a hammer and I've got a bell"
+            }
+          ],
+          "raw": "Well, I've got a hammer and I've got a bell"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and I've got a song to sing, all over this land"
+            }
+          ],
+          "raw": "and I've got a song to sing, all over this land"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It's the hammer of justice; it's the bell of freedom"
+            }
+          ],
+          "raw": "It's the hammer of justice; it's the bell of freedom"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It's a song about love between my brothers and my sisters"
+            }
+          ],
+          "raw": "It's a song about love between my brothers and my sisters"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "All over this land"
+            }
+          ],
+          "raw": "All over this land"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/if-i-had-a-hammer.pro",
+  "source": "{title: If I Had A Hammer}\n{key: C}\n\n[G7][C]If I had a [Em]hammer, [F]I'd hammer in the [G]morning,\n[C]I'd hammer in the [Em]evening, [F]all over this [G]land.\n[C]I'd hammer out [Am]danger, I'd hammer out a warning,\n[F]I'd hammer out [C]love between my [F]brothers and my [C]sisters,\n[F]All [C]over [G]this [C]land. [Em] [F] [G]\n\nIf I had a bell, I'd ring it in the morning,\nI'd ring it in the evening, all over this land,\nI'd ring out danger, I'd ring out a warning,\nI'd ring out love between my brothers and my sisters,\nAll over this land.\n\nIf I had a song, I'd sing it in the morning\nI'd sing it in the evening, all over this land\nI'd sing out danger I'd sing out a warning\nI'd sing out love between my brothers and my sisters\nAll over this land\n\nWell, I've got a hammer and I've got a bell\nand I've got a song to sing, all over this land\nIt's the hammer of justice; it's the bell of freedom\nIt's a song about love between my brothers and my sisters\nAll over this land\n"
+}

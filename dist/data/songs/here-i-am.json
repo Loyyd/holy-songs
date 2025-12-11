@@ -1,0 +1,292 @@
+{
+  "id": "here-i-am",
+  "title": "Here I Am",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Here I am, this is "
+            },
+            {
+              "chord": "A",
+              "lyric": "me"
+            }
+          ],
+          "raw": "[D]Here I am, this is [A]me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "There's nowhere else on "
+            },
+            {
+              "chord": "D",
+              "lyric": "Earth I'd rather be"
+            }
+          ],
+          "raw": "[G]There's nowhere else on [D]Earth I'd rather be"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Here I am, it's just "
+            },
+            {
+              "chord": "D",
+              "lyric": "me and you"
+            }
+          ],
+          "raw": "[G]Here I am, it's just [D]me and you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Tonight we make our "
+            },
+            {
+              "chord": "A",
+              "lyric": "dreams come true"
+            }
+          ],
+          "raw": "[C]Tonight we make our [A]dreams come true"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "It's a new world, "
+            },
+            {
+              "chord": "D",
+              "lyric": "it's a new "
+            },
+            {
+              "chord": "A",
+              "lyric": "start"
+            }
+          ],
+          "raw": "[Bm]It's a new world, [D]it's a new [A]start"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "It's alive with the "
+            },
+            {
+              "chord": "G",
+              "lyric": "beating of "
+            },
+            {
+              "chord": "D",
+              "lyric": "young "
+            },
+            {
+              "chord": "A",
+              "lyric": "hearts"
+            }
+          ],
+          "raw": "[Bm]It's alive with the [G]beating of [D]young [A]hearts"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "It's a new day, "
+            },
+            {
+              "chord": "G",
+              "lyric": "it's a new "
+            },
+            {
+              "chord": "D",
+              "lyric": "plan "
+            },
+            {
+              "chord": "A",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Bm]It's a new day, [G]it's a new [D]plan [A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "I've been waiting for "
+            },
+            {
+              "chord": "G",
+              "lyric": "you"
+            }
+          ],
+          "raw": "[Em]I've been waiting for [G]you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Here I am"
+            }
+          ],
+          "raw": "[D]Here I am"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here we are, we've just begun"
+            }
+          ],
+          "raw": "Here we are, we've just begun"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And after all this time, our time has come"
+            }
+          ],
+          "raw": "And after all this time, our time has come"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah, here we are, still goin' strong"
+            }
+          ],
+          "raw": "Yeah, here we are, still goin' strong"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Right here in the place where we belong"
+            }
+          ],
+          "raw": "Right here in the place where we belong"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here I am, right next to you"
+            }
+          ],
+          "raw": "Here I am, right next to you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And suddenly the world is all brand new"
+            }
+          ],
+          "raw": "And suddenly the world is all brand new"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here I am, where I'm gonna stay"
+            }
+          ],
+          "raw": "Here I am, where I'm gonna stay"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Now there's nothin' standin' in our way"
+            }
+          ],
+          "raw": "Now there's nothin' standin' in our way"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here I am – this is me"
+            }
+          ],
+          "raw": "Here I am – this is me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/here-i-am.pro",
+  "source": "{title: Here I Am}\n{key: D}\n\n[D]Here I am, this is [A]me\n[G]There's nowhere else on [D]Earth I'd rather be\n[G]Here I am, it's just [D]me and you\n[C]Tonight we make our [A]dreams come true\n\n{section: Chorus}\n[Bm]It's a new world, [D]it's a new [A]start\n[Bm]It's alive with the [G]beating of [D]young [A]hearts\n[Bm]It's a new day, [G]it's a new [D]plan [A]\n[Em]I've been waiting for [G]you\n[D]Here I am\n\nHere we are, we've just begun\nAnd after all this time, our time has come\nYeah, here we are, still goin' strong\nRight here in the place where we belong\n\n{section: Chorus}\n\nHere I am, right next to you\nAnd suddenly the world is all brand new\nHere I am, where I'm gonna stay\nNow there's nothin' standin' in our way\nHere I am – this is me\n"
+}

@@ -1,0 +1,289 @@
+{
+  "id": "how-great-thou-art",
+  "title": "How Great Thou Art",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "O Lord my God, when I in "
+            },
+            {
+              "chord": "A7",
+              "lyric": "awesome wonder"
+            }
+          ],
+          "raw": "[A]O Lord my God, when I in [A7]awesome wonder"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Consider all the "
+            },
+            {
+              "chord": "E7",
+              "lyric": "works Thy hands have "
+            },
+            {
+              "chord": "A",
+              "lyric": "made,"
+            }
+          ],
+          "raw": "[D]Consider all the [E7]works Thy hands have [A]made,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "I see the stars, I hear the "
+            },
+            {
+              "chord": "D",
+              "lyric": "rolling thunder,"
+            }
+          ],
+          "raw": "[A7]I see the stars, I hear the [D]rolling thunder,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Thy pow'r thro'out the universe dis"
+            },
+            {
+              "chord": "A",
+              "lyric": "played."
+            }
+          ],
+          "raw": "[E7]Thy pow'r thro'out the universe dis[A]played."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Then sings my soul, my "
+            },
+            {
+              "chord": "A",
+              "lyric": "Savior God to Thee:"
+            }
+          ],
+          "raw": "[D]Then sings my soul, my [A]Savior God to Thee:"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "How great Thou art, how "
+            },
+            {
+              "chord": "A",
+              "lyric": "great Thou art!"
+            }
+          ],
+          "raw": "[E7]How great Thou art, how [A]great Thou art!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Then sings my soul, my "
+            },
+            {
+              "chord": "A",
+              "lyric": "Savior God, to Thee;"
+            }
+          ],
+          "raw": "[D]Then sings my soul, my [A]Savior God, to Thee;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "How great Thou art, how "
+            },
+            {
+              "chord": "A",
+              "lyric": "great Thou art!"
+            }
+          ],
+          "raw": "[E7]How great Thou art, how [A]great Thou art!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "When thro' the woods and forest glades I wander"
+            }
+          ],
+          "raw": "When thro' the woods and forest glades I wander"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And hear the birds sing sweetly in the trees,"
+            }
+          ],
+          "raw": "And hear the birds sing sweetly in the trees,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "When I look down from lofty mountain grandeur,"
+            }
+          ],
+          "raw": "When I look down from lofty mountain grandeur,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And hear the brook and feel the gentle breeze."
+            }
+          ],
+          "raw": "And hear the brook and feel the gentle breeze."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And when I think that God, His Son not sparing,"
+            }
+          ],
+          "raw": "And when I think that God, His Son not sparing,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Had to let him die, I scarce can take it in,"
+            }
+          ],
+          "raw": "Had to let him die, I scarce can take it in,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That on the cross, his burden fully bearing,"
+            }
+          ],
+          "raw": "That on the cross, his burden fully bearing,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He bled and died to make a way to Him."
+            }
+          ],
+          "raw": "He bled and died to make a way to Him."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "When Christ shall come with shout of acclamation"
+            }
+          ],
+          "raw": "When Christ shall come with shout of acclamation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And take me home, what joy shall fill my heart!"
+            }
+          ],
+          "raw": "And take me home, what joy shall fill my heart!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Then I shall bow in humble adoration,"
+            }
+          ],
+          "raw": "Then I shall bow in humble adoration,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And there proclaim, my God, how great Thou art."
+            }
+          ],
+          "raw": "And there proclaim, my God, how great Thou art."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/how-great-thou-art.pro",
+  "source": "{title: How Great Thou Art}\n{key: A}\n\n[A]O Lord my God, when I in [A7]awesome wonder\n[D]Consider all the [E7]works Thy hands have [A]made,\n[A7]I see the stars, I hear the [D]rolling thunder,\n[E7]Thy pow'r thro'out the universe dis[A]played.\n\n{section: Chorus}\n[D]Then sings my soul, my [A]Savior God to Thee:\n[E7]How great Thou art, how [A]great Thou art!\n[D]Then sings my soul, my [A]Savior God, to Thee;\n[E7]How great Thou art, how [A]great Thou art!\n\nWhen thro' the woods and forest glades I wander\nAnd hear the birds sing sweetly in the trees,\nWhen I look down from lofty mountain grandeur,\nAnd hear the brook and feel the gentle breeze.\n\nAnd when I think that God, His Son not sparing,\nHad to let him die, I scarce can take it in,\nThat on the cross, his burden fully bearing,\nHe bled and died to make a way to Him.\n\nWhen Christ shall come with shout of acclamation\nAnd take me home, what joy shall fill my heart!\nThen I shall bow in humble adoration,\nAnd there proclaim, my God, how great Thou art.\n"
+}

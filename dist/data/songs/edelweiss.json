@@ -1,0 +1,189 @@
+{
+  "id": "edelweiss",
+  "title": "Edelweiss",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Edel"
+            },
+            {
+              "chord": "E7",
+              "lyric": "weiss, "
+            },
+            {
+              "chord": "A7",
+              "lyric": "Edel"
+            },
+            {
+              "chord": "D",
+              "lyric": "weiss"
+            }
+          ],
+          "raw": "[A]Edel[E7]weiss, [A7]Edel[D]weiss"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Every morning you "
+            },
+            {
+              "chord": "D",
+              "lyric": "greet "
+            },
+            {
+              "chord": "E7",
+              "lyric": "me"
+            }
+          ],
+          "raw": "[A]Every morning you [D]greet [E7]me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Small and "
+            },
+            {
+              "chord": "E7",
+              "lyric": "white "
+            },
+            {
+              "chord": "A7",
+              "lyric": "clean and "
+            },
+            {
+              "chord": "D",
+              "lyric": "bright,"
+            }
+          ],
+          "raw": "[A]Small and [E7]white [A7]clean and [D]bright,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "You look "
+            },
+            {
+              "chord": "E7",
+              "lyric": "happy to "
+            },
+            {
+              "chord": "A",
+              "lyric": "meet me"
+            }
+          ],
+          "raw": "[A]You look [E7]happy to [A]meet me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Blossom of "
+            },
+            {
+              "chord": "A7",
+              "lyric": "snow may you bloom and grow"
+            }
+          ],
+          "raw": "[E7]Blossom of [A7]snow may you bloom and grow"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Bloom and "
+            },
+            {
+              "chord": "B7",
+              "lyric": "grow for"
+            },
+            {
+              "chord": "E7",
+              "lyric": "ever"
+            }
+          ],
+          "raw": "[D]Bloom and [B7]grow for[E7]ever"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Edel"
+            },
+            {
+              "chord": "E7",
+              "lyric": "weiss, "
+            },
+            {
+              "chord": "A",
+              "lyric": "Edel"
+            },
+            {
+              "chord": "D",
+              "lyric": "weiss"
+            }
+          ],
+          "raw": "[A]Edel[E7]weiss, [A]Edel[D]weiss"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Bless my "
+            },
+            {
+              "chord": "E7",
+              "lyric": "homeland "
+            },
+            {
+              "chord": "D",
+              "lyric": "for"
+            },
+            {
+              "chord": "A",
+              "lyric": "ever."
+            }
+          ],
+          "raw": "[A]Bless my [E7]homeland [D]for[A]ever."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/edelweiss.pro",
+  "source": "{title: Edelweiss}\n{key: A}\n\n[A]Edel[E7]weiss, [A7]Edel[D]weiss\n[A]Every morning you [D]greet [E7]me\n[A]Small and [E7]white [A7]clean and [D]bright,\n[A]You look [E7]happy to [A]meet me\n\n[E7]Blossom of [A7]snow may you bloom and grow\n[D]Bloom and [B7]grow for[E7]ever\n[A]Edel[E7]weiss, [A]Edel[D]weiss\n[A]Bless my [E7]homeland [D]for[A]ever.\n"
+}

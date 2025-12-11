@@ -1,0 +1,408 @@
+{
+  "id": "i-will-follow-him",
+  "title": "I Will Follow Him",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I will follow "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Him, follow Him wherever He may go,"
+            }
+          ],
+          "raw": "[G]I will follow [Bm]Him, follow Him wherever He may go,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And near Him I "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "always will be"
+            }
+          ],
+          "raw": "[Em]And near Him I [Bm]always will be"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "For nothing can "
+            },
+            {
+              "chord": "D",
+              "lyric": "keep me a"
+            },
+            {
+              "chord": "G",
+              "lyric": "way, He is my "
+            },
+            {
+              "chord": "Em",
+              "lyric": "desti"
+            },
+            {
+              "chord": "D",
+              "lyric": "ny."
+            }
+          ],
+          "raw": "[C]For nothing can [D]keep me a[G]way, He is my [Em]desti[D]ny."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I will follow "
+            },
+            {
+              "chord": "G",
+              "lyric": "Him, Ever since He "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "touched my heart I knew,"
+            }
+          ],
+          "raw": "[D]I will follow [G]Him, Ever since He [Bm]touched my heart I knew,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "There isn't an "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ocean too deep, a "
+            },
+            {
+              "chord": "C",
+              "lyric": "mountain so high it can "
+            },
+            {
+              "chord": "Am",
+              "lyric": "keep,"
+            }
+          ],
+          "raw": "[Em]There isn't an [Bm]ocean too deep, a [C]mountain so high it can [Am]keep,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Keep me a"
+            },
+            {
+              "chord": "G",
+              "lyric": "way, a"
+            },
+            {
+              "chord": "Em",
+              "lyric": "way from "
+            },
+            {
+              "chord": "D",
+              "lyric": "His "
+            },
+            {
+              "chord": "G",
+              "lyric": "love. "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Keep me a[G]way, a[Em]way from [D]His [G]love. [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I love Him, I love Him, I love Him,"
+            }
+          ],
+          "raw": "[G]I love Him, I love Him, I love Him,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And where He goes, I'll follow, I'll follow, I'll follow."
+            }
+          ],
+          "raw": "[Em]And where He goes, I'll follow, I'll follow, I'll follow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I will follow "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Him, follow Him wherever He may go,"
+            }
+          ],
+          "raw": "[G]I will follow [Bm]Him, follow Him wherever He may go,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "There isn't an "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ocean too deep, A "
+            },
+            {
+              "chord": "C",
+              "lyric": "mountain so high it can "
+            },
+            {
+              "chord": "D",
+              "lyric": "keep,"
+            }
+          ],
+          "raw": "[Em]There isn't an [Bm]ocean too deep, A [C]mountain so high it can [D]keep,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Keep me a"
+            },
+            {
+              "chord": "G",
+              "lyric": "way, a"
+            },
+            {
+              "chord": "Em",
+              "lyric": "way from "
+            },
+            {
+              "chord": "D",
+              "lyric": "his "
+            },
+            {
+              "chord": "G",
+              "lyric": "love "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Keep me a[G]way, a[Em]way from [D]his [G]love [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "We will follow Him, follow Him wherever He may go,"
+            }
+          ],
+          "raw": "We will follow Him, follow Him wherever He may go,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "There isn't an ocean too deep,"
+            }
+          ],
+          "raw": "There isn't an ocean too deep,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "A mountain so high it can "
+            },
+            {
+              "chord": "Am",
+              "lyric": "keep,"
+            }
+          ],
+          "raw": "[C]A mountain so high it can [Am]keep,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Keep us a"
+            },
+            {
+              "chord": "G",
+              "lyric": "way, a"
+            },
+            {
+              "chord": "Em",
+              "lyric": "way from "
+            },
+            {
+              "chord": "D",
+              "lyric": "His "
+            },
+            {
+              "chord": "G",
+              "lyric": "love "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Keep us a[G]way, a[Em]way from [D]His [G]love [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I love Him, I love Him, I love Him,"
+            }
+          ],
+          "raw": "I love Him, I love Him, I love Him,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And where He goes, I'll follow, I'll follow, I'll follow,"
+            }
+          ],
+          "raw": "And where He goes, I'll follow, I'll follow, I'll follow,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He'll always be my true love, My true love, my true love,"
+            }
+          ],
+          "raw": "He'll always be my true love, My true love, my true love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "From now until forever, forever, forever..."
+            }
+          ],
+          "raw": "From now until forever, forever, forever..."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "There isn't an ocean too deep,"
+            }
+          ],
+          "raw": "There isn't an ocean too deep,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "A mountain so high it can keep,"
+            }
+          ],
+          "raw": "A mountain so high it can keep,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Keep me away, away from His love."
+            }
+          ],
+          "raw": "Keep me away, away from His love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/i-will-follow-him.pro",
+  "source": "{title: I Will Follow Him}\n{key: G}\n\n[G]I will follow [Bm]Him, follow Him wherever He may go,\n[Em]And near Him I [Bm]always will be\n[C]For nothing can [D]keep me a[G]way, He is my [Em]desti[D]ny.\n\n[D]I will follow [G]Him, Ever since He [Bm]touched my heart I knew,\n[Em]There isn't an [Bm]ocean too deep, a [C]mountain so high it can [Am]keep,\n[D]Keep me a[G]way, a[Em]way from [D]His [G]love. [D]\n\n[G]I love Him, I love Him, I love Him,\n[Em]And where He goes, I'll follow, I'll follow, I'll follow.\n\n[G]I will follow [Bm]Him, follow Him wherever He may go,\n[Em]There isn't an [Bm]ocean too deep, A [C]mountain so high it can [D]keep,\n[D]Keep me a[G]way, a[Em]way from [D]his [G]love [D]\n\nWe will follow Him, follow Him wherever He may go,\nThere isn't an ocean too deep,\n[C]A mountain so high it can [Am]keep,\n[D]Keep us a[G]way, a[Em]way from [D]His [G]love [D]\n\nI love Him, I love Him, I love Him,\nAnd where He goes, I'll follow, I'll follow, I'll follow,\nHe'll always be my true love, My true love, my true love,\nFrom now until forever, forever, forever...\n\nThere isn't an ocean too deep,\nA mountain so high it can keep,\nKeep me away, away from His love.\n"
+}

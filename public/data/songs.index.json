@@ -512,6 +512,21 @@
     ]
   },
   {
+    "id": "edelweiss",
+    "title": "Edelweiss",
+    "key": "A",
+    "sections": [
+      "[A]Edel[E7]weiss, [A7]Edel[D]weiss",
+      "[A]Every morning you [D]greet [E7]me",
+      "[A]Small and [E7]white [A7]clean and [D]bright,",
+      "[A]You look [E7]happy to [A]meet me",
+      "[E7]Blossom of [A7]snow may you bloom and grow",
+      "[D]Bloom and [B7]grow for[E7]ever",
+      "[A]Edel[E7]weiss, [A]Edel[D]weiss",
+      "[A]Bless my [E7]homeland [D]for[A]ever."
+    ]
+  },
+  {
     "id": "father",
     "title": "Father",
     "key": "F",
@@ -694,6 +709,29 @@
     ]
   },
   {
+    "id": "happy-heart",
+    "title": "Happy Heart",
+    "key": "D",
+    "sections": [
+      "[D]There’s a certain [Dmaj7]sound",
+      "[D7]Always follows me a[G]round;",
+      "[Gm]When you're close to [D]me you will [A7]hear it.",
+      "[F]It's the sound that [C]lovers [Dm]finally will dis[Am]cover",
+      "[Bb]When there is no [F]other for their [A7]love.",
+      "[Bm]It's my happy [Em]heart you hear,",
+      "[A]Singing loud and [D]singing clear,",
+      "[G]And it's [C]all be[F]cause you're [A7]near me, my love.",
+      "[Bm]Take my happy [Em]heart away,",
+      "[A]Make me love you [D]night and day",
+      "[G]In your [C]arms I [F]want to [A7]stay, oh my love.",
+      "Feeling more and more",
+      "Like I’ve never felt before",
+      "You have changed my life so completely.",
+      "Music fills my soul now, I've lost all control now,",
+      "I’m not half, I’m whole now with your love."
+    ]
+  },
+  {
     "id": "he-has-called-me",
     "title": "He Has Called Me",
     "key": "Eb",
@@ -744,6 +782,58 @@
     ]
   },
   {
+    "id": "here-i-am",
+    "title": "Here I Am",
+    "key": "D",
+    "sections": [
+      "[D]Here I am, this is [A]me",
+      "[G]There's nowhere else on [D]Earth I'd rather be",
+      "[G]Here I am, it's just [D]me and you",
+      "[C]Tonight we make our [A]dreams come true",
+      "[Bm]It's a new world, [D]it's a new [A]start",
+      "[Bm]It's alive with the [G]beating of [D]young [A]hearts",
+      "[Bm]It's a new day, [G]it's a new [D]plan [A]",
+      "[Em]I've been waiting for [G]you",
+      "[D]Here I am",
+      "Here we are, we've just begun",
+      "And after all this time, our time has come",
+      "Yeah, here we are, still goin' strong",
+      "Right here in the place where we belong",
+      "Here I am, right next to you",
+      "And suddenly the world is all brand new",
+      "Here I am, where I'm gonna stay",
+      "Now there's nothin' standin' in our way",
+      "Here I am – this is me"
+    ]
+  },
+  {
+    "id": "higher-ground",
+    "title": "Higher Ground",
+    "key": "G",
+    "sections": [
+      "[G]I'm pressing on the [C]upward way,",
+      "[G]New heights I'm gaining [D7]every day,",
+      "[G]Still praying as I'm [G7]upward [C]bound,",
+      "[G]Lord, plant my feet on [D7]higher [G]ground.",
+      "[G]Lord, lift me up and [D7]let me stand.",
+      "[G]By faith on heaven's table land,",
+      "[G7]A higher plane than [C]I have found;",
+      "[G]Lord, plant my feet on [D7]higher [G]ground.",
+      "My heart has no desire to stay",
+      "Where doubts arise and fears dismay,",
+      "Though some may dwell where these abound,",
+      "My prayer, my aim is higher ground.",
+      "I want to live above the world,",
+      "Though Satan's darts at me are hurled,",
+      "For faith has caught the joyful sound,",
+      "The song of saints on higher ground.",
+      "I want to scale the utmost height,",
+      "And catch a gleam of glory bright,",
+      "But still I'll pray till heav'n I've found,",
+      "\"Lord, lead me on to higher ground.\""
+    ]
+  },
+  {
     "id": "hollo-arirang",
     "title": "Hollo Arirang",
     "key": "D",
@@ -764,6 +854,33 @@
       "[Bm]Hanra san jejue so betakgo kanda",
       "[G]kadaga hollo somae da julnerigo",
       "[A]do oru neun achim herul majiheboja"
+    ]
+  },
+  {
+    "id": "how-great-thou-art",
+    "title": "How Great Thou Art",
+    "key": "A",
+    "sections": [
+      "[A]O Lord my God, when I in [A7]awesome wonder",
+      "[D]Consider all the [E7]works Thy hands have [A]made,",
+      "[A7]I see the stars, I hear the [D]rolling thunder,",
+      "[E7]Thy pow'r thro'out the universe dis[A]played.",
+      "[D]Then sings my soul, my [A]Savior God to Thee:",
+      "[E7]How great Thou art, how [A]great Thou art!",
+      "[D]Then sings my soul, my [A]Savior God, to Thee;",
+      "[E7]How great Thou art, how [A]great Thou art!",
+      "When thro' the woods and forest glades I wander",
+      "And hear the birds sing sweetly in the trees,",
+      "When I look down from lofty mountain grandeur,",
+      "And hear the brook and feel the gentle breeze.",
+      "And when I think that God, His Son not sparing,",
+      "Had to let him die, I scarce can take it in,",
+      "That on the cross, his burden fully bearing,",
+      "He bled and died to make a way to Him.",
+      "When Christ shall come with shout of acclamation",
+      "And take me home, what joy shall fill my heart!",
+      "Then I shall bow in humble adoration,",
+      "And there proclaim, my God, how great Thou art."
     ]
   },
   {
@@ -793,6 +910,81 @@
       "[Dm]If we're slow in responding, He may leave us behind.",
       "[F]He's preparing a banquet for that great and glorious day",
       "[C7]When the Lord and Master calls us, be certain not to say:"
+    ]
+  },
+  {
+    "id": "i-saw-the-light",
+    "title": "I Saw The Light",
+    "key": "G",
+    "sections": [
+      "[G]I saw the light, I [G7]saw the light,",
+      "[C]No more darkness, [G]no more night.",
+      "[Em]Now I’m so happy, no sorrow in sight",
+      "[G]Praise the Lord, I [D7]saw the [G]light.",
+      "[G]I was a wanderer, [G7]sinking in sin,",
+      "[C]I wouldn't let my dear [G]saviour in.",
+      "[G]Then Jesus came like a [Em]stranger in the night.",
+      "[G]Praise the Lord, I [D7]saw the light.",
+      "Well, just like a blind man, I wandered alone,",
+      "Worries and fears I claimed for my own.",
+      "Then like a blind man, that God gave back his sight,",
+      "Praise the Lord, I saw the light."
+    ]
+  },
+  {
+    "id": "i-will-follow-him",
+    "title": "I Will Follow Him",
+    "key": "G",
+    "sections": [
+      "[G]I will follow [Bm]Him, follow Him wherever He may go,",
+      "[Em]And near Him I [Bm]always will be",
+      "[C]For nothing can [D]keep me a[G]way, He is my [Em]desti[D]ny.",
+      "[D]I will follow [G]Him, Ever since He [Bm]touched my heart I knew,",
+      "[Em]There isn't an [Bm]ocean too deep, a [C]mountain so high it can [Am]keep,",
+      "[D]Keep me a[G]way, a[Em]way from [D]His [G]love. [D]",
+      "[G]I love Him, I love Him, I love Him,",
+      "[Em]And where He goes, I'll follow, I'll follow, I'll follow.",
+      "[G]I will follow [Bm]Him, follow Him wherever He may go,",
+      "[Em]There isn't an [Bm]ocean too deep, A [C]mountain so high it can [D]keep,",
+      "[D]Keep me a[G]way, a[Em]way from [D]his [G]love [D]",
+      "We will follow Him, follow Him wherever He may go,",
+      "There isn't an ocean too deep,",
+      "[C]A mountain so high it can [Am]keep,",
+      "[D]Keep us a[G]way, a[Em]way from [D]His [G]love [D]",
+      "I love Him, I love Him, I love Him,",
+      "And where He goes, I'll follow, I'll follow, I'll follow,",
+      "He'll always be my true love, My true love, my true love,",
+      "From now until forever, forever, forever...",
+      "There isn't an ocean too deep,",
+      "A mountain so high it can keep,",
+      "Keep me away, away from His love."
+    ]
+  },
+  {
+    "id": "if-i-had-a-hammer",
+    "title": "If I Had A Hammer",
+    "key": "C",
+    "sections": [
+      "[G7][C]If I had a [Em]hammer, [F]I'd hammer in the [G]morning,",
+      "[C]I'd hammer in the [Em]evening, [F]all over this [G]land.",
+      "[C]I'd hammer out [Am]danger, I'd hammer out a warning,",
+      "[F]I'd hammer out [C]love between my [F]brothers and my [C]sisters,",
+      "[F]All [C]over [G]this [C]land. [Em] [F] [G]",
+      "If I had a bell, I'd ring it in the morning,",
+      "I'd ring it in the evening, all over this land,",
+      "I'd ring out danger, I'd ring out a warning,",
+      "I'd ring out love between my brothers and my sisters,",
+      "All over this land.",
+      "If I had a song, I'd sing it in the morning",
+      "I'd sing it in the evening, all over this land",
+      "I'd sing out danger I'd sing out a warning",
+      "I'd sing out love between my brothers and my sisters",
+      "All over this land",
+      "Well, I've got a hammer and I've got a bell",
+      "and I've got a song to sing, all over this land",
+      "It's the hammer of justice; it's the bell of freedom",
+      "It's a song about love between my brothers and my sisters",
+      "All over this land"
     ]
   },
   {
@@ -1021,6 +1213,34 @@
     ]
   },
   {
+    "id": "lean-on-me",
+    "title": "Lean On Me",
+    "key": "D",
+    "sections": [
+      "[D]Sometimes in our [G]lives we all have [D]pain",
+      "[F#m]We all have [A]sorrow. But if we are [D]wise [G]",
+      "[D]We know that there's [A]always to[D]morrow",
+      "[D]Lean on me, when [G]you're not strong",
+      "[D]And I'll be your [F#m]friend, I'll help you carry [A]on",
+      "[D]For it won't be [G]long 'til I'm gonna [D]need",
+      "[A]Somebody to [G]lean [A]on [D]",
+      "Please swallow your pride",
+      "If I have things you need to borrow",
+      "For no one can fill those of your needs",
+      "That you won't let show",
+      "[D]You just call on me [G]brother, when you need a [D]hand",
+      "[A]We all need some[G]body to [A]lean [D]on",
+      "[G]You just might have a [D]problem that I'll understand",
+      "[A]We all need some[G]body to [A]lean [D]on",
+      "Lean on me...",
+      "You just call on me brother...",
+      "If there is a load you have to bear that you can't carry,",
+      "I'm right up the road, I'll share your load,",
+      "If you just call me.",
+      "Lean on me..."
+    ]
+  },
+  {
     "id": "light-in-the-east",
     "title": "Light in the East",
     "key": "A",
@@ -1092,6 +1312,29 @@
       "[D]Peace is the hope of all mankind,",
       "[Em]Let us work to free our brothers,",
       "[B7]Peace, peace, peace, peace."
+    ]
+  },
+  {
+    "id": "make-me-a-channel-of-your-peace",
+    "title": "Make Me A Channel Of Your Peace",
+    "key": "A",
+    "sections": [
+      "[A]Make me a channel of your peace",
+      "[E]Where there is hatred let me bring your love",
+      "[Bm]Where there is injury, your pardon Lord",
+      "[E]And where there is doubt true faith in [A]You",
+      "[D]Oh, Master grant that I may never [A]seek",
+      "[E]So much to be consoled as to con[A]sole [A7]",
+      "[D]To be understood as to under[A]stand",
+      "[E]To be loved as to love with [B]all my [E]soul [E7]",
+      "Make me a channel of your peace",
+      "Where there is despair in life let me bring hope",
+      "Where there is darkness only light",
+      "And where there's sadness ever joy",
+      "Make me a channel of your peace",
+      "It is in pardoning that we are pardoned",
+      "It is in giving to all man that we receive",
+      "And in dying that we are born to eternal life."
     ]
   },
   {
@@ -1195,6 +1438,29 @@
       "[G]I've got a home on the other side, Hallelujah",
       "[D]Michael row the boat ashore, Hallelujah",
       "[G]Michael row the boat ashore, Hallelujah"
+    ]
+  },
+  {
+    "id": "morning-has-broken",
+    "title": "Morning Has Broken",
+    "key": "C",
+    "sections": [
+      "[C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing",
+      "[Em]Blackbird has [Am]spoken, [D]like the first [G]bird",
+      "[C]Praise for the [F]singing, [C]praise for the [Am]morn[G]ing",
+      "[G]Praise for them [C]springing [Dm]fresh [G]from the [C]Word [F] [C]",
+      "Sweet the rain's new fall, sunlit from heaven",
+      "Like the first dew fall, on the first grass",
+      "Praise for the sweetness of the wet garden",
+      "Sprung in completeness where his feet pass",
+      "Mine is the sunlight, mine is the morn-ing",
+      "Born of the one light, Eden saw play",
+      "Praise with elation, praise every morning",
+      "God's recreation of the new day",
+      "Morning has broken, like the first morning",
+      "Blackbird has spoken, like the first bird",
+      "Praise for the singing, praise for the morning",
+      "Praise for them springing fresh from the world"
     ]
   },
   {
@@ -2280,6 +2546,37 @@
       "[D]See how we go moving as one, marching at His command.",
       "[D]Five colors shine in the ranks, every people, every race of man.",
       "[D]We'll shake the heavens and earth, with our victory song."
+    ]
+  },
+  {
+    "id": "the-rose",
+    "title": "The Rose",
+    "key": "D",
+    "sections": [
+      "[D]Some say love, it is a [A7]river",
+      "[G]That drowns the [A7]tender [D]reed",
+      "[A7]Some say love, it is a razor",
+      "[G]That leaves your [A7]soul to [D]bleed",
+      "[F#m]Some say love, it is a [Bm]hunger",
+      "[G]An endless aching [A7]need",
+      "[D]I say love, it is a [A7]flower",
+      "[G]And you, its [A7]only [D]seed",
+      "It's the heart afraid of breaking",
+      "That never learns to dance",
+      "It's the dream afraid of waking",
+      "That never takes the chance",
+      "It's the one who won't be taking",
+      "Who cannot seem to give",
+      "And the soul, afraid of dying",
+      "That never learns to live",
+      "When the night has been too lonely",
+      "And the road has been too long",
+      "And you think that love is only",
+      "For the lucky and the strong",
+      "Just remember in the winter",
+      "Far beneath the bitter snows",
+      "Lies the seed that with the sun's love",
+      "In the spring becomes the rose"
     ]
   },
   {
