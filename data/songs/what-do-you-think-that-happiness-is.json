@@ -1,0 +1,316 @@
+{
+  "id": "what-do-you-think-that-happiness-is",
+  "title": "What Do You Think That Happiness Is?",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "\"What do you think that happiness is?\""
+            }
+          ],
+          "raw": "[D]\"What do you think that happiness is?\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "So I brought my question to the stars."
+            }
+          ],
+          "raw": "[Bm]So I brought my question to the stars."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "\"Most important is for people to be friends,\""
+            }
+          ],
+          "raw": "[G]\"Most important is for people to be friends,\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Said the stars with one accord."
+            }
+          ],
+          "raw": "[A7]Said the stars with one accord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "\"Shining sun is at the center of us all;"
+            }
+          ],
+          "raw": "[A7]\"Shining sun is at the center of us all;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Twinkling the nine of us go round the sun,"
+            }
+          ],
+          "raw": "[D]Twinkling the nine of us go round the sun,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "And the light of Love is given to us all; this we know is happiness\""
+            }
+          ],
+          "raw": "[Bm]And the light of Love is given to us all; this we know is happiness\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "\"What do you think that happiness is?\""
+            }
+          ],
+          "raw": "[D]\"What do you think that happiness is?\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Now I asked the flowers to respond."
+            }
+          ],
+          "raw": "[Bm]Now I asked the flowers to respond."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "\"We compete in sharing beauty all around,\""
+            }
+          ],
+          "raw": "[G]\"We compete in sharing beauty all around,\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Was the answer of the rose."
+            }
+          ],
+          "raw": "[A7]Was the answer of the rose."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "\"Dressing with care in red and white and yellow robes,"
+            }
+          ],
+          "raw": "[A7]\"Dressing with care in red and white and yellow robes,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Every blossom is a joy to see;"
+            }
+          ],
+          "raw": "[D]Every blossom is a joy to see;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "So when people say how beautiful we are, this we know is happiness.\""
+            }
+          ],
+          "raw": "[Bm]So when people say how beautiful we are, this we know is happiness.\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "\"What do you think that happiness is?\""
+            }
+          ],
+          "raw": "[D]\"What do you think that happiness is?\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Now I asked the busy meadowlarks."
+            }
+          ],
+          "raw": "[Bm]Now I asked the busy meadowlarks."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "\"We delight in flying high and very far,\""
+            }
+          ],
+          "raw": "[G]\"We delight in flying high and very far,\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Sang the larks in joyful song."
+            }
+          ],
+          "raw": "[A7]Sang the larks in joyful song."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "\"Though we're soaring ever higher than before,"
+            }
+          ],
+          "raw": "[A7]\"Though we're soaring ever higher than before,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Sky is above us even higher still;"
+            }
+          ],
+          "raw": "[D]Sky is above us even higher still;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "So forever we'll discover greater heights; this we know is happiness.\""
+            }
+          ],
+          "raw": "[Bm]So forever we'll discover greater heights; this we know is happiness.\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "\"What do you think that happiness is?\""
+            }
+          ],
+          "raw": "[D]\"What do you think that happiness is?\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "So I asked a flock of gentle sheep."
+            }
+          ],
+          "raw": "[Bm]So I asked a flock of gentle sheep."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "\"Joy is searching for and following the Lord,\""
+            }
+          ],
+          "raw": "[G]\"Joy is searching for and following the Lord,\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Said the sheep in soft reply."
+            }
+          ],
+          "raw": "[A7]Said the sheep in soft reply."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "\"Should the wolves be creeping over to attack,"
+            }
+          ],
+          "raw": "[A7]\"Should the wolves be creeping over to attack,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We only listen to the Shepherd's voice."
+            }
+          ],
+          "raw": "[D]We only listen to the Shepherd's voice."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Our Lord gives to us security and calm; this we know is happiness.\""
+            }
+          ],
+          "raw": "[Bm]Our Lord gives to us security and calm; this we know is happiness.\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/what-do-you-think-that-happiness-is.pro",
+  "source": "{title: What Do You Think That Happiness Is?}\n{key: D}\n\n{section: Verse 1}\n[D]\"What do you think that happiness is?\"\n[Bm]So I brought my question to the stars.\n[G]\"Most important is for people to be friends,\"\n[A7]Said the stars with one accord.\n[A7]\"Shining sun is at the center of us all;\n[D]Twinkling the nine of us go round the sun,\n[Bm]And the light of Love is given to us all; this we know is happiness\"\n\n{{section: Verse 2}\n[D]\"What do you think that happiness is?\"\n[Bm]Now I asked the flowers to respond.\n[G]\"We compete in sharing beauty all around,\"\n[A7]Was the answer of the rose.\n[A7]\"Dressing with care in red and white and yellow robes,\n[D]Every blossom is a joy to see;\n[Bm]So when people say how beautiful we are, this we know is happiness.\"\n\n{{section: Verse 3}\n[D]\"What do you think that happiness is?\"\n[Bm]Now I asked the busy meadowlarks.\n[G]\"We delight in flying high and very far,\"\n[A7]Sang the larks in joyful song.\n[A7]\"Though we're soaring ever higher than before,\n[D]Sky is above us even higher still;\n[Bm]So forever we'll discover greater heights; this we know is happiness.\"\n\n{{section: Verse 4}\n[D]\"What do you think that happiness is?\"\n[Bm]So I asked a flock of gentle sheep.\n[G]\"Joy is searching for and following the Lord,\"\n[A7]Said the sheep in soft reply.\n[A7]\"Should the wolves be creeping over to attack,\n[D]We only listen to the Shepherd's voice.\n[Bm]Our Lord gives to us security and calm; this we know is happiness.\"\n"
+}

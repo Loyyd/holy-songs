@@ -1,0 +1,195 @@
+{
+  "id": "i-saw-the-light",
+  "title": "I Saw The Light",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I saw the light, I "
+            },
+            {
+              "chord": "G7",
+              "lyric": "saw the light,"
+            }
+          ],
+          "raw": "[G]I saw the light, I [G7]saw the light,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "No more darkness, "
+            },
+            {
+              "chord": "G",
+              "lyric": "no more night."
+            }
+          ],
+          "raw": "[C]No more darkness, [G]no more night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Now I’m so happy, no sorrow in sight"
+            }
+          ],
+          "raw": "[Em]Now I’m so happy, no sorrow in sight"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Praise the Lord, I "
+            },
+            {
+              "chord": "D7",
+              "lyric": "saw the "
+            },
+            {
+              "chord": "G",
+              "lyric": "light."
+            }
+          ],
+          "raw": "[G]Praise the Lord, I [D7]saw the [G]light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I was a wanderer, "
+            },
+            {
+              "chord": "G7",
+              "lyric": "sinking in sin,"
+            }
+          ],
+          "raw": "[G]I was a wanderer, [G7]sinking in sin,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I wouldn't let my dear "
+            },
+            {
+              "chord": "G",
+              "lyric": "saviour in."
+            }
+          ],
+          "raw": "[C]I wouldn't let my dear [G]saviour in."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Then Jesus came like a "
+            },
+            {
+              "chord": "Em",
+              "lyric": "stranger in the night."
+            }
+          ],
+          "raw": "[G]Then Jesus came like a [Em]stranger in the night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Praise the Lord, I "
+            },
+            {
+              "chord": "D7",
+              "lyric": "saw the light."
+            }
+          ],
+          "raw": "[G]Praise the Lord, I [D7]saw the light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Well, just like a blind man, I wandered alone,"
+            }
+          ],
+          "raw": "Well, just like a blind man, I wandered alone,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Worries and fears I claimed for my own."
+            }
+          ],
+          "raw": "Worries and fears I claimed for my own."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Then like a blind man, that God gave back his sight,"
+            }
+          ],
+          "raw": "Then like a blind man, that God gave back his sight,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Praise the Lord, I saw the light."
+            }
+          ],
+          "raw": "Praise the Lord, I saw the light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/i-saw-the-light.pro",
+  "source": "{title: I Saw The Light}\n{key: G}\n\n{section: Chorus}\n[G]I saw the light, I [G7]saw the light,\n[C]No more darkness, [G]no more night.\n[Em]Now I’m so happy, no sorrow in sight\n[G]Praise the Lord, I [D7]saw the [G]light.\n\n[G]I was a wanderer, [G7]sinking in sin,\n[C]I wouldn't let my dear [G]saviour in.\n[G]Then Jesus came like a [Em]stranger in the night.\n[G]Praise the Lord, I [D7]saw the light.\n\nWell, just like a blind man, I wandered alone,\nWorries and fears I claimed for my own.\nThen like a blind man, that God gave back his sight,\nPraise the Lord, I saw the light.\n"
+}

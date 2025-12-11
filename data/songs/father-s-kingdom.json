@@ -1,0 +1,273 @@
+{
+  "id": "father-s-kingdom",
+  "title": "Father's Kingdom",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We're on our way to the Father's Kingdom,"
+            }
+          ],
+          "raw": "[D]We're on our way to the Father's Kingdom,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "We're on our way to the promised land,"
+            }
+          ],
+          "raw": "[G]We're on our way to the promised land,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "He's going to lead you all to freedom,"
+            }
+          ],
+          "raw": "[D]He's going to lead you all to freedom,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "We'll pray and take Him by the hand."
+            }
+          ],
+          "raw": "[A7]We'll pray and take Him by the hand."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "From the beginning to the ending,"
+            }
+          ],
+          "raw": "[D]From the beginning to the ending,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "From the last moment to the start,"
+            }
+          ],
+          "raw": "[G]From the last moment to the start,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "God has been pouring out His spirit,"
+            }
+          ],
+          "raw": "[D]God has been pouring out His spirit,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "He has been calling from His heart."
+            }
+          ],
+          "raw": "[A7]He has been calling from His heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "So every man shall meet his father"
+            }
+          ],
+          "raw": "[D]So every man shall meet his father"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "As from a seed will grow a tree,"
+            }
+          ],
+          "raw": "[G]As from a seed will grow a tree,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "So from the darkness comes the daylight"
+            }
+          ],
+          "raw": "[D]So from the darkness comes the daylight"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "When blinded men shall learn to see."
+            }
+          ],
+          "raw": "[A7]When blinded men shall learn to see."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Blue, red and gold and every color,"
+            }
+          ],
+          "raw": "[D]Blue, red and gold and every color,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Blue, red and gold and every day,"
+            }
+          ],
+          "raw": "[G]Blue, red and gold and every day,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Waking at dawn we see the sunlight"
+            }
+          ],
+          "raw": "[D]Waking at dawn we see the sunlight"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Spread down the path a yellow ray."
+            }
+          ],
+          "raw": "[A7]Spread down the path a yellow ray."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Give me your hand and we'll go forward"
+            }
+          ],
+          "raw": "[D]Give me your hand and we'll go forward"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Into a new world full of joy"
+            }
+          ],
+          "raw": "[G]Into a new world full of joy"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Bring down the curtains on the old world"
+            }
+          ],
+          "raw": "[D]Bring down the curtains on the old world"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "True love for every girl and boy."
+            }
+          ],
+          "raw": "[A7]True love for every girl and boy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/fathers-kingdom.pro",
+  "source": "{title: Father's Kingdom}\n{key: D}\n\n{section: Chorus}\n[D]We're on our way to the Father's Kingdom,\n[G]We're on our way to the promised land,\n[D]He's going to lead you all to freedom,\n[A7]We'll pray and take Him by the hand.\n\n{section: Verse 1}\n[D]From the beginning to the ending,\n[G]From the last moment to the start,\n[D]God has been pouring out His spirit,\n[A7]He has been calling from His heart.\n\n{section: Verse 2}\n[D]So every man shall meet his father\n[G]As from a seed will grow a tree,\n[D]So from the darkness comes the daylight\n[A7]When blinded men shall learn to see.\n\n{section: Verse 3}\n[D]Blue, red and gold and every color,\n[G]Blue, red and gold and every day,\n[D]Waking at dawn we see the sunlight\n[A7]Spread down the path a yellow ray.\n\n{section: Verse 4}\n[D]Give me your hand and we'll go forward\n[G]Into a new world full of joy\n[D]Bring down the curtains on the old world\n[A7]True love for every girl and boy.\n"
+}

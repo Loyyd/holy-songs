@@ -1,0 +1,127 @@
+{
+  "id": "till-all-my-people-are-one",
+  "title": "'Till All My People Are One",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Help each other in all that you do"
+            }
+          ],
+          "raw": "[C]Help each other in all that you do"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "'Till all my people are one."
+            }
+          ],
+          "raw": "[F]'Till all my people are one."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Spread the peace, my brothers; spread it everywhere;"
+            }
+          ],
+          "raw": "[Am]Spread the peace, my brothers; spread it everywhere;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Help the world know right from wrong; help the world to care."
+            }
+          ],
+          "raw": "[Em]Help the world know right from wrong; help the world to care."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Open your hearts, my brothers; lend a willing hand;"
+            }
+          ],
+          "raw": "[C]Open your hearts, my brothers; lend a willing hand;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Show the lonely and the poor that God is in our land."
+            }
+          ],
+          "raw": "[F]Show the lonely and the poor that God is in our land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Sing out the joy of living; sing your song on high;"
+            }
+          ],
+          "raw": "[Am]Sing out the joy of living; sing your song on high;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "The truth of mankind is that he's born to live, not die."
+            }
+          ],
+          "raw": "[Em]The truth of mankind is that he's born to live, not die."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/till-all-my-people-are-one.pro",
+  "source": "{title: 'Till All My People Are One}\n{key: C}\n\n{section: Chorus}\n[C]Help each other in all that you do\n[F]'Till all my people are one.\n\n{{section: Verse 1}\n[Am]Spread the peace, my brothers; spread it everywhere;\n[Em]Help the world know right from wrong; help the world to care.\n[C]Open your hearts, my brothers; lend a willing hand;\n[F]Show the lonely and the poor that God is in our land.\n\n{{section: Verse 2}\n[Am]Sing out the joy of living; sing your song on high;\n[Em]The truth of mankind is that he's born to live, not die.\n"
+}

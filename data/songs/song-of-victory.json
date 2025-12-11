@@ -1,0 +1,385 @@
+{
+  "id": "song-of-victory",
+  "title": "Song of Victory",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Sing Hosannas evermore!"
+            }
+          ],
+          "raw": "[F]Sing Hosannas evermore!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Sing of glory evermore!"
+            }
+          ],
+          "raw": "[C7]Sing of glory evermore!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "For the Lord has come again,"
+            }
+          ],
+          "raw": "[F7]For the Lord has come again,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Sing Hosannas evermore!"
+            }
+          ],
+          "raw": "[Bb]Sing Hosannas evermore!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Heaven dances at the sound,"
+            }
+          ],
+          "raw": "[F]Heaven dances at the sound,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "All His angels whirl around."
+            }
+          ],
+          "raw": "[A]All His angels whirl around."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "All creation joining in,"
+            }
+          ],
+          "raw": "[Dm]All creation joining in,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Dances at the joyful "
+            },
+            {
+              "chord": "C7",
+              "lyric": "sound."
+            }
+          ],
+          "raw": "[Bb]Dances at the joyful [C7]sound."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "See the new Jerusalem,"
+            }
+          ],
+          "raw": "[F]See the new Jerusalem,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Coming now upon the earth."
+            }
+          ],
+          "raw": "[C7]Coming now upon the earth."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "For the day is here at last,"
+            }
+          ],
+          "raw": "[F7]For the day is here at last,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Now the Lord is come at "
+            },
+            {
+              "chord": "F",
+              "lyric": "last."
+            }
+          ],
+          "raw": "[Bb]Now the Lord is come at [F]last."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Brightly burn O Fire of Faith!"
+            }
+          ],
+          "raw": "[F]Brightly burn O Fire of Faith!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Burn so brightly everywhere."
+            }
+          ],
+          "raw": "[C7]Burn so brightly everywhere."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "Light of hope, burn today,"
+            }
+          ],
+          "raw": "[F7]Light of hope, burn today,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Kindling every faithful heart."
+            }
+          ],
+          "raw": "[Bb]Kindling every faithful heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Land of Egypt, land of woe,"
+            }
+          ],
+          "raw": "[F]Land of Egypt, land of woe,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Waiting for the Lord's return."
+            }
+          ],
+          "raw": "[C7]Waiting for the Lord's return."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "Soon the day will come at last,"
+            }
+          ],
+          "raw": "[F7]Soon the day will come at last,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "When the Rose of Sharon blooms."
+            }
+          ],
+          "raw": "[Bb]When the Rose of Sharon blooms."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "March along, march along,"
+            }
+          ],
+          "raw": "[F]March along, march along,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Have no fear, but march along;"
+            }
+          ],
+          "raw": "[C7]Have no fear, but march along;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "For you go to victory,"
+            }
+          ],
+          "raw": "[F7]For you go to victory,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Heaven's soldiers, march "
+            },
+            {
+              "chord": "F",
+              "lyric": "along."
+            }
+          ],
+          "raw": "[Bb]Heaven's soldiers, march [F]along."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 7",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Praise the Lord, O praise the Lord!"
+            }
+          ],
+          "raw": "[F]Praise the Lord, O praise the Lord!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Praise the glorious Lord of all,"
+            }
+          ],
+          "raw": "[C7]Praise the glorious Lord of all,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "To the Lord of truth and love,"
+            }
+          ],
+          "raw": "[F7]To the Lord of truth and love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Sing to Him eternal praise."
+            }
+          ],
+          "raw": "[Bb]Sing to Him eternal praise."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/song-of-victory.pro",
+  "source": "{title: Song of Victory}\n{key: F}\n\n{section: Verse 1}\n[F]Sing Hosannas evermore!\n[C7]Sing of glory evermore!\n[F7]For the Lord has come again,\n[Bb]Sing Hosannas evermore!\n\n{section: Verse 2}\n[F]Heaven dances at the sound,\n[A]All His angels whirl around.\n[Dm]All creation joining in,\n[Bb]Dances at the joyful [C7]sound.\n\n{section: Verse 3}\n[F]See the new Jerusalem,\n[C7]Coming now upon the earth.\n[F7]For the day is here at last,\n[Bb]Now the Lord is come at [F]last.\n\n{section: Verse 4}\n[F]Brightly burn O Fire of Faith!\n[C7]Burn so brightly everywhere.\n[F7]Light of hope, burn today,\n[Bb]Kindling every faithful heart.\n\n{section: Verse 5}\n[F]Land of Egypt, land of woe,\n[C7]Waiting for the Lord's return.\n[F7]Soon the day will come at last,\n[Bb]When the Rose of Sharon blooms.\n\n{section: Verse 6}\n[F]March along, march along,\n[C7]Have no fear, but march along;\n[F7]For you go to victory,\n[Bb]Heaven's soldiers, march [F]along.\n\n{section: Verse 7}\n[F]Praise the Lord, O praise the Lord!\n[C7]Praise the glorious Lord of all,\n[F7]To the Lord of truth and love,\n[Bb]Sing to Him eternal praise.\n"
+}

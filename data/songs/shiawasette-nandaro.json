@@ -1,0 +1,303 @@
+{
+  "id": "shiawasette-nandaro",
+  "title": "Shiawasette Nandaro",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Shiawasette nandaro, hoshi ni tazunete mita"
+            }
+          ],
+          "raw": "[D]Shiawasette nandaro, hoshi ni tazunete mita"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Minna nakayoku suru koto sa, hoshi wa kotaeta"
+            }
+          ],
+          "raw": "[Bm]Minna nakayoku suru koto sa, hoshi wa kotaeta"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Okina ohisama nakanishite"
+            }
+          ],
+          "raw": "[G]Okina ohisama nakanishite"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "G D Bm"
+            }
+          ],
+          "raw": "[A7]G D Bm"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Ai no hikari o ukenagara"
+            }
+          ],
+          "raw": "[G]Ai no hikari o ukenagara"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Sore ga shiawase."
+            }
+          ],
+          "raw": "[A7]Sore ga shiawase."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Shiawasette nandaro, Hana ni tazunete mita"
+            }
+          ],
+          "raw": "[D]Shiawasette nandaro, Hana ni tazunete mita"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Utsukushisa o kisou koto sa, Hana wa kotaeta"
+            }
+          ],
+          "raw": "[Bm]Utsukushisa o kisou koto sa, Hana wa kotaeta"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Aka shiro kiiro ni yosootte"
+            }
+          ],
+          "raw": "[G]Aka shiro kiiro ni yosootte"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Dono haha mite mo kawai"
+            }
+          ],
+          "raw": "[A7]Dono haha mite mo kawai"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Daiji na hana to iwarereba"
+            }
+          ],
+          "raw": "[D]Daiji na hana to iwarereba"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Sore ga shiawase."
+            }
+          ],
+          "raw": "[Bm]Sore ga shiawase."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Shiawasette nandaro, Hibari ni kiite mita"
+            }
+          ],
+          "raw": "[G]Shiawasette nandaro, Hibari ni kiite mita"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Takaku haruka ni tobukoto sa, Hibari wa naita"
+            }
+          ],
+          "raw": "[A7]Takaku haruka ni tobukoto sa, Hibari wa naita"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Donna ni takaku tobo tomo"
+            }
+          ],
+          "raw": "[D]Donna ni takaku tobo tomo"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Osora no hate wa tooi"
+            }
+          ],
+          "raw": "[Bm]Osora no hate wa tooi"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Mada mada ueniya sora ga aru"
+            }
+          ],
+          "raw": "[G]Mada mada ueniya sora ga aru"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Sore ga shiawase."
+            }
+          ],
+          "raw": "[A7]Sore ga shiawase."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Shiawasette nandaro, Hitsuji ni kiite mita"
+            }
+          ],
+          "raw": "[D]Shiawasette nandaro, Hitsuji ni kiite mita"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Nushi o sagashite yuka koto sa, Hitsuji wa naita"
+            }
+          ],
+          "raw": "[Bm]Nushi o sagashite yuka koto sa, Hitsuji wa naita"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Ookami domo ga osotte mo"
+            }
+          ],
+          "raw": "[G]Ookami domo ga osotte mo"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Kainushi san no koe ni"
+            }
+          ],
+          "raw": "[A7]Kainushi san no koe ni"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Mimi o mukete rya anshin sa"
+            }
+          ],
+          "raw": "[D]Mimi o mukete rya anshin sa"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Sore ga shiawase."
+            }
+          ],
+          "raw": "[Bm]Sore ga shiawase."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/shiawasette-nandaro.pro",
+  "source": "{title: Shiawasette Nandaro}\n{key: D}\n\n{section: Verse 1}\n[D]Shiawasette nandaro, hoshi ni tazunete mita\n[Bm]Minna nakayoku suru koto sa, hoshi wa kotaeta\n[G]Okina ohisama nakanishite\n[A7]G D Bm\n[G]Ai no hikari o ukenagara\n[A7]Sore ga shiawase.\n\n{section: Verse 2}\n[D]Shiawasette nandaro, Hana ni tazunete mita\n[Bm]Utsukushisa o kisou koto sa, Hana wa kotaeta\n[G]Aka shiro kiiro ni yosootte\n[A7]Dono haha mite mo kawai\n\n{{section: Verse 3}\n[D]Daiji na hana to iwarereba\n[Bm]Sore ga shiawase.\n[G]Shiawasette nandaro, Hibari ni kiite mita\n[A7]Takaku haruka ni tobukoto sa, Hibari wa naita\n\n{{section: Verse 4}\n[D]Donna ni takaku tobo tomo\n[Bm]Osora no hate wa tooi\n[G]Mada mada ueniya sora ga aru\n[A7]Sore ga shiawase.\n\n{{section: Verse 5}\n[D]Shiawasette nandaro, Hitsuji ni kiite mita\n[Bm]Nushi o sagashite yuka koto sa, Hitsuji wa naita\n[G]Ookami domo ga osotte mo\n[A7]Kainushi san no koe ni\n\n{{section: Verse 6}\n[D]Mimi o mukete rya anshin sa\n[Bm]Sore ga shiawase.\n"
+}

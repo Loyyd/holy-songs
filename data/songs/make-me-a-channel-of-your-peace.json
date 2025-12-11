@@ -1,0 +1,240 @@
+{
+  "id": "make-me-a-channel-of-your-peace",
+  "title": "Make Me A Channel Of Your Peace",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Make me a channel of your peace"
+            }
+          ],
+          "raw": "[A]Make me a channel of your peace"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Where there is hatred let me bring your love"
+            }
+          ],
+          "raw": "[E]Where there is hatred let me bring your love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Where there is injury, your pardon Lord"
+            }
+          ],
+          "raw": "[Bm]Where there is injury, your pardon Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "And where there is doubt true faith in "
+            },
+            {
+              "chord": "A",
+              "lyric": "You"
+            }
+          ],
+          "raw": "[E]And where there is doubt true faith in [A]You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Oh, Master grant that I may never "
+            },
+            {
+              "chord": "A",
+              "lyric": "seek"
+            }
+          ],
+          "raw": "[D]Oh, Master grant that I may never [A]seek"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "So much to be consoled as to con"
+            },
+            {
+              "chord": "A",
+              "lyric": "sole "
+            },
+            {
+              "chord": "A7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[E]So much to be consoled as to con[A]sole [A7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "To be understood as to under"
+            },
+            {
+              "chord": "A",
+              "lyric": "stand"
+            }
+          ],
+          "raw": "[D]To be understood as to under[A]stand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "To be loved as to love with "
+            },
+            {
+              "chord": "B",
+              "lyric": "all my "
+            },
+            {
+              "chord": "E",
+              "lyric": "soul "
+            },
+            {
+              "chord": "E7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[E]To be loved as to love with [B]all my [E]soul [E7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Make me a channel of your peace"
+            }
+          ],
+          "raw": "Make me a channel of your peace"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Where there is despair in life let me bring hope"
+            }
+          ],
+          "raw": "Where there is despair in life let me bring hope"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Where there is darkness only light"
+            }
+          ],
+          "raw": "Where there is darkness only light"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And where there's sadness ever joy"
+            }
+          ],
+          "raw": "And where there's sadness ever joy"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Make me a channel of your peace"
+            }
+          ],
+          "raw": "Make me a channel of your peace"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It is in pardoning that we are pardoned"
+            }
+          ],
+          "raw": "It is in pardoning that we are pardoned"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It is in giving to all man that we receive"
+            }
+          ],
+          "raw": "It is in giving to all man that we receive"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And in dying that we are born to eternal life."
+            }
+          ],
+          "raw": "And in dying that we are born to eternal life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/make-me-a-channel-of-your-peace.pro",
+  "source": "{title: Make Me A Channel Of Your Peace}\n{key: A}\n\n[A]Make me a channel of your peace\n[E]Where there is hatred let me bring your love\n[Bm]Where there is injury, your pardon Lord\n[E]And where there is doubt true faith in [A]You\n\n{section: Chorus}\n[D]Oh, Master grant that I may never [A]seek\n[E]So much to be consoled as to con[A]sole [A7]\n[D]To be understood as to under[A]stand\n[E]To be loved as to love with [B]all my [E]soul [E7]\n\nMake me a channel of your peace\nWhere there is despair in life let me bring hope\nWhere there is darkness only light\nAnd where there's sadness ever joy\n\nMake me a channel of your peace\nIt is in pardoning that we are pardoned\nIt is in giving to all man that we receive\nAnd in dying that we are born to eternal life.\n"
+}

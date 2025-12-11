@@ -1,0 +1,241 @@
+{
+  "id": "come-back-home",
+  "title": "Come Back Home",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "There's a man I've read about, and they say he lives forever,"
+            }
+          ],
+          "raw": "[D]There's a man I've read about, and they say he lives forever,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "When this world was full of doubt"
+            }
+          ],
+          "raw": "[G]When this world was full of doubt"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "He came and brought the world together."
+            }
+          ],
+          "raw": "[D]He came and brought the world together."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Then he left us on our own,"
+            }
+          ],
+          "raw": "[A7]Then he left us on our own,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And it's time again for him to come back home."
+            }
+          ],
+          "raw": "[G]And it's time again for him to come back home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Come back home, make the streams flow to the valleys,"
+            }
+          ],
+          "raw": "[A7]Come back home, make the streams flow to the valleys,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "And take away the clouds that hide the sun."
+            }
+          ],
+          "raw": "[D]And take away the clouds that hide the sun."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Come back home, teach each man to love his neighbor,"
+            }
+          ],
+          "raw": "[G]Come back home, teach each man to love his neighbor,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "And give us one more chance to right the wrongs we've done."
+            }
+          ],
+          "raw": "[F#m]And give us one more chance to right the wrongs we've done."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "If only for the children come back home."
+            }
+          ],
+          "raw": "[Em]If only for the children come back home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "You gave us trees, we've cut them down"
+            }
+          ],
+          "raw": "[C]You gave us trees, we've cut them down"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Skies of blue, we've made them hazy"
+            }
+          ],
+          "raw": "[A7]Skies of blue, we've made them hazy"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "The lakes and streams are dark and cold"
+            }
+          ],
+          "raw": "[D]The lakes and streams are dark and cold"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "And it's time again for him to come back home"
+            }
+          ],
+          "raw": "[Bm]And it's time again for him to come back home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Cause our time is running out"
+            }
+          ],
+          "raw": "[G]Cause our time is running out"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "And the world is slowly dying"
+            }
+          ],
+          "raw": "[A7]And the world is slowly dying"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "The things we've done have all gone wrong"
+            }
+          ],
+          "raw": "[D]The things we've done have all gone wrong"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And it's time again for him to come back home"
+            }
+          ],
+          "raw": "[G]And it's time again for him to come back home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/come-back-home.pro",
+  "source": "{title: Come Back Home}\n{key: D}\n\n{section: Verse 1}\n[D]There's a man I've read about, and they say he lives forever,\n[G]When this world was full of doubt\n[D]He came and brought the world together.\n[A7]Then he left us on our own,\n[G]And it's time again for him to come back home.\n\n{section: Chorus}\n[A7]Come back home, make the streams flow to the valleys,\n[D]And take away the clouds that hide the sun.\n[G]Come back home, teach each man to love his neighbor,\n[F#m]And give us one more chance to right the wrongs we've done.\n[Em]If only for the children come back home.\n\n{section: Verse 2}\n[C]You gave us trees, we've cut them down\n[A7]Skies of blue, we've made them hazy\n[D]The lakes and streams are dark and cold\n[Bm]And it's time again for him to come back home\n\n{section: Verse 3}\n[G]Cause our time is running out\n[A7]And the world is slowly dying\n[D]The things we've done have all gone wrong\n[G]And it's time again for him to come back home\n"
+}

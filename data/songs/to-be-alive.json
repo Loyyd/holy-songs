@@ -1,0 +1,253 @@
+{
+  "id": "to-be-alive",
+  "title": "To Be Alive",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "To be alive and feeling free,"
+            }
+          ],
+          "raw": "[D]To be alive and feeling free,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And to have everyone in our Family"
+            }
+          ],
+          "raw": "[G]And to have everyone in our Family"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "To be alive in every way!"
+            }
+          ],
+          "raw": "[D]To be alive in every way!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Oh, how great it is to be alive!"
+            }
+          ],
+          "raw": "[Bm]Oh, how great it is to be alive!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Every day there's a newness,"
+            }
+          ],
+          "raw": "[D]Every day there's a newness,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Something else to do."
+            }
+          ],
+          "raw": "[C]Something else to do."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The dawn of life is upon us,"
+            }
+          ],
+          "raw": "[G]The dawn of life is upon us,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "So let the gladness ring through!"
+            }
+          ],
+          "raw": "[A]So let the gladness ring through!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Wake up to a new sunshine;"
+            }
+          ],
+          "raw": "[D]Wake up to a new sunshine;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Darkness no longer stays,"
+            }
+          ],
+          "raw": "[C]Darkness no longer stays,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "For the new generation"
+            }
+          ],
+          "raw": "[G]For the new generation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Will light the world today!"
+            }
+          ],
+          "raw": "[A]Will light the world today!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Tell the whole population,"
+            }
+          ],
+          "raw": "[D]Tell the whole population,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "The time has now arrived."
+            }
+          ],
+          "raw": "[C]The time has now arrived."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "We must learn the sensation"
+            }
+          ],
+          "raw": "[G]We must learn the sensation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "That comes with being alive!"
+            }
+          ],
+          "raw": "[A]That comes with being alive!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Ring the bell of new freedom;"
+            }
+          ],
+          "raw": "[D]Ring the bell of new freedom;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Teach your brother to live."
+            }
+          ],
+          "raw": "[C]Teach your brother to live."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "For the real joy of living"
+            }
+          ],
+          "raw": "[G]For the real joy of living"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Is something we can now give!"
+            }
+          ],
+          "raw": "[A]Is something we can now give!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/to-be-alive.pro",
+  "source": "{title: To Be Alive}\n{key: D}\n\n{section: Chorus}\n[D]To be alive and feeling free,\n[G]And to have everyone in our Family\n[D]To be alive in every way!\n[Bm]Oh, how great it is to be alive!\n\n{{section: Verse 1}\n[D]Every day there's a newness,\n[C]Something else to do.\n[G]The dawn of life is upon us,\n[A]So let the gladness ring through!\n\n{{section: Verse 2}\n[D]Wake up to a new sunshine;\n[C]Darkness no longer stays,\n[G]For the new generation\n[A]Will light the world today!\n\n{{section: Verse 3}\n[D]Tell the whole population,\n[C]The time has now arrived.\n[G]We must learn the sensation\n[A]That comes with being alive!\n\n{{section: Verse 4}\n[D]Ring the bell of new freedom;\n[C]Teach your brother to live.\n[G]For the real joy of living\n[A]Is something we can now give!\n"
+}

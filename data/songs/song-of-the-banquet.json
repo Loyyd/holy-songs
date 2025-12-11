@@ -1,0 +1,301 @@
+{
+  "id": "song-of-the-banquet",
+  "title": "Song of the Banquet",
+  "key": "Bb",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Pure new life that once was sown within the Garden's fertile soil,"
+            }
+          ],
+          "raw": "[Bb]Pure new life that once was sown within the Garden's fertile soil,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Sprouting seed has now become a blossom of heavenly loveliness."
+            }
+          ],
+          "raw": "[Eb]Sprouting seed has now become a blossom of heavenly loveliness."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Father above, Lord of all, shower your blessing upon"
+            }
+          ],
+          "raw": "[Cm]Father above, Lord of all, shower your blessing upon"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "This holy day, bond of love forever more!"
+            }
+          ],
+          "raw": "[F7]This holy day, bond of love forever more!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Hal-le-lu-jah, Glorious Day of Joy!"
+            }
+          ],
+          "raw": "[Bb]Hal-le-lu-jah, Glorious Day of Joy!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Fairest flowers of the meadow, tender buds of perfect form."
+            }
+          ],
+          "raw": "[Eb]Fairest flowers of the meadow, tender buds of perfect form."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Now receive the gift of life and dance in the joy of eternal spring"
+            }
+          ],
+          "raw": "[Gm]Now receive the gift of life and dance in the joy of eternal spring"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm7",
+              "lyric": "Heavenly host, men on earth, join us in praising this day;"
+            }
+          ],
+          "raw": "[Cm7]Heavenly host, men on earth, join us in praising this day;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "Bless us to share, love's communion faithfully,"
+            }
+          ],
+          "raw": "[F7]Bless us to share, love's communion faithfully,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Hallelujah, Glorious Day of Joy!"
+            }
+          ],
+          "raw": "[Bb]Hallelujah, Glorious Day of Joy!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Hushed we stand in awe before you, ready now to give our pledge,"
+            }
+          ],
+          "raw": "[Eb]Hushed we stand in awe before you, ready now to give our pledge,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "To attend and serve completely with an unchanging eternal love."
+            }
+          ],
+          "raw": "[D]To attend and serve completely with an unchanging eternal love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Glorious King, mighty God, fill with your blessed grace,"
+            }
+          ],
+          "raw": "[Gm]Glorious King, mighty God, fill with your blessed grace,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm7",
+              "lyric": "This dearest one; holy banquet of our love."
+            }
+          ],
+          "raw": "[Cm7]This dearest one; holy banquet of our love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "Hallelujah, Glorious Day of Joy!"
+            }
+          ],
+          "raw": "[F7]Hallelujah, Glorious Day of Joy!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Overflowing with your love as dawn proclaims eternal life,"
+            }
+          ],
+          "raw": "[Bb]Overflowing with your love as dawn proclaims eternal life,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Earth and heaven come surround the glorious Parents of mankind,"
+            }
+          ],
+          "raw": "[Eb]Earth and heaven come surround the glorious Parents of mankind,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Gather around, sing the song, fragrant the love of the Lord;"
+            }
+          ],
+          "raw": "[Gm]Gather around, sing the song, fragrant the love of the Lord;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 7",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm7",
+              "lyric": "Tell all the world, Spring has come eternally!"
+            }
+          ],
+          "raw": "[Cm7]Tell all the world, Spring has come eternally!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "Hallelujah, Glorious Day of Joy!"
+            }
+          ],
+          "raw": "[F7]Hallelujah, Glorious Day of Joy!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/song-of-the-banquet.pro",
+  "source": "{title: Song of the Banquet}\n{key: Bb}\n\n{section: Verse 1}\n[Bb]Pure new life that once was sown within the Garden's fertile soil,\n[Eb]Sprouting seed has now become a blossom of heavenly loveliness.\n[Cm]Father above, Lord of all, shower your blessing upon\n[F7]This holy day, bond of love forever more!\n\n{section: Verse 2}\n[Bb]Hal-le-lu-jah, Glorious Day of Joy!\n[Eb]Fairest flowers of the meadow, tender buds of perfect form.\n[Gm]Now receive the gift of life and dance in the joy of eternal spring\n\n{section: Verse 3}\n[Cm7]Heavenly host, men on earth, join us in praising this day;\n[F7]Bless us to share, love's communion faithfully,\n[Bb]Hallelujah, Glorious Day of Joy!\n\n{section: Verse 4}\n[Eb]Hushed we stand in awe before you, ready now to give our pledge,\n[D]To attend and serve completely with an unchanging eternal love.\n[Gm]Glorious King, mighty God, fill with your blessed grace,\n\n{section: Verse 5}\n[Cm7]This dearest one; holy banquet of our love.\n[F7]Hallelujah, Glorious Day of Joy!\n\n{section: Verse 6}\n[Bb]Overflowing with your love as dawn proclaims eternal life,\n[Eb]Earth and heaven come surround the glorious Parents of mankind,\n[Gm]Gather around, sing the song, fragrant the love of the Lord;\n\n{section: Verse 7}\n[Cm7]Tell all the world, Spring has come eternally!\n[F7]Hallelujah, Glorious Day of Joy!\n"
+}

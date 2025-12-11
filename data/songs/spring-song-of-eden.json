@@ -1,0 +1,287 @@
+{
+  "id": "spring-song-of-eden",
+  "title": "Spring Song of Eden",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Come, O ye "
+            },
+            {
+              "chord": "Gm",
+              "lyric": "friends, to the "
+            },
+            {
+              "chord": "Am",
+              "lyric": "Garden of "
+            },
+            {
+              "chord": "G",
+              "lyric": "Eden,"
+            }
+          ],
+          "raw": "[C]Come, O ye [Gm]friends, to the [Am]Garden of [G]Eden,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Where the spring "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "blossoms are "
+            },
+            {
+              "chord": "G7",
+              "lyric": "best;"
+            }
+          ],
+          "raw": "[C]Where the spring [Dm]blossoms are [G7]best;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Joyfully "
+            },
+            {
+              "chord": "Em",
+              "lyric": "singing to"
+            },
+            {
+              "chord": "Dm",
+              "lyric": "gether our "
+            },
+            {
+              "chord": "Em",
+              "lyric": "song,"
+            }
+          ],
+          "raw": "[Dm]Joyfully [Em]singing to[Dm]gether our [Em]song,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Friends in our Eden re"
+            },
+            {
+              "chord": "G",
+              "lyric": "gained,"
+            }
+          ],
+          "raw": "[Am]Friends in our Eden re[G]gained,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Here in the "
+            },
+            {
+              "chord": "Em",
+              "lyric": "Garden to"
+            },
+            {
+              "chord": "Am",
+              "lyric": "gether we'll "
+            },
+            {
+              "chord": "Em",
+              "lyric": "meet,"
+            }
+          ],
+          "raw": "[Am]Here in the [Em]Garden to[Am]gether we'll [Em]meet,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Singing new "
+            },
+            {
+              "chord": "Em",
+              "lyric": "songs of "
+            },
+            {
+              "chord": "G7",
+              "lyric": "joy. "
+            },
+            {
+              "chord": "C",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]Singing new [Em]songs of [G7]joy. [C]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come, O ye friends, to the Garden of Eden,"
+            }
+          ],
+          "raw": "Come, O ye friends, to the Garden of Eden,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Singing new songs of delight;"
+            }
+          ],
+          "raw": "Singing new songs of delight;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Joyfully dancing together with song,"
+            }
+          ],
+          "raw": "Joyfully dancing together with song,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Friends in our Eden rejoice,"
+            }
+          ],
+          "raw": "Friends in our Eden rejoice,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here in the Garden together we'll dance,"
+            }
+          ],
+          "raw": "Here in the Garden together we'll dance,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Singing new songs of joy."
+            }
+          ],
+          "raw": "Singing new songs of joy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come, O ye friends, to the Garden of Eden,"
+            }
+          ],
+          "raw": "Come, O ye friends, to the Garden of Eden,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Where joy and happiness reign;"
+            }
+          ],
+          "raw": "Where joy and happiness reign;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Joyfully sharing together our love,"
+            }
+          ],
+          "raw": "Joyfully sharing together our love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here in the garden of peace;"
+            }
+          ],
+          "raw": "Here in the garden of peace;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come, ye, O come to the Garden my friends,"
+            }
+          ],
+          "raw": "Come, ye, O come to the Garden my friends,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Singing new songs of joy."
+            }
+          ],
+          "raw": "Singing new songs of joy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/spring-song-of-eden.pro",
+  "source": "{title: Spring Song of Eden}\n{key: C}\n\n{section: Verse 1}\n[C]Come, O ye [Gm]friends, to the [Am]Garden of [G]Eden,\n[C]Where the spring [Dm]blossoms are [G7]best;\n[Dm]Joyfully [Em]singing to[Dm]gether our [Em]song,\n[Am]Friends in our Eden re[G]gained,\n[Am]Here in the [Em]Garden to[Am]gether we'll [Em]meet,\n[C]Singing new [Em]songs of [G7]joy. [C]\n\n{section: Verse 2}\nCome, O ye friends, to the Garden of Eden,\nSinging new songs of delight;\nJoyfully dancing together with song,\nFriends in our Eden rejoice,\nHere in the Garden together we'll dance,\nSinging new songs of joy.\n\n{section: Verse 3}\nCome, O ye friends, to the Garden of Eden,\nWhere joy and happiness reign;\nJoyfully sharing together our love,\nHere in the garden of peace;\nCome, ye, O come to the Garden my friends,\nSinging new songs of joy.\n"
+}

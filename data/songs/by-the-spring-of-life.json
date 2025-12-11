@@ -1,0 +1,223 @@
+{
+  "id": "by-the-spring-of-life",
+  "title": "By the Spring of Life",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "We're marching to the blessed land of Canaan with delight,"
+            }
+          ],
+          "raw": "[G]We're marching to the blessed land of Canaan with delight,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "We're leaving all our heavy burdens here."
+            }
+          ],
+          "raw": "[C]We're leaving all our heavy burdens here."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "At last we are released and free from being slaves to sin,"
+            }
+          ],
+          "raw": "[A7]At last we are released and free from being slaves to sin,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "We're coming to the blessed spring of life."
+            }
+          ],
+          "raw": "[D7]We're coming to the blessed spring of life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Coming to the spring where living water flows;"
+            }
+          ],
+          "raw": "[G]Coming to the spring where living water flows;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "In glory we'll be living evermore."
+            }
+          ],
+          "raw": "[C]In glory we'll be living evermore."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Going to the land where freely flows the spring,"
+            }
+          ],
+          "raw": "[G]Going to the land where freely flows the spring,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "In glory we'll be living evermore."
+            }
+          ],
+          "raw": "[G]In glory we'll be living evermore."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "O guide us with your pillars, Lord, of fire and of cloud,"
+            }
+          ],
+          "raw": "[D7]O guide us with your pillars, Lord, of fire and of cloud,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "O give us paths to follow with our lives."
+            }
+          ],
+          "raw": "[G]O give us paths to follow with our lives."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "The moment that we cross the Jordan River is at hand,"
+            }
+          ],
+          "raw": "[C]The moment that we cross the Jordan River is at hand,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "We're coming to the blessed spring of life."
+            }
+          ],
+          "raw": "[D7]We're coming to the blessed spring of life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Our thirsting hearts receive with joy the manna from above,"
+            }
+          ],
+          "raw": "[G]Our thirsting hearts receive with joy the manna from above,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Your precious food will always be our strength"
+            }
+          ],
+          "raw": "[C]Your precious food will always be our strength"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "So if the future finds us lacking we will not despair"
+            }
+          ],
+          "raw": "[A7]So if the future finds us lacking we will not despair"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "We're coming to the blessed spring of life."
+            }
+          ],
+          "raw": "[D7]We're coming to the blessed spring of life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/by-the-spring-of-life.pro",
+  "source": "{title: By the Spring of Life}\n{key: G}\n\n{section: Verse 1}\n[G]We're marching to the blessed land of Canaan with delight,\n[C]We're leaving all our heavy burdens here.\n[A7]At last we are released and free from being slaves to sin,\n[D7]We're coming to the blessed spring of life.\n\n{section: Chorus}\n[G]Coming to the spring where living water flows;\n[C]In glory we'll be living evermore.\n[G]Going to the land where freely flows the spring,\n[G]In glory we'll be living evermore.\n\n{section: Verse 2}\n[D7]O guide us with your pillars, Lord, of fire and of cloud,\n[G]O give us paths to follow with our lives.\n[C]The moment that we cross the Jordan River is at hand,\n[D7]We're coming to the blessed spring of life.\n\n{section: Verse 3}\n[G]Our thirsting hearts receive with joy the manna from above,\n[C]Your precious food will always be our strength\n[A7]So if the future finds us lacking we will not despair\n[D7]We're coming to the blessed spring of life.\n"
+}

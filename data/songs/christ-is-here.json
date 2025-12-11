@@ -1,0 +1,191 @@
+{
+  "id": "christ-is-here",
+  "title": "Christ Is Here",
+  "key": "Am",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "I want to sing, Alleluia."
+            }
+          ],
+          "raw": "[Am]I want to sing, Alleluia."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I want to sing, Alleluia."
+            }
+          ],
+          "raw": "[D]I want to sing, Alleluia."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Christ is here, Christ is here!"
+            }
+          ],
+          "raw": "[Am]Christ is here, Christ is here!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "I sought him in ashes, down long, narrow streets,"
+            }
+          ],
+          "raw": "[Am]I sought him in ashes, down long, narrow streets,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Down paths paved with sorrow."
+            }
+          ],
+          "raw": "[D]Down paths paved with sorrow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "But searching in sorrow, I found him in joy,"
+            }
+          ],
+          "raw": "[C]But searching in sorrow, I found him in joy,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Allelu!"
+            }
+          ],
+          "raw": "[E]Allelu!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "How many have fasted and prayed for this hour, But we have the blessing."
+            }
+          ],
+          "raw": "[Am]How many have fasted and prayed for this hour, But we have the blessing."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Of serving the Father through loving His son."
+            }
+          ],
+          "raw": "[D]Of serving the Father through loving His son."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Allelu!"
+            }
+          ],
+          "raw": "[Am]Allelu!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Lord, we are not worthy, we are not complete, And yet we are chosen."
+            }
+          ],
+          "raw": "[Am]Lord, we are not worthy, we are not complete, And yet we are chosen."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "How gladly I'll give Him my heart, hands and voice."
+            }
+          ],
+          "raw": "[D]How gladly I'll give Him my heart, hands and voice."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Allelu!"
+            }
+          ],
+          "raw": "[Am]Allelu!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/christ-is-here.pro",
+  "source": "{title: Christ Is Here}\n{key: Am}\n\n{section: Chorus}\n[Am]I want to sing, Alleluia.\n[D]I want to sing, Alleluia.\n[Am]Christ is here, Christ is here!\n\n{section: Verse 1}\n[Am]I sought him in ashes, down long, narrow streets,\n[D]Down paths paved with sorrow.\n[C]But searching in sorrow, I found him in joy,\n[E]Allelu!\n\n{section: Verse 2}\n[Am]How many have fasted and prayed for this hour, But we have the blessing.\n[D]Of serving the Father through loving His son.\n[Am]Allelu!\n\n{{section: Verse 3}\n[Am]Lord, we are not worthy, we are not complete, And yet we are chosen.\n[D]How gladly I'll give Him my heart, hands and voice.\n[Am]Allelu!\n"
+}

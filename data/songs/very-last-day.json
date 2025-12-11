@@ -1,0 +1,298 @@
+{
+  "id": "very-last-day",
+  "title": "Very Last Day",
+  "key": "Am",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Everybody's going to pray on the very last day,"
+            }
+          ],
+          "raw": "[Am]Everybody's going to pray on the very last day,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "When they hear that bell ring the world away."
+            }
+          ],
+          "raw": "[Em]When they hear that bell ring the world away."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Everybody's going to pray"
+            }
+          ],
+          "raw": "[Am]Everybody's going to pray"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "To the heavens on the Judgment Day."
+            }
+          ],
+          "raw": "[G]To the heavens on the Judgment Day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Well, you can sing about the great King David,"
+            }
+          ],
+          "raw": "[Am]Well, you can sing about the great King David,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And you can preach about the wisdom of Saul;"
+            }
+          ],
+          "raw": "[G]And you can preach about the wisdom of Saul;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Well, you can speak out about the prophet Elijah"
+            }
+          ],
+          "raw": "[C]Well, you can speak out about the prophet Elijah"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "When the trumpet sounds the call."
+            }
+          ],
+          "raw": "[E7]When the trumpet sounds the call."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "All equal and the same,"
+            }
+          ],
+          "raw": "[Am]All equal and the same,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "When the Lord, He calls your name."
+            }
+          ],
+          "raw": "[G]When the Lord, He calls your name."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Get ready, brothers, for that day."
+            }
+          ],
+          "raw": "[F]Get ready, brothers, for that day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Well, one day soon all men shall stand;"
+            }
+          ],
+          "raw": "[Am]Well, one day soon all men shall stand;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "His word will be heeded in all the land."
+            }
+          ],
+          "raw": "[G]His word will be heeded in all the land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And men shall know and men shall see"
+            }
+          ],
+          "raw": "[C]And men shall know and men shall see"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "That we all are brothers and we all are free."
+            }
+          ],
+          "raw": "[E7]That we all are brothers and we all are free."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Mankind was made of clay."
+            }
+          ],
+          "raw": "[Am]Mankind was made of clay."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Each of us in the very same way."
+            }
+          ],
+          "raw": "[G]Each of us in the very same way."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Get ready, brothers, for that day."
+            }
+          ],
+          "raw": "[F]Get ready, brothers, for that day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Well, the law is given and the law is known."
+            }
+          ],
+          "raw": "[Am]Well, the law is given and the law is known."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The tale is told and the seed is sown."
+            }
+          ],
+          "raw": "[G]The tale is told and the seed is sown."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "From dust we came and to dust we'll go;"
+            }
+          ],
+          "raw": "[C]From dust we came and to dust we'll go;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "You know the Lord, He once told us so."
+            }
+          ],
+          "raw": "[E7]You know the Lord, He once told us so."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Each brother take his hand;"
+            }
+          ],
+          "raw": "[Am]Each brother take his hand;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Heed the meaning of the Lord's command."
+            }
+          ],
+          "raw": "[G]Heed the meaning of the Lord's command."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Get ready, brothers, for that day."
+            }
+          ],
+          "raw": "[F]Get ready, brothers, for that day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/very-last-day.pro",
+  "source": "{title: Very Last Day}\n{key: Am}\n\n{section: Chorus}\n[Am]Everybody's going to pray on the very last day,\n[Em]When they hear that bell ring the world away.\n[Am]Everybody's going to pray\n[G]To the heavens on the Judgment Day.\n\n{{section: Verse 1}\n[Am]Well, you can sing about the great King David,\n[G]And you can preach about the wisdom of Saul;\n[C]Well, you can speak out about the prophet Elijah\n[E7]When the trumpet sounds the call.\n[Am]All equal and the same,\n[G]When the Lord, He calls your name.\n[F]Get ready, brothers, for that day.\n\n{{section: Verse 2}\n[Am]Well, one day soon all men shall stand;\n[G]His word will be heeded in all the land.\n[C]And men shall know and men shall see\n[E7]That we all are brothers and we all are free.\n\n{{section: Verse 3}\n[Am]Mankind was made of clay.\n[G]Each of us in the very same way.\n[F]Get ready, brothers, for that day.\n\n{{section: Verse 4}\n[Am]Well, the law is given and the law is known.\n[G]The tale is told and the seed is sown.\n[C]From dust we came and to dust we'll go;\n[E7]You know the Lord, He once told us so.\n[Am]Each brother take his hand;\n[G]Heed the meaning of the Lord's command.\n[F]Get ready, brothers, for that day.\n"
+}

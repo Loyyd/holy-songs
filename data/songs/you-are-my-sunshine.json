@@ -1,0 +1,163 @@
+{
+  "id": "you-are-my-sunshine",
+  "title": "You Are My Sunshine",
+  "key": "E",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "You are my sunshine, my only sunshine,"
+            }
+          ],
+          "raw": "[E]You are my sunshine, my only sunshine,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "You make me happy, when skies are grey."
+            }
+          ],
+          "raw": "[A]You make me happy, when skies are grey."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "You'll never know Lord, how much I love you."
+            }
+          ],
+          "raw": "[A]You'll never know Lord, how much I love you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Please don't take my sunshine away."
+            }
+          ],
+          "raw": "[E]Please don't take my sunshine away."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "There is a meadow, high on a mountain,"
+            }
+          ],
+          "raw": "[E]There is a meadow, high on a mountain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Where skylark and wild rose abound,"
+            }
+          ],
+          "raw": "[A]Where skylark and wild rose abound,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Th'eternal homeland my heart desires,"
+            }
+          ],
+          "raw": "[A]Th'eternal homeland my heart desires,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Shines like gold at the rainbow's end"
+            }
+          ],
+          "raw": "[E]Shines like gold at the rainbow's end"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Through the long winter and harsh wind blowing"
+            }
+          ],
+          "raw": "[E]Through the long winter and harsh wind blowing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "All creatures die on barren soil,"
+            }
+          ],
+          "raw": "[A]All creatures die on barren soil,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Now sunlight beaming the ice to streamlets,"
+            }
+          ],
+          "raw": "[A]Now sunlight beaming the ice to streamlets,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Earth in spring is a garden of joy."
+            }
+          ],
+          "raw": "[E]Earth in spring is a garden of joy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/you-are-my-sunshine.pro",
+  "source": "{title: You Are My Sunshine}\n{key: E}\n\n{section: Chorus}\n[E]You are my sunshine, my only sunshine,\n[A]You make me happy, when skies are grey.\n[A]You'll never know Lord, how much I love you.\n[E]Please don't take my sunshine away.\n\n{{section: Verse 1}\n[E]There is a meadow, high on a mountain,\n[A]Where skylark and wild rose abound,\n[A]Th'eternal homeland my heart desires,\n[E]Shines like gold at the rainbow's end\n\n{{section: Verse 2}\n[E]Through the long winter and harsh wind blowing\n[A]All creatures die on barren soil,\n[A]Now sunlight beaming the ice to streamlets,\n[E]Earth in spring is a garden of joy.\n"
+}

@@ -1,0 +1,163 @@
+{
+  "id": "pass-it-on",
+  "title": "Pass It On",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "It only takes a spark to get a fire going"
+            }
+          ],
+          "raw": "[D]It only takes a spark to get a fire going"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "And soon all those around can warm up in its glowing"
+            }
+          ],
+          "raw": "[F#m]And soon all those around can warm up in its glowing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "That's how it is with God's love, once you've experienced it"
+            }
+          ],
+          "raw": "[G]That's how it is with God's love, once you've experienced it"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "You spread His love to everyone, you want to pass it on"
+            }
+          ],
+          "raw": "[A7]You spread His love to everyone, you want to pass it on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "What a wondrous time is spring, when all the trees are budding"
+            }
+          ],
+          "raw": "[D]What a wondrous time is spring, when all the trees are budding"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "The birds begin to sing, the flowers start their blooming"
+            }
+          ],
+          "raw": "[F#m]The birds begin to sing, the flowers start their blooming"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "That's how it is with God's love, once you've experienced it"
+            }
+          ],
+          "raw": "[G]That's how it is with God's love, once you've experienced it"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "You want to sing it's fresh like spring, you want to pass it on"
+            }
+          ],
+          "raw": "[A7]You want to sing it's fresh like spring, you want to pass it on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I wish for you my friend, this happiness that I've found"
+            }
+          ],
+          "raw": "[D]I wish for you my friend, this happiness that I've found"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "You can depend on Him, it matters not where you're bound"
+            }
+          ],
+          "raw": "[F#m]You can depend on Him, it matters not where you're bound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I'll shout it from the mountain top, I want the world to know"
+            }
+          ],
+          "raw": "[G]I'll shout it from the mountain top, I want the world to know"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "The Lord of love has come to me, I want to pass it on"
+            }
+          ],
+          "raw": "[A7]The Lord of love has come to me, I want to pass it on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/pass-it-on.pro",
+  "source": "{title: Pass It On}\n{key: D}\n\n{section: Verse 1}\n[D]It only takes a spark to get a fire going\n[F#m]And soon all those around can warm up in its glowing\n[G]That's how it is with God's love, once you've experienced it\n[A7]You spread His love to everyone, you want to pass it on\n\n{{section: Verse 2}\n[D]What a wondrous time is spring, when all the trees are budding\n[F#m]The birds begin to sing, the flowers start their blooming\n[G]That's how it is with God's love, once you've experienced it\n[A7]You want to sing it's fresh like spring, you want to pass it on\n\n{{section: Verse 3}\n[D]I wish for you my friend, this happiness that I've found\n[F#m]You can depend on Him, it matters not where you're bound\n[G]I'll shout it from the mountain top, I want the world to know\n[A7]The Lord of love has come to me, I want to pass it on\n"
+}

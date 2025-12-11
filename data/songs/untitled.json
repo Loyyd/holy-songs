@@ -1,0 +1,22 @@
+{
+  "id": "untitled",
+  "title": "Untitled",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/as-the-deer.pro",
+  "source": ""
+}

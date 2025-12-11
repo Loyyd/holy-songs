@@ -1,0 +1,388 @@
+{
+  "id": "man-come-into-egypt",
+  "title": "Man Come Into Egypt",
+  "key": "Dm",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "There is a man come into Egypt"
+            }
+          ],
+          "raw": "[Dm]There is a man come into Egypt"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And Moses is his name."
+            }
+          ],
+          "raw": "[G]And Moses is his name."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "When he saw the grief upon us,"
+            }
+          ],
+          "raw": "[Dm]When he saw the grief upon us,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "In his heart there burned a flame -"
+            }
+          ],
+          "raw": "[G]In his heart there burned a flame -"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "In his heart there burned a flame, oh Lord,"
+            }
+          ],
+          "raw": "[Dm]In his heart there burned a flame, oh Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "In his heart there burned a flame."
+            }
+          ],
+          "raw": "[G]In his heart there burned a flame."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "When he saw the grief upon us,"
+            }
+          ],
+          "raw": "[Dm]When he saw the grief upon us,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "In his heart there burned a flame."
+            }
+          ],
+          "raw": "[A]In his heart there burned a flame."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "There is a man come into Egypt,"
+            }
+          ],
+          "raw": "[Dm]There is a man come into Egypt,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "His eyes are full of light."
+            }
+          ],
+          "raw": "[G]His eyes are full of light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Like the sun come up in Egypt,"
+            }
+          ],
+          "raw": "[Dm]Like the sun come up in Egypt,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Come to drive away the night -"
+            }
+          ],
+          "raw": "[A]Come to drive away the night -"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Come to drive away the night, oh Lord,"
+            }
+          ],
+          "raw": "[Dm]Come to drive away the night, oh Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Come to drive away the night."
+            }
+          ],
+          "raw": "[G]Come to drive away the night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Like the sun come up in Egypt,"
+            }
+          ],
+          "raw": "[Dm]Like the sun come up in Egypt,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Come to drive away the night."
+            }
+          ],
+          "raw": "[A]Come to drive away the night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "There is a man come into Egypt,"
+            }
+          ],
+          "raw": "[Dm]There is a man come into Egypt,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "He's come for you and me."
+            }
+          ],
+          "raw": "[G]He's come for you and me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "On his lips a word is singing,"
+            }
+          ],
+          "raw": "[Dm]On his lips a word is singing,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "And the world is 'liberty' -"
+            }
+          ],
+          "raw": "[A]And the world is 'liberty' -"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "And the world is 'liberty', oh Lord,"
+            }
+          ],
+          "raw": "[Dm]And the world is 'liberty', oh Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And the world is 'liberty'."
+            }
+          ],
+          "raw": "[G]And the world is 'liberty'."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "On his lips a word is singing,"
+            }
+          ],
+          "raw": "[Dm]On his lips a word is singing,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "And the world is 'liberty'."
+            }
+          ],
+          "raw": "[A]And the world is 'liberty'."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "There is a man come into Egypt,"
+            }
+          ],
+          "raw": "[Dm]There is a man come into Egypt,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "To stir the souls of men."
+            }
+          ],
+          "raw": "[G]To stir the souls of men."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "We will follow him to freedom,"
+            }
+          ],
+          "raw": "[Dm]We will follow him to freedom,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "And never wear those chains again -"
+            }
+          ],
+          "raw": "[A]And never wear those chains again -"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Never wear those chains again,"
+            }
+          ],
+          "raw": "[Dm]Never wear those chains again,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh Lord, Never wear those chains again."
+            }
+          ],
+          "raw": "[G]Oh Lord, Never wear those chains again."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "We will follow him to freedom, And"
+            }
+          ],
+          "raw": "[Dm]We will follow him to freedom, And"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "never wear those chains again."
+            }
+          ],
+          "raw": "[A]never wear those chains again."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/man-come-into-egypt.pro",
+  "source": "{title: Man Come Into Egypt}\n{key: Dm}\n\n{section: Verse 1}\n[Dm]There is a man come into Egypt\n[G]And Moses is his name.\n[Dm]When he saw the grief upon us,\n[G]In his heart there burned a flame -\n\n{{section: Verse 2}\n[Dm]In his heart there burned a flame, oh Lord,\n[G]In his heart there burned a flame.\n[Dm]When he saw the grief upon us,\n[A]In his heart there burned a flame.\n\n{{section: Verse 3}\n[Dm]There is a man come into Egypt,\n[G]His eyes are full of light.\n[Dm]Like the sun come up in Egypt,\n[A]Come to drive away the night -\n\n{{section: Verse 4}\n[Dm]Come to drive away the night, oh Lord,\n[G]Come to drive away the night.\n[Dm]Like the sun come up in Egypt,\n[A]Come to drive away the night.\n\n{{section: Verse 5}\n[Dm]There is a man come into Egypt,\n[G]He's come for you and me.\n[Dm]On his lips a word is singing,\n[A]And the world is 'liberty' -\n\n{{section: Verse 6}\n[Dm]And the world is 'liberty', oh Lord,\n[G]And the world is 'liberty'.\n[Dm]On his lips a word is singing,\n[A]And the world is 'liberty'.\n\n{{section: Verse 7}\n[Dm]There is a man come into Egypt,\n[G]To stir the souls of men.\n[Dm]We will follow him to freedom,\n[A]And never wear those chains again -\n\n{{section: Verse 8}\n[Dm]Never wear those chains again,\n[G]Oh Lord, Never wear those chains again.\n[Dm]We will follow him to freedom, And\n[A]never wear those chains again.\n"
+}

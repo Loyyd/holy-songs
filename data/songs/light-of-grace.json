@@ -1,0 +1,255 @@
+{
+  "id": "light-of-grace",
+  "title": "Light of Grace",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "O, Light of Grace, shining above,"
+            }
+          ],
+          "raw": "[A]O, Light of Grace, shining above,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Lighting my dim shadowed way,"
+            }
+          ],
+          "raw": "[D]Lighting my dim shadowed way,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "O, Light of Grace, easing my pain,"
+            }
+          ],
+          "raw": "[A]O, Light of Grace, easing my pain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "You have shown that God is love."
+            }
+          ],
+          "raw": "[E7]You have shown that God is love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'll give my life, and my love,"
+            }
+          ],
+          "raw": "[A]I'll give my life, and my love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#",
+              "lyric": "unto the one God of love."
+            }
+          ],
+          "raw": "[F#]unto the one God of love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Though clouds may come, hiding His face,"
+            }
+          ],
+          "raw": "[D]Though clouds may come, hiding His face,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Hiding the smile of my God,"
+            }
+          ],
+          "raw": "[A]Hiding the smile of my God,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Though clouds may come, still He is there,"
+            }
+          ],
+          "raw": "[D]Though clouds may come, still He is there,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Shining brightly, God is love."
+            }
+          ],
+          "raw": "[E7]Shining brightly, God is love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Amid the storm, tossed on the sea,"
+            }
+          ],
+          "raw": "[A]Amid the storm, tossed on the sea,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Beacon of hope, guiding me."
+            }
+          ],
+          "raw": "[D]Beacon of hope, guiding me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Amid the storm, shelter is near,"
+            }
+          ],
+          "raw": "[A]Amid the storm, shelter is near,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Trust in Him for God is love."
+            }
+          ],
+          "raw": "[E7]Trust in Him for God is love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "All things decay, passing away,"
+            }
+          ],
+          "raw": "[A]All things decay, passing away,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Only the light shall remain;"
+            }
+          ],
+          "raw": "[D]Only the light shall remain;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "All things decay; still there is One,"
+            }
+          ],
+          "raw": "[A]All things decay; still there is One,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "True and faithful, God is love."
+            }
+          ],
+          "raw": "[E7]True and faithful, God is love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/light-of-grace.pro",
+  "source": "{title: Light of Grace}\n{key: A}\n\n{section: Verse 1}\n[A]O, Light of Grace, shining above,\n[D]Lighting my dim shadowed way,\n[A]O, Light of Grace, easing my pain,\n[E7]You have shown that God is love.\n\n{section: Chorus}\n[A]I'll give my life, and my love,\n[F#]unto the one God of love.\n\n{section: Verse 2}\n[D]Though clouds may come, hiding His face,\n[A]Hiding the smile of my God,\n[D]Though clouds may come, still He is there,\n[E7]Shining brightly, God is love.\n\n{section: Verse 3}\n[A]Amid the storm, tossed on the sea,\n[D]Beacon of hope, guiding me.\n[A]Amid the storm, shelter is near,\n[E7]Trust in Him for God is love.\n\n{section: Verse 4}\n[A]All things decay, passing away,\n[D]Only the light shall remain;\n[A]All things decay; still there is One,\n[E7]True and faithful, God is love.\n"
+}

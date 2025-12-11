@@ -1,0 +1,105 @@
+{
+  "id": "our-forefathers",
+  "title": "Our Forefathers",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Our forefathers built for us a beautiful land;"
+            }
+          ],
+          "raw": "[F]Our forefathers built for us a beautiful land;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Till it is completed, we will join in heart and hand."
+            }
+          ],
+          "raw": "[C7]Till it is completed, we will join in heart and hand."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "See the new eternal history, beckoning us to come"
+            }
+          ],
+          "raw": "[F]See the new eternal history, beckoning us to come"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Quickly on the journey to the true eternal home."
+            }
+          ],
+          "raw": "[Dm]Quickly on the journey to the true eternal home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "How the beauty of our native land lifts us to the skies;"
+            }
+          ],
+          "raw": "[C]How the beauty of our native land lifts us to the skies;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "God has surely chosen this eternal paradise."
+            }
+          ],
+          "raw": "[F]God has surely chosen this eternal paradise."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/our-forefathers.pro",
+  "source": "{title: Our Forefathers}\n{key: F}\n\n{section: Verse 1}\n[F]Our forefathers built for us a beautiful land;\n[C7]Till it is completed, we will join in heart and hand.\n[F]See the new eternal history, beckoning us to come\n\n{section: Verse 2}\n[Dm]Quickly on the journey to the true eternal home.\n[C]How the beauty of our native land lifts us to the skies;\n[F]God has surely chosen this eternal paradise.\n"
+}

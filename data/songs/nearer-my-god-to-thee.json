@@ -1,0 +1,258 @@
+{
+  "id": "nearer-my-god-to-thee",
+  "title": "Nearer My God to Thee",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Nearer, my God, to Thee, nearer to Thee!"
+            }
+          ],
+          "raw": "[F]Nearer, my God, to Thee, nearer to Thee!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "E'en though it be a cross that raiseth me."
+            }
+          ],
+          "raw": "[Bb]E'en though it be a cross that raiseth me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Still all my song shall be, nearer, my God, to Thee,"
+            }
+          ],
+          "raw": "[F]Still all my song shall be, nearer, my God, to Thee,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Nearer, my God, to Thee, nearer to Thee."
+            }
+          ],
+          "raw": "[C7]Nearer, my God, to Thee, nearer to Thee."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Though like the wanderer, the sun gone down,"
+            }
+          ],
+          "raw": "[F]Though like the wanderer, the sun gone down,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Darkness be over me, my rest a stone."
+            }
+          ],
+          "raw": "[Bb]Darkness be over me, my rest a stone."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Yet in my dreams I'd be nearer, my God, to Thee,"
+            }
+          ],
+          "raw": "[F]Yet in my dreams I'd be nearer, my God, to Thee,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Nearer, my God, to Thee, nearer to Thee."
+            }
+          ],
+          "raw": "[C7]Nearer, my God, to Thee, nearer to Thee."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "There let the way appear steps unto heav'n. All"
+            }
+          ],
+          "raw": "[F]There let the way appear steps unto heav'n. All"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "that Thou sendest me in mercy given. Angels to"
+            }
+          ],
+          "raw": "[Bb]that Thou sendest me in mercy given. Angels to"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "beckon me nearer, my God, to Thee,"
+            }
+          ],
+          "raw": "[F]beckon me nearer, my God, to Thee,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Nearer, my God, to Thee, nearer to Thee."
+            }
+          ],
+          "raw": "[C7]Nearer, my God, to Thee, nearer to Thee."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Then, with my waking thoughts bright with Thy praise,"
+            }
+          ],
+          "raw": "[F]Then, with my waking thoughts bright with Thy praise,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Out of my stony griefs, Bethel I'll raise."
+            }
+          ],
+          "raw": "[Bb]Out of my stony griefs, Bethel I'll raise."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "So by my woes to be nearer, my God, to Thee,"
+            }
+          ],
+          "raw": "[F]So by my woes to be nearer, my God, to Thee,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Nearer, my God, to Thee, nearer to Thee."
+            }
+          ],
+          "raw": "[C7]Nearer, my God, to Thee, nearer to Thee."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Or if on joyful wing, cleaving the sky, Sun,"
+            }
+          ],
+          "raw": "[F]Or if on joyful wing, cleaving the sky, Sun,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "moon, and stars forgot, upward I fly."
+            }
+          ],
+          "raw": "[Bb]moon, and stars forgot, upward I fly."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Still all my song shall be nearer, my God, to Thee,"
+            }
+          ],
+          "raw": "[F]Still all my song shall be nearer, my God, to Thee,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Nearer, my God, to Thee, nearer to Thee."
+            }
+          ],
+          "raw": "[C7]Nearer, my God, to Thee, nearer to Thee."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/nearer-my-god-to-thee.pro",
+  "source": "{title: Nearer My God to Thee}\n{key: F}\n\n{section: Verse 1}\n[F]Nearer, my God, to Thee, nearer to Thee!\n[Bb]E'en though it be a cross that raiseth me.\n[F]Still all my song shall be, nearer, my God, to Thee,\n[C7]Nearer, my God, to Thee, nearer to Thee.\n\n{section: Verse 2}\n[F]Though like the wanderer, the sun gone down,\n[Bb]Darkness be over me, my rest a stone.\n[F]Yet in my dreams I'd be nearer, my God, to Thee,\n[C7]Nearer, my God, to Thee, nearer to Thee.\n\n{{section: Verse 3}\n[F]There let the way appear steps unto heav'n. All\n[Bb]that Thou sendest me in mercy given. Angels to\n[F]beckon me nearer, my God, to Thee,\n[C7]Nearer, my God, to Thee, nearer to Thee.\n\n{{section: Verse 4}\n[F]Then, with my waking thoughts bright with Thy praise,\n[Bb]Out of my stony griefs, Bethel I'll raise.\n[F]So by my woes to be nearer, my God, to Thee,\n[C7]Nearer, my God, to Thee, nearer to Thee.\n\n{{section: Verse 5}\n[F]Or if on joyful wing, cleaving the sky, Sun,\n[Bb]moon, and stars forgot, upward I fly.\n[F]Still all my song shall be nearer, my God, to Thee,\n[C7]Nearer, my God, to Thee, nearer to Thee.\n"
+}

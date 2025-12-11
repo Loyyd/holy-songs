@@ -1,0 +1,190 @@
+{
+  "id": "we-are-one-in-the-spirit",
+  "title": "We Are One in the Spirit",
+  "key": "Em",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "We are one in The Spirit, We are one in The Lord."
+            }
+          ],
+          "raw": "[Em]We are one in The Spirit, We are one in The Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "We are one in The Spirit, We are one in The Lord."
+            }
+          ],
+          "raw": "[Am]We are one in The Spirit, We are one in The Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And we know that our unity will one day be restored."
+            }
+          ],
+          "raw": "[Em]And we know that our unity will one day be restored."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And they'll know we're God's children by our love, by our love,"
+            }
+          ],
+          "raw": "[Am]And they'll know we're God's children by our love, by our love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Yes they'll know we're God's children by our love."
+            }
+          ],
+          "raw": "[Em]Yes they'll know we're God's children by our love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "We will work with each other, We will work side by side."
+            }
+          ],
+          "raw": "[Em]We will work with each other, We will work side by side."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "We will work with each other, We will work side by side."
+            }
+          ],
+          "raw": "[Am]We will work with each other, We will work side by side."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And we'll guard each man's dignity And save each man's pride."
+            }
+          ],
+          "raw": "[Em]And we'll guard each man's dignity And save each man's pride."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And they'll know we're God's children by our love, by our love,"
+            }
+          ],
+          "raw": "[Am]And they'll know we're God's children by our love, by our love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Yes they'll know we're God's children by our love."
+            }
+          ],
+          "raw": "[Em]Yes they'll know we're God's children by our love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "We will walk with each other, We will walk hand in hand."
+            }
+          ],
+          "raw": "[Em]We will walk with each other, We will walk hand in hand."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "We will walk with each other, We will walk hand in hand."
+            }
+          ],
+          "raw": "[Am]We will walk with each other, We will walk hand in hand."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And together we'll spread the news that God is in our land."
+            }
+          ],
+          "raw": "[Em]And together we'll spread the news that God is in our land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And they'll know we're God's children by our love, by our love,"
+            }
+          ],
+          "raw": "[Am]And they'll know we're God's children by our love, by our love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Yes they'll know we're God's children by our love."
+            }
+          ],
+          "raw": "[Em]Yes they'll know we're God's children by our love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/we-are-one-in-the-spirit.pro",
+  "source": "{title: We Are One in the Spirit}\n{key: Em}\n\n{section: Verse 1}\n[Em]We are one in The Spirit, We are one in The Lord.\n[Am]We are one in The Spirit, We are one in The Lord.\n[Em]And we know that our unity will one day be restored.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n\n{{section: Verse 2}\n[Em]We will work with each other, We will work side by side.\n[Am]We will work with each other, We will work side by side.\n[Em]And we'll guard each man's dignity And save each man's pride.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n\n{{section: Verse 3}\n[Em]We will walk with each other, We will walk hand in hand.\n[Am]We will walk with each other, We will walk hand in hand.\n[Em]And together we'll spread the news that God is in our land.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n"
+}

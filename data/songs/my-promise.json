@@ -1,0 +1,328 @@
+{
+  "id": "my-promise",
+  "title": "My Promise",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I pledge I will go, I pledge I will "
+            },
+            {
+              "chord": "E",
+              "lyric": "go;"
+            }
+          ],
+          "raw": "[A]I pledge I will go, I pledge I will [E]go;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Go as my Father has "
+            },
+            {
+              "chord": "E",
+              "lyric": "gone."
+            }
+          ],
+          "raw": "[F#m]Go as my Father has [E]gone."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Tears fall on the path,"
+            }
+          ],
+          "raw": "[B7]Tears fall on the path,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Lonely and silent the path of the Father,"
+            }
+          ],
+          "raw": "[E7]Lonely and silent the path of the Father,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Going to suffer the way of the "
+            },
+            {
+              "chord": "E7",
+              "lyric": "Cross."
+            }
+          ],
+          "raw": "[A]Going to suffer the way of the [E7]Cross."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Ready to follow His "
+            },
+            {
+              "chord": "D",
+              "lyric": "will."
+            }
+          ],
+          "raw": "[A]Ready to follow His [D]will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "I pledge I will go forward "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "to Him."
+            }
+          ],
+          "raw": "[C#m]I pledge I will go forward [F#m]to Him."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'll follow the way, I'll follow the "
+            },
+            {
+              "chord": "E7",
+              "lyric": "way;"
+            }
+          ],
+          "raw": "[A]I'll follow the way, I'll follow the [E7]way;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Follow the path of my Lord."
+            }
+          ],
+          "raw": "[A]Follow the path of my Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Though thorny the path,"
+            }
+          ],
+          "raw": "[A]Though thorny the path,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Now persevere as the brightness is growing,"
+            }
+          ],
+          "raw": "[A]Now persevere as the brightness is growing,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "On to the victory and glorious crown,"
+            }
+          ],
+          "raw": "[A]On to the victory and glorious crown,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Giving my body and soul,"
+            }
+          ],
+          "raw": "[A]Giving my body and soul,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'll follow the Lord all of the way;"
+            }
+          ],
+          "raw": "[A]I'll follow the Lord all of the way;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Giving my body and soul,"
+            }
+          ],
+          "raw": "[A]Giving my body and soul,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'll follow the Lord all of the way."
+            }
+          ],
+          "raw": "[A]I'll follow the Lord all of the way."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm ready to serve, I'm ready to serve."
+            }
+          ],
+          "raw": "[A]I'm ready to serve, I'm ready to serve."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Serving my Father's desire,"
+            }
+          ],
+          "raw": "[A]Serving my Father's desire,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Trials darken the path,"
+            }
+          ],
+          "raw": "[A]Trials darken the path,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Deep in my heart the desire of the ages,"
+            }
+          ],
+          "raw": "[A]Deep in my heart the desire of the ages,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Fighting until we come home to the Lord,"
+            }
+          ],
+          "raw": "[A]Fighting until we come home to the Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Satan will bow in defeat,"
+            }
+          ],
+          "raw": "[A]Satan will bow in defeat,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm ready to serve all of my life;"
+            }
+          ],
+          "raw": "[A]I'm ready to serve all of my life;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Satan will bow in defeat,"
+            }
+          ],
+          "raw": "[A]Satan will bow in defeat,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm ready to serve all of my life."
+            }
+          ],
+          "raw": "[A]I'm ready to serve all of my life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/my-promise.pro",
+  "source": "{title: My Promise}\n{key: A}\n\n{section: Verse 1}\n[A]I pledge I will go, I pledge I will [E]go;\n[F#m]Go as my Father has [E]gone.\n[B7]Tears fall on the path,\n[E7]Lonely and silent the path of the Father,\n[A]Going to suffer the way of the [E7]Cross.\n\n{section: Verse 2}\n[A]Ready to follow His [D]will.\n[C#m]I pledge I will go forward [F#m]to Him.\n\n{section: Verse 3}\n[A]I'll follow the way, I'll follow the [E7]way;\n[A]Follow the path of my Lord.\n[A]Though thorny the path,\n[A]Now persevere as the brightness is growing,\n[A]On to the victory and glorious crown,\n[A]Giving my body and soul,\n[A]I'll follow the Lord all of the way;\n[A]Giving my body and soul,\n[A]I'll follow the Lord all of the way.\n\n{section: Verse 4}\n[A]I'm ready to serve, I'm ready to serve.\n[A]Serving my Father's desire,\n[A]Trials darken the path,\n[A]Deep in my heart the desire of the ages,\n[A]Fighting until we come home to the Lord,\n[A]Satan will bow in defeat,\n[A]I'm ready to serve all of my life;\n[A]Satan will bow in defeat,\n[A]I'm ready to serve all of my life.\n"
+}

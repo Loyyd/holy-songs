@@ -1,0 +1,269 @@
+{
+  "id": "song-of-the-garden",
+  "title": "Song of the Garden",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "The Lord into His garden comes;"
+            }
+          ],
+          "raw": "[D]The Lord into His garden comes;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "The spices yield a rich perfume;"
+            }
+          ],
+          "raw": "[Bm]The spices yield a rich perfume;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The lilies grow and thrive, the lilies grow and thrive."
+            }
+          ],
+          "raw": "[G]The lilies grow and thrive, the lilies grow and thrive."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Refreshing showers of grace divine,"
+            }
+          ],
+          "raw": "[A7]Refreshing showers of grace divine,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "From the Father flow to every vine,"
+            }
+          ],
+          "raw": "[D]From the Father flow to every vine,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "And make the dead revive, and make the dead revive."
+            }
+          ],
+          "raw": "[Bm]And make the dead revive, and make the dead revive."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Oh that this dry and barren ground"
+            }
+          ],
+          "raw": "[D7]Oh that this dry and barren ground"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "In springs of water may abound;"
+            }
+          ],
+          "raw": "[G]In springs of water may abound;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "A fruitful soil become, a fruitful soil become."
+            }
+          ],
+          "raw": "[D]A fruitful soil become, a fruitful soil become."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "The desert blossoms as the rose,"
+            }
+          ],
+          "raw": "[Em]The desert blossoms as the rose,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "When the Saviour conquers all his foes,"
+            }
+          ],
+          "raw": "[A7]When the Saviour conquers all his foes,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "And makes His people one, and makes His people one."
+            }
+          ],
+          "raw": "[D]And makes His people one, and makes His people one."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Come brethren you that love the Lord,"
+            }
+          ],
+          "raw": "[Bm]Come brethren you that love the Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And taste the sweetness of His word;"
+            }
+          ],
+          "raw": "[G]And taste the sweetness of His word;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "In Father's ways go on, in Father's ways go on,"
+            }
+          ],
+          "raw": "[A7]In Father's ways go on, in Father's ways go on,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Our trouble and our trials here,"
+            }
+          ],
+          "raw": "[D]Our trouble and our trials here,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Will only make us richer there,"
+            }
+          ],
+          "raw": "[Em]Will only make us richer there,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "When we arrive at home, when we arrive at home."
+            }
+          ],
+          "raw": "[A7]When we arrive at home, when we arrive at home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/song-of-the-garden.pro",
+  "source": "{title: Song of the Garden}\n{key: D}\n\n{section: Verse 1}\n[D]The Lord into His garden comes;\n[Bm]The spices yield a rich perfume;\n[G]The lilies grow and thrive, the lilies grow and thrive.\n\n{section: Verse 2}\n[A7]Refreshing showers of grace divine,\n[D]From the Father flow to every vine,\n[Bm]And make the dead revive, and make the dead revive.\n\n{section: Verse 3}\n[D7]Oh that this dry and barren ground\n[G]In springs of water may abound;\n[D]A fruitful soil become, a fruitful soil become.\n\n{section: Verse 4}\n[Em]The desert blossoms as the rose,\n[A7]When the Saviour conquers all his foes,\n[D]And makes His people one, and makes His people one.\n\n{section: Verse 5}\n[Bm]Come brethren you that love the Lord,\n[G]And taste the sweetness of His word;\n[A7]In Father's ways go on, in Father's ways go on,\n\n{section: Verse 6}\n[D]Our trouble and our trials here,\n[Em]Will only make us richer there,\n[A7]When we arrive at home, when we arrive at home.\n"
+}

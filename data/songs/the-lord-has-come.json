@@ -1,0 +1,376 @@
+{
+  "id": "the-lord-has-come",
+  "title": "The Lord Has Come",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "O, the Lord is "
+            },
+            {
+              "chord": "F",
+              "lyric": "come, O the "
+            },
+            {
+              "chord": "C",
+              "lyric": "Lord is "
+            },
+            {
+              "chord": "Am",
+              "lyric": "come!"
+            }
+          ],
+          "raw": "[C]O, the Lord is [F]come, O the [C]Lord is [Am]come!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "He has come to the "
+            },
+            {
+              "chord": "C",
+              "lyric": "country of "
+            },
+            {
+              "chord": "F",
+              "lyric": "God,"
+            }
+          ],
+          "raw": "[C]He has come to the [C]country of [F]God,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Shining in "
+            },
+            {
+              "chord": "D7",
+              "lyric": "glorious "
+            },
+            {
+              "chord": "G",
+              "lyric": "dawn. "
+            },
+            {
+              "chord": "G7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Shining in [D7]glorious [G]dawn. [G7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Here is our "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "Leader and "
+            },
+            {
+              "chord": "C",
+              "lyric": "Lord, filled with our "
+            },
+            {
+              "chord": "Am",
+              "lyric": "Father's light."
+            }
+          ],
+          "raw": "[Am]Here is our [Dm]Leader and [C]Lord, filled with our [Am]Father's light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Leading all "
+            },
+            {
+              "chord": "C",
+              "lyric": "men with His "
+            },
+            {
+              "chord": "C7",
+              "lyric": "Word, into the "
+            },
+            {
+              "chord": "F",
+              "lyric": "Purpose of God."
+            }
+          ],
+          "raw": "[F]Leading all [C]men with His [C7]Word, into the [F]Purpose of God."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Beautiful "
+            },
+            {
+              "chord": "C",
+              "lyric": "Father"
+            },
+            {
+              "chord": "Am6",
+              "lyric": "land welcome the "
+            },
+            {
+              "chord": "C",
+              "lyric": "Lord!"
+            }
+          ],
+          "raw": "[C]Beautiful [C]Father[Am6]land welcome the [C]Lord!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Come let us "
+            },
+            {
+              "chord": "Em",
+              "lyric": "sing and re"
+            },
+            {
+              "chord": "G7",
+              "lyric": "joice!"
+            }
+          ],
+          "raw": "[F]Come let us [Em]sing and re[G7]joice!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Halle"
+            },
+            {
+              "chord": "F",
+              "lyric": "lujah, "
+            },
+            {
+              "chord": "C",
+              "lyric": "Halle"
+            },
+            {
+              "chord": "G7",
+              "lyric": "lujah, "
+            },
+            {
+              "chord": "C",
+              "lyric": "Halle"
+            },
+            {
+              "chord": "Em6",
+              "lyric": "lujah! "
+            },
+            {
+              "chord": "G7",
+              "lyric": "A"
+            },
+            {
+              "chord": "C",
+              "lyric": "men!"
+            }
+          ],
+          "raw": "[C]Halle[F]lujah, [C]Halle[G7]lujah, [C]Halle[Em6]lujah! [G7]A[C]men!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O the Lord is come, O the Lord is come!"
+            }
+          ],
+          "raw": "O the Lord is come, O the Lord is come!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He has come to the land of the pure,"
+            }
+          ],
+          "raw": "He has come to the land of the pure,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Blessed with the blossom of life."
+            }
+          ],
+          "raw": "Blessed with the blossom of life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here is our Ruler and King, bringing our Father's way,"
+            }
+          ],
+          "raw": "Here is our Ruler and King, bringing our Father's way,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Shattering evil and sin, building the Kingdom of God."
+            }
+          ],
+          "raw": "Shattering evil and sin, building the Kingdom of God."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Beautiful Fatherland welcome the Lord! Come let us sing and rejoice!"
+            }
+          ],
+          "raw": "Beautiful Fatherland welcome the Lord! Come let us sing and rejoice!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Hallelujah, Hallelujah, Hallelujah! Amen!"
+            }
+          ],
+          "raw": "Hallelujah, Hallelujah, Hallelujah! Amen!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O the Lord is come, O the Lord is come!"
+            }
+          ],
+          "raw": "O the Lord is come, O the Lord is come!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He has come to the mountainous land,"
+            }
+          ],
+          "raw": "He has come to the mountainous land,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Laden with treasure untold."
+            }
+          ],
+          "raw": "Laden with treasure untold."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here is our saviour and God, showing our Father's Heart."
+            }
+          ],
+          "raw": "Here is our saviour and God, showing our Father's Heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Lifting us high with His joy, into the glory of God."
+            }
+          ],
+          "raw": "Lifting us high with His joy, into the glory of God."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come O my brothers and welcome the Lord!"
+            }
+          ],
+          "raw": "Come O my brothers and welcome the Lord!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come let us sing and rejoice!"
+            }
+          ],
+          "raw": "Come let us sing and rejoice!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Hallelujah, Hallelujah, Hallelujah! Aju!"
+            }
+          ],
+          "raw": "Hallelujah, Hallelujah, Hallelujah! Aju!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/the-lord-has-come.pro",
+  "source": "{title: The Lord Has Come}\n{key: C}\n\n{section: Verse 1}\n[C]O, the Lord is [F]come, O the [C]Lord is [Am]come!\n[C]He has come to the [C]country of [F]God,\n[D]Shining in [D7]glorious [G]dawn. [G7]\n[Am]Here is our [Dm]Leader and [C]Lord, filled with our [Am]Father's light.\n[F]Leading all [C]men with His [C7]Word, into the [F]Purpose of God.\n[C]Beautiful [C]Father[Am6]land welcome the [C]Lord!\n[F]Come let us [Em]sing and re[G7]joice!\n[C]Halle[F]lujah, [C]Halle[G7]lujah, [C]Halle[Em6]lujah! [G7]A[C]men!\n\n{section: Verse 2}\nO the Lord is come, O the Lord is come!\nHe has come to the land of the pure,\nBlessed with the blossom of life.\nHere is our Ruler and King, bringing our Father's way,\nShattering evil and sin, building the Kingdom of God.\nBeautiful Fatherland welcome the Lord! Come let us sing and rejoice!\nHallelujah, Hallelujah, Hallelujah! Amen!\n\n{section: Verse 3}\nO the Lord is come, O the Lord is come!\nHe has come to the mountainous land,\nLaden with treasure untold.\nHere is our saviour and God, showing our Father's Heart.\nLifting us high with His joy, into the glory of God.\nCome O my brothers and welcome the Lord!\nCome let us sing and rejoice!\nHallelujah, Hallelujah, Hallelujah! Aju!\n"
+}
