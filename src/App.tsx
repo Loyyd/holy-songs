@@ -12,13 +12,37 @@ function SongView({ song, transpose }: { song: SongData; transpose: number }) {
           <div className="section-title">{section.name}</div>
           {section.lines.map((line, idx) => {
             const transposedTokens = transposeTokens(line.tokens, transpose);
+            const hasAnyChord = transposedTokens.some(t => t.chord);
+            
+            // Merge chord tokens with following lyric tokens
+            // e.g., [{chord: "E", lyric: ""}, {chord: null, lyric: "Grace"}] 
+            //    -> [{chord: "E", lyric: "Grace"}]
+            const mergedTokens: { chord: string | null; lyric: string }[] = [];
+            let pendingChord: string | null = null;
+            
+            for (const token of transposedTokens) {
+              if (token.chord && !token.lyric) {
+                // Chord with no lyric - save it for the next token
+                pendingChord = token.chord;
+              } else if (pendingChord) {
+                // Apply pending chord to this token
+                mergedTokens.push({ chord: pendingChord, lyric: token.lyric || '' });
+                pendingChord = null;
+              } else {
+                mergedTokens.push({ chord: token.chord, lyric: token.lyric || '' });
+              }
+            }
+            // Handle trailing chord with no lyric
+            if (pendingChord) {
+              mergedTokens.push({ chord: pendingChord, lyric: '' });
+            }
             
             return (
-              <div className="line" key={`${section.name}-${idx}`}>
-                {transposedTokens.map((token, i) => (
+              <div className={`line ${hasAnyChord ? 'has-chords' : ''}`} key={`${section.name}-${idx}`}>
+                {mergedTokens.map((token, i) => (
                   <span key={i} className="token">
                     {token.chord && <span className="chord">{token.chord}</span>}
-                    <span className="lyric">{token.lyric || '\u00A0'}</span>
+                    <span className="lyric">{token.lyric}</span>
                   </span>
                 ))}
               </div>

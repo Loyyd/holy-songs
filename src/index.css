@@ -137,8 +137,7 @@ button {
 
 .song {
   font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  white-space: normal;
-  line-height: 1.6;
+  font-size: 16px;
 }
 
 .song-container {
@@ -147,34 +146,31 @@ button {
 }
 
 .line {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-  line-height: 1;
-  align-items: flex-end;
+  margin-bottom: 2px;
+}
+
+.line.has-chords {
+  line-height: 2.4;
 }
 
 .token {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-  vertical-align: bottom;
+  position: relative;
+  display: inline;
 }
 
 .chord {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
   font-weight: 700;
   font-size: 0.9em;
   color: #0f172a;
-  min-height: 1.2em;
+  white-space: nowrap;
   line-height: 1;
-  display: block;
 }
 
 .lyric {
-  line-height: 1.4;
-  white-space: pre;
-  display: block;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 640px) {
@@ -184,10 +180,6 @@ button {
   
   .chord {
     font-size: 0.85em;
-  }
-  
-  .line {
-    margin-bottom: 10px;
   }
 }
 
