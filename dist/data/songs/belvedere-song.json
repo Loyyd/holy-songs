@@ -1,0 +1,223 @@
+{
+  "id": "belvedere-song",
+  "title": "Belvedere Song",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I know a place where the sun shines like gold,"
+            }
+          ],
+          "raw": "[D]I know a place where the sun shines like gold,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Where the cherries bloom forth in the snow,"
+            }
+          ],
+          "raw": "[G]Where the cherries bloom forth in the snow,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "And down underneath is the loveliest place,"
+            }
+          ],
+          "raw": "[E7]And down underneath is the loveliest place,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Where the four leaf clovers grow."
+            }
+          ],
+          "raw": "[A7]Where the four leaf clovers grow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "One leaf is for faith, and one is for hope,"
+            }
+          ],
+          "raw": "[D]One leaf is for faith, and one is for hope,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "And one is for love you know,"
+            }
+          ],
+          "raw": "[D7]And one is for love you know,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And God put another one in for you,"
+            }
+          ],
+          "raw": "[G]And God put another one in for you,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "If you search you will find where they grow."
+            }
+          ],
+          "raw": "[D]If you search you will find where they grow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "But you must have faith and you must have hope,"
+            }
+          ],
+          "raw": "[A7]But you must have faith and you must have hope,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "You must love and be strong and so,"
+            }
+          ],
+          "raw": "[D]You must love and be strong and so,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "If you work, if you wait, you will find the place"
+            }
+          ],
+          "raw": "[G]If you work, if you wait, you will find the place"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Where the four leaf clovers grow."
+            }
+          ],
+          "raw": "[A7]Where the four leaf clovers grow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I know a place where the sun shines like gold,"
+            }
+          ],
+          "raw": "[D]I know a place where the sun shines like gold,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Where the cherries bloom forth in the snow,"
+            }
+          ],
+          "raw": "[G]Where the cherries bloom forth in the snow,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "And down underneath is the loveliest place,"
+            }
+          ],
+          "raw": "[E7]And down underneath is the loveliest place,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Where the four leaf clovers grow."
+            }
+          ],
+          "raw": "[A7]Where the four leaf clovers grow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/belvedere-song.pro",
+  "source": "{title: Belvedere Song}\n{key: D}\n\n{section: Verse 1}\n[D]I know a place where the sun shines like gold,\n[G]Where the cherries bloom forth in the snow,\n[E7]And down underneath is the loveliest place,\n[A7]Where the four leaf clovers grow.\n\n{section: Verse 2}\n[D]One leaf is for faith, and one is for hope,\n[D7]And one is for love you know,\n[G]And God put another one in for you,\n[D]If you search you will find where they grow.\n\n{section: Verse 3}\n[A7]But you must have faith and you must have hope,\n[D]You must love and be strong and so,\n[G]If you work, if you wait, you will find the place\n[A7]Where the four leaf clovers grow.\n\n{section: Verse 4}\n[D]I know a place where the sun shines like gold,\n[G]Where the cherries bloom forth in the snow,\n[E7]And down underneath is the loveliest place,\n[A7]Where the four leaf clovers grow.\n"
+}

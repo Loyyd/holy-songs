@@ -48,6 +48,13 @@ export function parseTokens(line: string): SongLineToken[] {
   return tokens;
 }
 
+export function serializeTokens(tokens: SongLineToken[]): string {
+  return tokens.map(t => {
+    const chordPart = t.chord ? `[${t.chord}]` : '';
+    return `${chordPart}${t.lyric}`;
+  }).join('');
+}
+
 export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
   const lines = raw.split(/\r?\n/);
   let title = 'Untitled';

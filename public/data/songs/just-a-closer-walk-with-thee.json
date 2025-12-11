@@ -1,0 +1,173 @@
+{
+  "id": "just-a-closer-walk-with-thee",
+  "title": "Just a Closer Walk with Thee",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I am weak, but Thou art strong."
+            }
+          ],
+          "raw": "[A]I am weak, but Thou art strong."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Father, keep me from all wrong."
+            }
+          ],
+          "raw": "[E7]Father, keep me from all wrong."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'll be satisfied as long as I walk,"
+            }
+          ],
+          "raw": "[A]I'll be satisfied as long as I walk,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Please let me walk close to Thee"
+            }
+          ],
+          "raw": "[A7]Please let me walk close to Thee"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Just a closer walk with Thee"
+            }
+          ],
+          "raw": "[D]Just a closer walk with Thee"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Grant it, Jesus, this my plea;"
+            }
+          ],
+          "raw": "[A]Grant it, Jesus, this my plea;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Daily walking close with Thee;"
+            }
+          ],
+          "raw": "[A7]Daily walking close with Thee;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Let it be, dear Lord, let it be."
+            }
+          ],
+          "raw": "[E7]Let it be, dear Lord, let it be."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "When my feeble life is o'er;"
+            }
+          ],
+          "raw": "[A]When my feeble life is o'er;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "And time, for me, won't be no more."
+            }
+          ],
+          "raw": "[E7]And time, for me, won't be no more."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Won't you guide me, guide me o'er,"
+            }
+          ],
+          "raw": "[A]Won't you guide me, guide me o'er,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "To Thy Kingdom on that shore?"
+            }
+          ],
+          "raw": "[A7]To Thy Kingdom on that shore?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/just-a-closer-walk-with-thee.pro",
+  "source": "{title: Just a Closer Walk with Thee}\n{key: A}\n\n{section: Verse 1}\n[A]I am weak, but Thou art strong.\n[E7]Father, keep me from all wrong.\n[A]I'll be satisfied as long as I walk,\n[A7]Please let me walk close to Thee\n\n{section: Chorus}\n[D]Just a closer walk with Thee\n[A]Grant it, Jesus, this my plea;\n[A7]Daily walking close with Thee;\n[E7]Let it be, dear Lord, let it be.\n\n{section: Verse 2}\n[A]When my feeble life is o'er;\n[E7]And time, for me, won't be no more.\n[A]Won't you guide me, guide me o'er,\n[A7]To Thy Kingdom on that shore?\n"
+}

@@ -1,0 +1,323 @@
+{
+  "id": "o-come-my-lord",
+  "title": "O Come, My Lord",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "O come my Lord; I beg You to come."
+            }
+          ],
+          "raw": "[F7]O come my Lord; I beg You to come."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "O come to me and live within my heart;"
+            }
+          ],
+          "raw": "[Bb]O come to me and live within my heart;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bbm",
+              "lyric": "Come live in my heart so black and impure,"
+            }
+          ],
+          "raw": "[Bbm]Come live in my heart so black and impure,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "That bears the burden of my sin."
+            }
+          ],
+          "raw": "[F]That bears the burden of my sin."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "O come! My Lord, You are the fire that burns so bright;"
+            }
+          ],
+          "raw": "[F]O come! My Lord, You are the fire that burns so bright;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Come burn within my heart and cleanse my sins,"
+            }
+          ],
+          "raw": "[C]Come burn within my heart and cleanse my sins,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "O how I pray that You will soon come;"
+            }
+          ],
+          "raw": "[Bb]O how I pray that You will soon come;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm7",
+              "lyric": "Come to me O Lord, Live within my heart."
+            }
+          ],
+          "raw": "[Gm7]Come to me O Lord, Live within my heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "O come my Lord; I beg You to come."
+            }
+          ],
+          "raw": "[C7]O come my Lord; I beg You to come."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Come dwell with me my altar now awaits;"
+            }
+          ],
+          "raw": "[F]Come dwell with me my altar now awaits;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "O come to the altar waiting for you,"
+            }
+          ],
+          "raw": "[Bb]O come to the altar waiting for you,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bbm",
+              "lyric": "But lost and hidden by the night."
+            }
+          ],
+          "raw": "[Bbm]But lost and hidden by the night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "O come! My Lord, You are the light that fills the world;"
+            }
+          ],
+          "raw": "[F]O come! My Lord, You are the light that fills the world;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Come purify my altar by Your light."
+            }
+          ],
+          "raw": "[C]Come purify my altar by Your light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "O how I pray that You will soon come;"
+            }
+          ],
+          "raw": "[Bb]O how I pray that You will soon come;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm7",
+              "lyric": "Many altars wait, Dwell with them, O Lord."
+            }
+          ],
+          "raw": "[Gm7]Many altars wait, Dwell with them, O Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "O come my Lord; I beg You to come."
+            }
+          ],
+          "raw": "[C7]O come my Lord; I beg You to come."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "O come and bring new life to all the earth;"
+            }
+          ],
+          "raw": "[F]O come and bring new life to all the earth;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "O come save the world from dying in pain;"
+            }
+          ],
+          "raw": "[Bb]O come save the world from dying in pain;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bbm",
+              "lyric": "Restore our sinful world."
+            }
+          ],
+          "raw": "[Bbm]Restore our sinful world."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "O come! My Lord, You are the strength that will not change;"
+            }
+          ],
+          "raw": "[F]O come! My Lord, You are the strength that will not change;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Come end our evil ways and tragic times."
+            }
+          ],
+          "raw": "[C]Come end our evil ways and tragic times."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "O how I pray that You will soon come;"
+            }
+          ],
+          "raw": "[Bb]O how I pray that You will soon come;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm7",
+              "lyric": "Crying in my heart, Come to us, O Lord."
+            }
+          ],
+          "raw": "[Gm7]Crying in my heart, Come to us, O Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/o-come-my-lord.pro",
+  "source": "{title: O Come, My Lord}\n{key: F}\n\n{section: Verse 1}\n[F7]O come my Lord; I beg You to come.\n[Bb]O come to me and live within my heart;\n[Bbm]Come live in my heart so black and impure,\n[F]That bears the burden of my sin.\n\n{section: Verse 2}\n[F]O come! My Lord, You are the fire that burns so bright;\n[C]Come burn within my heart and cleanse my sins,\n[Bb]O how I pray that You will soon come;\n[Gm7]Come to me O Lord, Live within my heart.\n\n{section: Verse 3}\n[C7]O come my Lord; I beg You to come.\n[F]Come dwell with me my altar now awaits;\n[Bb]O come to the altar waiting for you,\n[Bbm]But lost and hidden by the night.\n\n{section: Verse 4}\n[F]O come! My Lord, You are the light that fills the world;\n[C]Come purify my altar by Your light.\n[Bb]O how I pray that You will soon come;\n[Gm7]Many altars wait, Dwell with them, O Lord.\n\n{section: Verse 5}\n[C7]O come my Lord; I beg You to come.\n[F]O come and bring new life to all the earth;\n[Bb]O come save the world from dying in pain;\n[Bbm]Restore our sinful world.\n\n{section: Verse 6}\n[F]O come! My Lord, You are the strength that will not change;\n[C]Come end our evil ways and tragic times.\n[Bb]O how I pray that You will soon come;\n[Gm7]Crying in my heart, Come to us, O Lord.\n"
+}

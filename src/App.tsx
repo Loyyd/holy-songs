@@ -3,12 +3,34 @@ import Fuse from 'fuse.js';
 import { SongData, SongIndexEntry, SongLineToken } from './types';
 import { transposeTokens } from './lib/chords';
 import { parseChordPro } from './lib/parseChordPro';
+import { SongEditor } from './components/SongEditor';
 
-function SongView({ song, transpose }: { song: SongData; transpose: number }) {
+function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
+  const highlightLyric = (lyric: string) => {
+    if (!highlightQuery || !isContextSensitive || lyric.trim() === '') {
+      return lyric;
+    }
+
+    const regex = new RegExp(`(${highlightQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    const parts = lyric.split(regex);
+
+    return (
+      <>
+        {parts.map((part, i) => 
+          regex.test(part) ? (
+            <mark key={i} style={{ backgroundColor: '#fbbf24', padding: '2px 0' }}>{part}</mark>
+          ) : (
+            <span key={i}>{part}</span>
+          )
+        )}
+      </>
+    );
+  };
+
   return (
     <div className="song">
-      {song.sections.map((section) => (
-        <div key={section.name}>
+      {song.sections.map((section, sectionIdx) => (
+        <div key={`${song.id}-section-${sectionIdx}`}>
           <div className="section-title">{section.name}</div>
           {section.lines.map((line, idx) => {
             const transposedTokens = transposeTokens(line.tokens, transpose);
@@ -38,11 +60,11 @@ function SongView({ song, transpose }: { song: SongData; transpose: number }) {
             }
             
             return (
-              <div className={`line ${hasAnyChord ? 'has-chords' : ''}`} key={`${section.name}-${idx}`}>
+              <div className={`line ${hasAnyChord ? 'has-chords' : ''}`} key={`${song.id}-${sectionIdx}-line-${idx}`}>
                 {mergedTokens.map((token, i) => (
                   <span key={i} className="token">
                     {token.chord && <span className="chord">{token.chord}</span>}
-                    <span className="lyric">{token.lyric}</span>
+                    <span className="lyric">{highlightLyric(token.lyric)}</span>
                   </span>
                 ))}
               </div>
@@ -63,13 +85,14 @@ export default function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState('');
   const [editError, setEditError] = useState<string | null>(null);
+  const [contextSensitive, setContextSensitive] = useState(false);
   const [starred, setStarred] = useState<Set<string>>(() => {
     const saved = localStorage.getItem('starred-songs');
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
 
   useEffect(() => {
-    fetch('/data/songs.index.json')
+    fetch('/data/songs.index.json', { cache: 'no-store' })
       .then((res) => res.json())
       .then((data: SongIndexEntry[]) => {
         setIndex(data);
@@ -80,7 +103,7 @@ export default function App() {
 
   useEffect(() => {
     if (!selectedId) return;
-    fetch(`/data/songs/${selectedId}.json`)
+    fetch(`/data/songs/${selectedId}.json`, { cache: 'no-store' })
       .then((res) => res.json())
       .then((data: SongData) => {
         setSong(data);
@@ -94,11 +117,11 @@ export default function App() {
   const fuse = useMemo(() => {
     if (index.length === 0) return null;
     return new Fuse(index, {
-      keys: ['title', 'sections'],
+      keys: contextSensitive ? ['title', 'sections'] : ['title'],
       threshold: 0.35,
       includeScore: true
     });
-  }, [index]);
+  }, [index, contextSensitive]);
 
   const results = useMemo(() => {
     if (!fuse || query.trim() === '') return index;
@@ -129,11 +152,12 @@ export default function App() {
     setTranspose(0);
   };
 
-  const applyEdit = () => {
+  const applyEdit = (source: string = editText) => {
     if (!song) return;
     try {
-      const parsed = parseChordPro(editText, song.sourcePath ?? 'inline');
+      const parsed = parseChordPro(source, song.sourcePath ?? 'inline');
       setSong({ ...parsed, id: song.id });
+      setEditText(source);
       setEditError(null);
       setIsEditing(false);
     } catch (err) {
@@ -146,11 +170,23 @@ export default function App() {
       <div className="card">
         <h1>Holy Songs</h1>
         <p style={{ margin: '0 0 12px' }}>Search, view, and transpose songs.</p>
-        <input
-          placeholder="Search title or lyrics..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '12px' }}>
+          <input
+            placeholder="Search title or lyrics..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            style={{ flex: 1 }}
+          />
+          <label style={{ display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap' }}>
+            <input
+              type="checkbox"
+              checked={contextSensitive}
+              onChange={(e) => setContextSensitive(e.target.checked)}
+              style={{ width: 'auto', padding: 0, border: 'none', cursor: 'pointer' }}
+            />
+            <span style={{ fontSize: '14px' }}>Context sensitive</span>
+          </label>
+        </div>
         <ul className="song-list">
           {sortedResults.map((entry) => (
             <li key={entry.id}>
@@ -197,23 +233,18 @@ export default function App() {
               </button>
             </div>
             {isEditing && (
-              <div className="editor">
-                <textarea
-                  value={editText}
-                  onChange={(e) => setEditText(e.target.value)}
-                  rows={12}
-                  spellCheck={false}
+              <div className="editor-container">
+                <SongEditor
+                  initialSource={editText}
+                  onSave={applyEdit}
+                  onCancel={() => setIsEditing(false)}
                 />
                 {editError && <div className="error">{editError}</div>}
-                <div className="controls" style={{ marginTop: 8 }}>
-                  <button onClick={applyEdit}>Apply to preview</button>
-                  <button onClick={() => setIsEditing(false)}>Close</button>
-                </div>
-                <div className="note">Edits stay local; rerun build to persist to disk.</div>
+                <div className="note" style={{ marginTop: 8 }}>Edits stay local; rerun build to persist to disk.</div>
               </div>
             )}
             <div className="song-container">
-              <SongView song={song} transpose={transpose} />
+              <SongView song={song} transpose={transpose} highlightQuery={query} isContextSensitive={contextSensitive} />
             </div>
           </>
         ) : (

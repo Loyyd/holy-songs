@@ -1,0 +1,164 @@
+{
+  "id": "die-erde-ist-sch-n",
+  "title": "Die Erde Ist Schön",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Die Erde ist schön, es liebt sie der Herr,"
+            }
+          ],
+          "raw": "[G]Die Erde ist schön, es liebt sie der Herr,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Neu ist der Mensch, der liebt."
+            }
+          ],
+          "raw": "[C]Neu ist der Mensch, der liebt."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Die Erde ist schön, es liebt sie der Herr,"
+            }
+          ],
+          "raw": "[G]Die Erde ist schön, es liebt sie der Herr,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Neu ist der Mensch, der liebt wie Er."
+            }
+          ],
+          "raw": "[D7]Neu ist der Mensch, der liebt wie Er."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Große Freude wir gefunden, sie begleitet und voran."
+            }
+          ],
+          "raw": "[G]Große Freude wir gefunden, sie begleitet und voran."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Alle möchten wir sie schenken, dass die Welt sich freuen kann."
+            }
+          ],
+          "raw": "[D7]Alle möchten wir sie schenken, dass die Welt sich freuen kann."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Alle Menschen sind uns Brüder, teilen woll'n wir Freud und Leid,"
+            }
+          ],
+          "raw": "[G]Alle Menschen sind uns Brüder, teilen woll'n wir Freud und Leid,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Daraus wächst das wahre Leben, das die Welt erwartet heut."
+            }
+          ],
+          "raw": "[G7]Daraus wächst das wahre Leben, das die Welt erwartet heut."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Bei der Arbeit, in der Freizeit, fern sei Zwietracht, Zorn und Neid,"
+            }
+          ],
+          "raw": "[C]Bei der Arbeit, in der Freizeit, fern sei Zwietracht, Zorn und Neid,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Schenk dem andern deine Liebe, und ins Herz zieht ein die Freud."
+            }
+          ],
+          "raw": "[G]Schenk dem andern deine Liebe, und ins Herz zieht ein die Freud."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/die-erde-ist-schoen.pro",
+  "source": "{title: Die Erde Ist Schön}\n{key: G}\n\n{section: Chorus}\n[G]Die Erde ist schön, es liebt sie der Herr,\n[C]Neu ist der Mensch, der liebt.\n[G]Die Erde ist schön, es liebt sie der Herr,\n[D7]Neu ist der Mensch, der liebt wie Er.\n\n{section: Verse 1}\n[G]Große Freude wir gefunden, sie begleitet und voran.\n[D7]Alle möchten wir sie schenken, dass die Welt sich freuen kann.\n\n{section: Verse 2}\n[G]Alle Menschen sind uns Brüder, teilen woll'n wir Freud und Leid,\n[G7]Daraus wächst das wahre Leben, das die Welt erwartet heut.\n\n{{section: Verse 3}\n[C]Bei der Arbeit, in der Freizeit, fern sei Zwietracht, Zorn und Neid,\n[G]Schenk dem andern deine Liebe, und ins Herz zieht ein die Freud.\n"
+}

@@ -1,0 +1,211 @@
+{
+  "id": "song-of-the-young-people",
+  "title": "Song of the Young People",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "We shout with joy, we rise and sing! The "
+            },
+            {
+              "chord": "C",
+              "lyric": "Will of God is "
+            },
+            {
+              "chord": "Am",
+              "lyric": "done!"
+            }
+          ],
+          "raw": "[G]We shout with joy, we rise and sing! The [C]Will of God is [Am]done!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "A new day dawns and the dream lives; the "
+            },
+            {
+              "chord": "G",
+              "lyric": "Son of God has come!"
+            }
+          ],
+          "raw": "[D7]A new day dawns and the dream lives; the [G]Son of God has come!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Fight bravely to crush Satan; God's power will be "
+            },
+            {
+              "chord": "B",
+              "lyric": "revealed."
+            }
+          ],
+          "raw": "[Em]Fight bravely to crush Satan; God's power will be [B]revealed."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "In the children of our Father, the "
+            },
+            {
+              "chord": "Am",
+              "lyric": "Youth of "
+            },
+            {
+              "chord": "D",
+              "lyric": "Harmony."
+            }
+          ],
+          "raw": "[G]In the children of our Father, the [Am]Youth of [D]Harmony."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The darkness which has covered us in Him has been dispelled."
+            }
+          ],
+          "raw": "[G]The darkness which has covered us in Him has been dispelled."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The dawn breaks into daylight; we ring the morning bell."
+            }
+          ],
+          "raw": "[G]The dawn breaks into daylight; we ring the morning bell."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Thirty billion shall live in the bright white light of truth."
+            }
+          ],
+          "raw": "[G]Thirty billion shall live in the bright white light of truth."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Let us rise and march forward with Harmony of Youth."
+            }
+          ],
+          "raw": "[G]Let us rise and march forward with Harmony of Youth."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "As children of the Heavenly power, we march against our foe;"
+            }
+          ],
+          "raw": "[G]As children of the Heavenly power, we march against our foe;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The command comes and the world bows to our True Father's own!"
+            }
+          ],
+          "raw": "[G]The command comes and the world bows to our True Father's own!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Beaming light unto the nations, we carry high our dream. Let us win"
+            }
+          ],
+          "raw": "[G]Beaming light unto the nations, we carry high our dream. Let us win"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "out for our Father, we Youth of Harmony!"
+            }
+          ],
+          "raw": "[G]out for our Father, we Youth of Harmony!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/song-of-the-young-people.pro",
+  "source": "{title: Song of the Young People}\n{key: G}\n\n{section: Verse 1}\n[G]We shout with joy, we rise and sing! The [C]Will of God is [Am]done!\n[D7]A new day dawns and the dream lives; the [G]Son of God has come!\n\n{section: Verse 2}\n[Em]Fight bravely to crush Satan; God's power will be [B]revealed.\n[G]In the children of our Father, the [Am]Youth of [D]Harmony.\n\n{section: Verse 3}\n[G]The darkness which has covered us in Him has been dispelled.\n[G]The dawn breaks into daylight; we ring the morning bell.\n[G]Thirty billion shall live in the bright white light of truth.\n[G]Let us rise and march forward with Harmony of Youth.\n\n{section: Verse 4}\n[G]As children of the Heavenly power, we march against our foe;\n[G]The command comes and the world bows to our True Father's own!\n[G]Beaming light unto the nations, we carry high our dream. Let us win\n[G]out for our Father, we Youth of Harmony!\n"
+}

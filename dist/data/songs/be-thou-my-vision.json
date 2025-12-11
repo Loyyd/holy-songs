@@ -1,0 +1,279 @@
+{
+  "id": "be-thou-my-vision",
+  "title": "Be Thou My Vision",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Be Thou "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "my vision, "
+            },
+            {
+              "chord": "G",
+              "lyric": "O Lord "
+            },
+            {
+              "chord": "D",
+              "lyric": "of my "
+            },
+            {
+              "chord": "A",
+              "lyric": "heart; "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Be Thou [Bm]my vision, [G]O Lord [D]of my [A]heart; [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Naught be all "
+            },
+            {
+              "chord": "D",
+              "lyric": "else to me, "
+            },
+            {
+              "chord": "G",
+              "lyric": "save that Thou "
+            },
+            {
+              "chord": "A",
+              "lyric": "art--"
+            }
+          ],
+          "raw": "[A]Naught be all [D]else to me, [G]save that Thou [A]art--"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Thou my "
+            },
+            {
+              "chord": "D",
+              "lyric": "best thought, "
+            },
+            {
+              "chord": "G",
+              "lyric": "by day or "
+            },
+            {
+              "chord": "A",
+              "lyric": "by night,"
+            }
+          ],
+          "raw": "[G]Thou my [D]best thought, [G]by day or [A]by night,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Waking or "
+            },
+            {
+              "chord": "G",
+              "lyric": "sleeping, "
+            },
+            {
+              "chord": "A",
+              "lyric": "Thy presence my "
+            },
+            {
+              "chord": "D",
+              "lyric": "light."
+            }
+          ],
+          "raw": "[D]Waking or [G]sleeping, [A]Thy presence my [D]light."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Be Thou my wisdom and Thou my true word,"
+            }
+          ],
+          "raw": "[A]Be Thou my wisdom and Thou my true word,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I ever with Thee and Thou with me, Lord;"
+            }
+          ],
+          "raw": "[D]I ever with Thee and Thou with me, Lord;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Thou my great Father, and I Thy true son;"
+            }
+          ],
+          "raw": "[G]Thou my great Father, and I Thy true son;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Thou in me dwelling, and I with Thee one."
+            }
+          ],
+          "raw": "[A]Thou in me dwelling, and I with Thee one."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Riches I heed not, nor man's empty praise,"
+            }
+          ],
+          "raw": "[D]Riches I heed not, nor man's empty praise,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Thou mine inheritance, now and always;"
+            }
+          ],
+          "raw": "[Bm]Thou mine inheritance, now and always;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Thou and Thou only, first in my heart,"
+            }
+          ],
+          "raw": "[G]Thou and Thou only, first in my heart,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "High king of heaven, my treasure Thou art."
+            }
+          ],
+          "raw": "[A]High king of heaven, my treasure Thou art."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "High king of heaven, my victory won,"
+            }
+          ],
+          "raw": "[D]High king of heaven, my victory won,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "May I reach heaven's joys, O bright heaven's son!"
+            }
+          ],
+          "raw": "[Bm]May I reach heaven's joys, O bright heaven's son!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Heart of my own heart, whatever befall,"
+            }
+          ],
+          "raw": "[G]Heart of my own heart, whatever befall,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Still be my vision, O ruler of all."
+            }
+          ],
+          "raw": "[A]Still be my vision, O ruler of all."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/be-thou-my-vision.pro",
+  "source": "{title: Be Thou My Vision}\n{key: D}\n\n{section: Verse 1}\n[D]Be Thou [Bm]my vision, [G]O Lord [D]of my [A]heart; [D]\n[A]Naught be all [D]else to me, [G]save that Thou [A]art--\n[G]Thou my [D]best thought, [G]by day or [A]by night,\n[D]Waking or [G]sleeping, [A]Thy presence my [D]light.\n\n{section: Verse 2}\n[A]Be Thou my wisdom and Thou my true word,\n[D]I ever with Thee and Thou with me, Lord;\n[G]Thou my great Father, and I Thy true son;\n[A]Thou in me dwelling, and I with Thee one.\n\n{section: Verse 3}\n[D]Riches I heed not, nor man's empty praise,\n[Bm]Thou mine inheritance, now and always;\n[G]Thou and Thou only, first in my heart,\n[A]High king of heaven, my treasure Thou art.\n\n{section: Verse 4}\n[D]High king of heaven, my victory won,\n[Bm]May I reach heaven's joys, O bright heaven's son!\n[G]Heart of my own heart, whatever befall,\n[A]Still be my vision, O ruler of all.\n"
+}

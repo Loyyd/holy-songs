@@ -1,0 +1,269 @@
+{
+  "id": "o-my-child-come-home-again",
+  "title": "O, My Child Come Home Again",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "O my child, come home again; How I beg you to come home."
+            }
+          ],
+          "raw": "[G]O my child, come home again; How I beg you to come home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Though your sin be deep and dark, and your burden hard to bear,"
+            }
+          ],
+          "raw": "[A7]Though your sin be deep and dark, and your burden hard to bear,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Still the Lord of all will forgive you,"
+            }
+          ],
+          "raw": "[D7]Still the Lord of all will forgive you,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And accept you in His grace."
+            }
+          ],
+          "raw": "[G]And accept you in His grace."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "For the heart of God is deep and wide,"
+            }
+          ],
+          "raw": "[D7]For the heart of God is deep and wide,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Boundless and eternal His love."
+            }
+          ],
+          "raw": "[G]Boundless and eternal His love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "O my child, come home again; How I beg you to come home."
+            }
+          ],
+          "raw": "[C]O my child, come home again; How I beg you to come home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "How He searches every day, for the children of His heart."
+            }
+          ],
+          "raw": "[G]How He searches every day, for the children of His heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Every night the Lord leaves the doorway"
+            }
+          ],
+          "raw": "[D7]Every night the Lord leaves the doorway"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Open wide for their return,"
+            }
+          ],
+          "raw": "[G]Open wide for their return,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And He longs for them to come back home,"
+            }
+          ],
+          "raw": "[Am]And He longs for them to come back home,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "All the ones who left Him behind."
+            }
+          ],
+          "raw": "[D7]All the ones who left Him behind."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "O my child, come home again; How I beg you to come home,"
+            }
+          ],
+          "raw": "[G]O my child, come home again; How I beg you to come home,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Though the whip has stung your back, in the tender hands of God,"
+            }
+          ],
+          "raw": "[A7]Though the whip has stung your back, in the tender hands of God,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "All your suffering path can be lightened,"
+            }
+          ],
+          "raw": "[D7]All your suffering path can be lightened,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And the Lord can ease your pain,"
+            }
+          ],
+          "raw": "[G]And the Lord can ease your pain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Come and rest within the Father's heart,"
+            }
+          ],
+          "raw": "[C]Come and rest within the Father's heart,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "O my children quickly come home."
+            }
+          ],
+          "raw": "[G]O my children quickly come home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/o-my-child-come-home-again.pro",
+  "source": "{title: O, My Child Come Home Again}\n{key: G}\n\n{section: Verse 1}\n[G]O my child, come home again; How I beg you to come home.\n[A7]Though your sin be deep and dark, and your burden hard to bear,\n[D7]Still the Lord of all will forgive you,\n[G]And accept you in His grace.\n\n{section: Verse 2}\n[D7]For the heart of God is deep and wide,\n[G]Boundless and eternal His love.\n\n{section: Verse 3}\n[C]O my child, come home again; How I beg you to come home.\n[G]How He searches every day, for the children of His heart.\n[D7]Every night the Lord leaves the doorway\n[G]Open wide for their return,\n\n{section: Verse 4}\n[Am]And He longs for them to come back home,\n[D7]All the ones who left Him behind.\n\n{section: Verse 5}\n[G]O my child, come home again; How I beg you to come home,\n[A7]Though the whip has stung your back, in the tender hands of God,\n[D7]All your suffering path can be lightened,\n[G]And the Lord can ease your pain,\n\n{section: Verse 6}\n[C]Come and rest within the Father's heart,\n[G]O my children quickly come home.\n"
+}

@@ -1,0 +1,323 @@
+{
+  "id": "pledge",
+  "title": "Pledge",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "My fallen figure shames the earth;"
+            }
+          ],
+          "raw": "[D]My fallen figure shames the earth;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Once I was born, yet never I lived,"
+            }
+          ],
+          "raw": "[G]Once I was born, yet never I lived,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Never forsaking, You came to me"
+            }
+          ],
+          "raw": "[D]Never forsaking, You came to me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Giving my life and breaking my chains"
+            }
+          ],
+          "raw": "[G]Giving my life and breaking my chains"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Tenderly You gathered me up;"
+            }
+          ],
+          "raw": "[Bm]Tenderly You gathered me up;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Filled with love and sweating blood,"
+            }
+          ],
+          "raw": "[F#m]Filled with love and sweating blood,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Ever patient, You taught me the word,"
+            }
+          ],
+          "raw": "[Bm]Ever patient, You taught me the word,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Carved in my heart, it forever remains."
+            }
+          ],
+          "raw": "[D]Carved in my heart, it forever remains."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Never I knew what life should be;"
+            }
+          ],
+          "raw": "[Em]Never I knew what life should be;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "All I can do is follow your way."
+            }
+          ],
+          "raw": "[A7]All I can do is follow your way."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "When on the path, I stumble and fall,"
+            }
+          ],
+          "raw": "[D]When on the path, I stumble and fall,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Turning, You give the courage I need."
+            }
+          ],
+          "raw": "[G]Turning, You give the courage I need."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Though the path is narrow and steep;"
+            }
+          ],
+          "raw": "[Bm]Though the path is narrow and steep;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Cruel thorns leave a trail of blood."
+            }
+          ],
+          "raw": "[F#m]Cruel thorns leave a trail of blood."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Still I pledge I will follow the way,"
+            }
+          ],
+          "raw": "[Bm]Still I pledge I will follow the way,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Follow as far as my Father will lead."
+            }
+          ],
+          "raw": "[D]Follow as far as my Father will lead."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Freed from a sleep so deep and dark,"
+            }
+          ],
+          "raw": "[Em]Freed from a sleep so deep and dark,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "gladly I wake to knowing your will."
+            }
+          ],
+          "raw": "[A7]gladly I wake to knowing your will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Though death may stab me time and again,"
+            }
+          ],
+          "raw": "[D]Though death may stab me time and again,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Nothing can change a loyal heart."
+            }
+          ],
+          "raw": "[G]Nothing can change a loyal heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "This I pledge, my life is for You;"
+            }
+          ],
+          "raw": "[Bm]This I pledge, my life is for You;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "For Your will I rush forward to die."
+            }
+          ],
+          "raw": "[F#m]For Your will I rush forward to die."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "This I pledge till the struggle is done,"
+            }
+          ],
+          "raw": "[Bm]This I pledge till the struggle is done,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "'Till we proclaim the victorious day."
+            }
+          ],
+          "raw": "[D]'Till we proclaim the victorious day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/pledge.pro",
+  "source": "{title: Pledge}\n{key: D}\n\n{section: Verse 1}\n[D]My fallen figure shames the earth;\n[G]Once I was born, yet never I lived,\n[D]Never forsaking, You came to me\n[G]Giving my life and breaking my chains\n\n{section: Verse 2}\n[Bm]Tenderly You gathered me up;\n[F#m]Filled with love and sweating blood,\n[Bm]Ever patient, You taught me the word,\n[D]Carved in my heart, it forever remains.\n\n{section: Verse 3}\n[Em]Never I knew what life should be;\n[A7]All I can do is follow your way.\n[D]When on the path, I stumble and fall,\n[G]Turning, You give the courage I need.\n\n{section: Verse 4}\n[Bm]Though the path is narrow and steep;\n[F#m]Cruel thorns leave a trail of blood.\n[Bm]Still I pledge I will follow the way,\n[D]Follow as far as my Father will lead.\n\n{section: Verse 5}\n[Em]Freed from a sleep so deep and dark,\n[A7]gladly I wake to knowing your will.\n[D]Though death may stab me time and again,\n[G]Nothing can change a loyal heart.\n\n{section: Verse 6}\n[Bm]This I pledge, my life is for You;\n[F#m]For Your will I rush forward to die.\n[Bm]This I pledge till the struggle is done,\n[D]'Till we proclaim the victorious day.\n"
+}

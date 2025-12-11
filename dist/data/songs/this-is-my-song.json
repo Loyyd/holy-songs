@@ -1,0 +1,226 @@
+{
+  "id": "this-is-my-song",
+  "title": "This Is My Song",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "This is my song, O God of all the nations,"
+            }
+          ],
+          "raw": "[C]This is my song, O God of all the nations,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "A song of peace for lands afar and mine."
+            }
+          ],
+          "raw": "[Dm]A song of peace for lands afar and mine."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "This is my home, the country where my heart is;"
+            }
+          ],
+          "raw": "[G7]This is my home, the country where my heart is;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Here are my hopes, my dreams, my holy shrine;"
+            }
+          ],
+          "raw": "[C]Here are my hopes, my dreams, my holy shrine;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "But other hearts in other lands are beating"
+            }
+          ],
+          "raw": "[Am]But other hearts in other lands are beating"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "With hopes and dreams as true and high as mine."
+            }
+          ],
+          "raw": "[Em]With hopes and dreams as true and high as mine."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "My country's skies are bluer than the ocean,"
+            }
+          ],
+          "raw": "[Dm]My country's skies are bluer than the ocean,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And sunlight beams on cloverleaf and pine."
+            }
+          ],
+          "raw": "[C]And sunlight beams on cloverleaf and pine."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "But other lands have sunlight too, and clover,"
+            }
+          ],
+          "raw": "[G7]But other lands have sunlight too, and clover,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And skies are everywhere as blue as mine."
+            }
+          ],
+          "raw": "[C]And skies are everywhere as blue as mine."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Oh, hear my song, thou God of all the nations,"
+            }
+          ],
+          "raw": "[C]Oh, hear my song, thou God of all the nations,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "A song of peace for their land and for mine."
+            }
+          ],
+          "raw": "[Dm]A song of peace for their land and for mine."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "This is my prayer, O Lord of all earth's kingdoms,"
+            }
+          ],
+          "raw": "[G7]This is my prayer, O Lord of all earth's kingdoms,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Thy kingdom come; on earth thy will be done."
+            }
+          ],
+          "raw": "[C]Thy kingdom come; on earth thy will be done."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Let Christ be lifted up till all men serve him,"
+            }
+          ],
+          "raw": "[Am]Let Christ be lifted up till all men serve him,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And hearts united learn to live as one."
+            }
+          ],
+          "raw": "[Em]And hearts united learn to live as one."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Oh, hear my prayer, thou God of all the nations,"
+            }
+          ],
+          "raw": "[Dm]Oh, hear my prayer, thou God of all the nations,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Myself I give thee; Let Thy will be done."
+            }
+          ],
+          "raw": "[C]Myself I give thee; Let Thy will be done."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/this-is-my-song.pro",
+  "source": "{title: This Is My Song}\n{key: C}\n\n{section: Verse 1}\n[C]This is my song, O God of all the nations,\n[Dm]A song of peace for lands afar and mine.\n[G7]This is my home, the country where my heart is;\n[C]Here are my hopes, my dreams, my holy shrine;\n[Am]But other hearts in other lands are beating\n[Em]With hopes and dreams as true and high as mine.\n\n{{section: Verse 2}\n[Dm]My country's skies are bluer than the ocean,\n[C]And sunlight beams on cloverleaf and pine.\n[G7]But other lands have sunlight too, and clover,\n[C]And skies are everywhere as blue as mine.\n\n{{section: Verse 3}\n[C]Oh, hear my song, thou God of all the nations,\n[Dm]A song of peace for their land and for mine.\n[G7]This is my prayer, O Lord of all earth's kingdoms,\n[C]Thy kingdom come; on earth thy will be done.\n\n{{section: Verse 4}\n[Am]Let Christ be lifted up till all men serve him,\n[Em]And hearts united learn to live as one.\n[Dm]Oh, hear my prayer, thou God of all the nations,\n[C]Myself I give thee; Let Thy will be done.\n"
+}

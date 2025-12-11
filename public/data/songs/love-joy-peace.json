@@ -1,0 +1,163 @@
+{
+  "id": "love-joy-peace",
+  "title": "Love Joy Peace",
+  "key": "Em",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Love, love, love, love"
+            }
+          ],
+          "raw": "[Em]Love, love, love, love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Love is the gospel of the world,"
+            }
+          ],
+          "raw": "[D]Love is the gospel of the world,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Love your neighbour as your brother,"
+            }
+          ],
+          "raw": "[Em]Love your neighbour as your brother,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Love, love, love, love."
+            }
+          ],
+          "raw": "[B7]Love, love, love, love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Joy, joy, joy, joy"
+            }
+          ],
+          "raw": "[Em]Joy, joy, joy, joy"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Joy is the purpose of our lives,"
+            }
+          ],
+          "raw": "[D]Joy is the purpose of our lives,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Let us dance before our Father,"
+            }
+          ],
+          "raw": "[Em]Let us dance before our Father,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Joy, joy, joy, joy."
+            }
+          ],
+          "raw": "[B7]Joy, joy, joy, joy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Peace, peace, peace, peace,"
+            }
+          ],
+          "raw": "[Em]Peace, peace, peace, peace,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Peace is the hope of all mankind,"
+            }
+          ],
+          "raw": "[D]Peace is the hope of all mankind,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Let us work to free our brothers,"
+            }
+          ],
+          "raw": "[Em]Let us work to free our brothers,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Peace, peace, peace, peace."
+            }
+          ],
+          "raw": "[B7]Peace, peace, peace, peace."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/love-joy-peace.pro",
+  "source": "{title: Love Joy Peace}\n{key: Em}\n\n{section: Verse 1}\n[Em]Love, love, love, love\n[D]Love is the gospel of the world,\n[Em]Love your neighbour as your brother,\n[B7]Love, love, love, love.\n\n{{section: Verse 2}\n[Em]Joy, joy, joy, joy\n[D]Joy is the purpose of our lives,\n[Em]Let us dance before our Father,\n[B7]Joy, joy, joy, joy.\n\n{{section: Verse 3}\n[Em]Peace, peace, peace, peace,\n[D]Peace is the hope of all mankind,\n[Em]Let us work to free our brothers,\n[B7]Peace, peace, peace, peace.\n"
+}

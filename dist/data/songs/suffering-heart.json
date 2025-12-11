@@ -1,0 +1,510 @@
+{
+  "id": "suffering-heart",
+  "title": "Suffering Heart",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Darkness gaining power within, tempting my soul to fall."
+            }
+          ],
+          "raw": "[C]Darkness gaining power within, tempting my soul to fall."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Weak is my heart, blurred are my thoughts, soon I am overcome."
+            }
+          ],
+          "raw": "[G7]Weak is my heart, blurred are my thoughts, soon I am overcome."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Blind to the truth, losing the Way, thinking of myself;"
+            }
+          ],
+          "raw": "[Am]Blind to the truth, losing the Way, thinking of myself;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "So I can see how sin began sprouting within my soul."
+            }
+          ],
+          "raw": "[Em]So I can see how sin began sprouting within my soul."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "So I can see how sin began sprouting within my soul."
+            }
+          ],
+          "raw": "[Am]So I can see how sin began sprouting within my soul."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "When my Lord came over to me, I would not hear His voice;"
+            }
+          ],
+          "raw": "[Dm]When my Lord came over to me, I would not hear His voice;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Blinded and deaf, closing my heart, I ran away from Him."
+            }
+          ],
+          "raw": "[G7]Blinded and deaf, closing my heart, I ran away from Him."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "So I remained lost in desire only for myself."
+            }
+          ],
+          "raw": "[C]So I remained lost in desire only for myself."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Grieving the Lord suffered for me, going again to the "
+            },
+            {
+              "chord": "G7",
+              "lyric": "cross."
+            }
+          ],
+          "raw": "[F]Grieving the Lord suffered for me, going again to the [G7]cross."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Grieving the Lord suffered for me, going again to the cross."
+            }
+          ],
+          "raw": "[C]Grieving the Lord suffered for me, going again to the cross."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "To restore the black lonely night held by the power of sin,"
+            }
+          ],
+          "raw": "[G7]To restore the black lonely night held by the power of sin,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Deserts He crossed, walking the way, climbing the rocky peaks."
+            }
+          ],
+          "raw": "[C]Deserts He crossed, walking the way, climbing the rocky peaks."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Searching for us people of sin who deserve to die,"
+            }
+          ],
+          "raw": "[F]Searching for us people of sin who deserve to die,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "How then could I ever begin thanking the Lord for such grace?"
+            }
+          ],
+          "raw": "[G7]How then could I ever begin thanking the Lord for such grace?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "How then could I ever begin thanking the Lord for such grace?"
+            }
+          ],
+          "raw": "[C]How then could I ever begin thanking the Lord for such grace?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "To defeat the power of death, fighting the realm of sin."
+            }
+          ],
+          "raw": "[Em]To defeat the power of death, fighting the realm of sin."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "I sought the Lord, longing for Him, Bridegroom of my soul."
+            }
+          ],
+          "raw": "[F]I sought the Lord, longing for Him, Bridegroom of my soul."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 7",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Tortured my heart, suffering alone, fighting deepest pain,"
+            }
+          ],
+          "raw": "[G7]Tortured my heart, suffering alone, fighting deepest pain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Finally today I greet the Lord, gaining all comfort from Him."
+            }
+          ],
+          "raw": "[C]Finally today I greet the Lord, gaining all comfort from Him."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Finally today I greet the Lord, gaining all comfort from Him."
+            }
+          ],
+          "raw": "[F]Finally today I greet the Lord, gaining all comfort from Him."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 8",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Joy eternal lifting my heart, swelling within my breast;"
+            }
+          ],
+          "raw": "[G7]Joy eternal lifting my heart, swelling within my breast;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Now I behold, Heavenly life, glory and happiness."
+            }
+          ],
+          "raw": "[C]Now I behold, Heavenly life, glory and happiness."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Always before stung by my sin, I was doomed to die."
+            }
+          ],
+          "raw": "[Em]Always before stung by my sin, I was doomed to die."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 9",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Finally today I am reborn, filled with abundant new life,"
+            }
+          ],
+          "raw": "[F]Finally today I am reborn, filled with abundant new life,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Finally today I am reborn, filled with abundant new life."
+            }
+          ],
+          "raw": "[G7]Finally today I am reborn, filled with abundant new life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "O my dearest Heavenly bride, now you've come home at last,"
+            }
+          ],
+          "raw": "[C]O my dearest Heavenly bride, now you've come home at last,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 10",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Deserts you crossed, searching for me, climbing the rocky peaks;"
+            }
+          ],
+          "raw": "[Em]Deserts you crossed, searching for me, climbing the rocky peaks;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "You persevered, faithful to me, longing for this day."
+            }
+          ],
+          "raw": "[F]You persevered, faithful to me, longing for this day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "How you've become lovely to see through all your suffering and pain,"
+            }
+          ],
+          "raw": "[G7]How you've become lovely to see through all your suffering and pain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 11",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "How you've become lovely to see through all your suffering and pain."
+            }
+          ],
+          "raw": "[C]How you've become lovely to see through all your suffering and pain."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Come, O come, together we'll sing songs of eternal praise."
+            }
+          ],
+          "raw": "[F]Come, O come, together we'll sing songs of eternal praise."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Taste now my love, treasure so pure, Heaven's gift for you;"
+            }
+          ],
+          "raw": "[G7]Taste now my love, treasure so pure, Heaven's gift for you;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 12",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "All of my heart waited for you, yearning for this day."
+            }
+          ],
+          "raw": "[C]All of my heart waited for you, yearning for this day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "All of my heart waited for you now I can give you my love."
+            }
+          ],
+          "raw": "[F]All of my heart waited for you now I can give you my love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "All of my heart waited for you now I can give you my love."
+            }
+          ],
+          "raw": "[G7]All of my heart waited for you now I can give you my love."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/suffering-heart.pro",
+  "source": "{title: Suffering Heart}\n{key: C}\n\n{section: Verse 1}\n[C]Darkness gaining power within, tempting my soul to fall.\n[G7]Weak is my heart, blurred are my thoughts, soon I am overcome.\n\n{section: Verse 2}\n[Am]Blind to the truth, losing the Way, thinking of myself;\n[Em]So I can see how sin began sprouting within my soul.\n\n{section: Verse 3}\n[Am]So I can see how sin began sprouting within my soul.\n[Dm]When my Lord came over to me, I would not hear His voice;\n[G7]Blinded and deaf, closing my heart, I ran away from Him.\n\n{section: Verse 4}\n[C]So I remained lost in desire only for myself.\n[F]Grieving the Lord suffered for me, going again to the [G7]cross.\n[C]Grieving the Lord suffered for me, going again to the cross.\n\n{section: Verse 5}\n[G7]To restore the black lonely night held by the power of sin,\n[C]Deserts He crossed, walking the way, climbing the rocky peaks.\n[F]Searching for us people of sin who deserve to die,\n[G7]How then could I ever begin thanking the Lord for such grace?\n\n{section: Verse 6}\n[C]How then could I ever begin thanking the Lord for such grace?\n[Em]To defeat the power of death, fighting the realm of sin.\n[F]I sought the Lord, longing for Him, Bridegroom of my soul.\n\n{section: Verse 7}\n[G7]Tortured my heart, suffering alone, fighting deepest pain,\n[C]Finally today I greet the Lord, gaining all comfort from Him.\n[F]Finally today I greet the Lord, gaining all comfort from Him.\n\n{section: Verse 8}\n[G7]Joy eternal lifting my heart, swelling within my breast;\n[C]Now I behold, Heavenly life, glory and happiness.\n[Em]Always before stung by my sin, I was doomed to die.\n\n{section: Verse 9}\n[F]Finally today I am reborn, filled with abundant new life,\n[G7]Finally today I am reborn, filled with abundant new life.\n[C]O my dearest Heavenly bride, now you've come home at last,\n\n{section: Verse 10}\n[Em]Deserts you crossed, searching for me, climbing the rocky peaks;\n[F]You persevered, faithful to me, longing for this day.\n[G7]How you've become lovely to see through all your suffering and pain,\n\n{section: Verse 11}\n[C]How you've become lovely to see through all your suffering and pain.\n[F]Come, O come, together we'll sing songs of eternal praise.\n[G7]Taste now my love, treasure so pure, Heaven's gift for you;\n\n{section: Verse 12}\n[C]All of my heart waited for you, yearning for this day.\n[F]All of my heart waited for you now I can give you my love.\n[G7]All of my heart waited for you now I can give you my love.\n"
+}

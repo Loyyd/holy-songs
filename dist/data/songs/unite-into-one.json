@@ -1,0 +1,312 @@
+{
+  "id": "unite-into-one",
+  "title": "Unite Into One",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Chase away the power of Satan,"
+            }
+          ],
+          "raw": "[A]Chase away the power of Satan,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Far away beyond the land and sea;"
+            }
+          ],
+          "raw": "[A]Far away beyond the land and sea;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Build for God a boundless Kingdom,"
+            }
+          ],
+          "raw": "[A]Build for God a boundless Kingdom,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Giving joy and liberty to all."
+            }
+          ],
+          "raw": "[E7]Giving joy and liberty to all."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Come, ye people all around the world, let's "
+            },
+            {
+              "chord": "A",
+              "lyric": "unite into "
+            },
+            {
+              "chord": "D",
+              "lyric": "one;"
+            }
+          ],
+          "raw": "[E7]Come, ye people all around the world, let's [A]unite into [D]one;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Spreading forth the glory of the Father,"
+            }
+          ],
+          "raw": "[A]Spreading forth the glory of the Father,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "And His great will forevermore."
+            }
+          ],
+          "raw": "[A]And His great will forevermore."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Unite, Unite, let's unite into one"
+            }
+          ],
+          "raw": "[A]Unite, Unite, let's unite into one"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Bring about one nation uniting all the people of the world."
+            }
+          ],
+          "raw": "[A]Bring about one nation uniting all the people of the world."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Raise the white cross on our banner,"
+            }
+          ],
+          "raw": "[A]Raise the white cross on our banner,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "High upon Mt. Everest it waves;"
+            }
+          ],
+          "raw": "[A]High upon Mt. Everest it waves;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "In the blue Pacific waters,"
+            }
+          ],
+          "raw": "[A]In the blue Pacific waters,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Cleanse the sword that brought the victory."
+            }
+          ],
+          "raw": "[E7]Cleanse the sword that brought the victory."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Come, ye people all around the world, let's "
+            },
+            {
+              "chord": "A",
+              "lyric": "unite into "
+            },
+            {
+              "chord": "D",
+              "lyric": "one. Now"
+            }
+          ],
+          "raw": "[E7]Come, ye people all around the world, let's [A]unite into [D]one. Now"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "resolve to end the deep resentment, of the long centuries past."
+            }
+          ],
+          "raw": "[A]resolve to end the deep resentment, of the long centuries past."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Build a fortress to defend the peace,"
+            }
+          ],
+          "raw": "[A]Build a fortress to defend the peace,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "On the great new heaven and new earth;"
+            }
+          ],
+          "raw": "[E7]On the great new heaven and new earth;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "We will all sing 'Hallelujah,'"
+            }
+          ],
+          "raw": "[A]We will all sing 'Hallelujah,'"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Safe within the bosom of the Lord."
+            }
+          ],
+          "raw": "[A]Safe within the bosom of the Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Come, ye people all around the world, let's unite into one."
+            }
+          ],
+          "raw": "[A]Come, ye people all around the world, let's unite into one."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Share the joy and glory of Heaven, hidden so long from every eye."
+            }
+          ],
+          "raw": "[E7]Share the joy and glory of Heaven, hidden so long from every eye."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/unite-into-one.pro",
+  "source": "{title: Unite Into One}\n{key: A}\n\n{section: Verse 1}\n[A]Chase away the power of Satan,\n[A]Far away beyond the land and sea;\n[A]Build for God a boundless Kingdom,\n[E7]Giving joy and liberty to all.\n\n{section: Verse 2}\n[E7]Come, ye people all around the world, let's [A]unite into [D]one;\n[A]Spreading forth the glory of the Father,\n[A]And His great will forevermore.\n\n{section: Chorus}\n[A]Unite, Unite, let's unite into one\n[A]Bring about one nation uniting all the people of the world.\n\n{section: Verse 3}\n[A]Raise the white cross on our banner,\n[A]High upon Mt. Everest it waves;\n[A]In the blue Pacific waters,\n[E7]Cleanse the sword that brought the victory.\n\n{section: Verse 4}\n[E7]Come, ye people all around the world, let's [A]unite into [D]one. Now\n[A]resolve to end the deep resentment, of the long centuries past.\n[A]Build a fortress to defend the peace,\n[E7]On the great new heaven and new earth;\n\n{section: Verse 5}\n[A]We will all sing 'Hallelujah,'\n[A]Safe within the bosom of the Lord.\n[A]Come, ye people all around the world, let's unite into one.\n[E7]Share the joy and glory of Heaven, hidden so long from every eye.\n"
+}

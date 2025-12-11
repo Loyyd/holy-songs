@@ -1,0 +1,582 @@
+{
+  "id": "call-to-sacrifice",
+  "title": "Call to Sacrifice",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Come unite the world you soldiers of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Truth,"
+            }
+          ],
+          "raw": "[D]Come unite the world you soldiers of [Bm]Truth,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Chosen by the Lord to carry His "
+            },
+            {
+              "chord": "D",
+              "lyric": "Word."
+            }
+          ],
+          "raw": "[G]Chosen by the Lord to carry His [D]Word."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Till the world proclaims Him ruler of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "all,"
+            }
+          ],
+          "raw": "[D]Till the world proclaims Him ruler of [Bm]all,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Every soldier must go forward to "
+            },
+            {
+              "chord": "D",
+              "lyric": "fight."
+            }
+          ],
+          "raw": "[G]Every soldier must go forward to [D]fight."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Offer God your life and desire, Uniting both the body and "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "soul,"
+            }
+          ],
+          "raw": "[D]Offer God your life and desire, Uniting both the body and [Bm]soul,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "We shall be the soldiers who can "
+            },
+            {
+              "chord": "D",
+              "lyric": "fulfill,"
+            }
+          ],
+          "raw": "[G]We shall be the soldiers who can [D]fulfill,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Everything for God by doing His "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Will."
+            }
+          ],
+          "raw": "[F#m]Everything for God by doing His [Bm]Will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Join the fight for the Lord, sacrificing all that you "
+            },
+            {
+              "chord": "D",
+              "lyric": "have"
+            }
+          ],
+          "raw": "[G]Join the fight for the Lord, sacrificing all that you [D]have"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Join the fight, win the "
+            },
+            {
+              "chord": "D",
+              "lyric": "world! We will see "
+            },
+            {
+              "chord": "Em",
+              "lyric": "victory!"
+            }
+          ],
+          "raw": "[G]Join the fight, win the [D]world! We will see [Em]victory!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Come unite the world you soldiers of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "light,"
+            }
+          ],
+          "raw": "[D]Come unite the world you soldiers of [Bm]light,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Called to be the chosen people of "
+            },
+            {
+              "chord": "D",
+              "lyric": "God."
+            }
+          ],
+          "raw": "[G]Called to be the chosen people of [D]God."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Till the world returns all glory "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "above,"
+            }
+          ],
+          "raw": "[D]Till the world returns all glory [Bm]above,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Every soldier must go forward to "
+            },
+            {
+              "chord": "D",
+              "lyric": "march."
+            }
+          ],
+          "raw": "[G]Every soldier must go forward to [D]march."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Offer God the wealth you "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "possess,"
+            }
+          ],
+          "raw": "[D]Offer God the wealth you [Bm]possess,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Uniting from beginning to "
+            },
+            {
+              "chord": "D",
+              "lyric": "end,"
+            }
+          ],
+          "raw": "[G]Uniting from beginning to [D]end,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We shall be the soldiers who can "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "fulfill,"
+            }
+          ],
+          "raw": "[D]We shall be the soldiers who can [Bm]fulfill,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Heavenly desire by doing His "
+            },
+            {
+              "chord": "D",
+              "lyric": "will."
+            }
+          ],
+          "raw": "[G]Heavenly desire by doing His [D]will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Come unite the world you soldiers of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "right,"
+            }
+          ],
+          "raw": "[D]Come unite the world you soldiers of [Bm]right,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Trusted by the Lord as worthy in "
+            },
+            {
+              "chord": "D",
+              "lyric": "heart,"
+            }
+          ],
+          "raw": "[G]Trusted by the Lord as worthy in [D]heart,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Till the world is bright with Heavenly "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "joy,"
+            }
+          ],
+          "raw": "[D]Till the world is bright with Heavenly [Bm]joy,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Every soldier must go forward to "
+            },
+            {
+              "chord": "D",
+              "lyric": "win."
+            }
+          ],
+          "raw": "[G]Every soldier must go forward to [D]win."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Offer God the love in your "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "heart,"
+            }
+          ],
+          "raw": "[D]Offer God the love in your [Bm]heart,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Uniting on the left and the "
+            },
+            {
+              "chord": "D",
+              "lyric": "right,"
+            }
+          ],
+          "raw": "[G]Uniting on the left and the [D]right,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We shall be the soldiers who can "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "fulfill,"
+            }
+          ],
+          "raw": "[D]We shall be the soldiers who can [Bm]fulfill,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "God's eternal joy by doing His "
+            },
+            {
+              "chord": "D",
+              "lyric": "will."
+            }
+          ],
+          "raw": "[G]God's eternal joy by doing His [D]will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 7",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Come unite the world you soldiers of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "life,"
+            }
+          ],
+          "raw": "[D]Come unite the world you soldiers of [Bm]life,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Ever to obey our Father's "
+            },
+            {
+              "chord": "D",
+              "lyric": "command,"
+            }
+          ],
+          "raw": "[G]Ever to obey our Father's [D]command,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Till the world returns His Heavenly "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "love,"
+            }
+          ],
+          "raw": "[D]Till the world returns His Heavenly [Bm]love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Every soldier must go forward in "
+            },
+            {
+              "chord": "D",
+              "lyric": "faith."
+            }
+          ],
+          "raw": "[G]Every soldier must go forward in [D]faith."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 8",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Offer God the people you "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "love,"
+            }
+          ],
+          "raw": "[D]Offer God the people you [Bm]love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Uniting both the young and the "
+            },
+            {
+              "chord": "D",
+              "lyric": "old,"
+            }
+          ],
+          "raw": "[G]Uniting both the young and the [D]old,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We shall be the soldiers who can "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "fulfill,"
+            }
+          ],
+          "raw": "[D]We shall be the soldiers who can [Bm]fulfill,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "One united world by doing His "
+            },
+            {
+              "chord": "D",
+              "lyric": "will."
+            }
+          ],
+          "raw": "[G]One united world by doing His [D]will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/call-to-sacrifice.pro",
+  "source": "{title: Call to Sacrifice}\n{key: D}\n\n{section: Verse 1}\n[D]Come unite the world you soldiers of [Bm]Truth,\n[G]Chosen by the Lord to carry His [D]Word.\n[D]Till the world proclaims Him ruler of [Bm]all,\n[G]Every soldier must go forward to [D]fight.\n\n{section: Verse 2}\n[D]Offer God your life and desire, Uniting both the body and [Bm]soul,\n[G]We shall be the soldiers who can [D]fulfill,\n[F#m]Everything for God by doing His [Bm]Will.\n\n{section: Chorus}\n[G]Join the fight for the Lord, sacrificing all that you [D]have\n[G]Join the fight, win the [D]world! We will see [Em]victory!\n\n{section: Verse 3}\n[D]Come unite the world you soldiers of [Bm]light,\n[G]Called to be the chosen people of [D]God.\n[D]Till the world returns all glory [Bm]above,\n[G]Every soldier must go forward to [D]march.\n\n{section: Verse 4}\n[D]Offer God the wealth you [Bm]possess,\n[G]Uniting from beginning to [D]end,\n[D]We shall be the soldiers who can [Bm]fulfill,\n[G]Heavenly desire by doing His [D]will.\n\n{section: Verse 5}\n[D]Come unite the world you soldiers of [Bm]right,\n[G]Trusted by the Lord as worthy in [D]heart,\n[D]Till the world is bright with Heavenly [Bm]joy,\n[G]Every soldier must go forward to [D]win.\n\n{section: Verse 6}\n[D]Offer God the love in your [Bm]heart,\n[G]Uniting on the left and the [D]right,\n[D]We shall be the soldiers who can [Bm]fulfill,\n[G]God's eternal joy by doing His [D]will.\n\n{section: Verse 7}\n[D]Come unite the world you soldiers of [Bm]life,\n[G]Ever to obey our Father's [D]command,\n[D]Till the world returns His Heavenly [Bm]love,\n[G]Every soldier must go forward in [D]faith.\n\n{section: Verse 8}\n[D]Offer God the people you [Bm]love,\n[G]Uniting both the young and the [D]old,\n[D]We shall be the soldiers who can [Bm]fulfill,\n[G]One united world by doing His [D]will.\n"
+}

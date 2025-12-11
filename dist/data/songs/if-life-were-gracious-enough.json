@@ -1,0 +1,253 @@
+{
+  "id": "if-life-were-gracious-enough",
+  "title": "If Life Were Gracious Enough",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "If life were gracious enough to grant my way,"
+            }
+          ],
+          "raw": "[C]If life were gracious enough to grant my way,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I would reach to the ends of the earth"
+            }
+          ],
+          "raw": "[G]I would reach to the ends of the earth"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "To give love in every day."
+            }
+          ],
+          "raw": "[Am]To give love in every day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "And each would find his home"
+            }
+          ],
+          "raw": "[F]And each would find his home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "With peace and friendship there;"
+            }
+          ],
+          "raw": "[C]With peace and friendship there;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Where joyous songs abound"
+            }
+          ],
+          "raw": "[Em]Where joyous songs abound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And happiness to share."
+            }
+          ],
+          "raw": "[G]And happiness to share."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "If life were gracious enough to grant my dream,"
+            }
+          ],
+          "raw": "[C]If life were gracious enough to grant my dream,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I would see your face in the stars"
+            }
+          ],
+          "raw": "[G]I would see your face in the stars"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And hear your song in every stream."
+            }
+          ],
+          "raw": "[Am]And hear your song in every stream."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "The comfort of your smile"
+            }
+          ],
+          "raw": "[F]The comfort of your smile"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "In the warm caress of spring,"
+            }
+          ],
+          "raw": "[C]In the warm caress of spring,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "In the dance of life all the while,"
+            }
+          ],
+          "raw": "[Em]In the dance of life all the while,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "I feel your love in everything."
+            }
+          ],
+          "raw": "[G7]I feel your love in everything."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "We will make life gracious enough"
+            }
+          ],
+          "raw": "[C]We will make life gracious enough"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "To fulfill our dream."
+            }
+          ],
+          "raw": "[G]To fulfill our dream."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "We will lift off the weight of the world"
+            }
+          ],
+          "raw": "[Am]We will lift off the weight of the world"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "And our love will blossom supreme."
+            }
+          ],
+          "raw": "[F]And our love will blossom supreme."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "We will free each heart from the pain"
+            }
+          ],
+          "raw": "[C]We will free each heart from the pain"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And anguish of the past."
+            }
+          ],
+          "raw": "[Em]And anguish of the past."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Through the preciousness of our love"
+            }
+          ],
+          "raw": "[G]Through the preciousness of our love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "True Joy will reign at last."
+            }
+          ],
+          "raw": "[C]True Joy will reign at last."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/if-life-were-gracious-enough.pro",
+  "source": "{title: If Life Were Gracious Enough}\n{key: C}\n\n{section: Verse 1}\n[C]If life were gracious enough to grant my way,\n[G]I would reach to the ends of the earth\n[Am]To give love in every day.\n[F]And each would find his home\n[C]With peace and friendship there;\n[Em]Where joyous songs abound\n[G]And happiness to share.\n\n{{section: Verse 2}\n[C]If life were gracious enough to grant my dream,\n[G]I would see your face in the stars\n[Am]And hear your song in every stream.\n[F]The comfort of your smile\n[C]In the warm caress of spring,\n[Em]In the dance of life all the while,\n[G7]I feel your love in everything.\n\n{{section: Verse 3}\n[C]We will make life gracious enough\n[G]To fulfill our dream.\n[Am]We will lift off the weight of the world\n[F]And our love will blossom supreme.\n[C]We will free each heart from the pain\n[Em]And anguish of the past.\n[G]Through the preciousness of our love\n[C]True Joy will reign at last.\n"
+}

@@ -1,0 +1,178 @@
+{
+  "id": "day-of-glory",
+  "title": "Day of Glory",
+  "key": "E",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Through silent darkness comes, His constant clearest voice."
+            }
+          ],
+          "raw": "[E]Through silent darkness comes, His constant clearest voice."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "His words of truth and life wake us up from sleep."
+            }
+          ],
+          "raw": "[F#m]His words of truth and life wake us up from sleep."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Glory, O Glory, O Glorious Lord,"
+            }
+          ],
+          "raw": "[E]Glory, O Glory, O Glorious Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Welcome, O Welcome, O Welcome Him now,"
+            }
+          ],
+          "raw": "[A]Welcome, O Welcome, O Welcome Him now,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#",
+              "lyric": "Giving all you have and join with our Lord,"
+            }
+          ],
+          "raw": "[C#]Giving all you have and join with our Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "One with our God, Sharing love and beauty evermore."
+            }
+          ],
+          "raw": "[F#m]One with our God, Sharing love and beauty evermore."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "For now the day all men desire Day of celebration is at hand!"
+            }
+          ],
+          "raw": "[B7]For now the day all men desire Day of celebration is at hand!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Sunrise and morning comes, we rise up in its light,"
+            }
+          ],
+          "raw": "[C#m]Sunrise and morning comes, we rise up in its light,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Spread forth the word of good, giving all your strength."
+            }
+          ],
+          "raw": "[F#m]Spread forth the word of good, giving all your strength."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "All holy children come, new days have dawned at last,"
+            }
+          ],
+          "raw": "[B]All holy children come, new days have dawned at last,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "March forward one and all, quickly now unite."
+            }
+          ],
+          "raw": "[E]March forward one and all, quickly now unite."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/day-of-glory.pro",
+  "source": "{title: Day of Glory}\n{key: E}\n\n{section: Verse 1}\n[E]Through silent darkness comes, His constant clearest voice.\n[F#m]His words of truth and life wake us up from sleep.\n\n{section: Chorus}\n[E]Glory, O Glory, O Glorious Lord,\n[A]Welcome, O Welcome, O Welcome Him now,\n[C#]Giving all you have and join with our Lord,\n[F#m]One with our God, Sharing love and beauty evermore.\n\n{section: Verse 2}\n[B7]For now the day all men desire Day of celebration is at hand!\n[C#m]Sunrise and morning comes, we rise up in its light,\n[F#m]Spread forth the word of good, giving all your strength.\n\n{section: Verse 3}\n[B]All holy children come, new days have dawned at last,\n[E]March forward one and all, quickly now unite.\n"
+}

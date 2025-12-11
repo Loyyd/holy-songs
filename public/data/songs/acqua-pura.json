@@ -1,0 +1,223 @@
+{
+  "id": "acqua-pura",
+  "title": "Acqua Pura",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Chi dara da bere a me"
+            }
+          ],
+          "raw": "[G]Chi dara da bere a me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Acqua pura, acqua pura?"
+            }
+          ],
+          "raw": "[C]Acqua pura, acqua pura?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Chi ha l'aqua di felicità,"
+            }
+          ],
+          "raw": "[D7]Chi ha l'aqua di felicità,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Acqua che ristorerà? Acqua che ristorerà?"
+            }
+          ],
+          "raw": "[G]Acqua che ristorerà? Acqua che ristorerà?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Il mondo ègiàun deserto"
+            }
+          ],
+          "raw": "[C]Il mondo ègiàun deserto"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "La terra inaridì"
+            }
+          ],
+          "raw": "[G]La terra inaridì"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Milioni d'assetati"
+            }
+          ],
+          "raw": "[C]Milioni d'assetati"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Si sentono morir"
+            }
+          ],
+          "raw": "[G]Si sentono morir"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Orgoglio e delusione"
+            }
+          ],
+          "raw": "[D]Orgoglio e delusione"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Ci tolgono il respir,"
+            }
+          ],
+          "raw": "[G]Ci tolgono il respir,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Ognuno che vi beve"
+            }
+          ],
+          "raw": "[C]Ognuno che vi beve"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Vi beve l'ansietà."
+            }
+          ],
+          "raw": "[G]Vi beve l'ansietà."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Ma fonte fresca èquella"
+            }
+          ],
+          "raw": "[C]Ma fonte fresca èquella"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Che scorre in mezzo al cuor"
+            }
+          ],
+          "raw": "[G]Che scorre in mezzo al cuor"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Porgetemi quest'acqua"
+            }
+          ],
+          "raw": "[C]Porgetemi quest'acqua"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Perche non muoia più ."
+            }
+          ],
+          "raw": "[G]Perche non muoia più ."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/acqua-pura.pro",
+  "source": "{title: Acqua Pura}\n{key: G}\n\n{section: Chorus}\n[G]Chi dara da bere a me\n[C]Acqua pura, acqua pura?\n[D7]Chi ha l'aqua di felicità,\n[G]Acqua che ristorerà? Acqua che ristorerà?\n\n{section: Verse 1}\n[C]Il mondo ègiàun deserto\n[G]La terra inaridì\n[C]Milioni d'assetati\n[G]Si sentono morir\n\n{section: Verse 2}\n[D]Orgoglio e delusione\n[G]Ci tolgono il respir,\n[C]Ognuno che vi beve\n[G]Vi beve l'ansietà.\n\n{section: Verse 3}\n[C]Ma fonte fresca èquella\n[G]Che scorre in mezzo al cuor\n[C]Porgetemi quest'acqua\n[G]Perche non muoia più .\n"
+}

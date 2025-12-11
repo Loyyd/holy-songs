@@ -1,0 +1,384 @@
+{
+  "id": "as-the-deer",
+  "title": "As the Deer",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "As the deer "
+            },
+            {
+              "chord": "G",
+              "lyric": "panteth for the "
+            },
+            {
+              "chord": "Am",
+              "lyric": "water,"
+            }
+          ],
+          "raw": "[C]As the deer [G]panteth for the [Am]water,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C/E",
+              "lyric": "So my "
+            },
+            {
+              "chord": "F",
+              "lyric": "soul "
+            },
+            {
+              "chord": "G",
+              "lyric": "longeth after "
+            },
+            {
+              "chord": "C",
+              "lyric": "you."
+            }
+          ],
+          "raw": "[C/E]So my [F]soul [G]longeth after [C]you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "You alone are my "
+            },
+            {
+              "chord": "G",
+              "lyric": "heart's "
+            },
+            {
+              "chord": "Am",
+              "lyric": "desire,"
+            }
+          ],
+          "raw": "[C]You alone are my [G]heart's [Am]desire,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And I "
+            },
+            {
+              "chord": "F",
+              "lyric": "long to "
+            },
+            {
+              "chord": "G",
+              "lyric": "worship "
+            },
+            {
+              "chord": "C",
+              "lyric": "you."
+            }
+          ],
+          "raw": "And I [F]long to [G]worship [C]you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "You alone are my "
+            },
+            {
+              "chord": "F",
+              "lyric": "strength, my "
+            },
+            {
+              "chord": "C",
+              "lyric": "shield,"
+            }
+          ],
+          "raw": "[Am]You alone are my [F]strength, my [C]shield,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To "
+            },
+            {
+              "chord": "F",
+              "lyric": "you alone will my "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "spirit "
+            },
+            {
+              "chord": "E",
+              "lyric": "yield."
+            }
+          ],
+          "raw": "To [F]you alone will my [Dm]spirit [E]yield."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "You alone are my "
+            },
+            {
+              "chord": "G",
+              "lyric": "heart's "
+            },
+            {
+              "chord": "Am",
+              "lyric": "desire,"
+            }
+          ],
+          "raw": "[C]You alone are my [G]heart's [Am]desire,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And I "
+            },
+            {
+              "chord": "F",
+              "lyric": "long to "
+            },
+            {
+              "chord": "G",
+              "lyric": "worship "
+            },
+            {
+              "chord": "C",
+              "lyric": "you."
+            }
+          ],
+          "raw": "And I [F]long to [G]worship [C]you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "You're my friend and you "
+            },
+            {
+              "chord": "G",
+              "lyric": "are my "
+            },
+            {
+              "chord": "Am",
+              "lyric": "brother,"
+            }
+          ],
+          "raw": "[C]You're my friend and you [G]are my [Am]brother,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C/E",
+              "lyric": "Even though you "
+            },
+            {
+              "chord": "F",
+              "lyric": "are a "
+            },
+            {
+              "chord": "G",
+              "lyric": "king."
+            }
+          ],
+          "raw": "[C/E]Even though you [F]are a [G]king."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I "
+            },
+            {
+              "chord": "G",
+              "lyric": "love you more than "
+            },
+            {
+              "chord": "G",
+              "lyric": "any "
+            },
+            {
+              "chord": "Am",
+              "lyric": "other,"
+            }
+          ],
+          "raw": "[C]I [G]love you more than [G]any [Am]other,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "So "
+            },
+            {
+              "chord": "F",
+              "lyric": "much more than "
+            },
+            {
+              "chord": "G",
+              "lyric": "anything."
+            }
+          ],
+          "raw": "So [F]much more than [G]anything."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I want you more than "
+            },
+            {
+              "chord": "G",
+              "lyric": "gold or "
+            },
+            {
+              "chord": "Am",
+              "lyric": "silver,"
+            }
+          ],
+          "raw": "[C]I want you more than [G]gold or [Am]silver,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C/E",
+              "lyric": "Only "
+            },
+            {
+              "chord": "F",
+              "lyric": "you can "
+            },
+            {
+              "chord": "G",
+              "lyric": "satisfy."
+            }
+          ],
+          "raw": "[C/E]Only [F]you can [G]satisfy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "You "
+            },
+            {
+              "chord": "G",
+              "lyric": "alone are the "
+            },
+            {
+              "chord": "G",
+              "lyric": "real "
+            },
+            {
+              "chord": "Am",
+              "lyric": "joygiver,"
+            }
+          ],
+          "raw": "[C]You [G]alone are the [G]real [Am]joygiver,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And the "
+            },
+            {
+              "chord": "F",
+              "lyric": "apple of my "
+            },
+            {
+              "chord": "G",
+              "lyric": "eye."
+            }
+          ],
+          "raw": "And the [F]apple of my [G]eye."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/as-the-deer.pro",
+  "source": "{title: As the Deer}\n{key: C}\n\n{section: Verse 1}\n[C]As the deer [G]panteth for the [Am]water,\n[C/E]So my [F]soul [G]longeth after [C]you.\n[C]You alone are my [G]heart's [Am]desire,\nAnd I [F]long to [G]worship [C]you.\n\n{section: Chorus}\n[Am]You alone are my [F]strength, my [C]shield,\nTo [F]you alone will my [Dm]spirit [E]yield.\n[C]You alone are my [G]heart's [Am]desire,\nAnd I [F]long to [G]worship [C]you.\n\n{section: Verse 2}\n[C]You're my friend and you [G]are my [Am]brother,\n[C/E]Even though you [F]are a [G]king.\n[C]I [G]love you more than [G]any [Am]other,\nSo [F]much more than [G]anything.\n\n{section: Verse 3}\n[C]I want you more than [G]gold or [Am]silver,\n[C/E]Only [F]you can [G]satisfy.\n[C]You [G]alone are the [G]real [Am]joygiver,\nAnd the [F]apple of my [G]eye.\n\n"
+}

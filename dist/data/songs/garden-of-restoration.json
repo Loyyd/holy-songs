@@ -1,0 +1,383 @@
+{
+  "id": "garden-of-restoration",
+  "title": "Garden of Restoration",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "In this "
+            },
+            {
+              "chord": "Am",
+              "lyric": "world, em"
+            },
+            {
+              "chord": "C",
+              "lyric": "bittered with "
+            },
+            {
+              "chord": "F",
+              "lyric": "hate, through the "
+            },
+            {
+              "chord": "C",
+              "lyric": "thousands of "
+            },
+            {
+              "chord": "F",
+              "lyric": "years, "
+            },
+            {
+              "chord": "Em",
+              "lyric": " "
+            },
+            {
+              "chord": "G7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]In this [Am]world, em[C]bittered with [F]hate, through the [C]thousands of [F]years, [Em] [G7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Father was "
+            },
+            {
+              "chord": "F",
+              "lyric": "searching to "
+            },
+            {
+              "chord": "C",
+              "lyric": "find one tri"
+            },
+            {
+              "chord": "Am",
+              "lyric": "umphant in "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "heart; "
+            },
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "G7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]Father was [F]searching to [C]find one tri[Am]umphant in [Dm]heart; [G] [G7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "There, where He "
+            },
+            {
+              "chord": "G",
+              "lyric": "struggled be"
+            },
+            {
+              "chord": "C",
+              "lyric": "hold, foot"
+            },
+            {
+              "chord": "F",
+              "lyric": "prints "
+            },
+            {
+              "chord": "Em",
+              "lyric": "stained with "
+            },
+            {
+              "chord": "Am",
+              "lyric": "blood; "
+            },
+            {
+              "chord": "Dm",
+              "lyric": " "
+            },
+            {
+              "chord": "G7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]There, where He [G]struggled be[C]hold, foot[F]prints [Em]stained with [Am]blood; [Dm] [G7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Such love is "
+            },
+            {
+              "chord": "F",
+              "lyric": "given to "
+            },
+            {
+              "chord": "C6",
+              "lyric": "us in "
+            },
+            {
+              "chord": "Em",
+              "lyric": "His provi"
+            },
+            {
+              "chord": "Am",
+              "lyric": "dence; "
+            },
+            {
+              "chord": "Dm",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]Such love is [F]given to [C6]us in [Em]His provi[Am]dence; [Dm]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Such love is "
+            },
+            {
+              "chord": "F",
+              "lyric": "given to "
+            },
+            {
+              "chord": "C",
+              "lyric": "us in "
+            },
+            {
+              "chord": "Am",
+              "lyric": "His "
+            },
+            {
+              "chord": "F",
+              "lyric": "provi"
+            },
+            {
+              "chord": "Dm",
+              "lyric": "dence. "
+            },
+            {
+              "chord": "C",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]Such love is [F]given to [C]us in [Am]His [F]provi[Dm]dence. [C]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here we find the flower of joy in the freedom of God;"
+            }
+          ],
+          "raw": "Here we find the flower of joy in the freedom of God;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "His garden blesses the world with the blooming of hope;"
+            }
+          ],
+          "raw": "His garden blesses the world with the blooming of hope;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fragrant perfume of His will fills us all with joy;"
+            }
+          ],
+          "raw": "Fragrant perfume of His will fills us all with joy;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Such life fulfills all the dreams of our Father's desire,"
+            }
+          ],
+          "raw": "Such life fulfills all the dreams of our Father's desire,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Such life fulfills all the dreams of our Father's desire."
+            }
+          ],
+          "raw": "Such life fulfills all the dreams of our Father's desire."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fresh bouquets of happiness grow, gently tossed in the breeze;"
+            }
+          ],
+          "raw": "Fresh bouquets of happiness grow, gently tossed in the breeze;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Our home eternal and true is a haven of joy;"
+            }
+          ],
+          "raw": "Our home eternal and true is a haven of joy;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Here in such beauty divine, we shall always live;"
+            }
+          ],
+          "raw": "Here in such beauty divine, we shall always live;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Such is the gift of the Lord, Father's heavenly land;"
+            }
+          ],
+          "raw": "Such is the gift of the Lord, Father's heavenly land;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Such is the gift of the Lord, Father's heavenly land."
+            }
+          ],
+          "raw": "Such is the gift of the Lord, Father's heavenly land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "God's eternal providence is the Kingdom on earth;"
+            }
+          ],
+          "raw": "God's eternal providence is the Kingdom on earth;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "On earth He wanted to see His true garden in bloom,"
+            }
+          ],
+          "raw": "On earth He wanted to see His true garden in bloom,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Filled with perfume of the heart, spread His glorious joy;"
+            }
+          ],
+          "raw": "Filled with perfume of the heart, spread His glorious joy;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Such is the glory to come, crowning all of the world,"
+            }
+          ],
+          "raw": "Such is the glory to come, crowning all of the world,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Such is the glory to come, crowning all of the world."
+            }
+          ],
+          "raw": "Such is the glory to come, crowning all of the world."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/garden-of-restoration.pro",
+  "source": "{title: Garden of Restoration}\n{key: C}\n\n{section: Verse 1}\n[C]In this [Am]world, em[C]bittered with [F]hate, through the [C]thousands of [F]years, [Em] [G7]\n[C]Father was [F]searching to [C]find one tri[Am]umphant in [Dm]heart; [G] [G7]\n[C]There, where He [G]struggled be[C]hold, foot[F]prints [Em]stained with [Am]blood; [Dm] [G7]\n[C]Such love is [F]given to [C6]us in [Em]His provi[Am]dence; [Dm]\n[C]Such love is [F]given to [C]us in [Am]His [F]provi[Dm]dence. [C]\n\n{section: Verse 2}\nHere we find the flower of joy in the freedom of God;\nHis garden blesses the world with the blooming of hope;\nFragrant perfume of His will fills us all with joy;\nSuch life fulfills all the dreams of our Father's desire,\nSuch life fulfills all the dreams of our Father's desire.\n\n{section: Verse 3}\nFresh bouquets of happiness grow, gently tossed in the breeze;\nOur home eternal and true is a haven of joy;\nHere in such beauty divine, we shall always live;\nSuch is the gift of the Lord, Father's heavenly land;\nSuch is the gift of the Lord, Father's heavenly land.\n\n{section: Verse 4}\nGod's eternal providence is the Kingdom on earth;\nOn earth He wanted to see His true garden in bloom,\nFilled with perfume of the heart, spread His glorious joy;\nSuch is the glory to come, crowning all of the world,\nSuch is the glory to come, crowning all of the world.\n"
+}

@@ -1,0 +1,523 @@
+{
+  "id": "suffering-jesus",
+  "title": "Suffering Jesus",
+  "key": "Cm",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "See Lord Jesus bent in prayer, in the garden late at night,"
+            }
+          ],
+          "raw": "[Cm]See Lord Jesus bent in prayer, in the garden late at night,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "See Lord Jesus bent in prayer, in the garden late at night."
+            }
+          ],
+          "raw": "[Gm]See Lord Jesus bent in prayer, in the garden late at night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "See Him crying sweating blood watch it mingle with His tears;"
+            }
+          ],
+          "raw": "[Dm]See Him crying sweating blood watch it mingle with His tears;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Twelve disciples all asleep, even Peter nods and snores."
+            }
+          ],
+          "raw": "[Cm]Twelve disciples all asleep, even Peter nods and snores."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Iscariot comes with a kiss, hands Him over He is "
+            },
+            {
+              "chord": "G7",
+              "lyric": "betrayed."
+            }
+          ],
+          "raw": "[G]Iscariot comes with a kiss, hands Him over He is [G7]betrayed."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "How could it be? Tragic sight innocent Lord precious Lord."
+            }
+          ],
+          "raw": "[Cm]How could it be? Tragic sight innocent Lord precious Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Twelve disciples watch from afar, everyone is running away."
+            }
+          ],
+          "raw": "[Cm]Twelve disciples watch from afar, everyone is running away."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm7",
+              "lyric": "Jesus alone captured and chained; soldiers lead Him to the prison."
+            }
+          ],
+          "raw": "[Bm7]Jesus alone captured and chained; soldiers lead Him to the prison."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Frightened Peter runs from the scene; with his tunic hides his face;"
+            }
+          ],
+          "raw": "[Cm]Frightened Peter runs from the scene; with his tunic hides his face;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "Look at Peter treacherous man, now pretends he does not "
+            },
+            {
+              "chord": "Cm",
+              "lyric": "know."
+            }
+          ],
+          "raw": "[Fm]Look at Peter treacherous man, now pretends he does not [Cm]know."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "He who made the lame leap for joy, He who made the blind man see,"
+            }
+          ],
+          "raw": "[Fm]He who made the lame leap for joy, He who made the blind man see,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "He who freely walked on the waves, where are all those miracles now?"
+            }
+          ],
+          "raw": "[G7]He who freely walked on the waves, where are all those miracles now?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "See Lord Jesus bent in shame, see Him bear His heavy cross,"
+            }
+          ],
+          "raw": "[Cm]See Lord Jesus bent in shame, see Him bear His heavy cross,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm7",
+              "lyric": "See Lord Jesus bent in shame, see Him bear His heavy cross."
+            }
+          ],
+          "raw": "[Bm7]See Lord Jesus bent in shame, see Him bear His heavy cross."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Spent, exhausted, body and soul, now He stumbles and He falls;"
+            }
+          ],
+          "raw": "[Cm]Spent, exhausted, body and soul, now He stumbles and He falls;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Whipped from behind, driven along, Jesus treated just like a cow,"
+            }
+          ],
+          "raw": "[Gm]Whipped from behind, driven along, Jesus treated just like a cow,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Where are His men? Where are the twelve? Jesus now is standing alone."
+            }
+          ],
+          "raw": "[Dm]Where are His men? Where are the twelve? Jesus now is standing alone."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Not even one man is there bearing the cross for his Lord."
+            }
+          ],
+          "raw": "[Cm]Not even one man is there bearing the cross for his Lord."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 7",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Tho' the crowd may pity a thief, freeing sinful men of this world,"
+            }
+          ],
+          "raw": "[G]Tho' the crowd may pity a thief, freeing sinful men of this world,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Who'd volunteer to take His place, take the cross for God's son Jesus?"
+            }
+          ],
+          "raw": "[G7]Who'd volunteer to take His place, take the cross for God's son Jesus?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "How very sad, how very sad, mighty Father shedding tears;"
+            }
+          ],
+          "raw": "[Cm]How very sad, how very sad, mighty Father shedding tears;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 8",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Lost and betrayed, lost and betrayed, all the Father's hopes are gone."
+            }
+          ],
+          "raw": "[Gm]Lost and betrayed, lost and betrayed, all the Father's hopes are gone."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Even the most ignorant men have a shred of common sense;"
+            }
+          ],
+          "raw": "[Dm]Even the most ignorant men have a shred of common sense;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Who can see the Father's despair, who can share His suffering pain?"
+            }
+          ],
+          "raw": "[Cm]Who can see the Father's despair, who can share His suffering pain?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 9",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "See Lord Jesus on the cross, nails are hammered through His hands,"
+            }
+          ],
+          "raw": "[G]See Lord Jesus on the cross, nails are hammered through His hands,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "See Lord Jesus on the cross, nails are hammered through His hands."
+            }
+          ],
+          "raw": "[G7]See Lord Jesus on the cross, nails are hammered through His hands."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "What kind of sin did He commit, this, the only Son of God?"
+            }
+          ],
+          "raw": "[Cm]What kind of sin did He commit, this, the only Son of God?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 10",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "Like a pure innocent sheep, He is dying, dying for you."
+            }
+          ],
+          "raw": "[Fm]Like a pure innocent sheep, He is dying, dying for you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Father above He cannot watch; When He turns His face from His Son."
+            }
+          ],
+          "raw": "[Cm]Father above He cannot watch; When He turns His face from His Son."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "\"My God, my God\" Jesus cries \"Why do you now forsake me?\""
+            }
+          ],
+          "raw": "[G7]\"My God, my God\" Jesus cries \"Why do you now forsake me?\""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 11",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Twelve disciples shared all His ways, still were deaf and blind to His heart"
+            }
+          ],
+          "raw": "[Cm]Twelve disciples shared all His ways, still were deaf and blind to His heart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm7",
+              "lyric": "All gone to waste, all gone to waste, Providence of God is broken"
+            }
+          ],
+          "raw": "[Bm7]All gone to waste, all gone to waste, Providence of God is broken"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "No use now to cry and repent, all repentance comes too late."
+            }
+          ],
+          "raw": "[Cm]No use now to cry and repent, all repentance comes too late."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 12",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "To prepare His coming again, sacrifices must be found."
+            }
+          ],
+          "raw": "[G]To prepare His coming again, sacrifices must be found."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "All the faithful shedding their blood, spilling for two thousand years."
+            }
+          ],
+          "raw": "[G7]All the faithful shedding their blood, spilling for two thousand years."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "All this bloodshed, salvation's price, for three billion men of today."
+            }
+          ],
+          "raw": "[Cm]All this bloodshed, salvation's price, for three billion men of today."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/suffering-jesus.pro",
+  "source": "{title: Suffering Jesus}\n{key: Cm}\n\n{section: Verse 1}\n[Cm]See Lord Jesus bent in prayer, in the garden late at night,\n[Gm]See Lord Jesus bent in prayer, in the garden late at night.\n[Dm]See Him crying sweating blood watch it mingle with His tears;\n[Cm]Twelve disciples all asleep, even Peter nods and snores.\n\n{section: Verse 2}\n[G]Iscariot comes with a kiss, hands Him over He is [G7]betrayed.\n[Cm]How could it be? Tragic sight innocent Lord precious Lord.\n\n{section: Verse 3}\n[Cm]Twelve disciples watch from afar, everyone is running away.\n[Bm7]Jesus alone captured and chained; soldiers lead Him to the prison.\n[Cm]Frightened Peter runs from the scene; with his tunic hides his face;\n\n{section: Verse 4}\n[Fm]Look at Peter treacherous man, now pretends he does not [Cm]know.\n[Fm]He who made the lame leap for joy, He who made the blind man see,\n[G7]He who freely walked on the waves, where are all those miracles now?\n\n{section: Verse 5}\n[Cm]See Lord Jesus bent in shame, see Him bear His heavy cross,\n[Bm7]See Lord Jesus bent in shame, see Him bear His heavy cross.\n[Cm]Spent, exhausted, body and soul, now He stumbles and He falls;\n\n{section: Verse 6}\n[Gm]Whipped from behind, driven along, Jesus treated just like a cow,\n[Dm]Where are His men? Where are the twelve? Jesus now is standing alone.\n[Cm]Not even one man is there bearing the cross for his Lord.\n\n{section: Verse 7}\n[G]Tho' the crowd may pity a thief, freeing sinful men of this world,\n[G7]Who'd volunteer to take His place, take the cross for God's son Jesus?\n[Cm]How very sad, how very sad, mighty Father shedding tears;\n\n{section: Verse 8}\n[Gm]Lost and betrayed, lost and betrayed, all the Father's hopes are gone.\n[Dm]Even the most ignorant men have a shred of common sense;\n[Cm]Who can see the Father's despair, who can share His suffering pain?\n\n{section: Verse 9}\n[G]See Lord Jesus on the cross, nails are hammered through His hands,\n[G7]See Lord Jesus on the cross, nails are hammered through His hands.\n[Cm]What kind of sin did He commit, this, the only Son of God?\n\n{section: Verse 10}\n[Fm]Like a pure innocent sheep, He is dying, dying for you.\n[Cm]Father above He cannot watch; When He turns His face from His Son.\n[G7]\"My God, my God\" Jesus cries \"Why do you now forsake me?\"\n\n{section: Verse 11}\n[Cm]Twelve disciples shared all His ways, still were deaf and blind to His heart\n[Bm7]All gone to waste, all gone to waste, Providence of God is broken\n[Cm]No use now to cry and repent, all repentance comes too late.\n\n{section: Verse 12}\n[G]To prepare His coming again, sacrifices must be found.\n[G7]All the faithful shedding their blood, spilling for two thousand years.\n[Cm]All this bloodshed, salvation's price, for three billion men of today.\n"
+}

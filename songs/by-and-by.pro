@@ -2,18 +2,18 @@
 {key: F}
 
 {section: Chorus}
-[F]By and by, when the morning comes,
-[Bb]All the saints of God are gathered home.
-[F]We'll tell the story how we've overcome,
-[C7]And we'll understand it better by and by.
+[F]By and by, [Bb]when the morning [F]comes,
+[G]All the saints of God are [C7]gathered home.
+[F]We'll tell the story [Bb]how we've [F]overcome,
+[C7]And we'll understand it better [F]by and by.
 
 {section: Verse 1}
 [F]We are tossed and driven on the restless seas of time;
 [Bb]Somber skies and howling tempest
 [G]Oft succeed a bright sunshine.
-[C7]In that land of perfect day,
-[F]When the mists have rolled away,
-[Bb]We will understand it better bye and bye.
+[F]In that land of perfect day,
+[Bb]When the mists have rolled away,
+[C7]We will understand it better [F]bye and bye.
 
 {section: Verse 2}
 [F]We are often destitute

@@ -1,0 +1,241 @@
+{
+  "id": "gonna-build-a-kingdom",
+  "title": "Gonna Build a Kingdom",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Gonna build a kingdom on this sad old ground;"
+            }
+          ],
+          "raw": "[C]Gonna build a kingdom on this sad old ground;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "Gonna build a kingdom all around!"
+            }
+          ],
+          "raw": "[G7]Gonna build a kingdom all around!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Gonna call it heaven 'cause that's what it'll be--"
+            }
+          ],
+          "raw": "[C]Gonna call it heaven 'cause that's what it'll be--"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "A place of beauty, peace and joy for you and me!"
+            }
+          ],
+          "raw": "[F]A place of beauty, peace and joy for you and me!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "It'll take some hard work to make this old mud new."
+            }
+          ],
+          "raw": "[C]It'll take some hard work to make this old mud new."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "It'll take a struggle, but we'll see it through!"
+            }
+          ],
+          "raw": "[G7]It'll take a struggle, but we'll see it through!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Go and tell your friends if they want to come,"
+            }
+          ],
+          "raw": "[C]Go and tell your friends if they want to come,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "That they're all welcome to this land we call freedom!"
+            }
+          ],
+          "raw": "[F]That they're all welcome to this land we call freedom!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Fight determined to be victors and we'll triumph in the end."
+            }
+          ],
+          "raw": "[F]Fight determined to be victors and we'll triumph in the end."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And we'll stop this world of trouble, and we'll ease this pain for men."
+            }
+          ],
+          "raw": "[G]And we'll stop this world of trouble, and we'll ease this pain for men."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "We've a kingdom to establish with our tears, our sweat, our blood;"
+            }
+          ],
+          "raw": "[C]We've a kingdom to establish with our tears, our sweat, our blood;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And we'll kick to hell this world of hell"
+            }
+          ],
+          "raw": "[Am]And we'll kick to hell this world of hell"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "And build a new world for God!"
+            }
+          ],
+          "raw": "[G7]And build a new world for God!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "So come all you people, it's your kingdom too;"
+            }
+          ],
+          "raw": "[C]So come all you people, it's your kingdom too;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "'Cause it won't be a kingdom without you."
+            }
+          ],
+          "raw": "[G7]'Cause it won't be a kingdom without you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "So rejoice my brothers, all men of all lands;"
+            }
+          ],
+          "raw": "[C]So rejoice my brothers, all men of all lands;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "For the glory of the true world — that wonderful me and you world--"
+            }
+          ],
+          "raw": "[F]For the glory of the true world — that wonderful me and you world--"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "The kingdom of the new world is at hand!"
+            }
+          ],
+          "raw": "[G7]The kingdom of the new world is at hand!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/gonna-build-a-kingdom.pro",
+  "source": "{title: Gonna Build a Kingdom}\n{key: C}\n\n{section: Verse 1}\n[C]Gonna build a kingdom on this sad old ground;\n[G7]Gonna build a kingdom all around!\n[C]Gonna call it heaven 'cause that's what it'll be--\n[F]A place of beauty, peace and joy for you and me!\n\n{section: Verse 2}\n[C]It'll take some hard work to make this old mud new.\n[G7]It'll take a struggle, but we'll see it through!\n[C]Go and tell your friends if they want to come,\n[F]That they're all welcome to this land we call freedom!\n\n{section: Verse 3}\n[F]Fight determined to be victors and we'll triumph in the end.\n[G]And we'll stop this world of trouble, and we'll ease this pain for men.\n[C]We've a kingdom to establish with our tears, our sweat, our blood;\n[Am]And we'll kick to hell this world of hell\n[G7]And build a new world for God!\n\n{section: Verse 4}\n[C]So come all you people, it's your kingdom too;\n[G7]'Cause it won't be a kingdom without you.\n[C]So rejoice my brothers, all men of all lands;\n[F]For the glory of the true world — that wonderful me and you world--\n[G7]The kingdom of the new world is at hand!\n"
+}

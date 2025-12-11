@@ -1,0 +1,341 @@
+{
+  "id": "heart-of-the-father",
+  "title": "Heart of the Father",
+  "key": "Eb",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Longing to live in deepest joy and love eternal,"
+            }
+          ],
+          "raw": "[Eb]Longing to live in deepest joy and love eternal,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "God was ever seeking for a people all His own."
+            }
+          ],
+          "raw": "[Gm]God was ever seeking for a people all His own."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Who can know the yearning of His lonely broken heart?"
+            }
+          ],
+          "raw": "[Cm]Who can know the yearning of His lonely broken heart?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "Tears were falling as a river through His countless years alone."
+            }
+          ],
+          "raw": "[Fm]Tears were falling as a river through His countless years alone."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Out of all the multitude there was none who knew"
+            }
+          ],
+          "raw": "[Cm]Out of all the multitude there was none who knew"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Ab",
+              "lyric": "How the Father's heart was aching, grieving after man."
+            }
+          ],
+          "raw": "[Ab]How the Father's heart was aching, grieving after man."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Glorious God, who started life throughout the heavens,"
+            }
+          ],
+          "raw": "[Eb]Glorious God, who started life throughout the heavens,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Bore the deepest torture as He saw His children die."
+            }
+          ],
+          "raw": "[Gm]Bore the deepest torture as He saw His children die."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Every day He seeks the beauty lost inside our hearts,"
+            }
+          ],
+          "raw": "[Cm]Every day He seeks the beauty lost inside our hearts,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "Tenderly with love He leads us back to life with Him on high."
+            }
+          ],
+          "raw": "[Fm]Tenderly with love He leads us back to life with Him on high."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "How many fathoms deep is His aching heart?"
+            }
+          ],
+          "raw": "[Cm]How many fathoms deep is His aching heart?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Ab",
+              "lyric": "All the tears He shed for earth became an endless sea."
+            }
+          ],
+          "raw": "[Ab]All the tears He shed for earth became an endless sea."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Deep from within the heart of heaven came the secret,"
+            }
+          ],
+          "raw": "[Eb]Deep from within the heart of heaven came the secret,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Now the mighty word, the trumpet call will surely sound."
+            }
+          ],
+          "raw": "[Gm]Now the mighty word, the trumpet call will surely sound."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "But as in the time of Noah people laugh and mock,"
+            }
+          ],
+          "raw": "[Cm]But as in the time of Noah people laugh and mock,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "Satisfied to wander aimless in the darkness underground."
+            }
+          ],
+          "raw": "[Fm]Satisfied to wander aimless in the darkness underground."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "Fearful is the time to come when the price is paid!"
+            }
+          ],
+          "raw": "[Cm]Fearful is the time to come when the price is paid!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Ab",
+              "lyric": "One and all will face the judgment from an angry God."
+            }
+          ],
+          "raw": "[Ab]One and all will face the judgment from an angry God."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 7",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Eb",
+              "lyric": "Quickly believe, my people quickly turn and follow!"
+            }
+          ],
+          "raw": "[Eb]Quickly believe, my people quickly turn and follow!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "You can be enfolded in the warmth of Father's heart."
+            }
+          ],
+          "raw": "[Gm]You can be enfolded in the warmth of Father's heart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "All the joy that life can offer calls us home to Him,"
+            }
+          ],
+          "raw": "[Cm]All the joy that life can offer calls us home to Him,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 8",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Fm",
+              "lyric": "Now He calls you to be near Him never again to be apart."
+            }
+          ],
+          "raw": "[Fm]Now He calls you to be near Him never again to be apart."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Cm",
+              "lyric": "When at last we run to Him, how He'll cry with joy!"
+            }
+          ],
+          "raw": "[Cm]When at last we run to Him, how He'll cry with joy!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Ab",
+              "lyric": "All rejoicing, all together now and evermore."
+            }
+          ],
+          "raw": "[Ab]All rejoicing, all together now and evermore."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/heart-of-the-father.pro",
+  "source": "{title: Heart of the Father}\n{key: Eb}\n\n{section: Verse 1}\n[Eb]Longing to live in deepest joy and love eternal,\n[Gm]God was ever seeking for a people all His own.\n[Cm]Who can know the yearning of His lonely broken heart?\n\n{section: Verse 2}\n[Fm]Tears were falling as a river through His countless years alone.\n[Cm]Out of all the multitude there was none who knew\n[Ab]How the Father's heart was aching, grieving after man.\n\n{section: Verse 3}\n[Eb]Glorious God, who started life throughout the heavens,\n[Gm]Bore the deepest torture as He saw His children die.\n[Cm]Every day He seeks the beauty lost inside our hearts,\n\n{{section: Verse 4}\n[Fm]Tenderly with love He leads us back to life with Him on high.\n[Cm]How many fathoms deep is His aching heart?\n[Ab]All the tears He shed for earth became an endless sea.\n\n{section: Verse 5}\n[Eb]Deep from within the heart of heaven came the secret,\n[Gm]Now the mighty word, the trumpet call will surely sound.\n[Cm]But as in the time of Noah people laugh and mock,\n\n{{section: Verse 6}\n[Fm]Satisfied to wander aimless in the darkness underground.\n[Cm]Fearful is the time to come when the price is paid!\n[Ab]One and all will face the judgment from an angry God.\n\n{section: Verse 7}\n[Eb]Quickly believe, my people quickly turn and follow!\n[Gm]You can be enfolded in the warmth of Father's heart.\n[Cm]All the joy that life can offer calls us home to Him,\n\n{section: Verse 8}\n[Fm]Now He calls you to be near Him never again to be apart.\n[Cm]When at last we run to Him, how He'll cry with joy!\n[Ab]All rejoicing, all together now and evermore.\n"
+}

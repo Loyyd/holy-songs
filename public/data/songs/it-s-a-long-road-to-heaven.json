@@ -1,0 +1,249 @@
+{
+  "id": "it-s-a-long-road-to-heaven",
+  "title": "It's a Long Road to Heaven",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "It's a long road to Heaven,"
+            }
+          ],
+          "raw": "[G]It's a long road to Heaven,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "A winding steep and high,"
+            }
+          ],
+          "raw": "[C]A winding steep and high,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "But when you walk with love"
+            }
+          ],
+          "raw": "[G]But when you walk with love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "With the wind on your wing"
+            }
+          ],
+          "raw": "[D]With the wind on your wing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And cover the earth"
+            }
+          ],
+          "raw": "[G]And cover the earth"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "With the songs you sing"
+            }
+          ],
+          "raw": "[D]With the songs you sing"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "The miles fly by."
+            }
+          ],
+          "raw": "[C]The miles fly by."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I walked, one morning by the sea"
+            }
+          ],
+          "raw": "[G]I walked, one morning by the sea"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And all the waves reached out to me"
+            }
+          ],
+          "raw": "[C]And all the waves reached out to me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "I took their tears, then let them be."
+            }
+          ],
+          "raw": "[Em]I took their tears, then let them be."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I walked, one morning at the dawn"
+            }
+          ],
+          "raw": "[A]I walked, one morning at the dawn"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "When bits of night still lingered on"
+            }
+          ],
+          "raw": "[D7]When bits of night still lingered on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I sought my star, but it was gone"
+            }
+          ],
+          "raw": "[G]I sought my star, but it was gone"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I walked, one morning with a friend"
+            }
+          ],
+          "raw": "[C]I walked, one morning with a friend"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And prayed the day would never end"
+            }
+          ],
+          "raw": "[G]And prayed the day would never end"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "The years have flown, so why pretend"
+            }
+          ],
+          "raw": "[Em]The years have flown, so why pretend"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I walked, one morning with my King"
+            }
+          ],
+          "raw": "[A]I walked, one morning with my King"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "And all my winters turned to spring"
+            }
+          ],
+          "raw": "[D]And all my winters turned to spring"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Yet every moment, held it's sting"
+            }
+          ],
+          "raw": "[G]Yet every moment, held it's sting"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/its-a-long-road-to-heaven.pro",
+  "source": "{title: It's a Long Road to Heaven}\n{key: G}\n\n{section: Chorus}\n[G]It's a long road to Heaven,\n[C]A winding steep and high,\n[G]But when you walk with love\n[D]With the wind on your wing\n[G]And cover the earth\n[D]With the songs you sing\n[C]The miles fly by.\n\n{section: Verse 1}\n[G]I walked, one morning by the sea\n[C]And all the waves reached out to me\n[Em]I took their tears, then let them be.\n\n{{section: Verse 2}\n[A]I walked, one morning at the dawn\n[D7]When bits of night still lingered on\n[G]I sought my star, but it was gone\n\n{{section: Verse 3}\n[C]I walked, one morning with a friend\n[G]And prayed the day would never end\n[Em]The years have flown, so why pretend\n\n{{section: Verse 4}\n[A]I walked, one morning with my King\n[D]And all my winters turned to spring\n[G]Yet every moment, held it's sting\n"
+}

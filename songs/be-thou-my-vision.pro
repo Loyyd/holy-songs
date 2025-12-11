@@ -2,10 +2,10 @@
 {key: D}
 
 {section: Verse 1}
-[D]Be Thou my vision, O Lord of my heart;
-[Bm]Naught be all else to me, save that Thou art--
-[G]Thou my best thought, by day or by night,
-[D]Waking or sleeping, Thy presence my light.
+[D]Be Thou [Bm]my vision, [G]O Lord [D]of my [A]heart; [D]
+[A]Naught be all [D]else to me, [G]save that Thou [A]art--
+[G]Thou my [D]best thought, [G]by day or [A]by night,
+[D]Waking or [G]sleeping, [A]Thy presence my [D]light.
 
 {section: Verse 2}
 [A]Be Thou my wisdom and Thou my true word,

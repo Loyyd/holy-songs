@@ -1,0 +1,118 @@
+{
+  "id": "ommaya-noonaya",
+  "title": "Ommaya Noonaya",
+  "key": "Am",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Om maya nu naya, gang byun sal ja,"
+            }
+          ],
+          "raw": "[Am]Om maya nu naya, gang byun sal ja,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Du re nun ban cha gi nun, kum mo re bit."
+            }
+          ],
+          "raw": "[G]Du re nun ban cha gi nun, kum mo re bit."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Tui moon ba ge nun gal lipe no-ore"
+            }
+          ],
+          "raw": "[E]Tui moon ba ge nun gal lipe no-ore"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Um maya nu naya gang byun sal ja."
+            }
+          ],
+          "raw": "[Am]Um maya nu naya gang byun sal ja."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "I want to live by the river with my family"
+            }
+          ],
+          "raw": "[Am]I want to live by the river with my family"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The river shines like the golden sand in the fields;"
+            }
+          ],
+          "raw": "[G]The river shines like the golden sand in the fields;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "It glistens to the song of swirling autumn leaves."
+            }
+          ],
+          "raw": "[E]It glistens to the song of swirling autumn leaves."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "I want to live by the riverside."
+            }
+          ],
+          "raw": "[Am]I want to live by the riverside."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/ommaya-noonaya.pro",
+  "source": "{title: Ommaya Noonaya}\n{key: Am}\n\n{section: Verse 1}\n[Am]Om maya nu naya, gang byun sal ja,\n[G]Du re nun ban cha gi nun, kum mo re bit.\n[E]Tui moon ba ge nun gal lipe no-ore\n[Am]Um maya nu naya gang byun sal ja.\n\n{{section: Verse 2}\n[Am]I want to live by the river with my family\n[G]The river shines like the golden sand in the fields;\n[E]It glistens to the song of swirling autumn leaves.\n[Am]I want to live by the riverside.\n"
+}

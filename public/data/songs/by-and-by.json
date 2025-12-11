@@ -1,0 +1,323 @@
+{
+  "id": "by-and-by",
+  "title": "By and By",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "By and by, "
+            },
+            {
+              "chord": "Bb",
+              "lyric": "when the morning "
+            },
+            {
+              "chord": "F",
+              "lyric": "comes,"
+            }
+          ],
+          "raw": "[F]By and by, [Bb]when the morning [F]comes,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "All the saints of God are "
+            },
+            {
+              "chord": "C7",
+              "lyric": "gathered home."
+            }
+          ],
+          "raw": "[G]All the saints of God are [C7]gathered home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "We'll tell the story "
+            },
+            {
+              "chord": "Bb",
+              "lyric": "how we've "
+            },
+            {
+              "chord": "F",
+              "lyric": "overcome,"
+            }
+          ],
+          "raw": "[F]We'll tell the story [Bb]how we've [F]overcome,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "And we'll understand it better "
+            },
+            {
+              "chord": "F",
+              "lyric": "by and by."
+            }
+          ],
+          "raw": "[C7]And we'll understand it better [F]by and by."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "We are tossed and driven on the restless seas of time;"
+            }
+          ],
+          "raw": "[F]We are tossed and driven on the restless seas of time;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Somber skies and howling tempest"
+            }
+          ],
+          "raw": "[Bb]Somber skies and howling tempest"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oft succeed a bright sunshine."
+            }
+          ],
+          "raw": "[G]Oft succeed a bright sunshine."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "In that land of perfect day,"
+            }
+          ],
+          "raw": "[F]In that land of perfect day,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "When the mists have rolled away,"
+            }
+          ],
+          "raw": "[Bb]When the mists have rolled away,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "We will understand it better "
+            },
+            {
+              "chord": "F",
+              "lyric": "bye and bye."
+            }
+          ],
+          "raw": "[C7]We will understand it better [F]bye and bye."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "We are often destitute"
+            }
+          ],
+          "raw": "[F]We are often destitute"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Of the things that life demands;"
+            }
+          ],
+          "raw": "[Bb]Of the things that life demands;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Want of shelter and of food,"
+            }
+          ],
+          "raw": "[G]Want of shelter and of food,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Thirsty hills and barren lands."
+            }
+          ],
+          "raw": "[C7]Thirsty hills and barren lands."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "We are trusting in the Lord"
+            }
+          ],
+          "raw": "[F]We are trusting in the Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "And according to His word,"
+            }
+          ],
+          "raw": "[F7]And according to His word,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "We will understand it better bye and bye."
+            }
+          ],
+          "raw": "[Bb]We will understand it better bye and bye."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Trials dark on every hand,"
+            }
+          ],
+          "raw": "[F]Trials dark on every hand,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "And we cannot understand"
+            }
+          ],
+          "raw": "[Bb]And we cannot understand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "All the ways the God would lead us"
+            }
+          ],
+          "raw": "[G]All the ways the God would lead us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "To that blessed promised land."
+            }
+          ],
+          "raw": "[C7]To that blessed promised land."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "But He guides us with His eye"
+            }
+          ],
+          "raw": "[F]But He guides us with His eye"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F7",
+              "lyric": "And we'll follow Him on high;"
+            }
+          ],
+          "raw": "[F7]And we'll follow Him on high;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "And we'll understand it better bye and bye."
+            }
+          ],
+          "raw": "[Bb]And we'll understand it better bye and bye."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/by-and-by.pro",
+  "source": "{title: By and By}\n{key: F}\n\n{section: Chorus}\n[F]By and by, [Bb]when the morning [F]comes,\n[G]All the saints of God are [C7]gathered home.\n[F]We'll tell the story [Bb]how we've [F]overcome,\n[C7]And we'll understand it better [F]by and by.\n\n{section: Verse 1}\n[F]We are tossed and driven on the restless seas of time;\n[Bb]Somber skies and howling tempest\n[G]Oft succeed a bright sunshine.\n[F]In that land of perfect day,\n[Bb]When the mists have rolled away,\n[C7]We will understand it better [F]bye and bye.\n\n{section: Verse 2}\n[F]We are often destitute\n[Bb]Of the things that life demands;\n[G]Want of shelter and of food,\n[C7]Thirsty hills and barren lands.\n[F]We are trusting in the Lord\n[F7]And according to His word,\n[Bb]We will understand it better bye and bye.\n\n{section: Verse 3}\n[F]Trials dark on every hand,\n[Bb]And we cannot understand\n[G]All the ways the God would lead us\n[C7]To that blessed promised land.\n[F]But He guides us with His eye\n[F7]And we'll follow Him on high;\n[Bb]And we'll understand it better bye and bye.\n"
+}

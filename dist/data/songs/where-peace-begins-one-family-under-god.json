@@ -1,0 +1,214 @@
+{
+  "id": "where-peace-begins-one-family-under-god",
+  "title": "Where Peace Begins – One Family Under God",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Here we stand together one in our humanity"
+            }
+          ],
+          "raw": "[C]Here we stand together one in our humanity"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "For we all come from the Father"
+            }
+          ],
+          "raw": "[G]For we all come from the Father"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "We are one family"
+            }
+          ],
+          "raw": "[Am]We are one family"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "It's our school of love and peace, Where we've learned there's a way"
+            }
+          ],
+          "raw": "[Em]It's our school of love and peace, Where we've learned there's a way"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "For the world to live in harmony and together we all say..."
+            }
+          ],
+          "raw": "[F]For the world to live in harmony and together we all say..."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "This is where peace begins Here we sow the seeds of love"
+            }
+          ],
+          "raw": "[Am]This is where peace begins Here we sow the seeds of love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "It all starts with our knowing We are one family"
+            }
+          ],
+          "raw": "[F]It all starts with our knowing We are one family"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "We are one family under God"
+            }
+          ],
+          "raw": "[C]We are one family under God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Not just body but spirit, On and on we try to be"
+            }
+          ],
+          "raw": "[C]Not just body but spirit, On and on we try to be"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "People who live for others, For love knows no boundaries"
+            }
+          ],
+          "raw": "[G]People who live for others, For love knows no boundaries"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Neither race nor religion, No barriers can keep us apart"
+            }
+          ],
+          "raw": "[Am]Neither race nor religion, No barriers can keep us apart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Forgiveness, true understanding, this is how it all starts..."
+            }
+          ],
+          "raw": "[Em]Forgiveness, true understanding, this is how it all starts..."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "This is where peace begins Here we sow the seeds of love"
+            }
+          ],
+          "raw": "[Bm]This is where peace begins Here we sow the seeds of love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "It all starts with our knowing We are one family"
+            }
+          ],
+          "raw": "[G]It all starts with our knowing We are one family"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We are one family under God"
+            }
+          ],
+          "raw": "[D]We are one family under God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/where-peace-begins-one-family-under-god.pro",
+  "source": "{title: Where Peace Begins – One Family Under God}\n{key: C}\n\n{section: Verse 1}\n[C]Here we stand together one in our humanity\n[G]For we all come from the Father\n[Am]We are one family\n[Em]It's our school of love and peace, Where we've learned there's a way\n[F]For the world to live in harmony and together we all say...\n\n{section: Chorus}\n[Am]This is where peace begins Here we sow the seeds of love\n[F]It all starts with our knowing We are one family\n[C]We are one family under God\n\n{section: Verse 2}\n[C]Not just body but spirit, On and on we try to be\n[G]People who live for others, For love knows no boundaries\n[Am]Neither race nor religion, No barriers can keep us apart\n[Em]Forgiveness, true understanding, this is how it all starts...\n\n{section: Chorus 2}\n[Bm]This is where peace begins Here we sow the seeds of love\n[G]It all starts with our knowing We are one family\n[D]We are one family under God\n"
+}

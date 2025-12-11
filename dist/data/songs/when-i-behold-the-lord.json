@@ -1,0 +1,223 @@
+{
+  "id": "when-i-behold-the-lord",
+  "title": "When I Behold the Lord",
+  "key": "E",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "When I behold the Lord of all, my old self dies away."
+            }
+          ],
+          "raw": "[E]When I behold the Lord of all, my old self dies away."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "So dies the world of sinfulness giving birth to good."
+            }
+          ],
+          "raw": "[B7]So dies the world of sinfulness giving birth to good."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Soon a new self emerges, clear and bright and pure;"
+            }
+          ],
+          "raw": "[C#m]Soon a new self emerges, clear and bright and pure;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Come and behold the new life, heaven and earth reborn."
+            }
+          ],
+          "raw": "[F#m]Come and behold the new life, heaven and earth reborn."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Now I behold Jerusalem, city of loveliness,"
+            }
+          ],
+          "raw": "[E]Now I behold Jerusalem, city of loveliness,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Gently descending from above, ever to be my own."
+            }
+          ],
+          "raw": "[B7]Gently descending from above, ever to be my own."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Joy never ending is with me, long as the Lord is near;"
+            }
+          ],
+          "raw": "[A]Joy never ending is with me, long as the Lord is near;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Joy ever flows in sweetness, river of precious life."
+            }
+          ],
+          "raw": "[E]Joy ever flows in sweetness, river of precious life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Kingdom of God eternal fervently I desired;"
+            }
+          ],
+          "raw": "[B7]Kingdom of God eternal fervently I desired;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Heavenly rays so softy fall, shining the Sun of Grace."
+            }
+          ],
+          "raw": "[E]Heavenly rays so softy fall, shining the Sun of Grace."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Springing forth in ripeness, fruit of the Tree of Life,"
+            }
+          ],
+          "raw": "[C#m]Springing forth in ripeness, fruit of the Tree of Life,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Torment of doubt is over, gone is the shadow of death."
+            }
+          ],
+          "raw": "[F#m]Torment of doubt is over, gone is the shadow of death."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Torturing every part of me, sinfulness rules my soul."
+            }
+          ],
+          "raw": "[B7]Torturing every part of me, sinfulness rules my soul."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Still God can raise me purified, giving creation to me."
+            }
+          ],
+          "raw": "[E]Still God can raise me purified, giving creation to me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Letting me live in his palace, shining with golden light;"
+            }
+          ],
+          "raw": "[A]Letting me live in his palace, shining with golden light;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Boundless His love and kindness, boundless His love for me!"
+            }
+          ],
+          "raw": "[E]Boundless His love and kindness, boundless His love for me!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/when-i-behold-the-lord.pro",
+  "source": "{title: When I Behold the Lord}\n{key: E}\n\n{section: Verse 1}\n[E]When I behold the Lord of all, my old self dies away.\n[B7]So dies the world of sinfulness giving birth to good.\n[C#m]Soon a new self emerges, clear and bright and pure;\n[F#m]Come and behold the new life, heaven and earth reborn.\n\n{section: Verse 2}\n[E]Now I behold Jerusalem, city of loveliness,\n[B7]Gently descending from above, ever to be my own.\n[A]Joy never ending is with me, long as the Lord is near;\n[E]Joy ever flows in sweetness, river of precious life.\n\n{section: Verse 3}\n[B7]Kingdom of God eternal fervently I desired;\n[E]Heavenly rays so softy fall, shining the Sun of Grace.\n[C#m]Springing forth in ripeness, fruit of the Tree of Life,\n[F#m]Torment of doubt is over, gone is the shadow of death.\n\n{section: Verse 4}\n[B7]Torturing every part of me, sinfulness rules my soul.\n[E]Still God can raise me purified, giving creation to me.\n[A]Letting me live in his palace, shining with golden light;\n[E]Boundless His love and kindness, boundless His love for me!\n"
+}

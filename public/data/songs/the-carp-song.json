@@ -1,0 +1,293 @@
+{
+  "id": "the-carp-song",
+  "title": "The Carp Song",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Take my hand come with me we're building a new home"
+            }
+          ],
+          "raw": "[G]Take my hand come with me we're building a new home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "A place where we can live in peace and never feel alone"
+            }
+          ],
+          "raw": "[C]A place where we can live in peace and never feel alone"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Come see the world the way we do"
+            }
+          ],
+          "raw": "[Em]Come see the world the way we do"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Open your heart love will be yours, Forever"
+            }
+          ],
+          "raw": "[D]Open your heart love will be yours, Forever"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "So come sing our song"
+            }
+          ],
+          "raw": "[G]So come sing our song"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Hey hey ooh ooh "
+            },
+            {
+              "chord": "Em",
+              "lyric": "Hey hey ooh ooh "
+            },
+            {
+              "chord": "D",
+              "lyric": "Hey hey ooh ooh Hey"
+            }
+          ],
+          "raw": "[C]Hey hey ooh ooh [Em]Hey hey ooh ooh [D]Hey hey ooh ooh Hey"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "We stand for peace, we march for love"
+            }
+          ],
+          "raw": "[G]We stand for peace, we march for love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "We all are one under the sun, we all are one under the sun"
+            }
+          ],
+          "raw": "[C]We all are one under the sun, we all are one under the sun"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Brothers and sisters, we're dreaming of a better world"
+            }
+          ],
+          "raw": "[Em]Brothers and sisters, we're dreaming of a better world"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "And together we gon' make it real, you and me we gon' make it real"
+            }
+          ],
+          "raw": "[D]And together we gon' make it real, you and me we gon' make it real"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Look around, catch the truth and spread it out loud I say"
+            }
+          ],
+          "raw": "[G]Look around, catch the truth and spread it out loud I say"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Into the lands into the skies, the world is our to take"
+            }
+          ],
+          "raw": "[C]Into the lands into the skies, the world is our to take"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Pour out your heart and you will find"
+            }
+          ],
+          "raw": "[Em]Pour out your heart and you will find"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Your light inside that shines so bright, Believe"
+            }
+          ],
+          "raw": "[D]Your light inside that shines so bright, Believe"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And come sing our song"
+            }
+          ],
+          "raw": "[G]And come sing our song"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Hey hey ooh ooh "
+            },
+            {
+              "chord": "Em",
+              "lyric": "Hey hey ooh oh "
+            },
+            {
+              "chord": "D",
+              "lyric": "Hey hey ooh ooh Hey"
+            }
+          ],
+          "raw": "[C]Hey hey ooh ooh [Em]Hey hey ooh oh [D]Hey hey ooh ooh Hey"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Together we live for others, strive for the better, one with our creator"
+            }
+          ],
+          "raw": "[G]Together we live for others, strive for the better, one with our creator"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Hey hey ooh ooh "
+            },
+            {
+              "chord": "Em",
+              "lyric": "Hey hey ooh ooh "
+            },
+            {
+              "chord": "D",
+              "lyric": "Hey hey ooh ooh Hey"
+            }
+          ],
+          "raw": "[C]Hey hey ooh ooh [Em]Hey hey ooh ooh [D]Hey hey ooh ooh Hey"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/the-carp-song.pro",
+  "source": "{title: The Carp Song}\n{key: G}\n\n{section: Verse 1}\n[G]Take my hand come with me we're building a new home\n[C]A place where we can live in peace and never feel alone\n[Em]Come see the world the way we do\n[D]Open your heart love will be yours, Forever\n\n{section: Verse 2}\n[G]So come sing our song\n[C]Hey hey ooh ooh [Em]Hey hey ooh ooh [D]Hey hey ooh ooh Hey\n\n{section: Chorus}\n[G]We stand for peace, we march for love\n[C]We all are one under the sun, we all are one under the sun\n[Em]Brothers and sisters, we're dreaming of a better world\n[D]And together we gon' make it real, you and me we gon' make it real\n\n{section: Verse 3}\n[G]Look around, catch the truth and spread it out loud I say\n[C]Into the lands into the skies, the world is our to take\n[Em]Pour out your heart and you will find\n[D]Your light inside that shines so bright, Believe\n\n{section: Verse 4}\n[G]And come sing our song\n[C]Hey hey ooh ooh [Em]Hey hey ooh oh [D]Hey hey ooh ooh Hey\n\n{section: Verse 5}\n[G]Together we live for others, strive for the better, one with our creator\n[C]Hey hey ooh ooh [Em]Hey hey ooh ooh [D]Hey hey ooh ooh Hey\n"
+}

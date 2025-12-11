@@ -1,0 +1,267 @@
+{
+  "id": "island-in-the-sun",
+  "title": "Island in the Sun",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "This is my island in the sun"
+            }
+          ],
+          "raw": "[D]This is my island in the sun"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Where my people have toiled since time begun"
+            }
+          ],
+          "raw": "[G]Where my people have toiled since time begun"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "I may sail on many a sea"
+            }
+          ],
+          "raw": "[A7]I may sail on many a sea"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Her shores will always be home to me"
+            }
+          ],
+          "raw": "[D]Her shores will always be home to me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Oh, island in the sun"
+            }
+          ],
+          "raw": "[D]Oh, island in the sun"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Willed to me by my Father's hand"
+            }
+          ],
+          "raw": "[G]Willed to me by my Father's hand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "All my days I will sing in praise"
+            }
+          ],
+          "raw": "[Bm]All my days I will sing in praise"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Of your forest, waters, your shining sands."
+            }
+          ],
+          "raw": "[A7]Of your forest, waters, your shining sands."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "As morning breaks"
+            }
+          ],
+          "raw": "[D]As morning breaks"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "The heaven on high"
+            }
+          ],
+          "raw": "[G]The heaven on high"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "I lift my heavy load to the sky"
+            }
+          ],
+          "raw": "[A7]I lift my heavy load to the sky"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Sun comes down with a burning glow"
+            }
+          ],
+          "raw": "[D]Sun comes down with a burning glow"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Mingles my sweat with the earth below"
+            }
+          ],
+          "raw": "[G]Mingles my sweat with the earth below"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I see woman on bended knee"
+            }
+          ],
+          "raw": "[D]I see woman on bended knee"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Cutting cane for her family"
+            }
+          ],
+          "raw": "[G]Cutting cane for her family"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "I see man at the waterside"
+            }
+          ],
+          "raw": "[A7]I see man at the waterside"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Casting nets at the surging tide"
+            }
+          ],
+          "raw": "[D]Casting nets at the surging tide"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I hope the day will never come"
+            }
+          ],
+          "raw": "[G]I hope the day will never come"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "That I can't awake to the sound of drum"
+            }
+          ],
+          "raw": "[A7]That I can't awake to the sound of drum"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Never let me miss carnival"
+            }
+          ],
+          "raw": "[D]Never let me miss carnival"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "With calypso songs philosophical"
+            }
+          ],
+          "raw": "[G]With calypso songs philosophical"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/island-in-the-sun.pro",
+  "source": "{title: Island in the Sun}\n{key: D}\n\n{section: Verse 1}\n[D]This is my island in the sun\n[G]Where my people have toiled since time begun\n[A7]I may sail on many a sea\n[D]Her shores will always be home to me\n\n{section: Chorus}\n[D]Oh, island in the sun\n[G]Willed to me by my Father's hand\n[Bm]All my days I will sing in praise\n[A7]Of your forest, waters, your shining sands.\n\n{{section: Verse 2}\n[D]As morning breaks\n[G]The heaven on high\n[A7]I lift my heavy load to the sky\n[D]Sun comes down with a burning glow\n[G]Mingles my sweat with the earth below\n\n{{section: Verse 3}\n[D]I see woman on bended knee\n[G]Cutting cane for her family\n[A7]I see man at the waterside\n[D]Casting nets at the surging tide\n\n{{section: Verse 4}\n[G]I hope the day will never come\n[A7]That I can't awake to the sound of drum\n[D]Never let me miss carnival\n[G]With calypso songs philosophical\n"
+}

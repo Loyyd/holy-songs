@@ -1,0 +1,240 @@
+{
+  "id": "swing-low-sweet-chariot",
+  "title": "Swing Low, Sweet Chariot",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Swing low sweet chariot, coming for to carry me home,"
+            }
+          ],
+          "raw": "[D]Swing low sweet chariot, coming for to carry me home,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Swing low sweet chariot, coming for to carry me home."
+            }
+          ],
+          "raw": "[G]Swing low sweet chariot, coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I looked over Jordan and what did I see?"
+            }
+          ],
+          "raw": "[D]I looked over Jordan and what did I see?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[G]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "A band of angels coming after me,"
+            }
+          ],
+          "raw": "[Bm]A band of angels coming after me,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[C]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "If you get there before I do,"
+            }
+          ],
+          "raw": "[D]If you get there before I do,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Coming for to carry me home,"
+            }
+          ],
+          "raw": "[G]Coming for to carry me home,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Just tell my friends I'm coming there too,"
+            }
+          ],
+          "raw": "[Bm]Just tell my friends I'm coming there too,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[A7]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "If I get there before you do,"
+            }
+          ],
+          "raw": "[D]If I get there before you do,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[G]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "I'll dig a hole and pull you through,"
+            }
+          ],
+          "raw": "[Bm]I'll dig a hole and pull you through,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[A7]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I'm sometimes up and sometimes down,"
+            }
+          ],
+          "raw": "[D]I'm sometimes up and sometimes down,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[G]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "But still my soul feels heavenly bound,"
+            }
+          ],
+          "raw": "[Bm]But still my soul feels heavenly bound,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Coming for to carry me home."
+            }
+          ],
+          "raw": "[A7]Coming for to carry me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/swing-low-sweet-chariot.pro",
+  "source": "{title: Swing Low, Sweet Chariot}\n{key: D}\n\n{section: Chorus}\n[D]Swing low sweet chariot, coming for to carry me home,\n[G]Swing low sweet chariot, coming for to carry me home.\n\n{section: Verse 1}\n[D]I looked over Jordan and what did I see?\n[G]Coming for to carry me home.\n[Bm]A band of angels coming after me,\n[C]Coming for to carry me home.\n\n{{section: Verse 2}\n[D]If you get there before I do,\n[G]Coming for to carry me home,\n[Bm]Just tell my friends I'm coming there too,\n[A7]Coming for to carry me home.\n\n{{section: Verse 3}\n[D]If I get there before you do,\n[G]Coming for to carry me home.\n[Bm]I'll dig a hole and pull you through,\n[A7]Coming for to carry me home.\n\n{{section: Verse 4}\n[D]I'm sometimes up and sometimes down,\n[G]Coming for to carry me home.\n[Bm]But still my soul feels heavenly bound,\n[A7]Coming for to carry me home.\n"
+}

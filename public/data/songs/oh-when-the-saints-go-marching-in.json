@@ -1,0 +1,343 @@
+{
+  "id": "oh-when-the-saints-go-marching-in",
+  "title": "Oh When the Saints Go Marching In",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh when the Saints go marching in"
+            }
+          ],
+          "raw": "[G]Oh when the Saints go marching in"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "When the Saints go marching in"
+            }
+          ],
+          "raw": "[D7]When the Saints go marching in"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "O Lord, I want to be in that number"
+            }
+          ],
+          "raw": "[G]O Lord, I want to be in that number"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "When the Saints go marching in"
+            }
+          ],
+          "raw": "[D7]When the Saints go marching in"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh when the revelation comes"
+            }
+          ],
+          "raw": "[G]Oh when the revelation comes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Oh when the revelation comes"
+            }
+          ],
+          "raw": "[D7]Oh when the revelation comes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh Lord, I want to be in that number"
+            }
+          ],
+          "raw": "[G]Oh Lord, I want to be in that number"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Oh when the revelation comes"
+            }
+          ],
+          "raw": "[D7]Oh when the revelation comes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And when the sun refuse to shine"
+            }
+          ],
+          "raw": "[G]And when the sun refuse to shine"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "And when the sun refuse to shine"
+            }
+          ],
+          "raw": "[D7]And when the sun refuse to shine"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "O Lord, I want to be in that number"
+            }
+          ],
+          "raw": "[G]O Lord, I want to be in that number"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G7",
+              "lyric": "When the sun refuse to shine"
+            }
+          ],
+          "raw": "[G7]When the sun refuse to shine"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Oh when the trumpet sounds the call"
+            }
+          ],
+          "raw": "[C]Oh when the trumpet sounds the call"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh when the trumpet sounds the call"
+            }
+          ],
+          "raw": "[G]Oh when the trumpet sounds the call"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Oh Lord, I want to be in that number"
+            }
+          ],
+          "raw": "[D7]Oh Lord, I want to be in that number"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "When the trumpet sounds the call"
+            }
+          ],
+          "raw": "[G]When the trumpet sounds the call"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And when they gather 'round the throne"
+            }
+          ],
+          "raw": "[G]And when they gather 'round the throne"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "And when they gather 'round the throne"
+            }
+          ],
+          "raw": "[D7]And when they gather 'round the throne"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh Lord, I want to be in that number,"
+            }
+          ],
+          "raw": "[G]Oh Lord, I want to be in that number,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "When they gather 'round the throne"
+            }
+          ],
+          "raw": "[D7]When they gather 'round the throne"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "And when they crown Him King of Kings"
+            }
+          ],
+          "raw": "[G]And when they crown Him King of Kings"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "And when they crown Him King of Kings"
+            }
+          ],
+          "raw": "[D7]And when they crown Him King of Kings"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh Lord I want to be in that number,"
+            }
+          ],
+          "raw": "[G]Oh Lord I want to be in that number,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "When they crown Him King of Kings"
+            }
+          ],
+          "raw": "[D7]When they crown Him King of Kings"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "On that hallelujah day"
+            }
+          ],
+          "raw": "[G]On that hallelujah day"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "On that hallelujah day"
+            }
+          ],
+          "raw": "[D7]On that hallelujah day"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Oh Lord, I want to be in that number"
+            }
+          ],
+          "raw": "[G]Oh Lord, I want to be in that number"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "On that hallelujah day"
+            }
+          ],
+          "raw": "[D7]On that hallelujah day"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/oh-when-the-saints-go-marching-in.pro",
+  "source": "{title: Oh When the Saints Go Marching In}\n{key: G}\n\n{section: Verse 1}\n[G]Oh when the Saints go marching in\n[D7]When the Saints go marching in\n[G]O Lord, I want to be in that number\n[D7]When the Saints go marching in\n\n{{section: Verse 2}\n[G]Oh when the revelation comes\n[D7]Oh when the revelation comes\n[G]Oh Lord, I want to be in that number\n[D7]Oh when the revelation comes\n\n{{section: Verse 3}\n[G]And when the sun refuse to shine\n[D7]And when the sun refuse to shine\n[G]O Lord, I want to be in that number\n[G7]When the sun refuse to shine\n\n{{section: Verse 4}\n[C]Oh when the trumpet sounds the call\n[G]Oh when the trumpet sounds the call\n[D7]Oh Lord, I want to be in that number\n[G]When the trumpet sounds the call\n\n{{section: Verse 5}\n[G]And when they gather 'round the throne\n[D7]And when they gather 'round the throne\n[G]Oh Lord, I want to be in that number,\n[D7]When they gather 'round the throne\n\n{{section: Verse 6}\n[G]And when they crown Him King of Kings\n[D7]And when they crown Him King of Kings\n[G]Oh Lord I want to be in that number,\n[D7]When they crown Him King of Kings\n\n{{section: Verse 7}\n[G]On that hallelujah day\n[D7]On that hallelujah day\n[G]Oh Lord, I want to be in that number\n[D7]On that hallelujah day\n"
+}

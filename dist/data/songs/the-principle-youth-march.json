@@ -1,0 +1,299 @@
+{
+  "id": "the-principle-youth-march",
+  "title": "The Principle Youth March",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We are the youth, soldiers of the truth, called by our "
+            },
+            {
+              "chord": "G",
+              "lyric": "God on "
+            },
+            {
+              "chord": "D",
+              "lyric": "high;"
+            }
+          ],
+          "raw": "[D]We are the youth, soldiers of the truth, called by our [G]God on [D]high;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Now is the time, march to the "
+            },
+            {
+              "chord": "A7",
+              "lyric": "world, sounding the battle "
+            },
+            {
+              "chord": "D",
+              "lyric": "cry!"
+            }
+          ],
+          "raw": "[Bm]Now is the time, march to the [A7]world, sounding the battle [D]cry!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Too long the dark night of sin held in "
+            },
+            {
+              "chord": "F#7",
+              "lyric": "fear the people of the world,"
+            }
+          ],
+          "raw": "[Bm]Too long the dark night of sin held in [F#7]fear the people of the world,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "We'll drive the darkness "
+            },
+            {
+              "chord": "F#7",
+              "lyric": "away, "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "bringing in the new "
+            },
+            {
+              "chord": "F#7",
+              "lyric": "day."
+            }
+          ],
+          "raw": "[Bm]We'll drive the darkness [F#7]away, [Bm]bringing in the new [F#7]day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Lift high! Lift "
+            },
+            {
+              "chord": "Em",
+              "lyric": "high! The banner of "
+            },
+            {
+              "chord": "D",
+              "lyric": "Truth on "
+            },
+            {
+              "chord": "G",
+              "lyric": "high;"
+            }
+          ],
+          "raw": "[D]Lift high! Lift [Em]high! The banner of [D]Truth on [G]high;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "March forward crossing the "
+            },
+            {
+              "chord": "A7",
+              "lyric": "sea, to the ends of the "
+            },
+            {
+              "chord": "D",
+              "lyric": "earth."
+            }
+          ],
+          "raw": "[D]March forward crossing the [A7]sea, to the ends of the [D]earth."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Heaven and earth all are made anew, blessed by the light of God;"
+            }
+          ],
+          "raw": "[D]Heaven and earth all are made anew, blessed by the light of God;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Evil and sin vanish away, burned in the holy fire."
+            }
+          ],
+          "raw": "[D]Evil and sin vanish away, burned in the holy fire."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "This is the land of the heart, every people living as one,"
+            }
+          ],
+          "raw": "[D]This is the land of the heart, every people living as one,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Glad voices filling the land, sing a joyful song."
+            }
+          ],
+          "raw": "[D]Glad voices filling the land, sing a joyful song."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Proud is my heart bursting with my hope, we are the youth of God;"
+            }
+          ],
+          "raw": "[D]Proud is my heart bursting with my hope, we are the youth of God;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "See how we go moving as one, marching at His command."
+            }
+          ],
+          "raw": "[D]See how we go moving as one, marching at His command."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Five colors shine in the ranks, every people, every race of man."
+            }
+          ],
+          "raw": "[D]Five colors shine in the ranks, every people, every race of man."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We'll shake the heavens and earth, with our victory song."
+            }
+          ],
+          "raw": "[D]We'll shake the heavens and earth, with our victory song."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/the-principle-youth-march.pro",
+  "source": "{title: The Principle Youth March}\n{key: D}\n\n{section: Verse 1}\n[D]We are the youth, soldiers of the truth, called by our [G]God on [D]high;\n[Bm]Now is the time, march to the [A7]world, sounding the battle [D]cry!\n\n{section: Verse 2}\n[Bm]Too long the dark night of sin held in [F#7]fear the people of the world,\n[Bm]We'll drive the darkness [F#7]away, [Bm]bringing in the new [F#7]day.\n\n{section: Chorus}\n[D]Lift high! Lift [Em]high! The banner of [D]Truth on [G]high;\n[D]March forward crossing the [A7]sea, to the ends of the [D]earth.\n\n{section: Verse 3}\n[D]Heaven and earth all are made anew, blessed by the light of God;\n[D]Evil and sin vanish away, burned in the holy fire.\n\n{section: Verse 4}\n[D]This is the land of the heart, every people living as one,\n[D]Glad voices filling the land, sing a joyful song.\n\n{section: Verse 5}\n[D]Proud is my heart bursting with my hope, we are the youth of God;\n[D]See how we go moving as one, marching at His command.\n\n{section: Verse 6}\n[D]Five colors shine in the ranks, every people, every race of man.\n[D]We'll shake the heavens and earth, with our victory song.\n"
+}

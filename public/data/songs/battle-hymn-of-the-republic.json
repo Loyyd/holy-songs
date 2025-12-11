@@ -1,0 +1,305 @@
+{
+  "id": "battle-hymn-of-the-republic",
+  "title": "Battle Hymn of the Republic",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Mine eyes have seen the glory of the coming of the Lord,"
+            }
+          ],
+          "raw": "[A]Mine eyes have seen the glory of the coming of the Lord,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "He is trampling out the vintage where the grapes of wrath are stored;"
+            }
+          ],
+          "raw": "[A7]He is trampling out the vintage where the grapes of wrath are stored;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "He hath loosed the fateful lightning of His terrible swift sword."
+            }
+          ],
+          "raw": "[D]He hath loosed the fateful lightning of His terrible swift sword."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "His truth is marching on."
+            }
+          ],
+          "raw": "[D]His truth is marching on."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Glory, glory, Hallelujah! Glory, glory Hallelujah!"
+            }
+          ],
+          "raw": "[A]Glory, glory, Hallelujah! Glory, glory Hallelujah!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Glory, glory Hallelujah! His truth is marching on."
+            }
+          ],
+          "raw": "[A7]Glory, glory Hallelujah! His truth is marching on."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I have seen Him the watch fires of a hundred circling camps,"
+            }
+          ],
+          "raw": "[D]I have seen Him the watch fires of a hundred circling camps,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "They have built Him an altar in the evening dews and damps."
+            }
+          ],
+          "raw": "[A]They have built Him an altar in the evening dews and damps."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I can read His righteous sentence in the dim and flaring lamps,"
+            }
+          ],
+          "raw": "[F#m]I can read His righteous sentence in the dim and flaring lamps,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "His day is marching on."
+            }
+          ],
+          "raw": "[E7]His day is marching on."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "He has sounded forth the trumpet that shall never call retreat,"
+            }
+          ],
+          "raw": "[A]He has sounded forth the trumpet that shall never call retreat,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "He is sifting out the hearts of men before His judgment seat;"
+            }
+          ],
+          "raw": "[A7]He is sifting out the hearts of men before His judgment seat;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "O, be swift my soul, to answer Him, be jubilant my feet!"
+            }
+          ],
+          "raw": "[D]O, be swift my soul, to answer Him, be jubilant my feet!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Our God is marching on."
+            }
+          ],
+          "raw": "[E7]Our God is marching on."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "In the beauty of the lilies Christ was born across the sea,"
+            }
+          ],
+          "raw": "[A]In the beauty of the lilies Christ was born across the sea,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "With a glory in his bosom that transfigures you and me;"
+            }
+          ],
+          "raw": "[A7]With a glory in his bosom that transfigures you and me;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "As he lives to make men holy, let us live to make men free!"
+            }
+          ],
+          "raw": "[D]As he lives to make men holy, let us live to make men free!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "While God is marching on."
+            }
+          ],
+          "raw": "[E7]While God is marching on."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "He is coming like the glory of the morning on the wave,"
+            }
+          ],
+          "raw": "[A]He is coming like the glory of the morning on the wave,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "He is wisdom to the mighty, He is honor to the brave."
+            }
+          ],
+          "raw": "[A7]He is wisdom to the mighty, He is honor to the brave."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "So the world shall be His footstool, and the soul of wrong His slave."
+            }
+          ],
+          "raw": "[D]So the world shall be His footstool, and the soul of wrong His slave."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Our God is marching on."
+            }
+          ],
+          "raw": "[E7]Our God is marching on."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/battle-hymn-of-the-republic.pro",
+  "source": "{title: Battle Hymn of the Republic}\n{key: A}\n\n{section: Verse 1}\n[A]Mine eyes have seen the glory of the coming of the Lord,\n[A7]He is trampling out the vintage where the grapes of wrath are stored;\n[D]He hath loosed the fateful lightning of His terrible swift sword.\n[D]His truth is marching on.\n\n{section: Chorus}\n[A]Glory, glory, Hallelujah! Glory, glory Hallelujah!\n[A7]Glory, glory Hallelujah! His truth is marching on.\n\n{section: Verse 2}\n[D]I have seen Him the watch fires of a hundred circling camps,\n[A]They have built Him an altar in the evening dews and damps.\n[F#m]I can read His righteous sentence in the dim and flaring lamps,\n[E7]His day is marching on.\n\n{section: Verse 3}\n[A]He has sounded forth the trumpet that shall never call retreat,\n[A7]He is sifting out the hearts of men before His judgment seat;\n[D]O, be swift my soul, to answer Him, be jubilant my feet!\n[E7]Our God is marching on.\n\n{section: Verse 4}\n[A]In the beauty of the lilies Christ was born across the sea,\n[A7]With a glory in his bosom that transfigures you and me;\n[D]As he lives to make men holy, let us live to make men free!\n[E7]While God is marching on.\n\n{section: Verse 5}\n[A]He is coming like the glory of the morning on the wave,\n[A7]He is wisdom to the mighty, He is honor to the brave.\n[D]So the world shall be His footstool, and the soul of wrong His slave.\n[E7]Our God is marching on.\n"
+}

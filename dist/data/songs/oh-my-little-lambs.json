@@ -1,0 +1,311 @@
+{
+  "id": "oh-my-little-lambs",
+  "title": "Oh, My Little Lambs",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "O, my little "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "lambs, "
+            },
+            {
+              "chord": "A",
+              "lyric": "wandering on the "
+            },
+            {
+              "chord": "D",
+              "lyric": "lonely "
+            },
+            {
+              "chord": "G",
+              "lyric": "plain. "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "E7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]O, my little [Bm]lambs, [A]wandering on the [D]lonely [G]plain. [D] [A] [E7] [A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Someday you may "
+            },
+            {
+              "chord": "F#7",
+              "lyric": "fall, over"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "come by your des"
+            },
+            {
+              "chord": "A7",
+              "lyric": "pair. "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G]Someday you may [F#7]fall, over[Bm]come by your des[A7]pair. [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Weak, wounded "
+            },
+            {
+              "chord": "D",
+              "lyric": "soul, no one will come to "
+            },
+            {
+              "chord": "A",
+              "lyric": "comfort you;"
+            }
+          ],
+          "raw": "[G]Weak, wounded [D]soul, no one will come to [A]comfort you;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Alone, you have "
+            },
+            {
+              "chord": "A",
+              "lyric": "no one to "
+            },
+            {
+              "chord": "D",
+              "lyric": "love you, "
+            },
+            {
+              "chord": "G",
+              "lyric": "no one to "
+            },
+            {
+              "chord": "D",
+              "lyric": "bring the "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "truth. "
+            },
+            {
+              "chord": "Em",
+              "lyric": " "
+            },
+            {
+              "chord": "A7",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Bm]Alone, you have [A]no one to [D]love you, [G]no one to [D]bring the [Bm]truth. [Em] [A7] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O, my little lambs, here is the One who heals your sins."
+            }
+          ],
+          "raw": "O, my little lambs, here is the One who heals your sins."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O, see how He carries the cross and leads the way."
+            }
+          ],
+          "raw": "O, see how He carries the cross and leads the way."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come, follow Him, He is the shepherd you have sought."
+            }
+          ],
+          "raw": "Come, follow Him, He is the shepherd you have sought."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Without Him you tremble in weakness, far from the path of life."
+            }
+          ],
+          "raw": "Without Him you tremble in weakness, far from the path of life."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O, my little lambs, hunger and thirst may torture you,"
+            }
+          ],
+          "raw": "O, my little lambs, hunger and thirst may torture you,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Receive Him completely with all that you have."
+            }
+          ],
+          "raw": "Receive Him completely with all that you have."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You shall be healed, Heavenly strength will fill your soul,"
+            }
+          ],
+          "raw": "You shall be healed, Heavenly strength will fill your soul,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And deep boundless joy will swell within you eternally."
+            }
+          ],
+          "raw": "And deep boundless joy will swell within you eternally."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O, my little lambs, now is the time for joyful heart,"
+            }
+          ],
+          "raw": "O, my little lambs, now is the time for joyful heart,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Sing praise to the Lord; raise your voices in strength."
+            }
+          ],
+          "raw": "Sing praise to the Lord; raise your voices in strength."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Love all mankind, Love everyone throughout the world."
+            }
+          ],
+          "raw": "Love all mankind, Love everyone throughout the world."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "O give them the love that I give you, O my little lambs."
+            }
+          ],
+          "raw": "O give them the love that I give you, O my little lambs."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/oh-my-little-lambs.pro",
+  "source": "{title: Oh, My Little Lambs}\n{key: D}\n\n{section: Verse 1}\n[D]O, my little [Bm]lambs, [A]wandering on the [D]lonely [G]plain. [D] [A] [E7] [A]\n[G]Someday you may [F#7]fall, over[Bm]come by your des[A7]pair. [D]\n[G]Weak, wounded [D]soul, no one will come to [A]comfort you;\n[Bm]Alone, you have [A]no one to [D]love you, [G]no one to [D]bring the [Bm]truth. [Em] [A7] [D]\n\n{section: Verse 2}\nO, my little lambs, here is the One who heals your sins.\nO, see how He carries the cross and leads the way.\nCome, follow Him, He is the shepherd you have sought.\nWithout Him you tremble in weakness, far from the path of life.\n\n{section: Verse 3}\nO, my little lambs, hunger and thirst may torture you,\nReceive Him completely with all that you have.\nYou shall be healed, Heavenly strength will fill your soul,\nAnd deep boundless joy will swell within you eternally.\n\n{section: Verse 4}\nO, my little lambs, now is the time for joyful heart,\nSing praise to the Lord; raise your voices in strength.\nLove all mankind, Love everyone throughout the world.\nO give them the love that I give you, O my little lambs.\n"
+}

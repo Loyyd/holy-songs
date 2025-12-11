@@ -1,0 +1,223 @@
+{
+  "id": "father",
+  "title": "Father",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Father, you went through the nights alone,"
+            }
+          ],
+          "raw": "[F]Father, you went through the nights alone,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "opened the way to free the earth;"
+            }
+          ],
+          "raw": "[Dm]opened the way to free the earth;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Father, together we'll walk hand in hand"
+            }
+          ],
+          "raw": "[Bb]Father, together we'll walk hand in hand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And settle peace down on God's earth"
+            }
+          ],
+          "raw": "[Am]And settle peace down on God's earth"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "It's a new dawn, I see it grow;"
+            }
+          ],
+          "raw": "[Gm]It's a new dawn, I see it grow;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Stronger and clearer day by day."
+            }
+          ],
+          "raw": "[C7]Stronger and clearer day by day."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Saving the people,"
+            }
+          ],
+          "raw": "[F]Saving the people,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Bringing the whole wide world into new hope."
+            }
+          ],
+          "raw": "[Dm]Bringing the whole wide world into new hope."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Father, wherever you go, we'll go;"
+            }
+          ],
+          "raw": "[Bb]Father, wherever you go, we'll go;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "Follow your tracks which lead us home."
+            }
+          ],
+          "raw": "[Am]Follow your tracks which lead us home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Father, a unified world is at hand,"
+            }
+          ],
+          "raw": "[Gm]Father, a unified world is at hand,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "No one will ever stop you now."
+            }
+          ],
+          "raw": "[C7]No one will ever stop you now."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Father, you need us to work and fight,"
+            }
+          ],
+          "raw": "[F]Father, you need us to work and fight,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "To conquer the sins which rule the world."
+            }
+          ],
+          "raw": "[Dm]To conquer the sins which rule the world."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "Father, we know that our time is short,"
+            }
+          ],
+          "raw": "[Bb]Father, we know that our time is short,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "And want to give our lives to you."
+            }
+          ],
+          "raw": "[Am]And want to give our lives to you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/father.pro",
+  "source": "{title: Father}\n{key: F}\n\n{section: Verse 1}\n[F]Father, you went through the nights alone,\n[Dm]opened the way to free the earth;\n[Bb]Father, together we'll walk hand in hand\n[Am]And settle peace down on God's earth\n\n{section: Chorus}\n[Gm]It's a new dawn, I see it grow;\n[C7]Stronger and clearer day by day.\n[F]Saving the people,\n[Dm]Bringing the whole wide world into new hope.\n\n{section: Verse 2}\n[Bb]Father, wherever you go, we'll go;\n[Am]Follow your tracks which lead us home.\n[Gm]Father, a unified world is at hand,\n[C7]No one will ever stop you now.\n\n{section: Verse 3}\n[F]Father, you need us to work and fight,\n[Dm]To conquer the sins which rule the world.\n[Bb]Father, we know that our time is short,\n[Am]And want to give our lives to you.\n"
+}

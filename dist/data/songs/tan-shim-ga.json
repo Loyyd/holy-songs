@@ -1,0 +1,205 @@
+{
+  "id": "tan-shim-ga",
+  "title": "Tan Shim Ga",
+  "key": "Dm",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "I mo mi ju go do ju go"
+            }
+          ],
+          "raw": "[Dm]I mo mi ju go do ju go"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Il bek pon go jo ju go"
+            }
+          ],
+          "raw": "[Gm]Il bek pon go jo ju go"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Beg gol ri jin to de yo"
+            }
+          ],
+          "raw": "[Dm]Beg gol ri jin to de yo"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm7",
+              "lyric": "Nok shi ra do i ko ob ko"
+            }
+          ],
+          "raw": "[Gm7]Nok shi ra do i ko ob ko"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Im Hyung han il pyun tan shim Ka sil chul li issu rya"
+            }
+          ],
+          "raw": "[A7]Im Hyung han il pyun tan shim Ka sil chul li issu rya"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Im hyung han il pyun tan shim Ka sil chul li issu rya."
+            }
+          ],
+          "raw": "[Dm]Im hyung han il pyun tan shim Ka sil chul li issu rya."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Although my body perishes"
+            }
+          ],
+          "raw": "[Gm]Although my body perishes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "And yet one thousand times dies"
+            }
+          ],
+          "raw": "[Dm]And yet one thousand times dies"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "My bones become ashes"
+            }
+          ],
+          "raw": "[Gm]My bones become ashes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Even my soul vanishes"
+            }
+          ],
+          "raw": "[A7]Even my soul vanishes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "Still all my love and all my heart"
+            }
+          ],
+          "raw": "[Dm]Still all my love and all my heart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Gm",
+              "lyric": "Unchanging remain with you"
+            }
+          ],
+          "raw": "[Gm]Unchanging remain with you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Dm",
+              "lyric": "My everlasting loyalty"
+            }
+          ],
+          "raw": "[Dm]My everlasting loyalty"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Unchanging remains with you."
+            }
+          ],
+          "raw": "[A7]Unchanging remains with you."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/tan-shim-ga.pro",
+  "source": "{title: Tan Shim Ga}\n{key: Dm}\n\n{section: Verse 1}\n[Dm]I mo mi ju go do ju go\n[Gm]Il bek pon go jo ju go\n[Dm]Beg gol ri jin to de yo\n[Gm7]Nok shi ra do i ko ob ko\n\n{section: Verse 2}\n[A7]Im Hyung han il pyun tan shim Ka sil chul li issu rya\n[Dm]Im hyung han il pyun tan shim Ka sil chul li issu rya.\n\n{section: Verse 3}\n[Gm]Although my body perishes\n[Dm]And yet one thousand times dies\n[Gm]My bones become ashes\n[A7]Even my soul vanishes\n\n{section: Verse 4}\n[Dm]Still all my love and all my heart\n[Gm]Unchanging remain with you\n[Dm]My everlasting loyalty\n[A7]Unchanging remains with you.\n"
+}

@@ -1,0 +1,380 @@
+{
+  "id": "go-tell-it-on-the-mountain",
+  "title": "Go Tell It on the Mountain",
+  "key": "G",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Go tell it on the mountain, over the hills and everywhere,"
+            }
+          ],
+          "raw": "[G]Go tell it on the mountain, over the hills and everywhere,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Go tell it on the mountain, to let my people go."
+            }
+          ],
+          "raw": "[D]Go tell it on the mountain, to let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in red?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in red?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[C]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Must be the children that Moses led."
+            }
+          ],
+          "raw": "[G]Must be the children that Moses led."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[A7]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "Who's that yonder dressed in red?"
+            }
+          ],
+          "raw": "[D7]Who's that yonder dressed in red?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Must be the children that Moses led;"
+            }
+          ],
+          "raw": "[C]Must be the children that Moses led;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Go tell it on the mountain, to let my people go."
+            }
+          ],
+          "raw": "[G]Go tell it on the mountain, to let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in white?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in white?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[C]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Must be the children of the Israelites."
+            }
+          ],
+          "raw": "[Em]Must be the children of the Israelites."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[A7]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in white?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in white?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Must be the children of the Israelites."
+            }
+          ],
+          "raw": "[C]Must be the children of the Israelites."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Go tell it on the mountain,"
+            }
+          ],
+          "raw": "[G]Go tell it on the mountain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "To let my people go."
+            }
+          ],
+          "raw": "[D7]To let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in gold?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in gold?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[C]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Must be the children of our leader's fold."
+            }
+          ],
+          "raw": "[Em]Must be the children of our leader's fold."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[A7]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in gold?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in gold?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Must be the children of our leader's fold;"
+            }
+          ],
+          "raw": "[C]Must be the children of our leader's fold;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Go tell it on the mountain,"
+            }
+          ],
+          "raw": "[G]Go tell it on the mountain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "To let my people go."
+            }
+          ],
+          "raw": "[D7]To let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in blue?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in blue?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[C]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Must be the children of Reverend Moon!"
+            }
+          ],
+          "raw": "[Em]Must be the children of Reverend Moon!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A7",
+              "lyric": "Let my people go."
+            }
+          ],
+          "raw": "[A7]Let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Who's that yonder dressed in blue?"
+            }
+          ],
+          "raw": "[G]Who's that yonder dressed in blue?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Must be the children of Reverend Moon;"
+            }
+          ],
+          "raw": "[C]Must be the children of Reverend Moon;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Go tell it on the mountain,"
+            }
+          ],
+          "raw": "[G]Go tell it on the mountain,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D7",
+              "lyric": "To let my people go."
+            }
+          ],
+          "raw": "[D7]To let my people go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/go-tell-it-on-the-mountain.pro",
+  "source": "{title: Go Tell It on the Mountain}\n{key: G}\n\n{section: Chorus}\n[G]Go tell it on the mountain, over the hills and everywhere,\n[D]Go tell it on the mountain, to let my people go.\n\n{section: Verse 1}\n[G]Who's that yonder dressed in red?\n[C]Let my people go.\n[G]Must be the children that Moses led.\n[A7]Let my people go.\n[D7]Who's that yonder dressed in red?\n[C]Must be the children that Moses led;\n[G]Go tell it on the mountain, to let my people go.\n\n{section: Verse 2}\n[G]Who's that yonder dressed in white?\n[C]Let my people go.\n[Em]Must be the children of the Israelites.\n[A7]Let my people go.\n[G]Who's that yonder dressed in white?\n[C]Must be the children of the Israelites.\n[G]Go tell it on the mountain,\n[D7]To let my people go.\n\n{{section: Verse 3}\n[G]Who's that yonder dressed in gold?\n[C]Let my people go.\n[Em]Must be the children of our leader's fold.\n[A7]Let my people go.\n[G]Who's that yonder dressed in gold?\n[C]Must be the children of our leader's fold;\n[G]Go tell it on the mountain,\n[D7]To let my people go.\n\n{{section: Verse 4}\n[G]Who's that yonder dressed in blue?\n[C]Let my people go.\n[Em]Must be the children of Reverend Moon!\n[A7]Let my people go.\n[G]Who's that yonder dressed in blue?\n[C]Must be the children of Reverend Moon;\n[G]Go tell it on the mountain,\n[D7]To let my people go.\n"
+}

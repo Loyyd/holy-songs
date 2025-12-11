@@ -1,0 +1,213 @@
+{
+  "id": "if-i-were-free",
+  "title": "If I Were Free",
+  "key": "E",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "If I were free to speak my mind,"
+            }
+          ],
+          "raw": "[E]If I were free to speak my mind,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "I'd tell a tale to all mankind."
+            }
+          ],
+          "raw": "[B7]I'd tell a tale to all mankind."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Of how the flowers do bloom and fade,"
+            }
+          ],
+          "raw": "[E]Of how the flowers do bloom and fade,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Of how we fought and how we gained."
+            }
+          ],
+          "raw": "[E7]Of how we fought and how we gained."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "This weary world has had its fill"
+            }
+          ],
+          "raw": "[A]This weary world has had its fill"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "Of words of war on ev'ry hill."
+            }
+          ],
+          "raw": "[B7]Of words of war on ev'ry hill."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "The time has come for peaceful days"
+            }
+          ],
+          "raw": "[E]The time has come for peaceful days"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "For peaceful men and peaceful ways."
+            }
+          ],
+          "raw": "[E7]For peaceful men and peaceful ways."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "When all mankind has ceased to fight"
+            }
+          ],
+          "raw": "[A]When all mankind has ceased to fight"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "I'll raise my head in thanks each night."
+            }
+          ],
+          "raw": "[B7]I'll raise my head in thanks each night."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "For this great love and all it means,"
+            }
+          ],
+          "raw": "[E]For this great love and all it means,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "For golden days and peaceful dreams."
+            }
+          ],
+          "raw": "[E7]For golden days and peaceful dreams."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "If I were free to speak my mind,"
+            }
+          ],
+          "raw": "[A]If I were free to speak my mind,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "I'd tell a tale to all mankind."
+            }
+          ],
+          "raw": "[B7]I'd tell a tale to all mankind."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Of how the flowers do bloom and fade,"
+            }
+          ],
+          "raw": "[E]Of how the flowers do bloom and fade,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Of how we fought and how we gained."
+            }
+          ],
+          "raw": "[E7]Of how we fought and how we gained."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/if-i-were-free.pro",
+  "source": "{title: If I Were Free}\n{key: E}\n\n{section: Verse 1}\n[E]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n\n{section: Verse 2}\n[A]This weary world has had its fill\n[B7]Of words of war on ev'ry hill.\n[E]The time has come for peaceful days\n[E7]For peaceful men and peaceful ways.\n\n{{section: Verse 3}\n[A]When all mankind has ceased to fight\n[B7]I'll raise my head in thanks each night.\n[E]For this great love and all it means,\n[E7]For golden days and peaceful dreams.\n\n{{section: Verse 4}\n[A]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n"
+}

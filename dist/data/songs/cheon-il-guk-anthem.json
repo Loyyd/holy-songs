@@ -1,0 +1,208 @@
+{
+  "id": "cheon-il-guk-anthem",
+  "title": "Cheon Il Guk Anthem",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "The budding rose of love will bloom, with new tidings of hope."
+            }
+          ],
+          "raw": "[A]The budding rose of love will bloom, with new tidings of hope."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "May the world live in new freedom, Earth and Heaven rebound"
+            }
+          ],
+          "raw": "[F#m]May the world live in new freedom, Earth and Heaven rebound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "As the Reign of Peace brings hope, prosperity and love"
+            }
+          ],
+          "raw": "[D]As the Reign of Peace brings hope, prosperity and love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+            }
+          ],
+          "raw": "[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "The lily beams in Heaven's light, vibrant colors abound"
+            }
+          ],
+          "raw": "[A]The lily beams in Heaven's light, vibrant colors abound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "In the Goodness of the Spirit, Pure new love lights our way"
+            }
+          ],
+          "raw": "[F#m]In the Goodness of the Spirit, Pure new love lights our way"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Ever prosper in God's Love, rejoice for evermore"
+            }
+          ],
+          "raw": "[D]Ever prosper in God's Love, rejoice for evermore"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+            }
+          ],
+          "raw": "[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "The dignity of pure new life, manifests the Ideal"
+            }
+          ],
+          "raw": "[A]The dignity of pure new life, manifests the Ideal"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "As the crane flies over mountains, God's command is revealed"
+            }
+          ],
+          "raw": "[F#m]As the crane flies over mountains, God's command is revealed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "May the World of Heaven and Earth, rejoice in morning's calm"
+            }
+          ],
+          "raw": "[D]May the World of Heaven and Earth, rejoice in morning's calm"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+            }
+          ],
+          "raw": "[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "True Parents bring True Love to all, Earth and Heaven resound"
+            }
+          ],
+          "raw": "[A]True Parents bring True Love to all, Earth and Heaven resound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "For the hope of all the Ages, is the Kingdom of God"
+            }
+          ],
+          "raw": "[F#m]For the hope of all the Ages, is the Kingdom of God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "As the flag of Cheon Il Guk waves firmly for all time"
+            }
+          ],
+          "raw": "[D]As the flag of Cheon Il Guk waves firmly for all time"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E7",
+              "lyric": "Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+            }
+          ],
+          "raw": "[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/cheon-il-guk-anthem.pro",
+  "source": "{title: Cheon Il Guk Anthem}\n{key: A}\n\n{section: Verse 1}\n[A]The budding rose of love will bloom, with new tidings of hope.\n[F#m]May the world live in new freedom, Earth and Heaven rebound\n[D]As the Reign of Peace brings hope, prosperity and love\n[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God\n\n{{section: Verse 2}\n[A]The lily beams in Heaven's light, vibrant colors abound\n[F#m]In the Goodness of the Spirit, Pure new love lights our way\n[D]Ever prosper in God's Love, rejoice for evermore\n[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God\n\n{{section: Verse 3}\n[A]The dignity of pure new life, manifests the Ideal\n[F#m]As the crane flies over mountains, God's command is revealed\n[D]May the World of Heaven and Earth, rejoice in morning's calm\n[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God\n\n{{section: Verse 4}\n[A]True Parents bring True Love to all, Earth and Heaven resound\n[F#m]For the hope of all the Ages, is the Kingdom of God\n[D]As the flag of Cheon Il Guk waves firmly for all time\n[E7]Shining for Eternity, in the Cheon Il Guk, in the Land of God\n"
+}

@@ -1,0 +1,218 @@
+{
+  "id": "spirit-of-god",
+  "title": "Spirit of God",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Spirit of God in the clear running water,"
+            }
+          ],
+          "raw": "[C]Spirit of God in the clear running water,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Blowing to greatness the trees on the hill."
+            }
+          ],
+          "raw": "[F]Blowing to greatness the trees on the hill."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Spirit of God in the finger of morning,"
+            }
+          ],
+          "raw": "[C]Spirit of God in the finger of morning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Fill the earth, bring it to birth, and blow, where you will."
+            }
+          ],
+          "raw": "[F]Fill the earth, bring it to birth, and blow, where you will."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Blow, blow, blow till I be,"
+            }
+          ],
+          "raw": "[F]Blow, blow, blow till I be,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "But the breath of the Spirit blowing in me."
+            }
+          ],
+          "raw": "[C]But the breath of the Spirit blowing in me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Down in the meadow the willows are moaning,"
+            }
+          ],
+          "raw": "[C]Down in the meadow the willows are moaning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Sheep in the pastureland cannot lie still."
+            }
+          ],
+          "raw": "[F]Sheep in the pastureland cannot lie still."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Spirit of God, creation is groaning,"
+            }
+          ],
+          "raw": "[C]Spirit of God, creation is groaning,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "I saw a scar on a year that lay dying,"
+            }
+          ],
+          "raw": "[F]I saw a scar on a year that lay dying,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Heard the lament of the lone whippoorwill."
+            }
+          ],
+          "raw": "[C]Heard the lament of the lone whippoorwill."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Spirit of God, see that cloud crying,"
+            }
+          ],
+          "raw": "[F]Spirit of God, see that cloud crying,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Spirit of God, every man's heart is lonely,"
+            }
+          ],
+          "raw": "[C]Spirit of God, every man's heart is lonely,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Watching and waiting and hungry until,"
+            }
+          ],
+          "raw": "[F]Watching and waiting and hungry until,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Spirit of God, man longs that you only,"
+            }
+          ],
+          "raw": "[C]Spirit of God, man longs that you only,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/spirit-of-god.pro",
+  "source": "{title: Spirit of God}\n{key: C}\n\n{section: Verse 1}\n[C]Spirit of God in the clear running water,\n[F]Blowing to greatness the trees on the hill.\n[C]Spirit of God in the finger of morning,\n\n{section: Chorus}\n[F]Fill the earth, bring it to birth, and blow, where you will.\n[F]Blow, blow, blow till I be,\n[C]But the breath of the Spirit blowing in me.\n\n{section: Verse 2}\n[C]Down in the meadow the willows are moaning,\n[F]Sheep in the pastureland cannot lie still.\n[C]Spirit of God, creation is groaning,\n\n{{section: Verse 3}\n[F]I saw a scar on a year that lay dying,\n[C]Heard the lament of the lone whippoorwill.\n[F]Spirit of God, see that cloud crying,\n\n{{section: Verse 4}\n[C]Spirit of God, every man's heart is lonely,\n[F]Watching and waiting and hungry until,\n[C]Spirit of God, man longs that you only,\n"
+}

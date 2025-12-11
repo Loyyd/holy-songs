@@ -1,0 +1,290 @@
+{
+  "id": "amazing-grace",
+  "title": "Amazing Grace",
+  "key": "E",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Amazing Grace, how sweet the sound,"
+            }
+          ],
+          "raw": "[E]Amazing Grace, how sweet the sound,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "That saved a wretch like me."
+            }
+          ],
+          "raw": "[B7]That saved a wretch like me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I once was lost but now am "
+            },
+            {
+              "chord": "E7",
+              "lyric": "found,"
+            }
+          ],
+          "raw": "[E]I once was lost but now am [E7]found,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Was blind, but now I "
+            },
+            {
+              "chord": "B7",
+              "lyric": "see."
+            }
+          ],
+          "raw": "[E]Was blind, but now I [B7]see."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "T'was Grace that taught my heart to fear."
+            }
+          ],
+          "raw": "[E]T'was Grace that taught my heart to fear."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "And Grace, my fears relieved."
+            }
+          ],
+          "raw": "[B7]And Grace, my fears relieved."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "How precious did that Grace appear"
+            }
+          ],
+          "raw": "[E]How precious did that Grace appear"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "The hour I first believed."
+            }
+          ],
+          "raw": "[B7]The hour I first believed."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Through many dangers, toils and snares"
+            }
+          ],
+          "raw": "[E]Through many dangers, toils and snares"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "I have already come;"
+            }
+          ],
+          "raw": "[B7]I have already come;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "'Tis Grace that brought me safe thus far,"
+            }
+          ],
+          "raw": "[E]'Tis Grace that brought me safe thus far,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "And Grace will lead me home."
+            }
+          ],
+          "raw": "[B7]And Grace will lead me home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "The Lord has promised good to me."
+            }
+          ],
+          "raw": "[E]The Lord has promised good to me."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "His word my hope secures."
+            }
+          ],
+          "raw": "[B7]His word my hope secures."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "He will my shield and portion be,"
+            }
+          ],
+          "raw": "[E]He will my shield and portion be,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "As long as life endures."
+            }
+          ],
+          "raw": "[B7]As long as life endures."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Yea, when this flesh and heart shall fail,"
+            }
+          ],
+          "raw": "[E]Yea, when this flesh and heart shall fail,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "And mortal life shall cease,"
+            }
+          ],
+          "raw": "[B7]And mortal life shall cease,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I shall possess within the veil,"
+            }
+          ],
+          "raw": "[E]I shall possess within the veil,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B7",
+              "lyric": "A life of joy and peace."
+            }
+          ],
+          "raw": "[B7]A life of joy and peace."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/amazing-grace.pro",
+  "source": "{title: Amazing Grace}\n{key: E}\n\n{section: Verse 1}\n[E]Amazing Grace, how sweet the sound,\n[B7]That saved a wretch like me.\n[E]I once was lost but now am [E7]found,\n[A]\n[E]Was blind, but now I [B7]see.\n\n{section: Verse 2}\n[E]T'was Grace that taught my heart to fear.\n[B7]And Grace, my fears relieved.\n[E]How precious did that Grace appear\n[B7]The hour I first believed.\n\n{section: Verse 3}\n[E]Through many dangers, toils and snares\n[B7]I have already come;\n[E]'Tis Grace that brought me safe thus far,\n[B7]And Grace will lead me home.\n\n{section: Verse 4}\n[E]The Lord has promised good to me.\n[B7]His word my hope secures.\n[E]He will my shield and portion be,\n[B7]As long as life endures.\n\n{section: Verse 5}\n[E]Yea, when this flesh and heart shall fail,\n[B7]And mortal life shall cease,\n[E]I shall possess within the veil,\n[B7]A life of joy and peace.\n"
+}
