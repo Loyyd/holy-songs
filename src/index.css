@@ -79,7 +79,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: 320px;
+  max-height: 600px;
   overflow-y: auto;
   overflow-x: hidden;
 }

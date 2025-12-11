@@ -114,6 +114,28 @@ export default function App() {
       .catch((err) => console.error(err));
   }, [selectedId]);
 
+  // Fetch fresh content from backend when editing starts
+  useEffect(() => {
+    if (isEditing && song?.sourcePath) {
+        const filename = song.sourcePath.split('/').pop();
+        if (filename) {
+            fetch(`http://localhost:8000/api/songs/${filename}`)
+                .then(res => {
+                    if (res.ok) return res.json();
+                    throw new Error('Failed to fetch from backend');
+                })
+                .then(data => {
+                    if (data.content) {
+                        setEditText(data.content);
+                    }
+                })
+                .catch(err => {
+                    console.warn("Backend not available or error fetching:", err);
+                });
+        }
+    }
+  }, [isEditing, song]);
+
   const fuse = useMemo(() => {
     if (index.length === 0) return null;
     return new Fuse(index, {
@@ -152,7 +174,7 @@ export default function App() {
     setTranspose(0);
   };
 
-  const applyEdit = (source: string = editText) => {
+  const applyEdit = async (source: string = editText) => {
     if (!song) return;
     try {
       const parsed = parseChordPro(source, song.sourcePath ?? 'inline');
@@ -160,6 +182,30 @@ export default function App() {
       setEditText(source);
       setEditError(null);
       setIsEditing(false);
+
+      // Save to backend
+      if (song.sourcePath) {
+        const filename = song.sourcePath.split('/').pop();
+        if (filename) {
+            try {
+                const response = await fetch(`http://localhost:8000/api/songs/${filename}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ content: source }),
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Failed to save song to backend');
+                }
+                console.log('Song saved to backend');
+            } catch (backendErr) {
+                console.error('Backend save failed:', backendErr);
+                alert('Failed to save to backend. Is the backend server running?');
+            }
+        }
+      }
     } catch (err) {
       setEditError((err as Error).message ?? 'Failed to parse song');
     }
