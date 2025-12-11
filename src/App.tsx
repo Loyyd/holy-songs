@@ -92,7 +92,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    fetch('/data/songs.index.json', { cache: 'no-store' })
+    fetch(`${import.meta.env.BASE_URL}data/songs.index.json`, { cache: 'no-store' })
       .then((res) => res.json())
       .then((data: SongIndexEntry[]) => {
         setIndex(data);
@@ -103,7 +103,7 @@ export default function App() {
 
   useEffect(() => {
     if (!selectedId) return;
-    fetch(`/data/songs/${selectedId}.json`, { cache: 'no-store' })
+    fetch(`${import.meta.env.BASE_URL}data/songs/${selectedId}.json`, { cache: 'no-store' })
       .then((res) => res.json())
       .then((data: SongData) => {
         setSong(data);
