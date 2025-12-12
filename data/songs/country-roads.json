@@ -67,18 +67,18 @@
           "tokens": [
             {
               "chord": "E",
-              "lyric": "Younger than the "
+              "lyric": "Younger than the mountains,"
             },
             {
               "chord": "D",
-              "lyric": "mountains, blowin' like a "
+              "lyric": " blowin' like a br"
             },
             {
               "chord": "A",
-              "lyric": "breeze."
+              "lyric": "eeze."
             }
           ],
-          "raw": "[E]Younger than the [D]mountains, blowin' like a [A]breeze."
+          "raw": "[E]Younger than the mountains,[D] blowin' like a br[A]eeze."
         },
         {
           "tokens": [
@@ -97,54 +97,70 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Country r"
+            },
+            {
               "chord": "A",
-              "lyric": "Country roads, take me "
+              "lyric": "oads, take me "
             },
             {
               "chord": "E",
               "lyric": "home,"
             }
           ],
-          "raw": "[A]Country roads, take me [E]home,"
+          "raw": "Country r[A]oads, take me [E]home,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "To the pl"
+            },
+            {
               "chord": "F#m",
-              "lyric": "To the place where I "
+              "lyric": "ace where I be"
             },
             {
               "chord": "D",
-              "lyric": "belong:"
+              "lyric": "long:"
             }
           ],
-          "raw": "[F#m]To the place where I [D]belong:"
+          "raw": "To the pl[F#m]ace where I be[D]long:"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "West Vir"
+            },
+            {
               "chord": "A",
-              "lyric": "West Virginia, mountain "
+              "lyric": "ginia, mountain mo"
             },
             {
               "chord": "E",
-              "lyric": "momma,"
+              "lyric": "mma,"
             }
           ],
-          "raw": "[A]West Virginia, mountain [E]momma,"
+          "raw": "West Vir[A]ginia, mountain mo[E]mma,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Take me"
+            },
+            {
               "chord": "D",
-              "lyric": "Take me home, "
+              "lyric": " home, country ro"
             },
             {
               "chord": "A",
-              "lyric": "country roads."
+              "lyric": "ads."
             }
           ],
-          "raw": "[D]Take me home, [A]country roads."
+          "raw": "Take me[D] home, country ro[A]ads."
         },
         {
           "tokens": [
@@ -214,74 +230,82 @@
           "tokens": [
             {
               "chord": "F#m",
-              "lyric": "I hear her voice, in the "
+              "lyric": "I hear her"
             },
             {
               "chord": "E",
-              "lyric": "mornin' hours she "
+              "lyric": " voice, in the"
             },
             {
               "chord": "A",
-              "lyric": "calls me,"
+              "lyric": " mornin' hours she calls me,"
             }
           ],
-          "raw": "[F#m]I hear her voice, in the [E]mornin' hours she [A]calls me,"
+          "raw": "[F#m]I hear her[E] voice, in the[A] mornin' hours she calls me,"
         },
         {
           "tokens": [
             {
               "chord": "D",
-              "lyric": "The radio re"
+              "lyric": "The radio"
             },
             {
               "chord": "A",
-              "lyric": "minds me of my home far "
+              "lyric": " reminds me of"
             },
             {
               "chord": "E",
-              "lyric": "away."
+              "lyric": " my home far away."
             }
           ],
-          "raw": "[D]The radio re[A]minds me of my home far [E]away."
+          "raw": "[D]The radio[A] reminds me of[E] my home far away."
         },
         {
           "tokens": [
             {
               "chord": "F#m",
-              "lyric": "And drivin' down the "
+              "lyric": "And drivin' down"
             },
             {
               "chord": "G",
-              "lyric": "road,"
+              "lyric": " the road,"
             }
           ],
-          "raw": "[F#m]And drivin' down the [G]road,"
+          "raw": "[F#m]And drivin' down[G] the road,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "I get"
+            },
+            {
               "chord": "D",
-              "lyric": "I get a feelin' that I "
+              "lyric": " a feelin' that I"
             },
             {
               "chord": "A",
-              "lyric": "should have been home "
+              "lyric": " should have been"
             },
             {
               "chord": "E",
-              "lyric": "yesterday,"
+              "lyric": " home yesterday,"
             }
           ],
-          "raw": "[D]I get a feelin' that I [A]should have been home [E]yesterday,"
+          "raw": "I get[D] a feelin' that I[A] should have been[E] home yesterday,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Yes"
+            },
+            {
               "chord": "E7",
-              "lyric": "Yesterday."
+              "lyric": "terday."
             }
           ],
-          "raw": "[E7]Yesterday."
+          "raw": "Yes[E7]terday."
         },
         {
           "tokens": [
@@ -305,5 +329,5 @@
     }
   ],
   "sourcePath": "songs/country-roads.pro",
-  "source": "{title: Country Roads}\n{key: A}\n\n{section: Verse 1}\n[A]Almost heaven, [F#m]West Virginia,\n[E]Blue Ridge Mountains, [D]Shenandoah [A]River.\nLife is [F#m]old there, older than the trees,\n[E]Younger than the [D]mountains, blowin' like a [A]breeze.\n\n{section: Chorus}\n[A]Country roads, take me [E]home,\n[F#m]To the place where I [D]belong:\n[A]West Virginia, mountain [E]momma,\n[D]Take me home, [A]country roads.\n\n{section: Verse 2}\nAll my mem'ries, gather 'round her,\nMiner's lady, stranger to blue water.\nDark and dusty, painted on the sky,\nMisty taste of moonshine, teardrop in my eye.\n\n{section: Bridge}\n[F#m]I hear her voice, in the [E]mornin' hours she [A]calls me,\n[D]The radio re[A]minds me of my home far [E]away.\n[F#m]And drivin' down the [G]road,\n[D]I get a feelin' that I [A]should have been home [E]yesterday,\n[E7]Yesterday.\n\n"
+  "source": "{title: Country Roads}\n{key: A}\n\n{section: Verse 1}\n[A]Almost heaven, [F#m]West Virginia,\n[E]Blue Ridge Mountains, [D]Shenandoah [A]River.\nLife is [F#m]old there, older than the trees,\n[E]Younger than the mountains,[D] blowin' like a br[A]eeze.\n\n{section: Chorus}\nCountry r[A]oads, take me [E]home,\nTo the pl[F#m]ace where I be[D]long:\nWest Vir[A]ginia, mountain mo[E]mma,\nTake me[D] home, country ro[A]ads.\n\n{section: Verse 2}\nAll my mem'ries, gather 'round her,\nMiner's lady, stranger to blue water.\nDark and dusty, painted on the sky,\nMisty taste of moonshine, teardrop in my eye.\n\n{section: Bridge}\n[F#m]I hear her[E] voice, in the[A] mornin' hours she calls me,\n[D]The radio[A] reminds me of[E] my home far away.\n[F#m]And drivin' down[G] the road,\nI get[D] a feelin' that I[A] should have been[E] home yesterday,\nYes[E7]terday.\n\n"
 }

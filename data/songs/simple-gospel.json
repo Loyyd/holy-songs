@@ -1,0 +1,919 @@
+{
+  "id": "simple-gospel",
+  "title": "Simple Gospel",
+  "key": "A",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Intro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "   "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "    "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "     "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A]   [Bm]    [F#m]     [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I want to know you, "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Lord, like I know a friend"
+            }
+          ],
+          "raw": "[A]I want to know you, [Bm]Lord, like I know a friend"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I want to know you "
+            },
+            {
+              "chord": "D",
+              "lyric": "Lord"
+            }
+          ],
+          "raw": "[F#m]I want to know you [D]Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I want to know you, "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Lord, like I know a friend"
+            }
+          ],
+          "raw": "[A]I want to know you, [Bm]Lord, like I know a friend"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I want to know you "
+            },
+            {
+              "chord": "D",
+              "lyric": "Lord"
+            }
+          ],
+          "raw": "[F#m]I want to know you [D]Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm laying down "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "all my religion"
+            }
+          ],
+          "raw": "[A]I'm laying down [Bm]all my religion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I'm laying dow"
+            },
+            {
+              "chord": "D",
+              "lyric": "n, I wanna know you Lord"
+            }
+          ],
+          "raw": "[F#m]I'm laying dow[D]n, I wanna know you Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm laying down "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "all my religion"
+            }
+          ],
+          "raw": "[A]I'm laying down [Bm]all my religion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I'm laying dow"
+            },
+            {
+              "chord": "D",
+              "lyric": "n, I wanna know you Lord"
+            }
+          ],
+          "raw": "[F#m]I'm laying dow[D]n, I wanna know you Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I used to thin"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "k that I could box you in"
+            }
+          ],
+          "raw": "[A]I used to thin[Bm]k that I could box you in"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "But I'm laying dow"
+            },
+            {
+              "chord": "D",
+              "lyric": "n, I wanna know you Lord"
+            }
+          ],
+          "raw": "[F#m]But I'm laying dow[D]n, I wanna know you Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I used to thin"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "k that I could box you in"
+            }
+          ],
+          "raw": "[A]I used to thin[Bm]k that I could box you in"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "But I'm laying dow"
+            },
+            {
+              "chord": "D",
+              "lyric": "n, I wanna know you Lord"
+            }
+          ],
+          "raw": "[F#m]But I'm laying dow[D]n, I wanna know you Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm laying dow"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "n all my religion"
+            }
+          ],
+          "raw": "[A]I'm laying dow[Bm]n all my religion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I'm laying dow"
+            },
+            {
+              "chord": "D",
+              "lyric": "n, I wanna know you Lord"
+            }
+          ],
+          "raw": "[F#m]I'm laying dow[D]n, I wanna know you Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I'm laying dow"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "n all my religion"
+            }
+          ],
+          "raw": "[A]I'm laying dow[Bm]n all my religion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I'm laying dow"
+            },
+            {
+              "chord": "D",
+              "lyric": "n, I wanna know you Lord"
+            }
+          ],
+          "raw": "[F#m]I'm laying dow[D]n, I wanna know you Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Tag",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Lor"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "d, I want to know yo"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "u, Lord"
+            },
+            {
+              "chord": "D",
+              "lyric": "  "
+            }
+          ],
+          "raw": "[A]Lor[Bm]d, I want to know yo[F#m]u, Lord[D]  "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Lord, I've been tol"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "d to be ashamed"
+            }
+          ],
+          "raw": "[A]Lord, I've been tol[Bm]d to be ashamed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Lord, I've been tol"
+            },
+            {
+              "chord": "D",
+              "lyric": "d I don't measure up"
+            }
+          ],
+          "raw": "[F#m]Lord, I've been tol[D]d I don't measure up"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Lord, I've been tol"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "d I'm not good enough"
+            }
+          ],
+          "raw": "[A]Lord, I've been tol[Bm]d I'm not good enough"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "But you're here with "
+            },
+            {
+              "chord": "D",
+              "lyric": "me"
+            }
+          ],
+          "raw": "[F#m]But you're here with [D]me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach ou"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "t and you fi"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "nd me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach ou[Bm]t and you fi[F#m]nd me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "They say no"
+            },
+            {
+              "chord": "Bm",
+              "lyric": " amount of untruths can "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "separate"
+            },
+            {
+              "chord": "D",
+              "lyric": " us"
+            }
+          ],
+          "raw": "[F#m]They say no[Bm] amount of untruths can [F#m]separate[D] us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach o"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ut and you fi"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "nd me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach o[Bm]ut and you fi[F#m]nd me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "They say n"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "o amount of untruths can "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "separat"
+            },
+            {
+              "chord": "D",
+              "lyric": "e us"
+            }
+          ],
+          "raw": "[F#m]They say n[Bm]o amount of untruths can [F#m]separat[D]e us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach o"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ut and you fin"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "d me in the"
+            },
+            {
+              "chord": "D",
+              "lyric": " dust"
+            }
+          ],
+          "raw": "[A]I reach o[Bm]ut and you fin[F#m]d me in the[D] dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "They say "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "no amount of untruths can "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "separate"
+            },
+            {
+              "chord": "D",
+              "lyric": " us"
+            }
+          ],
+          "raw": "[F#m]They say [Bm]no amount of untruths can [F#m]separate[D] us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach o"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ut and you find"
+            },
+            {
+              "chord": "F#m",
+              "lyric": " me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach o[Bm]ut and you find[F#m] me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "They say n"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "o amount of untruths can "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "separate"
+            },
+            {
+              "chord": "D",
+              "lyric": " us"
+            }
+          ],
+          "raw": "[F#m]They say n[Bm]o amount of untruths can [F#m]separate[D] us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I will rejoic"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "e in the simple gospel"
+            }
+          ],
+          "raw": "[A]I will rejoic[Bm]e in the simple gospel"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I will rejoic"
+            },
+            {
+              "chord": "D",
+              "lyric": "e in you, Lord"
+            }
+          ],
+          "raw": "[F#m]I will rejoic[D]e in you, Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I will rejoic"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "e in the simple gospel"
+            }
+          ],
+          "raw": "[A]I will rejoic[Bm]e in the simple gospel"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I will rejoic"
+            },
+            {
+              "chord": "D",
+              "lyric": "e in you, Lord"
+            }
+          ],
+          "raw": "[F#m]I will rejoic[D]e in you, Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach ou"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "t and you "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "find me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach ou[Bm]t and you [F#m]find me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "They say n"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "o amount of untruths can "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "separate"
+            },
+            {
+              "chord": "D",
+              "lyric": " us"
+            }
+          ],
+          "raw": "[A]They say n[Bm]o amount of untruths can [F#m]separate[D] us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach out "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "and you f"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "ind me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach out [Bm]and you f[F#m]ind me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "They say no"
+            },
+            {
+              "chord": "Bm",
+              "lyric": " amount of untruths can"
+            },
+            {
+              "chord": "F#m",
+              "lyric": " separate"
+            },
+            {
+              "chord": "D",
+              "lyric": " us"
+            }
+          ],
+          "raw": "[A]They say no[Bm] amount of untruths can[F#m] separate[D] us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach ou"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "t and you "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "find me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach ou[Bm]t and you [F#m]find me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "They say no "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "amount of untruths can "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "separate u"
+            },
+            {
+              "chord": "D",
+              "lyric": "s"
+            }
+          ],
+          "raw": "[A]They say no [Bm]amount of untruths can [F#m]separate u[D]s"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I reach ou"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "t and you "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "find me in the "
+            },
+            {
+              "chord": "D",
+              "lyric": "dust"
+            }
+          ],
+          "raw": "[A]I reach ou[Bm]t and you [F#m]find me in the [D]dust"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "They say no"
+            },
+            {
+              "chord": "Bm",
+              "lyric": " amount of untruths ca"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "n separate "
+            },
+            {
+              "chord": "D",
+              "lyric": "us"
+            }
+          ],
+          "raw": "[A]They say no[Bm] amount of untruths ca[F#m]n separate [D]us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I will rejoi"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ce in the simple gospel"
+            }
+          ],
+          "raw": "[A]I will rejoi[Bm]ce in the simple gospel"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I will rejoi"
+            },
+            {
+              "chord": "D",
+              "lyric": "ce in you, Lord"
+            }
+          ],
+          "raw": "[F#m]I will rejoi[D]ce in you, Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "I will rejoi"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ce in the simple gospel"
+            }
+          ],
+          "raw": "[A]I will rejoi[Bm]ce in the simple gospel"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I will rejoi"
+            },
+            {
+              "chord": "D",
+              "lyric": "ce in you, Lord"
+            }
+          ],
+          "raw": "[F#m]I will rejoi[D]ce in you, Lord"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/simple-gospel.pro",
+  "source": "{title: Simple Gospel}\n{artist: United Pursuit}\n{key: A}\n\n{section: Intro}\n[A]   [Bm]    [F#m]     [D]\n\n{section: Verse 1}\n[A]I want to know you, [Bm]Lord, like I know a friend\n[F#m]I want to know you [D]Lord\n[A]I want to know you, [Bm]Lord, like I know a friend\n[F#m]I want to know you [D]Lord\n\n{section: Chorus}\n[A]I'm laying down [Bm]all my religion\n[F#m]I'm laying dow[D]n, I wanna know you Lord\n[A]I'm laying down [Bm]all my religion\n[F#m]I'm laying dow[D]n, I wanna know you Lord\n\n{section: Verse 2}\n[A]I used to thin[Bm]k that I could box you in\n[F#m]But I'm laying dow[D]n, I wanna know you Lord\n[A]I used to thin[Bm]k that I could box you in\n[F#m]But I'm laying dow[D]n, I wanna know you Lord\n\n{section: Chorus}\n[A]I'm laying dow[Bm]n all my religion\n[F#m]I'm laying dow[D]n, I wanna know you Lord\n[A]I'm laying dow[Bm]n all my religion\n[F#m]I'm laying dow[D]n, I wanna know you Lord\n\n{section: Tag}\n[A]Lor[Bm]d, I want to know yo[F#m]u, Lord[D]  \n\n{section: Verse 3}\n[A]Lord, I've been tol[Bm]d to be ashamed\n[F#m]Lord, I've been tol[D]d I don't measure up\n[A]Lord, I've been tol[Bm]d I'm not good enough\n[F#m]But you're here with [D]me\n\n{section: Bridge}\n[A]I reach ou[Bm]t and you fi[F#m]nd me in the [D]dust\n[F#m]They say no[Bm] amount of untruths can [F#m]separate[D] us\n[A]I reach o[Bm]ut and you fi[F#m]nd me in the [D]dust\n[F#m]They say n[Bm]o amount of untruths can [F#m]separat[D]e us\n[A]I reach o[Bm]ut and you fin[F#m]d me in the[D] dust\n[F#m]They say [Bm]no amount of untruths can [F#m]separate[D] us\n[A]I reach o[Bm]ut and you find[F#m] me in the [D]dust\n[F#m]They say n[Bm]o amount of untruths can [F#m]separate[D] us\n\n{section: Chorus 2}\n[A]I will rejoic[Bm]e in the simple gospel\n[F#m]I will rejoic[D]e in you, Lord\n[A]I will rejoic[Bm]e in the simple gospel\n[F#m]I will rejoic[D]e in you, Lord\n\n{section: Bridge}\n[A]I reach ou[Bm]t and you [F#m]find me in the [D]dust\n[A]They say n[Bm]o amount of untruths can [F#m]separate[D] us\n[A]I reach out [Bm]and you f[F#m]ind me in the [D]dust\n[A]They say no[Bm] amount of untruths can[F#m] separate[D] us\n[A]I reach ou[Bm]t and you [F#m]find me in the [D]dust\n[A]They say no [Bm]amount of untruths can [F#m]separate u[D]s\n[A]I reach ou[Bm]t and you [F#m]find me in the [D]dust\n[A]They say no[Bm] amount of untruths ca[F#m]n separate [D]us\n\n{section: Chorus 2}\n[A]I will rejoi[Bm]ce in the simple gospel\n[F#m]I will rejoi[D]ce in you, Lord\n[A]I will rejoi[Bm]ce in the simple gospel\n[F#m]I will rejoi[D]ce in you, Lord\n"
+}
