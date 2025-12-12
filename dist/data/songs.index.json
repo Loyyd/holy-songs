@@ -130,34 +130,24 @@
       "And now my heart stumbles on things I don't know",
       "My weakness I feel I must finally show",
       "[A]Har ha[Bm]r,[A] har[D] har,[A] har[Bm] har,[A] har[D] har",
-      "[G] [D] [Bm] [D]",
-      "In these bodies we will live, in these bodies we will die",
-      "[G] [D] [Bm] [D]",
-      "Where you invest your love, you invest your life",
-      "[G] [D] [Bm] [D]",
-      "In these bodies we will live, in these bodies we will die",
-      "[G] [D] [Bm] [D] [G] [A]",
-      "Where you invest your love, you invest your life",
-      "[D]",
-      "[G] [A] [D] [A]",
-      "[G] [A] [D] [A]",
-      "[G5] [F#5] [E5] [D5]",
-      "[G5] [F#5] [E5] [A5]",
-      "[D]",
-      "[A] [Gmaj7] [A] [D] [A] [Gmaj7] [A] [D]",
-      "Awake my soul, awake my soul",
-      "[A] [Gmaj7] [A] [Bm]",
-      "Awake my soul",
-      "[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [D5]",
-      "You were made to meet your maker",
-      "[A] [Gmaj7] [A] [D] [A] [Gmaj7] [A] [D]",
-      "Awake my soul, awake my soul",
-      "[A] [Gmaj7] [A] [Bm]",
-      "Awake my soul",
-      "[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [D5]",
-      "You were made to meet your maker",
-      "[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [A5] [D]",
-      "You were made to meet your maker"
+      "[G]In these bodies we will [D]live, in these [Bm]bodies we will [D]die",
+      "Where [G]you invest your l[D]ove, [Bm]you invest your [D]life",
+      "In these [G]bodies we will l[D]ive, in these [Bm]bodies we will [D]die",
+      "Where [G]you invest your [D]love, [Bm]you invest your [D]li[G]fe[A]",
+      "[D]         ",
+      "[G]  [A]  [D]  [A]",
+      "[G]  [A]  [D]  [A]",
+      "[G]  [A]  [Bm] ",
+      "[G5]   [F#5]   [E5]   [A5] ",
+      "[G5]   [F#5]   [E5]   [A5] ",
+      "[D] ",
+      "[D]Awak[Gmaj7]e    m[A]y s[D]oul, [A]awak[Gmaj7]e   my[A] so[D]ul",
+      "[A]Awak[Gmaj7]e    m[A]y s[Bm]oul",
+      "[G5]You [F#5]were [E5]made t[D5]o m[G5]eet [F#5]your[E5] ma[A5]ker[D]",
+      "[D]Awak[Gmaj7]e    m[A]y s[D]oul, [A]awak[Gmaj7]e   my[A] so[D]ul",
+      "[A]Awak[Gmaj7]e    m[A]y s[Bm]oul",
+      "[G5]You [F#5]were [E5]made t[D5]o m[G5]eet [F#5]your[E5] ma[D5]ker",
+      "[G5]You [F#5]were [E5]made t[D5]o m[G5]eet [F#5]your[E5] ma[A5]ker[D]"
     ]
   },
   {
@@ -1237,6 +1227,14 @@
       "[E7]And time, for me, won't be no more.",
       "[A]Won't you guide me, guide me o'er,",
       "[A7]To Thy Kingdom on that shore?"
+    ]
+  },
+  {
+    "id": "konrad",
+    "title": "konrad",
+    "key": "C",
+    "sections": [
+      "This is lyr[C]ics"
     ]
   },
   {
