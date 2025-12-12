@@ -2,19 +2,19 @@
 {key: D}
 
 {section: Verse 1}
-[D]It only takes a [F#m]spark to get a [G]fire going [A7]
-[D]And soon all those a[F#m]round can warm up [G]in its glowing [A7]
-[G]That's how it [D]is with [G]God's love, [D]once you've [Bm]experienced it
-[G]You spread His [D]love to [G]everyone, [D]you want [G]to [A7]pass it [D]on
+[D]It only takes a spar[F#m]k to get[G] a fire going [A7]
+[D]And soon all those a[F#m]round can[G] warm up in its gl[A7]owing 
+That's h[G]ow it is with God[D]'s love,[G] once you've experie[D]nced[Bm] it
+You[G] spread His lov[D]e to ever[G]yo[D]ne, you w[G]ant to[A7] pass it o[D]n
 
 {section: Verse 2}
-[D]What a wondrous [F#m]time is spring, when [G]all the trees are [A7]budding
-[D]The birds begin [F#m]to sing, the flowers [G]start their blooming [A7]
-[G]That's how it [D]is with [G]God's love, [D]once you've [Bm]experienced it
-[G]You want to [D]sing it's [G]fresh like spring, [D]you want [G]to [A7]pass it [D]on
+What a wondrous time is spring, when all the trees are budding
+The birds begin to sing, the flowers start their blooming 
+That's how it is with God's love, once you've experienced it
+You want to sing it's fresh like spring, you want to pass it on
 
 {section: Verse 3}
-[D]I wish for you [F#m]my friend, this happi[G]ness that I've found [A7]
-[D]You can depend [F#m]on Him, it matters [G]not where you're bound [A7]
-[G]I'll shout it [D]from the [G]mountain top, [D]I want [Bm]the world to know
-[G]The Lord of [D]love has [G]come to me, [D]I want [G]to [A7]pass it [D]on
+I wish for you my friend, this happiness that I've found 
+You can depend on Him, it matters not where you're bound 
+I'll shout it from the mountain top, I want the world to know
+The Lord of love has come to me, I want to pass it on

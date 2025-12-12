@@ -24,54 +24,82 @@
           "tokens": [
             {
               "chord": "E",
-              "lyric": "Amazing Grace, how sweet the sound,"
-            }
-          ],
-          "raw": "[E]Amazing Grace, how sweet the sound,"
-        },
-        {
-          "tokens": [
+              "lyric": "Amazing Grace, how swee"
+            },
             {
-              "chord": "B7",
-              "lyric": "That saved a wretch like me."
-            }
-          ],
-          "raw": "[B7]That saved a wretch like me."
-        },
-        {
-          "tokens": [
+              "chord": "A",
+              "lyric": "t the soun"
+            },
             {
               "chord": "E",
-              "lyric": "I once was lost but now am "
+              "lyric": "d,"
+            }
+          ],
+          "raw": "[E]Amazing Grace, how swee[A]t the soun[E]d,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That saved a wretch like m"
+            },
+            {
+              "chord": "B7",
+              "lyric": "e."
+            }
+          ],
+          "raw": "That saved a wretch like m[B7]e."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I o"
+            },
+            {
+              "chord": "E",
+              "lyric": "nce was lo"
             },
             {
               "chord": "E7",
-              "lyric": "found,"
+              "lyric": "st but n"
+            },
+            {
+              "chord": "A",
+              "lyric": "ow am fou"
+            },
+            {
+              "chord": "E",
+              "lyric": "nd,"
             }
           ],
-          "raw": "[E]I once was lost but now am [E7]found,"
+          "raw": "I o[E]nce was lo[E7]st but n[A]ow am fou[E]nd,"
         },
         {
           "tokens": [
             {
-              "chord": "A",
+              "chord": null,
               "lyric": ""
             }
           ],
-          "raw": "[A]"
+          "raw": ""
         },
         {
           "tokens": [
             {
-              "chord": "E",
-              "lyric": "Was blind, but now I "
+              "chord": null,
+              "lyric": "Was blind, but"
             },
             {
               "chord": "B7",
+              "lyric": " now I "
+            },
+            {
+              "chord": "E",
               "lyric": "see."
             }
           ],
-          "raw": "[E]Was blind, but now I [B7]see."
+          "raw": "Was blind, but[B7] now I [E]see."
         },
         {
           "tokens": [
@@ -90,38 +118,38 @@
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "T'was Grace that taught my heart to fear."
             }
           ],
-          "raw": "[E]T'was Grace that taught my heart to fear."
+          "raw": "T'was Grace that taught my heart to fear."
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "And Grace, my fears relieved."
             }
           ],
-          "raw": "[B7]And Grace, my fears relieved."
+          "raw": "And Grace, my fears relieved."
         },
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "How precious did that Grace appear"
             }
           ],
-          "raw": "[E]How precious did that Grace appear"
+          "raw": "How precious did that Grace appear"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "The hour I first believed."
             }
           ],
-          "raw": "[B7]The hour I first believed."
+          "raw": "The hour I first believed."
         },
         {
           "tokens": [
@@ -140,38 +168,38 @@
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "Through many dangers, toils and snares"
             }
           ],
-          "raw": "[E]Through many dangers, toils and snares"
+          "raw": "Through many dangers, toils and snares"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "I have already come;"
             }
           ],
-          "raw": "[B7]I have already come;"
+          "raw": "I have already come;"
         },
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "'Tis Grace that brought me safe thus far,"
             }
           ],
-          "raw": "[E]'Tis Grace that brought me safe thus far,"
+          "raw": "'Tis Grace that brought me safe thus far,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "And Grace will lead me home."
             }
           ],
-          "raw": "[B7]And Grace will lead me home."
+          "raw": "And Grace will lead me home."
         },
         {
           "tokens": [
@@ -190,38 +218,38 @@
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "The Lord has promised good to me."
             }
           ],
-          "raw": "[E]The Lord has promised good to me."
+          "raw": "The Lord has promised good to me."
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "His word my hope secures."
             }
           ],
-          "raw": "[B7]His word my hope secures."
+          "raw": "His word my hope secures."
         },
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "He will my shield and portion be,"
             }
           ],
-          "raw": "[E]He will my shield and portion be,"
+          "raw": "He will my shield and portion be,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "As long as life endures."
             }
           ],
-          "raw": "[B7]As long as life endures."
+          "raw": "As long as life endures."
         },
         {
           "tokens": [
@@ -240,38 +268,38 @@
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "Yea, when this flesh and heart shall fail,"
             }
           ],
-          "raw": "[E]Yea, when this flesh and heart shall fail,"
+          "raw": "Yea, when this flesh and heart shall fail,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "And mortal life shall cease,"
             }
           ],
-          "raw": "[B7]And mortal life shall cease,"
+          "raw": "And mortal life shall cease,"
         },
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "I shall possess within the veil,"
             }
           ],
-          "raw": "[E]I shall possess within the veil,"
+          "raw": "I shall possess within the veil,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "A life of joy and peace."
             }
           ],
-          "raw": "[B7]A life of joy and peace."
+          "raw": "A life of joy and peace."
         },
         {
           "tokens": [
@@ -286,5 +314,5 @@
     }
   ],
   "sourcePath": "songs/amazing-grace.pro",
-  "source": "{title: Amazing Grace}\n{key: E}\n\n{section: Verse 1}\n[E]Amazing Grace, how sweet the sound,\n[B7]That saved a wretch like me.\n[E]I once was lost but now am [E7]found,\n[A]\n[E]Was blind, but now I [B7]see.\n\n{section: Verse 2}\n[E]T'was Grace that taught my heart to fear.\n[B7]And Grace, my fears relieved.\n[E]How precious did that Grace appear\n[B7]The hour I first believed.\n\n{section: Verse 3}\n[E]Through many dangers, toils and snares\n[B7]I have already come;\n[E]'Tis Grace that brought me safe thus far,\n[B7]And Grace will lead me home.\n\n{section: Verse 4}\n[E]The Lord has promised good to me.\n[B7]His word my hope secures.\n[E]He will my shield and portion be,\n[B7]As long as life endures.\n\n{section: Verse 5}\n[E]Yea, when this flesh and heart shall fail,\n[B7]And mortal life shall cease,\n[E]I shall possess within the veil,\n[B7]A life of joy and peace.\n"
+  "source": "{title: Amazing Grace}\n{key: E}\n\n{section: Verse 1}\n[E]Amazing Grace, how swee[A]t the soun[E]d,\nThat saved a wretch like m[B7]e.\nI o[E]nce was lo[E7]st but n[A]ow am fou[E]nd,\n\nWas blind, but[B7] now I [E]see.\n\n{section: Verse 2}\nT'was Grace that taught my heart to fear.\nAnd Grace, my fears relieved.\nHow precious did that Grace appear\nThe hour I first believed.\n\n{section: Verse 3}\nThrough many dangers, toils and snares\nI have already come;\n'Tis Grace that brought me safe thus far,\nAnd Grace will lead me home.\n\n{section: Verse 4}\nThe Lord has promised good to me.\nHis word my hope secures.\nHe will my shield and portion be,\nAs long as life endures.\n\n{section: Verse 5}\nYea, when this flesh and heart shall fail,\nAnd mortal life shall cease,\nI shall possess within the veil,\nA life of joy and peace.\n"
 }

@@ -1,0 +1,1031 @@
+{
+  "id": "awake-my-soul",
+  "title": "Awake My Soul",
+  "key": "D",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Intro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "How fickle my heart and how woozy my eyes"
+            }
+          ],
+          "raw": "[D]How fickle my heart and how woozy my eyes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I struggle to find any truth in your lies"
+            }
+          ],
+          "raw": "[D]I struggle to find any truth in your lies"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "And now my heart stumbles on things I don't know"
+            }
+          ],
+          "raw": "[D]And now my heart stumbles on things I don't know"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "My weakness I feel I must finally show"
+            }
+          ],
+          "raw": "[D]My weakness I feel I must finally show"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Lend me your hand and we'll"
+            },
+            {
+              "chord": "A",
+              "lyric": " conquer them"
+            },
+            {
+              "chord": "D",
+              "lyric": " all"
+            }
+          ],
+          "raw": "[D]Lend me your hand and we'll[A] conquer them[D] all"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "But"
+            },
+            {
+              "chord": "D",
+              "lyric": " lend me your heart and I'll"
+            },
+            {
+              "chord": "A",
+              "lyric": " just let you"
+            },
+            {
+              "chord": "D",
+              "lyric": " fall"
+            }
+          ],
+          "raw": "But[D] lend me your heart and I'll[A] just let you[D] fall"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Lend me your eyes, I can"
+            },
+            {
+              "chord": "A",
+              "lyric": " change what you"
+            },
+            {
+              "chord": "D",
+              "lyric": " see"
+            }
+          ],
+          "raw": "[D]Lend me your eyes, I can[A] change what you[D] see"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "But your"
+            },
+            {
+              "chord": "D",
+              "lyric": " soul you must keep,"
+            },
+            {
+              "chord": "A",
+              "lyric": " totally"
+            },
+            {
+              "chord": "D",
+              "lyric": " free"
+            }
+          ],
+          "raw": "But your[D] soul you must keep,[A] totally[D] free"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Har ha"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "r,"
+            },
+            {
+              "chord": "A",
+              "lyric": " har"
+            },
+            {
+              "chord": "D",
+              "lyric": " har,"
+            },
+            {
+              "chord": "A",
+              "lyric": " har"
+            },
+            {
+              "chord": "Bm",
+              "lyric": " har,"
+            },
+            {
+              "chord": "A",
+              "lyric": " har"
+            },
+            {
+              "chord": "D",
+              "lyric": " har"
+            }
+          ],
+          "raw": "[A]Har ha[Bm]r,[A] har[D] har,[A] har[Bm] har,[A] har[D] har"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Awa"
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": "ke   "
+            },
+            {
+              "chord": "A",
+              "lyric": " my s"
+            },
+            {
+              "chord": "D",
+              "lyric": "oul,"
+            },
+            {
+              "chord": "A",
+              "lyric": " awa"
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": "ke   m"
+            },
+            {
+              "chord": "A",
+              "lyric": "y so"
+            },
+            {
+              "chord": "D",
+              "lyric": "ul"
+            }
+          ],
+          "raw": "[A]Awa[Gmaj7]ke   [A] my s[D]oul,[A] awa[Gmaj7]ke   m[A]y so[D]ul"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "How fickle my heart and how woozy my eyes"
+            }
+          ],
+          "raw": "How fickle my heart and how woozy my eyes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I struggle to find any truth in your lies"
+            }
+          ],
+          "raw": "I struggle to find any truth in your lies"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And now my heart stumbles on things I don't know"
+            }
+          ],
+          "raw": "And now my heart stumbles on things I don't know"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "My weakness I feel I must finally show"
+            }
+          ],
+          "raw": "My weakness I feel I must finally show"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Har ha"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "r,"
+            },
+            {
+              "chord": "A",
+              "lyric": " har"
+            },
+            {
+              "chord": "D",
+              "lyric": " har,"
+            },
+            {
+              "chord": "A",
+              "lyric": " har"
+            },
+            {
+              "chord": "Bm",
+              "lyric": " har,"
+            },
+            {
+              "chord": "A",
+              "lyric": " har"
+            },
+            {
+              "chord": "D",
+              "lyric": " har"
+            }
+          ],
+          "raw": "[A]Har ha[Bm]r,[A] har[D] har,[A] har[Bm] har,[A] har[D] har"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "Bm",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G] [D] [Bm] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "In these bodies we will live, in these bodies we will die"
+            }
+          ],
+          "raw": "In these bodies we will live, in these bodies we will die"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "Bm",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G] [D] [Bm] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Where you invest your love, you invest your life"
+            }
+          ],
+          "raw": "Where you invest your love, you invest your life"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "Bm",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G] [D] [Bm] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "In these bodies we will live, in these bodies we will die"
+            }
+          ],
+          "raw": "In these bodies we will live, in these bodies we will die"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "Bm",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G] [D] [Bm] [D] [G] [A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Where you invest your love, you invest your life"
+            }
+          ],
+          "raw": "Where you invest your love, you invest your life"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Instrumental",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G] [A] [D] [A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G] [A] [D] [A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "D5",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G5] [F#5] [E5] [D5]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "A5",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G5] [F#5] [E5] [A5]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus (alternate)",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A] [Gmaj7] [A] [D] [A] [Gmaj7] [A] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Awake my soul, awake my soul"
+            }
+          ],
+          "raw": "Awake my soul, awake my soul"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Bm",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A] [Gmaj7] [A] [Bm]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Awake my soul"
+            }
+          ],
+          "raw": "Awake my soul"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "D5",
+              "lyric": " "
+            },
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "D5",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [D5]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You were made to meet your maker"
+            }
+          ],
+          "raw": "You were made to meet your maker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A] [Gmaj7] [A] [D] [A] [Gmaj7] [A] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Awake my soul, awake my soul"
+            }
+          ],
+          "raw": "Awake my soul, awake my soul"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Gmaj7",
+              "lyric": " "
+            },
+            {
+              "chord": "A",
+              "lyric": " "
+            },
+            {
+              "chord": "Bm",
+              "lyric": ""
+            }
+          ],
+          "raw": "[A] [Gmaj7] [A] [Bm]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Awake my soul"
+            }
+          ],
+          "raw": "Awake my soul"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "D5",
+              "lyric": " "
+            },
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "D5",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [D5]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You were made to meet your maker"
+            }
+          ],
+          "raw": "You were made to meet your maker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "D5",
+              "lyric": " "
+            },
+            {
+              "chord": "G5",
+              "lyric": " "
+            },
+            {
+              "chord": "F#5",
+              "lyric": " "
+            },
+            {
+              "chord": "E5",
+              "lyric": " "
+            },
+            {
+              "chord": "A5",
+              "lyric": " "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [A5] [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You were made to meet your maker"
+            }
+          ],
+          "raw": "You were made to meet your maker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/awake-my-soul.pro",
+  "source": "{title: Awake My Soul}\n{key: D}\n\n{section: Intro}\n[D]\n\n{section: Verse 1}\n\n[D]How fickle my heart and how woozy my eyes\n[D]I struggle to find any truth in your lies\n[D]And now my heart stumbles on things I don't know\n[D]My weakness I feel I must finally show\n\n{section: Verse 2}\n[D]Lend me your hand and we'll[A] conquer them[D] all\nBut[D] lend me your heart and I'll[A] just let you[D] fall\n[D]Lend me your eyes, I can[A] change what you[D] see\nBut your[D] soul you must keep,[A] totally[D] free\n\n{section: Chorus}\n       \n[A]Har ha[Bm]r,[A] har[D] har,[A] har[Bm] har,[A] har[D] har\n\n       \n[A]Awa[Gmaj7]ke   [A] my s[D]oul,[A] awa[Gmaj7]ke   m[A]y so[D]ul\n\n{section: Verse 3}\nHow fickle my heart and how woozy my eyes\nI struggle to find any truth in your lies\nAnd now my heart stumbles on things I don't know\nMy weakness I feel I must finally show\n\n{section: Chorus}\n[A]Har ha[Bm]r,[A] har[D] har,[A] har[Bm] har,[A] har[D] har\n\n{section: Bridge}\n[G] [D] [Bm] [D]\nIn these bodies we will live, in these bodies we will die\n[G] [D] [Bm] [D]\nWhere you invest your love, you invest your life\n[G] [D] [Bm] [D]\nIn these bodies we will live, in these bodies we will die\n[G] [D] [Bm] [D] [G] [A]\nWhere you invest your love, you invest your life\n\n{section: Instrumental}\n[D]\n[G] [A] [D] [A]\n[G] [A] [D] [A]\n[G5] [F#5] [E5] [D5]\n[G5] [F#5] [E5] [A5]\n[D]\n\n{section: Chorus (alternate)}\n[A] [Gmaj7] [A] [D] [A] [Gmaj7] [A] [D]\nAwake my soul, awake my soul\n\n[A] [Gmaj7] [A] [Bm]\nAwake my soul\n\n[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [D5]\nYou were made to meet your maker\n\n[A] [Gmaj7] [A] [D] [A] [Gmaj7] [A] [D]\nAwake my soul, awake my soul\n\n[A] [Gmaj7] [A] [Bm]\nAwake my soul\n\n[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [D5]\nYou were made to meet your maker\n\n[G5] [F#5] [E5] [D5] [G5] [F#5] [E5] [A5] [D]\nYou were made to meet your maker\n"
+}

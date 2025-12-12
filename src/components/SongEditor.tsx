@@ -29,20 +29,35 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
             </button>
         </div>
         <div className="toolbar-group">
-            <button onClick={() => onSave(source)}>Save & Apply</button>
+            <button className="primary" onClick={() => onSave(source)}>Save Changes</button>
             <button onClick={onCancel}>Cancel</button>
         </div>
       </div>
       
       {mode === 'visual' ? (
-        <div className="editor-content">
-            {lines.map((line, i) => (
-            <LineEditor
-                key={i}
-                line={line}
-                onChange={(newLine) => handleLineChange(i, newLine)}
-            />
-            ))}
+        <div className="editor-content song">
+            {lines.map((line, i) => {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
+                    return (
+                        <DirectiveEditor 
+                            key={i} 
+                            line={line} 
+                            onChange={(newLine) => handleLineChange(i, newLine)} 
+                        />
+                    );
+                }
+                if (trimmed === '') {
+                     return <div key={i} className="line-spacer"></div>;
+                }
+                return (
+                    <LineEditor
+                        key={i}
+                        line={line}
+                        onChange={(newLine) => handleLineChange(i, newLine)}
+                    />
+                );
+            })}
         </div>
       ) : (
         <textarea
@@ -58,82 +73,105 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
           display: flex;
           flex-direction: column;
           gap: 1rem;
-          background: #1e1e1e;
-          color: #e5e5e5;
-          padding: 1rem;
-          border-radius: 8px;
         }
         .editor-toolbar {
             display: flex;
             justify-content: space-between;
             gap: 1rem;
+            margin-bottom: 1rem;
+            position: sticky;
+            top: 0;
+            background: #f8fafc;
+            z-index: 100;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
         }
         .toolbar-group {
             display: flex;
             gap: 0.5rem;
         }
+        .toolbar-group button.primary {
+            background: #0f172a;
+            color: white;
+            border-color: #0f172a;
+        }
         .editor-content {
-          font-family: monospace;
-          font-size: 14px;
           overflow-x: auto;
-          max-height: 70vh;
-          overflow-y: auto;
         }
         .raw-editor {
-            font-family: monospace;
-            font-size: 14px;
-            background: rgba(0,0,0,0.2);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 15px;
+            background: white;
             color: inherit;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid #e2e8f0;
             padding: 1rem;
             min-height: 400px;
             resize: vertical;
+            border-radius: 8px;
         }
         .line-editor {
           position: relative;
-          margin-bottom: 2.5em; /* Space for chords */
+          margin-top: 2.2em; /* Space for chords above */
+          margin-bottom: 0.2em;
           min-height: 1.5em;
+        }
+        .line-spacer {
+            height: 1.5em;
+        }
+        .directive-editor input {
+            font-family: inherit;
+            font-weight: bold;
+            color: #64748b;
+            background: transparent;
+            border: none;
+            padding: 0;
+            width: 100%;
+            font-size: 0.9em;
         }
         .chords-layer {
           position: absolute;
-          top: -1.5em;
+          top: -1.6em;
           left: 0;
           width: 100%;
           height: 1.5em;
           pointer-events: auto;
-          cursor: text; /* Indicate clickable */
+          cursor: text;
         }
         .chord-pill {
           position: absolute;
-          background: #fbbf24;
-          color: #000;
-          padding: 0 4px;
-          border-radius: 4px;
+          font-weight: 700;
           font-size: 0.9em;
+          color: #0f172a;
           cursor: grab;
           pointer-events: auto;
-          transform: translateX(-50%); /* Center on the character index */
+          transform: translateX(-50%);
           white-space: nowrap;
           z-index: 10;
           user-select: none;
+          line-height: 1;
+        }
+        .chord-pill:hover {
+            color: #fbbf24;
         }
         .chord-pill:active {
           cursor: grabbing;
         }
         .lyrics-input {
-          font-family: monospace;
-          font-size: 14px;
+          font-family: inherit;
+          font-size: inherit;
           width: 100%;
           background: transparent;
           border: none;
-          color: #e5e5e5;
+          border-bottom: 1px dashed transparent;
+          color: inherit;
           padding: 0;
           margin: 0;
           outline: none;
           letter-spacing: 0;
         }
         .lyrics-input:focus {
-          background: rgba(255, 255, 255, 0.05);
+          background: rgba(0, 0, 0, 0.02);
+          border-bottom-color: #cbd5e1;
         }
         .drop-indicator {
           position: absolute;
@@ -144,6 +182,23 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
           pointer-events: none;
           z-index: 5;
         }
+        .clear-chords-button {
+          position: absolute;
+          right: 0.25rem;
+          top: -0.4rem; /* sit in the chords area */
+          background: #fff;
+          border: 1px solid #e2e8f0;
+          padding: 0.15rem 0.5rem;
+          font-size: 0.75rem;
+          color: #64748b;
+          border-radius: 6px;
+          cursor: pointer;
+          z-index: 20;
+        }
+        .clear-chords-button:hover {
+          background: #f8fafc;
+          color: #0f172a;
+        }
       `}</style>
     </div>
   );
@@ -152,6 +207,18 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
 interface LineEditorProps {
   line: string;
   onChange: (newLine: string) => void;
+}
+
+function DirectiveEditor({ line, onChange }: LineEditorProps) {
+    return (
+        <div className="directive-editor" style={{ marginBottom: '0.5em' }}>
+            <input 
+                value={line} 
+                onChange={e => onChange(e.target.value)} 
+                spellCheck={false}
+            />
+        </div>
+    );
 }
 
 function LineEditor({ line, onChange }: LineEditorProps) {
@@ -183,9 +250,6 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     // Sort chords by index
     const sortedChords = [...currentChords].sort((a, b) => a.index - b.index);
     
-    const newTokens: SongLineToken[] = [];
-    let lastIndex = 0;
-    
     // Group chords by index to handle multiple chords at same position
     const chordsByIndex = new Map<number, string[]>();
     sortedChords.forEach(c => {
@@ -195,47 +259,6 @@ function LineEditor({ line, onChange }: LineEditorProps) {
       chordsByIndex.set(idx, list);
     });
 
-    // Iterate through the lyrics and insert chords
-    // We need to handle indices from 0 to length
-    const allIndices = new Set([...chordsByIndex.keys(), newLyrics.length]);
-    const sortedIndices = Array.from(allIndices).sort((a, b) => a - b);
-
-    // If 0 is not in sortedIndices (no chords at start), we start from 0
-    if (sortedIndices.length === 0 || sortedIndices[0] !== 0) {
-        sortedIndices.unshift(0);
-    }
-    
-    // Actually, a simpler way:
-    // Iterate through sorted unique indices where chords exist
-    // Slice lyrics between indices
-    
-    let currentIndex = 0;
-    
-    // Check if there are chords at 0
-    if (chordsByIndex.has(0)) {
-        const chordsAtZero = chordsByIndex.get(0)!;
-        // Create tokens for these chords. 
-        // The first ones have empty lyrics, the last one takes the lyric segment?
-        // Or we just push them.
-        
-        // Example: [A][B]Hello
-        // Token: {chord: "A", lyric: ""}, {chord: "B", lyric: "..."}
-        
-        chordsAtZero.forEach((chord, i) => {
-            if (i < chordsAtZero.length - 1) {
-                newTokens.push({ chord, lyric: '' });
-            } else {
-                // The last chord at this position will be attached to the next lyric segment
-                // But we handle that in the loop below
-            }
-        });
-    }
-
-    // This logic is getting complicated.
-    // Let's try a different approach for reconstruction.
-    // We build the string directly? No, we need tokens for `serializeTokens`? 
-    // Actually `serializeTokens` is just a helper. We can build the string directly.
-    
     let result = '';
     for (let i = 0; i <= newLyrics.length; i++) {
         if (chordsByIndex.has(i)) {
@@ -326,11 +349,11 @@ function LineEditor({ line, onChange }: LineEditorProps) {
   };
 
   // Measure char width on mount
-  const [charWidth, setCharWidth] = useState(8.4);
+  const [charWidth, setCharWidth] = useState(9.6); // Default for IBM Plex Mono 16px approx
   useEffect(() => {
     const measureSpan = document.createElement('span');
-    measureSpan.style.fontFamily = 'monospace';
-    measureSpan.style.fontSize = '14px';
+    measureSpan.style.fontFamily = 'IBM Plex Mono, monospace';
+    measureSpan.style.fontSize = '16px';
     measureSpan.style.visibility = 'hidden';
     measureSpan.style.position = 'absolute';
     measureSpan.textContent = 'M';
@@ -339,6 +362,9 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     setCharWidth(width);
     document.body.removeChild(measureSpan);
   }, []);
+
+  // small left pad equals half a char to ensure first chord is visible
+  const leftPad = Math.round(charWidth);
 
   return (
     <div 
@@ -351,12 +377,13 @@ function LineEditor({ line, onChange }: LineEditorProps) {
       {dropIndex !== null && (
         <div 
             className="drop-indicator" 
-            style={{ left: `${dropIndex * charWidth}px` }}
+            style={{ left: `${dropIndex * charWidth + leftPad}px` }}
         />
       )}
       <div 
         className="chords-layer"
         onClick={handleLayerClick}
+        style={{ paddingLeft: `${leftPad}px` }}
       >
         {chords.map((chord, i) => (
           <div
@@ -372,6 +399,16 @@ function LineEditor({ line, onChange }: LineEditorProps) {
           </div>
         ))}
       </div>
+      {/* Clear chords button (right side) */}
+      {chords.length > 0 && (
+        <button
+          className="clear-chords-button"
+          onClick={() => reconstructLine(lyrics, [])}
+          title="Clear chords in this line"
+        >
+          Clear chords
+        </button>
+      )}
       <input
         className="lyrics-input"
         value={lyrics}

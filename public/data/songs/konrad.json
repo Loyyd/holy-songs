@@ -1,0 +1,73 @@
+{
+  "id": "konrad",
+  "title": "konrad",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "This is lyr"
+            },
+            {
+              "chord": "C",
+              "lyric": "ics"
+            }
+          ],
+          "raw": "This is lyr[C]ics"
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/konrad.pro",
+  "source": "{title: konrad}\n{key: C}\n\n{section: Verse 1}\n\nThis is lyr[C]ics\n{section: Chorus}\n\n"
+}

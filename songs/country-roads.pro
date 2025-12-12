@@ -5,13 +5,13 @@
 [A]Almost heaven, [F#m]West Virginia,
 [E]Blue Ridge Mountains, [D]Shenandoah [A]River.
 Life is [F#m]old there, older than the trees,
-[E]Younger than the [D]mountains, blowin' like a [A]breeze.
+[E]Younger than the mountains,[D] blowin' like a br[A]eeze.
 
 {section: Chorus}
-[A]Country roads, take me [E]home,
-[F#m]To the place where I [D]belong:
-[A]West Virginia, mountain [E]momma,
-[D]Take me home, [A]country roads.
+Country r[A]oads, take me [E]home,
+To the pl[F#m]ace where I be[D]long:
+West Vir[A]ginia, mountain mo[E]mma,
+Take me[D] home, country ro[A]ads.
 
 {section: Verse 2}
 All my mem'ries, gather 'round her,
@@ -20,9 +20,9 @@ Dark and dusty, painted on the sky,
 Misty taste of moonshine, teardrop in my eye.
 
 {section: Bridge}
-[F#m]I hear her voice, in the [E]mornin' hours she [A]calls me,
-[D]The radio re[A]minds me of my home far [E]away.
-[F#m]And drivin' down the [G]road,
-[D]I get a feelin' that I [A]should have been home [E]yesterday,
-[E7]Yesterday.
+[F#m]I hear her[E] voice, in the[A] mornin' hours she calls me,
+[D]The radio[A] reminds me of[E] my home far away.
+[F#m]And drivin' down[G] the road,
+I get[D] a feelin' that I[A] should have been[E] home yesterday,
+Yes[E7]terday.
 

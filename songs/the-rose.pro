@@ -1,14 +1,14 @@
 {title: The Rose}
 {key: D}
 
-[D]Some say love, it is a [A7]river
-[G]That drowns the [A7]tender [D]reed
-[A7]Some say love, it is a razor
-[G]That leaves your [A7]soul to [D]bleed
-[F#m]Some say love, it is a [Bm]hunger
-[G]An endless aching [A7]need
-[D]I say love, it is a [A7]flower
-[G]And you, its [A7]only [D]seed
+Some say lov[D]e, it is a rive[A7]r
+That dro[G]wns the ten[A7]der reed[D]
+Some say love, it is a razo[A7]r
+That lea[G]ves your so[A7]ul to blee[D]d
+Some say lov[F#m]e, it is a hu[Bm]nger
+An end[G]less aching ne[A7]ed
+I say lov[D]e, it is a flow[A7]er
+And yo[G]u, its o[A7]nly see[D]d
 
 It's the heart afraid of breaking
 That never learns to dance

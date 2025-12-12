@@ -18,114 +18,146 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Some say lov"
+            },
+            {
               "chord": "D",
-              "lyric": "Some say love, it is a "
+              "lyric": "e, it is a rive"
             },
             {
               "chord": "A7",
-              "lyric": "river"
+              "lyric": "r"
             }
           ],
-          "raw": "[D]Some say love, it is a [A7]river"
+          "raw": "Some say lov[D]e, it is a rive[A7]r"
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "That dro"
+            },
             {
               "chord": "G",
-              "lyric": "That drowns the "
+              "lyric": "wns the ten"
             },
             {
               "chord": "A7",
-              "lyric": "tender "
+              "lyric": "der reed"
             },
             {
               "chord": "D",
-              "lyric": "reed"
+              "lyric": ""
             }
           ],
-          "raw": "[G]That drowns the [A7]tender [D]reed"
+          "raw": "That dro[G]wns the ten[A7]der reed[D]"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Some say love, it is a razo"
+            },
+            {
               "chord": "A7",
-              "lyric": "Some say love, it is a razor"
+              "lyric": "r"
             }
           ],
-          "raw": "[A7]Some say love, it is a razor"
+          "raw": "Some say love, it is a razo[A7]r"
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "That lea"
+            },
             {
               "chord": "G",
-              "lyric": "That leaves your "
+              "lyric": "ves your so"
             },
             {
               "chord": "A7",
-              "lyric": "soul to "
+              "lyric": "ul to blee"
             },
             {
               "chord": "D",
-              "lyric": "bleed"
+              "lyric": "d"
             }
           ],
-          "raw": "[G]That leaves your [A7]soul to [D]bleed"
+          "raw": "That lea[G]ves your so[A7]ul to blee[D]d"
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "Some say lov"
+            },
             {
               "chord": "F#m",
-              "lyric": "Some say love, it is a "
+              "lyric": "e, it is a hu"
             },
             {
               "chord": "Bm",
-              "lyric": "hunger"
+              "lyric": "nger"
             }
           ],
-          "raw": "[F#m]Some say love, it is a [Bm]hunger"
+          "raw": "Some say lov[F#m]e, it is a hu[Bm]nger"
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "An end"
+            },
             {
               "chord": "G",
-              "lyric": "An endless aching "
+              "lyric": "less aching ne"
             },
             {
               "chord": "A7",
-              "lyric": "need"
+              "lyric": "ed"
             }
           ],
-          "raw": "[G]An endless aching [A7]need"
+          "raw": "An end[G]less aching ne[A7]ed"
         },
         {
           "tokens": [
             {
-              "chord": "D",
-              "lyric": "I say love, it is a "
-            },
-            {
-              "chord": "A7",
-              "lyric": "flower"
-            }
-          ],
-          "raw": "[D]I say love, it is a [A7]flower"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "G",
-              "lyric": "And you, its "
-            },
-            {
-              "chord": "A7",
-              "lyric": "only "
+              "chord": null,
+              "lyric": "I say lov"
             },
             {
               "chord": "D",
-              "lyric": "seed"
+              "lyric": "e, it is a flow"
+            },
+            {
+              "chord": "A7",
+              "lyric": "er"
             }
           ],
-          "raw": "[G]And you, its [A7]only [D]seed"
+          "raw": "I say lov[D]e, it is a flow[A7]er"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And yo"
+            },
+            {
+              "chord": "G",
+              "lyric": "u, its o"
+            },
+            {
+              "chord": "A7",
+              "lyric": "nly see"
+            },
+            {
+              "chord": "D",
+              "lyric": "d"
+            }
+          ],
+          "raw": "And yo[G]u, its o[A7]nly see[D]d"
         },
         {
           "tokens": [
@@ -302,5 +334,5 @@
     }
   ],
   "sourcePath": "songs/the-rose.pro",
-  "source": "{title: The Rose}\n{key: D}\n\n[D]Some say love, it is a [A7]river\n[G]That drowns the [A7]tender [D]reed\n[A7]Some say love, it is a razor\n[G]That leaves your [A7]soul to [D]bleed\n[F#m]Some say love, it is a [Bm]hunger\n[G]An endless aching [A7]need\n[D]I say love, it is a [A7]flower\n[G]And you, its [A7]only [D]seed\n\nIt's the heart afraid of breaking\nThat never learns to dance\nIt's the dream afraid of waking\nThat never takes the chance\nIt's the one who won't be taking\nWho cannot seem to give\nAnd the soul, afraid of dying\nThat never learns to live\n\nWhen the night has been too lonely\nAnd the road has been too long\nAnd you think that love is only\nFor the lucky and the strong\nJust remember in the winter\nFar beneath the bitter snows\nLies the seed that with the sun's love\nIn the spring becomes the rose\n"
+  "source": "{title: The Rose}\n{key: D}\n\nSome say lov[D]e, it is a rive[A7]r\nThat dro[G]wns the ten[A7]der reed[D]\nSome say love, it is a razo[A7]r\nThat lea[G]ves your so[A7]ul to blee[D]d\nSome say lov[F#m]e, it is a hu[Bm]nger\nAn end[G]less aching ne[A7]ed\nI say lov[D]e, it is a flow[A7]er\nAnd yo[G]u, its o[A7]nly see[D]d\n\nIt's the heart afraid of breaking\nThat never learns to dance\nIt's the dream afraid of waking\nThat never takes the chance\nIt's the one who won't be taking\nWho cannot seem to give\nAnd the soul, afraid of dying\nThat never learns to live\n\nWhen the night has been too lonely\nAnd the road has been too long\nAnd you think that love is only\nFor the lucky and the strong\nJust remember in the winter\nFar beneath the bitter snows\nLies the seed that with the sun's love\nIn the spring becomes the rose\n"
 }

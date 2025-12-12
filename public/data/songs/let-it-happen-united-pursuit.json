@@ -1,0 +1,567 @@
+{
+  "id": "let-it-happen-united-pursuit",
+  "title": "Let It Happen - United Pursuit",
+  "key": "F",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You're full of "
+            },
+            {
+              "chord": "F",
+              "lyric": "life now"
+            }
+          ],
+          "raw": "You're full of [F]life now"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And full of "
+            },
+            {
+              "chord": "C",
+              "lyric": "passion"
+            }
+          ],
+          "raw": "And full of [C]passion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That's how he"
+            },
+            {
+              "chord": "Am",
+              "lyric": " made you"
+            }
+          ],
+          "raw": "That's how he[Am] made you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Just let it "
+            },
+            {
+              "chord": "G",
+              "lyric": "happen"
+            }
+          ],
+          "raw": "Just let it [G]happen"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And he calls "
+            },
+            {
+              "chord": "F",
+              "lyric": "each one of "
+            },
+            {
+              "chord": "C",
+              "lyric": "us"
+            }
+          ],
+          "raw": "And he calls [F]each one of [C]us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "By our "
+            },
+            {
+              "chord": "Am",
+              "lyric": "names to come "
+            },
+            {
+              "chord": "F",
+              "lyric": "away "
+            }
+          ],
+          "raw": "By our [Am]names to come [F]away "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And he w"
+            },
+            {
+              "chord": "F",
+              "lyric": "hispers to your "
+            },
+            {
+              "chord": "C",
+              "lyric": "heart"
+            }
+          ],
+          "raw": "And he w[F]hispers to your [C]heart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To let it g"
+            },
+            {
+              "chord": "Am",
+              "lyric": "o and to be "
+            },
+            {
+              "chord": "F",
+              "lyric": "alive"
+            }
+          ],
+          "raw": "To let it g[Am]o and to be [F]alive"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah he c"
+            },
+            {
+              "chord": "F",
+              "lyric": "alls each one of "
+            },
+            {
+              "chord": "C",
+              "lyric": "us"
+            }
+          ],
+          "raw": "Yeah he c[F]alls each one of [C]us"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "By our "
+            },
+            {
+              "chord": "Am",
+              "lyric": "names to come "
+            },
+            {
+              "chord": "F",
+              "lyric": "away "
+            }
+          ],
+          "raw": "By our [Am]names to come [F]away "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And he "
+            },
+            {
+              "chord": "F",
+              "lyric": "whispers to your "
+            },
+            {
+              "chord": "C",
+              "lyric": "heart"
+            }
+          ],
+          "raw": "And he [F]whispers to your [C]heart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To let it"
+            },
+            {
+              "chord": "Am",
+              "lyric": " go and to be "
+            },
+            {
+              "chord": "F",
+              "lyric": "alive"
+            }
+          ],
+          "raw": "To let it[Am] go and to be [F]alive"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And he w"
+            },
+            {
+              "chord": "F",
+              "lyric": "hispers to your "
+            },
+            {
+              "chord": "C",
+              "lyric": "heart"
+            }
+          ],
+          "raw": "And he w[F]hispers to your [C]heart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To let it "
+            },
+            {
+              "chord": "Am",
+              "lyric": "go and to be "
+            },
+            {
+              "chord": "F",
+              "lyric": "alive"
+            }
+          ],
+          "raw": "To let it [Am]go and to be [F]alive"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And w"
+            },
+            {
+              "chord": "F",
+              "lyric": "hispers to your "
+            },
+            {
+              "chord": "C",
+              "lyric": "heart"
+            }
+          ],
+          "raw": "And w[F]hispers to your [C]heart"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To let it g"
+            },
+            {
+              "chord": "Am",
+              "lyric": "o and to be "
+            },
+            {
+              "chord": "F",
+              "lyric": "alive"
+            }
+          ],
+          "raw": "To let it g[Am]o and to be [F]alive"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Be al"
+            },
+            {
+              "chord": "F",
+              "lyric": "ive "
+            }
+          ],
+          "raw": "Be al[F]ive "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Be a"
+            },
+            {
+              "chord": "C",
+              "lyric": "live "
+            }
+          ],
+          "raw": "Be a[C]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Be a"
+            },
+            {
+              "chord": "Am",
+              "lyric": "live "
+            }
+          ],
+          "raw": "Be a[Am]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Be a"
+            },
+            {
+              "chord": "F",
+              "lyric": "live"
+            }
+          ],
+          "raw": "Be a[F]live"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come a"
+            },
+            {
+              "chord": "F",
+              "lyric": "live "
+            }
+          ],
+          "raw": "Come a[F]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come a"
+            },
+            {
+              "chord": "C",
+              "lyric": "live "
+            }
+          ],
+          "raw": "Come a[C]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come a"
+            },
+            {
+              "chord": "Am",
+              "lyric": "live "
+            }
+          ],
+          "raw": "Come a[Am]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come a"
+            },
+            {
+              "chord": "F",
+              "lyric": "live "
+            }
+          ],
+          "raw": "Come a[F]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To come a"
+            },
+            {
+              "chord": "F",
+              "lyric": "live "
+            }
+          ],
+          "raw": "To come a[F]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To come a"
+            },
+            {
+              "chord": "C",
+              "lyric": "live "
+            }
+          ],
+          "raw": "To come a[C]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To come a"
+            },
+            {
+              "chord": "Am",
+              "lyric": "live "
+            }
+          ],
+          "raw": "To come a[Am]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To come a"
+            },
+            {
+              "chord": "F",
+              "lyric": "live "
+            }
+          ],
+          "raw": "To come a[F]live "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "So take me back "
+            }
+          ],
+          "raw": "[C]So take me back "
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Ba"
+            },
+            {
+              "chord": "F",
+              "lyric": "ck to the beginning "
+            }
+          ],
+          "raw": "[C]Ba[F]ck to the beginning "
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C/E",
+              "lyric": "When I was young"
+            }
+          ],
+          "raw": "[C/E]When I was young"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Running through the fields with you"
+            }
+          ],
+          "raw": "[G]Running through the fields with you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/let-it-happen.pro",
+  "source": "{title: Let It Happen - United Pursuit}\n{key: F}\n\n{section: Chorus}\nYou're full of [F]life now\nAnd full of [C]passion\nThat's how he[Am] made you\nJust let it [G]happen\n\n\n{section: Verse}\nAnd he calls [F]each one of [C]us\nBy our [Am]names to come [F]away \nAnd he w[F]hispers to your [C]heart\nTo let it g[Am]o and to be [F]alive\nYeah he c[F]alls each one of [C]us\nBy our [Am]names to come [F]away \nAnd he [F]whispers to your [C]heart\nTo let it[Am] go and to be [F]alive\n\n\n{section: Pre-Chorus}\nAnd he w[F]hispers to your [C]heart\nTo let it [Am]go and to be [F]alive\nAnd w[F]hispers to your [C]heart\nTo let it g[Am]o and to be [F]alive\nBe al[F]ive \nBe a[C]live \nBe a[Am]live \nBe a[F]live\nCome a[F]live \nCome a[C]live \nCome a[Am]live \nCome a[F]live \nTo come a[F]live \nTo come a[C]live \nTo come a[Am]live \nTo come a[F]live \n\n\n{section: Bridge}\n[C]So take me back \n[C]Ba[F]ck to the beginning \n[C/E]When I was young\n[G]Running through the fields with you\n\n"
+}

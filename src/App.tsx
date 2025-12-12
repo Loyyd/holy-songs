@@ -174,6 +174,34 @@ export default function App() {
     setTranspose(0);
   };
 
+  const handleCreateNewSong = () => {
+    const newSongTemplate = `{title: New Song}
+{key: C}
+
+{section: Verse 1}
+
+
+{section: Chorus}
+
+`;
+    
+    const newSong: SongData = {
+      id: 'new-song-' + Date.now(),
+      title: 'New Song',
+      key: 'C',
+      sections: [],
+      source: newSongTemplate,
+      sourcePath: null
+    };
+    
+    setSong(newSong);
+    setSelectedId(newSong.id);
+    setEditText(newSongTemplate);
+    setIsEditing(true);
+    setEditError(null);
+    setTranspose(0);
+  };
+
   const applyEdit = async (source: string = editText) => {
     if (!song) return;
     try {
@@ -184,27 +212,50 @@ export default function App() {
       setIsEditing(false);
 
       // Save to backend
-      if (song.sourcePath) {
-        const filename = song.sourcePath.split('/').pop();
-        if (filename) {
-            try {
-                const response = await fetch(`http://localhost:8000/api/songs/${filename}`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ content: source }),
-                });
-                
-                if (!response.ok) {
-                    throw new Error('Failed to save song to backend');
-                }
-                console.log('Song saved to backend');
-            } catch (backendErr) {
-                console.error('Backend save failed:', backendErr);
-                alert('Failed to save to backend. Is the backend server running?');
+      try {
+        if (song.sourcePath) {
+          // Existing song - update it
+          const filename = song.sourcePath.split('/').pop();
+          if (filename) {
+            const response = await fetch(`http://localhost:8000/api/songs/${filename}`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ content: source }),
+            });
+            
+            if (!response.ok) {
+              throw new Error('Failed to save song to backend');
             }
+            console.log('Song saved to backend');
+          }
+        } else {
+          // New song - create it
+          const response = await fetch(`http://localhost:8000/api/songs/create`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ content: source }),
+          });
+          
+          if (!response.ok) {
+            throw new Error('Failed to create song on backend');
+          }
+          
+          const result = await response.json();
+          console.log('Song created:', result.filename);
+          
+          // Update the song with the new filename
+          const newSourcePath = `songs/${result.filename}`;
+          setSong({ ...parsed, id: song.id, sourcePath: newSourcePath });
+          
+          alert(`Song created as ${result.filename}. It will appear in the list after the build completes.`);
         }
+      } catch (backendErr) {
+        console.error('Backend save failed:', backendErr);
+        alert('Failed to save to backend. Is the backend server running?');
       }
     } catch (err) {
       setEditError((err as Error).message ?? 'Failed to parse song');
@@ -232,6 +283,23 @@ export default function App() {
             />
             <span style={{ fontSize: '14px' }}>Context sensitive</span>
           </label>
+          <button 
+            onClick={handleCreateNewSong}
+            style={{ 
+              width: '32px', 
+              height: '32px', 
+              padding: '0',
+              fontSize: '18px',
+              fontWeight: 'bold',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}
+            title="Create new song"
+          >
+            +
+          </button>
         </div>
         <ul className="song-list">
           {sortedResults.map((entry) => (
@@ -278,7 +346,7 @@ export default function App() {
                 {isEditing ? 'Close editor' : 'Edit chords/lyrics'}
               </button>
             </div>
-            {isEditing && (
+            {isEditing ? (
               <div className="editor-container">
                 <SongEditor
                   initialSource={editText}
@@ -288,10 +356,11 @@ export default function App() {
                 {editError && <div className="error">{editError}</div>}
                 <div className="note" style={{ marginTop: 8 }}>Edits stay local; rerun build to persist to disk.</div>
               </div>
+            ) : (
+              <div className="song-container">
+                <SongView song={song} transpose={transpose} highlightQuery={query} isContextSensitive={contextSensitive} />
+              </div>
             )}
-            <div className="song-container">
-              <SongView song={song} transpose={transpose} highlightQuery={query} isContextSensitive={contextSensitive} />
-            </div>
           </>
         ) : (
           <p>Loading song...</p>

@@ -24,22 +24,22 @@
           "tokens": [
             {
               "chord": "D",
-              "lyric": "It only takes a "
+              "lyric": "It only takes a spar"
             },
             {
               "chord": "F#m",
-              "lyric": "spark to get a "
+              "lyric": "k to get"
             },
             {
               "chord": "G",
-              "lyric": "fire going "
+              "lyric": " a fire going "
             },
             {
               "chord": "A7",
               "lyric": ""
             }
           ],
-          "raw": "[D]It only takes a [F#m]spark to get a [G]fire going [A7]"
+          "raw": "[D]It only takes a spar[F#m]k to get[G] a fire going [A7]"
         },
         {
           "tokens": [
@@ -49,76 +49,84 @@
             },
             {
               "chord": "F#m",
-              "lyric": "round can warm up "
+              "lyric": "round can"
             },
             {
               "chord": "G",
-              "lyric": "in its glowing "
+              "lyric": " warm up in its gl"
             },
             {
               "chord": "A7",
-              "lyric": ""
+              "lyric": "owing "
             }
           ],
-          "raw": "[D]And soon all those a[F#m]round can warm up [G]in its glowing [A7]"
+          "raw": "[D]And soon all those a[F#m]round can[G] warm up in its gl[A7]owing "
         },
         {
           "tokens": [
             {
-              "chord": "G",
-              "lyric": "That's how it "
-            },
-            {
-              "chord": "D",
-              "lyric": "is with "
+              "chord": null,
+              "lyric": "That's h"
             },
             {
               "chord": "G",
-              "lyric": "God's love, "
+              "lyric": "ow it is with God"
             },
             {
               "chord": "D",
-              "lyric": "once you've "
+              "lyric": "'s love,"
+            },
+            {
+              "chord": "G",
+              "lyric": " once you've experie"
+            },
+            {
+              "chord": "D",
+              "lyric": "nced"
             },
             {
               "chord": "Bm",
-              "lyric": "experienced it"
+              "lyric": " it"
             }
           ],
-          "raw": "[G]That's how it [D]is with [G]God's love, [D]once you've [Bm]experienced it"
+          "raw": "That's h[G]ow it is with God[D]'s love,[G] once you've experie[D]nced[Bm] it"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "You"
+            },
+            {
               "chord": "G",
-              "lyric": "You spread His "
+              "lyric": " spread His lov"
             },
             {
               "chord": "D",
-              "lyric": "love to "
+              "lyric": "e to ever"
             },
             {
               "chord": "G",
-              "lyric": "everyone, "
+              "lyric": "yo"
             },
             {
               "chord": "D",
-              "lyric": "you want "
+              "lyric": "ne, you w"
             },
             {
               "chord": "G",
-              "lyric": "to "
+              "lyric": "ant to"
             },
             {
               "chord": "A7",
-              "lyric": "pass it "
+              "lyric": " pass it o"
             },
             {
               "chord": "D",
-              "lyric": "on"
+              "lyric": "n"
             }
           ],
-          "raw": "[G]You spread His [D]love to [G]everyone, [D]you want [G]to [A7]pass it [D]on"
+          "raw": "You[G] spread His lov[D]e to ever[G]yo[D]ne, you w[G]ant to[A7] pass it o[D]n"
         },
         {
           "tokens": [
@@ -137,102 +145,38 @@
         {
           "tokens": [
             {
-              "chord": "D",
-              "lyric": "What a wondrous "
-            },
-            {
-              "chord": "F#m",
-              "lyric": "time is spring, when "
-            },
-            {
-              "chord": "G",
-              "lyric": "all the trees are "
-            },
-            {
-              "chord": "A7",
-              "lyric": "budding"
+              "chord": null,
+              "lyric": "What a wondrous time is spring, when all the trees are budding"
             }
           ],
-          "raw": "[D]What a wondrous [F#m]time is spring, when [G]all the trees are [A7]budding"
+          "raw": "What a wondrous time is spring, when all the trees are budding"
         },
         {
           "tokens": [
             {
-              "chord": "D",
-              "lyric": "The birds begin "
-            },
-            {
-              "chord": "F#m",
-              "lyric": "to sing, the flowers "
-            },
-            {
-              "chord": "G",
-              "lyric": "start their blooming "
-            },
-            {
-              "chord": "A7",
-              "lyric": ""
+              "chord": null,
+              "lyric": "The birds begin to sing, the flowers start their blooming "
             }
           ],
-          "raw": "[D]The birds begin [F#m]to sing, the flowers [G]start their blooming [A7]"
+          "raw": "The birds begin to sing, the flowers start their blooming "
         },
         {
           "tokens": [
             {
-              "chord": "G",
-              "lyric": "That's how it "
-            },
-            {
-              "chord": "D",
-              "lyric": "is with "
-            },
-            {
-              "chord": "G",
-              "lyric": "God's love, "
-            },
-            {
-              "chord": "D",
-              "lyric": "once you've "
-            },
-            {
-              "chord": "Bm",
-              "lyric": "experienced it"
+              "chord": null,
+              "lyric": "That's how it is with God's love, once you've experienced it"
             }
           ],
-          "raw": "[G]That's how it [D]is with [G]God's love, [D]once you've [Bm]experienced it"
+          "raw": "That's how it is with God's love, once you've experienced it"
         },
         {
           "tokens": [
             {
-              "chord": "G",
-              "lyric": "You want to "
-            },
-            {
-              "chord": "D",
-              "lyric": "sing it's "
-            },
-            {
-              "chord": "G",
-              "lyric": "fresh like spring, "
-            },
-            {
-              "chord": "D",
-              "lyric": "you want "
-            },
-            {
-              "chord": "G",
-              "lyric": "to "
-            },
-            {
-              "chord": "A7",
-              "lyric": "pass it "
-            },
-            {
-              "chord": "D",
-              "lyric": "on"
+              "chord": null,
+              "lyric": "You want to sing it's fresh like spring, you want to pass it on"
             }
           ],
-          "raw": "[G]You want to [D]sing it's [G]fresh like spring, [D]you want [G]to [A7]pass it [D]on"
+          "raw": "You want to sing it's fresh like spring, you want to pass it on"
         },
         {
           "tokens": [
@@ -251,102 +195,38 @@
         {
           "tokens": [
             {
-              "chord": "D",
-              "lyric": "I wish for you "
-            },
-            {
-              "chord": "F#m",
-              "lyric": "my friend, this happi"
-            },
-            {
-              "chord": "G",
-              "lyric": "ness that I've found "
-            },
-            {
-              "chord": "A7",
-              "lyric": ""
+              "chord": null,
+              "lyric": "I wish for you my friend, this happiness that I've found "
             }
           ],
-          "raw": "[D]I wish for you [F#m]my friend, this happi[G]ness that I've found [A7]"
+          "raw": "I wish for you my friend, this happiness that I've found "
         },
         {
           "tokens": [
             {
-              "chord": "D",
-              "lyric": "You can depend "
-            },
-            {
-              "chord": "F#m",
-              "lyric": "on Him, it matters "
-            },
-            {
-              "chord": "G",
-              "lyric": "not where you're bound "
-            },
-            {
-              "chord": "A7",
-              "lyric": ""
+              "chord": null,
+              "lyric": "You can depend on Him, it matters not where you're bound "
             }
           ],
-          "raw": "[D]You can depend [F#m]on Him, it matters [G]not where you're bound [A7]"
+          "raw": "You can depend on Him, it matters not where you're bound "
         },
         {
           "tokens": [
             {
-              "chord": "G",
-              "lyric": "I'll shout it "
-            },
-            {
-              "chord": "D",
-              "lyric": "from the "
-            },
-            {
-              "chord": "G",
-              "lyric": "mountain top, "
-            },
-            {
-              "chord": "D",
-              "lyric": "I want "
-            },
-            {
-              "chord": "Bm",
-              "lyric": "the world to know"
+              "chord": null,
+              "lyric": "I'll shout it from the mountain top, I want the world to know"
             }
           ],
-          "raw": "[G]I'll shout it [D]from the [G]mountain top, [D]I want [Bm]the world to know"
+          "raw": "I'll shout it from the mountain top, I want the world to know"
         },
         {
           "tokens": [
             {
-              "chord": "G",
-              "lyric": "The Lord of "
-            },
-            {
-              "chord": "D",
-              "lyric": "love has "
-            },
-            {
-              "chord": "G",
-              "lyric": "come to me, "
-            },
-            {
-              "chord": "D",
-              "lyric": "I want "
-            },
-            {
-              "chord": "G",
-              "lyric": "to "
-            },
-            {
-              "chord": "A7",
-              "lyric": "pass it "
-            },
-            {
-              "chord": "D",
-              "lyric": "on"
+              "chord": null,
+              "lyric": "The Lord of love has come to me, I want to pass it on"
             }
           ],
-          "raw": "[G]The Lord of [D]love has [G]come to me, [D]I want [G]to [A7]pass it [D]on"
+          "raw": "The Lord of love has come to me, I want to pass it on"
         },
         {
           "tokens": [
@@ -361,5 +241,5 @@
     }
   ],
   "sourcePath": "songs/pass-it-on.pro",
-  "source": "{title: Pass It On}\n{key: D}\n\n{section: Verse 1}\n[D]It only takes a [F#m]spark to get a [G]fire going [A7]\n[D]And soon all those a[F#m]round can warm up [G]in its glowing [A7]\n[G]That's how it [D]is with [G]God's love, [D]once you've [Bm]experienced it\n[G]You spread His [D]love to [G]everyone, [D]you want [G]to [A7]pass it [D]on\n\n{section: Verse 2}\n[D]What a wondrous [F#m]time is spring, when [G]all the trees are [A7]budding\n[D]The birds begin [F#m]to sing, the flowers [G]start their blooming [A7]\n[G]That's how it [D]is with [G]God's love, [D]once you've [Bm]experienced it\n[G]You want to [D]sing it's [G]fresh like spring, [D]you want [G]to [A7]pass it [D]on\n\n{section: Verse 3}\n[D]I wish for you [F#m]my friend, this happi[G]ness that I've found [A7]\n[D]You can depend [F#m]on Him, it matters [G]not where you're bound [A7]\n[G]I'll shout it [D]from the [G]mountain top, [D]I want [Bm]the world to know\n[G]The Lord of [D]love has [G]come to me, [D]I want [G]to [A7]pass it [D]on\n"
+  "source": "{title: Pass It On}\n{key: D}\n\n{section: Verse 1}\n[D]It only takes a spar[F#m]k to get[G] a fire going [A7]\n[D]And soon all those a[F#m]round can[G] warm up in its gl[A7]owing \nThat's h[G]ow it is with God[D]'s love,[G] once you've experie[D]nced[Bm] it\nYou[G] spread His lov[D]e to ever[G]yo[D]ne, you w[G]ant to[A7] pass it o[D]n\n\n{section: Verse 2}\nWhat a wondrous time is spring, when all the trees are budding\nThe birds begin to sing, the flowers start their blooming \nThat's how it is with God's love, once you've experienced it\nYou want to sing it's fresh like spring, you want to pass it on\n\n{section: Verse 3}\nI wish for you my friend, this happiness that I've found \nYou can depend on Him, it matters not where you're bound \nI'll shout it from the mountain top, I want the world to know\nThe Lord of love has come to me, I want to pass it on\n"
 }
