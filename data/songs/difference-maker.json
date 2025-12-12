@@ -1,0 +1,700 @@
+{
+  "id": "difference-maker",
+  "title": "Difference Maker",
+  "key": "E",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Intro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": ""
+            }
+          ],
+          "raw": "[E]  [A/E]    [E]  [A/E]    [E]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah i"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "sn't it amazing how a man can find himself al"
+            },
+            {
+              "chord": "E",
+              "lyric": "one"
+            }
+          ],
+          "raw": "Yeah i[A/E]sn't it amazing how a man can find himself al[E]one"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "Call into the darkness for an answer that he's never k"
+            },
+            {
+              "chord": "E",
+              "lyric": "nown"
+            }
+          ],
+          "raw": "[A/E]Call into the darkness for an answer that he's never k[E]nown"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah, i"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "sn't it amazing how a god can take a broken "
+            },
+            {
+              "chord": "E",
+              "lyric": "man"
+            }
+          ],
+          "raw": "Yeah, i[A/E]sn't it amazing how a god can take a broken [E]man"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah, l"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "et him find a fortune, let him ruin it with his own two h"
+            },
+            {
+              "chord": "E",
+              "lyric": "ands"
+            }
+          ],
+          "raw": "Yeah, l[A/E]et him find a fortune, let him ruin it with his own two h[E]ands"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And he c"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "limbs on up the hill on a rock on which he stands"
+            }
+          ],
+          "raw": "And he c[A/E]limbs on up the hill on a rock on which he stands"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He l"
+            },
+            {
+              "chord": "E",
+              "lyric": "ooks back at the crowd"
+            }
+          ],
+          "raw": "He l[E]ooks back at the crowd"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He looks down at his hands and he s"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "ays"
+            }
+          ],
+          "raw": "He looks down at his hands and he s[A/E]ays"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am a difference m"
+            },
+            {
+              "chord": "E",
+              "lyric": "aker"
+            }
+          ],
+          "raw": "I am a difference m[E]aker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "I am the difference maker"
+            }
+          ],
+          "raw": "Oh, [A/E]I am the difference maker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, "
+            },
+            {
+              "chord": "E",
+              "lyric": "I am the only one that speaks to him"
+            }
+          ],
+          "raw": "Oh, [E]I am the only one that speaks to him"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "I am the friendliest of friends of G"
+            },
+            {
+              "chord": "E",
+              "lyric": "od"
+            }
+          ],
+          "raw": "And [A/E]I am the friendliest of friends of G[E]od"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Interlude",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": " "
+            }
+          ],
+          "raw": "[A/E]    [E]  [A/E]    [E] "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1 (Repeat)",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah i"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "sn't it amazing how a man can find himself al"
+            },
+            {
+              "chord": "E",
+              "lyric": "one"
+            }
+          ],
+          "raw": "Yeah i[A/E]sn't it amazing how a man can find himself al[E]one"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "Call into the darkness for an answer that he's never k"
+            },
+            {
+              "chord": "E",
+              "lyric": "nown"
+            }
+          ],
+          "raw": "[A/E]Call into the darkness for an answer that he's never k[E]nown"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah, i"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "sn't it amazing how a god can take a broken "
+            },
+            {
+              "chord": "E",
+              "lyric": "man"
+            }
+          ],
+          "raw": "Yeah, i[A/E]sn't it amazing how a god can take a broken [E]man"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Yeah, l"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "et him find a fortune, let him ruin it with his own two h"
+            },
+            {
+              "chord": "E",
+              "lyric": "ands"
+            }
+          ],
+          "raw": "Yeah, l[A/E]et him find a fortune, let him ruin it with his own two h[E]ands"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And he w"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "alks on up the hill to the rock on which he stands"
+            }
+          ],
+          "raw": "And he w[A/E]alks on up the hill to the rock on which he stands"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He l"
+            },
+            {
+              "chord": "E",
+              "lyric": "ooks back at the crowd"
+            }
+          ],
+          "raw": "He l[E]ooks back at the crowd"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "He looks down at his hands and he s"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "ays"
+            }
+          ],
+          "raw": "He looks down at his hands and he s[A/E]ays"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am a difference m"
+            },
+            {
+              "chord": "E",
+              "lyric": "aker"
+            }
+          ],
+          "raw": "I am a difference m[E]aker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "I am the difference maker"
+            }
+          ],
+          "raw": "Oh, [A/E]I am the difference maker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, "
+            },
+            {
+              "chord": "E",
+              "lyric": "I am the only one that speaks to him"
+            }
+          ],
+          "raw": "Oh, [E]I am the only one that speaks to him"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "I am the friendliest of friends of G"
+            },
+            {
+              "chord": "E",
+              "lyric": "od"
+            }
+          ],
+          "raw": "And [A/E]I am the friendliest of friends of G[E]od"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Interlude",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "  "
+            },
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "  "
+            },
+            {
+              "chord": "E",
+              "lyric": " "
+            }
+          ],
+          "raw": "[A/E]  [E]  [A/E]  [E] "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "I am on the fence about nearly everything I've seen"
+            }
+          ],
+          "raw": "[A/E]I am on the fence about nearly everything I've seen"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "And I have felt the fire be put out by too much gasoline"
+            }
+          ],
+          "raw": "[E]And I have felt the fire be put out by too much gasoline"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "And we're all strangers passing through a place and time afternoon"
+            }
+          ],
+          "raw": "[A/E]And we're all strangers passing through a place and time afternoon"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Life is but a vision in a window that we're peeking through"
+            }
+          ],
+          "raw": "[E]Life is but a vision in a window that we're peeking through"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "A helpless conversation with a man who says he cares a lot"
+            }
+          ],
+          "raw": "[A/E]A helpless conversation with a man who says he cares a lot"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "It's a passive confrontation about who might throw a punch or not"
+            }
+          ],
+          "raw": "[E]It's a passive confrontation about who might throw a punch or not"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "We are all transgressors, we're all sinners, we're all astronauts"
+            }
+          ],
+          "raw": "[A/E]We are all transgressors, we're all sinners, we're all astronauts"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "So if you're beating death, then raise your hand, but shut up if you're not"
+            }
+          ],
+          "raw": "[E]So if you're beating death, then raise your hand, but shut up if you're not"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus 2x",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "I am the difference maker"
+            }
+          ],
+          "raw": "Oh, [A/E]I am the difference maker"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, "
+            },
+            {
+              "chord": "E",
+              "lyric": "I am the only one that speaks to him"
+            }
+          ],
+          "raw": "Oh, [E]I am the only one that speaks to him"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "I am the friendliest of friends of G"
+            },
+            {
+              "chord": "E",
+              "lyric": "od"
+            }
+          ],
+          "raw": "And [A/E]I am the friendliest of friends of G[E]od"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "  "
+            },
+            {
+              "chord": "A/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": " "
+            }
+          ],
+          "raw": "[A/E]    [E]  [A/E]    [E]  [A/E]    [E]  [A/E]    [E] "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/difference-maker.pro",
+  "source": "{title: Difference Maker}\n{key: E}\n{comment: Capo 2}\n\n{section: Intro}\n[E]  [A/E]    [E]  [A/E]    [E]\n\n{section: Verse 1}\nYeah i[A/E]sn't it amazing how a man can find himself al[E]one\n[A/E]Call into the darkness for an answer that he's never k[E]nown\nYeah, i[A/E]sn't it amazing how a god can take a broken [E]man\nYeah, l[A/E]et him find a fortune, let him ruin it with his own two h[E]ands\nAnd he c[A/E]limbs on up the hill on a rock on which he stands\nHe l[E]ooks back at the crowd\nHe looks down at his hands and he s[A/E]ays\nI am a difference m[E]aker\n\n{section: Chorus}\nOh, [A/E]I am the difference maker\nOh, [E]I am the only one that speaks to him\nAnd [A/E]I am the friendliest of friends of G[E]od\n\n{section: Interlude}\n[A/E]    [E]  [A/E]    [E] \n\n{section: Verse 1 (Repeat)}\nYeah i[A/E]sn't it amazing how a man can find himself al[E]one\n[A/E]Call into the darkness for an answer that he's never k[E]nown\nYeah, i[A/E]sn't it amazing how a god can take a broken [E]man\nYeah, l[A/E]et him find a fortune, let him ruin it with his own two h[E]ands\nAnd he w[A/E]alks on up the hill to the rock on which he stands\nHe l[E]ooks back at the crowd\nHe looks down at his hands and he s[A/E]ays\nI am a difference m[E]aker\n\n{section: Chorus}\nOh, [A/E]I am the difference maker\nOh, [E]I am the only one that speaks to him\nAnd [A/E]I am the friendliest of friends of G[E]od\n\n{section: Interlude}\n[A/E]  [E]  [A/E]  [E] \n\n{section: Verse 2}\n[A/E]I am on the fence about nearly everything I've seen\n[E]And I have felt the fire be put out by too much gasoline\n[A/E]And we're all strangers passing through a place and time afternoon\n[E]Life is but a vision in a window that we're peeking through\n[A/E]A helpless conversation with a man who says he cares a lot\n[E]It's a passive confrontation about who might throw a punch or not\n[A/E]We are all transgressors, we're all sinners, we're all astronauts\n[E]So if you're beating death, then raise your hand, but shut up if you're not\n\n{section: Chorus 2x}\nOh, [A/E]I am the difference maker\nOh, [E]I am the only one that speaks to him\nAnd [A/E]I am the friendliest of friends of G[E]od\n\n{section: Outro}\n[A/E]    [E]  [A/E]    [E]  [A/E]    [E]  [A/E]    [E] \n"
+}

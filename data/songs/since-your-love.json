@@ -1,0 +1,918 @@
+{
+  "id": "since-your-love",
+  "title": "Since Your Love",
+  "key": "B",
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Intro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Bsus4",
+              "lyric": "     "
+            },
+            {
+              "chord": "B",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Bsus4]     [B]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bsus4",
+              "lyric": "     "
+            },
+            {
+              "chord": "B",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Bsus4]     [B]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "You are the light,"
+            },
+            {
+              "chord": "F#",
+              "lyric": " song of my life"
+            }
+          ],
+          "raw": "[B]You are the light,[F#] song of my life"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "You always"
+            },
+            {
+              "chord": "C#m",
+              "lyric": " lead me, "
+            },
+            {
+              "chord": "E",
+              "lyric": "You are the "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "voice inside"
+            }
+          ],
+          "raw": "[E]You always[C#m] lead me, [E]You are the [C#m]voice inside"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "You are my love, "
+            },
+            {
+              "chord": "F#",
+              "lyric": "no one before You"
+            }
+          ],
+          "raw": "[B]You are my love, [F#]no one before You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "All that I "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "am   p"
+            },
+            {
+              "chord": "E",
+              "lyric": "oints to "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "You"
+            }
+          ],
+          "raw": "[E]All that I [C#m]am   p[E]oints to [C#m]You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "B",
+              "lyric": "made by You"
+            }
+          ],
+          "raw": "I was [B]made by You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "F#",
+              "lyric": "made for You"
+            }
+          ],
+          "raw": "I was [F#]made for You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am "
+            },
+            {
+              "chord": "E",
+              "lyric": "unfulfill"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "ed"
+            }
+          ],
+          "raw": "I am [E]unfulfill[G#m]ed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Without full c"
+            },
+            {
+              "chord": "F#",
+              "lyric": "ommunion"
+            }
+          ],
+          "raw": "Without full c[F#]ommunion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Instrumental",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "   "
+            },
+            {
+              "chord": "F#",
+              "lyric": "   "
+            },
+            {
+              "chord": "E",
+              "lyric": "    "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "   "
+            },
+            {
+              "chord": "E",
+              "lyric": "    "
+            },
+            {
+              "chord": "C#m",
+              "lyric": ""
+            }
+          ],
+          "raw": "[B]   [F#]   [E]    [C#m]   [E]    [C#m]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "You are the light, "
+            },
+            {
+              "chord": "F#",
+              "lyric": "song of my life"
+            }
+          ],
+          "raw": "[B]You are the light, [F#]song of my life"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "You always l"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "ead me, "
+            },
+            {
+              "chord": "E",
+              "lyric": "You are the "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "voice inside"
+            }
+          ],
+          "raw": "[E]You always l[C#m]ead me, [E]You are the [C#m]voice inside"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "You are my love, "
+            },
+            {
+              "chord": "F#",
+              "lyric": "no one before You"
+            }
+          ],
+          "raw": "[B]You are my love, [F#]no one before You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "All that I "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "am   "
+            },
+            {
+              "chord": "E",
+              "lyric": "points to "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "You"
+            }
+          ],
+          "raw": "[E]All that I [C#m]am   [E]points to [C#m]You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "B",
+              "lyric": "made by You"
+            }
+          ],
+          "raw": "I was [B]made by You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "F#",
+              "lyric": "made for You"
+            }
+          ],
+          "raw": "I was [F#]made for You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am un"
+            },
+            {
+              "chord": "E",
+              "lyric": "fulfill"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "ed"
+            }
+          ],
+          "raw": "I am un[E]fulfill[G#m]ed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Without full c"
+            },
+            {
+              "chord": "F#",
+              "lyric": "ommunion"
+            }
+          ],
+          "raw": "Without full c[F#]ommunion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "B",
+              "lyric": "made by You"
+            }
+          ],
+          "raw": "I was [B]made by You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "F#",
+              "lyric": "made for You"
+            }
+          ],
+          "raw": "I was [F#]made for You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am "
+            },
+            {
+              "chord": "E",
+              "lyric": "unfulfill"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "ed"
+            }
+          ],
+          "raw": "I am [E]unfulfill[G#m]ed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Without full "
+            },
+            {
+              "chord": "F#",
+              "lyric": "communion"
+            }
+          ],
+          "raw": "Without full [F#]communion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[B]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[C#m]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm a new cre"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "ation"
+            }
+          ],
+          "raw": "[E]I'm a new cre[C#m]ation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm forever cha"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "nged"
+            }
+          ],
+          "raw": "[E]I'm forever cha[C#m]nged"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[B]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[C#m]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm a new cre"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "ation"
+            }
+          ],
+          "raw": "[E]I'm a new cre[C#m]ation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm forever cha"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "nged"
+            }
+          ],
+          "raw": "[E]I'm forever cha[C#m]nged"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[B]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[C#m]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm a new cre"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "ation"
+            }
+          ],
+          "raw": "[E]I'm a new cre[C#m]ation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm forever cha"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "nged"
+            }
+          ],
+          "raw": "[E]I'm forever cha[C#m]nged"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[B]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C#m",
+              "lyric": "Since Your love got a hold of me"
+            }
+          ],
+          "raw": "[C#m]Since Your love got a hold of me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm a new cre"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "ation"
+            }
+          ],
+          "raw": "[E]I'm a new cre[C#m]ation"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "I'm forever "
+            },
+            {
+              "chord": "C#m",
+              "lyric": "changed"
+            }
+          ],
+          "raw": "[E]I'm forever [C#m]changed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "B",
+              "lyric": "made by You"
+            }
+          ],
+          "raw": "I was [B]made by You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I was "
+            },
+            {
+              "chord": "F#",
+              "lyric": "made for You"
+            }
+          ],
+          "raw": "I was [F#]made for You"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am un"
+            },
+            {
+              "chord": "E",
+              "lyric": "fulfill"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "ed"
+            }
+          ],
+          "raw": "I am un[E]fulfill[G#m]ed"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Without full "
+            },
+            {
+              "chord": "F#",
+              "lyric": "communion"
+            }
+          ],
+          "raw": "Without full [F#]communion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Instrumental 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "      "
+            },
+            {
+              "chord": "B",
+              "lyric": ""
+            }
+          ],
+          "raw": "[B]      [B]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "     "
+            },
+            {
+              "chord": "F#/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "    "
+            },
+            {
+              "chord": "F#/E",
+              "lyric": ""
+            }
+          ],
+          "raw": "[E]     [F#/E]    [E]    [F#/E]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "      "
+            },
+            {
+              "chord": "B",
+              "lyric": ""
+            }
+          ],
+          "raw": "[B]      [B]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "     "
+            },
+            {
+              "chord": "F#/E",
+              "lyric": "    "
+            },
+            {
+              "chord": "E",
+              "lyric": "    "
+            },
+            {
+              "chord": "F#/E",
+              "lyric": ""
+            }
+          ],
+          "raw": "[E]     [F#/E]    [E]    [F#/E]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "In You is all I need"
+            }
+          ],
+          "raw": "[B]In You is all I need"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "You're my "
+            },
+            {
+              "chord": "F#/E",
+              "lyric": "breath, You're "
+            },
+            {
+              "chord": "E",
+              "lyric": "my life, You'"
+            },
+            {
+              "chord": "F#/E",
+              "lyric": "re everything"
+            }
+          ],
+          "raw": "[E]You're my [F#/E]breath, You're [E]my life, You'[F#/E]re everything"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "B",
+              "lyric": "In You is all I need"
+            }
+          ],
+          "raw": "[B]In You is all I need"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "You're my "
+            },
+            {
+              "chord": "F#/E",
+              "lyric": "breath, You're "
+            },
+            {
+              "chord": "E/G#",
+              "lyric": "my life, You're"
+            },
+            {
+              "chord": "F#/A#",
+              "lyric": " my everything"
+            }
+          ],
+          "raw": "[E]You're my [F#/E]breath, You're [E/G#]my life, You're[F#/A#] my everything"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/since-your-love.pro",
+  "source": "{title: Since Your Love}\n{artist: United Pursuit}\n{key: B}\n\n{section: Intro}\n[Bsus4]     [B]\n[Bsus4]     [B]\n\n{section: Verse 1}\n[B]You are the light,[F#] song of my life\n[E]You always[C#m] lead me, [E]You are the [C#m]voice inside\n[B]You are my love, [F#]no one before You\n[E]All that I [C#m]am   p[E]oints to [C#m]You\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am [E]unfulfill[G#m]ed\nWithout full c[F#]ommunion\n\n{section: Instrumental}\n[B]   [F#]   [E]    [C#m]   [E]    [C#m]\n\n{section: Verse 1}\n[B]You are the light, [F#]song of my life\n[E]You always l[C#m]ead me, [E]You are the [C#m]voice inside\n[B]You are my love, [F#]no one before You\n[E]All that I [C#m]am   [E]points to [C#m]You\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am un[E]fulfill[G#m]ed\nWithout full c[F#]ommunion\n\nI was [B]made by You\nI was [F#]made for You\nI am [E]unfulfill[G#m]ed\nWithout full [F#]communion\n\n{section: Bridge}\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever [C#m]changed\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am un[E]fulfill[G#m]ed\nWithout full [F#]communion\n\n{section: Instrumental 2}\n[B]      [B]\n[E]     [F#/E]    [E]    [F#/E]\n[B]      [B]\n[E]     [F#/E]    [E]    [F#/E]\n\n{section: Outro}\n[B]In You is all I need\n[E]You're my [F#/E]breath, You're [E]my life, You'[F#/E]re everything\n[B]In You is all I need\n[E]You're my [F#/E]breath, You're [E/G#]my life, You're[F#/A#] my everything\n"
+}
