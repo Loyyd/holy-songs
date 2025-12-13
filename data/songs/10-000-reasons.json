@@ -24,43 +24,43 @@
           "tokens": [
             {
               "chord": "A",
-              "lyric": " "
+              "lyric": "   "
             },
             {
               "chord": "E",
-              "lyric": " "
+              "lyric": "   "
             },
             {
               "chord": "B/D#",
-              "lyric": " "
+              "lyric": "     "
             },
             {
               "chord": "C#m",
               "lyric": ""
             }
           ],
-          "raw": "[A] [E] [B/D#] [C#m]"
+          "raw": "[A]   [E]   [B/D#]     [C#m]"
         },
         {
           "tokens": [
             {
               "chord": "A",
-              "lyric": " "
+              "lyric": "   "
             },
             {
               "chord": "E",
-              "lyric": " "
+              "lyric": "   "
             },
             {
               "chord": "Bsus4",
-              "lyric": " "
+              "lyric": "     "
             },
             {
               "chord": "B",
               "lyric": ""
             }
           ],
-          "raw": "[A] [E] [Bsus4] [B]"
+          "raw": "[A]   [E]   [Bsus4]     [B]"
         },
         {
           "tokens": [
@@ -79,23 +79,27 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Bless the"
+            },
+            {
               "chord": "A",
-              "lyric": "Bless the "
+              "lyric": " Lord, O my"
             },
             {
               "chord": "E",
-              "lyric": "Lord, O my "
+              "lyric": " soul,"
             },
             {
               "chord": "B/D#",
-              "lyric": "soul, O my "
+              "lyric": " O my"
             },
             {
               "chord": "C#m",
-              "lyric": "soul,"
+              "lyric": " soul,"
             }
           ],
-          "raw": "[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,"
+          "raw": "Bless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,"
         },
         {
           "tokens": [
@@ -121,48 +125,56 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Sing like"
+            },
+            {
               "chord": "A",
-              "lyric": "Sing like "
+              "lyric": " never be"
             },
             {
               "chord": "C#m",
-              "lyric": "never before, O my "
+              "lyric": "fore, "
             },
             {
               "chord": "A",
-              "lyric": "soul. "
+              "lyric": "O "
             },
             {
               "chord": "B",
-              "lyric": " "
+              "lyric": "my "
             },
             {
               "chord": "C#m",
-              "lyric": ""
+              "lyric": "soul.  "
             }
           ],
-          "raw": "[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]"
+          "raw": "Sing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  "
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "I'll "
+            },
+            {
               "chord": "A",
-              "lyric": "I'll wor"
+              "lyric": "worship Your ho"
             },
             {
               "chord": "B",
-              "lyric": "ship Your "
+              "lyric": "ly na"
             },
             {
               "chord": "A/E",
-              "lyric": "holy "
+              "lyric": "me. "
             },
             {
               "chord": "E",
-              "lyric": "name."
+              "lyric": ""
             }
           ],
-          "raw": "[A]I'll wor[B]ship Your [A/E]holy [E]name."
+          "raw": "I'll [A]worship Your ho[B]ly na[A/E]me. [E]"
         },
         {
           "tokens": [
@@ -181,8 +193,12 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "The "
+            },
+            {
               "chord": "A",
-              "lyric": "The sun comes "
+              "lyric": "sun comes "
             },
             {
               "chord": "E",
@@ -190,14 +206,14 @@
             },
             {
               "chord": "B",
-              "lyric": "new day "
+              "lyric": "new day d"
             },
             {
               "chord": "C#m",
-              "lyric": "dawning;"
+              "lyric": "awning;"
             }
           ],
-          "raw": "[A]The sun comes [E]up, it's a [B]new day [C#m]dawning;"
+          "raw": "The [A]sun comes [E]up, it's a [B]new day d[C#m]awning;"
         },
         {
           "tokens": [
@@ -207,18 +223,18 @@
             },
             {
               "chord": "E",
-              "lyric": "sing Your "
+              "lyric": "sing Your so"
             },
             {
               "chord": "B",
-              "lyric": "song a"
+              "lyric": "ng again"
             },
             {
               "chord": "C#m",
-              "lyric": "gain."
+              "lyric": "."
             }
           ],
-          "raw": "[A]It's time to [E]sing Your [B]song a[C#m]gain."
+          "raw": "[A]It's time to [E]sing Your so[B]ng again[C#m]."
         },
         {
           "tokens": [
@@ -232,24 +248,24 @@
             },
             {
               "chord": "B",
-              "lyric": "ever lies be"
+              "lyric": "ever lies befo"
             },
             {
               "chord": "C#m",
-              "lyric": "fore me,"
+              "lyric": "re me,"
             }
           ],
-          "raw": "[A]Whatever may [E]pass, and what[B]ever lies be[C#m]fore me,"
+          "raw": "[A]Whatever may [E]pass, and what[B]ever lies befo[C#m]re me,"
         },
         {
           "tokens": [
             {
               "chord": "A2",
-              "lyric": "Let me be "
+              "lyric": "Let me be s"
             },
             {
               "chord": "E",
-              "lyric": "singing when the "
+              "lyric": "inging when the "
             },
             {
               "chord": "Bsus4",
@@ -261,18 +277,18 @@
             },
             {
               "chord": "E",
-              "lyric": "comes. "
+              "lyric": "come"
             },
             {
               "chord": "Esus4",
-              "lyric": " "
+              "lyric": "s.    "
             },
             {
               "chord": "E",
-              "lyric": ""
+              "lyric": "  "
             }
           ],
-          "raw": "[A2]Let me be [E]singing when the [Bsus4]even[B]ing [E]comes. [Esus4] [E]"
+          "raw": "[A2]Let me be s[E]inging when the [Bsus4]even[B]ing [E]come[Esus4]s.    [E]  "
         },
         {
           "tokens": [
@@ -291,23 +307,27 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Bless the"
+            },
+            {
               "chord": "A",
-              "lyric": "Bless the "
+              "lyric": " Lord, O my"
             },
             {
               "chord": "E",
-              "lyric": "Lord, O my "
+              "lyric": " soul,"
             },
             {
               "chord": "B/D#",
-              "lyric": "soul, O my "
+              "lyric": " O my"
             },
             {
               "chord": "C#m",
-              "lyric": "soul,"
+              "lyric": " soul,"
             }
           ],
-          "raw": "[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,"
+          "raw": "Bless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,"
         },
         {
           "tokens": [
@@ -333,48 +353,56 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Sing like"
+            },
+            {
               "chord": "A",
-              "lyric": "Sing like "
+              "lyric": " never be"
             },
             {
               "chord": "C#m",
-              "lyric": "never before, O my "
+              "lyric": "fore, "
             },
             {
               "chord": "A",
-              "lyric": "soul. "
+              "lyric": "O "
             },
             {
               "chord": "B",
-              "lyric": " "
+              "lyric": "my "
             },
             {
               "chord": "C#m",
-              "lyric": ""
+              "lyric": "soul.  "
             }
           ],
-          "raw": "[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]"
+          "raw": "Sing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  "
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "I'll "
+            },
+            {
               "chord": "A",
-              "lyric": "I'll wor"
+              "lyric": "worship Your ho"
             },
             {
               "chord": "B",
-              "lyric": "ship Your "
+              "lyric": "ly na"
             },
             {
               "chord": "A/E",
-              "lyric": "holy "
+              "lyric": "me. "
             },
             {
               "chord": "E",
-              "lyric": "name."
+              "lyric": ""
             }
           ],
-          "raw": "[A]I'll wor[B]ship Your [A/E]holy [E]name."
+          "raw": "I'll [A]worship Your ho[B]ly na[A/E]me. [E]"
         },
         {
           "tokens": [
@@ -393,8 +421,12 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "You're"
+            },
+            {
               "chord": "A",
-              "lyric": "You're rich in "
+              "lyric": " rich in "
             },
             {
               "chord": "E",
@@ -409,13 +441,17 @@
               "lyric": "anger."
             }
           ],
-          "raw": "[A]You're rich in [E]love, and You're [B]slow to [C#m]anger."
+          "raw": "You're[A] rich in [E]love, and You're [B]slow to [C#m]anger."
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Your"
+            },
+            {
               "chord": "A",
-              "lyric": "Your name is "
+              "lyric": " name is "
             },
             {
               "chord": "E",
@@ -430,13 +466,17 @@
               "lyric": "kind."
             }
           ],
-          "raw": "[A]Your name is [E]great, and Your [B]heart is [C#m]kind."
+          "raw": "Your[A] name is [E]great, and Your [B]heart is [C#m]kind."
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "For"
+            },
+            {
               "chord": "A",
-              "lyric": "For all Your "
+              "lyric": " all Your "
             },
             {
               "chord": "E",
@@ -451,7 +491,7 @@
               "lyric": "singing;"
             }
           ],
-          "raw": "[A]For all Your [E]goodness, I will [B]keep on [C#m]singing;"
+          "raw": "For[A] all Your [E]goodness, I will [B]keep on [C#m]singing;"
         },
         {
           "tokens": [
@@ -465,26 +505,26 @@
             },
             {
               "chord": "Bsus4",
-              "lyric": "heart to "
+              "lyric": "heart "
             },
             {
               "chord": "B",
-              "lyric": "find. "
+              "lyric": "to "
             },
             {
               "chord": "E",
-              "lyric": " "
+              "lyric": "find"
             },
             {
               "chord": "Esus4",
-              "lyric": " "
+              "lyric": ".    "
             },
             {
               "chord": "E",
               "lyric": ""
             }
           ],
-          "raw": "[A2]Ten thousand [E]reasons for my [Bsus4]heart to [B]find. [E] [Esus4] [E]"
+          "raw": "[A2]Ten thousand [E]reasons for my [Bsus4]heart [B]to [E]find[Esus4].    [E]"
         },
         {
           "tokens": [
@@ -503,23 +543,27 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Bless the"
+            },
+            {
               "chord": "A",
-              "lyric": "Bless the "
+              "lyric": " Lord, O my"
             },
             {
               "chord": "E",
-              "lyric": "Lord, O my "
+              "lyric": " soul,"
             },
             {
               "chord": "B/D#",
-              "lyric": "soul, O my "
+              "lyric": " O my"
             },
             {
               "chord": "C#m",
-              "lyric": "soul,"
+              "lyric": " soul,"
             }
           ],
-          "raw": "[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,"
+          "raw": "Bless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,"
         },
         {
           "tokens": [
@@ -545,48 +589,56 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Sing like"
+            },
+            {
               "chord": "A",
-              "lyric": "Sing like "
+              "lyric": " never be"
             },
             {
               "chord": "C#m",
-              "lyric": "never before, O my "
+              "lyric": "fore, "
             },
             {
               "chord": "A",
-              "lyric": "soul. "
+              "lyric": "O "
             },
             {
               "chord": "B",
-              "lyric": " "
+              "lyric": "my "
             },
             {
               "chord": "C#m",
-              "lyric": ""
+              "lyric": "soul.  "
             }
           ],
-          "raw": "[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]"
+          "raw": "Sing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  "
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "I'll "
+            },
+            {
               "chord": "A",
-              "lyric": "I'll wor"
+              "lyric": "worship Your ho"
             },
             {
               "chord": "B",
-              "lyric": "ship Your "
+              "lyric": "ly na"
             },
             {
               "chord": "A/E",
-              "lyric": "holy "
+              "lyric": "me. "
             },
             {
               "chord": "E",
-              "lyric": "name."
+              "lyric": ""
             }
           ],
-          "raw": "[A]I'll wor[B]ship Your [A/E]holy [E]name."
+          "raw": "I'll [A]worship Your ho[B]ly na[A/E]me. [E]"
         },
         {
           "tokens": [
@@ -605,29 +657,37 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "And"
+            },
+            {
               "chord": "A",
-              "lyric": "And on that "
+              "lyric": " on that "
             },
             {
               "chord": "E",
-              "lyric": "day when my "
+              "lyric": "day when my s"
             },
             {
               "chord": "B",
-              "lyric": "strength is "
+              "lyric": "trength is f"
             },
             {
               "chord": "C#m",
-              "lyric": "failing,"
+              "lyric": "ailing,"
             }
           ],
-          "raw": "[A]And on that [E]day when my [B]strength is [C#m]failing,"
+          "raw": "And[A] on that [E]day when my s[B]trength is f[C#m]ailing,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "The "
+            },
+            {
               "chord": "A",
-              "lyric": "The end draws "
+              "lyric": "end draws "
             },
             {
               "chord": "E",
@@ -642,28 +702,28 @@
               "lyric": "come;"
             }
           ],
-          "raw": "[A]The end draws [E]near, and my [B]time has [C#m]come;"
+          "raw": "The [A]end draws [E]near, and my [B]time has [C#m]come;"
         },
         {
           "tokens": [
             {
               "chord": "A",
-              "lyric": "Still my soul will "
+              "lyric": "Still my "
             },
             {
               "chord": "E",
-              "lyric": "sing Your praise un"
+              "lyric": "soul will sing Your "
             },
             {
               "chord": "B",
-              "lyric": "ending: "
+              "lyric": "praise unen"
             },
             {
               "chord": "C#m",
-              "lyric": ""
+              "lyric": "ding: "
             }
           ],
-          "raw": "[A]Still my soul will [E]sing Your praise un[B]ending: [C#m]"
+          "raw": "[A]Still my [E]soul will sing Your [B]praise unen[C#m]ding: "
         },
         {
           "tokens": [
@@ -673,30 +733,30 @@
             },
             {
               "chord": "E",
-              "lyric": "years and then "
+              "lyric": "years and then fo"
             },
             {
               "chord": "Bsus4",
-              "lyric": "fore"
+              "lyric": "r - - "
             },
             {
               "chord": "B",
-              "lyric": "ver"
+              "lyric": "ev"
             },
             {
               "chord": "E",
-              "lyric": "more! "
+              "lyric": "ermor"
             },
             {
               "chord": "Esus4",
-              "lyric": " "
+              "lyric": "e!    "
             },
             {
               "chord": "E",
               "lyric": ""
             }
           ],
-          "raw": "[A2]Ten thousand [E]years and then [Bsus4]fore[B]ver[E]more! [Esus4] [E]"
+          "raw": "[A2]Ten thousand [E]years and then fo[Bsus4]r - - [B]ev[E]ermor[Esus4]e!    [E]"
         },
         {
           "tokens": [
@@ -715,23 +775,27 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Bless the"
+            },
+            {
               "chord": "A",
-              "lyric": "Bless the "
+              "lyric": " Lord, O my"
             },
             {
               "chord": "E",
-              "lyric": "Lord, O my "
+              "lyric": " soul,"
             },
             {
               "chord": "B/D#",
-              "lyric": "soul, O my "
+              "lyric": " O my"
             },
             {
               "chord": "C#m",
-              "lyric": "soul,"
+              "lyric": " soul,"
             }
           ],
-          "raw": "[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,"
+          "raw": "Bless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,"
         },
         {
           "tokens": [
@@ -757,44 +821,56 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Sing like"
+            },
+            {
               "chord": "A",
-              "lyric": "Sing like "
+              "lyric": " never be"
             },
             {
               "chord": "C#m",
-              "lyric": "never before, O my "
+              "lyric": "fore, "
             },
             {
               "chord": "A",
-              "lyric": "soul. "
+              "lyric": "O "
             },
             {
               "chord": "B",
-              "lyric": " "
+              "lyric": "my "
             },
             {
               "chord": "C#m",
-              "lyric": ""
+              "lyric": "soul.  "
             }
           ],
-          "raw": "[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]"
+          "raw": "Sing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  "
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "I'll "
+            },
+            {
               "chord": "A",
-              "lyric": "I'll wor"
+              "lyric": "worship Your ho"
             },
             {
               "chord": "B",
-              "lyric": "ship Your holy "
+              "lyric": "ly na"
+            },
+            {
+              "chord": "A/E",
+              "lyric": "me. "
             },
             {
               "chord": "E",
-              "lyric": "name."
+              "lyric": ""
             }
           ],
-          "raw": "[A]I'll wor[B]ship Your holy [E]name."
+          "raw": "I'll [A]worship Your ho[B]ly na[A/E]me. [E]"
         },
         {
           "tokens": [
@@ -813,40 +889,48 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Yes, I will"
+            },
+            {
               "chord": "A",
-              "lyric": "Yes, I will "
+              "lyric": " worship Your"
             },
             {
               "chord": "B",
-              "lyric": "worship Your holy "
+              "lyric": " holy "
             },
             {
               "chord": "C#m",
               "lyric": "name."
             }
           ],
-          "raw": "[A]Yes, I will [B]worship Your holy [C#m]name."
+          "raw": "Yes, I will[A] worship Your[B] holy [C#m]name."
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Lord, I'll"
+            },
+            {
               "chord": "A",
-              "lyric": "Lord, I'll "
+              "lyric": " worship Your"
             },
             {
               "chord": "B",
-              "lyric": "worship Your holy "
+              "lyric": " holy n"
             },
             {
               "chord": "E",
-              "lyric": "name."
+              "lyric": "ame."
             }
           ],
-          "raw": "[A]Lord, I'll [B]worship Your holy [E]name."
+          "raw": "Lord, I'll[A] worship Your[B] holy n[E]ame."
         }
       ]
     }
   ],
   "sourcePath": "songs/10000-reasons.pro",
-  "source": "{title: 10,000 Reasons}\n{key: E}\n\n{section: Intro}\n[A] [E] [B/D#] [C#m]\n[A] [E] [Bsus4] [B]\n\n{section: Chorus}\n[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\n[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]\n[A]I'll wor[B]ship Your [A/E]holy [E]name.\n\n{section: Verse 1}\n[A]The sun comes [E]up, it's a [B]new day [C#m]dawning;\n[A]It's time to [E]sing Your [B]song a[C#m]gain.\n[A]Whatever may [E]pass, and what[B]ever lies be[C#m]fore me,\n[A2]Let me be [E]singing when the [Bsus4]even[B]ing [E]comes. [Esus4] [E]\n\n{section: Chorus}\n[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\n[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]\n[A]I'll wor[B]ship Your [A/E]holy [E]name.\n\n{section: Verse 2}\n[A]You're rich in [E]love, and You're [B]slow to [C#m]anger.\n[A]Your name is [E]great, and Your [B]heart is [C#m]kind.\n[A]For all Your [E]goodness, I will [B]keep on [C#m]singing;\n[A2]Ten thousand [E]reasons for my [Bsus4]heart to [B]find. [E] [Esus4] [E]\n\n{section: Chorus}\n[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\n[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]\n[A]I'll wor[B]ship Your [A/E]holy [E]name.\n\n{section: Verse 3}\n[A]And on that [E]day when my [B]strength is [C#m]failing,\n[A]The end draws [E]near, and my [B]time has [C#m]come;\n[A]Still my soul will [E]sing Your praise un[B]ending: [C#m]\n[A2]Ten thousand [E]years and then [Bsus4]fore[B]ver[E]more! [Esus4] [E]\n\n{section: Chorus (x2)}\n[A]Bless the [E]Lord, O my [B/D#]soul, O my [C#m]soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\n[A]Sing like [C#m]never before, O my [A]soul. [B] [C#m]\n[A]I'll wor[B]ship Your holy [E]name.\n\n{section: Ending}\n[A]Yes, I will [B]worship Your holy [C#m]name.\n[A]Lord, I'll [B]worship Your holy [E]name."
+  "source": "{title: 10,000 Reasons}\n{key: E}\n\n{section: Intro}\n[A]   [E]   [B/D#]     [C#m]\n[A]   [E]   [Bsus4]     [B]\n\n{section: Chorus}\nBless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\nSing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  \nI'll [A]worship Your ho[B]ly na[A/E]me. [E]\n\n{section: Verse 1}\nThe [A]sun comes [E]up, it's a [B]new day d[C#m]awning;\n[A]It's time to [E]sing Your so[B]ng again[C#m].\n[A]Whatever may [E]pass, and what[B]ever lies befo[C#m]re me,\n[A2]Let me be s[E]inging when the [Bsus4]even[B]ing [E]come[Esus4]s.    [E]  \n\n{section: Chorus}\nBless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\nSing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  \nI'll [A]worship Your ho[B]ly na[A/E]me. [E]\n\n{section: Verse 2}\nYou're[A] rich in [E]love, and You're [B]slow to [C#m]anger.\nYour[A] name is [E]great, and Your [B]heart is [C#m]kind.\nFor[A] all Your [E]goodness, I will [B]keep on [C#m]singing;\n[A2]Ten thousand [E]reasons for my [Bsus4]heart [B]to [E]find[Esus4].    [E]\n\n{section: Chorus}\nBless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\nSing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  \nI'll [A]worship Your ho[B]ly na[A/E]me. [E]\n\n{section: Verse 3}\nAnd[A] on that [E]day when my s[B]trength is f[C#m]ailing,\nThe [A]end draws [E]near, and my [B]time has [C#m]come;\n[A]Still my [E]soul will sing Your [B]praise unen[C#m]ding: \n[A2]Ten thousand [E]years and then fo[Bsus4]r - - [B]ev[E]ermor[Esus4]e!    [E]\n\n{section: Chorus (x2)}\nBless the[A] Lord, O my[E] soul,[B/D#] O my[C#m] soul,\n[A]Worship His [E]holy [Bsus4]name. [B]\nSing like[A] never be[C#m]fore, [A]O [B]my [C#m]soul.  \nI'll [A]worship Your ho[B]ly na[A/E]me. [E]\n\n{section: Ending}\nYes, I will[A] worship Your[B] holy [C#m]name.\nLord, I'll[A] worship Your[B] holy n[E]ame."
 }
