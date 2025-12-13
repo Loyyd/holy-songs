@@ -41,29 +41,53 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Put your "
+            },
+            {
               "chord": "Gm",
-              "lyric": "Put your hand to the plough, hold on."
+              "lyric": "hand to the plo"
+            },
+            {
+              "chord": "A7",
+              "lyric": "ugh, hold on"
+            },
+            {
+              "chord": "Dm",
+              "lyric": "."
             }
           ],
-          "raw": "[Gm]Put your hand to the plough, hold on."
+          "raw": "Put your [Gm]hand to the plo[A7]ugh, hold on[Dm]."
         },
         {
           "tokens": [
             {
-              "chord": "A7",
+              "chord": null,
               "lyric": "The lesson's clear in history, we are sure you will agree,"
             }
           ],
-          "raw": "[A7]The lesson's clear in history, we are sure you will agree,"
+          "raw": "The lesson's clear in history, we are sure you will agree,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Put your "
+            },
+            {
               "chord": "Dm",
-              "lyric": "Put your hand to the plough, hold on."
+              "lyric": "hand to the plo"
+            },
+            {
+              "chord": "A7",
+              "lyric": "ugh, hold on"
+            },
+            {
+              "chord": "Dm",
+              "lyric": "."
             }
           ],
-          "raw": "[Dm]Put your hand to the plough, hold on."
+          "raw": "Put your [Dm]hand to the plo[A7]ugh, hold on[Dm]."
         },
         {
           "tokens": [
@@ -73,42 +97,79 @@
             }
           ],
           "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "F",
+              "lyric": "Hold on, hold on"
+            },
+            {
+              "chord": "Dm",
+              "lyric": ","
+            }
+          ],
+          "raw": "[F]Hold on, hold on[Dm],"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Put your h"
+            },
+            {
+              "chord": "G7",
+              "lyric": "and to the plo"
+            },
+            {
+              "chord": "A7",
+              "lyric": "ugh, hold o"
+            },
+            {
+              "chord": "Dm",
+              "lyric": "n,"
+            }
+          ],
+          "raw": "Put your h[G7]and to the plo[A7]ugh, hold o[Dm]n,"
         },
         {
           "tokens": [
             {
               "chord": "F",
-              "lyric": "Hold on, hold on,"
-            }
-          ],
-          "raw": "[F]Hold on, hold on,"
-        },
-        {
-          "tokens": [
+              "lyric": "Hold on, hold on"
+            },
             {
               "chord": "Dm",
-              "lyric": "Put your hand to the plough, hold on,"
+              "lyric": ","
             }
           ],
-          "raw": "[Dm]Put your hand to the plough, hold on,"
+          "raw": "[F]Hold on, hold on[Dm],"
         },
         {
           "tokens": [
             {
-              "chord": "G7",
-              "lyric": "Hold on, hold on,"
-            }
-          ],
-          "raw": "[G7]Hold on, hold on,"
-        },
-        {
-          "tokens": [
+              "chord": null,
+              "lyric": "Put your h"
+            },
+            {
+              "chord": "Gm",
+              "lyric": "and to the plou"
+            },
             {
               "chord": "A7",
-              "lyric": "Put your hand to the plough, hold on."
+              "lyric": "gh, hold on"
+            },
+            {
+              "chord": "Dm",
+              "lyric": "."
             }
           ],
-          "raw": "[A7]Put your hand to the plough, hold on."
+          "raw": "Put your h[Gm]and to the plou[A7]gh, hold on[Dm]."
         },
         {
           "tokens": [
@@ -118,42 +179,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "Jacob laboured many years, shedding floods and floods of tears,"
             }
           ],
-          "raw": "[Dm]Jacob laboured many years, shedding floods and floods of tears,"
+          "raw": "Jacob laboured many years, shedding floods and floods of tears,"
         },
         {
           "tokens": [
             {
-              "chord": "Gm",
+              "chord": null,
               "lyric": "Put your hand to the plough, hold on."
             }
           ],
-          "raw": "[Gm]Put your hand to the plough, hold on."
+          "raw": "Put your hand to the plough, hold on."
         },
         {
           "tokens": [
             {
-              "chord": "A7",
+              "chord": null,
               "lyric": "Every price he freely paid, so foundation could be laid,"
             }
           ],
-          "raw": "[A7]Every price he freely paid, so foundation could be laid,"
+          "raw": "Every price he freely paid, so foundation could be laid,"
         },
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "Put your hand to the plough, hold on."
             }
           ],
-          "raw": "[Dm]Put your hand to the plough, hold on."
+          "raw": "Put your hand to the plough, hold on."
         },
         {
           "tokens": [
@@ -163,51 +229,56 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "Moses went to Pharaoh's throne,"
             }
           ],
-          "raw": "[Dm]Moses went to Pharaoh's throne,"
+          "raw": "Moses went to Pharaoh's throne,"
         },
         {
           "tokens": [
             {
-              "chord": "Gm",
+              "chord": null,
               "lyric": "said, 'My people must go home!'"
             }
           ],
-          "raw": "[Gm]said, 'My people must go home!'"
+          "raw": "said, 'My people must go home!'"
         },
         {
           "tokens": [
             {
-              "chord": "A7",
+              "chord": null,
               "lyric": "Put your hand to the plough, hold on."
             }
           ],
-          "raw": "[A7]Put your hand to the plough, hold on."
+          "raw": "Put your hand to the plough, hold on."
         },
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "He persisted to the end, so Pharaoh could not defend,"
             }
           ],
-          "raw": "[Dm]He persisted to the end, so Pharaoh could not defend,"
+          "raw": "He persisted to the end, so Pharaoh could not defend,"
         },
         {
           "tokens": [
             {
-              "chord": "Gm",
+              "chord": null,
               "lyric": "Put your hand to the plough, hold on."
             }
           ],
-          "raw": "[Gm]Put your hand to the plough, hold on."
+          "raw": "Put your hand to the plough, hold on."
         },
         {
           "tokens": [
@@ -217,42 +288,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "Jesus hung upon the cross, and it seemed that all was lost,"
             }
           ],
-          "raw": "[Dm]Jesus hung upon the cross, and it seemed that all was lost,"
+          "raw": "Jesus hung upon the cross, and it seemed that all was lost,"
         },
         {
           "tokens": [
             {
-              "chord": "Gm",
+              "chord": null,
               "lyric": "Put your hand to the plough, hold on."
             }
           ],
-          "raw": "[Gm]Put your hand to the plough, hold on."
+          "raw": "Put your hand to the plough, hold on."
         },
         {
           "tokens": [
             {
-              "chord": "A7",
+              "chord": null,
               "lyric": "But his death was not in vain, and God started work again,"
             }
           ],
-          "raw": "[A7]But his death was not in vain, and God started work again,"
+          "raw": "But his death was not in vain, and God started work again,"
         },
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "Put your hand to the plough, hold on."
             }
           ],
-          "raw": "[Dm]Put your hand to the plough, hold on."
+          "raw": "Put your hand to the plough, hold on."
         },
         {
           "tokens": [
@@ -267,5 +343,5 @@
     }
   ],
   "sourcePath": "songs/put-your-hand-to-the-plough.pro",
-  "source": "{title: Put Your Hand to the Plough}\n{key: Dm}\n\n{section: Verse 1}\n[Dm]If you want to do God's will,\nYou must struggle to fulfill,\n[Gm]Put your hand to the plough, hold on.\n[A7]The lesson's clear in history, we are sure you will agree,\n[Dm]Put your hand to the plough, hold on.\n\n{{section: Chorus}\n[F]Hold on, hold on,\n[Dm]Put your hand to the plough, hold on,\n[G7]Hold on, hold on,\n[A7]Put your hand to the plough, hold on.\n\n{{section: Verse 2}\n[Dm]Jacob laboured many years, shedding floods and floods of tears,\n[Gm]Put your hand to the plough, hold on.\n[A7]Every price he freely paid, so foundation could be laid,\n[Dm]Put your hand to the plough, hold on.\n\n{{section: Verse 3}\n[Dm]Moses went to Pharaoh's throne,\n[Gm]said, 'My people must go home!'\n[A7]Put your hand to the plough, hold on.\n[Dm]He persisted to the end, so Pharaoh could not defend,\n[Gm]Put your hand to the plough, hold on.\n\n{{section: Verse 4}\n[Dm]Jesus hung upon the cross, and it seemed that all was lost,\n[Gm]Put your hand to the plough, hold on.\n[A7]But his death was not in vain, and God started work again,\n[Dm]Put your hand to the plough, hold on.\n"
+  "source": "{title: Put Your Hand to the Plough}\n{key: Dm}\n\n{section: Verse 1}\n[Dm]If you want to do God's will,\nYou must struggle to fulfill,\nPut your [Gm]hand to the plo[A7]ugh, hold on[Dm].\nThe lesson's clear in history, we are sure you will agree,\nPut your [Dm]hand to the plo[A7]ugh, hold on[Dm].\n\n{section: Chorus}\n[F]Hold on, hold on[Dm],\nPut your h[G7]and to the plo[A7]ugh, hold o[Dm]n,\n[F]Hold on, hold on[Dm],\nPut your h[Gm]and to the plou[A7]gh, hold on[Dm].\n\n{section: Verse 2}\nJacob laboured many years, shedding floods and floods of tears,\nPut your hand to the plough, hold on.\nEvery price he freely paid, so foundation could be laid,\nPut your hand to the plough, hold on.\n\n{section: Verse 3}\nMoses went to Pharaoh's throne,\nsaid, 'My people must go home!'\nPut your hand to the plough, hold on.\nHe persisted to the end, so Pharaoh could not defend,\nPut your hand to the plough, hold on.\n\n{section: Verse 4}\nJesus hung upon the cross, and it seemed that all was lost,\nPut your hand to the plough, hold on.\nBut his death was not in vain, and God started work again,\nPut your hand to the plough, hold on.\n"
 }

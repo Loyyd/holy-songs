@@ -54,19 +54,19 @@ Where [G]you invest your [D]love, [Bm]you invest your [D]li[G]fe[A]
 
 {section: Chorus (alternate)}
        
-[D]Awak[Gmaj7]e    m[A]y s[D]oul, [A]awak[Gmaj7]e   my[A] so[D]ul
+[D]Awak[Gmaj7]e    m[A]y[D] soul, [A]aw[Gmaj7]ake   my[A] so[D]ul
 
    
-[A]Awak[Gmaj7]e    m[A]y s[Bm]oul
+[A]Awak[Gmaj7]e    m[A]y[Bm] soul
 
        
 [G5]You [F#5]were [E5]made t[D5]o m[G5]eet [F#5]your[E5] ma[A5]ker[D]
 
        
-[D]Awak[Gmaj7]e    m[A]y s[D]oul, [A]awak[Gmaj7]e   my[A] so[D]ul
+[D]Awa[Gmaj7]ke    m[A]y[D] soul, [A]aw[Gmaj7]ake   my[A] so[D]ul
 
    
-[A]Awak[Gmaj7]e    m[A]y s[Bm]oul
+[A]Awa[Gmaj7]ke    m[A]y[Bm] soul
 
        
 [G5]You [F#5]were [E5]made t[D5]o m[G5]eet [F#5]your[E5] ma[D5]ker

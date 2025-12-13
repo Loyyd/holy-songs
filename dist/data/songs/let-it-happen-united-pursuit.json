@@ -18,7 +18,7 @@
       ]
     },
     {
-      "name": "Chorus",
+      "name": "Chorus 3x",
       "lines": [
         {
           "tokens": [
@@ -50,14 +50,14 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "That's how he"
+              "lyric": "That's how he "
             },
             {
               "chord": "Am",
-              "lyric": " made you"
+              "lyric": "made you"
             }
           ],
-          "raw": "That's how he[Am] made you"
+          "raw": "That's how he [Am]made you"
         },
         {
           "tokens": [
@@ -330,23 +330,14 @@
             },
             {
               "chord": "F",
-              "lyric": "ive "
-            }
-          ],
-          "raw": "Be al[F]ive "
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Be a"
+              "lyric": "ive   Be a"
             },
             {
               "chord": "C",
               "lyric": "live "
             }
           ],
-          "raw": "Be a[C]live "
+          "raw": "Be al[F]ive   Be a[C]live "
         },
         {
           "tokens": [
@@ -356,23 +347,14 @@
             },
             {
               "chord": "Am",
-              "lyric": "live "
-            }
-          ],
-          "raw": "Be a[Am]live "
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Be a"
+              "lyric": "live   Be a"
             },
             {
               "chord": "F",
               "lyric": "live"
             }
           ],
-          "raw": "Be a[F]live"
+          "raw": "Be a[Am]live   Be a[F]live"
         },
         {
           "tokens": [
@@ -382,23 +364,14 @@
             },
             {
               "chord": "F",
-              "lyric": "live "
-            }
-          ],
-          "raw": "Come a[F]live "
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Come a"
+              "lyric": "live   Come a"
             },
             {
               "chord": "C",
               "lyric": "live "
             }
           ],
-          "raw": "Come a[C]live "
+          "raw": "Come a[F]live   Come a[C]live "
         },
         {
           "tokens": [
@@ -408,23 +381,14 @@
             },
             {
               "chord": "Am",
-              "lyric": "live "
-            }
-          ],
-          "raw": "Come a[Am]live "
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Come a"
+              "lyric": "live   Come a"
             },
             {
               "chord": "F",
               "lyric": "live "
             }
           ],
-          "raw": "Come a[F]live "
+          "raw": "Come a[Am]live   Come a[F]live "
         },
         {
           "tokens": [
@@ -434,23 +398,14 @@
             },
             {
               "chord": "F",
-              "lyric": "live "
-            }
-          ],
-          "raw": "To come a[F]live "
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "To come a"
+              "lyric": "live   To come a"
             },
             {
               "chord": "C",
               "lyric": "live "
             }
           ],
-          "raw": "To come a[C]live "
+          "raw": "To come a[F]live   To come a[C]live "
         },
         {
           "tokens": [
@@ -460,23 +415,14 @@
             },
             {
               "chord": "Am",
-              "lyric": "live "
-            }
-          ],
-          "raw": "To come a[Am]live "
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "To come a"
+              "lyric": "live   To come a"
             },
             {
               "chord": "F",
               "lyric": "live "
             }
           ],
-          "raw": "To come a[F]live "
+          "raw": "To come a[Am]live   To come a[F]live "
         },
         {
           "tokens": [
@@ -486,6 +432,102 @@
             }
           ],
           "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus 3x",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You're full of "
+            },
+            {
+              "chord": "F",
+              "lyric": "life now"
+            }
+          ],
+          "raw": "You're full of [F]life now"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And full of "
+            },
+            {
+              "chord": "C",
+              "lyric": "passion"
+            }
+          ],
+          "raw": "And full of [C]passion"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That's how he "
+            },
+            {
+              "chord": "Am",
+              "lyric": "made you"
+            }
+          ],
+          "raw": "That's how he [Am]made you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Just let it "
+            },
+            {
+              "chord": "G",
+              "lyric": "happen"
+            }
+          ],
+          "raw": "Just let it [G]happen"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge 2x",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": "   "
+            },
+            {
+              "chord": "F",
+              "lyric": "   "
+            },
+            {
+              "chord": "C/E",
+              "lyric": "   "
+            },
+            {
+              "chord": "G",
+              "lyric": ""
+            }
+          ],
+          "raw": "[C]   [C]   [F]   [C/E]   [G]"
         },
         {
           "tokens": [
@@ -513,7 +555,7 @@
         {
           "tokens": [
             {
-              "chord": "C",
+              "chord": "G",
               "lyric": "Ba"
             },
             {
@@ -521,7 +563,7 @@
               "lyric": "ck to the beginning "
             }
           ],
-          "raw": "[C]Ba[F]ck to the beginning "
+          "raw": "[G]Ba[F]ck to the beginning "
         },
         {
           "tokens": [
@@ -563,5 +605,5 @@
     }
   ],
   "sourcePath": "songs/let-it-happen.pro",
-  "source": "{title: Let It Happen - United Pursuit}\n{key: F}\n\n{section: Chorus}\nYou're full of [F]life now\nAnd full of [C]passion\nThat's how he[Am] made you\nJust let it [G]happen\n\n\n{section: Verse}\nAnd he calls [F]each one of [C]us\nBy our [Am]names to come [F]away \nAnd he w[F]hispers to your [C]heart\nTo let it g[Am]o and to be [F]alive\nYeah he c[F]alls each one of [C]us\nBy our [Am]names to come [F]away \nAnd he [F]whispers to your [C]heart\nTo let it[Am] go and to be [F]alive\n\n\n{section: Pre-Chorus}\nAnd he w[F]hispers to your [C]heart\nTo let it [Am]go and to be [F]alive\nAnd w[F]hispers to your [C]heart\nTo let it g[Am]o and to be [F]alive\nBe al[F]ive \nBe a[C]live \nBe a[Am]live \nBe a[F]live\nCome a[F]live \nCome a[C]live \nCome a[Am]live \nCome a[F]live \nTo come a[F]live \nTo come a[C]live \nTo come a[Am]live \nTo come a[F]live \n\n\n{section: Bridge}\n[C]So take me back \n[C]Ba[F]ck to the beginning \n[C/E]When I was young\n[G]Running through the fields with you\n\n"
+  "source": "{title: Let It Happen - United Pursuit}\n{key: F}\n\n{section: Chorus 3x}\nYou're full of [F]life now\nAnd full of [C]passion\nThat's how he [Am]made you\nJust let it [G]happen\n\n\n{section: Verse}\nAnd he calls [F]each one of [C]us\nBy our [Am]names to come [F]away \nAnd he w[F]hispers to your [C]heart\nTo let it g[Am]o and to be [F]alive\nYeah he c[F]alls each one of [C]us\nBy our [Am]names to come [F]away \nAnd he [F]whispers to your [C]heart\nTo let it[Am] go and to be [F]alive\n\n\n{section: Pre-Chorus}\nAnd he w[F]hispers to your [C]heart\nTo let it [Am]go and to be [F]alive\nAnd w[F]hispers to your [C]heart\nTo let it g[Am]o and to be [F]alive\nBe al[F]ive   Be a[C]live \nBe a[Am]live   Be a[F]live\nCome a[F]live   Come a[C]live \nCome a[Am]live   Come a[F]live \nTo come a[F]live   To come a[C]live \nTo come a[Am]live   To come a[F]live \n\n{section: Chorus 3x}\nYou're full of [F]life now\nAnd full of [C]passion\nThat's how he [Am]made you\nJust let it [G]happen\n\n{section: Bridge 2x}\n[C]   [C]   [F]   [C/E]   [G]\n\n{section: Bridge}\n[C]So take me back \n[G]Ba[F]ck to the beginning \n[C/E]When I was young\n[G]Running through the fields with you\n\n"
 }

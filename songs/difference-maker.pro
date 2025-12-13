@@ -6,7 +6,7 @@
 [E]  [A/E]    [E]  [A/E]    [E]
 
 {section: Verse 1}
-Yeah i[A/E]sn't it amazing how a man can find himself al[E]one
+Yeah i[A/E]sn't it amazing how a man can find himself al[E]one 
 [A/E]Call into the darkness for an answer that he's never k[E]nown
 Yeah, i[A/E]sn't it amazing how a god can take a broken [E]man
 Yeah, l[A/E]et him find a fortune, let him ruin it with his own two h[E]ands
@@ -39,7 +39,7 @@ Oh, [E]I am the only one that speaks to him
 And [A/E]I am the friendliest of friends of G[E]od
 
 {section: Interlude}
-[A/E]  [E]  [A/E]  [E] 
+[A/E]    [E]  [A/E]    [E] 
 
 {section: Verse 2}
 [A/E]I am on the fence about nearly everything I've seen

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Fuse from 'fuse.js';
 import { SongData, SongIndexEntry, SongLineToken } from './types';
-import { transposeTokens } from './lib/chords';
+import { transposeTokens, transposeChordProSource } from './lib/chords';
 import { parseChordPro } from './lib/parseChordPro';
 import { SongEditor } from './components/SongEditor';
 
@@ -61,12 +61,24 @@ function SongView({ song, transpose, highlightQuery, isContextSensitive }: { son
             
             return (
               <div className={`line ${hasAnyChord ? 'has-chords' : ''}`} key={`${song.id}-${sectionIdx}-line-${idx}`}>
-                {mergedTokens.map((token, i) => (
-                  <span key={i} className="token">
-                    {token.chord && <span className="chord">{token.chord}</span>}
-                    <span className="lyric">{highlightLyric(token.lyric)}</span>
-                  </span>
-                ))}
+                {mergedTokens.map((token, i) => {
+                  // Calculate minimum width needed for the chord to prevent overlap
+                  const chordLength = token.chord ? token.chord.length : 0;
+                  const lyricLength = token.lyric.length;
+                  // Add padding if chord is longer than lyric to prevent overlap
+                  const needsPadding = chordLength > lyricLength;
+                  const paddingAmount = needsPadding ? chordLength - lyricLength : 0;
+                  
+                  return (
+                    <span key={i} className="token">
+                      {token.chord && <span className="chord">{token.chord}</span>}
+                      <span className="lyric">
+                        {highlightLyric(token.lyric)}
+                        {needsPadding && <span className="chord-spacer">{'\u00A0'.repeat(paddingAmount)}</span>}
+                      </span>
+                    </span>
+                  );
+                })}
               </div>
             );
           })}
@@ -90,6 +102,35 @@ export default function App() {
     const saved = localStorage.getItem('starred-songs');
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
+  const [flagged, setFlagged] = useState<Set<string>>(new Set());
+  const [autoScroll, setAutoScroll] = useState(false);
+  const [scrollSpeed, setScrollSpeed] = useState(0.15); // Default subtle speed (pixels per frame)
+
+  // Autoscroll effect
+  useEffect(() => {
+    if (!autoScroll) return;
+    
+    let animationFrameId: number;
+    let accumulatedScroll = 0;
+    
+    const scroll = () => {
+      accumulatedScroll += scrollSpeed;
+      
+      // Only scroll when we've accumulated at least 1 pixel
+      if (accumulatedScroll >= 1) {
+        const pixelsToScroll = Math.floor(accumulatedScroll);
+        window.scrollBy(0, pixelsToScroll);
+        accumulatedScroll -= pixelsToScroll;
+      }
+      animationFrameId = requestAnimationFrame(scroll);
+    };
+    
+    animationFrameId = requestAnimationFrame(scroll);
+    
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [autoScroll, scrollSpeed]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/songs.index.json`, { cache: 'no-store' })
@@ -99,6 +140,16 @@ export default function App() {
         if (data.length > 0) setSelectedId(data[0].id);
       })
       .catch((err) => console.error(err));
+    
+    // Load flagged songs from backend
+    fetch('http://localhost:8000/api/flags')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.flagged) {
+          setFlagged(new Set(data.flagged));
+        }
+      })
+      .catch((err) => console.warn('Could not load flagged songs from backend:', err));
   }, []);
 
   useEffect(() => {
@@ -169,6 +220,50 @@ export default function App() {
     });
   };
 
+  const toggleFlag = (id: string) => {
+    const willBeFlagged = !flagged.has(id);
+    
+    // Optimistically update UI
+    setFlagged(prev => {
+      const next = new Set(prev);
+      if (willBeFlagged) {
+        next.add(id);
+      } else {
+        next.delete(id);
+      }
+      return next;
+    });
+    
+    // Sync with backend
+    fetch('http://localhost:8000/api/flags', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ song_id: id, flagged: willBeFlagged }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // Update with server's response to ensure consistency
+        if (data.flagged) {
+          setFlagged(new Set(data.flagged));
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to sync flag with backend:', err);
+        // Revert on error
+        setFlagged(prev => {
+          const next = new Set(prev);
+          if (willBeFlagged) {
+            next.delete(id);
+          } else {
+            next.add(id);
+          }
+          return next;
+        });
+      });
+  };
+
   const handleSelect = (id: string) => {
     setSelectedId(id);
     setTranspose(0);
@@ -205,11 +300,14 @@ export default function App() {
   const applyEdit = async (source: string = editText) => {
     if (!song) return;
     try {
-      const parsed = parseChordPro(source, song.sourcePath ?? 'inline');
+      // Apply transpose to the source before saving
+      const transposedSource = transposeChordProSource(source, transpose);
+      const parsed = parseChordPro(transposedSource, song.sourcePath ?? 'inline');
       setSong({ ...parsed, id: song.id });
-      setEditText(source);
+      setEditText(transposedSource);
       setEditError(null);
       setIsEditing(false);
+      setTranspose(0); // Reset transpose after applying
 
       // Save to backend
       try {
@@ -222,7 +320,7 @@ export default function App() {
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify({ content: source }),
+              body: JSON.stringify({ content: transposedSource }),
             });
             
             if (!response.ok) {
@@ -237,7 +335,7 @@ export default function App() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ content: source }),
+            body: JSON.stringify({ content: transposedSource }),
           });
           
           if (!response.ok) {
@@ -313,16 +411,28 @@ export default function App() {
                     <div style={{ fontWeight: 700 }}>{entry.title}</div>
                     <div style={{ fontSize: 13, opacity: 0.75 }}>Key: {entry.key ?? '—'}</div>
                   </div>
-                  <span
-                    className={`star-icon ${starred.has(entry.id) ? 'filled' : ''}`}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleStar(entry.id);
-                    }}
-                    title={starred.has(entry.id) ? 'Unstar song' : 'Star song'}
-                  >
-                    {starred.has(entry.id) ? '★' : '☆'}
-                  </span>
+                  <div style={{ display: 'flex', gap: '4px' }}>
+                    <span
+                      className={`star-icon ${starred.has(entry.id) ? 'filled' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleStar(entry.id);
+                      }}
+                      title={starred.has(entry.id) ? 'Unstar song' : 'Star song'}
+                    >
+                      {starred.has(entry.id) ? '★' : '☆'}
+                    </span>
+                    <span
+                      className={`flag-icon ${flagged.has(entry.id) ? 'filled' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleFlag(entry.id);
+                      }}
+                      title={flagged.has(entry.id) ? 'Unflag song' : 'Flag song'}
+                    >
+                      {flagged.has(entry.id) ? '🚩' : '⚑'}
+                    </span>
+                  </div>
                 </div>
               </button>
             </li>
@@ -345,6 +455,30 @@ export default function App() {
               <button onClick={() => setIsEditing((open) => !open)}>
                 {isEditing ? 'Close editor' : 'Edit chords/lyrics'}
               </button>
+              <button 
+                onClick={() => setAutoScroll(!autoScroll)}
+                style={{ 
+                  background: autoScroll ? '#0f172a' : '#f8fafc',
+                  color: autoScroll ? '#f8fafc' : '#0f172a'
+                }}
+              >
+                {autoScroll ? 'Stop scroll' : 'Autoscroll'}
+              </button>
+              {autoScroll && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexBasis: '100%', marginTop: '8px' }}>
+                  <label style={{ fontSize: '14px', whiteSpace: 'nowrap' }}>Speed:</label>
+                  <input
+                    type="range"
+                    min="0.05"
+                    max="0.5"
+                    step="0.05"
+                    value={scrollSpeed}
+                    onChange={(e) => setScrollSpeed(parseFloat(e.target.value))}
+                    style={{ flex: 1, padding: 0, height: '24px' }}
+                  />
+                  <span style={{ fontSize: '14px', minWidth: '40px' }}>{scrollSpeed.toFixed(2)}x</span>
+                </div>
+              )}
             </div>
             {isEditing ? (
               <div className="editor-container">

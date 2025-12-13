@@ -23,48 +23,52 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Sw"
+            },
+            {
               "chord": "D",
-              "lyric": "Swing low sweet "
+              "lyric": "ing low sweet "
             },
             {
               "chord": "G",
-              "lyric": "chari"
+              "lyric": "cha"
             },
             {
               "chord": "D",
-              "lyric": "ot, coming for to carry me "
+              "lyric": "riot, coming for to carry me "
             },
             {
               "chord": "A7",
               "lyric": "home,"
             }
           ],
-          "raw": "[D]Swing low sweet [G]chari[D]ot, coming for to carry me [A7]home,"
+          "raw": "Sw[D]ing low sweet [G]cha[D]riot, coming for to carry me [A7]home,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Swing "
+              "lyric": "Swing l"
             },
             {
               "chord": "Bm",
-              "lyric": "low sweet "
+              "lyric": "ow sweet "
             },
             {
               "chord": "G",
-              "lyric": "chari"
+              "lyric": "cha"
             },
             {
               "chord": "D",
-              "lyric": "ot, coming for to ca"
+              "lyric": "riot, coming for to ca"
             },
             {
               "chord": "A7",
               "lyric": "rry me home."
             }
           ],
-          "raw": "Swing [Bm]low sweet [G]chari[D]ot, coming for to ca[A7]rry me home."
+          "raw": "Swing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me home."
         },
         {
           "tokens": [
@@ -88,18 +92,18 @@
             },
             {
               "chord": "D",
-              "lyric": "oked over Jordan and "
+              "lyric": "oked over Jordan and wh"
             },
             {
               "chord": "G",
-              "lyric": "what did I see?"
+              "lyric": "at did I see?"
             },
             {
               "chord": "D",
               "lyric": ""
             }
           ],
-          "raw": "I lo[D]oked over Jordan and [G]what did I see?[D]"
+          "raw": "I lo[D]oked over Jordan and wh[G]at did I see?[D]"
         },
         {
           "tokens": [
@@ -315,5 +319,5 @@
     }
   ],
   "sourcePath": "songs/swing-low-sweet-chariot.pro",
-  "source": "{title: Swing Low, Sweet Chariot}\n{key: D}\n\n{section: Chorus}\n[D]Swing low sweet [G]chari[D]ot, coming for to carry me [A7]home,\nSwing [Bm]low sweet [G]chari[D]ot, coming for to ca[A7]rry me home.\n\n{section: Verse 1}\nI lo[D]oked over Jordan and [G]what did I see?[D]\nComing for to carr[A7]y me home.\nA [Bm]band of angels [C]coming aft[D]er me,\nComing for to car[A7]ry me ho[D]me.\n\n{section: Verse 2}\nIf you get there before I do,\nComing for to carry me home,\nJust tell my friends I'm coming there too,\nComing for to carry me home.\n\n{section: Verse 3}\nIf I get there before you do,\nComing for to carry me home.\nI'll dig a hole and pull you through,\nComing for to carry me home.\n\n{section: Verse 4}\nI'm sometimes up and sometimes down,\nComing for to carry me home.\nBut still my soul feels heavenly bound,\nComing for to carry me home.\n"
+  "source": "{title: Swing Low, Sweet Chariot}\n{key: D}\n\n{section: Chorus}\nSw[D]ing low sweet [G]cha[D]riot, coming for to carry me [A7]home,\nSwing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me home.\n\n{section: Verse 1}\nI lo[D]oked over Jordan and wh[G]at did I see?[D]\nComing for to carr[A7]y me home.\nA [Bm]band of angels [C]coming aft[D]er me,\nComing for to car[A7]ry me ho[D]me.\n\n{section: Verse 2}\nIf you get there before I do,\nComing for to carry me home,\nJust tell my friends I'm coming there too,\nComing for to carry me home.\n\n{section: Verse 3}\nIf I get there before you do,\nComing for to carry me home.\nI'll dig a hole and pull you through,\nComing for to carry me home.\n\n{section: Verse 4}\nI'm sometimes up and sometimes down,\nComing for to carry me home.\nBut still my soul feels heavenly bound,\nComing for to carry me home.\n"
 }

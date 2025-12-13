@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import os
 import subprocess
 import re
+import json
 
 app = FastAPI()
 
@@ -15,9 +16,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Path to the songs directory (relative to this file)
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+SONGS_DIR = os.path.join(BASE_DIR, "songs")
+FLAGGED_FILE = os.path.join(BASE_DIR, "backend", "flagged_songs.json")path.dirname(__file__), ".."))
 SONGS_DIR = os.path.join(BASE_DIR, "songs")
 
 def run_build_script():
@@ -39,8 +41,24 @@ def sanitize_filename(title: str) -> str:
     # Remove leading/trailing hyphens
     filename = filename.strip('-')
     return filename if filename else 'untitled-song'
-
 class SongContent(BaseModel):
+    content: str
+
+class FlagRequest(BaseModel):
+    song_id: str
+    flagged: bool
+
+def load_flagged_songs():
+    """Load flagged songs from file"""
+    if os.path.exists(FLAGGED_FILE):
+        with open(FLAGGED_FILE, 'r', encoding='utf-8') as f:
+            return set(json.load(f))
+    return set()
+
+def save_flagged_songs(flagged_songs: set):
+    """Save flagged songs to file"""
+    with open(FLAGGED_FILE, 'w', encoding='utf-8') as f:
+        json.dump(list(flagged_songs), f)t(BaseModel):
     content: str
 
 @app.get("/api/songs")
@@ -100,12 +118,31 @@ def get_song(filename: str):
     
     return {"content": content}
 
-@app.post("/api/songs/{filename}")
-def save_song(filename: str, song: SongContent, background_tasks: BackgroundTasks):
-    # Basic security check to prevent directory traversal
-    if ".." in filename or "/" in filename or "\\" in filename:
-         raise HTTPException(status_code=400, detail="Invalid filename")
+    
+    return {"message": "Song saved successfully and build triggered"}
 
+@app.get("/api/flags")
+def get_flagged_songs():
+    """Get list of flagged song IDs"""
+    flagged_songs = load_flagged_songs()
+    return {"flagged": list(flagged_songs)}
+
+@app.post("/api/flags")
+def toggle_flag(request: FlagRequest):
+    """Toggle flag status for a song"""
+    flagged_songs = load_flagged_songs()
+    
+    if request.flagged:
+        flagged_songs.add(request.song_id)
+    else:
+        flagged_songs.discard(request.song_id)
+    
+    save_flagged_songs(flagged_songs)
+    return {"message": "Flag updated successfully", "flagged": list(flagged_songs)}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     filepath = os.path.join(SONGS_DIR, filename)
     
     # Ensure we are writing to the songs directory

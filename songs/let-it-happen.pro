@@ -42,7 +42,7 @@ Just let it [G]happen
 
 {section: Bridge}
 [C]So take me back 
-[C]Ba[F]ck to the beginning 
+[G]Ba[F]ck to the beginning 
 [C/E]When I was young
 [G]Running through the fields with you
 

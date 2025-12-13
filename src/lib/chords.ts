@@ -41,3 +41,25 @@ export function transposeDelta(fromKey: string | undefined, toKey: string | unde
   if (from === -1 || to === -1) return 0;
   return to - from;
 }
+
+export function transposeChordProSource(source: string, steps: number): string {
+  if (steps === 0) return source;
+  
+  const lines = source.split(/\r?\n/);
+  const transposedLines = lines.map(line => {
+    // Handle {key: X} directive
+    const keyMatch = line.match(/^(\{\s*key:\s*)([A-G](?:#|b)?)(\s*\})$/i);
+    if (keyMatch) {
+      const [, prefix, key, suffix] = keyMatch;
+      const transposedKey = transposeRoot(key, steps);
+      return `${prefix}${transposedKey}${suffix}`;
+    }
+    
+    // Transpose chords in [brackets]
+    return line.replace(/\[([A-G](?:#|b)?[^\]]*)\]/g, (match, chord) => {
+      return `[${transposeChord(chord, steps)}]`;
+    });
+  });
+  
+  return transposedLines.join('\n');
+}
