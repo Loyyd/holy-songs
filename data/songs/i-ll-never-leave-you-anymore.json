@@ -110,37 +110,77 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "And what I'll do with this precious gift?"
+              "lyric": "And what I'll "
+            },
+            {
+              "chord": "C",
+              "lyric": "do with this "
+            },
+            {
+              "chord": "F",
+              "lyric": "precious "
+            },
+            {
+              "chord": "C",
+              "lyric": "gift?"
             }
           ],
-          "raw": "And what I'll do with this precious gift?"
+          "raw": "And what I'll [C]do with this [F]precious [C]gift?"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Shall I embrace it to myself?"
+              "lyric": "Shall I em"
+            },
+            {
+              "chord": "Am",
+              "lyric": "brace it to my"
+            },
+            {
+              "chord": "G",
+              "lyric": "self?"
             }
           ],
-          "raw": "Shall I embrace it to myself?"
+          "raw": "Shall I em[Am]brace it to my[G]self?"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Oh, no I can't, I would lose it sure;"
+              "lyric": "Oh, no I c"
+            },
+            {
+              "chord": "C",
+              "lyric": "an't, I would lose it "
+            },
+            {
+              "chord": "Am",
+              "lyric": "sure;"
             }
           ],
-          "raw": "Oh, no I can't, I would lose it sure;"
+          "raw": "Oh, no I c[C]an't, I would lose it [Am]sure;"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "It must be given if it's to endure."
+              "lyric": "It must be g"
+            },
+            {
+              "chord": "G",
+              "lyric": "iven if it's to e"
+            },
+            {
+              "chord": "C",
+              "lyric": "ndure.  "
+            },
+            {
+              "chord": "A7",
+              "lyric": ""
             }
           ],
-          "raw": "It must be given if it's to endure."
+          "raw": "It must be g[G]iven if it's to e[C]ndure.  [A7]"
         },
         {
           "tokens": [
@@ -246,37 +286,77 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "And together we'll build a world that's new."
+              "lyric": "And together we'll "
+            },
+            {
+              "chord": "D",
+              "lyric": "build a "
+            },
+            {
+              "chord": "G",
+              "lyric": "world that's "
+            },
+            {
+              "chord": "D",
+              "lyric": "new."
             }
           ],
-          "raw": "And together we'll build a world that's new."
+          "raw": "And together we'll [D]build a [G]world that's [D]new."
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "That's fit for kings and fit for queens;"
+              "lyric": "That's fit for k"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ings and fit for "
+            },
+            {
+              "chord": "A",
+              "lyric": "queens;"
             }
           ],
-          "raw": "That's fit for kings and fit for queens;"
+          "raw": "That's fit for k[Bm]ings and fit for [A]queens;"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "We'll raise them up to rule the land,"
+              "lyric": "We'll raise them "
+            },
+            {
+              "chord": "D",
+              "lyric": "up to rule the "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "land,"
             }
           ],
-          "raw": "We'll raise them up to rule the land,"
+          "raw": "We'll raise them [D]up to rule the [Bm]land,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "And place dominion in your hand."
+              "lyric": "And place domi"
+            },
+            {
+              "chord": "A",
+              "lyric": "nion in your h"
+            },
+            {
+              "chord": "D",
+              "lyric": "and.  "
+            },
+            {
+              "chord": "B7",
+              "lyric": ""
             }
           ],
-          "raw": "And place dominion in your hand."
+          "raw": "And place domi[A]nion in your h[D]and.  [B7]"
         },
         {
           "tokens": [
@@ -368,5 +448,5 @@
     }
   ],
   "sourcePath": "songs/ill-never-leave-you-anymore.pro",
-  "source": "{title: I'll Never Leave You Anymore}\n{key: D}\n\n{section: Verse 1}\nI'll never l[C]eave you [F]any[C]more, \nFor I have [Am]found in your bright [G]eyes\nA river of [C]love, a heart of [Am]gold,\nA peaceful [G]mind, a hand to [C]hold.\n\n{section: Verse 2}\nAnd what I'll do with this precious gift?\nShall I embrace it to myself?\nOh, no I can't, I would lose it sure;\nIt must be given if it's to endure.\n\n{section: Verse 3}\nAnd how will I u[D]se this [G]treasure [D]store?\nHow will I [Bm]share this wordless [A]joy?\nI'll greet all [D]men with a loving [Bm]heart;\nI'll speak the t[A]ruth with a clear [D]voice.\n\n{section: Verse 4}\nAnd together we'll build a world that's new.\nThat's fit for kings and fit for queens;\nWe'll raise them up to rule the land,\nAnd place dominion in your hand.\n\n{section: Verse 5}\nWe'll never [E]leave you [A]any[E]more, \nFor we have f[C#m]ound in Your bright [B]eyes\nA river of [E]love, a heart of g[C#m]old,\nA peaceful [B]mind, a hand to [E]hold."
+  "source": "{title: I'll Never Leave You Anymore}\n{key: D}\n\n{section: Verse 1}\nI'll never l[C]eave you [F]any[C]more, \nFor I have [Am]found in your bright [G]eyes\nA river of [C]love, a heart of [Am]gold,\nA peaceful [G]mind, a hand to [C]hold.\n\n{section: Verse 2}\nAnd what I'll [C]do with this [F]precious [C]gift?\nShall I em[Am]brace it to my[G]self?\nOh, no I c[C]an't, I would lose it [Am]sure;\nIt must be g[G]iven if it's to e[C]ndure.  [A7]\n\n{section: Verse 3}\nAnd how will I u[D]se this [G]treasure [D]store?\nHow will I [Bm]share this wordless [A]joy?\nI'll greet all [D]men with a loving [Bm]heart;\nI'll speak the t[A]ruth with a clear [D]voice.\n\n{section: Verse 4}\nAnd together we'll [D]build a [G]world that's [D]new.\nThat's fit for k[Bm]ings and fit for [A]queens;\nWe'll raise them [D]up to rule the [Bm]land,\nAnd place domi[A]nion in your h[D]and.  [B7]\n\n{section: Verse 5}\nWe'll never [E]leave you [A]any[E]more, \nFor we have f[C#m]ound in Your bright [B]eyes\nA river of [E]love, a heart of g[C#m]old,\nA peaceful [B]mind, a hand to [E]hold."
 }
