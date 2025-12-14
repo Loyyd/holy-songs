@@ -252,6 +252,104 @@
       ]
     },
     {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It's a new "
+            },
+            {
+              "chord": "D",
+              "lyric": "dawn, I see it gro"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "w;"
+            }
+          ],
+          "raw": "It's a new [D]dawn, I see it gro[Bm]w;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Stronger and "
+            },
+            {
+              "chord": "G",
+              "lyric": "clearer"
+            },
+            {
+              "chord": "E",
+              "lyric": " day by d"
+            },
+            {
+              "chord": "A7",
+              "lyric": "ay."
+            }
+          ],
+          "raw": "Stronger and [G]clearer[E] day by d[A7]ay."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Saving the p"
+            },
+            {
+              "chord": "D",
+              "lyric": "eople,"
+            }
+          ],
+          "raw": "Saving the p[D]eople,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Bringing the w"
+            },
+            {
+              "chord": "G",
+              "lyric": "hole w"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "ide w"
+            },
+            {
+              "chord": "Em",
+              "lyric": "orld i"
+            },
+            {
+              "chord": "A7",
+              "lyric": "nto new "
+            },
+            {
+              "chord": "D",
+              "lyric": "hope."
+            },
+            {
+              "chord": "B7",
+              "lyric": ""
+            }
+          ],
+          "raw": "Bringing the w[G]hole w[F#m]ide w[Em]orld i[A7]nto new [D]hope.[B7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
       "name": "Verse 3",
       "lines": [
         {
@@ -340,8 +438,102 @@
           "raw": ""
         }
       ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It's a new "
+            },
+            {
+              "chord": "E",
+              "lyric": "dawn, I see it grow"
+            },
+            {
+              "chord": "C#m",
+              "lyric": ";"
+            }
+          ],
+          "raw": "It's a new [E]dawn, I see it grow[C#m];"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Stronger and c"
+            },
+            {
+              "chord": "A",
+              "lyric": "learer "
+            },
+            {
+              "chord": "F#",
+              "lyric": "day by day"
+            },
+            {
+              "chord": "B7",
+              "lyric": "."
+            }
+          ],
+          "raw": "Stronger and c[A]learer [F#]day by day[B7]."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Saving the p"
+            },
+            {
+              "chord": "E",
+              "lyric": "eople,"
+            }
+          ],
+          "raw": "Saving the p[E]eople,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Bringing the wh"
+            },
+            {
+              "chord": "A",
+              "lyric": "ole w"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "ide w"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "orld i"
+            },
+            {
+              "chord": "B7",
+              "lyric": "nto new "
+            },
+            {
+              "chord": "E",
+              "lyric": "hope."
+            }
+          ],
+          "raw": "Bringing the wh[A]ole w[G#m]ide w[F#m]orld i[B7]nto new [E]hope."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
     }
   ],
   "sourcePath": "songs/father.pro",
-  "source": "{title: Father}\n{key: D}\n\n{section: Verse 1}\n[D]Father, you went through the [Bm]nights alone, \nopened the wa[G]y t[F#m]o fre[Em]e the e[A7]arth;\n[D]Father, together we'll [Bm]walk hand in hand\nAnd settle[G] peace[F#m] down [Em]on God's ea[A7]rth\n\n{section: Chorus}\nIt's a new [D]dawn, I see it gro[Bm]w;\nStronger and [G]clearer[E] day by d[A7]ay.\nSaving the p[D]eople,\nBringing the w[G]hole wid[F#m]e wor[Em]ld into[A7] new h[D]ope.\n\n{section: Verse 2}\nFather, wherever you go, we'll go;\nFollow your tracks which lead us home.\nFather, a unified world is at hand,\nNo one will ever stop you now.\n\n{section: Verse 3}\n[E]Father, you need us to [C#m]work and fight,\nTo conquer the s[A]ins [G#m]which [F#m]rule the w[B7]orld.\n[E]Father, we know that our [C#m]time is short,\nAnd want to g[A]ive [G#m]our [F#m]lives to [B7]you.\n"
+  "source": "{title: Father}\n{key: D}\n\n{section: Verse 1}\n[D]Father, you went through the [Bm]nights alone, \nopened the wa[G]y t[F#m]o fre[Em]e the e[A7]arth;\n[D]Father, together we'll [Bm]walk hand in hand\nAnd settle[G] peace[F#m] down [Em]on God's ea[A7]rth\n\n{section: Chorus}\nIt's a new [D]dawn, I see it gro[Bm]w;\nStronger and [G]clearer[E] day by d[A7]ay.\nSaving the p[D]eople,\nBringing the w[G]hole wid[F#m]e wor[Em]ld into[A7] new h[D]ope.\n\n{section: Verse 2}\nFather, wherever you go, we'll go;\nFollow your tracks which lead us home.\nFather, a unified world is at hand,\nNo one will ever stop you now.\n\n{section: Chorus}\nIt's a new [D]dawn, I see it gro[Bm]w;\nStronger and [G]clearer[E] day by d[A7]ay.\nSaving the p[D]eople,\nBringing the w[G]hole w[F#m]ide w[Em]orld i[A7]nto new [D]hope.[B7]\n\n{section: Verse 3}\n[E]Father, you need us to [C#m]work and fight,\nTo conquer the s[A]ins [G#m]which [F#m]rule the w[B7]orld.\n[E]Father, we know that our [C#m]time is short,\nAnd want to g[A]ive [G#m]our [F#m]lives to [B7]you.\n\n{section: Chorus}\nIt's a new [E]dawn, I see it grow[C#m];\nStronger and c[A]learer [F#]day by day[B7].\nSaving the p[E]eople,\nBringing the wh[A]ole w[G#m]ide w[F#m]orld i[B7]nto new [E]hope.\n"
 }
