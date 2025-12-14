@@ -1,30 +1,32 @@
 {title: I'll Never Leave You Anymore}
-{key: E}
+{key: D}
 
 {section: Verse 1}
-[E]I'll never leave you anymore,
-[A]For I have found in your bright eyes
-[E]A river of love, a heart of gold,
-[C#m]A peaceful mind, a hand to hold.
-[B7]And what I'll do with this precious gift?
-[E]Shall I embrace it to myself?
+I'll never l[C]eave you [F]any[C]more, 
+For I have [Am]found in your bright [G]eyes
+A river of [C]love, a heart of [Am]gold,
+A peaceful [G]mind, a hand to [C]hold.
 
-{{section: Verse 2}
-[A]Oh, no I can't, I would lose it sure;
-[E]It must be given if it's to endure.
-[A]And how will I use this treasure store?
-[E]How will I share this wordless joy?
-[C#m]I'll greet all men with a loving heart;
-[B7]I'll speak the truth with a clear voice.
+{section: Verse 2}
+And what I'll [C]do with this [F]precious [C]gift?
+Shall I em[Am]brace it to my[G]self?
+Oh, no I c[C]an't, I would lose it [Am]sure;
+It must be g[G]iven if it's to e[C]ndure.  [A7]
 
-{{section: Verse 3}
-[E]And together we'll build a world that's new.
-[A]That's fit for kings and fit for queens;
-[E]We'll raise them up to rule the land,
-[C#m]And place dominion in your hand.
-[B7]I'll never leave you anymore,
-[E]For I have found in your bright eyes
+{section: Verse 3}
+And how will I u[D]se this [G]treasure [D]store?
+How will I [Bm]share this wordless [A]joy?
+I'll greet all [D]men with a loving [Bm]heart;
+I'll speak the t[A]ruth with a clear [D]voice.
 
-{{section: Verse 4}
-[A]A river of love, a heart of gold,
-[E]A peaceful mind, a hand to hold.
+{section: Verse 4}
+And together we'll [D]build a [G]world that's [D]new.
+That's fit for k[Bm]ings and fit for [A]queens;
+We'll raise them [D]up to rule the [Bm]land,
+And place domi[A]nion in your h[D]and.  [B7]
+
+{section: Verse 5}
+We'll never [E]leave you [A]any[E]more, 
+For we have f[C#m]ound in Your bright [B]eyes
+A river of [E]love, a heart of g[C#m]old,
+A peaceful [B]mind, a hand to [E]hold.

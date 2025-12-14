@@ -1,6 +1,7 @@
 {title: The Rose}
 {key: D}
 
+{section: Verse 1}
 Some say lov[D]e, it is a rive[A7]r
 That dro[G]wns the ten[A7]der reed[D]
 Some say love, it is a razo[A7]r
@@ -10,6 +11,7 @@ An end[G]less aching ne[A7]ed
 I say lov[D]e, it is a flow[A7]er
 And yo[G]u, its o[A7]nly see[D]d
 
+{section: Verse 2}
 It's the heart afraid of breaking
 That never learns to dance
 It's the dream afraid of waking
@@ -19,6 +21,7 @@ Who cannot seem to give
 And the soul, afraid of dying
 That never learns to live
 
+{section: Verse 3}
 When the night has been too lonely
 And the road has been too long
 And you think that love is only

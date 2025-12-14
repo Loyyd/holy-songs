@@ -1,23 +1,23 @@
 {title: Christ Is Here}
 {key: Am}
 
-{section: Chorus}
-[Am]I want to sing, Alleluia.
-[D]I want to sing, Alleluia.
-[Am]Christ is here, Christ is here!
+{section: Chorus 2x}
+[Am]I want to sing, A[D]llel[Am]uia.[D] 
+I want to s[Am]ing, Al[D]leluia.[Am]
+Christ is her[D]e, Christ is her[Am]e! [D]   [Am]   [D]
 
 {section: Verse 1}
-[Am]I sought him in ashes, down long, narrow streets,
-[D]Down paths paved with sorrow.
-[C]But searching in sorrow, I found him in joy,
-[E]Allelu!
+[Am]I sought him in [D]ashes, down lo[Am]ng, narrow s[D]treets,
+Down p[Am]aths paved with sor[D]row[Am].  [D]
+But se[C]arching in sorrow, I foun[D]d him in joy[E],
+[Am]Allelu[D]!  [Am]   [D] 
 
 {section: Verse 2}
-[Am]How many have fasted and prayed for this hour, But we have the blessing.
-[D]Of serving the Father through loving His son.
-[Am]Allelu!
+How many have fasted and prayed for this hour, But we have the blessing.
+Of serving the Father through loving His son.
+Allelu!
 
-{{section: Verse 3}
-[Am]Lord, we are not worthy, we are not complete, And yet we are chosen.
-[D]How gladly I'll give Him my heart, hands and voice.
-[Am]Allelu!
+{section: Verse 3}
+Lord, we are not worthy, we are not complete, And yet we are chosen.
+How gladly I'll give Him my heart, hands and voice.
+Allelu!

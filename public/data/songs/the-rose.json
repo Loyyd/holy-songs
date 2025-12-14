@@ -14,7 +14,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
         {
           "tokens": [
             {
@@ -167,7 +172,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
         {
           "tokens": [
             {
@@ -248,7 +258,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
@@ -334,5 +349,5 @@
     }
   ],
   "sourcePath": "songs/the-rose.pro",
-  "source": "{title: The Rose}\n{key: D}\n\nSome say lov[D]e, it is a rive[A7]r\nThat dro[G]wns the ten[A7]der reed[D]\nSome say love, it is a razo[A7]r\nThat lea[G]ves your so[A7]ul to blee[D]d\nSome say lov[F#m]e, it is a hu[Bm]nger\nAn end[G]less aching ne[A7]ed\nI say lov[D]e, it is a flow[A7]er\nAnd yo[G]u, its o[A7]nly see[D]d\n\nIt's the heart afraid of breaking\nThat never learns to dance\nIt's the dream afraid of waking\nThat never takes the chance\nIt's the one who won't be taking\nWho cannot seem to give\nAnd the soul, afraid of dying\nThat never learns to live\n\nWhen the night has been too lonely\nAnd the road has been too long\nAnd you think that love is only\nFor the lucky and the strong\nJust remember in the winter\nFar beneath the bitter snows\nLies the seed that with the sun's love\nIn the spring becomes the rose\n"
+  "source": "{title: The Rose}\n{key: D}\n\n{section: Verse 1}\nSome say lov[D]e, it is a rive[A7]r\nThat dro[G]wns the ten[A7]der reed[D]\nSome say love, it is a razo[A7]r\nThat lea[G]ves your so[A7]ul to blee[D]d\nSome say lov[F#m]e, it is a hu[Bm]nger\nAn end[G]less aching ne[A7]ed\nI say lov[D]e, it is a flow[A7]er\nAnd yo[G]u, its o[A7]nly see[D]d\n\n{section: Verse 2}\nIt's the heart afraid of breaking\nThat never learns to dance\nIt's the dream afraid of waking\nThat never takes the chance\nIt's the one who won't be taking\nWho cannot seem to give\nAnd the soul, afraid of dying\nThat never learns to live\n\n{section: Verse 3}\nWhen the night has been too lonely\nAnd the road has been too long\nAnd you think that love is only\nFor the lucky and the strong\nJust remember in the winter\nFar beneath the bitter snows\nLies the seed that with the sun's love\nIn the spring becomes the rose\n"
 }

@@ -1,7 +1,7 @@
 {
   "id": "i-ll-never-leave-you-anymore",
   "title": "I'll Never Leave You Anymore",
-  "key": "E",
+  "key": "D",
   "sections": [
     {
       "name": "Verse",
@@ -23,209 +23,74 @@
         {
           "tokens": [
             {
-              "chord": "E",
-              "lyric": "I'll never leave you anymore,"
-            }
-          ],
-          "raw": "[E]I'll never leave you anymore,"
-        },
-        {
-          "tokens": [
+              "chord": null,
+              "lyric": "I'll never l"
+            },
             {
-              "chord": "A",
-              "lyric": "For I have found in your bright eyes"
-            }
-          ],
-          "raw": "[A]For I have found in your bright eyes"
-        },
-        {
-          "tokens": [
+              "chord": "C",
+              "lyric": "eave you "
+            },
             {
-              "chord": "E",
-              "lyric": "A river of love, a heart of gold,"
-            }
-          ],
-          "raw": "[E]A river of love, a heart of gold,"
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "any"
+            },
             {
-              "chord": "C#m",
-              "lyric": "A peaceful mind, a hand to hold."
+              "chord": "C",
+              "lyric": "more, "
             }
           ],
-          "raw": "[C#m]A peaceful mind, a hand to hold."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "B7",
-              "lyric": "And what I'll do with this precious gift?"
-            }
-          ],
-          "raw": "[B7]And what I'll do with this precious gift?"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "E",
-              "lyric": "Shall I embrace it to myself?"
-            }
-          ],
-          "raw": "[E]Shall I embrace it to myself?"
+          "raw": "I'll never l[C]eave you [F]any[C]more, "
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
+              "lyric": "For I have "
+            },
             {
-              "chord": "A",
-              "lyric": "Oh, no I can't, I would lose it sure;"
-            }
-          ],
-          "raw": "[A]Oh, no I can't, I would lose it sure;"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "found in your bright "
+            },
             {
-              "chord": "E",
-              "lyric": "It must be given if it's to endure."
+              "chord": "G",
+              "lyric": "eyes"
             }
           ],
-          "raw": "[E]It must be given if it's to endure."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "A",
-              "lyric": "And how will I use this treasure store?"
-            }
-          ],
-          "raw": "[A]And how will I use this treasure store?"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "E",
-              "lyric": "How will I share this wordless joy?"
-            }
-          ],
-          "raw": "[E]How will I share this wordless joy?"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "C#m",
-              "lyric": "I'll greet all men with a loving heart;"
-            }
-          ],
-          "raw": "[C#m]I'll greet all men with a loving heart;"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "B7",
-              "lyric": "I'll speak the truth with a clear voice."
-            }
-          ],
-          "raw": "[B7]I'll speak the truth with a clear voice."
+          "raw": "For I have [Am]found in your bright [G]eyes"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
+              "lyric": "A river of "
+            },
             {
-              "chord": "E",
-              "lyric": "And together we'll build a world that's new."
-            }
-          ],
-          "raw": "[E]And together we'll build a world that's new."
-        },
-        {
-          "tokens": [
+              "chord": "C",
+              "lyric": "love, a heart of "
+            },
             {
-              "chord": "A",
-              "lyric": "That's fit for kings and fit for queens;"
+              "chord": "Am",
+              "lyric": "gold,"
             }
           ],
-          "raw": "[A]That's fit for kings and fit for queens;"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "E",
-              "lyric": "We'll raise them up to rule the land,"
-            }
-          ],
-          "raw": "[E]We'll raise them up to rule the land,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "C#m",
-              "lyric": "And place dominion in your hand."
-            }
-          ],
-          "raw": "[C#m]And place dominion in your hand."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "B7",
-              "lyric": "I'll never leave you anymore,"
-            }
-          ],
-          "raw": "[B7]I'll never leave you anymore,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "E",
-              "lyric": "For I have found in your bright eyes"
-            }
-          ],
-          "raw": "[E]For I have found in your bright eyes"
+          "raw": "A river of [C]love, a heart of [Am]gold,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
+              "lyric": "A peaceful "
+            },
             {
-              "chord": "A",
-              "lyric": "A river of love, a heart of gold,"
-            }
-          ],
-          "raw": "[A]A river of love, a heart of gold,"
-        },
-        {
-          "tokens": [
+              "chord": "G",
+              "lyric": "mind, a hand to "
+            },
             {
-              "chord": "E",
-              "lyric": "A peaceful mind, a hand to hold."
+              "chord": "C",
+              "lyric": "hold."
             }
           ],
-          "raw": "[E]A peaceful mind, a hand to hold."
+          "raw": "A peaceful [G]mind, a hand to [C]hold."
         },
         {
           "tokens": [
@@ -237,8 +102,351 @@
           "raw": ""
         }
       ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And what I'll "
+            },
+            {
+              "chord": "C",
+              "lyric": "do with this "
+            },
+            {
+              "chord": "F",
+              "lyric": "precious "
+            },
+            {
+              "chord": "C",
+              "lyric": "gift?"
+            }
+          ],
+          "raw": "And what I'll [C]do with this [F]precious [C]gift?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Shall I em"
+            },
+            {
+              "chord": "Am",
+              "lyric": "brace it to my"
+            },
+            {
+              "chord": "G",
+              "lyric": "self?"
+            }
+          ],
+          "raw": "Shall I em[Am]brace it to my[G]self?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh, no I c"
+            },
+            {
+              "chord": "C",
+              "lyric": "an't, I would lose it "
+            },
+            {
+              "chord": "Am",
+              "lyric": "sure;"
+            }
+          ],
+          "raw": "Oh, no I c[C]an't, I would lose it [Am]sure;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "It must be g"
+            },
+            {
+              "chord": "G",
+              "lyric": "iven if it's to e"
+            },
+            {
+              "chord": "C",
+              "lyric": "ndure.  "
+            },
+            {
+              "chord": "A7",
+              "lyric": ""
+            }
+          ],
+          "raw": "It must be g[G]iven if it's to e[C]ndure.  [A7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And how will I u"
+            },
+            {
+              "chord": "D",
+              "lyric": "se this "
+            },
+            {
+              "chord": "G",
+              "lyric": "treasure "
+            },
+            {
+              "chord": "D",
+              "lyric": "store?"
+            }
+          ],
+          "raw": "And how will I u[D]se this [G]treasure [D]store?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "How will I "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "share this wordless "
+            },
+            {
+              "chord": "A",
+              "lyric": "joy?"
+            }
+          ],
+          "raw": "How will I [Bm]share this wordless [A]joy?"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'll greet all "
+            },
+            {
+              "chord": "D",
+              "lyric": "men with a loving "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "heart;"
+            }
+          ],
+          "raw": "I'll greet all [D]men with a loving [Bm]heart;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'll speak the t"
+            },
+            {
+              "chord": "A",
+              "lyric": "ruth with a clear "
+            },
+            {
+              "chord": "D",
+              "lyric": "voice."
+            }
+          ],
+          "raw": "I'll speak the t[A]ruth with a clear [D]voice."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And together we'll "
+            },
+            {
+              "chord": "D",
+              "lyric": "build a "
+            },
+            {
+              "chord": "G",
+              "lyric": "world that's "
+            },
+            {
+              "chord": "D",
+              "lyric": "new."
+            }
+          ],
+          "raw": "And together we'll [D]build a [G]world that's [D]new."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That's fit for k"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ings and fit for "
+            },
+            {
+              "chord": "A",
+              "lyric": "queens;"
+            }
+          ],
+          "raw": "That's fit for k[Bm]ings and fit for [A]queens;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "We'll raise them "
+            },
+            {
+              "chord": "D",
+              "lyric": "up to rule the "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "land,"
+            }
+          ],
+          "raw": "We'll raise them [D]up to rule the [Bm]land,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And place domi"
+            },
+            {
+              "chord": "A",
+              "lyric": "nion in your h"
+            },
+            {
+              "chord": "D",
+              "lyric": "and.  "
+            },
+            {
+              "chord": "B7",
+              "lyric": ""
+            }
+          ],
+          "raw": "And place domi[A]nion in your h[D]and.  [B7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "We'll never "
+            },
+            {
+              "chord": "E",
+              "lyric": "leave you "
+            },
+            {
+              "chord": "A",
+              "lyric": "any"
+            },
+            {
+              "chord": "E",
+              "lyric": "more, "
+            }
+          ],
+          "raw": "We'll never [E]leave you [A]any[E]more, "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "For we have f"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "ound in Your bright "
+            },
+            {
+              "chord": "B",
+              "lyric": "eyes"
+            }
+          ],
+          "raw": "For we have f[C#m]ound in Your bright [B]eyes"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "A river of "
+            },
+            {
+              "chord": "E",
+              "lyric": "love, a heart of g"
+            },
+            {
+              "chord": "C#m",
+              "lyric": "old,"
+            }
+          ],
+          "raw": "A river of [E]love, a heart of g[C#m]old,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "A peaceful "
+            },
+            {
+              "chord": "B",
+              "lyric": "mind, a hand to "
+            },
+            {
+              "chord": "E",
+              "lyric": "hold."
+            }
+          ],
+          "raw": "A peaceful [B]mind, a hand to [E]hold."
+        }
+      ]
     }
   ],
   "sourcePath": "songs/ill-never-leave-you-anymore.pro",
-  "source": "{title: I'll Never Leave You Anymore}\n{key: E}\n\n{section: Verse 1}\n[E]I'll never leave you anymore,\n[A]For I have found in your bright eyes\n[E]A river of love, a heart of gold,\n[C#m]A peaceful mind, a hand to hold.\n[B7]And what I'll do with this precious gift?\n[E]Shall I embrace it to myself?\n\n{{section: Verse 2}\n[A]Oh, no I can't, I would lose it sure;\n[E]It must be given if it's to endure.\n[A]And how will I use this treasure store?\n[E]How will I share this wordless joy?\n[C#m]I'll greet all men with a loving heart;\n[B7]I'll speak the truth with a clear voice.\n\n{{section: Verse 3}\n[E]And together we'll build a world that's new.\n[A]That's fit for kings and fit for queens;\n[E]We'll raise them up to rule the land,\n[C#m]And place dominion in your hand.\n[B7]I'll never leave you anymore,\n[E]For I have found in your bright eyes\n\n{{section: Verse 4}\n[A]A river of love, a heart of gold,\n[E]A peaceful mind, a hand to hold.\n"
+  "source": "{title: I'll Never Leave You Anymore}\n{key: D}\n\n{section: Verse 1}\nI'll never l[C]eave you [F]any[C]more, \nFor I have [Am]found in your bright [G]eyes\nA river of [C]love, a heart of [Am]gold,\nA peaceful [G]mind, a hand to [C]hold.\n\n{section: Verse 2}\nAnd what I'll [C]do with this [F]precious [C]gift?\nShall I em[Am]brace it to my[G]self?\nOh, no I c[C]an't, I would lose it [Am]sure;\nIt must be g[G]iven if it's to e[C]ndure.  [A7]\n\n{section: Verse 3}\nAnd how will I u[D]se this [G]treasure [D]store?\nHow will I [Bm]share this wordless [A]joy?\nI'll greet all [D]men with a loving [Bm]heart;\nI'll speak the t[A]ruth with a clear [D]voice.\n\n{section: Verse 4}\nAnd together we'll [D]build a [G]world that's [D]new.\nThat's fit for k[Bm]ings and fit for [A]queens;\nWe'll raise them [D]up to rule the [Bm]land,\nAnd place domi[A]nion in your h[D]and.  [B7]\n\n{section: Verse 5}\nWe'll never [E]leave you [A]any[E]more, \nFor we have f[C#m]ound in Your bright [B]eyes\nA river of [E]love, a heart of g[C#m]old,\nA peaceful [B]mind, a hand to [E]hold."
 }

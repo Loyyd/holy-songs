@@ -18,34 +18,78 @@
       ]
     },
     {
-      "name": "Chorus",
+      "name": "Chorus 2x",
       "lines": [
         {
           "tokens": [
             {
               "chord": "Am",
-              "lyric": "I want to sing, Alleluia."
-            }
-          ],
-          "raw": "[Am]I want to sing, Alleluia."
-        },
-        {
-          "tokens": [
+              "lyric": "I want to sing, A"
+            },
             {
               "chord": "D",
-              "lyric": "I want to sing, Alleluia."
+              "lyric": "llel"
+            },
+            {
+              "chord": "Am",
+              "lyric": "uia."
+            },
+            {
+              "chord": "D",
+              "lyric": " "
             }
           ],
-          "raw": "[D]I want to sing, Alleluia."
+          "raw": "[Am]I want to sing, A[D]llel[Am]uia.[D] "
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "I want to s"
+            },
+            {
               "chord": "Am",
-              "lyric": "Christ is here, Christ is here!"
+              "lyric": "ing, Al"
+            },
+            {
+              "chord": "D",
+              "lyric": "leluia."
+            },
+            {
+              "chord": "Am",
+              "lyric": ""
             }
           ],
-          "raw": "[Am]Christ is here, Christ is here!"
+          "raw": "I want to s[Am]ing, Al[D]leluia.[Am]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Christ is her"
+            },
+            {
+              "chord": "D",
+              "lyric": "e, Christ is her"
+            },
+            {
+              "chord": "Am",
+              "lyric": "e! "
+            },
+            {
+              "chord": "D",
+              "lyric": "   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "Christ is her[D]e, Christ is her[Am]e! [D]   [Am]   [D]"
         },
         {
           "tokens": [
@@ -65,37 +109,89 @@
           "tokens": [
             {
               "chord": "Am",
-              "lyric": "I sought him in ashes, down long, narrow streets,"
-            }
-          ],
-          "raw": "[Am]I sought him in ashes, down long, narrow streets,"
-        },
-        {
-          "tokens": [
+              "lyric": "I sought him in "
+            },
             {
               "chord": "D",
-              "lyric": "Down paths paved with sorrow."
+              "lyric": "ashes, down lo"
+            },
+            {
+              "chord": "Am",
+              "lyric": "ng, narrow s"
+            },
+            {
+              "chord": "D",
+              "lyric": "treets,"
             }
           ],
-          "raw": "[D]Down paths paved with sorrow."
+          "raw": "[Am]I sought him in [D]ashes, down lo[Am]ng, narrow s[D]treets,"
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "Down p"
+            },
+            {
+              "chord": "Am",
+              "lyric": "aths paved with sor"
+            },
+            {
+              "chord": "D",
+              "lyric": "row"
+            },
+            {
+              "chord": "Am",
+              "lyric": ".  "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "Down p[Am]aths paved with sor[D]row[Am].  [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "But se"
+            },
             {
               "chord": "C",
-              "lyric": "But searching in sorrow, I found him in joy,"
+              "lyric": "arching in sorrow, I foun"
+            },
+            {
+              "chord": "D",
+              "lyric": "d him in joy"
+            },
+            {
+              "chord": "E",
+              "lyric": ","
             }
           ],
-          "raw": "[C]But searching in sorrow, I found him in joy,"
+          "raw": "But se[C]arching in sorrow, I foun[D]d him in joy[E],"
         },
         {
           "tokens": [
             {
-              "chord": "E",
-              "lyric": "Allelu!"
+              "chord": "Am",
+              "lyric": "Allelu"
+            },
+            {
+              "chord": "D",
+              "lyric": "!  "
+            },
+            {
+              "chord": "Am",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": " "
             }
           ],
-          "raw": "[E]Allelu!"
+          "raw": "[Am]Allelu[D]!  [Am]   [D] "
         },
         {
           "tokens": [
@@ -114,29 +210,29 @@
         {
           "tokens": [
             {
-              "chord": "Am",
+              "chord": null,
               "lyric": "How many have fasted and prayed for this hour, But we have the blessing."
             }
           ],
-          "raw": "[Am]How many have fasted and prayed for this hour, But we have the blessing."
+          "raw": "How many have fasted and prayed for this hour, But we have the blessing."
         },
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": null,
               "lyric": "Of serving the Father through loving His son."
             }
           ],
-          "raw": "[D]Of serving the Father through loving His son."
+          "raw": "Of serving the Father through loving His son."
         },
         {
           "tokens": [
             {
-              "chord": "Am",
+              "chord": null,
               "lyric": "Allelu!"
             }
           ],
-          "raw": "[Am]Allelu!"
+          "raw": "Allelu!"
         },
         {
           "tokens": [
@@ -146,33 +242,38 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "Am",
+              "chord": null,
               "lyric": "Lord, we are not worthy, we are not complete, And yet we are chosen."
             }
           ],
-          "raw": "[Am]Lord, we are not worthy, we are not complete, And yet we are chosen."
+          "raw": "Lord, we are not worthy, we are not complete, And yet we are chosen."
         },
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": null,
               "lyric": "How gladly I'll give Him my heart, hands and voice."
             }
           ],
-          "raw": "[D]How gladly I'll give Him my heart, hands and voice."
+          "raw": "How gladly I'll give Him my heart, hands and voice."
         },
         {
           "tokens": [
             {
-              "chord": "Am",
+              "chord": null,
               "lyric": "Allelu!"
             }
           ],
-          "raw": "[Am]Allelu!"
+          "raw": "Allelu!"
         },
         {
           "tokens": [
@@ -187,5 +288,5 @@
     }
   ],
   "sourcePath": "songs/christ-is-here.pro",
-  "source": "{title: Christ Is Here}\n{key: Am}\n\n{section: Chorus}\n[Am]I want to sing, Alleluia.\n[D]I want to sing, Alleluia.\n[Am]Christ is here, Christ is here!\n\n{section: Verse 1}\n[Am]I sought him in ashes, down long, narrow streets,\n[D]Down paths paved with sorrow.\n[C]But searching in sorrow, I found him in joy,\n[E]Allelu!\n\n{section: Verse 2}\n[Am]How many have fasted and prayed for this hour, But we have the blessing.\n[D]Of serving the Father through loving His son.\n[Am]Allelu!\n\n{{section: Verse 3}\n[Am]Lord, we are not worthy, we are not complete, And yet we are chosen.\n[D]How gladly I'll give Him my heart, hands and voice.\n[Am]Allelu!\n"
+  "source": "{title: Christ Is Here}\n{key: Am}\n\n{section: Chorus 2x}\n[Am]I want to sing, A[D]llel[Am]uia.[D] \nI want to s[Am]ing, Al[D]leluia.[Am]\nChrist is her[D]e, Christ is her[Am]e! [D]   [Am]   [D]\n\n{section: Verse 1}\n[Am]I sought him in [D]ashes, down lo[Am]ng, narrow s[D]treets,\nDown p[Am]aths paved with sor[D]row[Am].  [D]\nBut se[C]arching in sorrow, I foun[D]d him in joy[E],\n[Am]Allelu[D]!  [Am]   [D] \n\n{section: Verse 2}\nHow many have fasted and prayed for this hour, But we have the blessing.\nOf serving the Father through loving His son.\nAllelu!\n\n{section: Verse 3}\nLord, we are not worthy, we are not complete, And yet we are chosen.\nHow gladly I'll give Him my heart, hands and voice.\nAllelu!\n"
 }

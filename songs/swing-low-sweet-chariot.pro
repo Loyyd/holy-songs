@@ -2,7 +2,7 @@
 {key: D}
 
 {section: Chorus}
-Sw[D]ing low sweet [G]cha[D]riot, coming for to carry me [A7]home,
+Sw[D]ing low sweet [G]cha[D]riot, coming for to carry me [A7]home, 
 Swing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me home.
 
 {section: Verse 1}
