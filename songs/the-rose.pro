@@ -3,13 +3,13 @@
 
 {section: Verse 1}
 Some say lov[D]e, it is a rive[A7]r
-That dro[G]wns the ten[A7]der reed[D]
-Some say love, it is a razo[A7]r
-That lea[G]ves your so[A7]ul to blee[D]d
-Some say lov[F#m]e, it is a hu[Bm]nger
-An end[G]less aching ne[A7]ed
-I say lov[D]e, it is a flow[A7]er
-And yo[G]u, its o[A7]nly see[D]d
+That d[G]rowns the [A7]tende[D]r reed
+Some say love, it is a r[A7]azor
+That l[G]eaves your [A7]soul to [D]bleed
+Some say [F#m]love, it is a [Bm]hunger
+An [G]endless aching [A7]need
+I say [D]love, it is a [A7]flower
+And [G]you, its [A7]only [D]seed
 
 {section: Verse 2}
 It's the heart afraid of breaking

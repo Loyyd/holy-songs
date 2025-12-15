@@ -2,13 +2,13 @@
 {key: D}
 
 {section: Chorus}
-Sw[D]ing low sweet [G]cha[D]riot, coming for to carry me [A7]home, 
-Swing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me home.
+Swing [D]low sweet [G]cha[D]riot, coming for to carry me [A7]home, 
+Swing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me [D]home.
 
 {section: Verse 1}
 I lo[D]oked over Jordan and wh[G]at did I see?[D]
 Coming for to carr[A7]y me home.
-A [Bm]band of angels [C]coming aft[D]er me,
+A [Bm]band of angels [G]coming aft[D]er me,
 Coming for to car[A7]ry me ho[D]me.
 
 {section: Verse 2}
