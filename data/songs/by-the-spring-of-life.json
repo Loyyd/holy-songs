@@ -24,37 +24,73 @@
           "tokens": [
             {
               "chord": "G",
-              "lyric": "We're marching to the blessed land of Canaan with delight,"
-            }
-          ],
-          "raw": "[G]We're marching to the blessed land of Canaan with delight,"
-        },
-        {
-          "tokens": [
+              "lyric": "We're marching to the blessed land of "
+            },
             {
               "chord": "C",
-              "lyric": "We're leaving all our heavy burdens here."
+              "lyric": "Canaan with delight,"
+            },
+            {
+              "chord": "G",
+              "lyric": ""
             }
           ],
-          "raw": "[C]We're leaving all our heavy burdens here."
+          "raw": "[G]We're marching to the blessed land of [C]Canaan with delight,[G]"
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "We're leaving all our heavy burdens"
+            },
             {
               "chord": "A7",
-              "lyric": "At last we are released and free from being slaves to sin,"
+              "lyric": " here"
+            },
+            {
+              "chord": "D7",
+              "lyric": "."
             }
           ],
-          "raw": "[A7]At last we are released and free from being slaves to sin,"
+          "raw": "We're leaving all our heavy burdens[A7] here[D7]."
         },
         {
           "tokens": [
             {
-              "chord": "D7",
-              "lyric": "We're coming to the blessed spring of life."
+              "chord": null,
+              "lyric": "At"
+            },
+            {
+              "chord": "G",
+              "lyric": " last we are released and free from"
+            },
+            {
+              "chord": "C",
+              "lyric": " being slaves to"
+            },
+            {
+              "chord": "G",
+              "lyric": " sin,"
             }
           ],
-          "raw": "[D7]We're coming to the blessed spring of life."
+          "raw": "At[G] last we are released and free from[C] being slaves to[G] sin,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "We're coming to the blessed "
+            },
+            {
+              "chord": "D7",
+              "lyric": "spring of lif"
+            },
+            {
+              "chord": "G",
+              "lyric": "e."
+            }
+          ],
+          "raw": "We're coming to the blessed [D7]spring of lif[G]e."
         },
         {
           "tokens": [
@@ -73,38 +109,78 @@
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Com"
+            },
+            {
               "chord": "G",
-              "lyric": "Coming to the spring where living water flows;"
-            }
-          ],
-          "raw": "[G]Coming to the spring where living water flows;"
-        },
-        {
-          "tokens": [
+              "lyric": "ing to the spring where "
+            },
             {
               "chord": "C",
-              "lyric": "In glory we'll be living evermore."
+              "lyric": "living water "
+            },
+            {
+              "chord": "G",
+              "lyric": "flows;"
             }
           ],
-          "raw": "[C]In glory we'll be living evermore."
+          "raw": "Com[G]ing to the spring where [C]living water [G]flows;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "In glory we'll be living evermo"
+            },
+            {
+              "chord": "A7",
+              "lyric": "re."
+            },
+            {
+              "chord": "D7",
+              "lyric": ""
+            }
+          ],
+          "raw": "In glory we'll be living evermo[A7]re.[D7]"
         },
         {
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Going to the land where freely flows the spring,"
+              "lyric": "Going to the land where "
+            },
+            {
+              "chord": "C",
+              "lyric": "freely flows the s"
+            },
+            {
+              "chord": "G",
+              "lyric": "pring,"
             }
           ],
-          "raw": "[G]Going to the land where freely flows the spring,"
+          "raw": "[G]Going to the land where [C]freely flows the s[G]pring,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "In "
+            },
+            {
               "chord": "G",
-              "lyric": "In glory we'll be living evermore."
+              "lyric": "glory we'll be living e"
+            },
+            {
+              "chord": "D7",
+              "lyric": "vermo"
+            },
+            {
+              "chord": "G",
+              "lyric": "re."
             }
           ],
-          "raw": "[G]In glory we'll be living evermore."
+          "raw": "In [G]glory we'll be living e[D7]vermo[G]re."
         },
         {
           "tokens": [
@@ -123,38 +199,38 @@
         {
           "tokens": [
             {
-              "chord": "D7",
+              "chord": null,
               "lyric": "O guide us with your pillars, Lord, of fire and of cloud,"
             }
           ],
-          "raw": "[D7]O guide us with your pillars, Lord, of fire and of cloud,"
+          "raw": "O guide us with your pillars, Lord, of fire and of cloud,"
         },
         {
           "tokens": [
             {
-              "chord": "G",
+              "chord": null,
               "lyric": "O give us paths to follow with our lives."
             }
           ],
-          "raw": "[G]O give us paths to follow with our lives."
+          "raw": "O give us paths to follow with our lives."
         },
         {
           "tokens": [
             {
-              "chord": "C",
+              "chord": null,
               "lyric": "The moment that we cross the Jordan River is at hand,"
             }
           ],
-          "raw": "[C]The moment that we cross the Jordan River is at hand,"
+          "raw": "The moment that we cross the Jordan River is at hand,"
         },
         {
           "tokens": [
             {
-              "chord": "D7",
+              "chord": null,
               "lyric": "We're coming to the blessed spring of life."
             }
           ],
-          "raw": "[D7]We're coming to the blessed spring of life."
+          "raw": "We're coming to the blessed spring of life."
         },
         {
           "tokens": [
@@ -173,38 +249,38 @@
         {
           "tokens": [
             {
-              "chord": "G",
+              "chord": null,
               "lyric": "Our thirsting hearts receive with joy the manna from above,"
             }
           ],
-          "raw": "[G]Our thirsting hearts receive with joy the manna from above,"
+          "raw": "Our thirsting hearts receive with joy the manna from above,"
         },
         {
           "tokens": [
             {
-              "chord": "C",
+              "chord": null,
               "lyric": "Your precious food will always be our strength"
             }
           ],
-          "raw": "[C]Your precious food will always be our strength"
+          "raw": "Your precious food will always be our strength"
         },
         {
           "tokens": [
             {
-              "chord": "A7",
+              "chord": null,
               "lyric": "So if the future finds us lacking we will not despair"
             }
           ],
-          "raw": "[A7]So if the future finds us lacking we will not despair"
+          "raw": "So if the future finds us lacking we will not despair"
         },
         {
           "tokens": [
             {
-              "chord": "D7",
+              "chord": null,
               "lyric": "We're coming to the blessed spring of life."
             }
           ],
-          "raw": "[D7]We're coming to the blessed spring of life."
+          "raw": "We're coming to the blessed spring of life."
         },
         {
           "tokens": [
@@ -219,5 +295,5 @@
     }
   ],
   "sourcePath": "songs/by-the-spring-of-life.pro",
-  "source": "{title: By the Spring of Life}\n{key: G}\n\n{section: Verse 1}\n[G]We're marching to the blessed land of Canaan with delight,\n[C]We're leaving all our heavy burdens here.\n[A7]At last we are released and free from being slaves to sin,\n[D7]We're coming to the blessed spring of life.\n\n{section: Chorus}\n[G]Coming to the spring where living water flows;\n[C]In glory we'll be living evermore.\n[G]Going to the land where freely flows the spring,\n[G]In glory we'll be living evermore.\n\n{section: Verse 2}\n[D7]O guide us with your pillars, Lord, of fire and of cloud,\n[G]O give us paths to follow with our lives.\n[C]The moment that we cross the Jordan River is at hand,\n[D7]We're coming to the blessed spring of life.\n\n{section: Verse 3}\n[G]Our thirsting hearts receive with joy the manna from above,\n[C]Your precious food will always be our strength\n[A7]So if the future finds us lacking we will not despair\n[D7]We're coming to the blessed spring of life.\n"
+  "source": "{title: By the Spring of Life}\n{key: G}\n\n{section: Verse 1}\n[G]We're marching to the blessed land of [C]Canaan with delight,[G]\nWe're leaving all our heavy burdens[A7] here[D7].\nAt[G] last we are released and free from[C] being slaves to[G] sin,\nWe're coming to the blessed [D7]spring of lif[G]e.\n\n{section: Chorus}\nCom[G]ing to the spring where [C]living water [G]flows;\nIn glory we'll be living evermo[A7]re.[D7]\n[G]Going to the land where [C]freely flows the s[G]pring,\nIn [G]glory we'll be living e[D7]vermo[G]re.\n\n{section: Verse 2}\nO guide us with your pillars, Lord, of fire and of cloud,\nO give us paths to follow with our lives.\nThe moment that we cross the Jordan River is at hand,\nWe're coming to the blessed spring of life.\n\n{section: Verse 3}\nOur thirsting hearts receive with joy the manna from above,\nYour precious food will always be our strength\nSo if the future finds us lacking we will not despair\nWe're coming to the blessed spring of life.\n"
 }
