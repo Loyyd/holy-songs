@@ -2,21 +2,8 @@
   "id": "new-life",
   "title": "New Life",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -419,5 +406,5 @@
     }
   ],
   "sourcePath": "songs/new-life.pro",
-  "source": "{title: New Life}\n{key: G}\n\n{section: Verse 1}\n[G]Where are His children who answered the call\n[D7]Of the archangel sounding afar?\n[G]People who trembled as lightning flashed,\n[C]Blazing the sky from the East to the West,\n\n{section: Verse 2}\n[G]Dark is the sun, dim is the moon,\n[D7]Thousands of stars falling to darkness;\n[G7]Where are the ones blessed with new life,\n[Am]Liberated from the dead?\n\n{section: Verse 3}\n[G]Now we behold a new heaven and earth,\n[D7]Holy Jerusalem, standing anew;\n[G]After our search of six thousand years,\n[C]Eden rejoices to welcome us home.\n\n{section: Verse 4}\n[G]All of our tears, wipe them away;\n[D7]Sorrowful sighs, we will not need them;\n[G]Where is my Lord, He who returns?\n[C]Where is Heaven's glorious One?\n\n{section: Verse 5}\n[G]Once He departed by way of the cross,\n[D7]Now He returns and He suffers again;\n[G]One way is given to me our Lord;\n[C]Follow the path to the bottom of hell.\n\n{section: Verse 6}\n[G]Glorious star, Lebanon's light,\n[D7]Shining on all, lighting the ages;\n[G]There is the great city of God,\n[C]Where the sun arises and shines.\n\n{section: Verse 7}\n[G]Come in rejoicing and look to the light,\n[D7]See how the darkness is rolling away;\n[G]Out of the few come a multitude;\n[C]Joyfully building the city of God.\n\n{section: Verse 8}\n[G]Children of life stream thru the gates,\n[D7]Close to His heart, singing to please Him;\n[G]Raising the white cross to the sky,\n[C]Praising our eternal new life.\n"
+  "source": "{title: New Life}\n{key: G}\n{reviewed: false}\n\n{section: Verse 1}\n[G]Where are His children who answered the call\n[D7]Of the archangel sounding afar?\n[G]People who trembled as lightning flashed,\n[C]Blazing the sky from the East to the West,\n\n{section: Verse 2}\n[G]Dark is the sun, dim is the moon,\n[D7]Thousands of stars falling to darkness;\n[G7]Where are the ones blessed with new life,\n[Am]Liberated from the dead?\n\n{section: Verse 3}\n[G]Now we behold a new heaven and earth,\n[D7]Holy Jerusalem, standing anew;\n[G]After our search of six thousand years,\n[C]Eden rejoices to welcome us home.\n\n{section: Verse 4}\n[G]All of our tears, wipe them away;\n[D7]Sorrowful sighs, we will not need them;\n[G]Where is my Lord, He who returns?\n[C]Where is Heaven's glorious One?\n\n{section: Verse 5}\n[G]Once He departed by way of the cross,\n[D7]Now He returns and He suffers again;\n[G]One way is given to me our Lord;\n[C]Follow the path to the bottom of hell.\n\n{section: Verse 6}\n[G]Glorious star, Lebanon's light,\n[D7]Shining on all, lighting the ages;\n[G]There is the great city of God,\n[C]Where the sun arises and shines.\n\n{section: Verse 7}\n[G]Come in rejoicing and look to the light,\n[D7]See how the darkness is rolling away;\n[G]Out of the few come a multitude;\n[C]Joyfully building the city of God.\n\n{section: Verse 8}\n[G]Children of life stream thru the gates,\n[D7]Close to His heart, singing to please Him;\n[G]Raising the white cross to the sky,\n[C]Praising our eternal new life.\n"
 }

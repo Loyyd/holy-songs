@@ -2,21 +2,8 @@
   "id": "i-m-singing-a-song-for-you",
   "title": "I'm Singing a Song for You",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -214,5 +201,5 @@
     }
   ],
   "sourcePath": "songs/im-singing-a-song-for-you.pro",
-  "source": "{title: I'm Singing a Song for You}\n{key: F}\n\n{section: Verse 1}\n[F]I'm singing a song for you\n[Bb]If you're happy, then you can sing too.\n[F]Then we'll sing for everyone\n[C7]And the whole world will be happy too.\n\n{section: Verse 2}\n[A]We can change the world if we work together,\n[E]Spreading love and joy everywhere.\n[B7]We can change the world if we give our hearts out\n[E7]Showing others that we really care.\n\n{section: Verse 3}\n[A]We can make the sun shine everyday,\n[E]In a very special way.\n[B7]If we let our light shine, there will be no night-time\n[E]And everyone will join us as we sing.\n\n{{section: Verse 4}\n[A]Children of the world let us work together,\n[E]We can do it if we only try.\n[B7]We will love each other, live in peace together,\n[E]Yes, we'll do it if we only try.\n"
+  "source": "{title: I'm Singing a Song for You}\n{key: F}\n{reviewed: false}\n\n{section: Verse 1}\n[F]I'm singing a song for you\n[Bb]If you're happy, then you can sing too.\n[F]Then we'll sing for everyone\n[C7]And the whole world will be happy too.\n\n{section: Verse 2}\n[A]We can change the world if we work together,\n[E]Spreading love and joy everywhere.\n[B7]We can change the world if we give our hearts out\n[E7]Showing others that we really care.\n\n{section: Verse 3}\n[A]We can make the sun shine everyday,\n[E]In a very special way.\n[B7]If we let our light shine, there will be no night-time\n[E]And everyone will join us as we sing.\n\n{{section: Verse 4}\n[A]Children of the world let us work together,\n[E]We can do it if we only try.\n[B7]We will love each other, live in peace together,\n[E]Yes, we'll do it if we only try.\n"
 }

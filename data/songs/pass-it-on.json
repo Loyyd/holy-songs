@@ -2,21 +2,8 @@
   "id": "pass-it-on",
   "title": "Pass It On",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -241,5 +228,5 @@
     }
   ],
   "sourcePath": "songs/pass-it-on.pro",
-  "source": "{title: Pass It On}\n{key: D}\n\n{section: Verse 1}\n[D]It only takes a spar[F#m]k to get[G] a fire going [A7]\n[D]And soon all those a[F#m]round can[G] warm up in its gl[A7]owing \nThat's h[G]ow it is with God[D]'s love,[G] once you've experie[D]nced[Bm] it\nYou[G] spread His lov[D]e to ever[G]yo[D]ne, you w[G]ant to[A7] pass it o[D]n\n\n{section: Verse 2}\nWhat a wondrous time is spring, when all the trees are budding\nThe birds begin to sing, the flowers start their blooming \nThat's how it is with God's love, once you've experienced it\nYou want to sing it's fresh like spring, you want to pass it on\n\n{section: Verse 3}\nI wish for you my friend, this happiness that I've found \nYou can depend on Him, it matters not where you're bound \nI'll shout it from the mountain top, I want the world to know\nThe Lord of love has come to me, I want to pass it on\n"
+  "source": "{title: Pass It On}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]It only takes a spar[F#m]k to get[G] a fire going [A7]\n[D]And soon all those a[F#m]round can[G] warm up in its gl[A7]owing \nThat's h[G]ow it is with God[D]'s love,[G] once you've experie[D]nced[Bm] it\nYou[G] spread His lov[D]e to ever[G]yo[D]ne, you w[G]ant to[A7] pass it o[D]n\n\n{section: Verse 2}\nWhat a wondrous time is spring, when all the trees are budding\nThe birds begin to sing, the flowers start their blooming \nThat's how it is with God's love, once you've experienced it\nYou want to sing it's fresh like spring, you want to pass it on\n\n{section: Verse 3}\nI wish for you my friend, this happiness that I've found \nYou can depend on Him, it matters not where you're bound \nI'll shout it from the mountain top, I want the world to know\nThe Lord of love has come to me, I want to pass it on\n"
 }

@@ -2,21 +2,8 @@
   "id": "the-lord-is-one",
   "title": "The Lord Is One",
   "key": "Em",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -267,5 +254,5 @@
     }
   ],
   "sourcePath": "songs/the-lord-is-one.pro",
-  "source": "{title: The Lord Is One}\n{key: Em}\n\n{section: Verse 1}\n[Em]All my brethren, can't you hear me say,\n[D]The Lord will love you forever and a day?\n[Em]All my brethren, can't you hear me say,\n[C]The Lord is One\n\n{{section: Chorus}\n[G]Oh can't you hear me, brother,\n[Bm]And won't you come along\n[D]To build the heavenly kingdom,\n[C]And sing a brand new song!\n\n{{section: Verse 2}\n[Em]Call everybody, try to understand,\n[D]We've got to start working, the time is at hand.\n[Em]Call everybody; try to understand.\n[C]The Day is come.\n\n{{section: Verse 3}\n[Em]Lo, on Mount Zion, the Son of Man appears,\n[D]To rule the house of Jacob for ten thousand years.\n[Em]Lo, on Mount Zion, the Son of Man appears,\n[C]And cries, \"It is done!\"\n\n{{section: Verse 4}\n[Em]All bound together, nobody can fall;\n[D]Loving each other loving one and all.\n[Em]All bound together, nobody can fall,\n[B7]Our race is one.\n[Em]Our race is one.\n[C]Our race is won!\n"
+  "source": "{title: The Lord Is One}\n{key: Em}\n{reviewed: false}\n\n{section: Verse 1}\n[Em]All my brethren, can't you hear me say,\n[D]The Lord will love you forever and a day?\n[Em]All my brethren, can't you hear me say,\n[C]The Lord is One\n\n{{section: Chorus}\n[G]Oh can't you hear me, brother,\n[Bm]And won't you come along\n[D]To build the heavenly kingdom,\n[C]And sing a brand new song!\n\n{{section: Verse 2}\n[Em]Call everybody, try to understand,\n[D]We've got to start working, the time is at hand.\n[Em]Call everybody; try to understand.\n[C]The Day is come.\n\n{{section: Verse 3}\n[Em]Lo, on Mount Zion, the Son of Man appears,\n[D]To rule the house of Jacob for ten thousand years.\n[Em]Lo, on Mount Zion, the Son of Man appears,\n[C]And cries, \"It is done!\"\n\n{{section: Verse 4}\n[Em]All bound together, nobody can fall;\n[D]Loving each other loving one and all.\n[Em]All bound together, nobody can fall,\n[B7]Our race is one.\n[Em]Our race is one.\n[C]Our race is won!\n"
 }

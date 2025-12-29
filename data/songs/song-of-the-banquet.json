@@ -2,21 +2,8 @@
   "id": "song-of-the-banquet",
   "title": "Song of the Banquet",
   "key": "Bb",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -297,5 +284,5 @@
     }
   ],
   "sourcePath": "songs/song-of-the-banquet.pro",
-  "source": "{title: Song of the Banquet}\n{key: Bb}\n\n{section: Verse 1}\n[Bb]Pure new life that once was sown within the Garden's fertile soil,\n[Eb]Sprouting seed has now become a blossom of heavenly loveliness.\n[Cm]Father above, Lord of all, shower your blessing upon\n[F7]This holy day, bond of love forever more!\n\n{section: Verse 2}\n[Bb]Hal-le-lu-jah, Glorious Day of Joy!\n[Eb]Fairest flowers of the meadow, tender buds of perfect form.\n[Gm]Now receive the gift of life and dance in the joy of eternal spring\n\n{section: Verse 3}\n[Cm7]Heavenly host, men on earth, join us in praising this day;\n[F7]Bless us to share, love's communion faithfully,\n[Bb]Hallelujah, Glorious Day of Joy!\n\n{section: Verse 4}\n[Eb]Hushed we stand in awe before you, ready now to give our pledge,\n[D]To attend and serve completely with an unchanging eternal love.\n[Gm]Glorious King, mighty God, fill with your blessed grace,\n\n{section: Verse 5}\n[Cm7]This dearest one; holy banquet of our love.\n[F7]Hallelujah, Glorious Day of Joy!\n\n{section: Verse 6}\n[Bb]Overflowing with your love as dawn proclaims eternal life,\n[Eb]Earth and heaven come surround the glorious Parents of mankind,\n[Gm]Gather around, sing the song, fragrant the love of the Lord;\n\n{section: Verse 7}\n[Cm7]Tell all the world, Spring has come eternally!\n[F7]Hallelujah, Glorious Day of Joy!\n"
+  "source": "{title: Song of the Banquet}\n{key: Bb}\n{reviewed: false}\n\n{section: Verse 1}\n[Bb]Pure new life that once was sown within the Garden's fertile soil,\n[Eb]Sprouting seed has now become a blossom of heavenly loveliness.\n[Cm]Father above, Lord of all, shower your blessing upon\n[F7]This holy day, bond of love forever more!\n\n{section: Verse 2}\n[Bb]Hal-le-lu-jah, Glorious Day of Joy!\n[Eb]Fairest flowers of the meadow, tender buds of perfect form.\n[Gm]Now receive the gift of life and dance in the joy of eternal spring\n\n{section: Verse 3}\n[Cm7]Heavenly host, men on earth, join us in praising this day;\n[F7]Bless us to share, love's communion faithfully,\n[Bb]Hallelujah, Glorious Day of Joy!\n\n{section: Verse 4}\n[Eb]Hushed we stand in awe before you, ready now to give our pledge,\n[D]To attend and serve completely with an unchanging eternal love.\n[Gm]Glorious King, mighty God, fill with your blessed grace,\n\n{section: Verse 5}\n[Cm7]This dearest one; holy banquet of our love.\n[F7]Hallelujah, Glorious Day of Joy!\n\n{section: Verse 6}\n[Bb]Overflowing with your love as dawn proclaims eternal life,\n[Eb]Earth and heaven come surround the glorious Parents of mankind,\n[Gm]Gather around, sing the song, fragrant the love of the Lord;\n\n{section: Verse 7}\n[Cm7]Tell all the world, Spring has come eternally!\n[F7]Hallelujah, Glorious Day of Joy!\n"
 }

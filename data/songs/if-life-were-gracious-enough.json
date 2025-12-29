@@ -2,21 +2,8 @@
   "id": "if-life-were-gracious-enough",
   "title": "If Life Were Gracious Enough",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -249,5 +236,5 @@
     }
   ],
   "sourcePath": "songs/if-life-were-gracious-enough.pro",
-  "source": "{title: If Life Were Gracious Enough}\n{key: C}\n\n{section: Verse 1}\n[C]If life were gracious enough to grant my way,\n[G]I would reach to the ends of the earth\n[Am]To give love in every day.\n[F]And each would find his home\n[C]With peace and friendship there;\n[Em]Where joyous songs abound\n[G]And happiness to share.\n\n{{section: Verse 2}\n[C]If life were gracious enough to grant my dream,\n[G]I would see your face in the stars\n[Am]And hear your song in every stream.\n[F]The comfort of your smile\n[C]In the warm caress of spring,\n[Em]In the dance of life all the while,\n[G7]I feel your love in everything.\n\n{{section: Verse 3}\n[C]We will make life gracious enough\n[G]To fulfill our dream.\n[Am]We will lift off the weight of the world\n[F]And our love will blossom supreme.\n[C]We will free each heart from the pain\n[Em]And anguish of the past.\n[G]Through the preciousness of our love\n[C]True Joy will reign at last.\n"
+  "source": "{title: If Life Were Gracious Enough}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]If life were gracious enough to grant my way,\n[G]I would reach to the ends of the earth\n[Am]To give love in every day.\n[F]And each would find his home\n[C]With peace and friendship there;\n[Em]Where joyous songs abound\n[G]And happiness to share.\n\n{{section: Verse 2}\n[C]If life were gracious enough to grant my dream,\n[G]I would see your face in the stars\n[Am]And hear your song in every stream.\n[F]The comfort of your smile\n[C]In the warm caress of spring,\n[Em]In the dance of life all the while,\n[G7]I feel your love in everything.\n\n{{section: Verse 3}\n[C]We will make life gracious enough\n[G]To fulfill our dream.\n[Am]We will lift off the weight of the world\n[F]And our love will blossom supreme.\n[C]We will free each heart from the pain\n[Em]And anguish of the past.\n[G]Through the preciousness of our love\n[C]True Joy will reign at last.\n"
 }

@@ -2,21 +2,8 @@
   "id": "shiawasette-nandaro",
   "title": "Shiawasette Nandaro",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -299,5 +286,5 @@
     }
   ],
   "sourcePath": "songs/shiawasette-nandaro.pro",
-  "source": "{title: Shiawasette Nandaro}\n{key: D}\n\n{section: Verse 1}\n[D]Shiawasette nandaro, hoshi ni tazunete mita\n[Bm]Minna nakayoku suru koto sa, hoshi wa kotaeta\n[G]Okina ohisama nakanishite\n[A7]G D Bm\n[G]Ai no hikari o ukenagara\n[A7]Sore ga shiawase.\n\n{section: Verse 2}\n[D]Shiawasette nandaro, Hana ni tazunete mita\n[Bm]Utsukushisa o kisou koto sa, Hana wa kotaeta\n[G]Aka shiro kiiro ni yosootte\n[A7]Dono haha mite mo kawai\n\n{{section: Verse 3}\n[D]Daiji na hana to iwarereba\n[Bm]Sore ga shiawase.\n[G]Shiawasette nandaro, Hibari ni kiite mita\n[A7]Takaku haruka ni tobukoto sa, Hibari wa naita\n\n{{section: Verse 4}\n[D]Donna ni takaku tobo tomo\n[Bm]Osora no hate wa tooi\n[G]Mada mada ueniya sora ga aru\n[A7]Sore ga shiawase.\n\n{{section: Verse 5}\n[D]Shiawasette nandaro, Hitsuji ni kiite mita\n[Bm]Nushi o sagashite yuka koto sa, Hitsuji wa naita\n[G]Ookami domo ga osotte mo\n[A7]Kainushi san no koe ni\n\n{{section: Verse 6}\n[D]Mimi o mukete rya anshin sa\n[Bm]Sore ga shiawase.\n"
+  "source": "{title: Shiawasette Nandaro}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]Shiawasette nandaro, hoshi ni tazunete mita\n[Bm]Minna nakayoku suru koto sa, hoshi wa kotaeta\n[G]Okina ohisama nakanishite\n[A7]G D Bm\n[G]Ai no hikari o ukenagara\n[A7]Sore ga shiawase.\n\n{section: Verse 2}\n[D]Shiawasette nandaro, Hana ni tazunete mita\n[Bm]Utsukushisa o kisou koto sa, Hana wa kotaeta\n[G]Aka shiro kiiro ni yosootte\n[A7]Dono haha mite mo kawai\n\n{{section: Verse 3}\n[D]Daiji na hana to iwarereba\n[Bm]Sore ga shiawase.\n[G]Shiawasette nandaro, Hibari ni kiite mita\n[A7]Takaku haruka ni tobukoto sa, Hibari wa naita\n\n{{section: Verse 4}\n[D]Donna ni takaku tobo tomo\n[Bm]Osora no hate wa tooi\n[G]Mada mada ueniya sora ga aru\n[A7]Sore ga shiawase.\n\n{{section: Verse 5}\n[D]Shiawasette nandaro, Hitsuji ni kiite mita\n[Bm]Nushi o sagashite yuka koto sa, Hitsuji wa naita\n[G]Ookami domo ga osotte mo\n[A7]Kainushi san no koe ni\n\n{{section: Verse 6}\n[D]Mimi o mukete rya anshin sa\n[Bm]Sore ga shiawase.\n"
 }

@@ -2,21 +2,8 @@
   "id": "march-of-the-new-age",
   "title": "March of the New Age",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -591,5 +578,5 @@
     }
   ],
   "sourcePath": "songs/march-of-the-new-age.pro",
-  "source": "{title: March of the New Age}\n{key: G}\n\n{section: Verse 1}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's highest [G]truth\n\n{section: Verse 2}\n[C]Wake the mighty land that remains asleep;\n[D]Loudly ring the bell and proclaim to all;\n[G]Fighting on till the day Satan falls in [C]defeat,\n[G]I'll take the task on by myself.\n\n{section: Verse 3}\n[G]Share the persecution that Jesus [C]knew,\n[B7]Suffering abuse from the mocking [Am7]crowd.\n\n{section: Verse 4}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's blessed [G]grace.\n\n{section: Verse 5}\n[G]Two hundred million in darkness dwell;\n[G]Bring to the fire giving light to all;\n[G]Fighting on till the day Satan falls in defeat,\n[G]I'll hold the burden by myself.\n\n{section: Verse 6}\n[G]Share the heart of sadness that Jesus felt,\n[G]Praying in the Garden alone with God.\n\n{section: Verse 7}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's deepest [G]life.\n\n{section: Verse 8}\n[G]Tell the universe in the black of night;\n[G]Shout it with a strong voice awakening all;\n[G]Fight on till the day Satan falls in defeat,\n[G]I'll fight the battle by myself.\n\n{section: Verse 9}\n[G]Take the cross and follow as Jesus did,\n[G]Dying on the mountain at Calvary.\n\n{section: Verse 10}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's greatest [G]love.\n\n{section: Verse 11}\n[G]Tell the people trapped in a world of fear;\n[G]Raising up the flag, we will free them all;\n[G]Fighting on till the day Satan falls in defeat,\n[G]I'll persevere now by myself.\n\n{section: Verse 12}\n[G]Let our Father rest from His lonely toil,\n[G]History awaits us to do His will.\n"
+  "source": "{title: March of the New Age}\n{key: G}\n{reviewed: false}\n\n{section: Verse 1}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's highest [G]truth\n\n{section: Verse 2}\n[C]Wake the mighty land that remains asleep;\n[D]Loudly ring the bell and proclaim to all;\n[G]Fighting on till the day Satan falls in [C]defeat,\n[G]I'll take the task on by myself.\n\n{section: Verse 3}\n[G]Share the persecution that Jesus [C]knew,\n[B7]Suffering abuse from the mocking [Am7]crowd.\n\n{section: Verse 4}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's blessed [G]grace.\n\n{section: Verse 5}\n[G]Two hundred million in darkness dwell;\n[G]Bring to the fire giving light to all;\n[G]Fighting on till the day Satan falls in defeat,\n[G]I'll hold the burden by myself.\n\n{section: Verse 6}\n[G]Share the heart of sadness that Jesus felt,\n[G]Praying in the Garden alone with God.\n\n{section: Verse 7}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's deepest [G]life.\n\n{section: Verse 8}\n[G]Tell the universe in the black of night;\n[G]Shout it with a strong voice awakening all;\n[G]Fight on till the day Satan falls in defeat,\n[G]I'll fight the battle by myself.\n\n{section: Verse 9}\n[G]Take the cross and follow as Jesus did,\n[G]Dying on the mountain at Calvary.\n\n{section: Verse 10}\n[G]Win the whole world, heaven and earth,\n[C]God's will for all shall be [G]fulfilled;\n[G]Teach to all men God's divine word,\n[C]Source of the Father's greatest [G]love.\n\n{section: Verse 11}\n[G]Tell the people trapped in a world of fear;\n[G]Raising up the flag, we will free them all;\n[G]Fighting on till the day Satan falls in defeat,\n[G]I'll persevere now by myself.\n\n{section: Verse 12}\n[G]Let our Father rest from His lonely toil,\n[G]History awaits us to do His will.\n"
 }

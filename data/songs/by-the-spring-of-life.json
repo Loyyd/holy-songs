@@ -2,21 +2,8 @@
   "id": "by-the-spring-of-life",
   "title": "By the Spring of Life",
   "key": "G",
+  "reviewed": true,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -295,5 +282,5 @@
     }
   ],
   "sourcePath": "songs/by-the-spring-of-life.pro",
-  "source": "{title: By the Spring of Life}\n{key: G}\n\n{section: Verse 1}\n[G]We're marching to the blessed land of [C]Canaan with delight,[G]\nWe're leaving all our heavy burdens[A7] here[D7].\nAt[G] last we are released and free from[C] being slaves to[G] sin,\nWe're coming to the blessed [D7]spring of lif[G]e.\n\n{section: Chorus}\nCom[G]ing to the spring where [C]living water [G]flows;\nIn glory we'll be living evermo[A7]re.[D7]\n[G]Going to the land where [C]freely flows the s[G]pring,\nIn [G]glory we'll be living e[D7]vermo[G]re.\n\n{section: Verse 2}\nO guide us with your pillars, Lord, of fire and of cloud,\nO give us paths to follow with our lives.\nThe moment that we cross the Jordan River is at hand,\nWe're coming to the blessed spring of life.\n\n{section: Verse 3}\nOur thirsting hearts receive with joy the manna from above,\nYour precious food will always be our strength\nSo if the future finds us lacking we will not despair\nWe're coming to the blessed spring of life.\n"
+  "source": "{title: By the Spring of Life}\n{key: G}\n{reviewed: true}\n\n{section: Verse 1}\n[G]We're marching to the blessed land of [C]Canaan with delight,[G]\nWe're leaving all our heavy burdens[A7] here[D7].\nAt[G] last we are released and free from[C] being slaves to[G] sin,\nWe're coming to the blessed [D7]spring of lif[G]e.\n\n{section: Chorus}\nCom[G]ing to the spring where [C]living water [G]flows;\nIn glory we'll be living evermo[A7]re.[D7]\n[G]Going to the land where [C]freely flows the s[G]pring,\nIn [G]glory we'll be living e[D7]vermo[G]re.\n\n{section: Verse 2}\nO guide us with your pillars, Lord, of fire and of cloud,\nO give us paths to follow with our lives.\nThe moment that we cross the Jordan River is at hand,\nWe're coming to the blessed spring of life.\n\n{section: Verse 3}\nOur thirsting hearts receive with joy the manna from above,\nYour precious food will always be our strength\nSo if the future finds us lacking we will not despair\nWe're coming to the blessed spring of life.\n"
 }

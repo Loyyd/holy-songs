@@ -2,21 +2,8 @@
   "id": "swing-low-sweet-chariot",
   "title": "Swing Low, Sweet Chariot",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -323,5 +310,5 @@
     }
   ],
   "sourcePath": "songs/swing-low-sweet-chariot.pro",
-  "source": "{title: Swing Low, Sweet Chariot}\n{key: D}\n\n{section: Chorus}\nSwing [D]low sweet [G]cha[D]riot, coming for to carry me [A7]home, \nSwing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me [D]home.\n\n{section: Verse 1}\nI lo[D]oked over Jordan and wh[G]at did I see?[D]\nComing for to carr[A7]y me home.\nA [Bm]band of angels [G]coming aft[D]er me,\nComing for to car[A7]ry me ho[D]me.\n\n{section: Verse 2}\nIf you get there before I do,\nComing for to carry me home,\nJust tell my friends I'm coming there too,\nComing for to carry me home.\n\n{section: Verse 3}\nIf I get there before you do,\nComing for to carry me home.\nI'll dig a hole and pull you through,\nComing for to carry me home.\n\n{section: Verse 4}\nI'm sometimes up and sometimes down,\nComing for to carry me home.\nBut still my soul feels heavenly bound,\nComing for to carry me home.\n"
+  "source": "{title: Swing Low, Sweet Chariot}\n{key: D}\n{reviewed: false}\n\n{section: Chorus}\nSwing [D]low sweet [G]cha[D]riot, coming for to carry me [A7]home, \nSwing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me [D]home.\n\n{section: Verse 1}\nI lo[D]oked over Jordan and wh[G]at did I see?[D]\nComing for to carr[A7]y me home.\nA [Bm]band of angels [G]coming aft[D]er me,\nComing for to car[A7]ry me ho[D]me.\n\n{section: Verse 2}\nIf you get there before I do,\nComing for to carry me home,\nJust tell my friends I'm coming there too,\nComing for to carry me home.\n\n{section: Verse 3}\nIf I get there before you do,\nComing for to carry me home.\nI'll dig a hole and pull you through,\nComing for to carry me home.\n\n{section: Verse 4}\nI'm sometimes up and sometimes down,\nComing for to carry me home.\nBut still my soul feels heavenly bound,\nComing for to carry me home.\n"
 }

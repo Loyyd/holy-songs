@@ -2,21 +2,8 @@
   "id": "i-ll-never-leave-you-anymore",
   "title": "I'll Never Leave You Anymore",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -448,5 +435,5 @@
     }
   ],
   "sourcePath": "songs/ill-never-leave-you-anymore.pro",
-  "source": "{title: I'll Never Leave You Anymore}\n{key: D}\n\n{section: Verse 1}\nI'll never l[C]eave you [F]any[C]more, \nFor I have [Am]found in your bright [G]eyes\nA river of [C]love, a heart of [Am]gold,\nA peaceful [G]mind, a hand to [C]hold.\n\n{section: Verse 2}\nAnd what I'll [C]do with this [F]precious [C]gift?\nShall I em[Am]brace it to my[G]self?\nOh, no I c[C]an't, I would lose it [Am]sure;\nIt must be g[G]iven if it's to e[C]ndure.  [A7]\n\n{section: Verse 3}\nAnd how will I u[D]se this [G]treasure [D]store?\nHow will I [Bm]share this wordless [A]joy?\nI'll greet all [D]men with a loving [Bm]heart;\nI'll speak the t[A]ruth with a clear [D]voice.\n\n{section: Verse 4}\nAnd together we'll [D]build a [G]world that's [D]new.\nThat's fit for k[Bm]ings and fit for [A]queens;\nWe'll raise them [D]up to rule the [Bm]land,\nAnd place domi[A]nion in your h[D]and.  [B7]\n\n{section: Verse 5}\nWe'll never [E]leave you [A]any[E]more, \nFor we have f[C#m]ound in Your bright [B]eyes\nA river of [E]love, a heart of g[C#m]old,\nA peaceful [B]mind, a hand to [E]hold."
+  "source": "{title: I'll Never Leave You Anymore}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\nI'll never l[C]eave you [F]any[C]more, \nFor I have [Am]found in your bright [G]eyes\nA river of [C]love, a heart of [Am]gold,\nA peaceful [G]mind, a hand to [C]hold.\n\n{section: Verse 2}\nAnd what I'll [C]do with this [F]precious [C]gift?\nShall I em[Am]brace it to my[G]self?\nOh, no I c[C]an't, I would lose it [Am]sure;\nIt must be g[G]iven if it's to e[C]ndure.  [A7]\n\n{section: Verse 3}\nAnd how will I u[D]se this [G]treasure [D]store?\nHow will I [Bm]share this wordless [A]joy?\nI'll greet all [D]men with a loving [Bm]heart;\nI'll speak the t[A]ruth with a clear [D]voice.\n\n{section: Verse 4}\nAnd together we'll [D]build a [G]world that's [D]new.\nThat's fit for k[Bm]ings and fit for [A]queens;\nWe'll raise them [D]up to rule the [Bm]land,\nAnd place domi[A]nion in your h[D]and.  [B7]\n\n{section: Verse 5}\nWe'll never [E]leave you [A]any[E]more, \nFor we have f[C#m]ound in Your bright [B]eyes\nA river of [E]love, a heart of g[C#m]old,\nA peaceful [B]mind, a hand to [E]hold."
 }

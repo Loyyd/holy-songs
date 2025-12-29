@@ -2,6 +2,7 @@
   "id": "lean-on-me",
   "title": "Lean On Me",
   "key": "D",
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse",
@@ -367,5 +368,5 @@
     }
   ],
   "sourcePath": "songs/lean-on-me.pro",
-  "source": "{title: Lean On Me}\n{key: D}\n\n[D]Sometimes in our [G]lives we all have [D]pain\n[F#m]We all have [A]sorrow. But if we are [D]wise [G]\n[D]We know that there's [A]always to[D]morrow\n\n[D]Lean on me, when [G]you're not strong\n[D]And I'll be your [F#m]friend, I'll help you carry [A]on\n[D]For it won't be [G]long 'til I'm gonna [D]need\n[A]Somebody to [G]lean [A]on [D]\n\nPlease swallow your pride\nIf I have things you need to borrow\nFor no one can fill those of your needs\nThat you won't let show\n\n[D]You just call on me [G]brother, when you need a [D]hand\n[A]We all need some[G]body to [A]lean [D]on\n[G]You just might have a [D]problem that I'll understand\n[A]We all need some[G]body to [A]lean [D]on\n\nLean on me...\nYou just call on me brother...\n\nIf there is a load you have to bear that you can't carry,\nI'm right up the road, I'll share your load,\nIf you just call me.\n\nLean on me...\n"
+  "source": "{title: Lean On Me}\n{key: D}\n{reviewed: false}\n\n[D]Sometimes in our [G]lives we all have [D]pain\n[F#m]We all have [A]sorrow. But if we are [D]wise [G]\n[D]We know that there's [A]always to[D]morrow\n\n[D]Lean on me, when [G]you're not strong\n[D]And I'll be your [F#m]friend, I'll help you carry [A]on\n[D]For it won't be [G]long 'til I'm gonna [D]need\n[A]Somebody to [G]lean [A]on [D]\n\nPlease swallow your pride\nIf I have things you need to borrow\nFor no one can fill those of your needs\nThat you won't let show\n\n[D]You just call on me [G]brother, when you need a [D]hand\n[A]We all need some[G]body to [A]lean [D]on\n[G]You just might have a [D]problem that I'll understand\n[A]We all need some[G]body to [A]lean [D]on\n\nLean on me...\nYou just call on me brother...\n\nIf there is a load you have to bear that you can't carry,\nI'm right up the road, I'll share your load,\nIf you just call me.\n\nLean on me...\n"
 }

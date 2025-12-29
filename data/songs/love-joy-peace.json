@@ -2,10 +2,95 @@
   "id": "love-joy-peace",
   "title": "Love Joy Peace",
   "key": "Em",
+  "reviewed": true,
   "sections": [
     {
-      "name": "Verse",
+      "name": "Verse 1",
       "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Love, lo"
+            },
+            {
+              "chord": "D",
+              "lyric": "ve, "
+            },
+            {
+              "chord": "Em",
+              "lyric": "love, "
+            },
+            {
+              "chord": "B7",
+              "lyric": "love"
+            }
+          ],
+          "raw": "[Em]Love, lo[D]ve, [Em]love, [B7]love"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Love is the "
+            },
+            {
+              "chord": "D",
+              "lyric": "gospel o"
+            },
+            {
+              "chord": "Em",
+              "lyric": "f the wo"
+            },
+            {
+              "chord": "B7",
+              "lyric": "rld,"
+            }
+          ],
+          "raw": "[Em]Love is the [D]gospel o[Em]f the wo[B7]rld,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Love your ne"
+            },
+            {
+              "chord": "D",
+              "lyric": "ighbour a"
+            },
+            {
+              "chord": "Em",
+              "lyric": "s your br"
+            },
+            {
+              "chord": "B7",
+              "lyric": "other,"
+            }
+          ],
+          "raw": "[Em]Love your ne[D]ighbour a[Em]s your br[B7]other,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Love, l"
+            },
+            {
+              "chord": "D",
+              "lyric": "ove, love, "
+            },
+            {
+              "chord": "Em",
+              "lyric": "love."
+            },
+            {
+              "chord": "B7",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]Love, l[D]ove, love, [Em]love.[B7]"
+        },
         {
           "tokens": [
             {
@@ -18,88 +103,43 @@
       ]
     },
     {
-      "name": "Verse 1",
+      "name": "Verse 2",
       "lines": [
         {
           "tokens": [
             {
-              "chord": "Em",
-              "lyric": "Love, love, love, love"
-            }
-          ],
-          "raw": "[Em]Love, love, love, love"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "D",
-              "lyric": "Love is the gospel of the world,"
-            }
-          ],
-          "raw": "[D]Love is the gospel of the world,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Em",
-              "lyric": "Love your neighbour as your brother,"
-            }
-          ],
-          "raw": "[Em]Love your neighbour as your brother,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "B7",
-              "lyric": "Love, love, love, love."
-            }
-          ],
-          "raw": "[B7]Love, love, love, love."
-        },
-        {
-          "tokens": [
-            {
               "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Em",
               "lyric": "Joy, joy, joy, joy"
             }
           ],
-          "raw": "[Em]Joy, joy, joy, joy"
+          "raw": "Joy, joy, joy, joy"
         },
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": null,
               "lyric": "Joy is the purpose of our lives,"
             }
           ],
-          "raw": "[D]Joy is the purpose of our lives,"
+          "raw": "Joy is the purpose of our lives,"
         },
         {
           "tokens": [
             {
-              "chord": "Em",
+              "chord": null,
               "lyric": "Let us dance before our Father,"
             }
           ],
-          "raw": "[Em]Let us dance before our Father,"
+          "raw": "Let us dance before our Father,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "Joy, joy, joy, joy."
             }
           ],
-          "raw": "[B7]Joy, joy, joy, joy."
+          "raw": "Joy, joy, joy, joy."
         },
         {
           "tokens": [
@@ -109,42 +149,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "Em",
+              "chord": null,
               "lyric": "Peace, peace, peace, peace,"
             }
           ],
-          "raw": "[Em]Peace, peace, peace, peace,"
+          "raw": "Peace, peace, peace, peace,"
         },
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": null,
               "lyric": "Peace is the hope of all mankind,"
             }
           ],
-          "raw": "[D]Peace is the hope of all mankind,"
+          "raw": "Peace is the hope of all mankind,"
         },
         {
           "tokens": [
             {
-              "chord": "Em",
+              "chord": null,
               "lyric": "Let us work to free our brothers,"
             }
           ],
-          "raw": "[Em]Let us work to free our brothers,"
+          "raw": "Let us work to free our brothers,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "Peace, peace, peace, peace."
             }
           ],
-          "raw": "[B7]Peace, peace, peace, peace."
+          "raw": "Peace, peace, peace, peace."
         },
         {
           "tokens": [
@@ -159,5 +204,5 @@
     }
   ],
   "sourcePath": "songs/love-joy-peace.pro",
-  "source": "{title: Love Joy Peace}\n{key: Em}\n\n{section: Verse 1}\n[Em]Love, love, love, love\n[D]Love is the gospel of the world,\n[Em]Love your neighbour as your brother,\n[B7]Love, love, love, love.\n\n{{section: Verse 2}\n[Em]Joy, joy, joy, joy\n[D]Joy is the purpose of our lives,\n[Em]Let us dance before our Father,\n[B7]Joy, joy, joy, joy.\n\n{{section: Verse 3}\n[Em]Peace, peace, peace, peace,\n[D]Peace is the hope of all mankind,\n[Em]Let us work to free our brothers,\n[B7]Peace, peace, peace, peace.\n"
+  "source": "{title: Love Joy Peace}\n{key: Em}\n{reviewed: true}\n\n{section: Verse 1}\n[Em]Love, lo[D]ve, [Em]love, [B7]love\n[Em]Love is the [D]gospel o[Em]f the wo[B7]rld,\n[Em]Love your ne[D]ighbour a[Em]s your br[B7]other,\n[Em]Love, l[D]ove, love, [Em]love.[B7]\n\n{section: Verse 2}\nJoy, joy, joy, joy\nJoy is the purpose of our lives,\nLet us dance before our Father,\nJoy, joy, joy, joy.\n\n{section: Verse 3}\nPeace, peace, peace, peace,\nPeace is the hope of all mankind,\nLet us work to free our brothers,\nPeace, peace, peace, peace.\n"
 }

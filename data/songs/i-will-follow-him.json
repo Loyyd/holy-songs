@@ -2,6 +2,7 @@
   "id": "i-will-follow-him",
   "title": "I Will Follow Him",
   "key": "G",
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse",
@@ -404,5 +405,5 @@
     }
   ],
   "sourcePath": "songs/i-will-follow-him.pro",
-  "source": "{title: I Will Follow Him}\n{key: G}\n\n[G]I will follow [Bm]Him, follow Him wherever He may go,\n[Em]And near Him I [Bm]always will be\n[C]For nothing can [D]keep me a[G]way, He is my [Em]desti[D]ny.\n\n[D]I will follow [G]Him, Ever since He [Bm]touched my heart I knew,\n[Em]There isn't an [Bm]ocean too deep, a [C]mountain so high it can [Am]keep,\n[D]Keep me a[G]way, a[Em]way from [D]His [G]love. [D]\n\n[G]I love Him, I love Him, I love Him,\n[Em]And where He goes, I'll follow, I'll follow, I'll follow.\n\n[G]I will follow [Bm]Him, follow Him wherever He may go,\n[Em]There isn't an [Bm]ocean too deep, A [C]mountain so high it can [D]keep,\n[D]Keep me a[G]way, a[Em]way from [D]his [G]love [D]\n\nWe will follow Him, follow Him wherever He may go,\nThere isn't an ocean too deep,\n[C]A mountain so high it can [Am]keep,\n[D]Keep us a[G]way, a[Em]way from [D]His [G]love [D]\n\nI love Him, I love Him, I love Him,\nAnd where He goes, I'll follow, I'll follow, I'll follow,\nHe'll always be my true love, My true love, my true love,\nFrom now until forever, forever, forever...\n\nThere isn't an ocean too deep,\nA mountain so high it can keep,\nKeep me away, away from His love.\n"
+  "source": "{title: I Will Follow Him}\n{key: G}\n{reviewed: false}\n\n[G]I will follow [Bm]Him, follow Him wherever He may go,\n[Em]And near Him I [Bm]always will be\n[C]For nothing can [D]keep me a[G]way, He is my [Em]desti[D]ny.\n\n[D]I will follow [G]Him, Ever since He [Bm]touched my heart I knew,\n[Em]There isn't an [Bm]ocean too deep, a [C]mountain so high it can [Am]keep,\n[D]Keep me a[G]way, a[Em]way from [D]His [G]love. [D]\n\n[G]I love Him, I love Him, I love Him,\n[Em]And where He goes, I'll follow, I'll follow, I'll follow.\n\n[G]I will follow [Bm]Him, follow Him wherever He may go,\n[Em]There isn't an [Bm]ocean too deep, A [C]mountain so high it can [D]keep,\n[D]Keep me a[G]way, a[Em]way from [D]his [G]love [D]\n\nWe will follow Him, follow Him wherever He may go,\nThere isn't an ocean too deep,\n[C]A mountain so high it can [Am]keep,\n[D]Keep us a[G]way, a[Em]way from [D]His [G]love [D]\n\nI love Him, I love Him, I love Him,\nAnd where He goes, I'll follow, I'll follow, I'll follow,\nHe'll always be my true love, My true love, my true love,\nFrom now until forever, forever, forever...\n\nThere isn't an ocean too deep,\nA mountain so high it can keep,\nKeep me away, away from His love.\n"
 }

@@ -2,21 +2,8 @@
   "id": "i-saw-the-light",
   "title": "I Saw The Light",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -191,5 +178,5 @@
     }
   ],
   "sourcePath": "songs/i-saw-the-light.pro",
-  "source": "{title: I Saw The Light}\n{key: G}\n\n{section: Chorus}\n[G]I saw the light, I [G7]saw the light,\n[C]No more darkness, [G]no more night.\n[Em]Now I’m so happy, no sorrow in sight\n[G]Praise the Lord, I [D7]saw the [G]light.\n\n[G]I was a wanderer, [G7]sinking in sin,\n[C]I wouldn't let my dear [G]saviour in.\n[G]Then Jesus came like a [Em]stranger in the night.\n[G]Praise the Lord, I [D7]saw the light.\n\nWell, just like a blind man, I wandered alone,\nWorries and fears I claimed for my own.\nThen like a blind man, that God gave back his sight,\nPraise the Lord, I saw the light.\n"
+  "source": "{title: I Saw The Light}\n{key: G}\n{reviewed: false}\n\n{section: Chorus}\n[G]I saw the light, I [G7]saw the light,\n[C]No more darkness, [G]no more night.\n[Em]Now I’m so happy, no sorrow in sight\n[G]Praise the Lord, I [D7]saw the [G]light.\n\n[G]I was a wanderer, [G7]sinking in sin,\n[C]I wouldn't let my dear [G]saviour in.\n[G]Then Jesus came like a [Em]stranger in the night.\n[G]Praise the Lord, I [D7]saw the light.\n\nWell, just like a blind man, I wandered alone,\nWorries and fears I claimed for my own.\nThen like a blind man, that God gave back his sight,\nPraise the Lord, I saw the light.\n"
 }

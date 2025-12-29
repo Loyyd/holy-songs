@@ -2,21 +2,8 @@
   "id": "michael",
   "title": "Michael",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -169,5 +156,5 @@
     }
   ],
   "sourcePath": "songs/michael.pro",
-  "source": "{title: Michael}\n{key: D}\n\n{section: Verse 1}\n[D]Michael row the boat ashore, Hallelujah\n[G]Michael row the boat ashore, Hallelujah\n\n{section: Verse 2}\n[D]Sister help to trim the sails, Hallelujah\n[G]Sister help to trim the sails, Hallelujah\n\n{section: Verse 3}\n[D]The river of Jordan is chilly and cold, Hallelujah\n[G]Chills the body, but not the soul, Hallelujah\n\n{{section: Verse 4}\n[D]The river is deep and the river is wide, Hallelujah\n[G]I've got a home on the other side, Hallelujah\n\n{{section: Verse 5}\n[D]Michael row the boat ashore, Hallelujah\n[G]Michael row the boat ashore, Hallelujah\n"
+  "source": "{title: Michael}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]Michael row the boat ashore, Hallelujah\n[G]Michael row the boat ashore, Hallelujah\n\n{section: Verse 2}\n[D]Sister help to trim the sails, Hallelujah\n[G]Sister help to trim the sails, Hallelujah\n\n{section: Verse 3}\n[D]The river of Jordan is chilly and cold, Hallelujah\n[G]Chills the body, but not the soul, Hallelujah\n\n{{section: Verse 4}\n[D]The river is deep and the river is wide, Hallelujah\n[G]I've got a home on the other side, Hallelujah\n\n{{section: Verse 5}\n[D]Michael row the boat ashore, Hallelujah\n[G]Michael row the boat ashore, Hallelujah\n"
 }

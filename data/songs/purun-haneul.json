@@ -2,21 +2,8 @@
   "id": "purun-haneul",
   "title": "Purun Haneul",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -204,5 +191,5 @@
     }
   ],
   "sourcePath": "songs/purun-haneul.pro",
-  "source": "{title: Purun Haneul}\n{key: C}\n\n{section: Verse 1}\n[C]Purun hanul un ha soo\n[Em]Ha yon jok pa en\n[F]Ke sun a mu ha na mu\n[G7]Toki han ma ri\n\n{{section: Verse 2}\n[C]Tot dae do ani dalgo\n[Em]Sat dae do obshi\n[C]Ka gi do chal do kanda\n[G7]So chok nara ro.\n\n{{section: Verse 3}\n[C]In the sky the moon sails free,\n[Em]Ship of yellow light;\n[F]Clouds are billows on the soft sea,\n[G7]In the gentle night.\n\n{{section: Verse 4}\n[C]All around the vessel bright,\n[Em]Stars go dancing by,\n[F]Come, take me ship of light\n[G7]Sailing the heavens high.\n"
+  "source": "{title: Purun Haneul}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]Purun hanul un ha soo\n[Em]Ha yon jok pa en\n[F]Ke sun a mu ha na mu\n[G7]Toki han ma ri\n\n{{section: Verse 2}\n[C]Tot dae do ani dalgo\n[Em]Sat dae do obshi\n[C]Ka gi do chal do kanda\n[G7]So chok nara ro.\n\n{{section: Verse 3}\n[C]In the sky the moon sails free,\n[Em]Ship of yellow light;\n[F]Clouds are billows on the soft sea,\n[G7]In the gentle night.\n\n{{section: Verse 4}\n[C]All around the vessel bright,\n[Em]Stars go dancing by,\n[F]Come, take me ship of light\n[G7]Sailing the heavens high.\n"
 }

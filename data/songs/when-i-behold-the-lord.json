@@ -2,21 +2,8 @@
   "id": "when-i-behold-the-lord",
   "title": "When I Behold the Lord",
   "key": "E",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -219,5 +206,5 @@
     }
   ],
   "sourcePath": "songs/when-i-behold-the-lord.pro",
-  "source": "{title: When I Behold the Lord}\n{key: E}\n\n{section: Verse 1}\n[E]When I behold the Lord of all, my old self dies away.\n[B7]So dies the world of sinfulness giving birth to good.\n[C#m]Soon a new self emerges, clear and bright and pure;\n[F#m]Come and behold the new life, heaven and earth reborn.\n\n{section: Verse 2}\n[E]Now I behold Jerusalem, city of loveliness,\n[B7]Gently descending from above, ever to be my own.\n[A]Joy never ending is with me, long as the Lord is near;\n[E]Joy ever flows in sweetness, river of precious life.\n\n{section: Verse 3}\n[B7]Kingdom of God eternal fervently I desired;\n[E]Heavenly rays so softy fall, shining the Sun of Grace.\n[C#m]Springing forth in ripeness, fruit of the Tree of Life,\n[F#m]Torment of doubt is over, gone is the shadow of death.\n\n{section: Verse 4}\n[B7]Torturing every part of me, sinfulness rules my soul.\n[E]Still God can raise me purified, giving creation to me.\n[A]Letting me live in his palace, shining with golden light;\n[E]Boundless His love and kindness, boundless His love for me!\n"
+  "source": "{title: When I Behold the Lord}\n{key: E}\n{reviewed: false}\n\n{section: Verse 1}\n[E]When I behold the Lord of all, my old self dies away.\n[B7]So dies the world of sinfulness giving birth to good.\n[C#m]Soon a new self emerges, clear and bright and pure;\n[F#m]Come and behold the new life, heaven and earth reborn.\n\n{section: Verse 2}\n[E]Now I behold Jerusalem, city of loveliness,\n[B7]Gently descending from above, ever to be my own.\n[A]Joy never ending is with me, long as the Lord is near;\n[E]Joy ever flows in sweetness, river of precious life.\n\n{section: Verse 3}\n[B7]Kingdom of God eternal fervently I desired;\n[E]Heavenly rays so softy fall, shining the Sun of Grace.\n[C#m]Springing forth in ripeness, fruit of the Tree of Life,\n[F#m]Torment of doubt is over, gone is the shadow of death.\n\n{section: Verse 4}\n[B7]Torturing every part of me, sinfulness rules my soul.\n[E]Still God can raise me purified, giving creation to me.\n[A]Letting me live in his palace, shining with golden light;\n[E]Boundless His love and kindness, boundless His love for me!\n"
 }

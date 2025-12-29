@@ -2,21 +2,8 @@
   "id": "man-come-into-egypt",
   "title": "Man Come Into Egypt",
   "key": "Dm",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -384,5 +371,5 @@
     }
   ],
   "sourcePath": "songs/man-come-into-egypt.pro",
-  "source": "{title: Man Come Into Egypt}\n{key: Dm}\n\n{section: Verse 1}\n[Dm]There is a man come into Egypt\n[G]And Moses is his name.\n[Dm]When he saw the grief upon us,\n[G]In his heart there burned a flame -\n\n{{section: Verse 2}\n[Dm]In his heart there burned a flame, oh Lord,\n[G]In his heart there burned a flame.\n[Dm]When he saw the grief upon us,\n[A]In his heart there burned a flame.\n\n{{section: Verse 3}\n[Dm]There is a man come into Egypt,\n[G]His eyes are full of light.\n[Dm]Like the sun come up in Egypt,\n[A]Come to drive away the night -\n\n{{section: Verse 4}\n[Dm]Come to drive away the night, oh Lord,\n[G]Come to drive away the night.\n[Dm]Like the sun come up in Egypt,\n[A]Come to drive away the night.\n\n{{section: Verse 5}\n[Dm]There is a man come into Egypt,\n[G]He's come for you and me.\n[Dm]On his lips a word is singing,\n[A]And the world is 'liberty' -\n\n{{section: Verse 6}\n[Dm]And the world is 'liberty', oh Lord,\n[G]And the world is 'liberty'.\n[Dm]On his lips a word is singing,\n[A]And the world is 'liberty'.\n\n{{section: Verse 7}\n[Dm]There is a man come into Egypt,\n[G]To stir the souls of men.\n[Dm]We will follow him to freedom,\n[A]And never wear those chains again -\n\n{{section: Verse 8}\n[Dm]Never wear those chains again,\n[G]Oh Lord, Never wear those chains again.\n[Dm]We will follow him to freedom, And\n[A]never wear those chains again.\n"
+  "source": "{title: Man Come Into Egypt}\n{key: Dm}\n{reviewed: false}\n\n{section: Verse 1}\n[Dm]There is a man come into Egypt\n[G]And Moses is his name.\n[Dm]When he saw the grief upon us,\n[G]In his heart there burned a flame -\n\n{{section: Verse 2}\n[Dm]In his heart there burned a flame, oh Lord,\n[G]In his heart there burned a flame.\n[Dm]When he saw the grief upon us,\n[A]In his heart there burned a flame.\n\n{{section: Verse 3}\n[Dm]There is a man come into Egypt,\n[G]His eyes are full of light.\n[Dm]Like the sun come up in Egypt,\n[A]Come to drive away the night -\n\n{{section: Verse 4}\n[Dm]Come to drive away the night, oh Lord,\n[G]Come to drive away the night.\n[Dm]Like the sun come up in Egypt,\n[A]Come to drive away the night.\n\n{{section: Verse 5}\n[Dm]There is a man come into Egypt,\n[G]He's come for you and me.\n[Dm]On his lips a word is singing,\n[A]And the world is 'liberty' -\n\n{{section: Verse 6}\n[Dm]And the world is 'liberty', oh Lord,\n[G]And the world is 'liberty'.\n[Dm]On his lips a word is singing,\n[A]And the world is 'liberty'.\n\n{{section: Verse 7}\n[Dm]There is a man come into Egypt,\n[G]To stir the souls of men.\n[Dm]We will follow him to freedom,\n[A]And never wear those chains again -\n\n{{section: Verse 8}\n[Dm]Never wear those chains again,\n[G]Oh Lord, Never wear those chains again.\n[Dm]We will follow him to freedom, And\n[A]never wear those chains again.\n"
 }

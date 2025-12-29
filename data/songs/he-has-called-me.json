@@ -2,21 +2,8 @@
   "id": "he-has-called-me",
   "title": "He Has Called Me",
   "key": "Eb",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -211,5 +198,5 @@
     }
   ],
   "sourcePath": "songs/he-has-called-me.pro",
-  "source": "{title: He Has Called Me}\n{key: Eb}\n\n{section: Verse 1}\n[Eb]The Lord has called and I will go, where He leads me I will follow;\n[Ab]The same in sorrow as in joy; with one heart I follow my Lord.\n\n{section: Verse 2}\n[Eb]For none on earth can turn me back, not even death can stop me,\n[Ab]No none on earth can turn me back, not even death can stop me.\n\n{section: Verse 3}\n[Bb]To barren valleys piled with bones, I will take the living message;\n[F7]To Sodom's foul and wretched streets, I will bear the word with love.\n\n{section: Verse 4}\n[Bb]I bind my heart, my life to Yours, that it may be an offering,\n[Bb]I bind my heart, my life to Yours, that it may be an offering.\n\n{section: Verse 5}\n[Eb]To You belongs our full acclaim, all glory power and honor,\n[Ab]The world's contempt I do not fear, I will gladly bear the cross.\n\n{section: Verse 6}\n[Bb]Without esteem, without renown, I only wish to follow,\n[Bb]Without esteem, without renown, I only wish to follow.\n"
+  "source": "{title: He Has Called Me}\n{key: Eb}\n{reviewed: false}\n\n{section: Verse 1}\n[Eb]The Lord has called and I will go, where He leads me I will follow;\n[Ab]The same in sorrow as in joy; with one heart I follow my Lord.\n\n{section: Verse 2}\n[Eb]For none on earth can turn me back, not even death can stop me,\n[Ab]No none on earth can turn me back, not even death can stop me.\n\n{section: Verse 3}\n[Bb]To barren valleys piled with bones, I will take the living message;\n[F7]To Sodom's foul and wretched streets, I will bear the word with love.\n\n{section: Verse 4}\n[Bb]I bind my heart, my life to Yours, that it may be an offering,\n[Bb]I bind my heart, my life to Yours, that it may be an offering.\n\n{section: Verse 5}\n[Eb]To You belongs our full acclaim, all glory power and honor,\n[Ab]The world's contempt I do not fear, I will gladly bear the cross.\n\n{section: Verse 6}\n[Bb]Without esteem, without renown, I only wish to follow,\n[Bb]Without esteem, without renown, I only wish to follow.\n"
 }

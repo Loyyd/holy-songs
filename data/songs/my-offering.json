@@ -2,21 +2,8 @@
   "id": "my-offering",
   "title": "My Offering",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -258,5 +245,5 @@
     }
   ],
   "sourcePath": "songs/my-offering.pro",
-  "source": "{title: My Offering}\n{key: C}\n\n{section: Verse 1}\n[C]Now I have to come to know, I've truly come to know,\n[G]Father, how your [A]heart is filled with [D]tears,\n[D]For your altar [A]stands and waits for an [D]offering never made.\n[G]He cries through [D]all the ages for [G]still no offering [A]comes, [D]\n[G]Our Father [D]cries in loneliness for [A7]He cannot share His [D]heart.\n\n{section: Verse 2}\nNow I have come to know, I've truly come to know,\nFather, now I know your blessed grace;\nFor you raised me from the darkness and gave to me new life.\nI live and stand before you, but now you cry again.\nMy Father has to say to me,\n\"Go and die now in my place.\"\n\n{section: Verse 3}\nNow pledging I will go, determined I will go,\nFather, now I'm changing to Your way,\nFor no other will I follow, but go my Father's way\nUpon Your waiting altar I kneel without a word.\nMy life shall be the sacrifice;\nI will faithfully obey.\n"
+  "source": "{title: My Offering}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]Now I have to come to know, I've truly come to know,\n[G]Father, how your [A]heart is filled with [D]tears,\n[D]For your altar [A]stands and waits for an [D]offering never made.\n[G]He cries through [D]all the ages for [G]still no offering [A]comes, [D]\n[G]Our Father [D]cries in loneliness for [A7]He cannot share His [D]heart.\n\n{section: Verse 2}\nNow I have come to know, I've truly come to know,\nFather, now I know your blessed grace;\nFor you raised me from the darkness and gave to me new life.\nI live and stand before you, but now you cry again.\nMy Father has to say to me,\n\"Go and die now in my place.\"\n\n{section: Verse 3}\nNow pledging I will go, determined I will go,\nFather, now I'm changing to Your way,\nFor no other will I follow, but go my Father's way\nUpon Your waiting altar I kneel without a word.\nMy life shall be the sacrifice;\nI will faithfully obey.\n"
 }

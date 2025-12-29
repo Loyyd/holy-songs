@@ -2,21 +2,8 @@
   "id": "song-of-victory",
   "title": "Song of Victory",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -381,5 +368,5 @@
     }
   ],
   "sourcePath": "songs/song-of-victory.pro",
-  "source": "{title: Song of Victory}\n{key: F}\n\n{section: Verse 1}\n[F]Sing Hosannas evermore!\n[C7]Sing of glory evermore!\n[F7]For the Lord has come again,\n[Bb]Sing Hosannas evermore!\n\n{section: Verse 2}\n[F]Heaven dances at the sound,\n[A]All His angels whirl around.\n[Dm]All creation joining in,\n[Bb]Dances at the joyful [C7]sound.\n\n{section: Verse 3}\n[F]See the new Jerusalem,\n[C7]Coming now upon the earth.\n[F7]For the day is here at last,\n[Bb]Now the Lord is come at [F]last.\n\n{section: Verse 4}\n[F]Brightly burn O Fire of Faith!\n[C7]Burn so brightly everywhere.\n[F7]Light of hope, burn today,\n[Bb]Kindling every faithful heart.\n\n{section: Verse 5}\n[F]Land of Egypt, land of woe,\n[C7]Waiting for the Lord's return.\n[F7]Soon the day will come at last,\n[Bb]When the Rose of Sharon blooms.\n\n{section: Verse 6}\n[F]March along, march along,\n[C7]Have no fear, but march along;\n[F7]For you go to victory,\n[Bb]Heaven's soldiers, march [F]along.\n\n{section: Verse 7}\n[F]Praise the Lord, O praise the Lord!\n[C7]Praise the glorious Lord of all,\n[F7]To the Lord of truth and love,\n[Bb]Sing to Him eternal praise.\n"
+  "source": "{title: Song of Victory}\n{key: F}\n{reviewed: false}\n\n{section: Verse 1}\n[F]Sing Hosannas evermore!\n[C7]Sing of glory evermore!\n[F7]For the Lord has come again,\n[Bb]Sing Hosannas evermore!\n\n{section: Verse 2}\n[F]Heaven dances at the sound,\n[A]All His angels whirl around.\n[Dm]All creation joining in,\n[Bb]Dances at the joyful [C7]sound.\n\n{section: Verse 3}\n[F]See the new Jerusalem,\n[C7]Coming now upon the earth.\n[F7]For the day is here at last,\n[Bb]Now the Lord is come at [F]last.\n\n{section: Verse 4}\n[F]Brightly burn O Fire of Faith!\n[C7]Burn so brightly everywhere.\n[F7]Light of hope, burn today,\n[Bb]Kindling every faithful heart.\n\n{section: Verse 5}\n[F]Land of Egypt, land of woe,\n[C7]Waiting for the Lord's return.\n[F7]Soon the day will come at last,\n[Bb]When the Rose of Sharon blooms.\n\n{section: Verse 6}\n[F]March along, march along,\n[C7]Have no fear, but march along;\n[F7]For you go to victory,\n[Bb]Heaven's soldiers, march [F]along.\n\n{section: Verse 7}\n[F]Praise the Lord, O praise the Lord!\n[C7]Praise the glorious Lord of all,\n[F7]To the Lord of truth and love,\n[Bb]Sing to Him eternal praise.\n"
 }

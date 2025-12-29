@@ -2,21 +2,8 @@
   "id": "sunny-side-of-life",
   "title": "Sunny Side of Life",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -245,5 +232,5 @@
     }
   ],
   "sourcePath": "songs/sunny-side-of-life.pro",
-  "source": "{title: Sunny Side of Life}\n{key: G}\n\n{section: Verse 1}\n[G]There's a sunny side where no ills betide\n[C]On the road that we must go\n[G]There are pleasant vales verdant hills and dales\n[D]Where sweet flowers ever grow\n\n{section: Chorus}\n[G]Bros: Oh the happy sunny pretty rolling dales\n[D]Sis': happy sunny pretty rolling dales\n[G]Bros: Where the sweetest gladness ever there prevails\n[D7]Sis': sweetest joy and gladness ever there prevails\n[G7]Bros: Where the sunshine lingers on the hills\n[C]Sis': Where the sunshine ever lingers on the grand majestic hills\n[G]Bros: On the sunny side of life\n[D]Sis': On the happy sunny side of life\n\n{{section: Verse 2}\n[G]There's shady dells where no gladness dwells\n[C]And the clouds obstruct the view\n[G]But a brighter way like the light of day\n[D]Is awaiting now for you\n\n{{section: Verse 3}\n[G]Let us sing a song as we go along\n[C]Let us banish cares and strife\n[G]That the world might know as we onward go\n[D]There's a sunny side of life\n"
+  "source": "{title: Sunny Side of Life}\n{key: G}\n{reviewed: false}\n\n{section: Verse 1}\n[G]There's a sunny side where no ills betide\n[C]On the road that we must go\n[G]There are pleasant vales verdant hills and dales\n[D]Where sweet flowers ever grow\n\n{section: Chorus}\n[G]Bros: Oh the happy sunny pretty rolling dales\n[D]Sis': happy sunny pretty rolling dales\n[G]Bros: Where the sweetest gladness ever there prevails\n[D7]Sis': sweetest joy and gladness ever there prevails\n[G7]Bros: Where the sunshine lingers on the hills\n[C]Sis': Where the sunshine ever lingers on the grand majestic hills\n[G]Bros: On the sunny side of life\n[D]Sis': On the happy sunny side of life\n\n{{section: Verse 2}\n[G]There's shady dells where no gladness dwells\n[C]And the clouds obstruct the view\n[G]But a brighter way like the light of day\n[D]Is awaiting now for you\n\n{{section: Verse 3}\n[G]Let us sing a song as we go along\n[C]Let us banish cares and strife\n[G]That the world might know as we onward go\n[D]There's a sunny side of life\n"
 }

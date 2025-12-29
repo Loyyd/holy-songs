@@ -2,21 +2,8 @@
   "id": "sarang-hae",
   "title": "Sarang Hae",
   "key": "G",
+  "reviewed": true,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -24,69 +11,79 @@
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Sarang hae tan si nul,"
-            }
-          ],
-          "raw": "[G]Sarang hae tan si nul,"
-        },
-        {
-          "tokens": [
+              "lyric": "Sarang hae tan si nul"
+            },
             {
               "chord": "Em",
-              "lyric": "Tchong mallo sarang hae."
+              "lyric": ","
             }
           ],
-          "raw": "[Em]Tchong mallo sarang hae."
+          "raw": "[G]Sarang hae tan si nul[Em],"
         },
         {
           "tokens": [
             {
               "chord": "C",
-              "lyric": "Tan shin ni nae kgyo tul,"
+              "lyric": "Tchong mallo sara"
+            },
+            {
+              "chord": "D7",
+              "lyric": "ng hae."
             }
           ],
-          "raw": "[C]Tan shin ni nae kgyo tul,"
+          "raw": "[C]Tchong mallo sara[D7]ng hae."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Tan shin ni nae "
+            },
+            {
+              "chord": "Em",
+              "lyric": "kgyo tul,"
+            }
+          ],
+          "raw": "[G]Tan shin ni nae [Em]kgyo tul,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "To na ghan "
+            },
+            {
+              "chord": "D7",
+              "lyric": "dwi-eh"
+            }
+          ],
+          "raw": "[C]To na ghan [D7]dwi-eh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Olmana nun "
+            },
+            {
+              "chord": "Em",
+              "lyric": "mul ul,"
+            }
+          ],
+          "raw": "[G]Olmana nun [Em]mul ul,"
         },
         {
           "tokens": [
             {
               "chord": "D7",
-              "lyric": "To na ghan dwi-eh"
-            }
-          ],
-          "raw": "[D7]To na ghan dwi-eh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 2",
-      "lines": [
-        {
-          "tokens": [
+              "lyric": "Hul ryun nun jchi morin"
+            },
             {
               "chord": "G",
-              "lyric": "Olmana nun mul ul,"
+              "lyric": "-dao."
             }
           ],
-          "raw": "[G]Olmana nun mul ul,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Em",
-              "lyric": "Hul ryun nun jchi morin-dao."
-            }
-          ],
-          "raw": "[Em]Hul ryun nun jchi morin-dao."
+          "raw": "[D7]Hul ryun nun jchi morin[G]-dao."
         },
         {
           "tokens": [
@@ -106,28 +103,48 @@
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Ye, Ye, Ye, ..."
+              "lyric": "Ye, Ye, Ye,"
+            },
+            {
+              "chord": "Em",
+              "lyric": " .."
+            },
+            {
+              "chord": "C",
+              "lyric": ".  "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
             }
           ],
-          "raw": "[G]Ye, Ye, Ye, ..."
+          "raw": "[G]Ye, Ye, Ye,[Em] ..[C].  [D]"
         },
         {
           "tokens": [
             {
+              "chord": "G",
+              "lyric": "Sarang hae "
+            },
+            {
               "chord": "Em",
-              "lyric": "Sarang hae tan shi nul,"
+              "lyric": "tan shi nul,"
             }
           ],
-          "raw": "[Em]Sarang hae tan shi nul,"
+          "raw": "[G]Sarang hae [Em]tan shi nul,"
         },
         {
           "tokens": [
             {
               "chord": "D",
-              "lyric": "Chong mallo sarang hae."
+              "lyric": "Chong mallo sara"
+            },
+            {
+              "chord": "G",
+              "lyric": "ng hae."
             }
           ],
-          "raw": "[D]Chong mallo sarang hae."
+          "raw": "[D]Chong mallo sara[G]ng hae."
         },
         {
           "tokens": [
@@ -141,43 +158,43 @@
       ]
     },
     {
-      "name": "Verse 3",
+      "name": "Verse 2",
       "lines": [
         {
           "tokens": [
             {
-              "chord": "G",
+              "chord": null,
               "lyric": "Molida na bo rin,"
             }
           ],
-          "raw": "[G]Molida na bo rin,"
+          "raw": "Molida na bo rin,"
         },
         {
           "tokens": [
             {
-              "chord": "Em",
+              "chord": null,
               "lyric": "Mo ni jchul kude-o."
             }
           ],
-          "raw": "[Em]Mo ni jchul kude-o."
+          "raw": "Mo ni jchul kude-o."
         },
         {
           "tokens": [
             {
-              "chord": "C",
+              "chord": null,
               "lyric": "Tan shini nae hgyo tul,"
             }
           ],
-          "raw": "[C]Tan shini nae hgyo tul,"
+          "raw": "Tan shini nae hgyo tul,"
         },
         {
           "tokens": [
             {
-              "chord": "D7",
+              "chord": null,
               "lyric": "To na ghanidwi-eh."
             }
           ],
-          "raw": "[D7]To na ghanidwi-eh."
+          "raw": "To na ghanidwi-eh."
         },
         {
           "tokens": [
@@ -191,25 +208,54 @@
       ]
     },
     {
-      "name": "Verse 4",
+      "name": "Chorus",
       "lines": [
         {
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Pam mada guinun,"
+              "lyric": "Ye, Ye, Ye,"
+            },
+            {
+              "chord": "Em",
+              "lyric": " .."
+            },
+            {
+              "chord": "C",
+              "lyric": ".  "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
             }
           ],
-          "raw": "[G]Pam mada guinun,"
+          "raw": "[G]Ye, Ye, Ye,[Em] ..[C].  [D]"
         },
         {
           "tokens": [
             {
+              "chord": "G",
+              "lyric": "Pam mada "
+            },
+            {
               "chord": "Em",
-              "lyric": "Bogo shi pun nae sa rang-ah."
+              "lyric": "guinun,"
             }
           ],
-          "raw": "[Em]Bogo shi pun nae sa rang-ah."
+          "raw": "[G]Pam mada [Em]guinun,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Bogo shi "
+            },
+            {
+              "chord": "G",
+              "lyric": "pun nae sa rang-ah."
+            }
+          ],
+          "raw": "[D]Bogo shi [G]pun nae sa rang-ah."
         },
         {
           "tokens": [
@@ -223,26 +269,8 @@
       ]
     },
     {
-      "name": "Verse 5",
+      "name": "(Repeat first Verse and Chorus)",
       "lines": [
-        {
-          "tokens": [
-            {
-              "chord": "G",
-              "lyric": "Pam mada guinun,"
-            }
-          ],
-          "raw": "[G]Pam mada guinun,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Em",
-              "lyric": "Bogo shi pun nae sa rang-ah."
-            }
-          ],
-          "raw": "[Em]Bogo shi pun nae sa rang-ah."
-        },
         {
           "tokens": [
             {
@@ -256,5 +284,5 @@
     }
   ],
   "sourcePath": "songs/sarang-hae.pro",
-  "source": "{title: Sarang Hae}\n{key: G}\n\n{section: Verse 1}\n[G]Sarang hae tan si nul,\n[Em]Tchong mallo sarang hae.\n[C]Tan shin ni nae kgyo tul,\n[D7]To na ghan dwi-eh\n\n{section: Verse 2}\n[G]Olmana nun mul ul,\n[Em]Hul ryun nun jchi morin-dao.\n\n{section: Chorus}\n[G]Ye, Ye, Ye, ...\n[Em]Sarang hae tan shi nul,\n[D]Chong mallo sarang hae.\n\n{section: Verse 3}\n[G]Molida na bo rin,\n[Em]Mo ni jchul kude-o.\n[C]Tan shini nae hgyo tul,\n[D7]To na ghanidwi-eh.\n\n{section: Verse 4}\n[G]Pam mada guinun,\n[Em]Bogo shi pun nae sa rang-ah.\n\n{section: Verse 5}\n[G]Pam mada guinun,\n[Em]Bogo shi pun nae sa rang-ah.\n"
+  "source": "{title: Sarang Hae}\n{key: G}\n{reviewed: true}\n\n{section: Verse 1}\n[G]Sarang hae tan si nul[Em],\n[C]Tchong mallo sara[D7]ng hae.\n[G]Tan shin ni nae [Em]kgyo tul,\n[C]To na ghan [D7]dwi-eh\n[G]Olmana nun [Em]mul ul,\n[D7]Hul ryun nun jchi morin[G]-dao.\n\n{section: Chorus}\n[G]Ye, Ye, Ye,[Em] ..[C].  [D]\n[G]Sarang hae [Em]tan shi nul,\n[D]Chong mallo sara[G]ng hae.\n\n{section: Verse 2}\nMolida na bo rin,\nMo ni jchul kude-o.\nTan shini nae hgyo tul,\nTo na ghanidwi-eh.\n\n{section: Chorus}\n[G]Ye, Ye, Ye,[Em] ..[C].  [D]\n[G]Pam mada [Em]guinun,\n[D]Bogo shi [G]pun nae sa rang-ah.\n\n{section: (Repeat first Verse and Chorus)}\n"
 }

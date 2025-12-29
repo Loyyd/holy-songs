@@ -2,21 +2,8 @@
   "id": "just-a-closer-walk-with-thee",
   "title": "Just a Closer Walk with Thee",
   "key": "A",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -169,5 +156,5 @@
     }
   ],
   "sourcePath": "songs/just-a-closer-walk-with-thee.pro",
-  "source": "{title: Just a Closer Walk with Thee}\n{key: A}\n\n{section: Verse 1}\n[A]I am weak, but Thou art strong.\n[E7]Father, keep me from all wrong.\n[A]I'll be satisfied as long as I walk,\n[A7]Please let me walk close to Thee\n\n{section: Chorus}\n[D]Just a closer walk with Thee\n[A]Grant it, Jesus, this my plea;\n[A7]Daily walking close with Thee;\n[E7]Let it be, dear Lord, let it be.\n\n{section: Verse 2}\n[A]When my feeble life is o'er;\n[E7]And time, for me, won't be no more.\n[A]Won't you guide me, guide me o'er,\n[A7]To Thy Kingdom on that shore?\n"
+  "source": "{title: Just a Closer Walk with Thee}\n{key: A}\n{reviewed: false}\n\n{section: Verse 1}\n[A]I am weak, but Thou art strong.\n[E7]Father, keep me from all wrong.\n[A]I'll be satisfied as long as I walk,\n[A7]Please let me walk close to Thee\n\n{section: Chorus}\n[D]Just a closer walk with Thee\n[A]Grant it, Jesus, this my plea;\n[A7]Daily walking close with Thee;\n[E7]Let it be, dear Lord, let it be.\n\n{section: Verse 2}\n[A]When my feeble life is o'er;\n[E7]And time, for me, won't be no more.\n[A]Won't you guide me, guide me o'er,\n[A7]To Thy Kingdom on that shore?\n"
 }

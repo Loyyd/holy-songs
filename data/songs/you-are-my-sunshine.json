@@ -2,21 +2,8 @@
   "id": "you-are-my-sunshine",
   "title": "You Are My Sunshine",
   "key": "E",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -159,5 +146,5 @@
     }
   ],
   "sourcePath": "songs/you-are-my-sunshine.pro",
-  "source": "{title: You Are My Sunshine}\n{key: E}\n\n{section: Chorus}\n[E]You are my sunshine, my only sunshine,\n[A]You make me happy, when skies are grey.\n[A]You'll never know Lord, how much I love you.\n[E]Please don't take my sunshine away.\n\n{{section: Verse 1}\n[E]There is a meadow, high on a mountain,\n[A]Where skylark and wild rose abound,\n[A]Th'eternal homeland my heart desires,\n[E]Shines like gold at the rainbow's end\n\n{{section: Verse 2}\n[E]Through the long winter and harsh wind blowing\n[A]All creatures die on barren soil,\n[A]Now sunlight beaming the ice to streamlets,\n[E]Earth in spring is a garden of joy.\n"
+  "source": "{title: You Are My Sunshine}\n{key: E}\n{reviewed: false}\n\n{section: Chorus}\n[E]You are my sunshine, my only sunshine,\n[A]You make me happy, when skies are grey.\n[A]You'll never know Lord, how much I love you.\n[E]Please don't take my sunshine away.\n\n{{section: Verse 1}\n[E]There is a meadow, high on a mountain,\n[A]Where skylark and wild rose abound,\n[A]Th'eternal homeland my heart desires,\n[E]Shines like gold at the rainbow's end\n\n{{section: Verse 2}\n[E]Through the long winter and harsh wind blowing\n[A]All creatures die on barren soil,\n[A]Now sunlight beaming the ice to streamlets,\n[E]Earth in spring is a garden of joy.\n"
 }

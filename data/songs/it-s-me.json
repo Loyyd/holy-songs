@@ -2,21 +2,8 @@
   "id": "it-s-me",
   "title": "It's Me",
   "key": "E",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -249,5 +236,5 @@
     }
   ],
   "sourcePath": "songs/its-me.pro",
-  "source": "{title: It's Me}\n{key: E}\n\n{section: Chorus}\n[E]It's me, it's me, it's me, oh Lord\n[B7]Standing in the need of prayer\n[E]It's me, it's me, it's me, oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 1}\n[E]Not my brother, not my sister, but it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not my brother, not my sister, but it's me oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 2}\n[E]Not the deacon, not the elder, But it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not the deacon, not the elder, But it's me oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 3}\n[E]Not the preacher, not the teacher, But it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not the preacher, not the teacher, But it's me oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 4}\n[E]Not my father, not my mother, But it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not my father, not my mother, But it's me oh Lord\n[C#m]Standing in the need of prayer\n"
+  "source": "{title: It's Me}\n{key: E}\n{reviewed: false}\n\n{section: Chorus}\n[E]It's me, it's me, it's me, oh Lord\n[B7]Standing in the need of prayer\n[E]It's me, it's me, it's me, oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 1}\n[E]Not my brother, not my sister, but it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not my brother, not my sister, but it's me oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 2}\n[E]Not the deacon, not the elder, But it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not the deacon, not the elder, But it's me oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 3}\n[E]Not the preacher, not the teacher, But it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not the preacher, not the teacher, But it's me oh Lord\n[C#m]Standing in the need of prayer\n\n{{section: Verse 4}\n[E]Not my father, not my mother, But it's me oh Lord\n[A]Standing in the need of prayer\n[E]Not my father, not my mother, But it's me oh Lord\n[C#m]Standing in the need of prayer\n"
 }
