@@ -1,5 +1,6 @@
 {title: 10,000 Reasons}
 {key: E}
+{reviewed: false}
 
 {section: Intro}
 [A]   [E]   [B/D#]     [C#m]

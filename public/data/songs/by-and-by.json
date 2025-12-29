@@ -2,21 +2,8 @@
   "id": "by-and-by",
   "title": "By and By",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -319,5 +306,5 @@
     }
   ],
   "sourcePath": "songs/by-and-by.pro",
-  "source": "{title: By and By}\n{key: F}\n\n{section: Chorus}\n[F]By and by, [Bb]when the morning [F]comes,\n[G]All the saints of God are [C7]gathered home.\n[F]We'll tell the story [Bb]how we've [F]overcome,\n[C7]And we'll understand it better [F]by and by.\n\n{section: Verse 1}\n[F]We are tossed and driven on the restless seas of time;\n[Bb]Somber skies and howling tempest\n[G]Oft succeed a bright sunshine.\n[F]In that land of perfect day,\n[Bb]When the mists have rolled away,\n[C7]We will understand it better [F]bye and bye.\n\n{section: Verse 2}\n[F]We are often destitute\n[Bb]Of the things that life demands;\n[G]Want of shelter and of food,\n[C7]Thirsty hills and barren lands.\n[F]We are trusting in the Lord\n[F7]And according to His word,\n[Bb]We will understand it better bye and bye.\n\n{section: Verse 3}\n[F]Trials dark on every hand,\n[Bb]And we cannot understand\n[G]All the ways the God would lead us\n[C7]To that blessed promised land.\n[F]But He guides us with His eye\n[F7]And we'll follow Him on high;\n[Bb]And we'll understand it better bye and bye.\n"
+  "source": "{title: By and By}\n{key: F}\n{reviewed: false}\n\n{section: Chorus}\n[F]By and by, [Bb]when the morning [F]comes,\n[G]All the saints of God are [C7]gathered home.\n[F]We'll tell the story [Bb]how we've [F]overcome,\n[C7]And we'll understand it better [F]by and by.\n\n{section: Verse 1}\n[F]We are tossed and driven on the restless seas of time;\n[Bb]Somber skies and howling tempest\n[G]Oft succeed a bright sunshine.\n[F]In that land of perfect day,\n[Bb]When the mists have rolled away,\n[C7]We will understand it better [F]bye and bye.\n\n{section: Verse 2}\n[F]We are often destitute\n[Bb]Of the things that life demands;\n[G]Want of shelter and of food,\n[C7]Thirsty hills and barren lands.\n[F]We are trusting in the Lord\n[F7]And according to His word,\n[Bb]We will understand it better bye and bye.\n\n{section: Verse 3}\n[F]Trials dark on every hand,\n[Bb]And we cannot understand\n[G]All the ways the God would lead us\n[C7]To that blessed promised land.\n[F]But He guides us with His eye\n[F7]And we'll follow Him on high;\n[Bb]And we'll understand it better bye and bye.\n"
 }

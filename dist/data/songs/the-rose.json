@@ -2,21 +2,8 @@
   "id": "the-rose",
   "title": "The Rose",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -349,5 +336,5 @@
     }
   ],
   "sourcePath": "songs/the-rose.pro",
-  "source": "{title: The Rose}\n{key: D}\n\n{section: Verse 1}\nSome say lov[D]e, it is a rive[A7]r\nThat d[G]rowns the [A7]tende[D]r reed\nSome say love, it is a r[A7]azor\nThat l[G]eaves your [A7]soul to [D]bleed\nSome say [F#m]love, it is a [Bm]hunger\nAn [G]endless aching [A7]need\nI say [D]love, it is a [A7]flower\nAnd [G]you, its [A7]only [D]seed\n\n{section: Verse 2}\nIt's the heart afraid of breaking\nThat never learns to dance\nIt's the dream afraid of waking\nThat never takes the chance\nIt's the one who won't be taking\nWho cannot seem to give\nAnd the soul, afraid of dying\nThat never learns to live\n\n{section: Verse 3}\nWhen the night has been too lonely\nAnd the road has been too long\nAnd you think that love is only\nFor the lucky and the strong\nJust remember in the winter\nFar beneath the bitter snows\nLies the seed that with the sun's love\nIn the spring becomes the rose\n"
+  "source": "{title: The Rose}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\nSome say lov[D]e, it is a rive[A7]r\nThat d[G]rowns the [A7]tende[D]r reed\nSome say love, it is a r[A7]azor\nThat l[G]eaves your [A7]soul to [D]bleed\nSome say [F#m]love, it is a [Bm]hunger\nAn [G]endless aching [A7]need\nI say [D]love, it is a [A7]flower\nAnd [G]you, its [A7]only [D]seed\n\n{section: Verse 2}\nIt's the heart afraid of breaking\nThat never learns to dance\nIt's the dream afraid of waking\nThat never takes the chance\nIt's the one who won't be taking\nWho cannot seem to give\nAnd the soul, afraid of dying\nThat never learns to live\n\n{section: Verse 3}\nWhen the night has been too lonely\nAnd the road has been too long\nAnd you think that love is only\nFor the lucky and the strong\nJust remember in the winter\nFar beneath the bitter snows\nLies the seed that with the sun's love\nIn the spring becomes the rose\n"
 }

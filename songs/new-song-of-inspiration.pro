@@ -1,5 +1,6 @@
 {title: New Song of Inspiration}
 {key: A}
+{reviewed: false}
 
 {section: Verse 1}
 [A]Upon the earth I came to life in the world God pre[Bm]pared. [E7]

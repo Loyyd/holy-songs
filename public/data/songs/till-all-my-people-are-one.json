@@ -2,21 +2,8 @@
   "id": "till-all-my-people-are-one",
   "title": "'Till All My People Are One",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -123,5 +110,5 @@
     }
   ],
   "sourcePath": "songs/till-all-my-people-are-one.pro",
-  "source": "{title: 'Till All My People Are One}\n{key: C}\n\n{section: Chorus}\n[C]Help each other in all that you do\n[F]'Till all my people are one.\n\n{{section: Verse 1}\n[Am]Spread the peace, my brothers; spread it everywhere;\n[Em]Help the world know right from wrong; help the world to care.\n[C]Open your hearts, my brothers; lend a willing hand;\n[F]Show the lonely and the poor that God is in our land.\n\n{{section: Verse 2}\n[Am]Sing out the joy of living; sing your song on high;\n[Em]The truth of mankind is that he's born to live, not die.\n"
+  "source": "{title: 'Till All My People Are One}\n{key: C}\n{reviewed: false}\n\n{section: Chorus}\n[C]Help each other in all that you do\n[F]'Till all my people are one.\n\n{{section: Verse 1}\n[Am]Spread the peace, my brothers; spread it everywhere;\n[Em]Help the world know right from wrong; help the world to care.\n[C]Open your hearts, my brothers; lend a willing hand;\n[F]Show the lonely and the poor that God is in our land.\n\n{{section: Verse 2}\n[Am]Sing out the joy of living; sing your song on high;\n[Em]The truth of mankind is that he's born to live, not die.\n"
 }

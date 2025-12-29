@@ -2,21 +2,8 @@
   "id": "this-is-my-song",
   "title": "This Is My Song",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -222,5 +209,5 @@
     }
   ],
   "sourcePath": "songs/this-is-my-song.pro",
-  "source": "{title: This Is My Song}\n{key: C}\n\n{section: Verse 1}\n[C]This is my song, O God of all the nations,\n[Dm]A song of peace for lands afar and mine.\n[G7]This is my home, the country where my heart is;\n[C]Here are my hopes, my dreams, my holy shrine;\n[Am]But other hearts in other lands are beating\n[Em]With hopes and dreams as true and high as mine.\n\n{{section: Verse 2}\n[Dm]My country's skies are bluer than the ocean,\n[C]And sunlight beams on cloverleaf and pine.\n[G7]But other lands have sunlight too, and clover,\n[C]And skies are everywhere as blue as mine.\n\n{{section: Verse 3}\n[C]Oh, hear my song, thou God of all the nations,\n[Dm]A song of peace for their land and for mine.\n[G7]This is my prayer, O Lord of all earth's kingdoms,\n[C]Thy kingdom come; on earth thy will be done.\n\n{{section: Verse 4}\n[Am]Let Christ be lifted up till all men serve him,\n[Em]And hearts united learn to live as one.\n[Dm]Oh, hear my prayer, thou God of all the nations,\n[C]Myself I give thee; Let Thy will be done.\n"
+  "source": "{title: This Is My Song}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]This is my song, O God of all the nations,\n[Dm]A song of peace for lands afar and mine.\n[G7]This is my home, the country where my heart is;\n[C]Here are my hopes, my dreams, my holy shrine;\n[Am]But other hearts in other lands are beating\n[Em]With hopes and dreams as true and high as mine.\n\n{{section: Verse 2}\n[Dm]My country's skies are bluer than the ocean,\n[C]And sunlight beams on cloverleaf and pine.\n[G7]But other lands have sunlight too, and clover,\n[C]And skies are everywhere as blue as mine.\n\n{{section: Verse 3}\n[C]Oh, hear my song, thou God of all the nations,\n[Dm]A song of peace for their land and for mine.\n[G7]This is my prayer, O Lord of all earth's kingdoms,\n[C]Thy kingdom come; on earth thy will be done.\n\n{{section: Verse 4}\n[Am]Let Christ be lifted up till all men serve him,\n[Em]And hearts united learn to live as one.\n[Dm]Oh, hear my prayer, thou God of all the nations,\n[C]Myself I give thee; Let Thy will be done.\n"
 }

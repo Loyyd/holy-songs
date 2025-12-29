@@ -1,0 +1,808 @@
+{
+  "id": "oceans",
+  "title": "Oceans",
+  "key": "Em",
+  "reviewed": true,
+  "sections": [
+    {
+      "name": "Intro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "    "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "   "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]    [D/F#]   [G]   [D]   [C]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "You call me out"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " upon the"
+            },
+            {
+              "chord": "G",
+              "lyric": " waters"
+            }
+          ],
+          "raw": "[Em]You call me out[D/F#] upon the[G] waters"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "The great u"
+            },
+            {
+              "chord": "D",
+              "lyric": "nknown where feet "
+            },
+            {
+              "chord": "C",
+              "lyric": "may fail"
+            }
+          ],
+          "raw": "The great u[D]nknown where feet [C]may fail"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "And there I find you"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " in the"
+            },
+            {
+              "chord": "G",
+              "lyric": " mystery"
+            }
+          ],
+          "raw": "[Em]And there I find you[D/F#] in the[G] mystery"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "In oc"
+            },
+            {
+              "chord": "D",
+              "lyric": "eans deep, my faith "
+            },
+            {
+              "chord": "C",
+              "lyric": "will stand"
+            }
+          ],
+          "raw": "In oc[D]eans deep, my faith [C]will stand"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And I will"
+            },
+            {
+              "chord": "G",
+              "lyric": " call upon Y"
+            },
+            {
+              "chord": "D",
+              "lyric": "our name"
+            }
+          ],
+          "raw": "[C]And I will[G] call upon Y[D]our name"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And keep my"
+            },
+            {
+              "chord": "G",
+              "lyric": " eyes above "
+            },
+            {
+              "chord": "D",
+              "lyric": "the waves"
+            }
+          ],
+          "raw": "[C]And keep my[G] eyes above [D]the waves"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "When oceans"
+            },
+            {
+              "chord": "C",
+              "lyric": " rise my soul will "
+            },
+            {
+              "chord": "G",
+              "lyric": "rest in Your e"
+            },
+            {
+              "chord": "D",
+              "lyric": "mbrace"
+            }
+          ],
+          "raw": "When oceans[C] rise my soul will [G]rest in Your e[D]mbrace"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "For I am"
+            },
+            {
+              "chord": "C",
+              "lyric": " Yours and "
+            },
+            {
+              "chord": "D",
+              "lyric": "You "
+            },
+            {
+              "chord": "Em",
+              "lyric": "are mi"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "ne   "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": " "
+            }
+          ],
+          "raw": "For I am[C] Yours and [D]You [Em]are mi[D/F#]ne   [G]   [D]   [C] "
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Your grace abounds in d"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "eepest"
+            },
+            {
+              "chord": "G",
+              "lyric": " waters"
+            }
+          ],
+          "raw": "[Em]Your grace abounds in d[D/F#]eepest[G] waters"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Your sovere"
+            },
+            {
+              "chord": "D",
+              "lyric": "ign hand will be "
+            },
+            {
+              "chord": "C",
+              "lyric": "my guide"
+            }
+          ],
+          "raw": "Your sovere[D]ign hand will be [C]my guide"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Where feet may fail and "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "fear surr"
+            },
+            {
+              "chord": "G",
+              "lyric": "ounds me"
+            }
+          ],
+          "raw": "[Em]Where feet may fail and [D/F#]fear surr[G]ounds me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You've n"
+            },
+            {
+              "chord": "D",
+              "lyric": "ever failed and You won't sta"
+            },
+            {
+              "chord": "C",
+              "lyric": "rt now"
+            }
+          ],
+          "raw": "You've n[D]ever failed and You won't sta[C]rt now"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "So I will"
+            },
+            {
+              "chord": "G",
+              "lyric": " call upon "
+            },
+            {
+              "chord": "D",
+              "lyric": "Your name"
+            }
+          ],
+          "raw": "[C]So I will[G] call upon [D]Your name"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "And keep my"
+            },
+            {
+              "chord": "G",
+              "lyric": " eyes above "
+            },
+            {
+              "chord": "D",
+              "lyric": "the waves"
+            }
+          ],
+          "raw": "[C]And keep my[G] eyes above [D]the waves"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "When oceans"
+            },
+            {
+              "chord": "C",
+              "lyric": " rise my soul will"
+            },
+            {
+              "chord": "G",
+              "lyric": " rest in Your "
+            },
+            {
+              "chord": "D",
+              "lyric": "embrace"
+            }
+          ],
+          "raw": "When oceans[C] rise my soul will[G] rest in Your [D]embrace"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "For I am"
+            },
+            {
+              "chord": "C",
+              "lyric": " Yours and"
+            },
+            {
+              "chord": "D",
+              "lyric": " You ar"
+            },
+            {
+              "chord": "Em",
+              "lyric": "e mine, "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "oh  "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": "  "
+            },
+            {
+              "chord": "C",
+              "lyric": ""
+            }
+          ],
+          "raw": "For I am[C] Yours and[D] You ar[Em]e mine, [D/F#]oh  [G]   [D]  [C]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And You"
+            },
+            {
+              "chord": "Em",
+              "lyric": " are mine, o"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "h    "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": ""
+            }
+          ],
+          "raw": "And You[Em] are mine, o[D/F#]h    [G]   [D]   [C]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": "   "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]   [C]   [G]   [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": "   "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]   [C]   [G]   [D]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Spirit lead me where my "
+            },
+            {
+              "chord": "C",
+              "lyric": "trust is without borders"
+            }
+          ],
+          "raw": "[Em]Spirit lead me where my [C]trust is without borders"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Let me w"
+            },
+            {
+              "chord": "G",
+              "lyric": "alk upon the water"
+            }
+          ],
+          "raw": "Let me w[G]alk upon the water"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Whe"
+            },
+            {
+              "chord": "D",
+              "lyric": "rever You would call me"
+            }
+          ],
+          "raw": "Whe[D]rever You would call me"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Take me deeper than my "
+            },
+            {
+              "chord": "C",
+              "lyric": "feet could ever wander"
+            }
+          ],
+          "raw": "[Em]Take me deeper than my [C]feet could ever wander"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And my "
+            },
+            {
+              "chord": "G",
+              "lyric": "faith will be made stronger"
+            }
+          ],
+          "raw": "And my [G]faith will be made stronger"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "In the "
+            },
+            {
+              "chord": "D",
+              "lyric": "presence of my Savior"
+            }
+          ],
+          "raw": "In the [D]presence of my Savior"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Repeat 6x",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Instrumental",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "    "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "    "
+            },
+            {
+              "chord": "G",
+              "lyric": "    "
+            },
+            {
+              "chord": "D",
+              "lyric": "    "
+            },
+            {
+              "chord": "Am",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]    [D/F#]    [G]    [D]    [Am]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "    "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "    "
+            },
+            {
+              "chord": "G",
+              "lyric": "    "
+            },
+            {
+              "chord": "D",
+              "lyric": "    "
+            },
+            {
+              "chord": "Am",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]    [D/F#]    [G]    [D]    [Am]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "I will"
+            },
+            {
+              "chord": "G",
+              "lyric": " call upon Yo"
+            },
+            {
+              "chord": "D",
+              "lyric": "ur name"
+            }
+          ],
+          "raw": "[C]I will[G] call upon Yo[D]ur name"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "Keep my "
+            },
+            {
+              "chord": "G",
+              "lyric": "eyes above "
+            },
+            {
+              "chord": "D",
+              "lyric": "the waves"
+            }
+          ],
+          "raw": "[C]Keep my [G]eyes above [D]the waves"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "My soul will "
+            },
+            {
+              "chord": "G",
+              "lyric": "rest in Your e"
+            },
+            {
+              "chord": "D",
+              "lyric": "mbrace"
+            }
+          ],
+          "raw": "[C]My soul will [G]rest in Your e[D]mbrace"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I am"
+            },
+            {
+              "chord": "C",
+              "lyric": " Yours and "
+            },
+            {
+              "chord": "D",
+              "lyric": "You a"
+            },
+            {
+              "chord": "Em",
+              "lyric": "re mine"
+            }
+          ],
+          "raw": "I am[C] Yours and [D]You a[Em]re mine"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "    "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "      "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "D",
+              "lyric": "   "
+            },
+            {
+              "chord": "C",
+              "lyric": "   "
+            },
+            {
+              "chord": "Em",
+              "lyric": "   "
+            },
+            {
+              "chord": "G",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Em]    [D/F#]      [G]   [D]   [C]   [Em]   [G]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/oceans.pro",
+  "source": "{title: Oceans}\n{artist: Hillsong United}\n{key: Em}\n{capo: 7}\n{reviewed: true}\n\n{section: Intro}\n[Em]    [D/F#]   [G]   [D]   [C]\n\n{section: Verse 1}\n[Em]You call me out[D/F#] upon the[G] waters\nThe great u[D]nknown where feet [C]may fail\n[Em]And there I find you[D/F#] in the[G] mystery\nIn oc[D]eans deep, my faith [C]will stand\n\n{section: Chorus}\n[C]And I will[G] call upon Y[D]our name\n[C]And keep my[G] eyes above [D]the waves\nWhen oceans[C] rise my soul will [G]rest in Your e[D]mbrace\nFor I am[C] Yours and [D]You [Em]are mi[D/F#]ne   [G]   [D]   [C] \n\n{section: Verse 2}\n[Em]Your grace abounds in d[D/F#]eepest[G] waters\nYour sovere[D]ign hand will be [C]my guide\n[Em]Where feet may fail and [D/F#]fear surr[G]ounds me\nYou've n[D]ever failed and You won't sta[C]rt now\n\n{section: Chorus}\n[C]So I will[G] call upon [D]Your name\n[C]And keep my[G] eyes above [D]the waves\nWhen oceans[C] rise my soul will[G] rest in Your [D]embrace\nFor I am[C] Yours and[D] You ar[Em]e mine, [D/F#]oh  [G]   [D]  [C]\nAnd You[Em] are mine, o[D/F#]h    [G]   [D]   [C]\n\n{section: Bridge}\n[Em]   [C]   [G]   [D]\n[Em]   [C]   [G]   [D]\n\n[Em]Spirit lead me where my [C]trust is without borders\nLet me w[G]alk upon the water\nWhe[D]rever You would call me\n[Em]Take me deeper than my [C]feet could ever wander\nAnd my [G]faith will be made stronger\nIn the [D]presence of my Savior\n\n{section: Repeat 6x}\n\n{section: Instrumental}\n[Em]    [D/F#]    [G]    [D]    [Am]\n[Em]    [D/F#]    [G]    [D]    [Am]\n\n{section: Chorus}\n[C]I will[G] call upon Yo[D]ur name\n[C]Keep my [G]eyes above [D]the waves\n[C]My soul will [G]rest in Your e[D]mbrace\nI am[C] Yours and [D]You a[Em]re mine\n\n{section: Outro}\n[Em]    [D/F#]      [G]   [D]   [C]   [Em]   [G]\n"
+}

@@ -1,5 +1,6 @@
 {title: Sunny Side of Life}
 {key: G}
+{reviewed: false}
 
 {section: Verse 1}
 [G]There's a sunny side where no ills betide

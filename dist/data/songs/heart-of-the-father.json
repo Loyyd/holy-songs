@@ -2,21 +2,8 @@
   "id": "heart-of-the-father",
   "title": "Heart of the Father",
   "key": "Eb",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -337,5 +324,5 @@
     }
   ],
   "sourcePath": "songs/heart-of-the-father.pro",
-  "source": "{title: Heart of the Father}\n{key: Eb}\n\n{section: Verse 1}\n[Eb]Longing to live in deepest joy and love eternal,\n[Gm]God was ever seeking for a people all His own.\n[Cm]Who can know the yearning of His lonely broken heart?\n\n{section: Verse 2}\n[Fm]Tears were falling as a river through His countless years alone.\n[Cm]Out of all the multitude there was none who knew\n[Ab]How the Father's heart was aching, grieving after man.\n\n{section: Verse 3}\n[Eb]Glorious God, who started life throughout the heavens,\n[Gm]Bore the deepest torture as He saw His children die.\n[Cm]Every day He seeks the beauty lost inside our hearts,\n\n{{section: Verse 4}\n[Fm]Tenderly with love He leads us back to life with Him on high.\n[Cm]How many fathoms deep is His aching heart?\n[Ab]All the tears He shed for earth became an endless sea.\n\n{section: Verse 5}\n[Eb]Deep from within the heart of heaven came the secret,\n[Gm]Now the mighty word, the trumpet call will surely sound.\n[Cm]But as in the time of Noah people laugh and mock,\n\n{{section: Verse 6}\n[Fm]Satisfied to wander aimless in the darkness underground.\n[Cm]Fearful is the time to come when the price is paid!\n[Ab]One and all will face the judgment from an angry God.\n\n{section: Verse 7}\n[Eb]Quickly believe, my people quickly turn and follow!\n[Gm]You can be enfolded in the warmth of Father's heart.\n[Cm]All the joy that life can offer calls us home to Him,\n\n{section: Verse 8}\n[Fm]Now He calls you to be near Him never again to be apart.\n[Cm]When at last we run to Him, how He'll cry with joy!\n[Ab]All rejoicing, all together now and evermore.\n"
+  "source": "{title: Heart of the Father}\n{key: Eb}\n{reviewed: false}\n\n{section: Verse 1}\n[Eb]Longing to live in deepest joy and love eternal,\n[Gm]God was ever seeking for a people all His own.\n[Cm]Who can know the yearning of His lonely broken heart?\n\n{section: Verse 2}\n[Fm]Tears were falling as a river through His countless years alone.\n[Cm]Out of all the multitude there was none who knew\n[Ab]How the Father's heart was aching, grieving after man.\n\n{section: Verse 3}\n[Eb]Glorious God, who started life throughout the heavens,\n[Gm]Bore the deepest torture as He saw His children die.\n[Cm]Every day He seeks the beauty lost inside our hearts,\n\n{{section: Verse 4}\n[Fm]Tenderly with love He leads us back to life with Him on high.\n[Cm]How many fathoms deep is His aching heart?\n[Ab]All the tears He shed for earth became an endless sea.\n\n{section: Verse 5}\n[Eb]Deep from within the heart of heaven came the secret,\n[Gm]Now the mighty word, the trumpet call will surely sound.\n[Cm]But as in the time of Noah people laugh and mock,\n\n{{section: Verse 6}\n[Fm]Satisfied to wander aimless in the darkness underground.\n[Cm]Fearful is the time to come when the price is paid!\n[Ab]One and all will face the judgment from an angry God.\n\n{section: Verse 7}\n[Eb]Quickly believe, my people quickly turn and follow!\n[Gm]You can be enfolded in the warmth of Father's heart.\n[Cm]All the joy that life can offer calls us home to Him,\n\n{section: Verse 8}\n[Fm]Now He calls you to be near Him never again to be apart.\n[Cm]When at last we run to Him, how He'll cry with joy!\n[Ab]All rejoicing, all together now and evermore.\n"
 }

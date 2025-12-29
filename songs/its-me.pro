@@ -1,5 +1,6 @@
 {title: It's Me}
 {key: E}
+{reviewed: false}
 
 {section: Chorus}
 [E]It's me, it's me, it's me, oh Lord

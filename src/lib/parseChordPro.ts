@@ -59,11 +59,15 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
   const lines = raw.split(/\r?\n/);
   let title = 'Untitled';
   let key: string | undefined;
+  let reviewed: boolean | undefined;
   const sections: SongSection[] = [];
   let currentSection: SongSection = { name: 'Verse', lines: [] };
+  let isDefaultSection = true; // Track if we're still on the default section
 
   const commitSection = () => {
-    if (currentSection.lines.length > 0) {
+    // Only commit if there are lines and it's not an empty default section
+    if (currentSection.lines.length > 0 && 
+        !(isDefaultSection && currentSection.lines.every(l => l.raw.trim() === ''))) {
       sections.push(currentSection);
     }
   };
@@ -78,9 +82,12 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
         title = val;
       } else if (tagLower === 'key') {
         key = val;
+      } else if (tagLower === 'reviewed') {
+        reviewed = val.toLowerCase() === 'true';
       } else if (tagLower === 'section') {
         commitSection();
         currentSection = { name: val, lines: [] };
+        isDefaultSection = false; // Mark that we've moved away from default section
       }
       continue;
     }
@@ -101,6 +108,7 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
     id,
     title,
     key,
+    reviewed,
     sections,
     sourcePath,
     source: raw

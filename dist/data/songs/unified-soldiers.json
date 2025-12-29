@@ -2,21 +2,8 @@
   "id": "unified-soldiers",
   "title": "Unified Soldiers",
   "key": "Am",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -439,5 +426,5 @@
     }
   ],
   "sourcePath": "songs/unified-soldiers.pro",
-  "source": "{title: Unified Soldiers}\n{key: Am}\n{comment: Use capo on the 3rd fret}\n\n{section: Verse 1}\n[Am]Strong bond of heart is the force bringing the [F]world into [Em]life,\n[Am]Joined in a kinship of love, all shall live as [Dm]one.\n[Am]Here in the home of our hearts, we'll share [G]evermore.\n\n{section: Verse 2}\n[F]On this foundation of happiness, we shall live [Dm]forever.\n[C]We're His pride in the heavenly war,\n[F]Unified soldiers! [C]Mightily, with one [G]accord,\n[C]We shall march, we shall march [F]on!\n\n{section: Verse 3}\n[Am]True men of boundless domain, magnifying their light,\n[Am]Glorious beacons of truth, o'er all things of the earth.\n[Am]From that original word life will spring and grow;\n[Am]In its expression it gives to all the fulfillment of hope.\n\n{section: Verse 4}\n[Am]We're His pride in the heavenly war,\n[C]Unified soldiers! [F]Mightily, His will to [C]do,\n[G]We shall march, we shall march on!\n\n{section: Verse 5}\n[Am]Based on the order of God, We'll build truthfulness,\n[Am]One constant value that gives pledge of eternity.\n[Am]The highest standard of truth which is raised above,\n[Am]Will decorate far distant days of radiant goodness.\n\n{section: Verse 6}\n[Am]We're His price in the heavenly war,\n[C]Unified soldiers! [F]Mightily, [C]proclaiming,\n[G]We shall march, we shall march on!\n\n{section: Verse 7}\n[Am]New culture dawns in the East, Glorious beyond our dreams.\n[Am]Mankind transformed in its light, shall be one family.\n[Am]Ever to serve and attend our True Parents' own,\n[Am]Without a doubt the world shall be one world of victory.\n\n{section: Verse 8}\n[Am]We're His pride in the heavenly war,\n[C]Unified soldiers! [F]Mightily, into that [C]ideal,\n[G]We shall march, we shall march on!\n"
+  "source": "{title: Unified Soldiers}\n{key: Am}\n{reviewed: false}\n{comment: Use capo on the 3rd fret}\n\n{section: Verse 1}\n[Am]Strong bond of heart is the force bringing the [F]world into [Em]life,\n[Am]Joined in a kinship of love, all shall live as [Dm]one.\n[Am]Here in the home of our hearts, we'll share [G]evermore.\n\n{section: Verse 2}\n[F]On this foundation of happiness, we shall live [Dm]forever.\n[C]We're His pride in the heavenly war,\n[F]Unified soldiers! [C]Mightily, with one [G]accord,\n[C]We shall march, we shall march [F]on!\n\n{section: Verse 3}\n[Am]True men of boundless domain, magnifying their light,\n[Am]Glorious beacons of truth, o'er all things of the earth.\n[Am]From that original word life will spring and grow;\n[Am]In its expression it gives to all the fulfillment of hope.\n\n{section: Verse 4}\n[Am]We're His pride in the heavenly war,\n[C]Unified soldiers! [F]Mightily, His will to [C]do,\n[G]We shall march, we shall march on!\n\n{section: Verse 5}\n[Am]Based on the order of God, We'll build truthfulness,\n[Am]One constant value that gives pledge of eternity.\n[Am]The highest standard of truth which is raised above,\n[Am]Will decorate far distant days of radiant goodness.\n\n{section: Verse 6}\n[Am]We're His price in the heavenly war,\n[C]Unified soldiers! [F]Mightily, [C]proclaiming,\n[G]We shall march, we shall march on!\n\n{section: Verse 7}\n[Am]New culture dawns in the East, Glorious beyond our dreams.\n[Am]Mankind transformed in its light, shall be one family.\n[Am]Ever to serve and attend our True Parents' own,\n[Am]Without a doubt the world shall be one world of victory.\n\n{section: Verse 8}\n[Am]We're His pride in the heavenly war,\n[C]Unified soldiers! [F]Mightily, into that [C]ideal,\n[G]We shall march, we shall march on!\n"
 }

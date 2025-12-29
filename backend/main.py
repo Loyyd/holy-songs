@@ -19,8 +19,7 @@ app.add_middleware(
 # Path to the songs directory (relative to this file)
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SONGS_DIR = os.path.join(BASE_DIR, "songs")
-FLAGGED_FILE = os.path.join(BASE_DIR, "backend", "flagged_songs.json")path.dirname(__file__), ".."))
-SONGS_DIR = os.path.join(BASE_DIR, "songs")
+FLAGGED_FILE = os.path.join(BASE_DIR, "backend", "flagged_songs.json")
 
 def run_build_script():
     # Run the npm build script
@@ -48,6 +47,10 @@ class FlagRequest(BaseModel):
     song_id: str
     flagged: bool
 
+class ReviewedRequest(BaseModel):
+    song_id: str
+    reviewed: bool
+
 def load_flagged_songs():
     """Load flagged songs from file"""
     if os.path.exists(FLAGGED_FILE):
@@ -58,8 +61,7 @@ def load_flagged_songs():
 def save_flagged_songs(flagged_songs: set):
     """Save flagged songs to file"""
     with open(FLAGGED_FILE, 'w', encoding='utf-8') as f:
-        json.dump(list(flagged_songs), f)t(BaseModel):
-    content: str
+        json.dump(list(flagged_songs), f)
 
 @app.get("/api/songs")
 def list_songs():
@@ -118,8 +120,30 @@ def get_song(filename: str):
     
     return {"content": content}
 
+@app.post("/api/songs/{filename}")
+@app.put("/api/songs/{filename}")
+def update_song(filename: str, song: SongContent, background_tasks: BackgroundTasks):
+    """Update an existing song file"""
+    # Basic security check to prevent directory traversal
+    if ".." in filename or "/" in filename or "\\" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
     
-    return {"message": "Song saved successfully and build triggered"}
+    filepath = os.path.join(SONGS_DIR, filename)
+    
+    # Ensure we are writing to the songs directory
+    if os.path.commonpath([os.path.abspath(filepath), SONGS_DIR]) != SONGS_DIR:
+        raise HTTPException(status_code=403, detail="Invalid file path")
+    
+    if not os.path.exists(filepath):
+        raise HTTPException(status_code=404, detail="Song not found")
+    
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(song.content)
+    
+    # Trigger build in background
+    background_tasks.add_task(run_build_script)
+    
+    return {"message": "Song updated successfully", "filename": filename}
 
 @app.get("/api/flags")
 def get_flagged_songs():
@@ -140,23 +164,87 @@ def toggle_flag(request: FlagRequest):
     save_flagged_songs(flagged_songs)
     return {"message": "Flag updated successfully", "flagged": list(flagged_songs)}
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-    filepath = os.path.join(SONGS_DIR, filename)
+def find_song_file_by_id(song_id: str) -> str | None:
+    """Find a .pro file by song ID (slug of title)"""
+    if not os.path.exists(SONGS_DIR):
+        return None
     
-    # Ensure we are writing to the songs directory
-    if os.path.commonpath([os.path.abspath(filepath), SONGS_DIR]) != SONGS_DIR:
-         raise HTTPException(status_code=403, detail="Invalid file path")
+    for filename in os.listdir(SONGS_DIR):
+        if not filename.endswith(".pro"):
+            continue
+        filepath = os.path.join(SONGS_DIR, filename)
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
+        # Extract title and convert to slug
+        title_match = re.search(r'\{title:\s*([^}]+)\}', content, re.IGNORECASE)
+        if title_match:
+            title = title_match.group(1).strip()
+            # Create slug from title (same logic as frontend slugify)
+            slug = re.sub(r'[^a-z0-9]+', '-', title.lower().strip())
+            slug = re.sub(r'^-+|-+$', '', slug)
+            if slug == song_id:
+                return filepath
+    return None
 
+def update_reviewed_in_file(filepath: str, reviewed: bool) -> bool:
+    """Update or add {reviewed: } directive in a .pro file"""
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    reviewed_value = "true" if reviewed else "false"
+    
+    # Check if {reviewed: } already exists
+    if re.search(r'\{reviewed:\s*[^}]+\}', content, re.IGNORECASE):
+        # Update existing
+        new_content = re.sub(
+            r'\{reviewed:\s*[^}]+\}',
+            f'{{reviewed: {reviewed_value}}}',
+            content,
+            flags=re.IGNORECASE
+        )
+    else:
+        # Add after {key: } or {title: }
+        key_match = re.search(r'(\{key:\s*[^}]+\})', content, re.IGNORECASE)
+        if key_match:
+            # Add after key
+            new_content = content.replace(
+                key_match.group(1),
+                f'{key_match.group(1)}\n{{reviewed: {reviewed_value}}}'
+            )
+        else:
+            # Add after title
+            title_match = re.search(r'(\{title:\s*[^}]+\})', content, re.IGNORECASE)
+            if title_match:
+                new_content = content.replace(
+                    title_match.group(1),
+                    f'{title_match.group(1)}\n{{reviewed: {reviewed_value}}}'
+                )
+            else:
+                # Add at the beginning
+                new_content = f'{{reviewed: {reviewed_value}}}\n{content}'
+    
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(song.content)
+        f.write(new_content)
     
-    # Trigger build in background
-    background_tasks.add_task(run_build_script)
+    return True
+
+@app.post("/api/reviewed")
+def update_reviewed(request: ReviewedRequest, background_tasks: BackgroundTasks):
+    """Update the reviewed status of a song in its .pro file"""
+    filepath = find_song_file_by_id(request.song_id)
     
-    return {"message": "Song saved successfully and build triggered"}
+    if not filepath:
+        raise HTTPException(status_code=404, detail=f"Song with ID '{request.song_id}' not found")
+    
+    try:
+        update_reviewed_in_file(filepath, request.reviewed)
+        # Trigger build in background to update the index
+        background_tasks.add_task(run_build_script)
+        return {"success": True, "message": "Reviewed status updated", "reviewed": request.reviewed}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+

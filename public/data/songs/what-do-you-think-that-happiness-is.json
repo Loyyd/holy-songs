@@ -2,21 +2,8 @@
   "id": "what-do-you-think-that-happiness-is",
   "title": "What Do You Think That Happiness Is?",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -312,5 +299,5 @@
     }
   ],
   "sourcePath": "songs/what-do-you-think-that-happiness-is.pro",
-  "source": "{title: What Do You Think That Happiness Is?}\n{key: D}\n\n{section: Verse 1}\n[D]\"What do you think that happiness is?\"\n[Bm]So I brought my question to the stars.\n[G]\"Most important is for people to be friends,\"\n[A7]Said the stars with one accord.\n[A7]\"Shining sun is at the center of us all;\n[D]Twinkling the nine of us go round the sun,\n[Bm]And the light of Love is given to us all; this we know is happiness\"\n\n{{section: Verse 2}\n[D]\"What do you think that happiness is?\"\n[Bm]Now I asked the flowers to respond.\n[G]\"We compete in sharing beauty all around,\"\n[A7]Was the answer of the rose.\n[A7]\"Dressing with care in red and white and yellow robes,\n[D]Every blossom is a joy to see;\n[Bm]So when people say how beautiful we are, this we know is happiness.\"\n\n{{section: Verse 3}\n[D]\"What do you think that happiness is?\"\n[Bm]Now I asked the busy meadowlarks.\n[G]\"We delight in flying high and very far,\"\n[A7]Sang the larks in joyful song.\n[A7]\"Though we're soaring ever higher than before,\n[D]Sky is above us even higher still;\n[Bm]So forever we'll discover greater heights; this we know is happiness.\"\n\n{{section: Verse 4}\n[D]\"What do you think that happiness is?\"\n[Bm]So I asked a flock of gentle sheep.\n[G]\"Joy is searching for and following the Lord,\"\n[A7]Said the sheep in soft reply.\n[A7]\"Should the wolves be creeping over to attack,\n[D]We only listen to the Shepherd's voice.\n[Bm]Our Lord gives to us security and calm; this we know is happiness.\"\n"
+  "source": "{title: What Do You Think That Happiness Is?}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]\"What do you think that happiness is?\"\n[Bm]So I brought my question to the stars.\n[G]\"Most important is for people to be friends,\"\n[A7]Said the stars with one accord.\n[A7]\"Shining sun is at the center of us all;\n[D]Twinkling the nine of us go round the sun,\n[Bm]And the light of Love is given to us all; this we know is happiness\"\n\n{{section: Verse 2}\n[D]\"What do you think that happiness is?\"\n[Bm]Now I asked the flowers to respond.\n[G]\"We compete in sharing beauty all around,\"\n[A7]Was the answer of the rose.\n[A7]\"Dressing with care in red and white and yellow robes,\n[D]Every blossom is a joy to see;\n[Bm]So when people say how beautiful we are, this we know is happiness.\"\n\n{{section: Verse 3}\n[D]\"What do you think that happiness is?\"\n[Bm]Now I asked the busy meadowlarks.\n[G]\"We delight in flying high and very far,\"\n[A7]Sang the larks in joyful song.\n[A7]\"Though we're soaring ever higher than before,\n[D]Sky is above us even higher still;\n[Bm]So forever we'll discover greater heights; this we know is happiness.\"\n\n{{section: Verse 4}\n[D]\"What do you think that happiness is?\"\n[Bm]So I asked a flock of gentle sheep.\n[G]\"Joy is searching for and following the Lord,\"\n[A7]Said the sheep in soft reply.\n[A7]\"Should the wolves be creeping over to attack,\n[D]We only listen to the Shepherd's voice.\n[Bm]Our Lord gives to us security and calm; this we know is happiness.\"\n"
 }

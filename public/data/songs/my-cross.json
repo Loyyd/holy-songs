@@ -2,21 +2,8 @@
   "id": "my-cross",
   "title": "My Cross",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -201,5 +188,5 @@
     }
   ],
   "sourcePath": "songs/my-cross.pro",
-  "source": "{title: My Cross}\n{key: G}\n\n{section: Verse 1}\n[G]Who can I go to for my help to bear my heavy cross?\n[C]Has not the Lord been helping me before I ever knew?\n[G]Because I had no strength to bear the load He gave to me,\n[Em]Six thousand yeas of blood was shed, the thorny path prolonged.\n\n{section: Chorus}\n[Am7]I will shoulder now the cross, and pledge I shall endure;\n[D]Far beyond Golgotha's pain, now hear the victory.\n\n{section: Verse 2}\n[G]The Lord would never give to me a cross I could not bear.\n[C]If I give all the strength I have I shall achieve the goal.\n[G]I sacrifice to do His will, no trial I cannot bear.\n[Am7]I give my life to go this way, no one can turn me back.\n\n{section: Verse 3}\n[D7]Our Father always persevered to see His will be done,\n[G]If all His children join the task it soon will be achieved.\n[C]If not, the lonely years of strife will all have been in vain.\n[G]No matter what, in fighting on, we'll win eternal joy.\n"
+  "source": "{title: My Cross}\n{key: G}\n{reviewed: false}\n\n{section: Verse 1}\n[G]Who can I go to for my help to bear my heavy cross?\n[C]Has not the Lord been helping me before I ever knew?\n[G]Because I had no strength to bear the load He gave to me,\n[Em]Six thousand yeas of blood was shed, the thorny path prolonged.\n\n{section: Chorus}\n[Am7]I will shoulder now the cross, and pledge I shall endure;\n[D]Far beyond Golgotha's pain, now hear the victory.\n\n{section: Verse 2}\n[G]The Lord would never give to me a cross I could not bear.\n[C]If I give all the strength I have I shall achieve the goal.\n[G]I sacrifice to do His will, no trial I cannot bear.\n[Am7]I give my life to go this way, no one can turn me back.\n\n{section: Verse 3}\n[D7]Our Father always persevered to see His will be done,\n[G]If all His children join the task it soon will be achieved.\n[C]If not, the lonely years of strife will all have been in vain.\n[G]No matter what, in fighting on, we'll win eternal joy.\n"
 }

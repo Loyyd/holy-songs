@@ -2,21 +2,8 @@
   "id": "o-come-my-lord",
   "title": "O Come, My Lord",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -319,5 +306,5 @@
     }
   ],
   "sourcePath": "songs/o-come-my-lord.pro",
-  "source": "{title: O Come, My Lord}\n{key: F}\n\n{section: Verse 1}\n[F7]O come my Lord; I beg You to come.\n[Bb]O come to me and live within my heart;\n[Bbm]Come live in my heart so black and impure,\n[F]That bears the burden of my sin.\n\n{section: Verse 2}\n[F]O come! My Lord, You are the fire that burns so bright;\n[C]Come burn within my heart and cleanse my sins,\n[Bb]O how I pray that You will soon come;\n[Gm7]Come to me O Lord, Live within my heart.\n\n{section: Verse 3}\n[C7]O come my Lord; I beg You to come.\n[F]Come dwell with me my altar now awaits;\n[Bb]O come to the altar waiting for you,\n[Bbm]But lost and hidden by the night.\n\n{section: Verse 4}\n[F]O come! My Lord, You are the light that fills the world;\n[C]Come purify my altar by Your light.\n[Bb]O how I pray that You will soon come;\n[Gm7]Many altars wait, Dwell with them, O Lord.\n\n{section: Verse 5}\n[C7]O come my Lord; I beg You to come.\n[F]O come and bring new life to all the earth;\n[Bb]O come save the world from dying in pain;\n[Bbm]Restore our sinful world.\n\n{section: Verse 6}\n[F]O come! My Lord, You are the strength that will not change;\n[C]Come end our evil ways and tragic times.\n[Bb]O how I pray that You will soon come;\n[Gm7]Crying in my heart, Come to us, O Lord.\n"
+  "source": "{title: O Come, My Lord}\n{key: F}\n{reviewed: false}\n\n{section: Verse 1}\n[F7]O come my Lord; I beg You to come.\n[Bb]O come to me and live within my heart;\n[Bbm]Come live in my heart so black and impure,\n[F]That bears the burden of my sin.\n\n{section: Verse 2}\n[F]O come! My Lord, You are the fire that burns so bright;\n[C]Come burn within my heart and cleanse my sins,\n[Bb]O how I pray that You will soon come;\n[Gm7]Come to me O Lord, Live within my heart.\n\n{section: Verse 3}\n[C7]O come my Lord; I beg You to come.\n[F]Come dwell with me my altar now awaits;\n[Bb]O come to the altar waiting for you,\n[Bbm]But lost and hidden by the night.\n\n{section: Verse 4}\n[F]O come! My Lord, You are the light that fills the world;\n[C]Come purify my altar by Your light.\n[Bb]O how I pray that You will soon come;\n[Gm7]Many altars wait, Dwell with them, O Lord.\n\n{section: Verse 5}\n[C7]O come my Lord; I beg You to come.\n[F]O come and bring new life to all the earth;\n[Bb]O come save the world from dying in pain;\n[Bbm]Restore our sinful world.\n\n{section: Verse 6}\n[F]O come! My Lord, You are the strength that will not change;\n[C]Come end our evil ways and tragic times.\n[Bb]O how I pray that You will soon come;\n[Gm7]Crying in my heart, Come to us, O Lord.\n"
 }

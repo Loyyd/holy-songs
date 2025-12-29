@@ -2,21 +2,8 @@
   "id": "dobedu-song",
   "title": "Dobedu Song",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -332,5 +319,5 @@
     }
   ],
   "sourcePath": "songs/dobedu-song.pro",
-  "source": "{title: Dobedu Song}\n{key: F}\n\n{section: Verse 1}\n[F]Ingenoius minds strong enough to strive\n[C]For brilliant days that are filled with delight\n[Bb]You're ingenious\n[F]Keep it real!\n\n{section: Chorus}\n[F]It's a beautiful sight when you just Do the things you wanna do\n[C]Setting goals and taking one more step to the Du\n[Dm]Just Be you, it is true\n[Bb]For there's no other Divine You\n\n{section: Verse 2}\n[F]Inspiring hearts create space in our home\n[C]Discover doors to new rooms only filled with God's tunes\n[Bb]You're inspiring\n[F]Keep it real!\n\n{section: Bridge}\n[C]Hea - ven gives me strength to Fol - low my own con - science\n[Dm]We've gone through hardships on the way to the persons of today\n[Bb]Watch the growth of our own personalities\n[F]In future we will not despair 'cause we're certainly aware\n[C]Of the visionary self and its prodigies\n[Dm]We'll march as soldiers to the place where the will of iron blazes\n[Bb]Never cross the bridge of our insecurity\n\n{section: Verse 3}\n[F]And on the day we comprehend that we're irreplaceable who is unique\n[C]It's a beautiful sight when you just do the things you wanna do\n[Dm]Setting goals and taking one more step to the du\n[Bb]Just be you, it is true, it is true...\n[F]It's a beautiful sight when you just do the things you wanna do\n[C]Setting goals and taking one more step to the du\n[Dm]Just be you, it is true\n[Bb]For there's no other Divine You!\n"
+  "source": "{title: Dobedu Song}\n{key: F}\n{reviewed: false}\n\n{section: Verse 1}\n[F]Ingenoius minds strong enough to strive\n[C]For brilliant days that are filled with delight\n[Bb]You're ingenious\n[F]Keep it real!\n\n{section: Chorus}\n[F]It's a beautiful sight when you just Do the things you wanna do\n[C]Setting goals and taking one more step to the Du\n[Dm]Just Be you, it is true\n[Bb]For there's no other Divine You\n\n{section: Verse 2}\n[F]Inspiring hearts create space in our home\n[C]Discover doors to new rooms only filled with God's tunes\n[Bb]You're inspiring\n[F]Keep it real!\n\n{section: Bridge}\n[C]Hea - ven gives me strength to Fol - low my own con - science\n[Dm]We've gone through hardships on the way to the persons of today\n[Bb]Watch the growth of our own personalities\n[F]In future we will not despair 'cause we're certainly aware\n[C]Of the visionary self and its prodigies\n[Dm]We'll march as soldiers to the place where the will of iron blazes\n[Bb]Never cross the bridge of our insecurity\n\n{section: Verse 3}\n[F]And on the day we comprehend that we're irreplaceable who is unique\n[C]It's a beautiful sight when you just do the things you wanna do\n[Dm]Setting goals and taking one more step to the du\n[Bb]Just be you, it is true, it is true...\n[F]It's a beautiful sight when you just do the things you wanna do\n[C]Setting goals and taking one more step to the du\n[Dm]Just be you, it is true\n[Bb]For there's no other Divine You!\n"
 }

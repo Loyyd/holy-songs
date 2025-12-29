@@ -2,6 +2,7 @@
   "id": "happy-heart",
   "title": "Happy Heart",
   "key": "D",
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse",
@@ -271,5 +272,5 @@
     }
   ],
   "sourcePath": "songs/happy-heart.pro",
-  "source": "{title: Happy Heart}\n{key: D}\n\n[D]There’s a certain [Dmaj7]sound\n[D7]Always follows me a[G]round;\n[Gm]When you're close to [D]me you will [A7]hear it.\n[F]It's the sound that [C]lovers [Dm]finally will dis[Am]cover\n[Bb]When there is no [F]other for their [A7]love.\n\n{section: Chorus}\n[Bm]It's my happy [Em]heart you hear,\n[A]Singing loud and [D]singing clear,\n[G]And it's [C]all be[F]cause you're [A7]near me, my love.\n[Bm]Take my happy [Em]heart away,\n[A]Make me love you [D]night and day\n[G]In your [C]arms I [F]want to [A7]stay, oh my love.\n\nFeeling more and more\nLike I’ve never felt before\nYou have changed my life so completely.\nMusic fills my soul now, I've lost all control now,\nI’m not half, I’m whole now with your love.\n"
+  "source": "{title: Happy Heart}\n{key: D}\n{reviewed: false}\n\n[D]There’s a certain [Dmaj7]sound\n[D7]Always follows me a[G]round;\n[Gm]When you're close to [D]me you will [A7]hear it.\n[F]It's the sound that [C]lovers [Dm]finally will dis[Am]cover\n[Bb]When there is no [F]other for their [A7]love.\n\n{section: Chorus}\n[Bm]It's my happy [Em]heart you hear,\n[A]Singing loud and [D]singing clear,\n[G]And it's [C]all be[F]cause you're [A7]near me, my love.\n[Bm]Take my happy [Em]heart away,\n[A]Make me love you [D]night and day\n[G]In your [C]arms I [F]want to [A7]stay, oh my love.\n\nFeeling more and more\nLike I’ve never felt before\nYou have changed my life so completely.\nMusic fills my soul now, I've lost all control now,\nI’m not half, I’m whole now with your love.\n"
 }

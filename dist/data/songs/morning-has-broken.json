@@ -2,6 +2,7 @@
   "id": "morning-has-broken",
   "title": "Morning Has Broken",
   "key": "C",
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse",
@@ -267,5 +268,5 @@
     }
   ],
   "sourcePath": "songs/morning-has-broken.pro",
-  "source": "{title: Morning Has Broken}\n{key: C}\n\n[C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing\n[Em]Blackbird has [Am]spoken, [D]like the first [G]bird\n[C]Praise for the [F]singing, [C]praise for the [Am]morn[G]ing\n[G]Praise for them [C]springing [Dm]fresh [G]from the [C]Word [F] [C]\n\nSweet the rain's new fall, sunlit from heaven\nLike the first dew fall, on the first grass\nPraise for the sweetness of the wet garden\nSprung in completeness where his feet pass\n\nMine is the sunlight, mine is the morn-ing\nBorn of the one light, Eden saw play\nPraise with elation, praise every morning\nGod's recreation of the new day\n\nMorning has broken, like the first morning\nBlackbird has spoken, like the first bird\nPraise for the singing, praise for the morning\nPraise for them springing fresh from the world\n"
+  "source": "{title: Morning Has Broken}\n{key: C}\n{reviewed: false}\n\n[C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing\n[Em]Blackbird has [Am]spoken, [D]like the first [G]bird\n[C]Praise for the [F]singing, [C]praise for the [Am]morn[G]ing\n[G]Praise for them [C]springing [Dm]fresh [G]from the [C]Word [F] [C]\n\nSweet the rain's new fall, sunlit from heaven\nLike the first dew fall, on the first grass\nPraise for the sweetness of the wet garden\nSprung in completeness where his feet pass\n\nMine is the sunlight, mine is the morn-ing\nBorn of the one light, Eden saw play\nPraise with elation, praise every morning\nGod's recreation of the new day\n\nMorning has broken, like the first morning\nBlackbird has spoken, like the first bird\nPraise for the singing, praise for the morning\nPraise for them springing fresh from the world\n"
 }

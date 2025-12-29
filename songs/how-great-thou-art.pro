@@ -1,5 +1,6 @@
 {title: How Great Thou Art}
 {key: A}
+{reviewed: false}
 
 [A]O Lord my God, when I in [A7]awesome wonder
 [D]Consider all the [E7]works Thy hands have [A]made,

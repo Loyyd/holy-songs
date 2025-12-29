@@ -1,5 +1,6 @@
 {title: Morning Has Broken}
 {key: C}
+{reviewed: false}
 
 [C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing
 [Em]Blackbird has [Am]spoken, [D]like the first [G]bird

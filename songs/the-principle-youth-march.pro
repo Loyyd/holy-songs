@@ -1,5 +1,6 @@
 {title: The Principle Youth March}
 {key: D}
+{reviewed: false}
 
 {section: Verse 1}
 [D]We are the youth, soldiers of the truth, called by our [G]God on [D]high;

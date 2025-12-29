@@ -1,5 +1,6 @@
 {title: Lean On Me}
 {key: D}
+{reviewed: false}
 
 [D]Sometimes in our [G]lives we all have [D]pain
 [F#m]We all have [A]sorrow. But if we are [D]wise [G]

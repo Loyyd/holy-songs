@@ -1,5 +1,6 @@
 {title: Hollo Arirang}
 {key: D}
+{reviewed: false}
 
 {section: Verse 1}
 [D]Cho molli tonghae pada ero-u-un som

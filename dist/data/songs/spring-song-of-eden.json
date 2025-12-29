@@ -2,21 +2,8 @@
   "id": "spring-song-of-eden",
   "title": "Spring Song of Eden",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -283,5 +270,5 @@
     }
   ],
   "sourcePath": "songs/spring-song-of-eden.pro",
-  "source": "{title: Spring Song of Eden}\n{key: C}\n\n{section: Verse 1}\n[C]Come, O ye [Gm]friends, to the [Am]Garden of [G]Eden,\n[C]Where the spring [Dm]blossoms are [G7]best;\n[Dm]Joyfully [Em]singing to[Dm]gether our [Em]song,\n[Am]Friends in our Eden re[G]gained,\n[Am]Here in the [Em]Garden to[Am]gether we'll [Em]meet,\n[C]Singing new [Em]songs of [G7]joy. [C]\n\n{section: Verse 2}\nCome, O ye friends, to the Garden of Eden,\nSinging new songs of delight;\nJoyfully dancing together with song,\nFriends in our Eden rejoice,\nHere in the Garden together we'll dance,\nSinging new songs of joy.\n\n{section: Verse 3}\nCome, O ye friends, to the Garden of Eden,\nWhere joy and happiness reign;\nJoyfully sharing together our love,\nHere in the garden of peace;\nCome, ye, O come to the Garden my friends,\nSinging new songs of joy.\n"
+  "source": "{title: Spring Song of Eden}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]Come, O ye [Gm]friends, to the [Am]Garden of [G]Eden,\n[C]Where the spring [Dm]blossoms are [G7]best;\n[Dm]Joyfully [Em]singing to[Dm]gether our [Em]song,\n[Am]Friends in our Eden re[G]gained,\n[Am]Here in the [Em]Garden to[Am]gether we'll [Em]meet,\n[C]Singing new [Em]songs of [G7]joy. [C]\n\n{section: Verse 2}\nCome, O ye friends, to the Garden of Eden,\nSinging new songs of delight;\nJoyfully dancing together with song,\nFriends in our Eden rejoice,\nHere in the Garden together we'll dance,\nSinging new songs of joy.\n\n{section: Verse 3}\nCome, O ye friends, to the Garden of Eden,\nWhere joy and happiness reign;\nJoyfully sharing together our love,\nHere in the garden of peace;\nCome, ye, O come to the Garden my friends,\nSinging new songs of joy.\n"
 }

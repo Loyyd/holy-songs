@@ -2,21 +2,8 @@
   "id": "unite-into-one",
   "title": "Unite Into One",
   "key": "A",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -308,5 +295,5 @@
     }
   ],
   "sourcePath": "songs/unite-into-one.pro",
-  "source": "{title: Unite Into One}\n{key: A}\n\n{section: Verse 1}\n[A]Chase away the power of Satan,\n[A]Far away beyond the land and sea;\n[A]Build for God a boundless Kingdom,\n[E7]Giving joy and liberty to all.\n\n{section: Verse 2}\n[E7]Come, ye people all around the world, let's [A]unite into [D]one;\n[A]Spreading forth the glory of the Father,\n[A]And His great will forevermore.\n\n{section: Chorus}\n[A]Unite, Unite, let's unite into one\n[A]Bring about one nation uniting all the people of the world.\n\n{section: Verse 3}\n[A]Raise the white cross on our banner,\n[A]High upon Mt. Everest it waves;\n[A]In the blue Pacific waters,\n[E7]Cleanse the sword that brought the victory.\n\n{section: Verse 4}\n[E7]Come, ye people all around the world, let's [A]unite into [D]one. Now\n[A]resolve to end the deep resentment, of the long centuries past.\n[A]Build a fortress to defend the peace,\n[E7]On the great new heaven and new earth;\n\n{section: Verse 5}\n[A]We will all sing 'Hallelujah,'\n[A]Safe within the bosom of the Lord.\n[A]Come, ye people all around the world, let's unite into one.\n[E7]Share the joy and glory of Heaven, hidden so long from every eye.\n"
+  "source": "{title: Unite Into One}\n{key: A}\n{reviewed: false}\n\n{section: Verse 1}\n[A]Chase away the power of Satan,\n[A]Far away beyond the land and sea;\n[A]Build for God a boundless Kingdom,\n[E7]Giving joy and liberty to all.\n\n{section: Verse 2}\n[E7]Come, ye people all around the world, let's [A]unite into [D]one;\n[A]Spreading forth the glory of the Father,\n[A]And His great will forevermore.\n\n{section: Chorus}\n[A]Unite, Unite, let's unite into one\n[A]Bring about one nation uniting all the people of the world.\n\n{section: Verse 3}\n[A]Raise the white cross on our banner,\n[A]High upon Mt. Everest it waves;\n[A]In the blue Pacific waters,\n[E7]Cleanse the sword that brought the victory.\n\n{section: Verse 4}\n[E7]Come, ye people all around the world, let's [A]unite into [D]one. Now\n[A]resolve to end the deep resentment, of the long centuries past.\n[A]Build a fortress to defend the peace,\n[E7]On the great new heaven and new earth;\n\n{section: Verse 5}\n[A]We will all sing 'Hallelujah,'\n[A]Safe within the bosom of the Lord.\n[A]Come, ye people all around the world, let's unite into one.\n[E7]Share the joy and glory of Heaven, hidden so long from every eye.\n"
 }

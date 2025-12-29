@@ -1,5 +1,6 @@
 {title: My Cross}
 {key: G}
+{reviewed: false}
 
 {section: Verse 1}
 [G]Who can I go to for my help to bear my heavy cross?

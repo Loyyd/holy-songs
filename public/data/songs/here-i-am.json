@@ -2,6 +2,7 @@
   "id": "here-i-am",
   "title": "Here I Am",
   "key": "D",
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse",
@@ -288,5 +289,5 @@
     }
   ],
   "sourcePath": "songs/here-i-am.pro",
-  "source": "{title: Here I Am}\n{key: D}\n\n[D]Here I am, this is [A]me\n[G]There's nowhere else on [D]Earth I'd rather be\n[G]Here I am, it's just [D]me and you\n[C]Tonight we make our [A]dreams come true\n\n{section: Chorus}\n[Bm]It's a new world, [D]it's a new [A]start\n[Bm]It's alive with the [G]beating of [D]young [A]hearts\n[Bm]It's a new day, [G]it's a new [D]plan [A]\n[Em]I've been waiting for [G]you\n[D]Here I am\n\nHere we are, we've just begun\nAnd after all this time, our time has come\nYeah, here we are, still goin' strong\nRight here in the place where we belong\n\n{section: Chorus}\n\nHere I am, right next to you\nAnd suddenly the world is all brand new\nHere I am, where I'm gonna stay\nNow there's nothin' standin' in our way\nHere I am – this is me\n"
+  "source": "{title: Here I Am}\n{key: D}\n{reviewed: false}\n\n[D]Here I am, this is [A]me\n[G]There's nowhere else on [D]Earth I'd rather be\n[G]Here I am, it's just [D]me and you\n[C]Tonight we make our [A]dreams come true\n\n{section: Chorus}\n[Bm]It's a new world, [D]it's a new [A]start\n[Bm]It's alive with the [G]beating of [D]young [A]hearts\n[Bm]It's a new day, [G]it's a new [D]plan [A]\n[Em]I've been waiting for [G]you\n[D]Here I am\n\nHere we are, we've just begun\nAnd after all this time, our time has come\nYeah, here we are, still goin' strong\nRight here in the place where we belong\n\n{section: Chorus}\n\nHere I am, right next to you\nAnd suddenly the world is all brand new\nHere I am, where I'm gonna stay\nNow there's nothin' standin' in our way\nHere I am – this is me\n"
 }

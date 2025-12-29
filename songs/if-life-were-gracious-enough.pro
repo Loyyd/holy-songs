@@ -1,5 +1,6 @@
 {title: If Life Were Gracious Enough}
 {key: C}
+{reviewed: false}
 
 {section: Verse 1}
 [C]If life were gracious enough to grant my way,

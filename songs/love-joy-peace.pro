@@ -1,20 +1,21 @@
 {title: Love Joy Peace}
 {key: Em}
+{reviewed: true}
 
 {section: Verse 1}
-[Em]Love, love, love, love
-[D]Love is the gospel of the world,
-[Em]Love your neighbour as your brother,
-[B7]Love, love, love, love.
+[Em]Love, lo[D]ve, [Em]love, [B7]love
+[Em]Love is the [D]gospel o[Em]f the wo[B7]rld,
+[Em]Love your ne[D]ighbour a[Em]s your br[B7]other,
+[Em]Love, l[D]ove, love, [Em]love.[B7]
 
-{{section: Verse 2}
-[Em]Joy, joy, joy, joy
-[D]Joy is the purpose of our lives,
-[Em]Let us dance before our Father,
-[B7]Joy, joy, joy, joy.
+{section: Verse 2}
+Joy, joy, joy, joy
+Joy is the purpose of our lives,
+Let us dance before our Father,
+Joy, joy, joy, joy.
 
-{{section: Verse 3}
-[Em]Peace, peace, peace, peace,
-[D]Peace is the hope of all mankind,
-[Em]Let us work to free our brothers,
-[B7]Peace, peace, peace, peace.
+{section: Verse 3}
+Peace, peace, peace, peace,
+Peace is the hope of all mankind,
+Let us work to free our brothers,
+Peace, peace, peace, peace.

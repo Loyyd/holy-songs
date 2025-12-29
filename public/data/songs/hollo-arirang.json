@@ -2,21 +2,8 @@
   "id": "hollo-arirang",
   "title": "Hollo Arirang",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -209,5 +196,5 @@
     }
   ],
   "sourcePath": "songs/hollo-arirang.pro",
-  "source": "{title: Hollo Arirang}\n{key: D}\n\n{section: Verse 1}\n[D]Cho molli tonghae pada ero-u-un som\n[Bm]O-onuldo kosen baram puro-ogetchi\n[G]Choguman yolgullo param-ma-juni\n[A]Doktoya kan bame jal jannunya\n\n{section: Verse 2}\n[D]A-arirang, A-arirang, Hol-lo Arirang\n[Bm]A-arirang kogerul nomo kabodja\n[G]Kadaga himdulmyon shio kadorado\n[A]Sonjabgo kaboja kachi kabocha\n\n{{section: Verse 3}\n[D]Kym kangsan malkun muurun tonggeron hulgo\n[Bm]Seoraksan malgeun muldo donghae kanundae\n[G]Urinae maeum dulun odiro kaneunga\n[A]Onjejchum urineun hanaga doelkka\n\n{{section: Verse 4}\n[D]Pekdu san dumankangeso pe tago donara\n[Bm]Hanra san jejue so betakgo kanda\n[G]kadaga hollo somae da julnerigo\n[A]do oru neun achim herul majiheboja\n"
+  "source": "{title: Hollo Arirang}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]Cho molli tonghae pada ero-u-un som\n[Bm]O-onuldo kosen baram puro-ogetchi\n[G]Choguman yolgullo param-ma-juni\n[A]Doktoya kan bame jal jannunya\n\n{section: Verse 2}\n[D]A-arirang, A-arirang, Hol-lo Arirang\n[Bm]A-arirang kogerul nomo kabodja\n[G]Kadaga himdulmyon shio kadorado\n[A]Sonjabgo kaboja kachi kabocha\n\n{{section: Verse 3}\n[D]Kym kangsan malkun muurun tonggeron hulgo\n[Bm]Seoraksan malgeun muldo donghae kanundae\n[G]Urinae maeum dulun odiro kaneunga\n[A]Onjejchum urineun hanaga doelkka\n\n{{section: Verse 4}\n[D]Pekdu san dumankangeso pe tago donara\n[Bm]Hanra san jejue so betakgo kanda\n[G]kadaga hollo somae da julnerigo\n[A]do oru neun achim herul majiheboja\n"
 }

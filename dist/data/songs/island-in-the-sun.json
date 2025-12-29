@@ -2,21 +2,8 @@
   "id": "island-in-the-sun",
   "title": "Island in the Sun",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -263,5 +250,5 @@
     }
   ],
   "sourcePath": "songs/island-in-the-sun.pro",
-  "source": "{title: Island in the Sun}\n{key: D}\n\n{section: Verse 1}\n[D]This is my island in the sun\n[G]Where my people have toiled since time begun\n[A7]I may sail on many a sea\n[D]Her shores will always be home to me\n\n{section: Chorus}\n[D]Oh, island in the sun\n[G]Willed to me by my Father's hand\n[Bm]All my days I will sing in praise\n[A7]Of your forest, waters, your shining sands.\n\n{{section: Verse 2}\n[D]As morning breaks\n[G]The heaven on high\n[A7]I lift my heavy load to the sky\n[D]Sun comes down with a burning glow\n[G]Mingles my sweat with the earth below\n\n{{section: Verse 3}\n[D]I see woman on bended knee\n[G]Cutting cane for her family\n[A7]I see man at the waterside\n[D]Casting nets at the surging tide\n\n{{section: Verse 4}\n[G]I hope the day will never come\n[A7]That I can't awake to the sound of drum\n[D]Never let me miss carnival\n[G]With calypso songs philosophical\n"
+  "source": "{title: Island in the Sun}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]This is my island in the sun\n[G]Where my people have toiled since time begun\n[A7]I may sail on many a sea\n[D]Her shores will always be home to me\n\n{section: Chorus}\n[D]Oh, island in the sun\n[G]Willed to me by my Father's hand\n[Bm]All my days I will sing in praise\n[A7]Of your forest, waters, your shining sands.\n\n{{section: Verse 2}\n[D]As morning breaks\n[G]The heaven on high\n[A7]I lift my heavy load to the sky\n[D]Sun comes down with a burning glow\n[G]Mingles my sweat with the earth below\n\n{{section: Verse 3}\n[D]I see woman on bended knee\n[G]Cutting cane for her family\n[A7]I see man at the waterside\n[D]Casting nets at the surging tide\n\n{{section: Verse 4}\n[G]I hope the day will never come\n[A7]That I can't awake to the sound of drum\n[D]Never let me miss carnival\n[G]With calypso songs philosophical\n"
 }

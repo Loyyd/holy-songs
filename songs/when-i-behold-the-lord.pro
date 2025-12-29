@@ -1,5 +1,6 @@
 {title: When I Behold the Lord}
 {key: E}
+{reviewed: false}
 
 {section: Verse 1}
 [E]When I behold the Lord of all, my old self dies away.

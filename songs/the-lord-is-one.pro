@@ -1,5 +1,6 @@
 {title: The Lord Is One}
 {key: Em}
+{reviewed: false}
 
 {section: Verse 1}
 [Em]All my brethren, can't you hear me say,

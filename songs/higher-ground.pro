@@ -1,5 +1,6 @@
 {title: Higher Ground}
 {key: G}
+{reviewed: false}
 
 [G]I'm pressing on the [C]upward way,
 [G]New heights I'm gaining [D7]every day,

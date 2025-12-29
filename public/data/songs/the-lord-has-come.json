@@ -2,21 +2,8 @@
   "id": "the-lord-has-come",
   "title": "The Lord Has Come",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -372,5 +359,5 @@
     }
   ],
   "sourcePath": "songs/the-lord-has-come.pro",
-  "source": "{title: The Lord Has Come}\n{key: C}\n\n{section: Verse 1}\n[C]O, the Lord is [F]come, O the [C]Lord is [Am]come!\n[C]He has come to the [C]country of [F]God,\n[D]Shining in [D7]glorious [G]dawn. [G7]\n[Am]Here is our [Dm]Leader and [C]Lord, filled with our [Am]Father's light.\n[F]Leading all [C]men with His [C7]Word, into the [F]Purpose of God.\n[C]Beautiful [C]Father[Am6]land welcome the [C]Lord!\n[F]Come let us [Em]sing and re[G7]joice!\n[C]Halle[F]lujah, [C]Halle[G7]lujah, [C]Halle[Em6]lujah! [G7]A[C]men!\n\n{section: Verse 2}\nO the Lord is come, O the Lord is come!\nHe has come to the land of the pure,\nBlessed with the blossom of life.\nHere is our Ruler and King, bringing our Father's way,\nShattering evil and sin, building the Kingdom of God.\nBeautiful Fatherland welcome the Lord! Come let us sing and rejoice!\nHallelujah, Hallelujah, Hallelujah! Amen!\n\n{section: Verse 3}\nO the Lord is come, O the Lord is come!\nHe has come to the mountainous land,\nLaden with treasure untold.\nHere is our saviour and God, showing our Father's Heart.\nLifting us high with His joy, into the glory of God.\nCome O my brothers and welcome the Lord!\nCome let us sing and rejoice!\nHallelujah, Hallelujah, Hallelujah! Aju!\n"
+  "source": "{title: The Lord Has Come}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]O, the Lord is [F]come, O the [C]Lord is [Am]come!\n[C]He has come to the [C]country of [F]God,\n[D]Shining in [D7]glorious [G]dawn. [G7]\n[Am]Here is our [Dm]Leader and [C]Lord, filled with our [Am]Father's light.\n[F]Leading all [C]men with His [C7]Word, into the [F]Purpose of God.\n[C]Beautiful [C]Father[Am6]land welcome the [C]Lord!\n[F]Come let us [Em]sing and re[G7]joice!\n[C]Halle[F]lujah, [C]Halle[G7]lujah, [C]Halle[Em6]lujah! [G7]A[C]men!\n\n{section: Verse 2}\nO the Lord is come, O the Lord is come!\nHe has come to the land of the pure,\nBlessed with the blossom of life.\nHere is our Ruler and King, bringing our Father's way,\nShattering evil and sin, building the Kingdom of God.\nBeautiful Fatherland welcome the Lord! Come let us sing and rejoice!\nHallelujah, Hallelujah, Hallelujah! Amen!\n\n{section: Verse 3}\nO the Lord is come, O the Lord is come!\nHe has come to the mountainous land,\nLaden with treasure untold.\nHere is our saviour and God, showing our Father's Heart.\nLifting us high with His joy, into the glory of God.\nCome O my brothers and welcome the Lord!\nCome let us sing and rejoice!\nHallelujah, Hallelujah, Hallelujah! Aju!\n"
 }

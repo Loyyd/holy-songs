@@ -1,5 +1,6 @@
 {title: Pledge}
 {key: D}
+{reviewed: false}
 
 {section: Verse 1}
 [D]My fallen figure shames the earth;

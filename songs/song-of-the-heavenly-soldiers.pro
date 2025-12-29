@@ -1,5 +1,6 @@
 {title: Song of the Heavenly Soldiers}
 {key: A}
+{reviewed: false}
 
 {section: Verse 1}
 [A]Beautiful morning sunrise, calm above the [E7]land of our [A]hope;

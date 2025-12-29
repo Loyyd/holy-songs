@@ -1,5 +1,6 @@
 {title: Light in the East}
 {key: A}
+{reviewed: false}
 
 {section: Verse 1}
 [A]Light that drives out the darkness is shining brightly from the [D]East.

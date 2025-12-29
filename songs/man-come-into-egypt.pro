@@ -1,5 +1,6 @@
 {title: Man Come Into Egypt}
 {key: Dm}
+{reviewed: false}
 
 {section: Verse 1}
 [Dm]There is a man come into Egypt

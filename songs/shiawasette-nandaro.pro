@@ -1,5 +1,6 @@
 {title: Shiawasette Nandaro}
 {key: D}
+{reviewed: false}
 
 {section: Verse 1}
 [D]Shiawasette nandaro, hoshi ni tazunete mita

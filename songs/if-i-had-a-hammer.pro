@@ -1,5 +1,6 @@
 {title: If I Had A Hammer}
 {key: C}
+{reviewed: false}
 
 [G7][C]If I had a [Em]hammer, [F]I'd hammer in the [G]morning,
 [C]I'd hammer in the [Em]evening, [F]all over this [G]land.

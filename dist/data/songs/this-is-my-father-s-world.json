@@ -2,21 +2,8 @@
   "id": "this-is-my-father-s-world",
   "title": "This Is My Father's World",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -159,5 +146,5 @@
     }
   ],
   "sourcePath": "songs/this-is-my-fathers-world.pro",
-  "source": "{title: This Is My Father's World}\n{key: C}\n\n{section: Verse 1}\n[C]This is my Father's world, and to my listening ears\n[G7]All nature sings, and round me rings the music of the spheres.\n[F]This is my Father's world, I rest me in the thought\n[C]Of rocks and trees of skies and seas, His hand the wonders wrought.\n\n{{section: Verse 2}\n[C]This is my Father's world, the birds their carols raise,\n[G7]The morning light, the lily white, declare their Maker's praise.\n[F]This is my Father's world, He shines in all that's fair,\n[C]In the rustling grass I hear Him pass, He speaks to me everywhere.\n\n{{section: Verse 3}\n[C]This is my Father's world. Oh let me ne'er forget\n[G7]That though the wrong seems oft so strong, God is the Ruler yet.\n[F]This is my Father's world, the battle is not done,\n[C]Jesus who died shall be satisfied, and earth and heaven be one.\n"
+  "source": "{title: This Is My Father's World}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]This is my Father's world, and to my listening ears\n[G7]All nature sings, and round me rings the music of the spheres.\n[F]This is my Father's world, I rest me in the thought\n[C]Of rocks and trees of skies and seas, His hand the wonders wrought.\n\n{{section: Verse 2}\n[C]This is my Father's world, the birds their carols raise,\n[G7]The morning light, the lily white, declare their Maker's praise.\n[F]This is my Father's world, He shines in all that's fair,\n[C]In the rustling grass I hear Him pass, He speaks to me everywhere.\n\n{{section: Verse 3}\n[C]This is my Father's world. Oh let me ne'er forget\n[G7]That though the wrong seems oft so strong, God is the Ruler yet.\n[F]This is my Father's world, the battle is not done,\n[C]Jesus who died shall be satisfied, and earth and heaven be one.\n"
 }

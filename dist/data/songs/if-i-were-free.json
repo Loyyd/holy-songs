@@ -2,21 +2,8 @@
   "id": "if-i-were-free",
   "title": "If I Were Free",
   "key": "E",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -209,5 +196,5 @@
     }
   ],
   "sourcePath": "songs/if-i-were-free.pro",
-  "source": "{title: If I Were Free}\n{key: E}\n\n{section: Verse 1}\n[E]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n\n{section: Verse 2}\n[A]This weary world has had its fill\n[B7]Of words of war on ev'ry hill.\n[E]The time has come for peaceful days\n[E7]For peaceful men and peaceful ways.\n\n{{section: Verse 3}\n[A]When all mankind has ceased to fight\n[B7]I'll raise my head in thanks each night.\n[E]For this great love and all it means,\n[E7]For golden days and peaceful dreams.\n\n{{section: Verse 4}\n[A]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n"
+  "source": "{title: If I Were Free}\n{key: E}\n{reviewed: false}\n\n{section: Verse 1}\n[E]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n\n{section: Verse 2}\n[A]This weary world has had its fill\n[B7]Of words of war on ev'ry hill.\n[E]The time has come for peaceful days\n[E7]For peaceful men and peaceful ways.\n\n{{section: Verse 3}\n[A]When all mankind has ceased to fight\n[B7]I'll raise my head in thanks each night.\n[E]For this great love and all it means,\n[E7]For golden days and peaceful dreams.\n\n{{section: Verse 4}\n[A]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n"
 }

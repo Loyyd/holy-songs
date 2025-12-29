@@ -168,18 +168,22 @@ button {
   font-size: 16px;
   cursor: pointer;
   user-select: none;
-  color: #94a3b8;
   transition: all 0.2s;
   padding: 4px;
   line-height: 1;
 }
 
-.flag-icon.filled {
+.flag-icon.not-reviewed {
   color: #ef4444;
+  filter: grayscale(0%);
+}
+
+.flag-icon.reviewed {
+  color: #22c55e;
+  filter: hue-rotate(100deg) saturate(1.5);
 }
 
 .flag-icon:hover {
-  color: #ef4444;
   transform: scale(1.15);
 }
 

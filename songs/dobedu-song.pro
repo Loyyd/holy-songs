@@ -1,5 +1,6 @@
 {title: Dobedu Song}
 {key: F}
+{reviewed: false}
 
 {section: Verse 1}
 [F]Ingenoius minds strong enough to strive

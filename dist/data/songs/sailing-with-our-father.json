@@ -2,21 +2,8 @@
   "id": "sailing-with-our-father",
   "title": "Sailing With Our Father",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -204,5 +191,5 @@
     }
   ],
   "sourcePath": "songs/sailing-with-our-father.pro",
-  "source": "{title: Sailing With Our Father}\n{key: G}\n\n{section: Verse 1}\n[G]If the trip you're traveling gets long,\n[D]Wishing for a new day to come;\n[Am]When the sun rises in the morning\n[C]We'll set sail and move on.\n\n{{section: Chorus}\n[G]Sailing with our Father\n[D]You know His ship will never sway;\n[Am]New Hope on the horizon\n[C]We've found the Promised Land today.\n\n{{section: Verse 2}\n[G]Look out with joy in your eyes,\n[D]The winds of Truth will guide our way;\n[Am]Leaving behind the raging sea,\n[C]On waves of Love we'll sail away.\n\n{{section: Verse 3}\n[G]Darkness it always turns to light,\n[D]The Promised Land is in sight;\n[Am]He's our guiding star by night\n[C]And in the day our bright sunlight.\n"
+  "source": "{title: Sailing With Our Father}\n{key: G}\n{reviewed: false}\n\n{section: Verse 1}\n[G]If the trip you're traveling gets long,\n[D]Wishing for a new day to come;\n[Am]When the sun rises in the morning\n[C]We'll set sail and move on.\n\n{{section: Chorus}\n[G]Sailing with our Father\n[D]You know His ship will never sway;\n[Am]New Hope on the horizon\n[C]We've found the Promised Land today.\n\n{{section: Verse 2}\n[G]Look out with joy in your eyes,\n[D]The winds of Truth will guide our way;\n[Am]Leaving behind the raging sea,\n[C]On waves of Love we'll sail away.\n\n{{section: Verse 3}\n[G]Darkness it always turns to light,\n[D]The Promised Land is in sight;\n[Am]He's our guiding star by night\n[C]And in the day our bright sunlight.\n"
 }

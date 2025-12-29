@@ -2,21 +2,8 @@
   "id": "it-s-a-long-road-to-heaven",
   "title": "It's a Long Road to Heaven",
   "key": "G",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -245,5 +232,5 @@
     }
   ],
   "sourcePath": "songs/its-a-long-road-to-heaven.pro",
-  "source": "{title: It's a Long Road to Heaven}\n{key: G}\n\n{section: Chorus}\n[G]It's a long road to Heaven,\n[C]A winding steep and high,\n[G]But when you walk with love\n[D]With the wind on your wing\n[G]And cover the earth\n[D]With the songs you sing\n[C]The miles fly by.\n\n{section: Verse 1}\n[G]I walked, one morning by the sea\n[C]And all the waves reached out to me\n[Em]I took their tears, then let them be.\n\n{{section: Verse 2}\n[A]I walked, one morning at the dawn\n[D7]When bits of night still lingered on\n[G]I sought my star, but it was gone\n\n{{section: Verse 3}\n[C]I walked, one morning with a friend\n[G]And prayed the day would never end\n[Em]The years have flown, so why pretend\n\n{{section: Verse 4}\n[A]I walked, one morning with my King\n[D]And all my winters turned to spring\n[G]Yet every moment, held it's sting\n"
+  "source": "{title: It's a Long Road to Heaven}\n{key: G}\n{reviewed: false}\n\n{section: Chorus}\n[G]It's a long road to Heaven,\n[C]A winding steep and high,\n[G]But when you walk with love\n[D]With the wind on your wing\n[G]And cover the earth\n[D]With the songs you sing\n[C]The miles fly by.\n\n{section: Verse 1}\n[G]I walked, one morning by the sea\n[C]And all the waves reached out to me\n[Em]I took their tears, then let them be.\n\n{{section: Verse 2}\n[A]I walked, one morning at the dawn\n[D7]When bits of night still lingered on\n[G]I sought my star, but it was gone\n\n{{section: Verse 3}\n[C]I walked, one morning with a friend\n[G]And prayed the day would never end\n[Em]The years have flown, so why pretend\n\n{{section: Verse 4}\n[A]I walked, one morning with my King\n[D]And all my winters turned to spring\n[G]Yet every moment, held it's sting\n"
 }

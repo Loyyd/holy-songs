@@ -102,7 +102,6 @@ export default function App() {
     const saved = localStorage.getItem('starred-songs');
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
-  const [flagged, setFlagged] = useState<Set<string>>(new Set());
   const [autoScroll, setAutoScroll] = useState(false);
   const [scrollSpeed, setScrollSpeed] = useState(0.15); // Default subtle speed (pixels per frame)
 
@@ -140,16 +139,6 @@ export default function App() {
         if (data.length > 0) setSelectedId(data[0].id);
       })
       .catch((err) => console.error(err));
-    
-    // Load flagged songs from backend
-    fetch('http://localhost:8000/api/flags')
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.flagged) {
-          setFlagged(new Set(data.flagged));
-        }
-      })
-      .catch((err) => console.warn('Could not load flagged songs from backend:', err));
   }, []);
 
   useEffect(() => {
@@ -220,47 +209,49 @@ export default function App() {
     });
   };
 
-  const toggleFlag = (id: string) => {
-    const willBeFlagged = !flagged.has(id);
+  const toggleFlag = (id: string, currentReviewed: boolean | undefined) => {
+    const newReviewed = !currentReviewed;
     
-    // Optimistically update UI
-    setFlagged(prev => {
-      const next = new Set(prev);
-      if (willBeFlagged) {
-        next.add(id);
-      } else {
-        next.delete(id);
-      }
-      return next;
-    });
+    // Optimistically update the index
+    setIndex(prev => prev.map(entry => 
+      entry.id === id ? { ...entry, reviewed: newReviewed } : entry
+    ));
+    
+    // Also update the current song if it's selected
+    if (song && song.id === id) {
+      setSong({ ...song, reviewed: newReviewed });
+    }
     
     // Sync with backend
-    fetch('http://localhost:8000/api/flags', {
+    fetch('http://localhost:8000/api/reviewed', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ song_id: id, flagged: willBeFlagged }),
+      body: JSON.stringify({ song_id: id, reviewed: newReviewed }),
     })
       .then((res) => res.json())
       .then((data) => {
-        // Update with server's response to ensure consistency
-        if (data.flagged) {
-          setFlagged(new Set(data.flagged));
+        if (!data.success) {
+          console.error('Failed to update reviewed status:', data.error);
+          // Revert on error
+          setIndex(prev => prev.map(entry => 
+            entry.id === id ? { ...entry, reviewed: currentReviewed } : entry
+          ));
+          if (song && song.id === id) {
+            setSong({ ...song, reviewed: currentReviewed });
+          }
         }
       })
       .catch((err) => {
-        console.error('Failed to sync flag with backend:', err);
+        console.error('Failed to sync reviewed status with backend:', err);
         // Revert on error
-        setFlagged(prev => {
-          const next = new Set(prev);
-          if (willBeFlagged) {
-            next.delete(id);
-          } else {
-            next.add(id);
-          }
-          return next;
-        });
+        setIndex(prev => prev.map(entry => 
+          entry.id === id ? { ...entry, reviewed: currentReviewed } : entry
+        ));
+        if (song && song.id === id) {
+          setSong({ ...song, reviewed: currentReviewed });
+        }
       });
   };
 
@@ -423,14 +414,14 @@ export default function App() {
                       {starred.has(entry.id) ? '★' : '☆'}
                     </span>
                     <span
-                      className={`flag-icon ${flagged.has(entry.id) ? 'filled' : ''}`}
+                      className={`flag-icon ${entry.reviewed ? 'reviewed' : 'not-reviewed'}`}
                       onClick={(e) => {
                         e.stopPropagation();
-                        toggleFlag(entry.id);
+                        toggleFlag(entry.id, entry.reviewed);
                       }}
-                      title={flagged.has(entry.id) ? 'Unflag song' : 'Flag song'}
+                      title={entry.reviewed ? 'Mark as not reviewed' : 'Mark as reviewed'}
                     >
-                      {flagged.has(entry.id) ? '🚩' : '⚑'}
+                      🚩
                     </span>
                   </div>
                 </div>

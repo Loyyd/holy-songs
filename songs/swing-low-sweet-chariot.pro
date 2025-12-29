@@ -1,5 +1,6 @@
 {title: Swing Low, Sweet Chariot}
 {key: D}
+{reviewed: false}
 
 {section: Chorus}
 Swing [D]low sweet [G]cha[D]riot, coming for to carry me [A7]home, 

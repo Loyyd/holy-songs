@@ -2,21 +2,8 @@
   "id": "since-your-love",
   "title": "Since Your Love",
   "key": "B",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Intro",
       "lines": [
@@ -914,5 +901,5 @@
     }
   ],
   "sourcePath": "songs/since-your-love.pro",
-  "source": "{title: Since Your Love}\n{artist: United Pursuit}\n{key: B}\n\n{section: Intro}\n[Bsus4]     [B]\n[Bsus4]     [B]\n\n{section: Verse 1}\n[B]You are the light,[F#] song of my life\n[E]You always[C#m] lead me, [E]You are the [C#m]voice inside\n[B]You are my love, [F#]no one before You\n[E]All that I [C#m]am   p[E]oints to [C#m]You\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am [E]unfulfill[G#m]ed\nWithout full c[F#]ommunion\n\n{section: Instrumental}\n[B]   [F#]   [E]    [C#m]   [E]    [C#m]\n\n{section: Verse 1}\n[B]You are the light, [F#]song of my life\n[E]You always l[C#m]ead me, [E]You are the [C#m]voice inside\n[B]You are my love, [F#]no one before You\n[E]All that I [C#m]am   [E]points to [C#m]You\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am un[E]fulfill[G#m]ed\nWithout full c[F#]ommunion\n\nI was [B]made by You\nI was [F#]made for You\nI am [E]unfulfill[G#m]ed\nWithout full [F#]communion\n\n{section: Bridge}\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever [C#m]changed\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am un[E]fulfill[G#m]ed\nWithout full [F#]communion\n\n{section: Instrumental 2}\n[B]      [B]\n[E]     [F#/E]    [E]    [F#/E]\n[B]      [B]\n[E]     [F#/E]    [E]    [F#/E]\n\n{section: Outro}\n[B]In You is all I need\n[E]You're my [F#/E]breath, You're [E]my life, You'[F#/E]re everything\n[B]In You is all I need\n[E]You're my [F#/E]breath, You're [E/G#]my life, You're[F#/A#] my everything\n"
+  "source": "{title: Since Your Love}\n{artist: United Pursuit}\n{key: B}\n{reviewed: false}\n\n{section: Intro}\n[Bsus4]     [B]\n[Bsus4]     [B]\n\n{section: Verse 1}\n[B]You are the light,[F#] song of my life\n[E]You always[C#m] lead me, [E]You are the [C#m]voice inside\n[B]You are my love, [F#]no one before You\n[E]All that I [C#m]am   p[E]oints to [C#m]You\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am [E]unfulfill[G#m]ed\nWithout full c[F#]ommunion\n\n{section: Instrumental}\n[B]   [F#]   [E]    [C#m]   [E]    [C#m]\n\n{section: Verse 1}\n[B]You are the light, [F#]song of my life\n[E]You always l[C#m]ead me, [E]You are the [C#m]voice inside\n[B]You are my love, [F#]no one before You\n[E]All that I [C#m]am   [E]points to [C#m]You\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am un[E]fulfill[G#m]ed\nWithout full c[F#]ommunion\n\nI was [B]made by You\nI was [F#]made for You\nI am [E]unfulfill[G#m]ed\nWithout full [F#]communion\n\n{section: Bridge}\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever cha[C#m]nged\n\n[B]Since Your love got a hold of me\n[C#m]Since Your love got a hold of me\n[E]I'm a new cre[C#m]ation\n[E]I'm forever [C#m]changed\n\n{section: Chorus}\nI was [B]made by You\nI was [F#]made for You\nI am un[E]fulfill[G#m]ed\nWithout full [F#]communion\n\n{section: Instrumental 2}\n[B]      [B]\n[E]     [F#/E]    [E]    [F#/E]\n[B]      [B]\n[E]     [F#/E]    [E]    [F#/E]\n\n{section: Outro}\n[B]In You is all I need\n[E]You're my [F#/E]breath, You're [E]my life, You'[F#/E]re everything\n[B]In You is all I need\n[E]You're my [F#/E]breath, You're [E/G#]my life, You're[F#/A#] my everything\n"
 }

@@ -2,21 +2,8 @@
   "id": "we-are-one-in-the-spirit",
   "title": "We Are One in the Spirit",
   "key": "Em",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -186,5 +173,5 @@
     }
   ],
   "sourcePath": "songs/we-are-one-in-the-spirit.pro",
-  "source": "{title: We Are One in the Spirit}\n{key: Em}\n\n{section: Verse 1}\n[Em]We are one in The Spirit, We are one in The Lord.\n[Am]We are one in The Spirit, We are one in The Lord.\n[Em]And we know that our unity will one day be restored.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n\n{{section: Verse 2}\n[Em]We will work with each other, We will work side by side.\n[Am]We will work with each other, We will work side by side.\n[Em]And we'll guard each man's dignity And save each man's pride.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n\n{{section: Verse 3}\n[Em]We will walk with each other, We will walk hand in hand.\n[Am]We will walk with each other, We will walk hand in hand.\n[Em]And together we'll spread the news that God is in our land.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n"
+  "source": "{title: We Are One in the Spirit}\n{key: Em}\n{reviewed: false}\n\n{section: Verse 1}\n[Em]We are one in The Spirit, We are one in The Lord.\n[Am]We are one in The Spirit, We are one in The Lord.\n[Em]And we know that our unity will one day be restored.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n\n{{section: Verse 2}\n[Em]We will work with each other, We will work side by side.\n[Am]We will work with each other, We will work side by side.\n[Em]And we'll guard each man's dignity And save each man's pride.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n\n{{section: Verse 3}\n[Em]We will walk with each other, We will walk hand in hand.\n[Am]We will walk with each other, We will walk hand in hand.\n[Em]And together we'll spread the news that God is in our land.\n[Am]And they'll know we're God's children by our love, by our love,\n[Em]Yes they'll know we're God's children by our love.\n"
 }

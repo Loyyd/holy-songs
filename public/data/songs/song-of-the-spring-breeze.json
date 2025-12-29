@@ -2,21 +2,8 @@
   "id": "song-of-the-spring-breeze",
   "title": "Song of the Spring Breeze",
   "key": "C",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -143,5 +130,5 @@
     }
   ],
   "sourcePath": "songs/song-of-the-spring-breeze.pro",
-  "source": "{title: Song of the Spring Breeze}\n{key: C}\n\n{section: Verse 1}\n[C]Snow and cold wind of the bitter dark night,\n[F]Lift off the weight of your [C]cold ruthless hand;\n[C]Spring breeze will [G7]chase you and [Am]bring flowery fragrances,\n[F]Breathing new [C]life to the [G7]suffocated [C]hills.\n\n{section: Verse 2}\nThough you most ruthless of winter winds blow,\nDoomed in a moment you too shall be calmed;\nButterfly awake and you meadow lark of spring,\nOur land has suffered this nightmare too long;\n"
+  "source": "{title: Song of the Spring Breeze}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[C]Snow and cold wind of the bitter dark night,\n[F]Lift off the weight of your [C]cold ruthless hand;\n[C]Spring breeze will [G7]chase you and [Am]bring flowery fragrances,\n[F]Breathing new [C]life to the [G7]suffocated [C]hills.\n\n{section: Verse 2}\nThough you most ruthless of winter winds blow,\nDoomed in a moment you too shall be calmed;\nButterfly awake and you meadow lark of spring,\nOur land has suffered this nightmare too long;\n"
 }

@@ -1,5 +1,6 @@
 {title: Song of the Young People}
 {key: G}
+{reviewed: false}
 
 {section: Verse 1}
 [G]We shout with joy, we rise and sing! The [C]Will of God is [Am]done!

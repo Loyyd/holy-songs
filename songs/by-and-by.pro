@@ -1,5 +1,6 @@
 {title: By and By}
 {key: F}
+{reviewed: false}
 
 {section: Chorus}
 [F]By and by, [Bb]when the morning [F]comes,

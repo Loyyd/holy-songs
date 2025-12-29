@@ -1,35 +1,34 @@
 {title: My Promise}
 {key: A}
+{reviewed: true}
 
 {section: Verse 1}
-[A]I pledge I will go, I pledge I will [E]go;
-[F#m]Go as my Father has [E]gone.
-[B7]Tears fall on the path,
-[E7]Lonely and silent the path of the Father,
-[A]Going to suffer the way of the [E7]Cross.
+[A]I ple[E]dge I will go,[F#m] I pl[E]ed[B7]ge I will go; [E7]
+[A]Go as my[E7] Father has [A]gone.
+[A]Tears [D]fall on the path,[C#m]
+[F#m]Lonely and si[D]lent the p[F#m]ath of the F[C#m]ather,
+[D]Going to su[E]ffer the w[F#m]ay of the Cr[E]oss.
+[F#m]Ready to fo[C#7]llow His [D]will.
+[A]I pl[E7]edge I will [A]go for[E7]ward to [A]Him.
+
+{section: Chorus}
+I'll follow the way, I'll follow the way;
+Follow the path of my Lord.
+Though thorny the path,
+Now persevere as the brightness is growing,
+On to the victory and glorious crown,
+Giving my body and soul,
+I'll follow the Lord all of the way;
+Giving my body and soul,
+I'll follow the Lord all of the way.
 
 {section: Verse 2}
-[A]Ready to follow His [D]will.
-[C#m]I pledge I will go forward [F#m]to Him.
-
-{section: Verse 3}
-[A]I'll follow the way, I'll follow the [E7]way;
-[A]Follow the path of my Lord.
-[A]Though thorny the path,
-[A]Now persevere as the brightness is growing,
-[A]On to the victory and glorious crown,
-[A]Giving my body and soul,
-[A]I'll follow the Lord all of the way;
-[A]Giving my body and soul,
-[A]I'll follow the Lord all of the way.
-
-{section: Verse 4}
-[A]I'm ready to serve, I'm ready to serve.
-[A]Serving my Father's desire,
-[A]Trials darken the path,
-[A]Deep in my heart the desire of the ages,
-[A]Fighting until we come home to the Lord,
-[A]Satan will bow in defeat,
-[A]I'm ready to serve all of my life;
-[A]Satan will bow in defeat,
-[A]I'm ready to serve all of my life.
+I'm ready to serve, I'm ready to serve.
+Serving my Father's desire,
+Trials darken the path,
+Deep in my heart the desire of the ages,
+Fighting until we come home to the Lord,
+Satan will bow in defeat,
+I'm ready to serve all of my life;
+Satan will bow in defeat,
+I'm ready to serve all of my life.

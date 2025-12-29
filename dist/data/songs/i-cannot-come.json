@@ -2,21 +2,8 @@
   "id": "i-cannot-come",
   "title": "I Cannot Come",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Chorus",
       "lines": [
@@ -272,5 +259,5 @@
     }
   ],
   "sourcePath": "songs/i-cannot-come.pro",
-  "source": "{title: I Cannot Come}\n{key: F}\n\n{section: Chorus}\n[F]I cannot come,\n[Bb]I cannot come to the banquet;\n[F]Don't trouble me now.\n[C7]I have married a wife; I have bought me a cow.\n[F7]I have fields and commitments that cost a pretty sum.\n[Bb]Pray, hold me excused, I cannot come.\n\n{section: Verse 1}\n[F]A certain man held a banquet on his estate in town.\n[Bb]He laid a festive table and wore a wedding gown.\n[F]He sent invitations to his neighbors far and wide\n[C7]But when the meal was ready, each of them replied:\n\n{{section: Verse 2}\n[F]The master rose up in anger, called his servants by name,\n[Dm]said: \"Go into the town, fetch the blind and the lame,\n[F]fetch the peasant and the pauper, for this I have willed,\n[C7]my banquet must be crowded, and my tables must be filled.\n\n{{section: Verse 3}\n[F]When all the poor had assembled, there was still room to spare,\n[Bb]so the master demanded: \"Go and search everywhere,\n[F]to the highways and the byways and force them to come in.\n[C7]My table must be filled before the banquet can begin.\n\n{{section: Verse 4}\n[F]Now God has written a message for the rest of the mankind;\n[Dm]If we're slow in responding, He may leave us behind.\n[F]He's preparing a banquet for that great and glorious day\n[C7]When the Lord and Master calls us, be certain not to say:\n"
+  "source": "{title: I Cannot Come}\n{key: F}\n{reviewed: false}\n\n{section: Chorus}\n[F]I cannot come,\n[Bb]I cannot come to the banquet;\n[F]Don't trouble me now.\n[C7]I have married a wife; I have bought me a cow.\n[F7]I have fields and commitments that cost a pretty sum.\n[Bb]Pray, hold me excused, I cannot come.\n\n{section: Verse 1}\n[F]A certain man held a banquet on his estate in town.\n[Bb]He laid a festive table and wore a wedding gown.\n[F]He sent invitations to his neighbors far and wide\n[C7]But when the meal was ready, each of them replied:\n\n{{section: Verse 2}\n[F]The master rose up in anger, called his servants by name,\n[Dm]said: \"Go into the town, fetch the blind and the lame,\n[F]fetch the peasant and the pauper, for this I have willed,\n[C7]my banquet must be crowded, and my tables must be filled.\n\n{{section: Verse 3}\n[F]When all the poor had assembled, there was still room to spare,\n[Bb]so the master demanded: \"Go and search everywhere,\n[F]to the highways and the byways and force them to come in.\n[C7]My table must be filled before the banquet can begin.\n\n{{section: Verse 4}\n[F]Now God has written a message for the rest of the mankind;\n[Dm]If we're slow in responding, He may leave us behind.\n[F]He's preparing a banquet for that great and glorious day\n[C7]When the Lord and Master calls us, be certain not to say:\n"
 }

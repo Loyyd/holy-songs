@@ -1,5 +1,6 @@
 {title: The Lord Has Come}
 {key: C}
+{reviewed: false}
 
 {section: Verse 1}
 [C]O, the Lord is [F]come, O the [C]Lord is [Am]come!

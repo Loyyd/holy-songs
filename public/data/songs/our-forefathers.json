@@ -2,21 +2,8 @@
   "id": "our-forefathers",
   "title": "Our Forefathers",
   "key": "F",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -101,5 +88,5 @@
     }
   ],
   "sourcePath": "songs/our-forefathers.pro",
-  "source": "{title: Our Forefathers}\n{key: F}\n\n{section: Verse 1}\n[F]Our forefathers built for us a beautiful land;\n[C7]Till it is completed, we will join in heart and hand.\n[F]See the new eternal history, beckoning us to come\n\n{section: Verse 2}\n[Dm]Quickly on the journey to the true eternal home.\n[C]How the beauty of our native land lifts us to the skies;\n[F]God has surely chosen this eternal paradise.\n"
+  "source": "{title: Our Forefathers}\n{key: F}\n{reviewed: false}\n\n{section: Verse 1}\n[F]Our forefathers built for us a beautiful land;\n[C7]Till it is completed, we will join in heart and hand.\n[F]See the new eternal history, beckoning us to come\n\n{section: Verse 2}\n[Dm]Quickly on the journey to the true eternal home.\n[C]How the beauty of our native land lifts us to the skies;\n[F]God has surely chosen this eternal paradise.\n"
 }

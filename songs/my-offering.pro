@@ -1,5 +1,6 @@
 {title: My Offering}
 {key: C}
+{reviewed: false}
 
 {section: Verse 1}
 [C]Now I have to come to know, I've truly come to know,

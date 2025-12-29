@@ -2,6 +2,7 @@
   "id": "higher-ground",
   "title": "Higher Ground",
   "key": "G",
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse",
@@ -289,5 +290,5 @@
     }
   ],
   "sourcePath": "songs/higher-ground.pro",
-  "source": "{title: Higher Ground}\n{key: G}\n\n[G]I'm pressing on the [C]upward way,\n[G]New heights I'm gaining [D7]every day,\n[G]Still praying as I'm [G7]upward [C]bound,\n[G]Lord, plant my feet on [D7]higher [G]ground.\n\n{section: Chorus}\n[G]Lord, lift me up and [D7]let me stand.\n[G]By faith on heaven's table land,\n[G7]A higher plane than [C]I have found;\n[G]Lord, plant my feet on [D7]higher [G]ground.\n\nMy heart has no desire to stay\nWhere doubts arise and fears dismay,\nThough some may dwell where these abound,\nMy prayer, my aim is higher ground.\n\nI want to live above the world,\nThough Satan's darts at me are hurled,\nFor faith has caught the joyful sound,\nThe song of saints on higher ground.\n\nI want to scale the utmost height,\nAnd catch a gleam of glory bright,\nBut still I'll pray till heav'n I've found,\n\"Lord, lead me on to higher ground.\"\n"
+  "source": "{title: Higher Ground}\n{key: G}\n{reviewed: false}\n\n[G]I'm pressing on the [C]upward way,\n[G]New heights I'm gaining [D7]every day,\n[G]Still praying as I'm [G7]upward [C]bound,\n[G]Lord, plant my feet on [D7]higher [G]ground.\n\n{section: Chorus}\n[G]Lord, lift me up and [D7]let me stand.\n[G]By faith on heaven's table land,\n[G7]A higher plane than [C]I have found;\n[G]Lord, plant my feet on [D7]higher [G]ground.\n\nMy heart has no desire to stay\nWhere doubts arise and fears dismay,\nThough some may dwell where these abound,\nMy prayer, my aim is higher ground.\n\nI want to live above the world,\nThough Satan's darts at me are hurled,\nFor faith has caught the joyful sound,\nThe song of saints on higher ground.\n\nI want to scale the utmost height,\nAnd catch a gleam of glory bright,\nBut still I'll pray till heav'n I've found,\n\"Lord, lead me on to higher ground.\"\n"
 }

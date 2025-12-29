@@ -2,21 +2,8 @@
   "id": "light-in-the-east",
   "title": "Light in the East",
   "key": "A",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -386,5 +373,5 @@
     }
   ],
   "sourcePath": "songs/light-in-the-east.pro",
-  "source": "{title: Light in the East}\n{key: A}\n\n{section: Verse 1}\n[A]Light that drives out the darkness is shining brightly from the [D]East.\n[A]Sons and daughters of light are dwelling in the [C#7]Garden [D]there.\n\n{section: Verse 2}\n[A6]This is God's land of righteousness, chosen by Him to do His [E]will;\n[E7]These are God's people, chosen ones, upright in mind and [A]heart.\n\n{section: Chorus}\n[A]As we now receive the love of [C#7]God, our boundless source of [D]light,\n[F#m]Come, let's join together and in [C#m]brightness we shall [E7]live;\n[A]We'll shine like the brightest star to all of [C#7]heaven and [D]earth!\n\n{section: Verse 3}\n[A6]Good that wins over evil is now uniting in the [E7]East.\n[A]People longing for good are dwelling in the garden there.\n\n{section: Verse 4}\n[A]Country of prayer and holy life, honoring God eternally;\n[A]People who wear the robe of white, sacrificing for the Lord;\n\n{section: Verse 5}\n[A]Love that ends all the hatred is now to blossom in the East.\n[A]Men refusing to sin are dwelling in the garden there.\n[A]Ridiculed and rejected land, separates good from sinfulness;\n[A]People who know the thorny path knowing God's wondrous love;\n\n{section: Verse 6}\n[A]Greatest victory eternal is now beginning in the East.\n[A]Those who crush evil ways are dwelling in the garden there.\n[A]Country divided North and South truly knows good from sinfulness;\n[A]People who shed their precious blood, given for the sins of men;\n\n{section: Verse 7}\n[A]Brilliant glory of Heaven now comes in power from the East.\n[A]Those who carry the cross, are dwelling in the garden there.\n[A]Country where soon the Sun will rise, welcoming soon the Son of Man;\n[A]There the bright Rose of Sharon blooms, beautiful garden of God;\n"
+  "source": "{title: Light in the East}\n{key: A}\n{reviewed: false}\n\n{section: Verse 1}\n[A]Light that drives out the darkness is shining brightly from the [D]East.\n[A]Sons and daughters of light are dwelling in the [C#7]Garden [D]there.\n\n{section: Verse 2}\n[A6]This is God's land of righteousness, chosen by Him to do His [E]will;\n[E7]These are God's people, chosen ones, upright in mind and [A]heart.\n\n{section: Chorus}\n[A]As we now receive the love of [C#7]God, our boundless source of [D]light,\n[F#m]Come, let's join together and in [C#m]brightness we shall [E7]live;\n[A]We'll shine like the brightest star to all of [C#7]heaven and [D]earth!\n\n{section: Verse 3}\n[A6]Good that wins over evil is now uniting in the [E7]East.\n[A]People longing for good are dwelling in the garden there.\n\n{section: Verse 4}\n[A]Country of prayer and holy life, honoring God eternally;\n[A]People who wear the robe of white, sacrificing for the Lord;\n\n{section: Verse 5}\n[A]Love that ends all the hatred is now to blossom in the East.\n[A]Men refusing to sin are dwelling in the garden there.\n[A]Ridiculed and rejected land, separates good from sinfulness;\n[A]People who know the thorny path knowing God's wondrous love;\n\n{section: Verse 6}\n[A]Greatest victory eternal is now beginning in the East.\n[A]Those who crush evil ways are dwelling in the garden there.\n[A]Country divided North and South truly knows good from sinfulness;\n[A]People who shed their precious blood, given for the sins of men;\n\n{section: Verse 7}\n[A]Brilliant glory of Heaven now comes in power from the East.\n[A]Those who carry the cross, are dwelling in the garden there.\n[A]Country where soon the Sun will rise, welcoming soon the Son of Man;\n[A]There the bright Rose of Sharon blooms, beautiful garden of God;\n"
 }

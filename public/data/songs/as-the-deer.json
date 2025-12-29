@@ -2,78 +2,69 @@
   "id": "as-the-deer",
   "title": "As the Deer",
   "key": "C",
+  "reviewed": true,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
         {
           "tokens": [
             {
-              "chord": "C",
-              "lyric": "As the deer "
-            },
-            {
-              "chord": "G",
-              "lyric": "panteth for the "
+              "chord": null,
+              "lyric": "As the deer panteth"
             },
             {
               "chord": "Am",
+              "lyric": " for the "
+            },
+            {
+              "chord": "C/E",
               "lyric": "water,"
             }
           ],
-          "raw": "[C]As the deer [G]panteth for the [Am]water,"
+          "raw": "As the deer panteth[Am] for the [C/E]water,"
         },
         {
           "tokens": [
             {
-              "chord": "C/E",
+              "chord": null,
               "lyric": "So my "
             },
             {
               "chord": "F",
-              "lyric": "soul "
+              "lyric": "soul longeth"
             },
             {
               "chord": "G",
-              "lyric": "longeth after "
+              "lyric": " afte"
             },
             {
               "chord": "C",
-              "lyric": "you."
+              "lyric": "r you."
+            },
+            {
+              "chord": "G",
+              "lyric": ""
             }
           ],
-          "raw": "[C/E]So my [F]soul [G]longeth after [C]you."
+          "raw": "So my [F]soul longeth[G] afte[C]r you.[G]"
         },
         {
           "tokens": [
             {
               "chord": "C",
-              "lyric": "You alone are my "
+              "lyric": "You"
             },
             {
               "chord": "G",
-              "lyric": "heart's "
+              "lyric": " alone are my"
             },
             {
               "chord": "Am",
-              "lyric": "desire,"
+              "lyric": " heart's desire,"
             }
           ],
-          "raw": "[C]You alone are my [G]heart's [Am]desire,"
+          "raw": "[C]You[G] alone are my[Am] heart's desire,"
         },
         {
           "tokens": [
@@ -92,9 +83,13 @@
             {
               "chord": "C",
               "lyric": "you."
+            },
+            {
+              "chord": "G",
+              "lyric": ""
             }
           ],
-          "raw": "And I [F]long to [G]worship [C]you."
+          "raw": "And I [F]long to [G]worship [C]you.[G]"
         },
         {
           "tokens": [
@@ -118,14 +113,14 @@
             },
             {
               "chord": "F",
-              "lyric": "strength, my "
+              "lyric": "strength, m"
             },
             {
               "chord": "C",
-              "lyric": "shield,"
+              "lyric": "y shield,"
             }
           ],
-          "raw": "[Am]You alone are my [F]strength, my [C]shield,"
+          "raw": "[Am]You alone are my [F]strength, m[C]y shield,"
         },
         {
           "tokens": [
@@ -152,18 +147,18 @@
           "tokens": [
             {
               "chord": "C",
-              "lyric": "You alone are my "
+              "lyric": "You "
             },
             {
               "chord": "G",
-              "lyric": "heart's "
+              "lyric": "alone are my"
             },
             {
               "chord": "Am",
-              "lyric": "desire,"
+              "lyric": " heart's desire,"
             }
           ],
-          "raw": "[C]You alone are my [G]heart's [Am]desire,"
+          "raw": "[C]You [G]alone are my[Am] heart's desire,"
         },
         {
           "tokens": [
@@ -177,14 +172,14 @@
             },
             {
               "chord": "G",
-              "lyric": "worship "
+              "lyric": "worship"
             },
             {
               "chord": "C",
-              "lyric": "you."
+              "lyric": " you."
             }
           ],
-          "raw": "And I [F]long to [G]worship [C]you."
+          "raw": "And I [F]long to [G]worship[C] you."
         },
         {
           "tokens": [
@@ -203,74 +198,38 @@
         {
           "tokens": [
             {
-              "chord": "C",
-              "lyric": "You're my friend and you "
-            },
-            {
-              "chord": "G",
-              "lyric": "are my "
-            },
-            {
-              "chord": "Am",
-              "lyric": "brother,"
+              "chord": null,
+              "lyric": "You're my friend and you are my brother,"
             }
           ],
-          "raw": "[C]You're my friend and you [G]are my [Am]brother,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "C/E",
-              "lyric": "Even though you "
-            },
-            {
-              "chord": "F",
-              "lyric": "are a "
-            },
-            {
-              "chord": "G",
-              "lyric": "king."
-            }
-          ],
-          "raw": "[C/E]Even though you [F]are a [G]king."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "C",
-              "lyric": "I "
-            },
-            {
-              "chord": "G",
-              "lyric": "love you more than "
-            },
-            {
-              "chord": "G",
-              "lyric": "any "
-            },
-            {
-              "chord": "Am",
-              "lyric": "other,"
-            }
-          ],
-          "raw": "[C]I [G]love you more than [G]any [Am]other,"
+          "raw": "You're my friend and you are my brother,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "So "
-            },
-            {
-              "chord": "F",
-              "lyric": "much more than "
-            },
-            {
-              "chord": "G",
-              "lyric": "anything."
+              "lyric": "Even though you are a king."
             }
           ],
-          "raw": "So [F]much more than [G]anything."
+          "raw": "Even though you are a king."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I love you more than any other,"
+            }
+          ],
+          "raw": "I love you more than any other,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "So much more than anything."
+            }
+          ],
+          "raw": "So much more than anything."
         },
         {
           "tokens": [
@@ -289,74 +248,38 @@
         {
           "tokens": [
             {
-              "chord": "C",
-              "lyric": "I want you more than "
-            },
-            {
-              "chord": "G",
-              "lyric": "gold or "
-            },
-            {
-              "chord": "Am",
-              "lyric": "silver,"
+              "chord": null,
+              "lyric": "I want you more than gold or silver,"
             }
           ],
-          "raw": "[C]I want you more than [G]gold or [Am]silver,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "C/E",
-              "lyric": "Only "
-            },
-            {
-              "chord": "F",
-              "lyric": "you can "
-            },
-            {
-              "chord": "G",
-              "lyric": "satisfy."
-            }
-          ],
-          "raw": "[C/E]Only [F]you can [G]satisfy."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "C",
-              "lyric": "You "
-            },
-            {
-              "chord": "G",
-              "lyric": "alone are the "
-            },
-            {
-              "chord": "G",
-              "lyric": "real "
-            },
-            {
-              "chord": "Am",
-              "lyric": "joygiver,"
-            }
-          ],
-          "raw": "[C]You [G]alone are the [G]real [Am]joygiver,"
+          "raw": "I want you more than gold or silver,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "And the "
-            },
-            {
-              "chord": "F",
-              "lyric": "apple of my "
-            },
-            {
-              "chord": "G",
-              "lyric": "eye."
+              "lyric": "Only you can satisfy."
             }
           ],
-          "raw": "And the [F]apple of my [G]eye."
+          "raw": "Only you can satisfy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "You alone are the real joygiver,"
+            }
+          ],
+          "raw": "You alone are the real joygiver,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "And the apple of my eye."
+            }
+          ],
+          "raw": "And the apple of my eye."
         },
         {
           "tokens": [
@@ -380,5 +303,5 @@
     }
   ],
   "sourcePath": "songs/as-the-deer.pro",
-  "source": "{title: As the Deer}\n{key: C}\n\n{section: Verse 1}\n[C]As the deer [G]panteth for the [Am]water,\n[C/E]So my [F]soul [G]longeth after [C]you.\n[C]You alone are my [G]heart's [Am]desire,\nAnd I [F]long to [G]worship [C]you.\n\n{section: Chorus}\n[Am]You alone are my [F]strength, my [C]shield,\nTo [F]you alone will my [Dm]spirit [E]yield.\n[C]You alone are my [G]heart's [Am]desire,\nAnd I [F]long to [G]worship [C]you.\n\n{section: Verse 2}\n[C]You're my friend and you [G]are my [Am]brother,\n[C/E]Even though you [F]are a [G]king.\n[C]I [G]love you more than [G]any [Am]other,\nSo [F]much more than [G]anything.\n\n{section: Verse 3}\n[C]I want you more than [G]gold or [Am]silver,\n[C/E]Only [F]you can [G]satisfy.\n[C]You [G]alone are the [G]real [Am]joygiver,\nAnd the [F]apple of my [G]eye.\n\n"
+  "source": "{title: As the Deer}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\nAs the deer panteth[Am] for the [C/E]water,\nSo my [F]soul longeth[G] afte[C]r you.[G]\n[C]You[G] alone are my[Am] heart's desire,\nAnd I [F]long to [G]worship [C]you.[G]\n\n{section: Chorus}\n[Am]You alone are my [F]strength, m[C]y shield,\nTo [F]you alone will my [Dm]spirit [E]yield.\n[C]You [G]alone are my[Am] heart's desire,\nAnd I [F]long to [G]worship[C] you.\n\n{section: Verse 2}\nYou're my friend and you are my brother,\nEven though you are a king.\nI love you more than any other,\nSo much more than anything.\n\n{section: Verse 3}\nI want you more than gold or silver,\nOnly you can satisfy.\nYou alone are the real joygiver,\nAnd the apple of my eye.\n\n"
 }

@@ -2,21 +2,8 @@
   "id": "shining-fatherland",
   "title": "Shining Fatherland",
   "key": "Bm",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -215,5 +202,5 @@
     }
   ],
   "sourcePath": "songs/shining-fatherland.pro",
-  "source": "{title: Shining Fatherland}\n{key: Bm}\n\n{section: Verse 1}\n[Bm]Sunlight beaming forth in the East, from the Fatherland;\n[Em]Bringing tidings of a new world to families in the field.\n[Bm]Let us hasten to send the news all throughout the world,\n[G]Eden's glory spreading forever the hope of joy and peace.\n\n{section: Chorus}\n[D]Dawn, golden dawn, throughout the shining Fatherland,\n[Em]Tells the tidings of the rising sun that brings us life.\n\n{section: Verse 2}\n[D]Harvest quickly men of the fields, hasten to harvest now;\n[G]Crops are ripened and ready to bring into the heavenly barn.\n[A]Saints and angels and heavenly hosts gather to speed the task;\n[Bm]All will share the harvest of joy at the banquet of our Lord.\n\n{section: Verse 3}\n[Em]When the woes of six thousand years are gone from the Father's heart,\n[D]Sons and daughters shall live with great joy, our True Parents' own\n\n{section: Verse 4}\n[G]Saints and sages and men of good faith all waited for this day;\n[A]Loyal men of hope and fidelity yearned to see this day.\n"
+  "source": "{title: Shining Fatherland}\n{key: Bm}\n{reviewed: false}\n\n{section: Verse 1}\n[Bm]Sunlight beaming forth in the East, from the Fatherland;\n[Em]Bringing tidings of a new world to families in the field.\n[Bm]Let us hasten to send the news all throughout the world,\n[G]Eden's glory spreading forever the hope of joy and peace.\n\n{section: Chorus}\n[D]Dawn, golden dawn, throughout the shining Fatherland,\n[Em]Tells the tidings of the rising sun that brings us life.\n\n{section: Verse 2}\n[D]Harvest quickly men of the fields, hasten to harvest now;\n[G]Crops are ripened and ready to bring into the heavenly barn.\n[A]Saints and angels and heavenly hosts gather to speed the task;\n[Bm]All will share the harvest of joy at the banquet of our Lord.\n\n{section: Verse 3}\n[Em]When the woes of six thousand years are gone from the Father's heart,\n[D]Sons and daughters shall live with great joy, our True Parents' own\n\n{section: Verse 4}\n[G]Saints and sages and men of good faith all waited for this day;\n[A]Loyal men of hope and fidelity yearned to see this day.\n"
 }

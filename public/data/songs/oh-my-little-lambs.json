@@ -2,21 +2,8 @@
   "id": "oh-my-little-lambs",
   "title": "Oh, My Little Lambs",
   "key": "D",
+  "reviewed": false,
   "sections": [
-    {
-      "name": "Verse",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
     {
       "name": "Verse 1",
       "lines": [
@@ -307,5 +294,5 @@
     }
   ],
   "sourcePath": "songs/oh-my-little-lambs.pro",
-  "source": "{title: Oh, My Little Lambs}\n{key: D}\n\n{section: Verse 1}\n[D]O, my little [Bm]lambs, [A]wandering on the [D]lonely [G]plain. [D] [A] [E7] [A]\n[G]Someday you may [F#7]fall, over[Bm]come by your des[A7]pair. [D]\n[G]Weak, wounded [D]soul, no one will come to [A]comfort you;\n[Bm]Alone, you have [A]no one to [D]love you, [G]no one to [D]bring the [Bm]truth. [Em] [A7] [D]\n\n{section: Verse 2}\nO, my little lambs, here is the One who heals your sins.\nO, see how He carries the cross and leads the way.\nCome, follow Him, He is the shepherd you have sought.\nWithout Him you tremble in weakness, far from the path of life.\n\n{section: Verse 3}\nO, my little lambs, hunger and thirst may torture you,\nReceive Him completely with all that you have.\nYou shall be healed, Heavenly strength will fill your soul,\nAnd deep boundless joy will swell within you eternally.\n\n{section: Verse 4}\nO, my little lambs, now is the time for joyful heart,\nSing praise to the Lord; raise your voices in strength.\nLove all mankind, Love everyone throughout the world.\nO give them the love that I give you, O my little lambs.\n"
+  "source": "{title: Oh, My Little Lambs}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]O, my little [Bm]lambs, [A]wandering on the [D]lonely [G]plain. [D] [A] [E7] [A]\n[G]Someday you may [F#7]fall, over[Bm]come by your des[A7]pair. [D]\n[G]Weak, wounded [D]soul, no one will come to [A]comfort you;\n[Bm]Alone, you have [A]no one to [D]love you, [G]no one to [D]bring the [Bm]truth. [Em] [A7] [D]\n\n{section: Verse 2}\nO, my little lambs, here is the One who heals your sins.\nO, see how He carries the cross and leads the way.\nCome, follow Him, He is the shepherd you have sought.\nWithout Him you tremble in weakness, far from the path of life.\n\n{section: Verse 3}\nO, my little lambs, hunger and thirst may torture you,\nReceive Him completely with all that you have.\nYou shall be healed, Heavenly strength will fill your soul,\nAnd deep boundless joy will swell within you eternally.\n\n{section: Verse 4}\nO, my little lambs, now is the time for joyful heart,\nSing praise to the Lord; raise your voices in strength.\nLove all mankind, Love everyone throughout the world.\nO give them the love that I give you, O my little lambs.\n"
 }

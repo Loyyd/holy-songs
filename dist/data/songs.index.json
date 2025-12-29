@@ -3,6 +3,7 @@
     "id": "10-000-reasons",
     "title": "10,000 Reasons",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[A]   [E]   [B/D#]     [C#m]",
       "[A]   [E]   [Bsus4]     [B]",
@@ -42,6 +43,7 @@
     "id": "amazing-grace",
     "title": "Amazing Grace",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[E]Amazing Grace, how swee[A]t the soun[E]d,",
       "That saved a wretch like m[B7]e.",
@@ -69,29 +71,31 @@
     "id": "as-the-deer",
     "title": "As the Deer",
     "key": "C",
+    "reviewed": true,
     "sections": [
-      "[C]As the deer [G]panteth for the [Am]water,",
-      "[C/E]So my [F]soul [G]longeth after [C]you.",
-      "[C]You alone are my [G]heart's [Am]desire,",
-      "And I [F]long to [G]worship [C]you.",
-      "[Am]You alone are my [F]strength, my [C]shield,",
+      "As the deer panteth[Am] for the [C/E]water,",
+      "So my [F]soul longeth[G] afte[C]r you.[G]",
+      "[C]You[G] alone are my[Am] heart's desire,",
+      "And I [F]long to [G]worship [C]you.[G]",
+      "[Am]You alone are my [F]strength, m[C]y shield,",
       "To [F]you alone will my [Dm]spirit [E]yield.",
-      "[C]You alone are my [G]heart's [Am]desire,",
-      "And I [F]long to [G]worship [C]you.",
-      "[C]You're my friend and you [G]are my [Am]brother,",
-      "[C/E]Even though you [F]are a [G]king.",
-      "[C]I [G]love you more than [G]any [Am]other,",
-      "So [F]much more than [G]anything.",
-      "[C]I want you more than [G]gold or [Am]silver,",
-      "[C/E]Only [F]you can [G]satisfy.",
-      "[C]You [G]alone are the [G]real [Am]joygiver,",
-      "And the [F]apple of my [G]eye."
+      "[C]You [G]alone are my[Am] heart's desire,",
+      "And I [F]long to [G]worship[C] you.",
+      "You're my friend and you are my brother,",
+      "Even though you are a king.",
+      "I love you more than any other,",
+      "So much more than anything.",
+      "I want you more than gold or silver,",
+      "Only you can satisfy.",
+      "You alone are the real joygiver,",
+      "And the apple of my eye."
     ]
   },
   {
     "id": "awake-my-soul",
     "title": "Awake My Soul",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]",
       "[D]How fickle my heart and how woozy my eyes",
@@ -133,6 +137,7 @@
     "id": "be-thou-my-vision",
     "title": "Be Thou My Vision",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Be Thou [Bm]my vision, [G]O Lord [D]of my [A]heart; [D]",
       "[A]Naught be all [D]else to me, [G]save that Thou [A]art--",
@@ -156,6 +161,7 @@
     "id": "by-and-by",
     "title": "By and By",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]By and by, [Bb]when the morning [F]comes,",
       "[G]All the saints of God are [C7]gathered home.",
@@ -184,9 +190,34 @@
     ]
   },
   {
+    "id": "by-the-spring-of-life",
+    "title": "By the Spring of Life",
+    "key": "G",
+    "reviewed": true,
+    "sections": [
+      "[G]We're marching to the blessed land of [C]Canaan with delight,[G]",
+      "We're leaving all our heavy burdens[A7] here[D7].",
+      "At[G] last we are released and free from[C] being slaves to[G] sin,",
+      "We're coming to the blessed [D7]spring of lif[G]e.",
+      "Com[G]ing to the spring where [C]living water [G]flows;",
+      "In glory we'll be living evermo[A7]re.[D7]",
+      "[G]Going to the land where [C]freely flows the s[G]pring,",
+      "In [G]glory we'll be living e[D7]vermo[G]re.",
+      "O guide us with your pillars, Lord, of fire and of cloud,",
+      "O give us paths to follow with our lives.",
+      "The moment that we cross the Jordan River is at hand,",
+      "We're coming to the blessed spring of life.",
+      "Our thirsting hearts receive with joy the manna from above,",
+      "Your precious food will always be our strength",
+      "So if the future finds us lacking we will not despair",
+      "We're coming to the blessed spring of life."
+    ]
+  },
+  {
     "id": "christ-is-here",
     "title": "Christ Is Here",
     "key": "Am",
+    "reviewed": false,
     "sections": [
       "[Am]I want to sing, A[D]llel[Am]uia.[D] ",
       "I want to s[Am]ing, Al[D]leluia.[Am]",
@@ -207,6 +238,7 @@
     "id": "country-roads",
     "title": "Country Roads",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]Almost heaven, [F#m]West Virginia,",
       "[E]Blue Ridge Mountains, [D]Shenandoah [A]River.",
@@ -231,6 +263,7 @@
     "id": "difference-maker",
     "title": "Difference Maker",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[E]  [A/E]    [E]  [A/E]    [E]",
       "Yeah i[A/E]sn't it amazing how a man can find himself al[E]one ",
@@ -275,6 +308,7 @@
     "id": "dobedu-song",
     "title": "Dobedu Song",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]Ingenoius minds strong enough to strive",
       "[C]For brilliant days that are filled with delight",
@@ -309,6 +343,7 @@
     "id": "father",
     "title": "Father",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Father, you went through the [Bm]nights alone, ",
       "opened the wa[G]y t[F#m]o fre[Em]e the e[A7]arth;",
@@ -340,6 +375,7 @@
     "id": "happy-heart",
     "title": "Happy Heart",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]There’s a certain [Dmaj7]sound",
       "[D7]Always follows me a[G]round;",
@@ -363,6 +399,7 @@
     "id": "he-has-called-me",
     "title": "He Has Called Me",
     "key": "Eb",
+    "reviewed": false,
     "sections": [
       "[Eb]The Lord has called and I will go, where He leads me I will follow;",
       "[Ab]The same in sorrow as in joy; with one heart I follow my Lord.",
@@ -382,6 +419,7 @@
     "id": "heart-of-the-father",
     "title": "Heart of the Father",
     "key": "Eb",
+    "reviewed": false,
     "sections": [
       "[Eb]Longing to live in deepest joy and love eternal,",
       "[Gm]God was ever seeking for a people all His own.",
@@ -413,6 +451,7 @@
     "id": "here-i-am",
     "title": "Here I Am",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Here I am, this is [A]me",
       "[G]There's nowhere else on [D]Earth I'd rather be",
@@ -438,6 +477,7 @@
     "id": "higher-ground",
     "title": "Higher Ground",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]I'm pressing on the [C]upward way,",
       "[G]New heights I'm gaining [D7]every day,",
@@ -465,6 +505,7 @@
     "id": "hollo-arirang",
     "title": "Hollo Arirang",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Cho molli tonghae pada ero-u-un som",
       "[Bm]O-onuldo kosen baram puro-ogetchi",
@@ -485,9 +526,32 @@
     ]
   },
   {
+    "id": "holy-spirit",
+    "title": "Holy Spirit",
+    "key": "D",
+    "reviewed": true,
+    "sections": [
+      "[D]   [G]",
+      "[D]There's nothing worth more, that will ever come c[G]lose",
+      "No thing can compare, You're our living h[D]ope",
+      "Your Prese[G]nce (Lord)",
+      "[D]I've tasted and seen, of the sweetest of L[G]oves",
+      "Where my heart becomes free, and my shame is u[D]ndone",
+      "In Your Prese[G]nce (Lord)",
+      "[D]Holy Spirit You are welcome here",
+      "Come [G]flood this place and fill the a[Em]tmosphere",
+      "Your G[D]lory God is what our hearts long for",
+      "To be [G]overcome by Your[Em] Presence Lo[D]rd",
+      "[D]     [G]   [Em]",
+      "[G]Let us[D/F#] become more[Em] aware of Your[D/F#] Presence",
+      "[G]Let us[D/F#] experience the[Em] Glory of Your[D/F#] Goodness"
+    ]
+  },
+  {
     "id": "how-great-thou-art",
     "title": "How Great Thou Art",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]O Lord my God, when I in [A7]awesome wonder",
       "[D]Consider all the [E7]works Thy hands have [A]made,",
@@ -515,6 +579,7 @@
     "id": "i-cannot-come",
     "title": "I Cannot Come",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]I cannot come,",
       "[Bb]I cannot come to the banquet;",
@@ -544,6 +609,7 @@
     "id": "i-saw-the-light",
     "title": "I Saw The Light",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]I saw the light, I [G7]saw the light,",
       "[C]No more darkness, [G]no more night.",
@@ -563,6 +629,7 @@
     "id": "i-will-follow-him",
     "title": "I Will Follow Him",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]I will follow [Bm]Him, follow Him wherever He may go,",
       "[Em]And near Him I [Bm]always will be",
@@ -592,6 +659,7 @@
     "id": "if-i-had-a-hammer",
     "title": "If I Had A Hammer",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[G7][C]If I had a [Em]hammer, [F]I'd hammer in the [G]morning,",
       "[C]I'd hammer in the [Em]evening, [F]all over this [G]land.",
@@ -619,6 +687,7 @@
     "id": "if-i-were-free",
     "title": "If I Were Free",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[E]If I were free to speak my mind,",
       "[B7]I'd tell a tale to all mankind.",
@@ -642,6 +711,7 @@
     "id": "if-life-were-gracious-enough",
     "title": "If Life Were Gracious Enough",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]If life were gracious enough to grant my way,",
       "[G]I would reach to the ends of the earth",
@@ -671,6 +741,7 @@
     "id": "i-ll-never-leave-you-anymore",
     "title": "I'll Never Leave You Anymore",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "I'll never l[C]eave you [F]any[C]more, ",
       "For I have [Am]found in your bright [G]eyes",
@@ -698,6 +769,7 @@
     "id": "i-m-singing-a-song-for-you",
     "title": "I'm Singing a Song for You",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]I'm singing a song for you",
       "[Bb]If you're happy, then you can sing too.",
@@ -721,6 +793,7 @@
     "id": "island-in-the-sun",
     "title": "Island in the Sun",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]This is my island in the sun",
       "[G]Where my people have toiled since time begun",
@@ -749,6 +822,7 @@
     "id": "it-s-a-long-road-to-heaven",
     "title": "It's a Long Road to Heaven",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]It's a long road to Heaven,",
       "[C]A winding steep and high,",
@@ -775,6 +849,7 @@
     "id": "it-s-me",
     "title": "It's Me",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[E]It's me, it's me, it's me, oh Lord",
       "[B7]Standing in the need of prayer",
@@ -802,6 +877,7 @@
     "id": "just-a-closer-walk-with-thee",
     "title": "Just a Closer Walk with Thee",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]I am weak, but Thou art strong.",
       "[E7]Father, keep me from all wrong.",
@@ -821,29 +897,31 @@
     "id": "kumbaya",
     "title": "Kumbaya",
     "key": "D",
+    "reviewed": true,
     "sections": [
-      "[D]Kumbaya, my Lord, kumbaya,",
-      "[G]Kumbaya, my Lord, kumbaya,",
-      "[D]Kumbaya, my Lord, kumbaya,",
-      "[G]Oh Lord, kumbaya.",
-      "[D]In this family, Lord, we find strength,",
-      "[G]In this family, Lord, we find strength,",
-      "[D]In this family, Lord, we find strength,",
-      "[A7]Oh Lord, we find strength.",
-      "[D]Draw us nearer, Lord, each to each,",
-      "[G]Oh Lord, each to each.",
-      "[D]Fill our hearts, Lord, with your love,",
-      "[A7]Oh Lord, with you love.",
-      "[D]Fill our minds, Lord, with your truth,",
-      "[G]Oh Lord, with your truth.",
-      "[D]Undivided, Lord, we shall stand,",
-      "[A7]Oh Lord, we shall stand."
+      "[D]Kumbaya, my Lord, [G]kumba[D]ya,",
+      "Kumb[F#m]aya, my Lord, [G]kumba[A7]ya,",
+      "Kumb[D]aya, my Lord, [G]kumba[D]ya,",
+      "[G]Oh L[D]ord, ku[A7]mbay[D]a.",
+      "In this family, Lord, we find strength,",
+      "In this family, Lord, we find strength,",
+      "In this family, Lord, we find strength,",
+      "Oh Lord, we find strength.",
+      "Draw us nearer, Lord, each to each,",
+      "Oh Lord, each to each.",
+      "Fill our hearts, Lord, with your love,",
+      "Oh Lord, with you love.",
+      "Fill our minds, Lord, with your truth,",
+      "Oh Lord, with your truth.",
+      "Undivided, Lord, we shall stand,",
+      "Oh Lord, we shall stand."
     ]
   },
   {
     "id": "lean-on-me",
     "title": "Lean On Me",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Sometimes in our [G]lives we all have [D]pain",
       "[F#m]We all have [A]sorrow. But if we are [D]wise [G]",
@@ -872,6 +950,7 @@
     "id": "let-it-happen-united-pursuit",
     "title": "Let It Happen - United Pursuit",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "You're full of [F]life now",
       "And full of [C]passion",
@@ -910,6 +989,7 @@
     "id": "light-in-the-east",
     "title": "Light in the East",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]Light that drives out the darkness is shining brightly from the [D]East.",
       "[A]Sons and daughters of light are dwelling in the [C#7]Garden [D]there.",
@@ -940,6 +1020,7 @@
     "id": "light-of-grace",
     "title": "Light of Grace",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]O, Light of Grace, shining above,",
       "[D]Lighting my dim shadowed way,",
@@ -965,34 +1046,36 @@
     "id": "love-joy-peace",
     "title": "Love Joy Peace",
     "key": "Em",
+    "reviewed": true,
     "sections": [
-      "[Em]Love, love, love, love",
-      "[D]Love is the gospel of the world,",
-      "[Em]Love your neighbour as your brother,",
-      "[B7]Love, love, love, love.",
-      "[Em]Joy, joy, joy, joy",
-      "[D]Joy is the purpose of our lives,",
-      "[Em]Let us dance before our Father,",
-      "[B7]Joy, joy, joy, joy.",
-      "[Em]Peace, peace, peace, peace,",
-      "[D]Peace is the hope of all mankind,",
-      "[Em]Let us work to free our brothers,",
-      "[B7]Peace, peace, peace, peace."
+      "[Em]Love, lo[D]ve, [Em]love, [B7]love",
+      "[Em]Love is the [D]gospel o[Em]f the wo[B7]rld,",
+      "[Em]Love your ne[D]ighbour a[Em]s your br[B7]other,",
+      "[Em]Love, l[D]ove, love, [Em]love.[B7]",
+      "Joy, joy, joy, joy",
+      "Joy is the purpose of our lives,",
+      "Let us dance before our Father,",
+      "Joy, joy, joy, joy.",
+      "Peace, peace, peace, peace,",
+      "Peace is the hope of all mankind,",
+      "Let us work to free our brothers,",
+      "Peace, peace, peace, peace."
     ]
   },
   {
     "id": "make-me-a-channel-of-your-peace",
     "title": "Make Me A Channel Of Your Peace",
     "key": "A",
+    "reviewed": true,
     "sections": [
       "[A]Make me a channel of your peace",
-      "[E]Where there is hatred let me bring your love",
-      "[Bm]Where there is injury, your pardon Lord",
-      "[E]And where there is doubt true faith in [A]You",
-      "[D]Oh, Master grant that I may never [A]seek",
-      "[E]So much to be consoled as to con[A]sole [A7]",
-      "[D]To be understood as to under[A]stand",
-      "[E]To be loved as to love with [B]all my [E]soul [E7]",
+      "Where there is hatred let me bring your[E] love",
+      "Where [Bm]there is injury, your pardon Lord",
+      "And w[E]her[A]e there is doubt true faith in You",
+      "Oh,[D] Master grant that I may never [A]seek",
+      "So [E]much to be consoled as to con[A]so[A7]le ",
+      "To be u[D]nderstood as to unders[A]tand",
+      "To be [E]loved as to [B]love with all m[E]y s[E7]oul ",
       "Make me a channel of your peace",
       "Where there is despair in life let me bring hope",
       "Where there is darkness only light",
@@ -1007,6 +1090,7 @@
     "id": "man-come-into-egypt",
     "title": "Man Come Into Egypt",
     "key": "Dm",
+    "reviewed": false,
     "sections": [
       "[Dm]There is a man come into Egypt",
       "[G]And Moses is his name.",
@@ -1046,6 +1130,7 @@
     "id": "march-of-the-new-age",
     "title": "March of the New Age",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]Win the whole world, heaven and earth,",
       "[C]God's will for all shall be [G]fulfilled;",
@@ -1093,6 +1178,7 @@
     "id": "michael",
     "title": "Michael",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Michael row the boat ashore, Hallelujah",
       "[G]Michael row the boat ashore, Hallelujah",
@@ -1110,6 +1196,7 @@
     "id": "morning-has-broken",
     "title": "Morning Has Broken",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]Morning has [Dm]broken, [G]like the first [F]morn[C]ing",
       "[Em]Blackbird has [Am]spoken, [D]like the first [G]bird",
@@ -1133,6 +1220,7 @@
     "id": "my-cross",
     "title": "My Cross",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]Who can I go to for my help to bear my heavy cross?",
       "[C]Has not the Lord been helping me before I ever knew?",
@@ -1154,6 +1242,7 @@
     "id": "my-offering",
     "title": "My Offering",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]Now I have to come to know, I've truly come to know,",
       "[G]Father, how your [A]heart is filled with [D]tears,",
@@ -1178,38 +1267,40 @@
     "id": "my-promise",
     "title": "My Promise",
     "key": "A",
+    "reviewed": true,
     "sections": [
-      "[A]I pledge I will go, I pledge I will [E]go;",
-      "[F#m]Go as my Father has [E]gone.",
-      "[B7]Tears fall on the path,",
-      "[E7]Lonely and silent the path of the Father,",
-      "[A]Going to suffer the way of the [E7]Cross.",
-      "[A]Ready to follow His [D]will.",
-      "[C#m]I pledge I will go forward [F#m]to Him.",
-      "[A]I'll follow the way, I'll follow the [E7]way;",
-      "[A]Follow the path of my Lord.",
-      "[A]Though thorny the path,",
-      "[A]Now persevere as the brightness is growing,",
-      "[A]On to the victory and glorious crown,",
-      "[A]Giving my body and soul,",
-      "[A]I'll follow the Lord all of the way;",
-      "[A]Giving my body and soul,",
-      "[A]I'll follow the Lord all of the way.",
-      "[A]I'm ready to serve, I'm ready to serve.",
-      "[A]Serving my Father's desire,",
-      "[A]Trials darken the path,",
-      "[A]Deep in my heart the desire of the ages,",
-      "[A]Fighting until we come home to the Lord,",
-      "[A]Satan will bow in defeat,",
-      "[A]I'm ready to serve all of my life;",
-      "[A]Satan will bow in defeat,",
-      "[A]I'm ready to serve all of my life."
+      "[A]I ple[E]dge I will go,[F#m] I pl[E]ed[B7]ge I will go; [E7]",
+      "[A]Go as my[E7] Father has [A]gone.",
+      "[A]Tears [D]fall on the path,[C#m]",
+      "[F#m]Lonely and si[D]lent the p[F#m]ath of the F[C#m]ather,",
+      "[D]Going to su[E]ffer the w[F#m]ay of the Cr[E]oss.",
+      "[F#m]Ready to fo[C#7]llow His [D]will.",
+      "[A]I pl[E7]edge I will [A]go for[E7]ward to [A]Him.",
+      "I'll follow the way, I'll follow the way;",
+      "Follow the path of my Lord.",
+      "Though thorny the path,",
+      "Now persevere as the brightness is growing,",
+      "On to the victory and glorious crown,",
+      "Giving my body and soul,",
+      "I'll follow the Lord all of the way;",
+      "Giving my body and soul,",
+      "I'll follow the Lord all of the way.",
+      "I'm ready to serve, I'm ready to serve.",
+      "Serving my Father's desire,",
+      "Trials darken the path,",
+      "Deep in my heart the desire of the ages,",
+      "Fighting until we come home to the Lord,",
+      "Satan will bow in defeat,",
+      "I'm ready to serve all of my life;",
+      "Satan will bow in defeat,",
+      "I'm ready to serve all of my life."
     ]
   },
   {
     "id": "nearer-my-god-to-thee",
     "title": "Nearer My God to Thee",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]Nearer, my God, to Thee, nearer to Thee!",
       "[Bb]E'en though it be a cross that raiseth me.",
@@ -1237,6 +1328,7 @@
     "id": "new-life",
     "title": "New Life",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]Where are His children who answered the call",
       "[D7]Of the archangel sounding afar?",
@@ -1276,6 +1368,7 @@
     "id": "new-song-of-inspiration",
     "title": "New Song of Inspiration",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]Upon the earth I came to life in the world God pre[Bm]pared. [E7]",
       "[F#m]One rejoicing [C#]land of [F#m]freedom I am [D]chosen to [E7]build,",
@@ -1300,6 +1393,7 @@
     "id": "o-come-my-lord",
     "title": "O Come, My Lord",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F7]O come my Lord; I beg You to come.",
       "[Bb]O come to me and live within my heart;",
@@ -1331,6 +1425,7 @@
     "id": "o-my-child-come-home-again",
     "title": "O, My Child Come Home Again",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]O my child, come home again; How I beg you to come home.",
       "[A7]Though your sin be deep and dark, and your burden hard to bear,",
@@ -1353,9 +1448,51 @@
     ]
   },
   {
+    "id": "oceans",
+    "title": "Oceans",
+    "key": "Em",
+    "reviewed": true,
+    "sections": [
+      "[Em]    [D/F#]   [G]   [D]   [C]",
+      "[Em]You call me out[D/F#] upon the[G] waters",
+      "The great u[D]nknown where feet [C]may fail",
+      "[Em]And there I find you[D/F#] in the[G] mystery",
+      "In oc[D]eans deep, my faith [C]will stand",
+      "[C]And I will[G] call upon Y[D]our name",
+      "[C]And keep my[G] eyes above [D]the waves",
+      "When oceans[C] rise my soul will [G]rest in Your e[D]mbrace",
+      "For I am[C] Yours and [D]You [Em]are mi[D/F#]ne   [G]   [D]   [C] ",
+      "[Em]Your grace abounds in d[D/F#]eepest[G] waters",
+      "Your sovere[D]ign hand will be [C]my guide",
+      "[Em]Where feet may fail and [D/F#]fear surr[G]ounds me",
+      "You've n[D]ever failed and You won't sta[C]rt now",
+      "[C]So I will[G] call upon [D]Your name",
+      "[C]And keep my[G] eyes above [D]the waves",
+      "When oceans[C] rise my soul will[G] rest in Your [D]embrace",
+      "For I am[C] Yours and[D] You ar[Em]e mine, [D/F#]oh  [G]   [D]  [C]",
+      "And You[Em] are mine, o[D/F#]h    [G]   [D]   [C]",
+      "[Em]   [C]   [G]   [D]",
+      "[Em]   [C]   [G]   [D]",
+      "[Em]Spirit lead me where my [C]trust is without borders",
+      "Let me w[G]alk upon the water",
+      "Whe[D]rever You would call me",
+      "[Em]Take me deeper than my [C]feet could ever wander",
+      "And my [G]faith will be made stronger",
+      "In the [D]presence of my Savior",
+      "[Em]    [D/F#]    [G]    [D]    [Am]",
+      "[Em]    [D/F#]    [G]    [D]    [Am]",
+      "[C]I will[G] call upon Yo[D]ur name",
+      "[C]Keep my [G]eyes above [D]the waves",
+      "[C]My soul will [G]rest in Your e[D]mbrace",
+      "I am[C] Yours and [D]You a[Em]re mine",
+      "[Em]    [D/F#]      [G]   [D]   [C]   [Em]   [G]"
+    ]
+  },
+  {
     "id": "oh-my-little-lambs",
     "title": "Oh, My Little Lambs",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]O, my little [Bm]lambs, [A]wandering on the [D]lonely [G]plain. [D] [A] [E7] [A]",
       "[G]Someday you may [F#7]fall, over[Bm]come by your des[A7]pair. [D]",
@@ -1379,6 +1516,7 @@
     "id": "oh-when-the-saints-go-marching-in",
     "title": "Oh When the Saints Go Marching In",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]Oh when the Saints go marching in",
       "[D7]When the Saints go marching in",
@@ -1414,6 +1552,7 @@
     "id": "our-forefathers",
     "title": "Our Forefathers",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]Our forefathers built for us a beautiful land;",
       "[C7]Till it is completed, we will join in heart and hand.",
@@ -1427,6 +1566,7 @@
     "id": "pass-it-on",
     "title": "Pass It On",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]It only takes a spar[F#m]k to get[G] a fire going [A7]",
       "[D]And soon all those a[F#m]round can[G] warm up in its gl[A7]owing ",
@@ -1446,6 +1586,7 @@
     "id": "pledge",
     "title": "Pledge",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]My fallen figure shames the earth;",
       "[G]Once I was born, yet never I lived,",
@@ -1477,6 +1618,7 @@
     "id": "purun-haneul",
     "title": "Purun Haneul",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]Purun hanul un ha soo",
       "[Em]Ha yon jok pa en",
@@ -1500,6 +1642,7 @@
     "id": "put-your-hand-to-the-plough",
     "title": "Put Your Hand to the Plough",
     "key": "Dm",
+    "reviewed": false,
     "sections": [
       "[Dm]If you want to do God's will,",
       "You must struggle to fulfill,",
@@ -1529,6 +1672,7 @@
     "id": "sailing-with-our-father",
     "title": "Sailing With Our Father",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]If the trip you're traveling gets long,",
       "[D]Wishing for a new day to come;",
@@ -1552,30 +1696,31 @@
     "id": "sarang-hae",
     "title": "Sarang Hae",
     "key": "G",
+    "reviewed": true,
     "sections": [
-      "[G]Sarang hae tan si nul,",
-      "[Em]Tchong mallo sarang hae.",
-      "[C]Tan shin ni nae kgyo tul,",
-      "[D7]To na ghan dwi-eh",
-      "[G]Olmana nun mul ul,",
-      "[Em]Hul ryun nun jchi morin-dao.",
-      "[G]Ye, Ye, Ye, ...",
-      "[Em]Sarang hae tan shi nul,",
-      "[D]Chong mallo sarang hae.",
-      "[G]Molida na bo rin,",
-      "[Em]Mo ni jchul kude-o.",
-      "[C]Tan shini nae hgyo tul,",
-      "[D7]To na ghanidwi-eh.",
-      "[G]Pam mada guinun,",
-      "[Em]Bogo shi pun nae sa rang-ah.",
-      "[G]Pam mada guinun,",
-      "[Em]Bogo shi pun nae sa rang-ah."
+      "[G]Sarang hae tan si nul[Em],",
+      "[C]Tchong mallo sara[D7]ng hae.",
+      "[G]Tan shin ni nae [Em]kgyo tul,",
+      "[C]To na ghan [D7]dwi-eh",
+      "[G]Olmana nun [Em]mul ul,",
+      "[D7]Hul ryun nun jchi morin[G]-dao.",
+      "[G]Ye, Ye, Ye,[Em] ..[C].  [D]",
+      "[G]Sarang hae [Em]tan shi nul,",
+      "[D]Chong mallo sara[G]ng hae.",
+      "Molida na bo rin,",
+      "Mo ni jchul kude-o.",
+      "Tan shini nae hgyo tul,",
+      "To na ghanidwi-eh.",
+      "[G]Ye, Ye, Ye,[Em] ..[C].  [D]",
+      "[G]Pam mada [Em]guinun,",
+      "[D]Bogo shi [G]pun nae sa rang-ah."
     ]
   },
   {
     "id": "shiawasette-nandaro",
     "title": "Shiawasette Nandaro",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Shiawasette nandaro, hoshi ni tazunete mita",
       "[Bm]Minna nakayoku suru koto sa, hoshi wa kotaeta",
@@ -1607,6 +1752,7 @@
     "id": "shining-fatherland",
     "title": "Shining Fatherland",
     "key": "Bm",
+    "reviewed": false,
     "sections": [
       "[Bm]Sunlight beaming forth in the East, from the Fatherland;",
       "[Em]Bringing tidings of a new world to families in the field.",
@@ -1628,6 +1774,7 @@
     "id": "simple-gospel",
     "title": "Simple Gospel",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]   [Bm]    [F#m]     [D]",
       "[A]I want to know you, [Bm]Lord, like I know a friend",
@@ -1681,6 +1828,7 @@
     "id": "since-your-love",
     "title": "Since Your Love",
     "key": "B",
+    "reviewed": false,
     "sections": [
       "[Bsus4]     [B]",
       "[Bsus4]     [B]",
@@ -1739,6 +1887,7 @@
     "id": "song-of-the-banquet",
     "title": "Song of the Banquet",
     "key": "Bb",
+    "reviewed": false,
     "sections": [
       "[Bb]Pure new life that once was sown within the Garden's fertile soil,",
       "[Eb]Sprouting seed has now become a blossom of heavenly loveliness.",
@@ -1766,6 +1915,7 @@
     "id": "song-of-the-garden",
     "title": "Song of the Garden",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]The Lord into His garden comes;",
       "[Bm]The spices yield a rich perfume;",
@@ -1791,6 +1941,7 @@
     "id": "song-of-the-heavenly-soldiers",
     "title": "Song of the Heavenly Soldiers",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]Beautiful morning sunrise, calm above the [E7]land of our [A]hope;",
       "[D]Robed in white chosen people, [E7]fighting for the [A]land of God.",
@@ -1816,6 +1967,7 @@
     "id": "song-of-the-spring-breeze",
     "title": "Song of the Spring Breeze",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]Snow and cold wind of the bitter dark night,",
       "[F]Lift off the weight of your [C]cold ruthless hand;",
@@ -1831,6 +1983,7 @@
     "id": "song-of-the-victors",
     "title": "Song of the Victors",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]Sing a loud Ho[C7]sanna to the [Dm]Lord,",
       "[Bb]Offer everything with [F]humble heart.",
@@ -1866,6 +2019,7 @@
     "id": "song-of-the-young-people",
     "title": "Song of the Young People",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]We shout with joy, we rise and sing! The [C]Will of God is [Am]done!",
       "[D7]A new day dawns and the dream lives; the [G]Son of God has come!",
@@ -1885,6 +2039,7 @@
     "id": "song-of-victory",
     "title": "Song of Victory",
     "key": "F",
+    "reviewed": false,
     "sections": [
       "[F]Sing Hosannas evermore!",
       "[C7]Sing of glory evermore!",
@@ -1920,6 +2075,7 @@
     "id": "spring-song-of-eden",
     "title": "Spring Song of Eden",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]Come, O ye [Gm]friends, to the [Am]Garden of [G]Eden,",
       "[C]Where the spring [Dm]blossoms are [G7]best;",
@@ -1945,6 +2101,7 @@
     "id": "sunny-side-of-life",
     "title": "Sunny Side of Life",
     "key": "G",
+    "reviewed": false,
     "sections": [
       "[G]There's a sunny side where no ills betide",
       "[C]On the road that we must go",
@@ -1972,6 +2129,7 @@
     "id": "swing-low-sweet-chariot",
     "title": "Swing Low, Sweet Chariot",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "Swing [D]low sweet [G]cha[D]riot, coming for to carry me [A7]home, ",
       "Swing l[Bm]ow sweet [G]cha[D]riot, coming for to ca[A7]rry me [D]home.",
@@ -1997,6 +2155,7 @@
     "id": "the-father-s-dwelling-place",
     "title": "The Father's Dwelling Place",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]The Father's dwelling place is the fountain of our life,",
       "[Em]Drawn to the light of eternal day, we abandon the darkness.",
@@ -2022,6 +2181,7 @@
     "id": "the-lord-has-come",
     "title": "The Lord Has Come",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]O, the Lord is [F]come, O the [C]Lord is [Am]come!",
       "[C]He has come to the [C]country of [F]God,",
@@ -2052,6 +2212,7 @@
     "id": "the-lord-is-one",
     "title": "The Lord Is One",
     "key": "Em",
+    "reviewed": false,
     "sections": [
       "[Em]All my brethren, can't you hear me say,",
       "[D]The Lord will love you forever and a day?",
@@ -2081,6 +2242,7 @@
     "id": "the-principle-youth-march",
     "title": "The Principle Youth March",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]We are the youth, soldiers of the truth, called by our [G]God on [D]high;",
       "[Bm]Now is the time, march to the [A7]world, sounding the battle [D]cry!",
@@ -2102,6 +2264,7 @@
     "id": "the-rose",
     "title": "The Rose",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "Some say lov[D]e, it is a rive[A7]r",
       "That d[G]rowns the [A7]tende[D]r reed",
@@ -2133,6 +2296,7 @@
     "id": "this-is-my-father-s-world",
     "title": "This Is My Father's World",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]This is my Father's world, and to my listening ears",
       "[G7]All nature sings, and round me rings the music of the spheres.",
@@ -2152,6 +2316,7 @@
     "id": "this-is-my-song",
     "title": "This Is My Song",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]This is my song, O God of all the nations,",
       "[Dm]A song of peace for lands afar and mine.",
@@ -2177,6 +2342,7 @@
     "id": "till-all-my-people-are-one",
     "title": "'Till All My People Are One",
     "key": "C",
+    "reviewed": false,
     "sections": [
       "[C]Help each other in all that you do",
       "[F]'Till all my people are one.",
@@ -2192,6 +2358,7 @@
     "id": "tongil",
     "title": "Tongil",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]Urie so wonun tongil,",
       "[G]Ggumedo so wonun tongil",
@@ -2215,6 +2382,7 @@
     "id": "unified-soldiers",
     "title": "Unified Soldiers",
     "key": "Am",
+    "reviewed": false,
     "sections": [
       "[Am]Strong bond of heart is the force bringing the [F]world into [Em]life,",
       "[Am]Joined in a kinship of love, all shall live as [Dm]one.",
@@ -2250,6 +2418,7 @@
     "id": "unite-into-one",
     "title": "Unite Into One",
     "key": "A",
+    "reviewed": false,
     "sections": [
       "[A]Chase away the power of Satan,",
       "[A]Far away beyond the land and sea;",
@@ -2278,6 +2447,7 @@
     "id": "we-are-one-in-the-spirit",
     "title": "We Are One in the Spirit",
     "key": "Em",
+    "reviewed": false,
     "sections": [
       "[Em]We are one in The Spirit, We are one in The Lord.",
       "[Am]We are one in The Spirit, We are one in The Lord.",
@@ -2300,6 +2470,7 @@
     "id": "what-do-you-think-that-happiness-is",
     "title": "What Do You Think That Happiness Is?",
     "key": "D",
+    "reviewed": false,
     "sections": [
       "[D]\"What do you think that happiness is?\"",
       "[Bm]So I brought my question to the stars.",
@@ -2335,6 +2506,7 @@
     "id": "when-i-behold-the-lord",
     "title": "When I Behold the Lord",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[E]When I behold the Lord of all, my old self dies away.",
       "[B7]So dies the world of sinfulness giving birth to good.",
@@ -2358,6 +2530,7 @@
     "id": "you-are-my-sunshine",
     "title": "You Are My Sunshine",
     "key": "E",
+    "reviewed": false,
     "sections": [
       "[E]You are my sunshine, my only sunshine,",
       "[A]You make me happy, when skies are grey.",

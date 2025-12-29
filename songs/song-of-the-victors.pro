@@ -1,5 +1,6 @@
 {title: Song of the Victors}
 {key: F}
+{reviewed: false}
 
 {section: Verse 1}
 [F]Sing a loud Ho[C7]sanna to the [Dm]Lord,

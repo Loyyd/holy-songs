@@ -1,5 +1,6 @@
 {title: If I Were Free}
 {key: E}
+{reviewed: false}
 
 {section: Verse 1}
 [E]If I were free to speak my mind,
