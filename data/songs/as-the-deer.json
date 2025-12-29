@@ -203,7 +203,11 @@
           "tokens": [
             {
               "chord": "C",
-              "lyric": "You're my friend and you a"
+              "lyric": "You're my "
+            },
+            {
+              "chord": "G",
+              "lyric": "friend and you a"
             },
             {
               "chord": "Am",
@@ -214,7 +218,7 @@
               "lyric": "other,"
             }
           ],
-          "raw": "[C]You're my friend and you a[Am]re my br[C/E]other,"
+          "raw": "[C]You're my [G]friend and you a[Am]re my br[C/E]other,"
         },
         {
           "tokens": [
@@ -315,7 +319,11 @@
           "tokens": [
             {
               "chord": "C",
-              "lyric": "I want you more than "
+              "lyric": "I want "
+            },
+            {
+              "chord": "G",
+              "lyric": "you more than "
             },
             {
               "chord": "Am",
@@ -326,7 +334,7 @@
               "lyric": "silver,"
             }
           ],
-          "raw": "[C]I want you more than [Am]gold or [C/E]silver,"
+          "raw": "[C]I want [G]you more than [Am]gold or [C/E]silver,"
         },
         {
           "tokens": [
@@ -422,5 +430,5 @@
     }
   ],
   "sourcePath": "songs/as-the-deer.pro",
-  "source": "{title: As the Deer}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\n[C]As the [G]deer panteth[Am] for the [C/E]water,\nSo my [F]soul longeth[G] afte[C]r you.[G]\n[C]You[G] alone are my[Am] heart's desire,\nAnd I [F]long to [G]worship [C]you.[G]\n\n{section: Chorus}\n[Am]You alone are my [F]strength, m[C]y shield,\nTo [F]you alone will my [Dm]spirit [E]yield.\n[C]You [G]alone are my[Am] heart's desire,\nAnd I [F]long to [G]worship[C] you.\n\n{section: Verse 2}\n[C]You're my friend and you a[Am]re my br[C/E]other,\nEven [F]though you a[G]re a [C]king. [G]\n[C]I love [G]you more than a[Am]ny other,\nSo much [F]more than [G]anythi[C]ng.[G]\n\n{section: Chorus}\n\n{section: Verse 3}\n[C]I want you more than [Am]gold or [C/E]silver,\nOnly [F]you can [G]satisf[C]y.  [G]\n[C]You al[G]one are the re[Am]al joygiver,\nAnd the [F]apple [G]of my ey[C]e. [G]\n\n{section: Chorus}\n"
+  "source": "{title: As the Deer}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\n[C]As the [G]deer panteth[Am] for the [C/E]water,\nSo my [F]soul longeth[G] afte[C]r you.[G]\n[C]You[G] alone are my[Am] heart's desire,\nAnd I [F]long to [G]worship [C]you.[G]\n\n{section: Chorus}\n[Am]You alone are my [F]strength, m[C]y shield,\nTo [F]you alone will my [Dm]spirit [E]yield.\n[C]You [G]alone are my[Am] heart's desire,\nAnd I [F]long to [G]worship[C] you.\n\n{section: Verse 2}\n[C]You're my [G]friend and you a[Am]re my br[C/E]other,\nEven [F]though you a[G]re a [C]king. [G]\n[C]I love [G]you more than a[Am]ny other,\nSo much [F]more than [G]anythi[C]ng.[G]\n\n{section: Chorus}\n\n{section: Verse 3}\n[C]I want [G]you more than [Am]gold or [C/E]silver,\nOnly [F]you can [G]satisf[C]y.  [G]\n[C]You al[G]one are the re[Am]al joygiver,\nAnd the [F]apple [G]of my ey[C]e. [G]\n\n{section: Chorus}\n"
 }
