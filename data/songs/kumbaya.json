@@ -252,82 +252,42 @@
         {
           "tokens": [
             {
-              "chord": "E",
-              "lyric": "Fill our hearts, Lord, "
-            },
-            {
-              "chord": "A",
-              "lyric": "with your "
-            },
-            {
-              "chord": "E",
-              "lyric": "love,"
+              "chord": null,
+              "lyric": "Fill our hearts, Lord, with your love,"
             }
           ],
-          "raw": "[E]Fill our hearts, Lord, [A]with your [E]love,"
+          "raw": "Fill our hearts, Lord, with your love,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Fill our "
-            },
-            {
-              "chord": "G#m",
-              "lyric": "hearts, Lord, "
-            },
-            {
-              "chord": "A",
-              "lyric": "with your "
-            },
-            {
-              "chord": "B7",
-              "lyric": "love,"
+              "lyric": "Fill our hearts, Lord, with your love,"
             }
           ],
-          "raw": "Fill our [G#m]hearts, Lord, [A]with your [B7]love,"
+          "raw": "Fill our hearts, Lord, with your love,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Fill our "
-            },
-            {
-              "chord": "E",
-              "lyric": "hearts, Lord, "
-            },
-            {
-              "chord": "A",
-              "lyric": "with your "
-            },
-            {
-              "chord": "E",
-              "lyric": "love,"
+              "lyric": "Fill our hearts, Lord, with your love,"
             }
           ],
-          "raw": "Fill our [E]hearts, Lord, [A]with your [E]love,"
+          "raw": "Fill our hearts, Lord, with your love,"
         },
         {
           "tokens": [
             {
-              "chord": "A",
-              "lyric": "Oh L"
-            },
-            {
-              "chord": "E",
-              "lyric": "ord, wi"
+              "chord": null,
+              "lyric": "Oh Lord, with you love."
             },
             {
               "chord": "B7",
-              "lyric": "th you love."
-            },
-            {
-              "chord": "E",
               "lyric": ""
             }
           ],
-          "raw": "[A]Oh L[E]ord, wi[B7]th you love.[E]"
+          "raw": "Oh Lord, with you love.[B7]"
         },
         {
           "tokens": [
@@ -346,20 +306,82 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Fill our minds, Lord, with your truth,"
+              "chord": "E",
+              "lyric": "Fill our minds, Lord, "
+            },
+            {
+              "chord": "A",
+              "lyric": "with your "
+            },
+            {
+              "chord": "E",
+              "lyric": "truth,"
             }
           ],
-          "raw": "Fill our minds, Lord, with your truth,"
+          "raw": "[E]Fill our minds, Lord, [A]with your [E]truth,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Oh Lord, with your truth."
+              "lyric": "Fill our m"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "inds, Lord, "
+            },
+            {
+              "chord": "A",
+              "lyric": "with your "
+            },
+            {
+              "chord": "B7",
+              "lyric": "truth,"
             }
           ],
-          "raw": "Oh Lord, with your truth."
+          "raw": "Fill our m[G#m]inds, Lord, [A]with your [B7]truth,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fill our "
+            },
+            {
+              "chord": "E",
+              "lyric": "minds, Lord, "
+            },
+            {
+              "chord": "A",
+              "lyric": "with your "
+            },
+            {
+              "chord": "E",
+              "lyric": "truth,"
+            }
+          ],
+          "raw": "Fill our [E]minds, Lord, [A]with your [E]truth,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Oh L"
+            },
+            {
+              "chord": "E",
+              "lyric": "ord, w"
+            },
+            {
+              "chord": "B7",
+              "lyric": "ith your truth"
+            },
+            {
+              "chord": "E",
+              "lyric": "."
+            }
+          ],
+          "raw": "[A]Oh L[E]ord, w[B7]ith your truth[E]."
         },
         {
           "tokens": [
@@ -406,5 +428,5 @@
     }
   ],
   "sourcePath": "songs/kumbaya.pro",
-  "source": "{title: Kumbaya}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\n[C]Kumbaya, my Lord, [F]kumba[C]ya,\nKumb[Em]aya, my Lord, [F]kumba[G7]ya,\nKumb[C]aya, my Lord, [F]kumba[C]ya,\n[F]Oh L[C]ord, ku[G7]mbay[C]a.\n\n{section: Verse 2}\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nOh Lord, we find strength.[A7]\n\n{section: Verse 3}\n[D]Draw us nearer, Lord, [G]each to [D]each,\nDraw us n[F#m]earer, Lord, [G]each to [A7]each,\nDraw us [D]nearer, Lord, [G]each to [D]each,\n[G]Oh Lo[D]rd, ea[A7]ch to e[D]ach.\n\n{section: Verse 4}\n[E]Fill our hearts, Lord, [A]with your [E]love,\nFill our [G#m]hearts, Lord, [A]with your [B7]love,\nFill our [E]hearts, Lord, [A]with your [E]love,\n[A]Oh L[E]ord, wi[B7]th you love.[E]\n\n{section: Verse 5}\nFill our minds, Lord, with your truth,\nOh Lord, with your truth.\n\n{section: Verse 6}\nUndivided, Lord, we shall stand,\nOh Lord, we shall stand.\n"
+  "source": "{title: Kumbaya}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\n[C]Kumbaya, my Lord, [F]kumba[C]ya,\nKumb[Em]aya, my Lord, [F]kumba[G7]ya,\nKumb[C]aya, my Lord, [F]kumba[C]ya,\n[F]Oh L[C]ord, ku[G7]mbay[C]a.\n\n{section: Verse 2}\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nOh Lord, we find strength.[A7]\n\n{section: Verse 3}\n[D]Draw us nearer, Lord, [G]each to [D]each,\nDraw us n[F#m]earer, Lord, [G]each to [A7]each,\nDraw us [D]nearer, Lord, [G]each to [D]each,\n[G]Oh Lo[D]rd, ea[A7]ch to e[D]ach.\n\n{section: Verse 4}\nFill our hearts, Lord, with your love,\nFill our hearts, Lord, with your love,\nFill our hearts, Lord, with your love,\nOh Lord, with you love.[B7]\n\n{section: Verse 5}\n[E]Fill our minds, Lord, [A]with your [E]truth,\nFill our m[G#m]inds, Lord, [A]with your [B7]truth,\nFill our [E]minds, Lord, [A]with your [E]truth,\n[A]Oh L[E]ord, w[B7]ith your truth[E].\n\n{section: Verse 6}\nUndivided, Lord, we shall stand,\nOh Lord, we shall stand.\n"
 }
