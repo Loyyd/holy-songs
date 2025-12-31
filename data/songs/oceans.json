@@ -475,27 +475,6 @@
         {
           "tokens": [
             {
-              "chord": "Em",
-              "lyric": "   "
-            },
-            {
-              "chord": "C",
-              "lyric": "   "
-            },
-            {
-              "chord": "G",
-              "lyric": "   "
-            },
-            {
-              "chord": "D",
-              "lyric": ""
-            }
-          ],
-          "raw": "[Em]   [C]   [G]   [D]"
-        },
-        {
-          "tokens": [
-            {
               "chord": null,
               "lyric": ""
             }
@@ -766,7 +745,7 @@
             },
             {
               "chord": "D/F#",
-              "lyric": "      "
+              "lyric": "  "
             },
             {
               "chord": "G",
@@ -778,18 +757,10 @@
             },
             {
               "chord": "C",
-              "lyric": "   "
-            },
-            {
-              "chord": "Em",
-              "lyric": "   "
-            },
-            {
-              "chord": "G",
               "lyric": ""
             }
           ],
-          "raw": "[Em]    [D/F#]      [G]   [D]   [C]   [Em]   [G]"
+          "raw": "[Em]    [D/F#]  [G]   [D]   [C]"
         },
         {
           "tokens": [
@@ -804,5 +775,5 @@
     }
   ],
   "sourcePath": "songs/oceans.pro",
-  "source": "{title: Oceans}\n{artist: Hillsong United}\n{key: Em}\n{capo: 7}\n{reviewed: true}\n\n{section: Intro}\n[Em]    [D/F#]   [G]   [D]   [C]\n\n{section: Verse 1}\n[Em]You call me out[D/F#] upon the[G] waters\nThe great u[D]nknown where feet [C]may fail\n[Em]And there I find you[D/F#] in the[G] mystery\nIn oc[D]eans deep, my faith [C]will stand\n\n{section: Chorus}\n[C]And I will[G] call upon Y[D]our name\n[C]And keep my[G] eyes above [D]the waves\nWhen oceans[C] rise my soul will [G]rest in Your e[D]mbrace\nFor I am[C] Yours and [D]You [Em]are mi[D/F#]ne   [G]   [D]   [C] \n\n{section: Verse 2}\n[Em]Your grace abounds in d[D/F#]eepest[G] waters\nYour sovere[D]ign hand will be [C]my guide\n[Em]Where feet may fail and [D/F#]fear surr[G]ounds me\nYou've n[D]ever failed and You won't sta[C]rt now\n\n{section: Chorus}\n[C]So I will[G] call upon [D]Your name\n[C]And keep my[G] eyes above [D]the waves\nWhen oceans[C] rise my soul will[G] rest in Your [D]embrace\nFor I am[C] Yours and[D] You ar[Em]e mine, [D/F#]oh  [G]   [D]  [C]\nAnd You[Em] are mine, o[D/F#]h    [G]   [D]   [C]\n\n{section: Bridge}\n[Em]   [C]   [G]   [D]\n[Em]   [C]   [G]   [D]\n\n[Em]Spirit lead me where my [C]trust is without borders\nLet me w[G]alk upon the water\nWhe[D]rever You would call me\n[Em]Take me deeper than my [C]feet could ever wander\nAnd my [G]faith will be made stronger\nIn the [D]presence of my Savior\n\n{section: Repeat 6x}\n\n{section: Instrumental}\n[Em]    [D/F#]    [G]    [D]    [Am]\n[Em]    [D/F#]    [G]    [D]    [Am]\n\n{section: Chorus}\n[C]I will[G] call upon Yo[D]ur name\n[C]Keep my [G]eyes above [D]the waves\n[C]My soul will [G]rest in Your e[D]mbrace\nI am[C] Yours and [D]You a[Em]re mine\n\n{section: Outro}\n[Em]    [D/F#]      [G]   [D]   [C]   [Em]   [G]\n"
+  "source": "{title: Oceans}\n{artist: Hillsong United}\n{key: Em}\n{capo: 7}\n{reviewed: true}\n\n{section: Intro}\n[Em]    [D/F#]   [G]   [D]   [C]\n\n{section: Verse 1}\n[Em]You call me out[D/F#] upon the[G] waters\nThe great u[D]nknown where feet [C]may fail\n[Em]And there I find you[D/F#] in the[G] mystery\nIn oc[D]eans deep, my faith [C]will stand\n\n{section: Chorus}\n[C]And I will[G] call upon Y[D]our name\n[C]And keep my[G] eyes above [D]the waves\nWhen oceans[C] rise my soul will [G]rest in Your e[D]mbrace\nFor I am[C] Yours and [D]You [Em]are mi[D/F#]ne   [G]   [D]   [C] \n\n{section: Verse 2}\n[Em]Your grace abounds in d[D/F#]eepest[G] waters\nYour sovere[D]ign hand will be [C]my guide\n[Em]Where feet may fail and [D/F#]fear surr[G]ounds me\nYou've n[D]ever failed and You won't sta[C]rt now\n\n{section: Chorus}\n[C]So I will[G] call upon [D]Your name\n[C]And keep my[G] eyes above [D]the waves\nWhen oceans[C] rise my soul will[G] rest in Your [D]embrace\nFor I am[C] Yours and[D] You ar[Em]e mine, [D/F#]oh  [G]   [D]  [C]\nAnd You[Em] are mine, o[D/F#]h    [G]   [D]   [C]\n\n{section: Bridge}\n[Em]   [C]   [G]   [D]\n\n[Em]Spirit lead me where my [C]trust is without borders\nLet me w[G]alk upon the water\nWhe[D]rever You would call me\n[Em]Take me deeper than my [C]feet could ever wander\nAnd my [G]faith will be made stronger\nIn the [D]presence of my Savior\n\n{section: Repeat 6x}\n\n{section: Instrumental}\n[Em]    [D/F#]    [G]    [D]    [Am]\n[Em]    [D/F#]    [G]    [D]    [Am]\n\n{section: Chorus}\n[C]I will[G] call upon Yo[D]ur name\n[C]Keep my [G]eyes above [D]the waves\n[C]My soul will [G]rest in Your e[D]mbrace\nI am[C] Yours and [D]You a[Em]re mine\n\n{section: Outro}\n[Em]    [D/F#]  [G]   [D]   [C]\n"
 }
