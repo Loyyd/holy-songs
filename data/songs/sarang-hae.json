@@ -37,14 +37,14 @@
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Tan shin ni nae "
+              "lyric": "Tan shin ni nae kgyo "
             },
             {
               "chord": "Em",
-              "lyric": "kgyo tul,"
+              "lyric": "tul,"
             }
           ],
-          "raw": "[G]Tan shin ni nae [Em]kgyo tul,"
+          "raw": "[G]Tan shin ni nae kgyo [Em]tul,"
         },
         {
           "tokens": [
@@ -216,14 +216,14 @@
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Olmana nun "
+              "lyric": "Olmana nun mul "
             },
             {
               "chord": "Em",
-              "lyric": "mul ul,"
+              "lyric": "ul,"
             }
           ],
-          "raw": "[G]Olmana nun [Em]mul ul,"
+          "raw": "[G]Olmana nun mul [Em]ul,"
         },
         {
           "tokens": [
@@ -290,14 +290,14 @@
           "tokens": [
             {
               "chord": "D",
-              "lyric": "Bogo shi "
+              "lyric": "Bogo shi pun nae sa rang-a"
             },
             {
               "chord": "G",
-              "lyric": "pun nae sa rang-ah."
+              "lyric": "h."
             }
           ],
-          "raw": "[D]Bogo shi [G]pun nae sa rang-ah."
+          "raw": "[D]Bogo shi pun nae sa rang-a[G]h."
         },
         {
           "tokens": [
@@ -326,5 +326,5 @@
     }
   ],
   "sourcePath": "songs/sarang-hae.pro",
-  "source": "{title: Sarang Hae}\n{key: G}\n{reviewed: true}\n\n{section: Verse 1}\n[G]Sarang hae tan si nul[Em],\n[C]Tchong mallo sara[D7]ng hae.\n[G]Tan shin ni nae [Em]kgyo tul,\n[C]To na ghan [D7]dwi-eh\n[G]Olmana nun [Em]mul ul,\n[D7]Hul ryun nun jchi morin[G]-dao.\n\n{section: Chorus}\n[G]Ye, Ye, Ye,[Em] ..[C].  [D]\n[G]Sarang hae [Em]tan shi nul,\n[D]Chong mallo sara[G]ng hae.\n\n{section: Verse 2}\n[G]Molida na bo rin,[Em]\n[C]Mo ni jchul ku[D7]de-o.\n[G]Tan shini nae h[Em]gyo tul,\n[C]To na ghanidw[D7]i-eh.\n[G]Olmana nun [Em]mul ul,\n[D7]Hul ryun nun jchi morin[G]-dao.\n\n{section: Chorus}\n[G]Ye, Ye, Ye,[Em] ..[C].  [D]\n[G]Pam mada [Em]guinun,\n[D]Bogo shi [G]pun nae sa rang-ah.\n\n{section: (Repeat first Verse and Chorus)}\n"
+  "source": "{title: Sarang Hae}\n{key: G}\n{reviewed: true}\n\n{section: Verse 1}\n[G]Sarang hae tan si nul[Em],\n[C]Tchong mallo sara[D7]ng hae.\n[G]Tan shin ni nae kgyo [Em]tul,\n[C]To na ghan [D7]dwi-eh\n[G]Olmana nun [Em]mul ul,\n[D7]Hul ryun nun jchi morin[G]-dao.\n\n{section: Chorus}\n[G]Ye, Ye, Ye,[Em] ..[C].  [D]\n[G]Sarang hae [Em]tan shi nul,\n[D]Chong mallo sara[G]ng hae.\n\n{section: Verse 2}\n[G]Molida na bo rin,[Em]\n[C]Mo ni jchul ku[D7]de-o.\n[G]Tan shini nae h[Em]gyo tul,\n[C]To na ghanidw[D7]i-eh.\n[G]Olmana nun mul [Em]ul,\n[D7]Hul ryun nun jchi morin[G]-dao.\n\n{section: Chorus}\n[G]Ye, Ye, Ye,[Em] ..[C].  [D]\n[G]Pam mada [Em]guinun,\n[D]Bogo shi pun nae sa rang-a[G]h.\n\n{section: (Repeat first Verse and Chorus)}\n"
 }
