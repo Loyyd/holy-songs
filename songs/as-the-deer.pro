@@ -3,7 +3,7 @@
 {reviewed: true}
 
 {section: Verse 1}
-As the deer panteth[Am] for the [C/E]water,
+[C]As the [G]deer panteth[Am] for the [C/E]water,
 So my [F]soul longeth[G] afte[C]r you.[G]
 [C]You[G] alone are my[Am] heart's desire,
 And I [F]long to [G]worship [C]you.[G]
@@ -15,14 +15,17 @@ To [F]you alone will my [Dm]spirit [E]yield.
 And I [F]long to [G]worship[C] you.
 
 {section: Verse 2}
-You're my friend and you are my brother,
-Even though you are a king.
-I love you more than any other,
-So much more than anything.
+[C]You're my [G]friend and you a[Am]re my br[C/E]other,
+Even [F]though you a[G]re a [C]king. [G]
+[C]I love [G]you more than a[Am]ny other,
+So much [F]more than [G]anythi[C]ng.[G]
+
+{section: Chorus}
 
 {section: Verse 3}
-I want you more than gold or silver,
-Only you can satisfy.
-You alone are the real joygiver,
-And the apple of my eye.
+[C]I want [G]you more than [Am]gold or [C/E]silver,
+Only [F]you can [G]satisf[C]y.  [G]
+[C]You al[G]one are the re[Am]al joygiver,
+And the [F]apple [G]of my ey[C]e. [G]
 
+{section: Chorus}

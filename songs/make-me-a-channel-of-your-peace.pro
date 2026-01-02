@@ -1,18 +1,18 @@
 {title: Make Me A Channel Of Your Peace}
-{key: A}
+{key: C}
 {reviewed: true}
 
 {section: Verse 1}
-[A]Make me a channel of your peace
-Where there is hatred let me bring your[E] love
-Where [Bm]there is injury, your pardon Lord
-And w[E]her[A]e there is doubt true faith in You
+[C]Make me a channel of your peace
+Where there is hatred let me bring your[G] love
+Where [Dm]there is injury, your pardon Lord
+And w[G]here there is doubt true faith in[C] You
 
 {section: Chorus}
-Oh,[D] Master grant that I may never [A]seek
-So [E]much to be consoled as to con[A]so[A7]le 
-To be u[D]nderstood as to unders[A]tand
-To be [E]loved as to [B]love with all m[E]y s[E7]oul 
+Oh,[F] Master grant that I may never [C]seek
+So [G]much to be consoled as to con[C]so[C7]le 
+To be u[F]nderstood as to unders[C]tand
+To be [G]loved as to [D]love with all m[G]y s[G7]oul 
 
 {section: Verse 2}
 Make me a channel of your peace

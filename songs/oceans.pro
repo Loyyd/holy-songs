@@ -11,7 +11,7 @@
 [Em]You call me out[D/F#] upon the[G] waters
 The great u[D]nknown where feet [C]may fail
 [Em]And there I find you[D/F#] in the[G] mystery
-In oc[D]eans deep, my faith [C]will stand
+In oc[D]eans deep, my faith wi[C]ll stand
 
 {section: Chorus}
 [C]And I will[G] call upon Y[D]our name
@@ -34,7 +34,6 @@ And You[Em] are mine, o[D/F#]h    [G]   [D]   [C]
 
 {section: Bridge}
 [Em]   [C]   [G]   [D]
-[Em]   [C]   [G]   [D]
 
 [Em]Spirit lead me where my [C]trust is without borders
 Let me w[G]alk upon the water
@@ -56,4 +55,4 @@ In the [D]presence of my Savior
 I am[C] Yours and [D]You a[Em]re mine
 
 {section: Outro}
-[Em]    [D/F#]      [G]   [D]   [C]   [Em]   [G]
+[Em]    [D/F#]  [G]   [D]   [C]

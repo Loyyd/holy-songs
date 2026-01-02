@@ -1,6 +1,6 @@
 {title: Awake My Soul}
 {key: D}
-{reviewed: false}
+{reviewed: true}
 
 {section: Intro}
 [D]

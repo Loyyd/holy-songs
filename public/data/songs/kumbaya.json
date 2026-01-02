@@ -1,7 +1,7 @@
 {
   "id": "kumbaya",
   "title": "Kumbaya",
-  "key": "D",
+  "key": "C",
   "reviewed": true,
   "sections": [
     {
@@ -10,19 +10,19 @@
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": "C",
               "lyric": "Kumbaya, my Lord, "
             },
             {
-              "chord": "G",
+              "chord": "F",
               "lyric": "kumba"
             },
             {
-              "chord": "D",
+              "chord": "C",
               "lyric": "ya,"
             }
           ],
-          "raw": "[D]Kumbaya, my Lord, [G]kumba[D]ya,"
+          "raw": "[C]Kumbaya, my Lord, [F]kumba[C]ya,"
         },
         {
           "tokens": [
@@ -31,19 +31,19 @@
               "lyric": "Kumb"
             },
             {
-              "chord": "F#m",
+              "chord": "Em",
               "lyric": "aya, my Lord, "
             },
             {
-              "chord": "G",
+              "chord": "F",
               "lyric": "kumba"
             },
             {
-              "chord": "A7",
+              "chord": "G7",
               "lyric": "ya,"
             }
           ],
-          "raw": "Kumb[F#m]aya, my Lord, [G]kumba[A7]ya,"
+          "raw": "Kumb[Em]aya, my Lord, [F]kumba[G7]ya,"
         },
         {
           "tokens": [
@@ -52,40 +52,40 @@
               "lyric": "Kumb"
             },
             {
-              "chord": "D",
+              "chord": "C",
               "lyric": "aya, my Lord, "
             },
             {
-              "chord": "G",
+              "chord": "F",
               "lyric": "kumba"
             },
             {
-              "chord": "D",
+              "chord": "C",
               "lyric": "ya,"
             }
           ],
-          "raw": "Kumb[D]aya, my Lord, [G]kumba[D]ya,"
+          "raw": "Kumb[C]aya, my Lord, [F]kumba[C]ya,"
         },
         {
           "tokens": [
             {
-              "chord": "G",
+              "chord": "F",
               "lyric": "Oh L"
             },
             {
-              "chord": "D",
+              "chord": "C",
               "lyric": "ord, ku"
             },
             {
-              "chord": "A7",
+              "chord": "G7",
               "lyric": "mbay"
             },
             {
-              "chord": "D",
+              "chord": "C",
               "lyric": "a."
             }
           ],
-          "raw": "[G]Oh L[D]ord, ku[A7]mbay[D]a."
+          "raw": "[F]Oh L[C]ord, ku[G7]mbay[C]a."
         },
         {
           "tokens": [
@@ -133,9 +133,13 @@
             {
               "chord": null,
               "lyric": "Oh Lord, we find strength."
+            },
+            {
+              "chord": "A7",
+              "lyric": ""
             }
           ],
-          "raw": "Oh Lord, we find strength."
+          "raw": "Oh Lord, we find strength.[A7]"
         },
         {
           "tokens": [
@@ -154,38 +158,82 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Draw us nearer, Lord, each to each,"
+              "chord": "D",
+              "lyric": "Draw us nearer, Lord, "
+            },
+            {
+              "chord": "G",
+              "lyric": "each to "
+            },
+            {
+              "chord": "D",
+              "lyric": "each,"
             }
           ],
-          "raw": "Draw us nearer, Lord, each to each,"
+          "raw": "[D]Draw us nearer, Lord, [G]each to [D]each,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Oh Lord, each to each."
+              "lyric": "Draw us n"
+            },
+            {
+              "chord": "F#m",
+              "lyric": "earer, Lord, "
+            },
+            {
+              "chord": "G",
+              "lyric": "each to "
+            },
+            {
+              "chord": "A7",
+              "lyric": "each,"
             }
           ],
-          "raw": "Oh Lord, each to each."
+          "raw": "Draw us n[F#m]earer, Lord, [G]each to [A7]each,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Fill our hearts, Lord, with your love,"
+              "lyric": "Draw us "
+            },
+            {
+              "chord": "D",
+              "lyric": "nearer, Lord, "
+            },
+            {
+              "chord": "G",
+              "lyric": "each to "
+            },
+            {
+              "chord": "D",
+              "lyric": "each,"
             }
           ],
-          "raw": "Fill our hearts, Lord, with your love,"
+          "raw": "Draw us [D]nearer, Lord, [G]each to [D]each,"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Oh Lord, with you love."
+              "chord": "G",
+              "lyric": "Oh Lo"
+            },
+            {
+              "chord": "D",
+              "lyric": "rd, ea"
+            },
+            {
+              "chord": "A7",
+              "lyric": "ch to e"
+            },
+            {
+              "chord": "D",
+              "lyric": "ach."
             }
           ],
-          "raw": "Oh Lord, with you love."
+          "raw": "[G]Oh Lo[D]rd, ea[A7]ch to e[D]ach."
         },
         {
           "tokens": [
@@ -205,6 +253,78 @@
           "tokens": [
             {
               "chord": null,
+              "lyric": "Fill our hearts, Lord, with your love,"
+            }
+          ],
+          "raw": "Fill our hearts, Lord, with your love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fill our hearts, Lord, with your love,"
+            }
+          ],
+          "raw": "Fill our hearts, Lord, with your love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fill our hearts, Lord, with your love,"
+            }
+          ],
+          "raw": "Fill our hearts, Lord, with your love,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Oh Lord, with you love."
+            },
+            {
+              "chord": "B7",
+              "lyric": ""
+            }
+          ],
+          "raw": "Oh Lord, with you love.[B7]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fill our minds, Lord, with your truth,"
+            }
+          ],
+          "raw": "Fill our minds, Lord, with your truth,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Fill our minds, Lord, with your truth,"
+            }
+          ],
+          "raw": "Fill our minds, Lord, with your truth,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
               "lyric": "Fill our minds, Lord, with your truth,"
             }
           ],
@@ -215,27 +335,107 @@
             {
               "chord": null,
               "lyric": "Oh Lord, with your truth."
+            },
+            {
+              "chord": "B7",
+              "lyric": ""
             }
           ],
-          "raw": "Oh Lord, with your truth."
+          "raw": "Oh Lord, with your truth.[B7]"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Undivided, Lord, we shall stand,"
+              "lyric": ""
             }
           ],
-          "raw": "Undivided, Lord, we shall stand,"
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 6",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "E",
+              "lyric": "Undivided, Lord, "
+            },
+            {
+              "chord": "A",
+              "lyric": "we shall "
+            },
+            {
+              "chord": "E",
+              "lyric": "stand,"
+            }
+          ],
+          "raw": "[E]Undivided, Lord, [A]we shall [E]stand,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Oh Lord, we shall stand."
+              "lyric": "Undivi"
+            },
+            {
+              "chord": "G#m",
+              "lyric": "ded, Lord, "
+            },
+            {
+              "chord": "A",
+              "lyric": "we shall "
+            },
+            {
+              "chord": "B7",
+              "lyric": "stand,"
             }
           ],
-          "raw": "Oh Lord, we shall stand."
+          "raw": "Undivi[G#m]ded, Lord, [A]we shall [B7]stand,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Undivi"
+            },
+            {
+              "chord": "E",
+              "lyric": "ded, Lord, "
+            },
+            {
+              "chord": "A",
+              "lyric": "we shall "
+            },
+            {
+              "chord": "E",
+              "lyric": "stand,"
+            }
+          ],
+          "raw": "Undivi[E]ded, Lord, [A]we shall [E]stand,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Oh L"
+            },
+            {
+              "chord": "E",
+              "lyric": "ord, "
+            },
+            {
+              "chord": "B7",
+              "lyric": "we shall stan"
+            },
+            {
+              "chord": "E",
+              "lyric": "d."
+            }
+          ],
+          "raw": "[A]Oh L[E]ord, [B7]we shall stan[E]d."
         },
         {
           "tokens": [
@@ -250,5 +450,5 @@
     }
   ],
   "sourcePath": "songs/kumbaya.pro",
-  "source": "{title: Kumbaya}\n{key: D}\n{reviewed: true}\n\n{section: Verse 1}\n[D]Kumbaya, my Lord, [G]kumba[D]ya,\nKumb[F#m]aya, my Lord, [G]kumba[A7]ya,\nKumb[D]aya, my Lord, [G]kumba[D]ya,\n[G]Oh L[D]ord, ku[A7]mbay[D]a.\n\n{section: Verse 2}\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nOh Lord, we find strength.\n\n{section: Verse 3}\nDraw us nearer, Lord, each to each,\nOh Lord, each to each.\nFill our hearts, Lord, with your love,\nOh Lord, with you love.\n\n{section: Verse 4}\nFill our minds, Lord, with your truth,\nOh Lord, with your truth.\nUndivided, Lord, we shall stand,\nOh Lord, we shall stand.\n"
+  "source": "{title: Kumbaya}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\n[C]Kumbaya, my Lord, [F]kumba[C]ya,\nKumb[Em]aya, my Lord, [F]kumba[G7]ya,\nKumb[C]aya, my Lord, [F]kumba[C]ya,\n[F]Oh L[C]ord, ku[G7]mbay[C]a.\n\n{section: Verse 2}\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nIn this family, Lord, we find strength,\nOh Lord, we find strength.[A7]\n\n{section: Verse 3}\n[D]Draw us nearer, Lord, [G]each to [D]each,\nDraw us n[F#m]earer, Lord, [G]each to [A7]each,\nDraw us [D]nearer, Lord, [G]each to [D]each,\n[G]Oh Lo[D]rd, ea[A7]ch to e[D]ach.\n\n{section: Verse 4}\nFill our hearts, Lord, with your love,\nFill our hearts, Lord, with your love,\nFill our hearts, Lord, with your love,\nOh Lord, with you love.[B7]\n\n{section: Verse 5}\nFill our minds, Lord, with your truth,\nFill our minds, Lord, with your truth,\nFill our minds, Lord, with your truth,\nOh Lord, with your truth.[B7]\n\n{section: Verse 6}\n[E]Undivided, Lord, [A]we shall [E]stand,\nUndivi[G#m]ded, Lord, [A]we shall [B7]stand,\nUndivi[E]ded, Lord, [A]we shall [E]stand,\n[A]Oh L[E]ord, [B7]we shall stan[E]d.\n"
 }
