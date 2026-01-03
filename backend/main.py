@@ -29,6 +29,19 @@ def run_build_script():
     except subprocess.CalledProcessError as e:
         print(f"Error running build script: {e}")
 
+def run_deploy():
+    # Run both build and deploy
+    try:
+        # First build the songs
+        subprocess.run(["npm", "run", "build:songs"], cwd=BASE_DIR, check=True)
+        print("Build script executed successfully.")
+        
+        # Then deploy to GitHub Pages
+        subprocess.run(["npm", "run", "deploy"], cwd=BASE_DIR, check=True)
+        print("Deployment to GitHub Pages completed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during build/deploy: {e}")
+
 def sanitize_filename(title: str) -> str:
     """Convert song title to a valid filename"""
     # Convert to lowercase and replace spaces with hyphens
@@ -99,8 +112,8 @@ def create_song(song: SongContent, background_tasks: BackgroundTasks):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(song.content)
     
-    # Trigger build in background
-    background_tasks.add_task(run_build_script)
+    # Trigger build and deploy in background
+    background_tasks.add_task(run_deploy)
     
     return {"message": "Song created successfully", "filename": filename}
 
@@ -140,8 +153,8 @@ def update_song(filename: str, song: SongContent, background_tasks: BackgroundTa
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(song.content)
     
-    # Trigger build in background
-    background_tasks.add_task(run_build_script)
+    # Trigger build and deploy in background
+    background_tasks.add_task(run_deploy)
     
     return {"message": "Song updated successfully", "filename": filename}
 
@@ -238,8 +251,8 @@ def update_reviewed(request: ReviewedRequest, background_tasks: BackgroundTasks)
     
     try:
         update_reviewed_in_file(filepath, request.reviewed)
-        # Trigger build in background to update the index
-        background_tasks.add_task(run_build_script)
+        # Trigger build and deploy in background to update the index
+        background_tasks.add_task(run_deploy)
         return {"success": True, "message": "Reviewed status updated", "reviewed": request.reviewed}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

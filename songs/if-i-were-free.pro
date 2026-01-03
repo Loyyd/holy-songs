@@ -1,27 +1,27 @@
 {title: If I Were Free}
-{key: E}
+{key: D}
 {reviewed: false}
 
 {section: Verse 1}
-[E]If I were free to speak my mind,
-[B7]I'd tell a tale to all mankind.
-[E]Of how the flowers do bloom and fade,
-[E7]Of how we fought and how we gained.
+[D]If I were fr[A7]ee to speak my min[D]d,
+[A7]I'd tell a t[G]ale to all manki[A7]nd.
+Of how the flow[D]ers do [D7]bloom and f[G]ade,
+Of how we f[D]ought and ho[A7]w we gain[D]ed.
 
 {section: Verse 2}
-[A]This weary world has had its fill
-[B7]Of words of war on ev'ry hill.
-[E]The time has come for peaceful days
-[E7]For peaceful men and peaceful ways.
+This weary world has had its fill
+Of words of war on ev'ry hill.
+The time has come for peaceful days
+For peaceful men and peaceful ways.
 
-{{section: Verse 3}
-[A]When all mankind has ceased to fight
-[B7]I'll raise my head in thanks each night.
-[E]For this great love and all it means,
-[E7]For golden days and peaceful dreams.
+{section: Verse 3}
+When all mankind has ceased to fight
+I'll raise my head in thanks each night.
+For this great love and all it means,
+For golden days and peaceful dreams.
 
-{{section: Verse 4}
-[A]If I were free to speak my mind,
-[B7]I'd tell a tale to all mankind.
-[E]Of how the flowers do bloom and fade,
-[E7]Of how we fought and how we gained.
+{section: Verse 4}
+[E]If I were fr[B7]ee to speak my min[E]d,
+[B7]I'd tell a t[A]ale to all mankin[B7]d.
+Of how the flow[E]ers do b[E7]loom and f[A]ade,
+Of how we f[E]ought and how[B7] we gaine[E]d.
