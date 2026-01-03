@@ -1,7 +1,7 @@
 {
   "id": "if-i-were-free",
   "title": "If I Were Free",
-  "key": "E",
+  "key": "D",
   "reviewed": false,
   "sections": [
     {
@@ -10,38 +10,78 @@
         {
           "tokens": [
             {
-              "chord": "E",
-              "lyric": "If I were free to speak my mind,"
+              "chord": "D",
+              "lyric": "If I were fr"
+            },
+            {
+              "chord": "A7",
+              "lyric": "ee to speak my min"
+            },
+            {
+              "chord": "D",
+              "lyric": "d,"
             }
           ],
-          "raw": "[E]If I were free to speak my mind,"
+          "raw": "[D]If I were fr[A7]ee to speak my min[D]d,"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
-              "lyric": "I'd tell a tale to all mankind."
+              "chord": "A7",
+              "lyric": "I'd tell a t"
+            },
+            {
+              "chord": "G",
+              "lyric": "ale to all manki"
+            },
+            {
+              "chord": "A7",
+              "lyric": "nd."
             }
           ],
-          "raw": "[B7]I'd tell a tale to all mankind."
+          "raw": "[A7]I'd tell a t[G]ale to all manki[A7]nd."
         },
         {
           "tokens": [
             {
-              "chord": "E",
-              "lyric": "Of how the flowers do bloom and fade,"
+              "chord": null,
+              "lyric": "Of how the flow"
+            },
+            {
+              "chord": "D",
+              "lyric": "ers do "
+            },
+            {
+              "chord": "D7",
+              "lyric": "bloom and f"
+            },
+            {
+              "chord": "G",
+              "lyric": "ade,"
             }
           ],
-          "raw": "[E]Of how the flowers do bloom and fade,"
+          "raw": "Of how the flow[D]ers do [D7]bloom and f[G]ade,"
         },
         {
           "tokens": [
             {
-              "chord": "E7",
-              "lyric": "Of how we fought and how we gained."
+              "chord": null,
+              "lyric": "Of how we f"
+            },
+            {
+              "chord": "D",
+              "lyric": "ought and ho"
+            },
+            {
+              "chord": "A7",
+              "lyric": "w we gain"
+            },
+            {
+              "chord": "D",
+              "lyric": "ed."
             }
           ],
-          "raw": "[E7]Of how we fought and how we gained."
+          "raw": "Of how we f[D]ought and ho[A7]w we gain[D]ed."
         },
         {
           "tokens": [
@@ -60,38 +100,38 @@
         {
           "tokens": [
             {
-              "chord": "A",
+              "chord": null,
               "lyric": "This weary world has had its fill"
             }
           ],
-          "raw": "[A]This weary world has had its fill"
+          "raw": "This weary world has had its fill"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "Of words of war on ev'ry hill."
             }
           ],
-          "raw": "[B7]Of words of war on ev'ry hill."
+          "raw": "Of words of war on ev'ry hill."
         },
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "The time has come for peaceful days"
             }
           ],
-          "raw": "[E]The time has come for peaceful days"
+          "raw": "The time has come for peaceful days"
         },
         {
           "tokens": [
             {
-              "chord": "E7",
+              "chord": null,
               "lyric": "For peaceful men and peaceful ways."
             }
           ],
-          "raw": "[E7]For peaceful men and peaceful ways."
+          "raw": "For peaceful men and peaceful ways."
         },
         {
           "tokens": [
@@ -101,42 +141,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "A",
+              "chord": null,
               "lyric": "When all mankind has ceased to fight"
             }
           ],
-          "raw": "[A]When all mankind has ceased to fight"
+          "raw": "When all mankind has ceased to fight"
         },
         {
           "tokens": [
             {
-              "chord": "B7",
+              "chord": null,
               "lyric": "I'll raise my head in thanks each night."
             }
           ],
-          "raw": "[B7]I'll raise my head in thanks each night."
+          "raw": "I'll raise my head in thanks each night."
         },
         {
           "tokens": [
             {
-              "chord": "E",
+              "chord": null,
               "lyric": "For this great love and all it means,"
             }
           ],
-          "raw": "[E]For this great love and all it means,"
+          "raw": "For this great love and all it means,"
         },
         {
           "tokens": [
             {
-              "chord": "E7",
+              "chord": null,
               "lyric": "For golden days and peaceful dreams."
             }
           ],
-          "raw": "[E7]For golden days and peaceful dreams."
+          "raw": "For golden days and peaceful dreams."
         },
         {
           "tokens": [
@@ -146,42 +191,87 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "A",
-              "lyric": "If I were free to speak my mind,"
+              "chord": "E",
+              "lyric": "If I were fr"
+            },
+            {
+              "chord": "B7",
+              "lyric": "ee to speak my min"
+            },
+            {
+              "chord": "E",
+              "lyric": "d,"
             }
           ],
-          "raw": "[A]If I were free to speak my mind,"
+          "raw": "[E]If I were fr[B7]ee to speak my min[E]d,"
         },
         {
           "tokens": [
             {
               "chord": "B7",
-              "lyric": "I'd tell a tale to all mankind."
+              "lyric": "I'd tell a t"
+            },
+            {
+              "chord": "A",
+              "lyric": "ale to all mankin"
+            },
+            {
+              "chord": "B7",
+              "lyric": "d."
             }
           ],
-          "raw": "[B7]I'd tell a tale to all mankind."
+          "raw": "[B7]I'd tell a t[A]ale to all mankin[B7]d."
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "Of how the flow"
+            },
             {
               "chord": "E",
-              "lyric": "Of how the flowers do bloom and fade,"
+              "lyric": "ers do b"
+            },
+            {
+              "chord": "E7",
+              "lyric": "loom and f"
+            },
+            {
+              "chord": "A",
+              "lyric": "ade,"
             }
           ],
-          "raw": "[E]Of how the flowers do bloom and fade,"
+          "raw": "Of how the flow[E]ers do b[E7]loom and f[A]ade,"
         },
         {
           "tokens": [
             {
-              "chord": "E7",
-              "lyric": "Of how we fought and how we gained."
+              "chord": null,
+              "lyric": "Of how we f"
+            },
+            {
+              "chord": "E",
+              "lyric": "ought and how"
+            },
+            {
+              "chord": "B7",
+              "lyric": " we gaine"
+            },
+            {
+              "chord": "E",
+              "lyric": "d."
             }
           ],
-          "raw": "[E7]Of how we fought and how we gained."
+          "raw": "Of how we f[E]ought and how[B7] we gaine[E]d."
         },
         {
           "tokens": [
@@ -196,5 +286,5 @@
     }
   ],
   "sourcePath": "songs/if-i-were-free.pro",
-  "source": "{title: If I Were Free}\n{key: E}\n{reviewed: false}\n\n{section: Verse 1}\n[E]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n\n{section: Verse 2}\n[A]This weary world has had its fill\n[B7]Of words of war on ev'ry hill.\n[E]The time has come for peaceful days\n[E7]For peaceful men and peaceful ways.\n\n{{section: Verse 3}\n[A]When all mankind has ceased to fight\n[B7]I'll raise my head in thanks each night.\n[E]For this great love and all it means,\n[E7]For golden days and peaceful dreams.\n\n{{section: Verse 4}\n[A]If I were free to speak my mind,\n[B7]I'd tell a tale to all mankind.\n[E]Of how the flowers do bloom and fade,\n[E7]Of how we fought and how we gained.\n"
+  "source": "{title: If I Were Free}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]If I were fr[A7]ee to speak my min[D]d,\n[A7]I'd tell a t[G]ale to all manki[A7]nd.\nOf how the flow[D]ers do [D7]bloom and f[G]ade,\nOf how we f[D]ought and ho[A7]w we gain[D]ed.\n\n{section: Verse 2}\nThis weary world has had its fill\nOf words of war on ev'ry hill.\nThe time has come for peaceful days\nFor peaceful men and peaceful ways.\n\n{section: Verse 3}\nWhen all mankind has ceased to fight\nI'll raise my head in thanks each night.\nFor this great love and all it means,\nFor golden days and peaceful dreams.\n\n{section: Verse 4}\n[E]If I were fr[B7]ee to speak my min[E]d,\n[B7]I'd tell a t[A]ale to all mankin[B7]d.\nOf how the flow[E]ers do b[E7]loom and f[A]ade,\nOf how we f[E]ought and how[B7] we gaine[E]d.\n"
 }
