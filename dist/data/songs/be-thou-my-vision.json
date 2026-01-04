@@ -116,38 +116,94 @@
         {
           "tokens": [
             {
+              "chord": "D",
+              "lyric": "Be Thou "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "my wisdom a"
+            },
+            {
+              "chord": "G",
+              "lyric": "nd Thou"
+            },
+            {
+              "chord": "D",
+              "lyric": " my tr"
+            },
+            {
               "chord": "A",
-              "lyric": "Be Thou my wisdom and Thou my true word,"
+              "lyric": "ue word"
+            },
+            {
+              "chord": "D",
+              "lyric": ","
             }
           ],
-          "raw": "[A]Be Thou my wisdom and Thou my true word,"
+          "raw": "[D]Be Thou [Bm]my wisdom a[G]nd Thou[D] my tr[A]ue word[D],"
         },
         {
           "tokens": [
             {
+              "chord": "A",
+              "lyric": "I ever with Th"
+            },
+            {
               "chord": "D",
-              "lyric": "I ever with Thee and Thou with me, Lord;"
+              "lyric": "ee and Thou "
+            },
+            {
+              "chord": "G",
+              "lyric": "with me, Lord;"
+            },
+            {
+              "chord": "A",
+              "lyric": ""
             }
           ],
-          "raw": "[D]I ever with Thee and Thou with me, Lord;"
+          "raw": "[A]I ever with Th[D]ee and Thou [G]with me, Lord;[A]"
         },
         {
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Thou my great Father, and I Thy true son;"
+              "lyric": "Thou my "
+            },
+            {
+              "chord": "D",
+              "lyric": "great Father, "
+            },
+            {
+              "chord": "G",
+              "lyric": "and I Thy "
+            },
+            {
+              "chord": "A",
+              "lyric": "true son;"
             }
           ],
-          "raw": "[G]Thou my great Father, and I Thy true son;"
+          "raw": "[G]Thou my [D]great Father, [G]and I Thy [A]true son;"
         },
         {
           "tokens": [
             {
+              "chord": "D",
+              "lyric": "Thou in me"
+            },
+            {
+              "chord": "G",
+              "lyric": " dwelling,"
+            },
+            {
               "chord": "A",
-              "lyric": "Thou in me dwelling, and I with Thee one."
+              "lyric": " and I with Thee"
+            },
+            {
+              "chord": "D",
+              "lyric": " one."
             }
           ],
-          "raw": "[A]Thou in me dwelling, and I with Thee one."
+          "raw": "[D]Thou in me[G] dwelling,[A] and I with Thee[D] one."
         },
         {
           "tokens": [
@@ -167,37 +223,93 @@
           "tokens": [
             {
               "chord": "D",
-              "lyric": "Riches I heed not, nor man's empty praise,"
-            }
-          ],
-          "raw": "[D]Riches I heed not, nor man's empty praise,"
-        },
-        {
-          "tokens": [
+              "lyric": "Riches I"
+            },
             {
               "chord": "Bm",
-              "lyric": "Thou mine inheritance, now and always;"
-            }
-          ],
-          "raw": "[Bm]Thou mine inheritance, now and always;"
-        },
-        {
-          "tokens": [
+              "lyric": " heed not, "
+            },
             {
               "chord": "G",
-              "lyric": "Thou and Thou only, first in my heart,"
+              "lyric": "nor man"
+            },
+            {
+              "chord": "D",
+              "lyric": "'s emp"
+            },
+            {
+              "chord": "A",
+              "lyric": "ty prai"
+            },
+            {
+              "chord": "D",
+              "lyric": "se,"
             }
           ],
-          "raw": "[G]Thou and Thou only, first in my heart,"
+          "raw": "[D]Riches I[Bm] heed not, [G]nor man[D]'s emp[A]ty prai[D]se,"
         },
         {
           "tokens": [
             {
               "chord": "A",
-              "lyric": "High king of heaven, my treasure Thou art."
+              "lyric": "Thou mine inhe"
+            },
+            {
+              "chord": "D",
+              "lyric": "ritance, now"
+            },
+            {
+              "chord": "G",
+              "lyric": " and always;"
+            },
+            {
+              "chord": "A",
+              "lyric": ""
             }
           ],
-          "raw": "[A]High king of heaven, my treasure Thou art."
+          "raw": "[A]Thou mine inhe[D]ritance, now[G] and always;[A]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Thou and"
+            },
+            {
+              "chord": "D",
+              "lyric": " Thou only, fi"
+            },
+            {
+              "chord": "G",
+              "lyric": "rst in my "
+            },
+            {
+              "chord": "A",
+              "lyric": "heart,"
+            }
+          ],
+          "raw": "[G]Thou and[D] Thou only, fi[G]rst in my [A]heart,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "High king "
+            },
+            {
+              "chord": "G",
+              "lyric": "of heaven,"
+            },
+            {
+              "chord": "A",
+              "lyric": " my treasure Tho"
+            },
+            {
+              "chord": "D",
+              "lyric": "u art."
+            }
+          ],
+          "raw": "[D]High king [G]of heaven,[A] my treasure Tho[D]u art."
         },
         {
           "tokens": [
@@ -217,37 +329,93 @@
           "tokens": [
             {
               "chord": "D",
-              "lyric": "High king of heaven, my victory won,"
-            }
-          ],
-          "raw": "[D]High king of heaven, my victory won,"
-        },
-        {
-          "tokens": [
+              "lyric": "High kin"
+            },
             {
               "chord": "Bm",
-              "lyric": "May I reach heaven's joys, O bright heaven's son!"
-            }
-          ],
-          "raw": "[Bm]May I reach heaven's joys, O bright heaven's son!"
-        },
-        {
-          "tokens": [
+              "lyric": "g of heaven"
+            },
             {
               "chord": "G",
-              "lyric": "Heart of my own heart, whatever befall,"
+              "lyric": ", my vi"
+            },
+            {
+              "chord": "D",
+              "lyric": "ctory "
+            },
+            {
+              "chord": "A",
+              "lyric": "won,"
+            },
+            {
+              "chord": "D",
+              "lyric": ""
             }
           ],
-          "raw": "[G]Heart of my own heart, whatever befall,"
+          "raw": "[D]High kin[Bm]g of heaven[G], my vi[D]ctory [A]won,[D]"
         },
         {
           "tokens": [
             {
               "chord": "A",
-              "lyric": "Still be my vision, O ruler of all."
+              "lyric": "May I reach he"
+            },
+            {
+              "chord": "D",
+              "lyric": "aven's joys,"
+            },
+            {
+              "chord": "G",
+              "lyric": " O bright heave"
+            },
+            {
+              "chord": "A",
+              "lyric": "n's son!"
             }
           ],
-          "raw": "[A]Still be my vision, O ruler of all."
+          "raw": "[A]May I reach he[D]aven's joys,[G] O bright heave[A]n's son!"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Heart of"
+            },
+            {
+              "chord": "D",
+              "lyric": " my own heart,"
+            },
+            {
+              "chord": "G",
+              "lyric": " whatever "
+            },
+            {
+              "chord": "A",
+              "lyric": "befall,"
+            }
+          ],
+          "raw": "[G]Heart of[D] my own heart,[G] whatever [A]befall,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Still be m"
+            },
+            {
+              "chord": "G",
+              "lyric": "y vision, "
+            },
+            {
+              "chord": "A",
+              "lyric": "O ruler of all."
+            },
+            {
+              "chord": "D",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Still be m[G]y vision, [A]O ruler of all.[D]"
         },
         {
           "tokens": [
@@ -262,5 +430,5 @@
     }
   ],
   "sourcePath": "songs/be-thou-my-vision.pro",
-  "source": "{title: Be Thou My Vision}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]Be Thou [Bm]my vision, [G]O Lord [D]of my [A]heart; [D]\n[A]Naught be all [D]else to me, [G]save that Thou [A]art--\n[G]Thou my [D]best thought, [G]by day or [A]by night,\n[D]Waking or [G]sleeping, [A]Thy presence my [D]light.\n\n{section: Verse 2}\n[A]Be Thou my wisdom and Thou my true word,\n[D]I ever with Thee and Thou with me, Lord;\n[G]Thou my great Father, and I Thy true son;\n[A]Thou in me dwelling, and I with Thee one.\n\n{section: Verse 3}\n[D]Riches I heed not, nor man's empty praise,\n[Bm]Thou mine inheritance, now and always;\n[G]Thou and Thou only, first in my heart,\n[A]High king of heaven, my treasure Thou art.\n\n{section: Verse 4}\n[D]High king of heaven, my victory won,\n[Bm]May I reach heaven's joys, O bright heaven's son!\n[G]Heart of my own heart, whatever befall,\n[A]Still be my vision, O ruler of all.\n"
+  "source": "{title: Be Thou My Vision}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]Be Thou [Bm]my vision, [G]O Lord [D]of my [A]heart; [D]\n[A]Naught be all [D]else to me, [G]save that Thou [A]art--\n[G]Thou my [D]best thought, [G]by day or [A]by night,\n[D]Waking or [G]sleeping, [A]Thy presence my [D]light.\n\n{section: Verse 2}\n[D]Be Thou [Bm]my wisdom a[G]nd Thou[D] my tr[A]ue word[D],\n[A]I ever with Th[D]ee and Thou [G]with me, Lord;[A]\n[G]Thou my [D]great Father, [G]and I Thy [A]true son;\n[D]Thou in me[G] dwelling,[A] and I with Thee[D] one.\n\n{section: Verse 3}\n[D]Riches I[Bm] heed not, [G]nor man[D]'s emp[A]ty prai[D]se,\n[A]Thou mine inhe[D]ritance, now[G] and always;[A]\n[G]Thou and[D] Thou only, fi[G]rst in my [A]heart,\n[D]High king [G]of heaven,[A] my treasure Tho[D]u art.\n\n{section: Verse 4}\n[D]High kin[Bm]g of heaven[G], my vi[D]ctory [A]won,[D]\n[A]May I reach he[D]aven's joys,[G] O bright heave[A]n's son!\n[G]Heart of[D] my own heart,[G] whatever [A]befall,\n[D]Still be m[G]y vision, [A]O ruler of all.[D]\n"
 }

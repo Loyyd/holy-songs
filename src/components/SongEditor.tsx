@@ -11,12 +11,140 @@ interface SongEditorProps {
 export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps) {
   const [source, setSource] = useState(initialSource);
   const [mode, setMode] = useState<'visual' | 'raw'>('visual');
+  const [copiedChords, setCopiedChords] = useState<Array<{ line: number; chords: Array<{ name: string; index: number }> }> | null>(null);
+  const [copiedSectionName, setCopiedSectionName] = useState<string | null>(null);
   
   const lines = source.split(/\r?\n/);
 
   const handleLineChange = (index: number, newLine: string) => {
     const newLines = [...lines];
     newLines[index] = newLine;
+    setSource(newLines.join('\n'));
+  };
+
+  // Find which section a line belongs to
+  const getSectionForLineIndex = (lineIndex: number): { name: string; startLine: number; endLine: number } | null => {
+    let currentSection: string | null = null;
+    let sectionStartLine = -1;
+
+    for (let i = 0; i <= lineIndex; i++) {
+      const line = lines[i].trim();
+      const sectionMatch = line.match(/^\{\s*section:\s*(.+)\s*\}$/i);
+      if (sectionMatch) {
+        currentSection = sectionMatch[1].trim();
+        sectionStartLine = i;
+      }
+    }
+
+    if (!currentSection) return null;
+
+    // Find end of section (next section or end of file)
+    let endLine = lines.length - 1;
+    for (let i = sectionStartLine + 1; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (line.match(/^\{\s*section:/i)) {
+        endLine = i - 1;
+        break;
+      }
+    }
+
+    return { name: currentSection, startLine: sectionStartLine, endLine };
+  };
+
+  // Copy all chords from a section
+  const handleCopySection = (sectionLineIndex: number) => {
+    const section = getSectionForLineIndex(sectionLineIndex);
+    if (!section) return;
+
+    const chordData: Array<{ line: number; chords: Array<{ name: string; index: number }> }> = [];
+
+    // Extract chords from each line in the section
+    for (let i = section.startLine + 1; i <= section.endLine; i++) {
+      const line = lines[i];
+      const trimmed = line.trim();
+      
+      // Skip empty lines and directives
+      if (trimmed === '' || (trimmed.startsWith('{') && trimmed.endsWith('}'))) {
+        continue;
+      }
+
+      // Parse chords from this line
+      const tokens = parseTokens(line);
+      const chords: Array<{ name: string; index: number }> = [];
+      let currentLen = 0;
+
+      tokens.forEach((token) => {
+        if (token.chord) {
+          chords.push({ name: token.chord, index: currentLen });
+        }
+        currentLen += token.lyric.length;
+      });
+
+      if (chords.length > 0) {
+        chordData.push({ line: i - section.startLine - 1, chords }); // Relative line number
+      }
+    }
+
+    setCopiedChords(chordData);
+    setCopiedSectionName(section.name);
+  };
+
+  // Paste chords to a section
+  const handlePasteSection = (sectionLineIndex: number) => {
+    if (!copiedChords) return;
+
+    const section = getSectionForLineIndex(sectionLineIndex);
+    if (!section) return;
+
+    const newLines = [...lines];
+    let lyricsLineIndex = 0;
+
+    // Apply chords to each line in the target section
+    for (let i = section.startLine + 1; i <= section.endLine; i++) {
+      const line = lines[i];
+      const trimmed = line.trim();
+      
+      // Skip empty lines and directives
+      if (trimmed === '' || (trimmed.startsWith('{') && trimmed.endsWith('}'))) {
+        continue;
+      }
+
+      // Find matching chord data for this line
+      const chordDataForLine = copiedChords.find(cd => cd.line === lyricsLineIndex);
+      if (chordDataForLine) {
+        // Get lyrics from current line
+        const tokens = parseTokens(line);
+        let lyrics = '';
+        tokens.forEach(token => {
+          lyrics += token.lyric;
+        });
+
+        // Apply the copied chords
+        const chordsByIndex = new Map<number, string[]>();
+        chordDataForLine.chords.forEach(chord => {
+          const idx = Math.min(chord.index, lyrics.length);
+          const list = chordsByIndex.get(idx) || [];
+          list.push(chord.name);
+          chordsByIndex.set(idx, list);
+        });
+
+        let result = '';
+        for (let j = 0; j <= lyrics.length; j++) {
+          if (chordsByIndex.has(j)) {
+            const chordsAtJ = chordsByIndex.get(j)!;
+            chordsAtJ.forEach(c => result += `[${c}]`);
+          }
+          if (j < lyrics.length) {
+            result += lyrics[j];
+          }
+        }
+
+        newLines[i] = result;
+      }
+
+      lyricsLineIndex++;
+    }
+
     setSource(newLines.join('\n'));
   };
 
@@ -39,11 +167,18 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
             {lines.map((line, i) => {
                 const trimmed = line.trim();
                 if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
+                    const isSectionDirective = trimmed.match(/^\{\s*section:/i);
                     return (
                         <DirectiveEditor 
                             key={i} 
                             line={line} 
-                            onChange={(newLine) => handleLineChange(i, newLine)} 
+                            lineIndex={i}
+                            onChange={(newLine) => handleLineChange(i, newLine)}
+                            isSectionDirective={!!isSectionDirective}
+                            onCopySection={isSectionDirective ? () => handleCopySection(i) : undefined}
+                            onPasteSection={isSectionDirective ? () => handlePasteSection(i) : undefined}
+                            hasCopiedChords={copiedChords !== null}
+                            copiedSectionName={copiedSectionName}
                         />
                     );
                 }
@@ -128,6 +263,20 @@ export function SongEditor({ initialSource, onSave, onCancel }: SongEditorProps)
             width: 100%;
             font-size: 0.9em;
         }
+        .section-action-button {
+          background: #fff;
+          border: 1px solid #e2e8f0;
+          padding: 0.15rem 0.5rem;
+          font-size: 0.7rem;
+          color: #64748b;
+          border-radius: 6px;
+          cursor: pointer;
+          white-space: nowrap;
+        }
+        .section-action-button:hover {
+          background: #f8fafc;
+          color: #0f172a;
+        }
         .chords-layer {
           position: absolute;
           top: -1.6em;
@@ -209,14 +358,44 @@ interface LineEditorProps {
   onChange: (newLine: string) => void;
 }
 
-function DirectiveEditor({ line, onChange }: LineEditorProps) {
+interface DirectiveEditorProps extends LineEditorProps {
+  lineIndex: number;
+  isSectionDirective: boolean;
+  onCopySection?: () => void;
+  onPasteSection?: () => void;
+  hasCopiedChords: boolean;
+  copiedSectionName: string | null;
+}
+
+function DirectiveEditor({ line, onChange, isSectionDirective, onCopySection, onPasteSection, hasCopiedChords, copiedSectionName }: DirectiveEditorProps) {
     return (
-        <div className="directive-editor" style={{ marginBottom: '0.5em' }}>
+        <div className="directive-editor" style={{ marginBottom: '0.5em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <input 
                 value={line} 
                 onChange={e => onChange(e.target.value)} 
                 spellCheck={false}
+                style={{ flex: 1 }}
             />
+            {isSectionDirective && (
+                <div style={{ display: 'flex', gap: '0.25rem' }}>
+                    <button
+                        className="section-action-button"
+                        onClick={onCopySection}
+                        title="Copy all chords from this section"
+                    >
+                        Copy
+                    </button>
+                    {hasCopiedChords && (
+                        <button
+                            className="section-action-button"
+                            onClick={onPasteSection}
+                            title={`Paste chords from ${copiedSectionName || 'copied section'}`}
+                        >
+                            Paste
+                        </button>
+                    )}
+                </div>
+            )}
         </div>
     );
 }
