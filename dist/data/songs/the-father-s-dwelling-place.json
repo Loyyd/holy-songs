@@ -2,7 +2,7 @@
   "id": "the-father-s-dwelling-place",
   "title": "The Father's Dwelling Place",
   "key": "D",
-  "reviewed": false,
+  "reviewed": true,
   "sections": [
     {
       "name": "Verse 1",
@@ -11,69 +11,163 @@
           "tokens": [
             {
               "chord": "D",
-              "lyric": "The Father's dwelling place is the fountain of our life,"
-            }
-          ],
-          "raw": "[D]The Father's dwelling place is the fountain of our life,"
-        },
-        {
-          "tokens": [
+              "lyric": "The Father's "
+            },
             {
               "chord": "Em",
-              "lyric": "Drawn to the light of eternal day, we abandon the darkness."
-            }
-          ],
-          "raw": "[Em]Drawn to the light of eternal day, we abandon the darkness."
-        },
-        {
-          "tokens": [
+              "lyric": "dwelling "
+            },
             {
               "chord": "A7",
-              "lyric": "May the Word of God in my heart resound"
+              "lyric": "place "
+            },
+            {
+              "chord": "D",
+              "lyric": "is the "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "fountain "
+            },
+            {
+              "chord": "G",
+              "lyric": "of our "
+            },
+            {
+              "chord": "A7",
+              "lyric": "life,"
             }
           ],
-          "raw": "[A7]May the Word of God in my heart resound"
+          "raw": "[D]The Father's [Em]dwelling [A7]place [D]is the [Bm]fountain [G]of our [A7]life,"
         },
         {
           "tokens": [
             {
               "chord": "D",
-              "lyric": "So eternally, to receive His love."
-            }
-          ],
-          "raw": "[D]So eternally, to receive His love."
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 2",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": "Bm",
-              "lyric": "We shall be His pride and delight, children of the Living God."
-            }
-          ],
-          "raw": "[Bm]We shall be His pride and delight, children of the Living God."
-        },
-        {
-          "tokens": [
+              "lyric": "Drawn to the light of e"
+            },
             {
               "chord": "G",
-              "lyric": "Into the world of Eden regained, Let's go marching together."
+              "lyric": "ternal "
+            },
+            {
+              "chord": "D",
+              "lyric": "day, "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "we ab"
+            },
+            {
+              "chord": "A7",
+              "lyric": "andon the "
+            },
+            {
+              "chord": "D",
+              "lyric": "darkness."
             }
           ],
-          "raw": "[G]Into the world of Eden regained, Let's go marching together."
+          "raw": "[D]Drawn to the light of e[G]ternal [D]day, [Bm]we ab[A7]andon the [D]darkness."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "May the Word of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "God i"
+            },
+            {
+              "chord": "D",
+              "lyric": "n my heart r"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "esound"
+            }
+          ],
+          "raw": "[D]May the Word of [Bm]God i[D]n my heart r[Bm]esound"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "So eternall"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "y, "
+            },
+            {
+              "chord": "D",
+              "lyric": "to receive His l"
+            },
+            {
+              "chord": "Bm",
+              "lyric": "ove."
+            }
+          ],
+          "raw": "[D]So eternall[Bm]y, [D]to receive His l[Bm]ove."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "We shall be His "
+            },
+            {
+              "chord": "G",
+              "lyric": "pride and d"
+            },
+            {
+              "chord": "D",
+              "lyric": "elight, "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "children of the "
+            },
+            {
+              "chord": "E7",
+              "lyric": "Living G"
+            },
+            {
+              "chord": "A7",
+              "lyric": "od."
+            }
+          ],
+          "raw": "[D]We shall be His [G]pride and d[D]elight, [Bm]children of the [E7]Living G[A7]od."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Into the world of "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Eden reg"
+            },
+            {
+              "chord": "G",
+              "lyric": "ained, "
+            },
+            {
+              "chord": "Bm",
+              "lyric": "Let's go m"
+            },
+            {
+              "chord": "A7",
+              "lyric": "arching t"
+            },
+            {
+              "chord": "D",
+              "lyric": "ogether."
+            }
+          ],
+          "raw": "[D]Into the world of [Bm]Eden reg[G]ained, [Bm]Let's go m[A7]arching t[D]ogether."
         },
         {
           "tokens": [
@@ -92,70 +186,56 @@
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": null,
               "lyric": "The Father's dwelling place is the throne of new life,"
             }
           ],
-          "raw": "[D]The Father's dwelling place is the throne of new life,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Em",
-              "lyric": "Now our resurrection is come, which we long awaited."
-            }
-          ],
-          "raw": "[Em]Now our resurrection is come, which we long awaited."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "A7",
-              "lyric": "May the Word of God, in my heart resound,"
-            }
-          ],
-          "raw": "[A7]May the Word of God, in my heart resound,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "D",
-              "lyric": "So eternally, to receive His joy."
-            }
-          ],
-          "raw": "[D]So eternally, to receive His joy."
+          "raw": "The Father's dwelling place is the throne of new life,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
+              "lyric": "Now our resurrection is come, which we long awaited."
             }
           ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 4",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": "Bm",
-              "lyric": "We shall be His pride and delight, children of the Living God,"
-            }
-          ],
-          "raw": "[Bm]We shall be His pride and delight, children of the Living God,"
+          "raw": "Now our resurrection is come, which we long awaited."
         },
         {
           "tokens": [
             {
-              "chord": "G",
+              "chord": null,
+              "lyric": "May the Word of God, in my heart resound,"
+            }
+          ],
+          "raw": "May the Word of God, in my heart resound,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "So eternally, to receive His joy."
+            }
+          ],
+          "raw": "So eternally, to receive His joy."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "We shall be His pride and delight, children of the Living God,"
+            }
+          ],
+          "raw": "We shall be His pride and delight, children of the Living God,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
               "lyric": "Into the world of Eden regained, Let's go singing together."
             }
           ],
-          "raw": "[G]Into the world of Eden regained, Let's go singing together."
+          "raw": "Into the world of Eden regained, Let's go singing together."
         },
         {
           "tokens": [
@@ -174,70 +254,56 @@
         {
           "tokens": [
             {
-              "chord": "D",
+              "chord": null,
               "lyric": "The Father's dwelling place is the eternal paradise,"
             }
           ],
-          "raw": "[D]The Father's dwelling place is the eternal paradise,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Em",
-              "lyric": "Where the blessing He had to reserve will be freely given."
-            }
-          ],
-          "raw": "[Em]Where the blessing He had to reserve will be freely given."
-        },
-        {
-          "tokens": [
-            {
-              "chord": "A7",
-              "lyric": "May the Word of God in my heart resound,"
-            }
-          ],
-          "raw": "[A7]May the Word of God in my heart resound,"
-        },
-        {
-          "tokens": [
-            {
-              "chord": "D",
-              "lyric": "So eternally to receive His praise."
-            }
-          ],
-          "raw": "[D]So eternally to receive His praise."
+          "raw": "The Father's dwelling place is the eternal paradise,"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
+              "lyric": "Where the blessing He had to reserve will be freely given."
             }
           ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 6",
-      "lines": [
-        {
-          "tokens": [
-            {
-              "chord": "Bm",
-              "lyric": "We shall be His pride and delight, children of the Living God,"
-            }
-          ],
-          "raw": "[Bm]We shall be His pride and delight, children of the Living God,"
+          "raw": "Where the blessing He had to reserve will be freely given."
         },
         {
           "tokens": [
             {
-              "chord": "G",
+              "chord": null,
+              "lyric": "May the Word of God in my heart resound,"
+            }
+          ],
+          "raw": "May the Word of God in my heart resound,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "So eternally to receive His praise."
+            }
+          ],
+          "raw": "So eternally to receive His praise."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "We shall be His pride and delight, children of the Living God,"
+            }
+          ],
+          "raw": "We shall be His pride and delight, children of the Living God,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
               "lyric": "Into the world of Eden regained, Let's go dancing together!"
             }
           ],
-          "raw": "[G]Into the world of Eden regained, Let's go dancing together!"
+          "raw": "Into the world of Eden regained, Let's go dancing together!"
         },
         {
           "tokens": [
@@ -252,5 +318,5 @@
     }
   ],
   "sourcePath": "songs/the-fathers-dwelling-place.pro",
-  "source": "{title: The Father's Dwelling Place}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]The Father's dwelling place is the fountain of our life,\n[Em]Drawn to the light of eternal day, we abandon the darkness.\n[A7]May the Word of God in my heart resound\n[D]So eternally, to receive His love.\n\n{section: Verse 2}\n[Bm]We shall be His pride and delight, children of the Living God.\n[G]Into the world of Eden regained, Let's go marching together.\n\n{section: Verse 3}\n[D]The Father's dwelling place is the throne of new life,\n[Em]Now our resurrection is come, which we long awaited.\n[A7]May the Word of God, in my heart resound,\n[D]So eternally, to receive His joy.\n\n{section: Verse 4}\n[Bm]We shall be His pride and delight, children of the Living God,\n[G]Into the world of Eden regained, Let's go singing together.\n\n{section: Verse 5}\n[D]The Father's dwelling place is the eternal paradise,\n[Em]Where the blessing He had to reserve will be freely given.\n[A7]May the Word of God in my heart resound,\n[D]So eternally to receive His praise.\n\n{section: Verse 6}\n[Bm]We shall be His pride and delight, children of the Living God,\n[G]Into the world of Eden regained, Let's go dancing together!\n"
+  "source": "{title: The Father's Dwelling Place}\n{key: D}\n{reviewed: true}\n\n{section: Verse 1}\n[D]The Father's [Em]dwelling [A7]place [D]is the [Bm]fountain [G]of our [A7]life,\n[D]Drawn to the light of e[G]ternal [D]day, [Bm]we ab[A7]andon the [D]darkness.\n[D]May the Word of [Bm]God i[D]n my heart r[Bm]esound\n[D]So eternall[Bm]y, [D]to receive His l[Bm]ove.\n[D]We shall be His [G]pride and d[D]elight, [Bm]children of the [E7]Living G[A7]od.\n[D]Into the world of [Bm]Eden reg[G]ained, [Bm]Let's go m[A7]arching t[D]ogether.\n\n{section: Verse 3}\nThe Father's dwelling place is the throne of new life,\nNow our resurrection is come, which we long awaited.\nMay the Word of God, in my heart resound,\nSo eternally, to receive His joy.\nWe shall be His pride and delight, children of the Living God,\nInto the world of Eden regained, Let's go singing together.\n\n{section: Verse 5}\nThe Father's dwelling place is the eternal paradise,\nWhere the blessing He had to reserve will be freely given.\nMay the Word of God in my heart resound,\nSo eternally to receive His praise.\nWe shall be His pride and delight, children of the Living God,\nInto the world of Eden regained, Let's go dancing together!\n"
 }

@@ -1,12 +1,12 @@
 {title: If I Were Free}
 {key: D}
-{reviewed: false}
+{reviewed: true}
 
 {section: Verse 1}
 [D]If I were fr[A7]ee to speak my min[D]d,
-[A7]I'd tell a t[G]ale to all manki[A7]nd.
+[D7]I'd tell a t[G]ale to all manki[A7]nd.
 Of how the flow[D]ers do [D7]bloom and f[G]ade,
-Of how we f[D]ought and ho[A7]w we gain[D]ed.
+Of how we f[D]ought and h[A7]ow we gain[D]ed.
 
 {section: Verse 2}
 This weary world has had its fill
@@ -22,6 +22,6 @@ For golden days and peaceful dreams.
 
 {section: Verse 4}
 [E]If I were fr[B7]ee to speak my min[E]d,
-[B7]I'd tell a t[A]ale to all mankin[B7]d.
+[E7]I'd tell a t[A]ale to all mankin[B7]d.
 Of how the flow[E]ers do b[E7]loom and f[A]ade,
-Of how we f[E]ought and how[B7] we gaine[E]d.
+Of how we f[E]ought and h[B7]ow we gaine[E]d.
