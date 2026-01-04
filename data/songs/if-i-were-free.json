@@ -27,7 +27,7 @@
         {
           "tokens": [
             {
-              "chord": "A7",
+              "chord": "D7",
               "lyric": "I'd tell a t"
             },
             {
@@ -39,7 +39,7 @@
               "lyric": "nd."
             }
           ],
-          "raw": "[A7]I'd tell a t[G]ale to all manki[A7]nd."
+          "raw": "[D7]I'd tell a t[G]ale to all manki[A7]nd."
         },
         {
           "tokens": [
@@ -286,5 +286,5 @@
     }
   ],
   "sourcePath": "songs/if-i-were-free.pro",
-  "source": "{title: If I Were Free}\n{key: D}\n{reviewed: true}\n\n{section: Verse 1}\n[D]If I were fr[A7]ee to speak my min[D]d,\n[A7]I'd tell a t[G]ale to all manki[A7]nd.\nOf how the flow[D]ers do [D7]bloom and f[G]ade,\nOf how we f[D]ought and ho[A7]w we gain[D]ed.\n\n{section: Verse 2}\nThis weary world has had its fill\nOf words of war on ev'ry hill.\nThe time has come for peaceful days\nFor peaceful men and peaceful ways.\n\n{section: Verse 3}\nWhen all mankind has ceased to fight\nI'll raise my head in thanks each night.\nFor this great love and all it means,\nFor golden days and peaceful dreams.\n\n{section: Verse 4}\n[E]If I were fr[B7]ee to speak my min[E]d,\n[E7]I'd tell a t[A]ale to all mankin[B7]d.\nOf how the flow[E]ers do b[E7]loom and f[A]ade,\nOf how we f[E]ought and how[B7] we gaine[E]d.\n"
+  "source": "{title: If I Were Free}\n{key: D}\n{reviewed: true}\n\n{section: Verse 1}\n[D]If I were fr[A7]ee to speak my min[D]d,\n[D7]I'd tell a t[G]ale to all manki[A7]nd.\nOf how the flow[D]ers do [D7]bloom and f[G]ade,\nOf how we f[D]ought and ho[A7]w we gain[D]ed.\n\n{section: Verse 2}\nThis weary world has had its fill\nOf words of war on ev'ry hill.\nThe time has come for peaceful days\nFor peaceful men and peaceful ways.\n\n{section: Verse 3}\nWhen all mankind has ceased to fight\nI'll raise my head in thanks each night.\nFor this great love and all it means,\nFor golden days and peaceful dreams.\n\n{section: Verse 4}\n[E]If I were fr[B7]ee to speak my min[E]d,\n[E7]I'd tell a t[A]ale to all mankin[B7]d.\nOf how the flow[E]ers do b[E7]loom and f[A]ade,\nOf how we f[E]ought and how[B7] we gaine[E]d.\n"
 }
