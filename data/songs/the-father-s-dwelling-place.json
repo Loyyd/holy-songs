@@ -2,7 +2,7 @@
   "id": "the-father-s-dwelling-place",
   "title": "The Father's Dwelling Place",
   "key": "D",
-  "reviewed": false,
+  "reviewed": true,
   "sections": [
     {
       "name": "Verse 1",
@@ -318,5 +318,5 @@
     }
   ],
   "sourcePath": "songs/the-fathers-dwelling-place.pro",
-  "source": "{title: The Father's Dwelling Place}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]The Father's [Em]dwelling [A7]pla[D]ce [Bm]is the fountai[G]n of o[A7]ur life,\n[D]Drawn to the light of e[G]ternal [D]day, [Bm]we a[A7]bandon the[D] darkness.\n[D]May the Word of [Bm]God i[D]n my heart r[Bm]esound\n[D]So eternall[Bm]y, [D]to receive His l[Bm]ove.\n[D]We shall be His [G]pride and d[D]elight, [Bm]children of [E7]the [A7]Living God.\n[D]Into the world of [Bm]Eden reg[G]ained, [Bm]Let's go[A7] marching [D]together.\n\n{section: Verse 3}\nThe Father's dwelling place is the throne of new life,\nNow our resurrection is come, which we long awaited.\nMay the Word of God, in my heart resound,\nSo eternally, to receive His joy.\nWe shall be His pride and delight, children of the Living God,\nInto the world of Eden regained, Let's go singing together.\n\n{section: Verse 5}\nThe Father's dwelling place is the eternal paradise,\nWhere the blessing He had to reserve will be freely given.\nMay the Word of God in my heart resound,\nSo eternally to receive His praise.\nWe shall be His pride and delight, children of the Living God,\nInto the world of Eden regained, Let's go dancing together!\n"
+  "source": "{title: The Father's Dwelling Place}\n{key: D}\n{reviewed: true}\n\n{section: Verse 1}\n[D]The Father's [Em]dwelling [A7]pla[D]ce [Bm]is the fountai[G]n of o[A7]ur life,\n[D]Drawn to the light of e[G]ternal [D]day, [Bm]we a[A7]bandon the[D] darkness.\n[D]May the Word of [Bm]God i[D]n my heart r[Bm]esound\n[D]So eternall[Bm]y, [D]to receive His l[Bm]ove.\n[D]We shall be His [G]pride and d[D]elight, [Bm]children of [E7]the [A7]Living God.\n[D]Into the world of [Bm]Eden reg[G]ained, [Bm]Let's go[A7] marching [D]together.\n\n{section: Verse 3}\nThe Father's dwelling place is the throne of new life,\nNow our resurrection is come, which we long awaited.\nMay the Word of God, in my heart resound,\nSo eternally, to receive His joy.\nWe shall be His pride and delight, children of the Living God,\nInto the world of Eden regained, Let's go singing together.\n\n{section: Verse 5}\nThe Father's dwelling place is the eternal paradise,\nWhere the blessing He had to reserve will be freely given.\nMay the Word of God in my heart resound,\nSo eternally to receive His praise.\nWe shall be His pride and delight, children of the Living God,\nInto the world of Eden regained, Let's go dancing together!\n"
 }
