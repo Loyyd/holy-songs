@@ -46,20 +46,6 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 2",
-      "lines": [
-        {
-          "tokens": [
-            {
               "chord": "Bm",
               "lyric": "We shall be His pride and delight, children of the Living God."
             }
@@ -125,20 +111,6 @@
           ],
           "raw": "[D]So eternally, to receive His joy."
         },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 4",
-      "lines": [
         {
           "tokens": [
             {
@@ -210,20 +182,6 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        }
-      ]
-    },
-    {
-      "name": "Verse 6",
-      "lines": [
-        {
-          "tokens": [
-            {
               "chord": "Bm",
               "lyric": "We shall be His pride and delight, children of the Living God,"
             }
@@ -252,5 +210,5 @@
     }
   ],
   "sourcePath": "songs/the-fathers-dwelling-place.pro",
-  "source": "{title: The Father's Dwelling Place}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]The Father's dwelling place is the fountain of our life,\n[Em]Drawn to the light of eternal day, we abandon the darkness.\n[A7]May the Word of God in my heart resound\n[D]So eternally, to receive His love.\n\n{section: Verse 2}\n[Bm]We shall be His pride and delight, children of the Living God.\n[G]Into the world of Eden regained, Let's go marching together.\n\n{section: Verse 3}\n[D]The Father's dwelling place is the throne of new life,\n[Em]Now our resurrection is come, which we long awaited.\n[A7]May the Word of God, in my heart resound,\n[D]So eternally, to receive His joy.\n\n{section: Verse 4}\n[Bm]We shall be His pride and delight, children of the Living God,\n[G]Into the world of Eden regained, Let's go singing together.\n\n{section: Verse 5}\n[D]The Father's dwelling place is the eternal paradise,\n[Em]Where the blessing He had to reserve will be freely given.\n[A7]May the Word of God in my heart resound,\n[D]So eternally to receive His praise.\n\n{section: Verse 6}\n[Bm]We shall be His pride and delight, children of the Living God,\n[G]Into the world of Eden regained, Let's go dancing together!\n"
+  "source": "{title: The Father's Dwelling Place}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]The Father's dwelling place is the fountain of our life,\n[Em]Drawn to the light of eternal day, we abandon the darkness.\n[A7]May the Word of God in my heart resound\n[D]So eternally, to receive His love.\n[Bm]We shall be His pride and delight, children of the Living God.\n[G]Into the world of Eden regained, Let's go marching together.\n\n{section: Verse 3}\n[D]The Father's dwelling place is the throne of new life,\n[Em]Now our resurrection is come, which we long awaited.\n[A7]May the Word of God, in my heart resound,\n[D]So eternally, to receive His joy.\n[Bm]We shall be His pride and delight, children of the Living God,\n[G]Into the world of Eden regained, Let's go singing together.\n\n{section: Verse 5}\n[D]The Father's dwelling place is the eternal paradise,\n[Em]Where the blessing He had to reserve will be freely given.\n[A7]May the Word of God in my heart resound,\n[D]So eternally to receive His praise.\n[Bm]We shall be His pride and delight, children of the Living God,\n[G]Into the world of Eden regained, Let's go dancing together!\n"
 }
