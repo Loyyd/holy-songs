@@ -222,37 +222,10 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "     C                Am         C      C"
-            }
-          ],
-          "raw": "     C                Am         C      C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
               "lyric": "been talking bout the way things change"
             }
           ],
           "raw": "been talking bout the way things change"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "       Am      F         C        C     C"
-            }
-          ],
-          "raw": "       Am      F         C        C     C"
         },
         {
           "tokens": [
@@ -267,28 +240,10 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "           Am         F       C"
-            }
-          ],
-          "raw": "           Am         F       C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
               "lyric": "and if you don't know what to make of this"
             }
           ],
           "raw": "and if you don't know what to make of this"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "     Am      F   C"
-            }
-          ],
-          "raw": "     Am      F   C"
         },
         {
           "tokens": [
@@ -303,28 +258,10 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "          Am         F       C"
-            }
-          ],
-          "raw": "          Am         F       C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
               "lyric": "so if you don't know what to make of this"
             }
           ],
           "raw": "so if you don't know what to make of this"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "     Am      F   C"
-            }
-          ],
-          "raw": "     Am      F   C"
         },
         {
           "tokens": [
@@ -366,37 +303,10 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "C        Am     C"
-            }
-          ],
-          "raw": "C        Am     C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
               "lyric": "ohhhhh   ohhhh  oh"
             }
           ],
           "raw": "ohhhhh   ohhhh  oh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Am    F     C"
-            }
-          ],
-          "raw": "Am    F     C"
         },
         {
           "tokens": [
@@ -415,15 +325,6 @@
             }
           ],
           "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "C        Am     C"
-            }
-          ],
-          "raw": "C        Am     C"
         },
         {
           "tokens": [
@@ -1176,5 +1077,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Chorus}\na year from now we'll all be gone\nall our friends will move away\nand they're going to better places\nbut our friends will be gone away\n \nnothing is as it has been\nand I miss your face like hell\nand I guess it's just as well\nbut I miss your face like hell\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \n \n[Verse 2]\n \n     C                Am         C      C\nbeen talking bout the way things change\n       Am      F         C        C     C\nand my family lives in a different state\n           Am         F       C\nand if you don't know what to make of this\n     Am      F   C\nthen we will not relate\n          Am         F       C\nso if you don't know what to make of this\n     Am      F   C\nthen we will not relate\n \n \n[Chorus]\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \n \n[Outro]\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Chorus}\na year from now we'll all be gone\nall our friends will move away\nand they're going to better places\nbut our friends will be gone away\n \nnothing is as it has been\nand I miss your face like hell\nand I guess it's just as well\nbut I miss your face like hell\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \n \n[Verse 2]\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \n \n[Outro]\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
 }
