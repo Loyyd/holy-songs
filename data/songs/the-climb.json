@@ -1,0 +1,631 @@
+{
+  "id": "the-climb",
+  "title": "The Climb",
+  "key": "D",
+  "reviewed": false,
+  "sections": [
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I can almost see it"
+            }
+          ],
+          "raw": "[D]I can almost see it"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "That dream I'm dreaming but"
+            }
+          ],
+          "raw": "That dream I'm dreaming but"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "There's a voice inside my head saying"
+            }
+          ],
+          "raw": "[G]There's a voice inside my head saying"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "You'll never reach it"
+            }
+          ],
+          "raw": "[Em]You'll never reach it"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Every step I'm taking,"
+            }
+          ],
+          "raw": "[D]Every step I'm taking,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Every move I make feels"
+            }
+          ],
+          "raw": "Every move I make feels"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Lost with no direction"
+            }
+          ],
+          "raw": "[G]Lost with no direction"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "My faith is shaking but"
+            }
+          ],
+          "raw": "[Em]My faith is shaking but"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "I, "
+            },
+            {
+              "chord": "F#m",
+              "lyric": "I gotta keep trying"
+            }
+          ],
+          "raw": "[Bm]I, [F#m]I gotta keep trying"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Gotta keep my head held "
+            },
+            {
+              "chord": "Em",
+              "lyric": "high"
+            }
+          ],
+          "raw": "[G]Gotta keep my head held [Em]high"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "There's always gonna be another mountain"
+            }
+          ],
+          "raw": "[D]There's always gonna be another mountain"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'm always gonna wanna make it move"
+            }
+          ],
+          "raw": "I'm always gonna wanna make it move"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Always gonna be an uphill battle"
+            }
+          ],
+          "raw": "[G]Always gonna be an uphill battle"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Sometimes I'm gonna have to "
+            },
+            {
+              "chord": "A",
+              "lyric": "lose"
+            }
+          ],
+          "raw": "[Em]Sometimes I'm gonna have to [A]lose"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "It ain't about how fast I get there"
+            }
+          ],
+          "raw": "[D]It ain't about how fast I get there"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Ain't about what's waiting on the "
+            },
+            {
+              "chord": "A",
+              "lyric": "other "
+            },
+            {
+              "chord": "G",
+              "lyric": "side"
+            }
+          ],
+          "raw": "[Bm]Ain't about what's waiting on the [A]other [G]side"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "It's the climb"
+            }
+          ],
+          "raw": "[D]It's the climb"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "The struggles I'm facing,"
+            }
+          ],
+          "raw": "[D]The struggles I'm facing,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "The chances I'm taking"
+            }
+          ],
+          "raw": "The chances I'm taking"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Sometimes might knock me down but"
+            }
+          ],
+          "raw": "[G]Sometimes might knock me down but"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "No, I'm not breaking"
+            }
+          ],
+          "raw": "[Em]No, I'm not breaking"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I may not know it,"
+            }
+          ],
+          "raw": "[D]I may not know it,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "But these are the moments that"
+            }
+          ],
+          "raw": "But these are the moments that"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "I'm gonna remember most, yeah"
+            }
+          ],
+          "raw": "[G]I'm gonna remember most, yeah"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Just gotta keep going"
+            }
+          ],
+          "raw": "[Em]Just gotta keep going"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "And I,"
+            }
+          ],
+          "raw": "[Bm]And I,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "I gotta be strong"
+            }
+          ],
+          "raw": "[F#m]I gotta be strong"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Just keep pushing "
+            },
+            {
+              "chord": "Em",
+              "lyric": "on"
+            }
+          ],
+          "raw": "[G]Just keep pushing [Em]on"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "There's always gonna be another mountain"
+            }
+          ],
+          "raw": "[D]There's always gonna be another mountain"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'm always gonna wanna make it move"
+            }
+          ],
+          "raw": "I'm always gonna wanna make it move"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Always gonna be an uphill battle"
+            }
+          ],
+          "raw": "[G]Always gonna be an uphill battle"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": "Sometimes I'm gonna have to "
+            },
+            {
+              "chord": "A",
+              "lyric": "lose"
+            }
+          ],
+          "raw": "[Em]Sometimes I'm gonna have to [A]lose"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "It ain't about how fast I get there"
+            }
+          ],
+          "raw": "[D]It ain't about how fast I get there"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Ain't about what's waiting on the "
+            },
+            {
+              "chord": "A",
+              "lyric": "other "
+            },
+            {
+              "chord": "G",
+              "lyric": "side"
+            }
+          ],
+          "raw": "[Bm]Ain't about what's waiting on the [A]other [G]side"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "It's the climb"
+            }
+          ],
+          "raw": "[D]It's the climb"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Solo",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": " | "
+            },
+            {
+              "chord": "D",
+              "lyric": " | "
+            },
+            {
+              "chord": "G",
+              "lyric": " | "
+            },
+            {
+              "chord": "G",
+              "lyric": " |"
+            }
+          ],
+          "raw": "[D] | [D] | [G] | [G] |"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Em",
+              "lyric": " | "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " | "
+            },
+            {
+              "chord": "G",
+              "lyric": " | "
+            },
+            {
+              "chord": "A",
+              "lyric": " |"
+            }
+          ],
+          "raw": "[Em] | [D/F#] | [G] | [A] |"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "There's always gonna be another mountain"
+            }
+          ],
+          "raw": "[D]There's always gonna be another mountain"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "I'm always gonna wanna make it move"
+            }
+          ],
+          "raw": "I'm always gonna wanna make it move"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Always gonna be an uphill battle"
+            }
+          ],
+          "raw": "[G]Always gonna be an uphill battle"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Somebody "
+            },
+            {
+              "chord": "Em",
+              "lyric": "gonna have to "
+            },
+            {
+              "chord": "D/F#",
+              "lyric": "lose "
+            },
+            {
+              "chord": "G",
+              "lyric": ""
+            },
+            {
+              "chord": "A",
+              "lyric": ""
+            },
+            {
+              "chord": "Bm",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]Somebody [Em]gonna have to [D/F#]lose [G][A][Bm]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Ain't about how fast I get there"
+            }
+          ],
+          "raw": "[D]Ain't about how fast I get there"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bm",
+              "lyric": "Ain't about what's waiting on the "
+            },
+            {
+              "chord": "A",
+              "lyric": "other "
+            },
+            {
+              "chord": "G",
+              "lyric": "side"
+            }
+          ],
+          "raw": "[Bm]Ain't about what's waiting on the [A]other [G]side"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "It's the "
+            },
+            {
+              "chord": "G",
+              "lyric": "climb"
+            }
+          ],
+          "raw": "[D]It's the [G]climb"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Keep on moving, keep climbing, keep the faith, baby"
+            }
+          ],
+          "raw": "[D]Keep on moving, keep climbing, keep the faith, baby"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "It's all about, it's all about the "
+            },
+            {
+              "chord": "D",
+              "lyric": "climb"
+            }
+          ],
+          "raw": "[G]It's all about, it's all about the [D]climb"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": ""
+            },
+            {
+              "chord": "D",
+              "lyric": "Keep the faith, keep your faith"
+            }
+          ],
+          "raw": "[G][D]Keep the faith, keep your faith"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/the-climb.pro",
+  "source": "{title: The Climb}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\n[D]I can almost see it\nThat dream I'm dreaming but\n[G]There's a voice inside my head saying\n[Em]You'll never reach it\n[D]Every step I'm taking,\nEvery move I make feels\n[G]Lost with no direction\n[Em]My faith is shaking but\n[Bm]I, [F#m]I gotta keep trying\n[G]Gotta keep my head held [Em]high\n\n{section: Chorus}\n[D]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[G]Always gonna be an uphill battle\n[Em]Sometimes I'm gonna have to [A]lose\n[D]It ain't about how fast I get there\n[Bm]Ain't about what's waiting on the [A]other [G]side\n[D]It's the climb\n\n{section: Verse 2}\n[D]The struggles I'm facing,\nThe chances I'm taking\n[G]Sometimes might knock me down but\n[Em]No, I'm not breaking\n[D]I may not know it,\nBut these are the moments that\n[G]I'm gonna remember most, yeah\n[Em]Just gotta keep going\n[Bm]And I,\n[F#m]I gotta be strong\n[G]Just keep pushing [Em]on\n\n{section: Chorus}\n[D]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[G]Always gonna be an uphill battle\n[Em]Sometimes I'm gonna have to [A]lose\n[D]It ain't about how fast I get there\n[Bm]Ain't about what's waiting on the [A]other [G]side\n[D]It's the climb\n\n{section: Solo}\n[D] | [D] | [G] | [G] |\n[Em] | [D/F#] | [G] | [A] |\n\n{section: Chorus}\n[D]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[G]Always gonna be an uphill battle\n[D]Somebody [Em]gonna have to [D/F#]lose [G][A][Bm]\n[D]Ain't about how fast I get there\n[Bm]Ain't about what's waiting on the [A]other [G]side\n[D]It's the [G]climb\n\n{section: Outro}\n[D]Keep on moving, keep climbing, keep the faith, baby\n[G]It's all about, it's all about the [D]climb\n[G][D]Keep the faith, keep your faith\n"
+}
