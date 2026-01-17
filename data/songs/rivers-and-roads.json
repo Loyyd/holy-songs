@@ -706,6 +706,15 @@
           "tokens": [
             {
               "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
               "lyric": "(add in the ohhhhhhhh's)"
             }
           ],
@@ -1087,5 +1096,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n \n(add in the ohhhhhhhh's)\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n \n \n(add in the ohhhhhhhh's)\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n"
 }
