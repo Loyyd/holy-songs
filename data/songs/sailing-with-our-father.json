@@ -2,7 +2,7 @@
   "id": "sailing-with-our-father",
   "title": "Sailing With Our Father",
   "key": "G",
-  "reviewed": true,
+  "reviewed": false,
   "sections": [
     {
       "name": "Verse 1",
@@ -123,11 +123,11 @@
               "lyric": "We've found the Promised Land to"
             },
             {
-              "chord": "Am",
+              "chord": "Em",
               "lyric": "day."
             }
           ],
-          "raw": "[C]We've found the Promised Land to[Am]day."
+          "raw": "[C]We've found the Promised Land to[Em]day."
         },
         {
           "tokens": [
@@ -242,5 +242,5 @@
     }
   ],
   "sourcePath": "songs/sailing-with-our-father.pro",
-  "source": "{title: Sailing With Our Father}\n{key: G}\n{reviewed: true}\n\n{section: Verse 1}\n[G]If the trip [D]you're traveli[Am]ng gets long,\n[C]Wishing for a new [G]day to come;\n[D]When the sun rises in[Am] the morning\n[C]We'll set sail and move [G]on.\n\n{section: Chorus}\n[D]Sailing with our F[Am]ather\n[C]You know His ship will never sw[G]ay;\n[D]New Hope on the hor[Am]izon\n[C]We've found the Promised Land to[Am]day.\n\n{section: Verse 2}\nLook out with joy in your eyes,\nThe winds of Truth will guide our way;\nLeaving behind the raging sea,\nOn waves of Love we'll sail away.\n\n{section: Verse 3}\nDarkness it always turns to light,\nThe Promised Land is in sight;\nHe's our guiding star by night\nAnd in the day our bright sunlight.\n"
+  "source": "{title: Sailing With Our Father}\n{key: G}\n{reviewed: false}\n\n{section: Verse 1}\n[G]If the trip [D]you're traveli[Am]ng gets long,\n[C]Wishing for a new [G]day to come;\n[D]When the sun rises in[Am] the morning\n[C]We'll set sail and move [G]on.\n\n{section: Chorus}\n[D]Sailing with our F[Am]ather\n[C]You know His ship will never sw[G]ay;\n[D]New Hope on the hor[Am]izon\n[C]We've found the Promised Land to[Em]day.\n\n{section: Verse 2}\nLook out with joy in your eyes,\nThe winds of Truth will guide our way;\nLeaving behind the raging sea,\nOn waves of Love we'll sail away.\n\n{section: Verse 3}\nDarkness it always turns to light,\nThe Promised Land is in sight;\nHe's our guiding star by night\nAnd in the day our bright sunlight.\n"
 }
