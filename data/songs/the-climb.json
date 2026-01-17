@@ -541,14 +541,14 @@
             },
             {
               "chord": "A",
-              "lyric": "have to l"
+              "lyric": "have to "
             },
             {
               "chord": "B",
-              "lyric": "ose    (edited)"
+              "lyric": "lose    (edited)"
             }
           ],
-          "raw": "[E]Some[F#m]body [E]gonna [A]have to l[B]ose    (edited)"
+          "raw": "[E]Some[F#m]body [E]gonna [A]have to [B]lose    (edited)"
         },
         {
           "tokens": [
@@ -667,5 +667,5 @@
     }
   ],
   "sourcePath": "songs/the-climb.pro",
-  "source": "{title: The Climb}\n{key: E}\n{reviewed: true}\n\n{section: Verse 1}\n[E]I can almost see it\nThat dream I'm dreaming but\n[A]There's a voice inside my head saying\n[F#m]You'll never reach it\n[E]Every step I'm taking,\nEvery move I make feels\n[A]Lost with no direction\n[F#m]My faith is shaking but\n[C#m]I, I gotta keep [G#m]trying\nGotta [A]keep my head held h[F#m]igh\n\n{section: Chorus}\n[E]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[A]Always gonna be an uphill battle\n[F#m]Sometimes I'm gonna [B]have to lose\n[E]It ain't about how fast I get there\nAin't about what's waiting on the other [C#m]side[B]   [A]  \nIt's the cl[E]imb\n\n{section: Verse 2}\n[E]The struggles I'm facing,\nThe chances I'm taking\n[A]Sometimes might knock me down but\n[F#m]No, I'm not breaking\n[E]I may not know it,\nBut these are the moments that\n[A]I'm gonna remember most, yeah\n[F#m]Just gotta keep going\nAnd [C#m]I,\nI gotta be s[G#m]trong\n[A]Just keep pushing [F#m]on\n\n{section: Chorus}\n[E]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[A]Always gonna be an uphill battle\n[F#m]Sometimes I'm gonna [B]have to lose\n[E]It ain't about how fast I get there\nAin't about what's waiting on the other [C#m]side[B]    [A]\nIt's the [E]climb\n\n{section: Solo}\n[E] | [E] | [A] | [A] |\n[F#m] | [E/F#] | [A] | [B] |\n\n{section: Chorus}\n[E]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[A]Always gonna be an uphill battle\n[E]Some[F#m]body [E]gonna [A]have to l[B]ose    (edited)\n[E]Ain't about how fast I get there\nAin't about what's waiting on the other [C#m]sid[B]e  [A]\nIt's the c[E]limb    [A]\n\n{section: Outro}\nKeep on [E]moving, keep climbing, keep the faith, baby\n[A]It's all about, it's all about the c[E]limb\nKeep the faith, keep your fa[A]ith  [E]\n"
+  "source": "{title: The Climb}\n{key: E}\n{reviewed: true}\n\n{section: Verse 1}\n[E]I can almost see it\nThat dream I'm dreaming but\n[A]There's a voice inside my head saying\n[F#m]You'll never reach it\n[E]Every step I'm taking,\nEvery move I make feels\n[A]Lost with no direction\n[F#m]My faith is shaking but\n[C#m]I, I gotta keep [G#m]trying\nGotta [A]keep my head held h[F#m]igh\n\n{section: Chorus}\n[E]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[A]Always gonna be an uphill battle\n[F#m]Sometimes I'm gonna [B]have to lose\n[E]It ain't about how fast I get there\nAin't about what's waiting on the other [C#m]side[B]   [A]  \nIt's the cl[E]imb\n\n{section: Verse 2}\n[E]The struggles I'm facing,\nThe chances I'm taking\n[A]Sometimes might knock me down but\n[F#m]No, I'm not breaking\n[E]I may not know it,\nBut these are the moments that\n[A]I'm gonna remember most, yeah\n[F#m]Just gotta keep going\nAnd [C#m]I,\nI gotta be s[G#m]trong\n[A]Just keep pushing [F#m]on\n\n{section: Chorus}\n[E]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[A]Always gonna be an uphill battle\n[F#m]Sometimes I'm gonna [B]have to lose\n[E]It ain't about how fast I get there\nAin't about what's waiting on the other [C#m]side[B]    [A]\nIt's the [E]climb\n\n{section: Solo}\n[E] | [E] | [A] | [A] |\n[F#m] | [E/F#] | [A] | [B] |\n\n{section: Chorus}\n[E]There's always gonna be another mountain\nI'm always gonna wanna make it move\n[A]Always gonna be an uphill battle\n[E]Some[F#m]body [E]gonna [A]have to [B]lose    (edited)\n[E]Ain't about how fast I get there\nAin't about what's waiting on the other [C#m]sid[B]e  [A]\nIt's the c[E]limb    [A]\n\n{section: Outro}\nKeep on [E]moving, keep climbing, keep the faith, baby\n[A]It's all about, it's all about the c[E]limb\nKeep the faith, keep your fa[A]ith  [E]\n"
 }
