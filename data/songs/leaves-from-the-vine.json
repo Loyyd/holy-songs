@@ -2,7 +2,7 @@
   "id": "leaves-from-the-vine",
   "title": "Leaves from the Vine",
   "key": "A",
-  "reviewed": false,
+  "reviewed": true,
   "sections": [
     {
       "name": "Verse 1",
@@ -260,5 +260,5 @@
     }
   ],
   "sourcePath": "songs/leaves-from-the-vine.pro",
-  "source": "{title: Leaves from the Vine}\n{key: A}\n{reviewed: false}\n\n{section: Verse 1}\n[A]Leaves from the vine, falling so slow;\n[F#m]Like fragile tiny shells, drifting in the foam.\n[A]Little soldier boy, come marching home.\n[F#m]Brave soldier boy, comes marching home.\n\n{section: Verse 2}\n[A]Ash in the snow, falling so slow;\n[F#m]Like fragile, broken hearts, with no place to go.\n[A]Little soldier boy, come marching home\n[F#m]Brave soldier boy, come marching home\n\n{section: Verse 3}\n[A]He thought he knew, what he was fighting for,\n[F#m]But the sight of blood, made him question war.\n[A]Poor soldier boy cold and alone\n[F#m]Bombs fall like the rain, he's all alone.\n\n{section: Verse 4}\n[A]Those leaves did grow, from branches overgrown\n[F#m]Drifting slowly down, resting in the snow.\n[A]Little soldier boy, taken from home\n[F#m]Forced to fight a war, that is not his own.\n\n{section: Verse 5}\n[A]Leaves from the vine, changing so slow\n[F#m]Like empty, fallen souls, looking for a home.\n[A]Little soldier boy, thought that he could soar\n[F#m]Brave soldier boy, died in their [A]war.\n"
+  "source": "{title: Leaves from the Vine}\n{key: A}\n{reviewed: true}\n\n{section: Verse 1}\n[A]Leaves from the vine, falling so slow;\n[F#m]Like fragile tiny shells, drifting in the foam.\n[A]Little soldier boy, come marching home.\n[F#m]Brave soldier boy, comes marching home.\n\n{section: Verse 2}\n[A]Ash in the snow, falling so slow;\n[F#m]Like fragile, broken hearts, with no place to go.\n[A]Little soldier boy, come marching home\n[F#m]Brave soldier boy, come marching home\n\n{section: Verse 3}\n[A]He thought he knew, what he was fighting for,\n[F#m]But the sight of blood, made him question war.\n[A]Poor soldier boy cold and alone\n[F#m]Bombs fall like the rain, he's all alone.\n\n{section: Verse 4}\n[A]Those leaves did grow, from branches overgrown\n[F#m]Drifting slowly down, resting in the snow.\n[A]Little soldier boy, taken from home\n[F#m]Forced to fight a war, that is not his own.\n\n{section: Verse 5}\n[A]Leaves from the vine, changing so slow\n[F#m]Like empty, fallen souls, looking for a home.\n[A]Little soldier boy, thought that he could soar\n[F#m]Brave soldier boy, died in their [A]war.\n"
 }
