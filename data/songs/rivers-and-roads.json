@@ -338,37 +338,85 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "been talking bout the way things change"
+              "lyric": "be"
+            },
+            {
+              "chord": "C",
+              "lyric": "en talking bout the w"
+            },
+            {
+              "chord": "Am",
+              "lyric": "ay thi"
+            },
+            {
+              "chord": "C",
+              "lyric": "ngs change"
             }
           ],
-          "raw": "been talking bout the way things change"
+          "raw": "be[C]en talking bout the w[Am]ay thi[C]ngs change"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "and my family lives in a different state"
+              "lyric": "and my fa"
+            },
+            {
+              "chord": "Am",
+              "lyric": "mily lives i"
+            },
+            {
+              "chord": "F",
+              "lyric": "n a d"
+            },
+            {
+              "chord": "C",
+              "lyric": "ifferent state"
             }
           ],
-          "raw": "and my family lives in a different state"
+          "raw": "and my fa[Am]mily lives i[F]n a d[C]ifferent state"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "and if you don't know what to make of this"
+              "lyric": "and if you do"
+            },
+            {
+              "chord": "Am",
+              "lyric": "n't know"
+            },
+            {
+              "chord": "F",
+              "lyric": " what to"
+            },
+            {
+              "chord": "C",
+              "lyric": " make of this"
             }
           ],
-          "raw": "and if you don't know what to make of this"
+          "raw": "and if you do[Am]n't know[F] what to[C] make of this"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "then we will not relate"
+              "lyric": "then we "
+            },
+            {
+              "chord": "Am",
+              "lyric": "will not rela"
+            },
+            {
+              "chord": "F",
+              "lyric": "te"
+            },
+            {
+              "chord": "C",
+              "lyric": ""
             }
           ],
-          "raw": "then we will not relate"
+          "raw": "then we [Am]will not rela[F]te[C]"
         },
         {
           "tokens": [
@@ -382,11 +430,19 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "then we will not relate"
+              "chord": "C",
+              "lyric": "then we will n"
+            },
+            {
+              "chord": "Am",
+              "lyric": "ot rela"
+            },
+            {
+              "chord": "C",
+              "lyric": "te"
             }
           ],
-          "raw": "then we will not relate"
+          "raw": "[C]then we will n[Am]ot rela[C]te"
         },
         {
           "tokens": [
@@ -1096,5 +1152,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n -\n -\n -\n(add in the ohhhhhhhh's)\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbe[C]en talking bout the w[Am]ay thi[C]ngs change\nand my fa[Am]mily lives i[F]n a d[C]ifferent state\nand if you do[Am]n't know[F] what to[C] make of this\nthen we [Am]will not rela[F]te[C]\nso if you don't know what to make of this\n[C]then we will n[Am]ot rela[C]te\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n -\n -\n -\n(add in the ohhhhhhhh's)\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n"
 }
