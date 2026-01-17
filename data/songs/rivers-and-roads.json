@@ -1,0 +1,55 @@
+{
+  "id": "rivers-and-roads",
+  "title": "Rivers and Roads",
+  "key": "C",
+  "sections": [
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/rivers-and-roads.pro",
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Verse 1}\n\n\n{section: Chorus}\n\n"
+}
