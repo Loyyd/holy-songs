@@ -2,7 +2,7 @@
   "id": "if-i-had-a-hammer",
   "title": "If I Had A Hammer",
   "key": "C",
-  "reviewed": false,
+  "reviewed": true,
   "sections": [
     {
       "name": "Verse 1",
@@ -338,5 +338,5 @@
     }
   ],
   "sourcePath": "songs/if-i-had-a-hammer.pro",
-  "source": "{title: If I Had A Hammer}\n{key: C}\n{reviewed: false}\n\n{section: Verse 1}\n[G7][C]If I had a [C]ha[Em]mmer,[F] I'd [G]hammer in the[C] mor[Em]ning[F],\n[G]I'd hammer in the [C]eve[Em]ning, [F]all over this la[G]nd.\nI'd hammer out [C]danger, I'd hammer out a warn[Am]ing,\nI'd hammer out [F]love be[C]tween my [F]brothers and my [C]sisters,\n[F]All [C]ove[G]r this [C]la[Em]nd.[F]   [G]\n\n{section: Verse 2}\nIf I had a bell, I'd ring it in the morning,\nI'd ring it in the evening, all over this land,\nI'd ring out danger, I'd ring out a warning,\nI'd ring out love between my brothers and my sisters,\nAll over this land.\n\n{section: Verse 3}\nIf I had a song, I'd sing it in the morning\nI'd sing it in the evening, all over this land\nI'd sing out danger I'd sing out a warning\nI'd sing out love between my brothers and my sisters\nAll over this land\n\n{section: Verse 4}\nWell, I've got a hammer and I've got a bell\nand I've got a song to sing, all over this land\nIt's the hammer of justice; it's the bell of freedom\nIt's a song about love between my brothers and my sisters\nAll over this land\n"
+  "source": "{title: If I Had A Hammer}\n{key: C}\n{reviewed: true}\n\n{section: Verse 1}\n[G7][C]If I had a [C]ha[Em]mmer,[F] I'd [G]hammer in the[C] mor[Em]ning[F],\n[G]I'd hammer in the [C]eve[Em]ning, [F]all over this la[G]nd.\nI'd hammer out [C]danger, I'd hammer out a warn[Am]ing,\nI'd hammer out [F]love be[C]tween my [F]brothers and my [C]sisters,\n[F]All [C]ove[G]r this [C]la[Em]nd.[F]   [G]\n\n{section: Verse 2}\nIf I had a bell, I'd ring it in the morning,\nI'd ring it in the evening, all over this land,\nI'd ring out danger, I'd ring out a warning,\nI'd ring out love between my brothers and my sisters,\nAll over this land.\n\n{section: Verse 3}\nIf I had a song, I'd sing it in the morning\nI'd sing it in the evening, all over this land\nI'd sing out danger I'd sing out a warning\nI'd sing out love between my brothers and my sisters\nAll over this land\n\n{section: Verse 4}\nWell, I've got a hammer and I've got a bell\nand I've got a song to sing, all over this land\nIt's the hammer of justice; it's the bell of freedom\nIt's a song about love between my brothers and my sisters\nAll over this land\n"
 }
