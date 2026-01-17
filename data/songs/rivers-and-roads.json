@@ -4,8 +4,17 @@
   "key": "C",
   "sections": [
     {
-      "name": "Verse 1",
+      "name": "Intro",
       "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
         {
           "tokens": [
             {
@@ -33,10 +42,1126 @@
           "tokens": [
             {
               "chord": null,
+              "lyric": "a year from now we'll all be gone"
+            }
+          ],
+          "raw": "a year from now we'll all be gone"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "all our friends will move away"
+            }
+          ],
+          "raw": "all our friends will move away"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and they're going to better places"
+            }
+          ],
+          "raw": "and they're going to better places"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "but our friends will be gone away"
+            }
+          ],
+          "raw": "but our friends will be gone away"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
               "lyric": ""
             }
           ],
           "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "nothing is as it has been"
+            }
+          ],
+          "raw": "nothing is as it has been"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and I miss your face like hell"
+            }
+          ],
+          "raw": "and I miss your face like hell"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and I guess it's just as well"
+            }
+          ],
+          "raw": "and I guess it's just as well"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "but I miss your face like hell"
+            }
+          ],
+          "raw": "but I miss your face like hell"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Chorus",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Chorus]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhh   ohhhh  oh"
+            }
+          ],
+          "raw": "ohhhhh   ohhhh  oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhhhhhh  ohhhhh"
+            }
+          ],
+          "raw": "ohhhhhhhhh  ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhh   ohhhh  oh"
+            }
+          ],
+          "raw": "ohhhhh   ohhhh  oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhhhhhh  ohhhhh"
+            }
+          ],
+          "raw": "ohhhhhhhhh  ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Verse 2",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Verse 2]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "     C                Am         C      C"
+            }
+          ],
+          "raw": "     C                Am         C      C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "been talking bout the way things change"
+            }
+          ],
+          "raw": "been talking bout the way things change"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "       Am      F         C        C     C"
+            }
+          ],
+          "raw": "       Am      F         C        C     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and my family lives in a different state"
+            }
+          ],
+          "raw": "and my family lives in a different state"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "           Am         F       C"
+            }
+          ],
+          "raw": "           Am         F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and if you don't know what to make of this"
+            }
+          ],
+          "raw": "and if you don't know what to make of this"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "     Am      F   C"
+            }
+          ],
+          "raw": "     Am      F   C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "then we will not relate"
+            }
+          ],
+          "raw": "then we will not relate"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "          Am         F       C"
+            }
+          ],
+          "raw": "          Am         F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "so if you don't know what to make of this"
+            }
+          ],
+          "raw": "so if you don't know what to make of this"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "     Am      F   C"
+            }
+          ],
+          "raw": "     Am      F   C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "then we will not relate"
+            }
+          ],
+          "raw": "then we will not relate"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Chorus",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Chorus]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C        Am     C"
+            }
+          ],
+          "raw": "C        Am     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhh   ohhhh  oh"
+            }
+          ],
+          "raw": "ohhhhh   ohhhh  oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am    F     C"
+            }
+          ],
+          "raw": "Am    F     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhhhhhh  ohhhhh"
+            }
+          ],
+          "raw": "ohhhhhhhhh  ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C        Am     C"
+            }
+          ],
+          "raw": "C        Am     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhh   ohhhh  oh"
+            }
+          ],
+          "raw": "ohhhhh   ohhhh  oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am    F     C"
+            }
+          ],
+          "raw": "Am    F     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhhhhhh  ohhhhh"
+            }
+          ],
+          "raw": "ohhhhhhhhh  ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C        Am     C"
+            }
+          ],
+          "raw": "C        Am     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhh   ohhhh  oh"
+            }
+          ],
+          "raw": "ohhhhh   ohhhh  oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am    F     C"
+            }
+          ],
+          "raw": "Am    F     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhhhhhh  ohhhhh"
+            }
+          ],
+          "raw": "ohhhhhhhhh  ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C        Am     C"
+            }
+          ],
+          "raw": "C        Am     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhh   ohhhh  oh"
+            }
+          ],
+          "raw": "ohhhhh   ohhhh  oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am    F     C"
+            }
+          ],
+          "raw": "Am    F     C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "ohhhhhhhhh  ohhhhh"
+            }
+          ],
+          "raw": "ohhhhhhhhh  ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Outro",
+              "lyric": ""
+            }
+          ],
+          "raw": "[Outro]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C"
+            }
+          ],
+          "raw": "C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am         C"
+            }
+          ],
+          "raw": "Am         C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am          F       C"
+            }
+          ],
+          "raw": "Am          F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C"
+            }
+          ],
+          "raw": "C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am         C"
+            }
+          ],
+          "raw": "Am         C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am          F       C"
+            }
+          ],
+          "raw": "Am          F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "(add in the ohhhhhhhh's)"
+            }
+          ],
+          "raw": "(add in the ohhhhhhhh's)"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C"
+            }
+          ],
+          "raw": "C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am         C"
+            }
+          ],
+          "raw": "Am         C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am          F       C"
+            }
+          ],
+          "raw": "Am          F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C"
+            }
+          ],
+          "raw": "C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am         C"
+            }
+          ],
+          "raw": "Am         C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am          F       C"
+            }
+          ],
+          "raw": "Am          F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C"
+            }
+          ],
+          "raw": "C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am         C"
+            }
+          ],
+          "raw": "Am         C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am          F       C"
+            }
+          ],
+          "raw": "Am          F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "C"
+            }
+          ],
+          "raw": "C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am         C"
+            }
+          ],
+          "raw": "Am         C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Am          F       C"
+            }
+          ],
+          "raw": "Am          F       C"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "N.C."
+            }
+          ],
+          "raw": "N.C."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "N.C."
+            }
+          ],
+          "raw": "N.C."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "N.C."
+            }
+          ],
+          "raw": "N.C."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers and roads"
+            }
+          ],
+          "raw": "rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "rivers 'til I reach you"
+            }
+          ],
+          "raw": "rivers 'til I reach you"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "X"
+            }
+          ],
+          "raw": "X"
         },
         {
           "tokens": [
@@ -51,5 +1176,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Verse 1}\n\n\n{section: Chorus}\n\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Chorus}\na year from now we'll all be gone\nall our friends will move away\nand they're going to better places\nbut our friends will be gone away\n \nnothing is as it has been\nand I miss your face like hell\nand I guess it's just as well\nbut I miss your face like hell\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \n \n[Verse 2]\n \n     C                Am         C      C\nbeen talking bout the way things change\n       Am      F         C        C     C\nand my family lives in a different state\n           Am         F       C\nand if you don't know what to make of this\n     Am      F   C\nthen we will not relate\n          Am         F       C\nso if you don't know what to make of this\n     Am      F   C\nthen we will not relate\n \n \n[Chorus]\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \n \n[Outro]\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
 }
