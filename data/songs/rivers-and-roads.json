@@ -36,7 +36,7 @@
       ]
     },
     {
-      "name": "Chorus",
+      "name": "Verse 1",
       "lines": [
         {
           "tokens": [
@@ -228,15 +228,265 @@
             }
           ],
           "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "ohhhhh   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "ohhhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "oh"
+            }
+          ],
+          "raw": "[C]ohhhhh   [Am]ohhhh  [C]oh"
         },
         {
           "tokens": [
             {
-              "chord": "Chorus",
+              "chord": "Am",
+              "lyric": "ohhhhhhh"
+            },
+            {
+              "chord": "F",
+              "lyric": "hh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "ohhhhh"
+            }
+          ],
+          "raw": "[Am]ohhhhhhh[F]hh  [C]ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
               "lyric": ""
             }
           ],
-          "raw": "[Chorus]"
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "ohhhhh   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "ohhhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "oh"
+            }
+          ],
+          "raw": "[C]ohhhhh   [Am]ohhhh  [C]oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "ohhhhhh"
+            },
+            {
+              "chord": "F",
+              "lyric": "hhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "ohhhhh"
+            }
+          ],
+          "raw": "[Am]ohhhhhh[F]hhh  [C]ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "been talking bout the way things change"
+            }
+          ],
+          "raw": "been talking bout the way things change"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and my family lives in a different state"
+            }
+          ],
+          "raw": "and my family lives in a different state"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "and if you don't know what to make of this"
+            }
+          ],
+          "raw": "and if you don't know what to make of this"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "then we will not relate"
+            }
+          ],
+          "raw": "then we will not relate"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "so if you don't know what to make of this"
+            }
+          ],
+          "raw": "so if you don't know what to make of this"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "then we will not relate"
+            }
+          ],
+          "raw": "then we will not relate"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "ohhhhh   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "ohhhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "oh"
+            }
+          ],
+          "raw": "[C]ohhhhh   [Am]ohhhh  [C]oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "ohhhhhhh"
+            },
+            {
+              "chord": "F",
+              "lyric": "hh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "ohhhhh"
+            }
+          ],
+          "raw": "[Am]ohhhhhhh[F]hh  [C]ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C",
+              "lyric": "ohhhhh   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "ohhhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "oh"
+            }
+          ],
+          "raw": "[C]ohhhhh   [Am]ohhhh  [C]oh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "ohhhhhh"
+            },
+            {
+              "chord": "F",
+              "lyric": "hhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "ohhhhh"
+            }
+          ],
+          "raw": "[Am]ohhhhhh[F]hhh  [C]ohhhhh"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
         },
         {
           "tokens": [
@@ -332,70 +582,12 @@
             }
           ],
           "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Verse 2",
-              "lyric": ""
-            }
-          ],
-          "raw": "[Verse 2]"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "been talking bout the way things change"
-            }
-          ],
-          "raw": "been talking bout the way things change"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "and my family lives in a different state"
-            }
-          ],
-          "raw": "and my family lives in a different state"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "and if you don't know what to make of this"
-            }
-          ],
-          "raw": "and if you don't know what to make of this"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "then we will not relate"
-            }
-          ],
-          "raw": "then we will not relate"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "so if you don't know what to make of this"
-            }
-          ],
-          "raw": "so if you don't know what to make of this"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "then we will not relate"
-            }
-          ],
-          "raw": "then we will not relate"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
         {
           "tokens": [
             {
@@ -404,213 +596,6 @@
             }
           ],
           "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Chorus",
-              "lyric": ""
-            }
-          ],
-          "raw": "[Chorus]"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhh   ohhhh  oh"
-            }
-          ],
-          "raw": "ohhhhh   ohhhh  oh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhhhhhh  ohhhhh"
-            }
-          ],
-          "raw": "ohhhhhhhhh  ohhhhh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhh   ohhhh  oh"
-            }
-          ],
-          "raw": "ohhhhh   ohhhh  oh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Am    F     C"
-            }
-          ],
-          "raw": "Am    F     C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhhhhhh  ohhhhh"
-            }
-          ],
-          "raw": "ohhhhhhhhh  ohhhhh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "C        Am     C"
-            }
-          ],
-          "raw": "C        Am     C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhh   ohhhh  oh"
-            }
-          ],
-          "raw": "ohhhhh   ohhhh  oh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Am    F     C"
-            }
-          ],
-          "raw": "Am    F     C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhhhhhh  ohhhhh"
-            }
-          ],
-          "raw": "ohhhhhhhhh  ohhhhh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "C        Am     C"
-            }
-          ],
-          "raw": "C        Am     C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhh   ohhhh  oh"
-            }
-          ],
-          "raw": "ohhhhh   ohhhh  oh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Am    F     C"
-            }
-          ],
-          "raw": "Am    F     C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "ohhhhhhhhh  ohhhhh"
-            }
-          ],
-          "raw": "ohhhhhhhhh  ohhhhh"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": "Outro",
-              "lyric": ""
-            }
-          ],
-          "raw": "[Outro]"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "C"
-            }
-          ],
-          "raw": "C"
         },
         {
           "tokens": [
@@ -625,28 +610,10 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "Am         C"
-            }
-          ],
-          "raw": "Am         C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
               "lyric": "rivers and roads"
             }
           ],
           "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Am          F       C"
-            }
-          ],
-          "raw": "Am          F       C"
         },
         {
           "tokens": [
@@ -1201,5 +1168,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Chorus}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n[Chorus]\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n[Verse 2]\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \n \n[Outro]\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\nrivers and roads\nrivers and roads\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
 }
