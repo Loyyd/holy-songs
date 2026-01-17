@@ -648,92 +648,50 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "C"
-            }
-          ],
-          "raw": "C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
+            }
+          ],
+          "raw": "[Am]rivers and [C]roads"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
+            {
+              "chord": "F",
+              "lyric": "I reach "
+            },
+            {
+              "chord": "C",
+              "lyric": "you"
+            }
+          ],
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "Am         C"
+              "lyric": ""
             }
           ],
-          "raw": "Am         C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "Am          F       C"
-            }
-          ],
-          "raw": "Am          F       C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
-            }
-          ],
-          "raw": "rivers 'til I reach you"
+          "raw": ""
         },
         {
           "tokens": [
@@ -765,56 +723,41 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "C"
-            }
-          ],
-          "raw": "C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Am         C"
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": "Am         C"
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": "Am          F       C"
-            }
-          ],
-          "raw": "Am          F       C"
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -828,56 +771,41 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "C"
-            }
-          ],
-          "raw": "C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Am         C"
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": "Am         C"
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": "Am          F       C"
-            }
-          ],
-          "raw": "Am          F       C"
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -891,56 +819,41 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "C"
-            }
-          ],
-          "raw": "C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Am         C"
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": "Am         C"
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": "Am          F       C"
-            }
-          ],
-          "raw": "Am          F       C"
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -954,56 +867,41 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "C"
-            }
-          ],
-          "raw": "C"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "Am         C"
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": "Am         C"
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": "Am          F       C"
-            }
-          ],
-          "raw": "Am          F       C"
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -1026,47 +924,41 @@
         {
           "tokens": [
             {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": ""
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": ""
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -1089,47 +981,41 @@
         {
           "tokens": [
             {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": ""
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": ""
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -1152,56 +1038,41 @@
         {
           "tokens": [
             {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": ""
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": ""
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
-            }
-          ],
-          "raw": "rivers and roads"
-        },
-        {
-          "tokens": [
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
             {
-              "chord": null,
-              "lyric": ""
-            }
-          ],
-          "raw": ""
-        },
-        {
-          "tokens": [
+              "chord": "F",
+              "lyric": "I reach "
+            },
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
-        },
-        {
-          "tokens": [
-            {
-              "chord": null,
-              "lyric": "X"
-            }
-          ],
-          "raw": "X"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -1216,5 +1087,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n\n\n\n\nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n \n(add in the ohhhhhhhh's)\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \nN.C.\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n"
 }
