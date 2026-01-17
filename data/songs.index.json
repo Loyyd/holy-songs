@@ -2201,7 +2201,7 @@
     "id": "the-climb",
     "title": "The Climb",
     "key": "D",
-    "reviewed": false,
+    "reviewed": true,
     "sections": [
       "[D]I can almost see it",
       "That dream I'm dreaming but",
