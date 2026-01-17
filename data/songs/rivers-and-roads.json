@@ -42,37 +42,85 @@
           "tokens": [
             {
               "chord": null,
-              "lyric": "a year from now we'll all be gone"
+              "lyric": "a "
+            },
+            {
+              "chord": "C",
+              "lyric": "year from now we'll a"
+            },
+            {
+              "chord": "Am",
+              "lyric": "ll be "
+            },
+            {
+              "chord": "C",
+              "lyric": "gone"
             }
           ],
-          "raw": "a year from now we'll all be gone"
+          "raw": "a [C]year from now we'll a[Am]ll be [C]gone"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "all our friends will move away"
+              "lyric": "all our f"
+            },
+            {
+              "chord": "Am",
+              "lyric": "riends will "
+            },
+            {
+              "chord": "F",
+              "lyric": "move "
+            },
+            {
+              "chord": "C",
+              "lyric": "away"
             }
           ],
-          "raw": "all our friends will move away"
+          "raw": "all our f[Am]riends will [F]move [C]away"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "and they're going to better places"
+              "lyric": "and they're g"
+            },
+            {
+              "chord": "Am",
+              "lyric": "oing to "
+            },
+            {
+              "chord": "F",
+              "lyric": "better p"
+            },
+            {
+              "chord": "C",
+              "lyric": "laces"
             }
           ],
-          "raw": "and they're going to better places"
+          "raw": "and they're g[Am]oing to [F]better p[C]laces"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "but our friends will be gone away"
+              "lyric": "but our "
+            },
+            {
+              "chord": "Am",
+              "lyric": "friends will "
+            },
+            {
+              "chord": "F",
+              "lyric": "be gone "
+            },
+            {
+              "chord": "C",
+              "lyric": "away"
             }
           ],
-          "raw": "but our friends will be gone away"
+          "raw": "but our [Am]friends will [F]be gone [C]away"
         },
         {
           "tokens": [
@@ -86,38 +134,82 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "nothing is as it has been"
+              "chord": "C",
+              "lyric": "nothing is as "
+            },
+            {
+              "chord": "Am",
+              "lyric": "it has "
+            },
+            {
+              "chord": "C",
+              "lyric": "been"
             }
           ],
-          "raw": "nothing is as it has been"
+          "raw": "[C]nothing is as [Am]it has [C]been"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "and I miss your face like hell"
+              "lyric": "and I "
+            },
+            {
+              "chord": "Am",
+              "lyric": "miss your f"
+            },
+            {
+              "chord": "F",
+              "lyric": "ace like "
+            },
+            {
+              "chord": "C",
+              "lyric": "hell"
             }
           ],
-          "raw": "and I miss your face like hell"
+          "raw": "and I [Am]miss your f[F]ace like [C]hell"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "and I guess it's just as well"
+              "lyric": "and I "
+            },
+            {
+              "chord": "Am",
+              "lyric": "guess it's "
+            },
+            {
+              "chord": "F",
+              "lyric": "just as "
+            },
+            {
+              "chord": "C",
+              "lyric": "well"
             }
           ],
-          "raw": "and I guess it's just as well"
+          "raw": "and I [Am]guess it's [F]just as [C]well"
         },
         {
           "tokens": [
             {
               "chord": null,
-              "lyric": "but I miss your face like hell"
+              "lyric": "but I m"
+            },
+            {
+              "chord": "Am",
+              "lyric": "iss your "
+            },
+            {
+              "chord": "F",
+              "lyric": "face like "
+            },
+            {
+              "chord": "C",
+              "lyric": "hell"
             }
           ],
-          "raw": "but I miss your face like hell"
+          "raw": "but I m[Am]iss your [F]face like [C]hell"
         },
         {
           "tokens": [
@@ -149,20 +241,36 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "ohhhhh   ohhhh  oh"
+              "chord": "C",
+              "lyric": "ohhhhh   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "ohhhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "oh"
             }
           ],
-          "raw": "ohhhhh   ohhhh  oh"
+          "raw": "[C]ohhhhh   [Am]ohhhh  [C]oh"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "ohhhhhhhhh  ohhhhh"
+              "chord": "Am",
+              "lyric": "ohhhhhhh"
+            },
+            {
+              "chord": "F",
+              "lyric": "hh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "ohhhhh"
             }
           ],
-          "raw": "ohhhhhhhhh  ohhhhh"
+          "raw": "[Am]ohhhhhhh[F]hh  [C]ohhhhh"
         },
         {
           "tokens": [
@@ -176,20 +284,36 @@
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "ohhhhh   ohhhh  oh"
+              "chord": "C",
+              "lyric": "ohhhhh   "
+            },
+            {
+              "chord": "Am",
+              "lyric": "ohhhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "oh"
             }
           ],
-          "raw": "ohhhhh   ohhhh  oh"
+          "raw": "[C]ohhhhh   [Am]ohhhh  [C]oh"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "ohhhhhhhhh  ohhhhh"
+              "chord": "Am",
+              "lyric": "ohhhhhh"
+            },
+            {
+              "chord": "F",
+              "lyric": "hhh  "
+            },
+            {
+              "chord": "C",
+              "lyric": "ohhhhh"
             }
           ],
-          "raw": "ohhhhhhhhh  ohhhhh"
+          "raw": "[Am]ohhhhhh[F]hhh  [C]ohhhhh"
         },
         {
           "tokens": [
@@ -1077,5 +1201,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Chorus}\na year from now we'll all be gone\nall our friends will move away\nand they're going to better places\nbut our friends will be gone away\n \nnothing is as it has been\nand I miss your face like hell\nand I guess it's just as well\nbut I miss your face like hell\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \n \n[Verse 2]\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \n \n[Outro]\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Chorus}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n[Chorus]\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n[Verse 2]\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n \n \n[Chorus]\nohhhhh   ohhhh  oh\nohhhhhhhhh  ohhhhh\n \nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \nC        Am     C\nohhhhh   ohhhh  oh\nAm    F     C\nohhhhhhhhh  ohhhhh\n \n \n[Outro]\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
 }
