@@ -600,29 +600,41 @@
         {
           "tokens": [
             {
-              "chord": null,
+              "chord": "C",
               "lyric": "rivers and roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[C]rivers and roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers and roads"
+              "chord": "Am",
+              "lyric": "rivers and "
+            },
+            {
+              "chord": "C",
+              "lyric": "roads"
             }
           ],
-          "raw": "rivers and roads"
+          "raw": "[Am]rivers and [C]roads"
         },
         {
           "tokens": [
             {
-              "chord": null,
-              "lyric": "rivers 'til I reach you"
+              "chord": "Am",
+              "lyric": "rivers 'til "
+            },
+            {
+              "chord": "F",
+              "lyric": "I reach "
+            },
+            {
+              "chord": "C",
+              "lyric": "you"
             }
           ],
-          "raw": "rivers 'til I reach you"
+          "raw": "[Am]rivers 'til [F]I reach [C]you"
         },
         {
           "tokens": [
@@ -1204,5 +1216,5 @@
     }
   ],
   "sourcePath": "songs/rivers-and-roads.pro",
-  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\nrivers and roads\nrivers and roads\nrivers 'til I reach you\n \n\n\n\n\nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
+  "source": "{title: Rivers and Roads}\n{key: C}\n\n{section: Intro}\n          \n        \n\n{section: Verse 1}\na [C]year from now we'll a[Am]ll be [C]gone\nall our f[Am]riends will [F]move [C]away\nand they're g[Am]oing to [F]better p[C]laces\nbut our [Am]friends will [F]be gone [C]away\n \n[C]nothing is as [Am]it has [C]been\nand I [Am]miss your f[F]ace like [C]hell\nand I [Am]guess it's [F]just as [C]well\nbut I m[Am]iss your [F]face like [C]hell\n \n \n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Verse 2}\nbeen talking bout the way things change\nand my family lives in a different state\nand if you don't know what to make of this\nthen we will not relate\nso if you don't know what to make of this\nthen we will not relate\n\n{section: Chorus}\n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhhh[F]hh  [C]ohhhhh\n \n[C]ohhhhh   [Am]ohhhh  [C]oh\n[Am]ohhhhhh[F]hhh  [C]ohhhhh\n \n \n{section: Outro}\n\n[C]rivers and roads\n[Am]rivers and [C]roads\n[Am]rivers 'til [F]I reach [C]you\n \n\n\n\n\nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \n(add in the ohhhhhhhh's)\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nC\nrivers and roads\nAm         C\nrivers and roads\nAm          F       C\nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\n \nN.C.\nrivers and roads\n \nrivers and roads\n \nrivers 'til I reach you\nX\n"
 }
