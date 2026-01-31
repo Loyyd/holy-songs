@@ -2,7 +2,7 @@
   "id": "song-of-the-victors",
   "title": "Song of the Victors",
   "key": "F",
-  "reviewed": false,
+  "reviewed": true,
   "sections": [
     {
       "name": "Verse 1",
@@ -432,5 +432,5 @@
     }
   ],
   "sourcePath": "songs/song-of-the-victors.pro",
-  "source": "{title: Song of the Victors}\n{key: F}\n{reviewed: false}\n\n{section: Verse 1}\nSing a[F] loud[C7] Hosanna to the L[Dm]ord,\nOffer everyth[Bb]ing with humble [F]heart.\nCome [Gm]attend the L[Am]ord, O re[F]joice in Him\nWho brings [C7]new life to all the [F]world.\nLet us [Dm]go determined to [Am]seek and find\nAll the p[F]romised g[Bb]lory of the [F]Lord.\n\n{section: Chorus}\nTher[Gm]e we'll sing [Am]new songs [Dm]in the Garden fair,\nSongs of [Am]freedom brig[Dm]ht with [Am]happiness.\nTher[Bb]e we'll sing new songs [Am]in the Garden fair,\nSo[F]ngs of fre[C7]edom bright [F]with happiness.\n\n{section: Verse 2}\nThere are clouds of darkness on the path,\nSinful night enveloping the land.\nBrush the clouds aside and behold the light\nThat shines in beauty everywhere.\nLet us go determined to seek and find\nOur new world of joyfulness and peace.\n\n{section: Verse 3}\nOh, my brothers all rejoice today,\nYou who sing the song of our new life.\nOffer praise on high, blessed for evermore,\nAs chosen people of the Lord.\nLet us go determined to seek and find\nAll the brilliant glory of our dreams.\n\n{section: Verse 4}\nWe uphold the standard of the Lord,\nTo restore His true ideal.\nFreely give your love, share the Father's joy,\nAnd beauty will return to you.\nLet us go determined to seek and find\nHarmony within the Garden bright.\n"
+  "source": "{title: Song of the Victors}\n{key: F}\n{reviewed: true}\n\n{section: Verse 1}\nSing a[F] loud[C7] Hosanna to the L[Dm]ord,\nOffer everyth[Bb]ing with humble [F]heart.\nCome [Gm]attend the L[Am]ord, O re[F]joice in Him\nWho brings [C7]new life to all the [F]world.\nLet us [Dm]go determined to [Am]seek and find\nAll the p[F]romised g[Bb]lory of the [F]Lord.\n\n{section: Chorus}\nTher[Gm]e we'll sing [Am]new songs [Dm]in the Garden fair,\nSongs of [Am]freedom brig[Dm]ht with [Am]happiness.\nTher[Bb]e we'll sing new songs [Am]in the Garden fair,\nSo[F]ngs of fre[C7]edom bright [F]with happiness.\n\n{section: Verse 2}\nThere are clouds of darkness on the path,\nSinful night enveloping the land.\nBrush the clouds aside and behold the light\nThat shines in beauty everywhere.\nLet us go determined to seek and find\nOur new world of joyfulness and peace.\n\n{section: Verse 3}\nOh, my brothers all rejoice today,\nYou who sing the song of our new life.\nOffer praise on high, blessed for evermore,\nAs chosen people of the Lord.\nLet us go determined to seek and find\nAll the brilliant glory of our dreams.\n\n{section: Verse 4}\nWe uphold the standard of the Lord,\nTo restore His true ideal.\nFreely give your love, share the Father's joy,\nAnd beauty will return to you.\nLet us go determined to seek and find\nHarmony within the Garden bright.\n"
 }
