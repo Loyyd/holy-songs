@@ -396,26 +396,6 @@
     ]
   },
   {
-    "id": "he-has-called-me",
-    "title": "He Has Called Me",
-    "key": "Eb",
-    "reviewed": false,
-    "sections": [
-      "[Eb]The Lord has called and I will go, where He leads me I will follow;",
-      "[Ab]The same in sorrow as in joy; with one heart I follow my Lord.",
-      "[Eb]For none on earth can turn me back, not even death can stop me,",
-      "[Ab]No none on earth can turn me back, not even death can stop me.",
-      "[Bb]To barren valleys piled with bones, I will take the living message;",
-      "[F7]To Sodom's foul and wretched streets, I will bear the word with love.",
-      "[Bb]I bind my heart, my life to Yours, that it may be an offering,",
-      "[Bb]I bind my heart, my life to Yours, that it may be an offering.",
-      "[Eb]To You belongs our full acclaim, all glory power and honor,",
-      "[Ab]The world's contempt I do not fear, I will gladly bear the cross.",
-      "[Bb]Without esteem, without renown, I only wish to follow,",
-      "[Bb]Without esteem, without renown, I only wish to follow."
-    ]
-  },
-  {
     "id": "heart-of-the-father",
     "title": "Heart of the Father",
     "key": "Eb",
@@ -499,30 +479,6 @@
       "And catch a gleam of glory bright,",
       "But still I'll pray till heav'n I've found,",
       "\"Lord, lead me on to higher ground.\""
-    ]
-  },
-  {
-    "id": "hollo-arirang",
-    "title": "Hollo Arirang",
-    "key": "D",
-    "reviewed": false,
-    "sections": [
-      "[D]Cho molli tonghae pada ero-u-un som",
-      "[Bm]O-onuldo kosen baram puro-ogetchi",
-      "[G]Choguman yolgullo param-ma-juni",
-      "[A]Doktoya kan bame jal jannunya",
-      "[D]A-arirang, A-arirang, Hol-lo Arirang",
-      "[Bm]A-arirang kogerul nomo kabodja",
-      "[G]Kadaga himdulmyon shio kadorado",
-      "[A]Sonjabgo kaboja kachi kabocha",
-      "[D]Kym kangsan malkun muurun tonggeron hulgo",
-      "[Bm]Seoraksan malgeun muldo donghae kanundae",
-      "[G]Urinae maeum dulun odiro kaneunga",
-      "[A]Onjejchum urineun hanaga doelkka",
-      "[D]Pekdu san dumankangeso pe tago donara",
-      "[Bm]Hanra san jejue so betakgo kanda",
-      "[G]kadaga hollo somae da julnerigo",
-      "[A]do oru neun achim herul majiheboja"
     ]
   },
   {
@@ -846,34 +802,6 @@
     ]
   },
   {
-    "id": "it-s-me",
-    "title": "It's Me",
-    "key": "E",
-    "reviewed": false,
-    "sections": [
-      "[E]It's me, it's me, it's me, oh Lord",
-      "[B7]Standing in the need of prayer",
-      "[E]It's me, it's me, it's me, oh Lord",
-      "[C#m]Standing in the need of prayer",
-      "[E]Not my brother, not my sister, but it's me oh Lord",
-      "[A]Standing in the need of prayer",
-      "[E]Not my brother, not my sister, but it's me oh Lord",
-      "[C#m]Standing in the need of prayer",
-      "[E]Not the deacon, not the elder, But it's me oh Lord",
-      "[A]Standing in the need of prayer",
-      "[E]Not the deacon, not the elder, But it's me oh Lord",
-      "[C#m]Standing in the need of prayer",
-      "[E]Not the preacher, not the teacher, But it's me oh Lord",
-      "[A]Standing in the need of prayer",
-      "[E]Not the preacher, not the teacher, But it's me oh Lord",
-      "[C#m]Standing in the need of prayer",
-      "[E]Not my father, not my mother, But it's me oh Lord",
-      "[A]Standing in the need of prayer",
-      "[E]Not my father, not my mother, But it's me oh Lord",
-      "[C#m]Standing in the need of prayer"
-    ]
-  },
-  {
     "id": "just-a-closer-walk-with-thee",
     "title": "Just a Closer Walk with Thee",
     "key": "A",
@@ -1019,37 +947,6 @@
       "[G]Ba[F]ck to the beginning ",
       "[C/E]When I was young",
       "[G]Running through the fields with you"
-    ]
-  },
-  {
-    "id": "light-in-the-east",
-    "title": "Light in the East",
-    "key": "A",
-    "reviewed": false,
-    "sections": [
-      "[A]Light that drives out the darkness is shining brightly from the [D]East.",
-      "[A]Sons and daughters of light are dwelling in the [C#7]Garden [D]there.",
-      "[A6]This is God's land of righteousness, chosen by Him to do His [E]will;",
-      "[E7]These are God's people, chosen ones, upright in mind and [A]heart.",
-      "[A]As we now receive the love of [C#7]God, our boundless source of [D]light,",
-      "[F#m]Come, let's join together and in [C#m]brightness we shall [E7]live;",
-      "[A]We'll shine like the brightest star to all of [C#7]heaven and [D]earth!",
-      "[A6]Good that wins over evil is now uniting in the [E7]East.",
-      "[A]People longing for good are dwelling in the garden there.",
-      "[A]Country of prayer and holy life, honoring God eternally;",
-      "[A]People who wear the robe of white, sacrificing for the Lord;",
-      "[A]Love that ends all the hatred is now to blossom in the East.",
-      "[A]Men refusing to sin are dwelling in the garden there.",
-      "[A]Ridiculed and rejected land, separates good from sinfulness;",
-      "[A]People who know the thorny path knowing God's wondrous love;",
-      "[A]Greatest victory eternal is now beginning in the East.",
-      "[A]Those who crush evil ways are dwelling in the garden there.",
-      "[A]Country divided North and South truly knows good from sinfulness;",
-      "[A]People who shed their precious blood, given for the sins of men;",
-      "[A]Brilliant glory of Heaven now comes in power from the East.",
-      "[A]Those who carry the cross, are dwelling in the garden there.",
-      "[A]Country where soon the Sun will rise, welcoming soon the Son of Man;",
-      "[A]There the bright Rose of Sharon blooms, beautiful garden of God;"
     ]
   },
   {
@@ -1253,53 +1150,6 @@
     ]
   },
   {
-    "id": "my-cross",
-    "title": "My Cross",
-    "key": "G",
-    "reviewed": false,
-    "sections": [
-      "[G]Who can I go to for my help to bear my heavy cross?",
-      "[C]Has not the Lord been helping me before I ever knew?",
-      "[G]Because I had no strength to bear the load He gave to me,",
-      "[Em]Six thousand yeas of blood was shed, the thorny path prolonged.",
-      "[Am7]I will shoulder now the cross, and pledge I shall endure;",
-      "[D]Far beyond Golgotha's pain, now hear the victory.",
-      "[G]The Lord would never give to me a cross I could not bear.",
-      "[C]If I give all the strength I have I shall achieve the goal.",
-      "[G]I sacrifice to do His will, no trial I cannot bear.",
-      "[Am7]I give my life to go this way, no one can turn me back.",
-      "[D7]Our Father always persevered to see His will be done,",
-      "[G]If all His children join the task it soon will be achieved.",
-      "[C]If not, the lonely years of strife will all have been in vain.",
-      "[G]No matter what, in fighting on, we'll win eternal joy."
-    ]
-  },
-  {
-    "id": "my-offering",
-    "title": "My Offering",
-    "key": "C",
-    "reviewed": false,
-    "sections": [
-      "[C]Now I have to come to know, I've truly come to know,",
-      "[G]Father, how your [A]heart is filled with [D]tears,",
-      "[D]For your altar [A]stands and waits for an [D]offering never made.",
-      "[G]He cries through [D]all the ages for [G]still no offering [A]comes, [D]",
-      "[G]Our Father [D]cries in loneliness for [A7]He cannot share His [D]heart.",
-      "Now I have come to know, I've truly come to know,",
-      "Father, now I know your blessed grace;",
-      "For you raised me from the darkness and gave to me new life.",
-      "I live and stand before you, but now you cry again.",
-      "My Father has to say to me,",
-      "\"Go and die now in my place.\"",
-      "Now pledging I will go, determined I will go,",
-      "Father, now I'm changing to Your way,",
-      "For no other will I follow, but go my Father's way",
-      "Upon Your waiting altar I kneel without a word.",
-      "My life shall be the sacrifice;",
-      "I will faithfully obey."
-    ]
-  },
-  {
     "id": "my-promise",
     "title": "My Promise",
     "key": "A",
@@ -1358,46 +1208,6 @@
       "[Bb]moon, and stars forgot, upward I fly.",
       "[F]Still all my song shall be nearer, my God, to Thee,",
       "[C7]Nearer, my God, to Thee, nearer to Thee."
-    ]
-  },
-  {
-    "id": "new-life",
-    "title": "New Life",
-    "key": "G",
-    "reviewed": false,
-    "sections": [
-      "[G]Where are His children who answered the call",
-      "[D7]Of the archangel sounding afar?",
-      "[G]People who trembled as lightning flashed,",
-      "[C]Blazing the sky from the East to the West,",
-      "[G]Dark is the sun, dim is the moon,",
-      "[D7]Thousands of stars falling to darkness;",
-      "[G7]Where are the ones blessed with new life,",
-      "[Am]Liberated from the dead?",
-      "[G]Now we behold a new heaven and earth,",
-      "[D7]Holy Jerusalem, standing anew;",
-      "[G]After our search of six thousand years,",
-      "[C]Eden rejoices to welcome us home.",
-      "[G]All of our tears, wipe them away;",
-      "[D7]Sorrowful sighs, we will not need them;",
-      "[G]Where is my Lord, He who returns?",
-      "[C]Where is Heaven's glorious One?",
-      "[G]Once He departed by way of the cross,",
-      "[D7]Now He returns and He suffers again;",
-      "[G]One way is given to me our Lord;",
-      "[C]Follow the path to the bottom of hell.",
-      "[G]Glorious star, Lebanon's light,",
-      "[D7]Shining on all, lighting the ages;",
-      "[G]There is the great city of God,",
-      "[C]Where the sun arises and shines.",
-      "[G]Come in rejoicing and look to the light,",
-      "[D7]See how the darkness is rolling away;",
-      "[G]Out of the few come a multitude;",
-      "[C]Joyfully building the city of God.",
-      "[G]Children of life stream thru the gates,",
-      "[D7]Close to His heart, singing to please Him;",
-      "[G]Raising the white cross to the sky,",
-      "[C]Praising our eternal new life."
     ]
   },
   {
@@ -1830,9 +1640,9 @@
     "key": "Bm",
     "reviewed": false,
     "sections": [
-      "[Bm]Sunlight beaming forth in the East, from the Fatherland;",
-      "[Em]Bringing tidings of a new world to families in the field.",
-      "[Bm]Let us hasten to send the news all throughout the world,",
+      "[Bm]Sunlight beaming forth in the East, from th[Em]e Fatherland;[Bm]",
+      "Bringing tid[G]ings of [D]a new world to famili[Em]es in the field[D].",
+      "[Em]Let us hasten to send[Bm] the news all [F#m]throughou[Em7]t the world[F#m],   [A7]",
       "[G]Eden's glory spreading forever the hope of joy and peace.",
       "[D]Dawn, golden dawn, throughout the shining Fatherland,",
       "[Em]Tells the tidings of the rising sun that brings us life.",
