@@ -262,7 +262,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
         {
           "tokens": [
             {
@@ -312,5 +317,5 @@
     }
   ],
   "sourcePath": "songs/island-in-the-sun.pro",
-  "source": "{title: Island in the Sun}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\nTh[D]is is my island in t[G]he sun\nWhere my [A7]people have toiled since ti[D]me begun\n[Bm]I may sail on many[G] a sea\nHer s[D]hores will always be ho[A7]me to me[D]\n\n{section: Chorus}\n[D]Oh, island i[G]n the sun\n[A7]Willed to me by my Fa[D]ther's hand\n[Bm]All my days I will s[G]ing in praise\nOf your fo[A7]rest, waters, your shining[D] sands.\n\n{section: Verse 2}\nAs morning breaks\nThe heaven on high\nI lift my heavy load to the sky\nSun comes down with a burning glow\nMingles my sweat with the earth below\n\n{section: Verse 3}\nI see woman on bended knee\nCutting cane for her family\nI see man at the waterside\nCasting nets at the surging tide\n\n{{section: Verse 4}\nI hope the day will never come\nThat I can't awake to the sound of drum\nNever let me miss carnival\nWith calypso songs philosophical\n"
+  "source": "{title: Island in the Sun}\n{key: D}\n{reviewed: false}\n\n{section: Verse 1}\nTh[D]is is my island in t[G]he sun\nWhere my [A7]people have toiled since ti[D]me begun\n[Bm]I may sail on many[G] a sea\nHer s[D]hores will always be ho[A7]me to me[D]\n\n{section: Chorus}\n[D]Oh, island i[G]n the sun\n[A7]Willed to me by my Fa[D]ther's hand\n[Bm]All my days I will s[G]ing in praise\nOf your fo[A7]rest, waters, your shining[D] sands.\n\n{section: Verse 2}\nAs morning breaks\nThe heaven on high\nI lift my heavy load to the sky\nSun comes down with a burning glow\nMingles my sweat with the earth below\n\n{section: Verse 3}\nI see woman on bended knee\nCutting cane for her family\nI see man at the waterside\nCasting nets at the surging tide\n\n{section: Verse 4}\nI hope the day will never come\nThat I can't awake to the sound of drum\nNever let me miss carnival\nWith calypso songs philosophical\n"
 }
