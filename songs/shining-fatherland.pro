@@ -9,8 +9,8 @@ Bringing tid[G]ings of [D]a new world to famili[Em]es in the field[D].
 [D]Eden's gl[G]ory sp[A]reading forev[Bm]er the ho[Em]pe of joy and peac[D]e.
 
 {section: Chorus}
-[D]Dawn, go[G]lden da[D]wn, thro[F#m]ughout the shining Fat[Em7]herland,[A7]
-[D]Tells the t[G]idings[A] of the [Bm]rising[Em] sun that brings [D]us life.
+[D]Dawn, go[G]lden da[D]wn, throughout the [F#m]shining Fat[Em7]herland,[A7]
+[D]Tells the t[G]idings[A] of the [Bm]rising[Em] sun that brings us [D]life.
 
 {section: Verse 2}
 Harvest quickly men of the fields, hasten to harvest now;
