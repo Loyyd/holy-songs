@@ -377,13 +377,14 @@ interface DirectiveEditorProps extends LineEditorProps {
 }
 
 function DirectiveEditor({ line, onChange, isSectionDirective, onCopySection, onPasteSection, hasCopiedChords, copiedSectionName }: DirectiveEditorProps) {
+    const leftPad = 14;
     return (
         <div className="directive-editor" style={{ marginBottom: '0.5em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <input 
                 value={line} 
                 onChange={e => onChange(e.target.value)} 
                 spellCheck={false}
-                style={{ flex: 1 }}
+                style={{ flex: 1, paddingLeft: `${leftPad}px` }}
             />
             {isSectionDirective && (
                 <div style={{ display: 'flex', gap: '0.25rem' }}>
@@ -473,7 +474,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     if (!containerRef.current) return;
     
     const rect = containerRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left;
+    const offsetX = e.clientX - rect.left - leftPad;
     const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
     
     setDropIndex(newCharIndex);
@@ -496,7 +497,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     
     // Calculate new character index based on mouse position
     const rect = containerRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left;
+    const offsetX = e.clientX - rect.left - leftPad;
     
     const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
     
@@ -526,7 +527,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
   const handleLayerClick = (e: React.MouseEvent) => {
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left;
+    const offsetX = e.clientX - rect.left - leftPad;
     const charIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
     
     const name = prompt('Add chord:');
@@ -551,8 +552,8 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     document.body.removeChild(measureSpan);
   }, []);
 
-  // small left pad equals half a char to ensure first chord is visible
-  const leftPad = Math.round(charWidth);
+  // Increased left pad to ensure first chord (which is centered at index 0) doesn't clip
+  const leftPad = 14;
 
   return (
     <div 
@@ -571,7 +572,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
       <div 
         className="chords-layer"
         onClick={handleLayerClick}
-        style={{ paddingLeft: `${leftPad}px` }}
+        style={{ left: `${leftPad}px` }}
       >
         {chords.map((chord, i) => (
           <div
@@ -602,6 +603,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
         value={lyrics}
         onChange={handleLyricsChange}
         spellCheck={false}
+        style={{ paddingLeft: `${leftPad}px` }}
       />
     </div>
   );
