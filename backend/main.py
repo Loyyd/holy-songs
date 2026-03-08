@@ -29,7 +29,6 @@ app.add_middleware(
 # Path to the songs directory (relative to this file)
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SONGS_DIR = os.path.join(BASE_DIR, "songs")
-FLAGGED_FILE = os.path.join(BASE_DIR, "backend", "flagged_songs.json")
 DIST_DIR = os.path.join(BASE_DIR, "dist")
 
 def rebuild_songs():
@@ -65,25 +64,9 @@ def validate_song_path(filepath: str):
 class SongContent(BaseModel):
     content: str
 
-class FlagRequest(BaseModel):
-    song_id: str
-    flagged: bool
-
 class ReviewedRequest(BaseModel):
     song_id: str
     reviewed: bool
-
-def load_flagged_songs():
-    """Load flagged songs from file"""
-    if os.path.exists(FLAGGED_FILE):
-        with open(FLAGGED_FILE, 'r', encoding='utf-8') as f:
-            return set(json.load(f))
-    return set()
-
-def save_flagged_songs(flagged_songs: set):
-    """Save flagged songs to file"""
-    with open(FLAGGED_FILE, 'w', encoding='utf-8') as f:
-        json.dump(list(flagged_songs), f)
 
 @app.get("/api/songs")
 def list_songs():
@@ -95,7 +78,7 @@ def list_songs():
     return {"songs": sorted(songs)}
 
 @app.post("/api/songs/create")
-def create_song(song: SongContent, background_tasks: BackgroundTasks, _admin=Depends(verify_admin)):
+def create_song(song: SongContent, _admin=Depends(verify_admin)):
     """Create a new song file with auto-generated filename from title"""
     # Extract title from content
     title_match = re.search(r'\{title:\s*([^}]+)\}', song.content, re.IGNORECASE)
@@ -146,7 +129,7 @@ def get_song(filename: str):
 
 @app.post("/api/songs/{filename}")
 @app.put("/api/songs/{filename}")
-def update_song(filename: str, song: SongContent, background_tasks: BackgroundTasks, _admin=Depends(verify_admin)):
+def update_song(filename: str, song: SongContent, _admin=Depends(verify_admin)):
     """Update an existing song file"""
     # Basic security check to prevent directory traversal
     if ".." in filename or "/" in filename or "\\" in filename:
@@ -189,25 +172,6 @@ def delete_song(filename: str, _admin=Depends(verify_admin)):
     rebuild_songs()
     
     return {"message": "Song deleted successfully"}
-
-@app.get("/api/flags")
-def get_flagged_songs():
-    """Get list of flagged song IDs"""
-    flagged_songs = load_flagged_songs()
-    return {"flagged": list(flagged_songs)}
-
-@app.post("/api/flags")
-def toggle_flag(request: FlagRequest, _admin=Depends(verify_admin)):
-    """Toggle flag status for a song"""
-    flagged_songs = load_flagged_songs()
-    
-    if request.flagged:
-        flagged_songs.add(request.song_id)
-    else:
-        flagged_songs.discard(request.song_id)
-    
-    save_flagged_songs(flagged_songs)
-    return {"message": "Flag updated successfully", "flagged": list(flagged_songs)}
 
 def find_song_file_by_id(song_id: str) -> str | None:
     """Find a .pro file by song ID (slug of title)"""
@@ -274,7 +238,7 @@ def update_reviewed_in_file(filepath: str, reviewed: bool) -> bool:
     return True
 
 @app.post("/api/reviewed")
-def update_reviewed(request: ReviewedRequest, background_tasks: BackgroundTasks, _admin=Depends(verify_admin)):
+def update_reviewed(request: ReviewedRequest, _admin=Depends(verify_admin)):
     """Update the reviewed status of a song in its .pro file"""
     filepath = find_song_file_by_id(request.song_id)
     
@@ -296,4 +260,3 @@ if os.path.exists(DIST_DIR):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-

@@ -6,4 +6,4 @@ dist/
 .venv/
 __pycache__/
 *.pyc
-backend/flagged_songs.json
+public/data/
