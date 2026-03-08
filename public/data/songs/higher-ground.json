@@ -2,79 +2,82 @@
   "id": "higher-ground",
   "title": "Higher Ground",
   "key": "G",
-  "reviewed": false,
+  "reviewed": true,
   "sections": [
     {
-      "name": "Verse",
+      "name": "Verse 1",
       "lines": [
         {
           "tokens": [
             {
-              "chord": null,
+              "chord": "G",
+              "lyric": "I'm pressing on the upward way,"
+            },
+            {
+              "chord": "C",
               "lyric": ""
             }
           ],
-          "raw": ""
+          "raw": "[G]I'm pressing on the upward way,[C]"
         },
         {
           "tokens": [
             {
-              "chord": "G",
-              "lyric": "I'm pressing on the "
+              "chord": null,
+              "lyric": "New heights I'm "
             },
             {
-              "chord": "C",
-              "lyric": "upward way,"
-            }
-          ],
-          "raw": "[G]I'm pressing on the [C]upward way,"
-        },
-        {
-          "tokens": [
-            {
               "chord": "G",
-              "lyric": "New heights I'm gaining "
+              "lyric": "gaining every day"
             },
             {
               "chord": "D7",
-              "lyric": "every day,"
+              "lyric": ","
             }
           ],
-          "raw": "[G]New heights I'm gaining [D7]every day,"
+          "raw": "New heights I'm [G]gaining every day[D7],"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Still praying as"
+            },
+            {
               "chord": "G",
-              "lyric": "Still praying as I'm "
+              "lyric": " I'm upw"
             },
             {
               "chord": "G7",
-              "lyric": "upward "
+              "lyric": "ard bou"
             },
             {
               "chord": "C",
-              "lyric": "bound,"
+              "lyric": "nd,"
             }
           ],
-          "raw": "[G]Still praying as I'm [G7]upward [C]bound,"
+          "raw": "Still praying as[G] I'm upw[G7]ard bou[C]nd,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Lord, plant my fe"
+            },
+            {
               "chord": "G",
-              "lyric": "Lord, plant my feet on "
+              "lyric": "et on hig"
             },
             {
               "chord": "D7",
-              "lyric": "higher "
+              "lyric": "her ground"
             },
             {
               "chord": "G",
-              "lyric": "ground."
+              "lyric": "."
             }
           ],
-          "raw": "[G]Lord, plant my feet on [D7]higher [G]ground."
+          "raw": "Lord, plant my fe[G]et on hig[D7]her ground[G]."
         },
         {
           "tokens": [
@@ -94,53 +97,65 @@
           "tokens": [
             {
               "chord": "G",
-              "lyric": "Lord, lift me up and "
+              "lyric": "Lord, lift me up and let me stan"
             },
             {
               "chord": "D7",
-              "lyric": "let me stand."
+              "lyric": "d."
             }
           ],
-          "raw": "[G]Lord, lift me up and [D7]let me stand."
+          "raw": "[G]Lord, lift me up and let me stan[D7]d."
         },
         {
           "tokens": [
+            {
+              "chord": null,
+              "lyric": "By faith on heaven's table lan"
+            },
             {
               "chord": "G",
-              "lyric": "By faith on heaven's table land,"
+              "lyric": "d,"
             }
           ],
-          "raw": "[G]By faith on heaven's table land,"
+          "raw": "By faith on heaven's table lan[G]d,"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "A higher plan"
+            },
+            {
               "chord": "G7",
-              "lyric": "A higher plane than "
+              "lyric": "e than I have foun"
             },
             {
               "chord": "C",
-              "lyric": "I have found;"
+              "lyric": "d;"
             }
           ],
-          "raw": "[G7]A higher plane than [C]I have found;"
+          "raw": "A higher plan[G7]e than I have foun[C]d;"
         },
         {
           "tokens": [
             {
+              "chord": null,
+              "lyric": "Lord, plant my feet"
+            },
+            {
               "chord": "G",
-              "lyric": "Lord, plant my feet on "
+              "lyric": " on higher"
             },
             {
               "chord": "D7",
-              "lyric": "higher "
+              "lyric": " ground"
             },
             {
               "chord": "G",
-              "lyric": "ground."
+              "lyric": "."
             }
           ],
-          "raw": "[G]Lord, plant my feet on [D7]higher [G]ground."
+          "raw": "Lord, plant my feet[G] on higher[D7] ground[G]."
         },
         {
           "tokens": [
@@ -150,7 +165,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
         {
           "tokens": [
             {
@@ -195,7 +215,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
@@ -240,7 +265,12 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
         {
           "tokens": [
             {
@@ -290,5 +320,5 @@
     }
   ],
   "sourcePath": "songs/higher-ground.pro",
-  "source": "{title: Higher Ground}\n{key: G}\n{reviewed: false}\n\n[G]I'm pressing on the [C]upward way,\n[G]New heights I'm gaining [D7]every day,\n[G]Still praying as I'm [G7]upward [C]bound,\n[G]Lord, plant my feet on [D7]higher [G]ground.\n\n{section: Chorus}\n[G]Lord, lift me up and [D7]let me stand.\n[G]By faith on heaven's table land,\n[G7]A higher plane than [C]I have found;\n[G]Lord, plant my feet on [D7]higher [G]ground.\n\nMy heart has no desire to stay\nWhere doubts arise and fears dismay,\nThough some may dwell where these abound,\nMy prayer, my aim is higher ground.\n\nI want to live above the world,\nThough Satan's darts at me are hurled,\nFor faith has caught the joyful sound,\nThe song of saints on higher ground.\n\nI want to scale the utmost height,\nAnd catch a gleam of glory bright,\nBut still I'll pray till heav'n I've found,\n\"Lord, lead me on to higher ground.\"\n"
+  "source": "{title: Higher Ground}\n{key: G}\n{reviewed: true}\n\n{section: Verse 1}\n[G]I'm pressing on the upward way,[C]\nNew heights I'm [G]gaining every day[D7],\nStill praying as[G] I'm upw[G7]ard bou[C]nd,\nLord, plant my fe[G]et on hig[D7]her ground[G].\n\n{section: Chorus}\n[G]Lord, lift me up and let me stan[D7]d.\nBy faith on heaven's table lan[G]d,\nA higher plan[G7]e than I have foun[C]d;\nLord, plant my feet[G] on higher[D7] ground[G].\n\n{section: Verse 2}\nMy heart has no desire to stay\nWhere doubts arise and fears dismay,\nThough some may dwell where these abound,\nMy prayer, my aim is higher ground.\n\n{section: Verse 3}\nI want to live above the world,\nThough Satan's darts at me are hurled,\nFor faith has caught the joyful sound,\nThe song of saints on higher ground.\n\n{section: Verse 4}\nI want to scale the utmost height,\nAnd catch a gleam of glory bright,\nBut still I'll pray till heav'n I've found,\n\"Lord, lead me on to higher ground.\"\n"
 }

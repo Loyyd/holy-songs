@@ -1,11 +1,26 @@
 services:
-  chord-songs:
-    build: .
-    ports:
-      - "8000:8000"
+  # The Backend API (Python/FastAPI)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
     volumes:
-      # This maps your local folders to the container
-      # Changes in the UI will now persist to your disk
       - ./songs:/app/songs
       - ./backend:/app/backend
+      - ./dist:/app/dist
+    environment:
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-truelove}
+      - SONGS_OUTPUT_DIR=/app/dist/data
+    restart: unless-stopped
+
+  # The Frontend (Nginx serving static files)
+  frontend:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - backend
     restart: unless-stopped

@@ -1,43 +1,35 @@
 {title: Heart of the Father}
 {key: Eb}
-{reviewed: false}
+{reviewed: true}
 
 {section: Verse 1}
-[Eb]Longing to live in deepest joy and love eternal,
-[Gm]God was ever seeking for a people all His own.
-[Cm]Who can know the yearning of His lonely broken heart?
+[Eb]Longing to live in deepest joy and [Gm]love e[Cm]ternal,
+[Fm]God was ever [Cm]seeking for a[Ab] people all Hi[Eb]s own.
+Who can know the [Cm]yearning of His[Bb] lonely[Eb] broken[Ab] heart?
+Tears were [Eb]falling [Fm]as a[Gm] river [Ab]through Hi[Bb]s countl[B7]ess year[Eb]s alone.
+[Ab]Out of al[Eb]l the [Cm]multitu[Gm]de t[Eb]here was none who [Bb]knew
+[Eb]How the Father's [Ab]heart was aching, g[Bb]rieving [B7]after [Eb]man.
 
 {section: Verse 2}
-[Fm]Tears were falling as a river through His countless years alone.
-[Cm]Out of all the multitude there was none who knew
-[Ab]How the Father's heart was aching, grieving after man.
+Glorious God, who started life throughout the heavens,
+Bore the deepest torture as He saw His children die.
+Every day He seeks the beauty lost inside our hearts,
+Tenderly with love He leads us back to life with Him on high.
+How many fathoms deep is His aching heart?
+All the tears He shed for earth became an endless sea.
 
 {section: Verse 3}
-[Eb]Glorious God, who started life throughout the heavens,
-[Gm]Bore the deepest torture as He saw His children die.
-[Cm]Every day He seeks the beauty lost inside our hearts,
+Deep from within the heart of heaven came the secret,
+Now the mighty word, the trumpet call will surely sound.
+But as in the time of Noah people laugh and mock,
+Satisfied to wander aimless in the darkness underground.
+Fearful is the time to come when the price is paid!
+One and all will face the judgment from an angry God.
 
-{{section: Verse 4}
-[Fm]Tenderly with love He leads us back to life with Him on high.
-[Cm]How many fathoms deep is His aching heart?
-[Ab]All the tears He shed for earth became an endless sea.
-
-{section: Verse 5}
-[Eb]Deep from within the heart of heaven came the secret,
-[Gm]Now the mighty word, the trumpet call will surely sound.
-[Cm]But as in the time of Noah people laugh and mock,
-
-{{section: Verse 6}
-[Fm]Satisfied to wander aimless in the darkness underground.
-[Cm]Fearful is the time to come when the price is paid!
-[Ab]One and all will face the judgment from an angry God.
-
-{section: Verse 7}
-[Eb]Quickly believe, my people quickly turn and follow!
-[Gm]You can be enfolded in the warmth of Father's heart.
-[Cm]All the joy that life can offer calls us home to Him,
-
-{section: Verse 8}
-[Fm]Now He calls you to be near Him never again to be apart.
-[Cm]When at last we run to Him, how He'll cry with joy!
-[Ab]All rejoicing, all together now and evermore.
+{section: Verse 4}
+Quickly believe, my people quickly turn and follow!
+You can be enfolded in the warmth of Father's heart.
+All the joy that life can offer calls us home to Him,
+Now He calls you to be near Him never again to be apart.
+When at last we run to Him, how He'll cry with joy!
+All rejoicing, all together now and evermore.

@@ -2,7 +2,6 @@
   "id": "i-cannot-come",
   "title": "I Cannot Come",
   "key": "F",
-  "reviewed": false,
   "sections": [
     {
       "name": "Chorus",
@@ -38,28 +37,48 @@
           "tokens": [
             {
               "chord": "C7",
-              "lyric": "I have married a wife; I have bought me a cow."
-            }
-          ],
-          "raw": "[C7]I have married a wife; I have bought me a cow."
-        },
-        {
-          "tokens": [
+              "lyric": "I have married a wife; I "
+            },
+            {
+              "chord": "F",
+              "lyric": "have bought me a "
+            },
             {
               "chord": "F7",
-              "lyric": "I have fields and commitments that cost a pretty sum."
+              "lyric": "cow."
             }
           ],
-          "raw": "[F7]I have fields and commitments that cost a pretty sum."
+          "raw": "[C7]I have married a wife; I [F]have bought me a [F7]cow."
         },
         {
           "tokens": [
             {
               "chord": "Bb",
-              "lyric": "Pray, hold me excused, I cannot come."
+              "lyric": "I have fields and commitments that "
+            },
+            {
+              "chord": "F",
+              "lyric": "cost a pretty "
+            },
+            {
+              "chord": "Dm",
+              "lyric": "sum."
             }
           ],
-          "raw": "[Bb]Pray, hold me excused, I cannot come."
+          "raw": "[Bb]I have fields and commitments that [F]cost a pretty [Dm]sum."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "Pray, hold me excused, I "
+            },
+            {
+              "chord": "F",
+              "lyric": "cannot come."
+            }
+          ],
+          "raw": "[C7]Pray, hold me excused, I [F]cannot come."
         },
         {
           "tokens": [
@@ -78,38 +97,58 @@
         {
           "tokens": [
             {
-              "chord": "F",
-              "lyric": "A certain man held a banquet on his estate in town."
-            }
-          ],
-          "raw": "[F]A certain man held a banquet on his estate in town."
-        },
-        {
-          "tokens": [
-            {
               "chord": "Bb",
-              "lyric": "He laid a festive table and wore a wedding gown."
-            }
-          ],
-          "raw": "[Bb]He laid a festive table and wore a wedding gown."
-        },
-        {
-          "tokens": [
+              "lyric": "A certain man held a banquet on his "
+            },
             {
               "chord": "F",
-              "lyric": "He sent invitations to his neighbors far and wide"
+              "lyric": "estate in town."
             }
           ],
-          "raw": "[F]He sent invitations to his neighbors far and wide"
+          "raw": "[Bb]A certain man held a banquet on his [F]estate in town."
         },
         {
           "tokens": [
             {
               "chord": "C7",
-              "lyric": "But when the meal was ready, each of them replied:"
+              "lyric": "He laid a festive table and "
+            },
+            {
+              "chord": "F",
+              "lyric": "wore a wedding "
+            },
+            {
+              "chord": "F7",
+              "lyric": "gown."
             }
           ],
-          "raw": "[C7]But when the meal was ready, each of them replied:"
+          "raw": "[C7]He laid a festive table and [F]wore a wedding [F7]gown."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "Bb",
+              "lyric": "He sent invitations to his "
+            },
+            {
+              "chord": "F",
+              "lyric": "neighbors far and wide"
+            }
+          ],
+          "raw": "[Bb]He sent invitations to his [F]neighbors far and wide"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "C7",
+              "lyric": "But when the meal was ready, "
+            },
+            {
+              "chord": "F",
+              "lyric": "each of them replied:"
+            }
+          ],
+          "raw": "[C7]But when the meal was ready, [F]each of them replied:"
         },
         {
           "tokens": [
@@ -119,42 +158,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "F",
+              "chord": null,
               "lyric": "The master rose up in anger, called his servants by name,"
             }
           ],
-          "raw": "[F]The master rose up in anger, called his servants by name,"
+          "raw": "The master rose up in anger, called his servants by name,"
         },
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "said: \"Go into the town, fetch the blind and the lame,"
             }
           ],
-          "raw": "[Dm]said: \"Go into the town, fetch the blind and the lame,"
+          "raw": "said: \"Go into the town, fetch the blind and the lame,"
         },
         {
           "tokens": [
             {
-              "chord": "F",
+              "chord": null,
               "lyric": "fetch the peasant and the pauper, for this I have willed,"
             }
           ],
-          "raw": "[F]fetch the peasant and the pauper, for this I have willed,"
+          "raw": "fetch the peasant and the pauper, for this I have willed,"
         },
         {
           "tokens": [
             {
-              "chord": "C7",
+              "chord": null,
               "lyric": "my banquet must be crowded, and my tables must be filled."
             }
           ],
-          "raw": "[C7]my banquet must be crowded, and my tables must be filled."
+          "raw": "my banquet must be crowded, and my tables must be filled."
         },
         {
           "tokens": [
@@ -164,42 +208,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "F",
+              "chord": null,
               "lyric": "When all the poor had assembled, there was still room to spare,"
             }
           ],
-          "raw": "[F]When all the poor had assembled, there was still room to spare,"
+          "raw": "When all the poor had assembled, there was still room to spare,"
         },
         {
           "tokens": [
             {
-              "chord": "Bb",
+              "chord": null,
               "lyric": "so the master demanded: \"Go and search everywhere,"
             }
           ],
-          "raw": "[Bb]so the master demanded: \"Go and search everywhere,"
+          "raw": "so the master demanded: \"Go and search everywhere,"
         },
         {
           "tokens": [
             {
-              "chord": "F",
+              "chord": null,
               "lyric": "to the highways and the byways and force them to come in."
             }
           ],
-          "raw": "[F]to the highways and the byways and force them to come in."
+          "raw": "to the highways and the byways and force them to come in."
         },
         {
           "tokens": [
             {
-              "chord": "C7",
+              "chord": null,
               "lyric": "My table must be filled before the banquet can begin."
             }
           ],
-          "raw": "[C7]My table must be filled before the banquet can begin."
+          "raw": "My table must be filled before the banquet can begin."
         },
         {
           "tokens": [
@@ -209,42 +258,47 @@
             }
           ],
           "raw": ""
-        },
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
         {
           "tokens": [
             {
-              "chord": "F",
+              "chord": null,
               "lyric": "Now God has written a message for the rest of the mankind;"
             }
           ],
-          "raw": "[F]Now God has written a message for the rest of the mankind;"
+          "raw": "Now God has written a message for the rest of the mankind;"
         },
         {
           "tokens": [
             {
-              "chord": "Dm",
+              "chord": null,
               "lyric": "If we're slow in responding, He may leave us behind."
             }
           ],
-          "raw": "[Dm]If we're slow in responding, He may leave us behind."
+          "raw": "If we're slow in responding, He may leave us behind."
         },
         {
           "tokens": [
             {
-              "chord": "F",
+              "chord": null,
               "lyric": "He's preparing a banquet for that great and glorious day"
             }
           ],
-          "raw": "[F]He's preparing a banquet for that great and glorious day"
+          "raw": "He's preparing a banquet for that great and glorious day"
         },
         {
           "tokens": [
             {
-              "chord": "C7",
+              "chord": null,
               "lyric": "When the Lord and Master calls us, be certain not to say:"
             }
           ],
-          "raw": "[C7]When the Lord and Master calls us, be certain not to say:"
+          "raw": "When the Lord and Master calls us, be certain not to say:"
         },
         {
           "tokens": [
@@ -259,5 +313,5 @@
     }
   ],
   "sourcePath": "songs/i-cannot-come.pro",
-  "source": "{title: I Cannot Come}\n{key: F}\n{reviewed: false}\n\n{section: Chorus}\n[F]I cannot come,\n[Bb]I cannot come to the banquet;\n[F]Don't trouble me now.\n[C7]I have married a wife; I have bought me a cow.\n[F7]I have fields and commitments that cost a pretty sum.\n[Bb]Pray, hold me excused, I cannot come.\n\n{section: Verse 1}\n[F]A certain man held a banquet on his estate in town.\n[Bb]He laid a festive table and wore a wedding gown.\n[F]He sent invitations to his neighbors far and wide\n[C7]But when the meal was ready, each of them replied:\n\n{{section: Verse 2}\n[F]The master rose up in anger, called his servants by name,\n[Dm]said: \"Go into the town, fetch the blind and the lame,\n[F]fetch the peasant and the pauper, for this I have willed,\n[C7]my banquet must be crowded, and my tables must be filled.\n\n{{section: Verse 3}\n[F]When all the poor had assembled, there was still room to spare,\n[Bb]so the master demanded: \"Go and search everywhere,\n[F]to the highways and the byways and force them to come in.\n[C7]My table must be filled before the banquet can begin.\n\n{{section: Verse 4}\n[F]Now God has written a message for the rest of the mankind;\n[Dm]If we're slow in responding, He may leave us behind.\n[F]He's preparing a banquet for that great and glorious day\n[C7]When the Lord and Master calls us, be certain not to say:\n"
+  "source": "{title: I Cannot Come}\n{key: F}\n\n{section: Chorus}\n[F]I cannot come,\n[Bb]I cannot come to the banquet;\n[F]Don't trouble me now.\n[C7]I have married a wife; I [F]have bought me a [F7]cow.\n[Bb]I have fields and commitments that [F]cost a pretty [Dm]sum.\n[C7]Pray, hold me excused, I [F]cannot come.\n\n{section: Verse 1}\n[Bb]A certain man held a banquet on his [F]estate in town.\n[C7]He laid a festive table and [F]wore a wedding [F7]gown.\n[Bb]He sent invitations to his [F]neighbors far and wide\n[C7]But when the meal was ready, [F]each of them replied:\n\n{section: Verse 2}\nThe master rose up in anger, called his servants by name,\nsaid: \"Go into the town, fetch the blind and the lame,\nfetch the peasant and the pauper, for this I have willed,\nmy banquet must be crowded, and my tables must be filled.\n\n{section: Verse 3}\nWhen all the poor had assembled, there was still room to spare,\nso the master demanded: \"Go and search everywhere,\nto the highways and the byways and force them to come in.\nMy table must be filled before the banquet can begin.\n\n{section: Verse 4}\nNow God has written a message for the rest of the mankind;\nIf we're slow in responding, He may leave us behind.\nHe's preparing a banquet for that great and glorious day\nWhen the Lord and Master calls us, be certain not to say:\n"
 }
