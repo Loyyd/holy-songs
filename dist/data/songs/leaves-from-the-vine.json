@@ -1,0 +1,264 @@
+{
+  "id": "leaves-from-the-vine",
+  "title": "Leaves from the Vine",
+  "key": "A",
+  "reviewed": true,
+  "sections": [
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Leaves from the vine, falling so slow;"
+            }
+          ],
+          "raw": "[A]Leaves from the vine, falling so slow;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Like fragile tiny shells, drifting in the foam."
+            }
+          ],
+          "raw": "[F#m]Like fragile tiny shells, drifting in the foam."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Little soldier boy, come marching home."
+            }
+          ],
+          "raw": "[A]Little soldier boy, come marching home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Brave soldier boy, comes marching home."
+            }
+          ],
+          "raw": "[F#m]Brave soldier boy, comes marching home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Ash in the snow, falling so slow;"
+            }
+          ],
+          "raw": "[A]Ash in the snow, falling so slow;"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Like fragile, broken hearts, with no place to go."
+            }
+          ],
+          "raw": "[F#m]Like fragile, broken hearts, with no place to go."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Little soldier boy, come marching home"
+            }
+          ],
+          "raw": "[A]Little soldier boy, come marching home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Brave soldier boy, come marching home"
+            }
+          ],
+          "raw": "[F#m]Brave soldier boy, come marching home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "He thought he knew, what he was fighting for,"
+            }
+          ],
+          "raw": "[A]He thought he knew, what he was fighting for,"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "But the sight of blood, made him question war."
+            }
+          ],
+          "raw": "[F#m]But the sight of blood, made him question war."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Poor soldier boy cold and alone"
+            }
+          ],
+          "raw": "[A]Poor soldier boy cold and alone"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Bombs fall like the rain, he's all alone."
+            }
+          ],
+          "raw": "[F#m]Bombs fall like the rain, he's all alone."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 4",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Those leaves did grow, from branches overgrown"
+            }
+          ],
+          "raw": "[A]Those leaves did grow, from branches overgrown"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Drifting slowly down, resting in the snow."
+            }
+          ],
+          "raw": "[F#m]Drifting slowly down, resting in the snow."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Little soldier boy, taken from home"
+            }
+          ],
+          "raw": "[A]Little soldier boy, taken from home"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Forced to fight a war, that is not his own."
+            }
+          ],
+          "raw": "[F#m]Forced to fight a war, that is not his own."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 5",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Leaves from the vine, changing so slow"
+            }
+          ],
+          "raw": "[A]Leaves from the vine, changing so slow"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Like empty, fallen souls, looking for a home."
+            }
+          ],
+          "raw": "[F#m]Like empty, fallen souls, looking for a home."
+        },
+        {
+          "tokens": [
+            {
+              "chord": "A",
+              "lyric": "Little soldier boy, thought that he could soar"
+            }
+          ],
+          "raw": "[A]Little soldier boy, thought that he could soar"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "F#m",
+              "lyric": "Brave soldier boy, died in their "
+            },
+            {
+              "chord": "A",
+              "lyric": "war."
+            }
+          ],
+          "raw": "[F#m]Brave soldier boy, died in their [A]war."
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/leaves-from-the-vine.pro",
+  "source": "{title: Leaves from the Vine}\n{key: A}\n{reviewed: true}\n\n{section: Verse 1}\n[A]Leaves from the vine, falling so slow;\n[F#m]Like fragile tiny shells, drifting in the foam.\n[A]Little soldier boy, come marching home.\n[F#m]Brave soldier boy, comes marching home.\n\n{section: Verse 2}\n[A]Ash in the snow, falling so slow;\n[F#m]Like fragile, broken hearts, with no place to go.\n[A]Little soldier boy, come marching home\n[F#m]Brave soldier boy, come marching home\n\n{section: Verse 3}\n[A]He thought he knew, what he was fighting for,\n[F#m]But the sight of blood, made him question war.\n[A]Poor soldier boy cold and alone\n[F#m]Bombs fall like the rain, he's all alone.\n\n{section: Verse 4}\n[A]Those leaves did grow, from branches overgrown\n[F#m]Drifting slowly down, resting in the snow.\n[A]Little soldier boy, taken from home\n[F#m]Forced to fight a war, that is not his own.\n\n{section: Verse 5}\n[A]Leaves from the vine, changing so slow\n[F#m]Like empty, fallen souls, looking for a home.\n[A]Little soldier boy, thought that he could soar\n[F#m]Brave soldier boy, died in their [A]war.\n"
+}

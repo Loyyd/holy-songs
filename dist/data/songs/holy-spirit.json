@@ -1,0 +1,304 @@
+{
+  "id": "holy-spirit",
+  "title": "Holy Spirit",
+  "key": "D",
+  "reviewed": true,
+  "sections": [
+    {
+      "name": "Intro",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "   "
+            },
+            {
+              "chord": "G",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]   [G]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "There's nothing worth more, that will ever come c"
+            },
+            {
+              "chord": "G",
+              "lyric": "lose"
+            }
+          ],
+          "raw": "[D]There's nothing worth more, that will ever come c[G]lose"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "No thing can compare, You're our living h"
+            },
+            {
+              "chord": "D",
+              "lyric": "ope"
+            }
+          ],
+          "raw": "No thing can compare, You're our living h[D]ope"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Your Prese"
+            },
+            {
+              "chord": "G",
+              "lyric": "nce (Lord)"
+            }
+          ],
+          "raw": "Your Prese[G]nce (Lord)"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "I've tasted and seen, of the sweetest of L"
+            },
+            {
+              "chord": "G",
+              "lyric": "oves"
+            }
+          ],
+          "raw": "[D]I've tasted and seen, of the sweetest of L[G]oves"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Where my heart becomes free, and my shame is u"
+            },
+            {
+              "chord": "D",
+              "lyric": "ndone"
+            }
+          ],
+          "raw": "Where my heart becomes free, and my shame is u[D]ndone"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "In Your Prese"
+            },
+            {
+              "chord": "G",
+              "lyric": "nce (Lord)"
+            }
+          ],
+          "raw": "In Your Prese[G]nce (Lord)"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "Holy Spirit You are welcome here"
+            }
+          ],
+          "raw": "[D]Holy Spirit You are welcome here"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Come "
+            },
+            {
+              "chord": "G",
+              "lyric": "flood this place and fill the a"
+            },
+            {
+              "chord": "Em",
+              "lyric": "tmosphere"
+            }
+          ],
+          "raw": "Come [G]flood this place and fill the a[Em]tmosphere"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "Your G"
+            },
+            {
+              "chord": "D",
+              "lyric": "lory God is what our hearts long for"
+            }
+          ],
+          "raw": "Your G[D]lory God is what our hearts long for"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": "To be "
+            },
+            {
+              "chord": "G",
+              "lyric": "overcome by Your"
+            },
+            {
+              "chord": "Em",
+              "lyric": " Presence Lo"
+            },
+            {
+              "chord": "D",
+              "lyric": "rd"
+            }
+          ],
+          "raw": "To be [G]overcome by Your[Em] Presence Lo[D]rd"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Interlude",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "D",
+              "lyric": "     "
+            },
+            {
+              "chord": "G",
+              "lyric": "   "
+            },
+            {
+              "chord": "Em",
+              "lyric": ""
+            }
+          ],
+          "raw": "[D]     [G]   [Em]"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Let us"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " become more"
+            },
+            {
+              "chord": "Em",
+              "lyric": " aware of Your"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " Presence"
+            }
+          ],
+          "raw": "[G]Let us[D/F#] become more[Em] aware of Your[D/F#] Presence"
+        },
+        {
+          "tokens": [
+            {
+              "chord": "G",
+              "lyric": "Let us"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " experience the"
+            },
+            {
+              "chord": "Em",
+              "lyric": " Glory of Your"
+            },
+            {
+              "chord": "D/F#",
+              "lyric": " Goodness"
+            }
+          ],
+          "raw": "[G]Let us[D/F#] experience the[Em] Glory of Your[D/F#] Goodness"
+        },
+        {
+          "tokens": [
+            {
+              "chord": null,
+              "lyric": ""
+            }
+          ],
+          "raw": ""
+        }
+      ]
+    }
+  ],
+  "sourcePath": "songs/holy-spirit.pro",
+  "source": "{title: Holy Spirit}\n{artist: Brian and Katie Torwalt}\n{key: D}\n{reviewed: true}\n\n{section: Intro}\n[D]   [G]\n\n{section: Verse 1}\n[D]There's nothing worth more, that will ever come c[G]lose\nNo thing can compare, You're our living h[D]ope\nYour Prese[G]nce (Lord)\n\n{section: Verse 2}\n[D]I've tasted and seen, of the sweetest of L[G]oves\nWhere my heart becomes free, and my shame is u[D]ndone\nIn Your Prese[G]nce (Lord)\n\n{section: Chorus}\n[D]Holy Spirit You are welcome here\nCome [G]flood this place and fill the a[Em]tmosphere\nYour G[D]lory God is what our hearts long for\nTo be [G]overcome by Your[Em] Presence Lo[D]rd\n\n{section: Interlude}\n[D]     [G]   [Em]\n\n{section: Bridge}\n[G]Let us[D/F#] become more[Em] aware of Your[D/F#] Presence\n[G]Let us[D/F#] experience the[Em] Glory of Your[D/F#] Goodness\n"
+}
