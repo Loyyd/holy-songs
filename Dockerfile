@@ -10,8 +10,8 @@ RUN npm install
 # Copy the source code
 COPY . .
 
-# Build the frontend (this also runs build:songs)
-RUN npm run build
+# Build the frontend assets. Song data is generated at runtime from the mounted content repo.
+RUN npm run build:app
 
 # Stage 2: Final image
 FROM node:20-slim
@@ -34,7 +34,6 @@ COPY --from=builder /app/tsconfig*.json ./
 COPY --from=builder /app/scripts ./scripts
 COPY --from=builder /app/src/lib ./src/lib
 COPY --from=builder /app/src/types.ts ./src/types.ts
-COPY --from=builder /app/songs ./songs
 COPY --from=builder /app/backend ./backend
 
 # Install Python dependencies
@@ -46,7 +45,7 @@ RUN python3 -m venv /opt/venv && \
 ENV PATH="/app/node_modules/.bin:/opt/venv/bin:$PATH"
 
 # Make songs and dist directories writable
-RUN chmod -R 777 /app/songs /app/dist /app/backend
+RUN mkdir -p /app/songs /app/dist/data && chmod -R 777 /app/songs /app/dist /app/backend
 
 # Set environment variables
 ENV NODE_ENV=production

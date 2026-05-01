@@ -28,10 +28,9 @@ COPY scripts/ ./scripts/
 COPY src/lib/ ./src/lib/
 COPY src/types.ts ./src/types.ts
 COPY tsconfig*.json ./
-COPY songs/ ./songs/
 
 # Ensure songs and output directories are writable
-RUN mkdir -p /app/dist/data && chmod -R 777 /app/songs /app/dist
+RUN mkdir -p /app/songs /app/dist/data && chmod -R 777 /app/songs /app/dist
 
 # Set environment variables
 ENV NODE_ENV=production

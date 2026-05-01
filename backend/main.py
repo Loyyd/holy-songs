@@ -6,7 +6,6 @@ from pydantic import BaseModel
 import os
 import subprocess
 import re
-import json
 import secrets
 
 app = FastAPI()
@@ -28,8 +27,23 @@ app.add_middleware(
 )
 # Path to the songs directory (relative to this file)
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-SONGS_DIR = os.path.join(BASE_DIR, "songs")
 DIST_DIR = os.path.join(BASE_DIR, "dist")
+DIST_DATA_DIR = os.path.join(DIST_DIR, "data")
+DIST_INDEX_PATH = os.path.join(DIST_DATA_DIR, "songs.index.json")
+
+def resolve_songs_dir() -> str:
+    configured_dir = os.environ.get("SONGS_DIR")
+    if configured_dir:
+        return os.path.abspath(configured_dir)
+
+    local_dir = os.path.join(BASE_DIR, "songs")
+    if os.path.isdir(local_dir):
+        return local_dir
+
+    sibling_dir = os.path.abspath(os.path.join(BASE_DIR, "..", "holy-songs-content", "songs"))
+    return sibling_dir
+
+SONGS_DIR = resolve_songs_dir()
 
 def rebuild_songs():
     # Only rebuild songs, no deployment
@@ -37,12 +51,18 @@ def rebuild_songs():
         # In production, rebuild to dist/data directly for instant updates
         env = os.environ.copy()
         if os.path.exists(DIST_DIR):
-            env["SONGS_OUTPUT_DIR"] = os.path.join(DIST_DIR, "data")
+            env["SONGS_OUTPUT_DIR"] = DIST_DATA_DIR
+        env["SONGS_DIR"] = SONGS_DIR
         
         subprocess.run(["npm", "run", "build:songs"], cwd=BASE_DIR, check=True, env=env)
         print("Build script executed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Error during build: {e}")
+
+@app.on_event("startup")
+def ensure_generated_song_data():
+    if os.path.exists(SONGS_DIR) and not os.path.exists(DIST_INDEX_PATH):
+        rebuild_songs()
 
 def sanitize_filename(title: str) -> str:
     """Convert song title to a valid filename"""

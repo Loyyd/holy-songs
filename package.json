@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build:songs": "tsx scripts/build-songs.ts",
-    "build": "npm run build:songs && vite build",
+    "build:app": "vite build",
+    "build": "npm run build:songs && npm run build:app",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },

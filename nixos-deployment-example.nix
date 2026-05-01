@@ -20,7 +20,7 @@
     # IMPORTANT: Replace the host paths (the part before the colon) with the
     # actual absolute paths to the songs and backend directories on the NixOS server.
     volumes = [
-      "/absolute/path/to/host/songs:/app/songs"
+      "/absolute/path/to/holy-songs-content/songs:/app/songs"
       "/absolute/path/to/host/backend:/app/backend"
     ];
 

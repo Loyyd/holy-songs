@@ -33,8 +33,10 @@ npm run build
 *Nginx serves the new `dist/` files immediately. No Docker restart required.*
 
 ### 3. Update Song Files
-If you added or edited `.pro` files in the `songs/` folder:
+If you added or edited `.pro` files in the sibling `holy-songs-content/songs/` repo:
 ```bash
+cd ../holy-songs-content && git pull
+cd ../holy-songs
 git pull
 npm run build:songs
 ```
@@ -44,6 +46,23 @@ npm run build:songs
 
 ## 📂 Project Structure
 * **`backend/`**: Python FastAPI logic.
-* **`songs/`**: Your source ChordPro files.
+* **`../holy-songs-content/songs/`**: Your source ChordPro files.
 * **`dist/`**: The compiled frontend served by Nginx.
 * **`nginx.conf`**: Routing for the web server and API proxy.
+
+## Content Repo
+
+The app now expects song source files in a separate sibling repository:
+
+```text
+GitHub/
+  holy-songs/
+  holy-songs-content/
+    songs/
+```
+
+By default the app resolves songs from:
+
+1. `SONGS_DIR`, if set
+2. local `songs/`, if present
+3. `../holy-songs-content/songs`

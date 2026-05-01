@@ -7,3 +7,6 @@ dist/
 __pycache__/
 *.pyc
 public/data/
+.ssh
+.build-server
+.build-server.*

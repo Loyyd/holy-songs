@@ -5,11 +5,12 @@ services:
       context: .
       dockerfile: Dockerfile.backend
     volumes:
-      - ./songs:/app/songs
+      - ../holy-songs-content/songs:/app/songs
       - ./backend:/app/backend
       - ./dist:/app/dist
     environment:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-truelove}
+      - SONGS_DIR=/app/songs
       - SONGS_OUTPUT_DIR=/app/dist/data
     restart: unless-stopped
 

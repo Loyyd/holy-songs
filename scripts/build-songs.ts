@@ -3,7 +3,17 @@ import path from 'path';
 import { parseChordPro } from '../src/lib/parseChordPro';
 import { SongData, SongIndexEntry } from '../src/types';
 
-const SONGS_DIR = path.resolve('songs');
+function resolveSongsDir() {
+  const configuredDir = process.env.SONGS_DIR;
+  if (configuredDir) {
+    return path.resolve(configuredDir);
+  }
+
+  const localDir = path.resolve('songs');
+  const siblingDir = path.resolve('..', 'holy-songs-content', 'songs');
+  return siblingDir;
+}
+
 const OUTPUT_BASE = process.env.SONGS_OUTPUT_DIR || 'public/data';
 const OUTPUT_DIR = path.resolve(OUTPUT_BASE, 'songs');
 const INDEX_PATH = path.resolve(OUTPUT_BASE, 'songs.index.json');
@@ -13,12 +23,21 @@ async function ensureDir(dir: string) {
 }
 
 async function build() {
-  const entries = await fs.readdir(SONGS_DIR);
+  const songsDir = resolveSongsDir();
+  try {
+    await fs.access(songsDir);
+  } catch {
+    throw new Error(
+      `Songs directory not found: ${songsDir}. Set SONGS_DIR or clone holy-songs-content beside this repo.`
+    );
+  }
+
+  const entries = await fs.readdir(songsDir);
   const songs: SongData[] = [];
 
   for (const entry of entries) {
     if (!entry.endsWith('.pro')) continue;
-    const fullPath = path.join(SONGS_DIR, entry);
+    const fullPath = path.join(songsDir, entry);
     const raw = await fs.readFile(fullPath, 'utf8');
     const song = parseChordPro(raw, path.relative(process.cwd(), fullPath));
     songs.push(song);
