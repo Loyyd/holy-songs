@@ -3,17 +3,6 @@ import path from 'path';
 import { parseChordPro } from '../src/lib/parseChordPro';
 import { SongData, SongIndexEntry } from '../src/types';
 
-function resolveSongsDir() {
-  const configuredDir = process.env.SONGS_DIR;
-  if (configuredDir) {
-    return path.resolve(configuredDir);
-  }
-
-  const localDir = path.resolve('songs');
-  const siblingDir = path.resolve('..', 'holy-songs-content', 'songs');
-  return siblingDir;
-}
-
 const OUTPUT_BASE = process.env.SONGS_OUTPUT_DIR || 'public/data';
 const OUTPUT_DIR = path.resolve(OUTPUT_BASE, 'songs');
 const INDEX_PATH = path.resolve(OUTPUT_BASE, 'songs.index.json');
@@ -22,8 +11,21 @@ async function ensureDir(dir: string) {
   await fs.mkdir(dir, { recursive: true });
 }
 
+async function hasChordProFiles(dir: string) {
+  try {
+    const entries = await fs.readdir(dir);
+    return entries.some((entry) => entry.endsWith('.pro'));
+  } catch {
+    return false;
+  }
+}
+
 async function build() {
-  const songsDir = resolveSongsDir();
+  const localDir = path.resolve('songs');
+  const siblingDir = path.resolve('..', 'holy-songs-content', 'songs');
+  const songsDir =
+    process.env.SONGS_DIR ||
+    ((await hasChordProFiles(localDir)) ? localDir : siblingDir);
   try {
     await fs.access(songsDir);
   } catch {
