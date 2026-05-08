@@ -5,13 +5,17 @@ services:
       context: .
       dockerfile: Dockerfile.backend
     volumes:
-      - ../holy-songs-content/songs:/app/songs
+      - ../holy-songs-content:/app/content-repo
       - ./backend:/app/backend
       - ./dist:/app/dist
     environment:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-truelove}
-      - SONGS_DIR=/app/songs
+      - SONGS_DIR=/app/content-repo/songs
+      - CONTENT_REPO_DIR=/app/content-repo
       - SONGS_OUTPUT_DIR=/app/dist/data
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+      - CONTENT_REPO_GIT_USER_NAME=${CONTENT_REPO_GIT_USER_NAME:-Holy Songs Bot}
+      - CONTENT_REPO_GIT_USER_EMAIL=${CONTENT_REPO_GIT_USER_EMAIL:-holy-songs-bot@local}
     restart: unless-stopped
 
   # The Frontend (Nginx serving static files)

@@ -4,12 +4,13 @@ import { SongLineToken } from '../types';
 
 interface SongEditorProps {
   initialSource: string;
-  onSave: (source: string) => void;
+  onSave: (source: string) => void | Promise<void>;
   onCancel: () => void;
   onDelete?: () => void;
+  isSaving?: boolean;
 }
 
-export function SongEditor({ initialSource, onSave, onCancel, onDelete }: SongEditorProps) {
+export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving = false }: SongEditorProps) {
   const [source, setSource] = useState(initialSource);
   const [mode, setMode] = useState<'visual' | 'raw'>('visual');
   const [copiedChords, setCopiedChords] = useState<Array<{ line: number; chords: Array<{ name: string; index: number }> }> | null>(null);
@@ -158,11 +159,14 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete }: SongEd
             </button>
         </div>
         <div className="toolbar-group">
-            <button className="primary" onClick={() => onSave(source)}>Save Changes</button>
-            <button onClick={onCancel}>Cancel</button>
+            <button className="primary" onClick={() => onSave(source)} disabled={isSaving}>
+                {isSaving ? 'Saving...' : 'Save Changes'}
+            </button>
+            <button onClick={onCancel} disabled={isSaving}>Cancel</button>
             {onDelete && (
                 <button 
                     onClick={onDelete}
+                    disabled={isSaving}
                     style={{ backgroundColor: '#fee2e2', color: '#991b1b', borderColor: '#fecaca' }}
                 >
                     Delete

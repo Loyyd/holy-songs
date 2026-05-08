@@ -1,10 +1,14 @@
+import os
 import sys
 from unittest.mock import MagicMock
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Mock dependencies before importing backend.main
 mock_fastapi = MagicMock()
 sys.modules["fastapi"] = mock_fastapi
 sys.modules["fastapi.middleware.cors"] = MagicMock()
+sys.modules["fastapi.security"] = MagicMock()
 sys.modules["fastapi.staticfiles"] = MagicMock()
 sys.modules["pydantic"] = MagicMock()
 

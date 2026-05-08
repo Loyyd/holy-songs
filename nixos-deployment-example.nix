@@ -16,13 +16,24 @@
       "8000:8000"
     ];
 
-    # Map the host directories to the container directories.
-    # IMPORTANT: Replace the host paths (the part before the colon) with the
-    # actual absolute paths to the songs and backend directories on the NixOS server.
+    # Map the persistent content repository into the container.
+    # IMPORTANT: Replace the host path with the actual absolute path to the
+    # holy-songs-content checkout on the NixOS server. Mount the whole repo,
+    # not only the songs directory, so the backend can commit and push changes.
     volumes = [
-      "/absolute/path/to/holy-songs-content/songs:/app/songs"
-      "/absolute/path/to/host/backend:/app/backend"
+      "/absolute/path/to/holy-songs-content:/app/content-repo"
     ];
+
+    environment = {
+      ADMIN_PASSWORD = "change-me";
+      SONGS_DIR = "/app/content-repo/songs";
+      CONTENT_REPO_DIR = "/app/content-repo";
+      SONGS_OUTPUT_DIR = "/app/dist/data";
+      # Set this with a secret mechanism in real deployments.
+      GITHUB_TOKEN = "";
+      CONTENT_REPO_GIT_USER_NAME = "Holy Songs Bot";
+      CONTENT_REPO_GIT_USER_EMAIL = "holy-songs-bot@local";
+    };
 
     # Automatically start the container when the system boots
     # (equivalent to 'restart: unless-stopped' in docker-compose)

@@ -1,9 +1,28 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Fuse from 'fuse.js';
 import { SongData, SongIndexEntry, SongLineToken } from './types';
 import { transposeTokens, transposeChordProSource } from './lib/chords';
 import { parseChordPro } from './lib/parseChordPro';
 import { SongEditor } from './components/SongEditor';
+
+type SyncStatus = {
+  ok: boolean;
+  pushed: boolean;
+  message?: string;
+};
+
+type SaveResponse = {
+  id?: string;
+  filename?: string;
+  message?: string;
+  sync?: SyncStatus;
+};
+
+type SaveToast = {
+  visible: boolean;
+  kind: 'success' | 'warning';
+  message: string;
+};
 
 function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
   if (!song || !song.sections) return <div className="song">No content</div>;
@@ -102,12 +121,22 @@ export default function App() {
   const [contextSensitive, setContextSensitive] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [adminPassword, setAdminPassword] = useState<string | null>(null);
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveToast, setSaveToast] = useState<SaveToast>({
+    visible: false,
+    kind: 'success',
+    message: 'Saved',
+  });
+  const [saveToastTick, setSaveToastTick] = useState(0);
   const [starred, setStarred] = useState<Set<string>>(() => {
     const saved = localStorage.getItem('starred-songs');
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
   const [autoScroll, setAutoScroll] = useState(false);
   const [scrollSpeed, setScrollSpeed] = useState(0.15); // Default subtle speed (pixels per frame)
+  const saveToastTimeoutRef = useRef<number | null>(null);
+  const saveIndicatorRef = useRef<HTMLDivElement | null>(null);
+  const cursorPositionRef = useRef({ x: 0, y: 0 });
 
   const refreshIndex = (selectId?: string) => {
     return fetch(`${import.meta.env.BASE_URL}data/songs.index.json`, { cache: 'no-store' })
@@ -133,6 +162,56 @@ export default function App() {
       return password;
     }
     return null;
+  };
+
+  const positionSaveIndicator = (x: number, y: number) => {
+    cursorPositionRef.current = { x, y };
+    if (saveIndicatorRef.current) {
+      saveIndicatorRef.current.style.setProperty('--cursor-x', `${x}px`);
+      saveIndicatorRef.current.style.setProperty('--cursor-y', `${y}px`);
+    }
+  };
+
+  const getSaveMessage = (sync?: SyncStatus) => {
+    if (!sync) {
+      return { kind: 'warning' as const, message: 'Saved locally, backup status unknown' };
+    }
+    if (!sync.ok) {
+      return { kind: 'warning' as const, message: 'Saved locally, GitHub backup failed' };
+    }
+    if (!sync.pushed) {
+      return { kind: 'success' as const, message: 'Saved locally, no backup changes' };
+    }
+    return { kind: 'success' as const, message: 'Saved and backed up' };
+  };
+
+  const showSaveToast = (sync?: SyncStatus) => {
+    if (saveToastTimeoutRef.current !== null) {
+      window.clearTimeout(saveToastTimeoutRef.current);
+    }
+    const nextToast = getSaveMessage(sync);
+    positionSaveIndicator(cursorPositionRef.current.x, cursorPositionRef.current.y);
+    setSaveToastTick((tick) => tick + 1);
+    setSaveToast({ visible: true, ...nextToast });
+    saveToastTimeoutRef.current = window.setTimeout(() => {
+      setSaveToast((toast) => ({ ...toast, visible: false }));
+      saveToastTimeoutRef.current = null;
+    }, 2200);
+  };
+
+  const getResponseError = async (response: Response, fallbackMessage: string) => {
+    try {
+      const data = await response.json();
+      if (typeof data?.detail === 'string' && data.detail.trim() !== '') {
+        return data.detail;
+      }
+      if (typeof data?.message === 'string' && data.message.trim() !== '') {
+        return data.message;
+      }
+    } catch {
+      // Ignore JSON parsing issues and use the fallback below.
+    }
+    return fallbackMessage;
   };
 
   // Autoscroll effect
@@ -163,6 +242,25 @@ export default function App() {
 
   useEffect(() => {
     refreshIndex();
+  }, []);
+
+  useEffect(() => {
+    const initialX = window.innerWidth / 2;
+    const initialY = window.innerHeight / 2;
+    positionSaveIndicator(initialX, initialY);
+
+    const handlePointerMove = (event: PointerEvent) => {
+      positionSaveIndicator(event.clientX, event.clientY);
+    };
+
+    window.addEventListener('pointermove', handlePointerMove, { passive: true });
+
+    return () => {
+      window.removeEventListener('pointermove', handlePointerMove);
+      if (saveToastTimeoutRef.current !== null) {
+        window.clearTimeout(saveToastTimeoutRef.current);
+      }
+    };
   }, []);
 
   useEffect(() => {
@@ -265,11 +363,15 @@ export default function App() {
           setAdminPassword(null);
           throw new Error('Unauthorized');
         }
+        if (!res.ok) {
+          throw new Error(await getResponseError(res, 'Failed to update reviewed status'));
+        }
         return res.json();
       })
       .then((data) => {
         if (data.success) {
           refreshIndex();
+          showSaveToast(data.sync);
         } else {
           console.error('Failed to update reviewed status:', data.error);
           // Revert on error
@@ -328,46 +430,51 @@ export default function App() {
   };
 
   const applyEdit = async (source: string = editText) => {
-    if (!song) return;
+    if (!song || isSaving) return;
     const pwd = checkAuth();
     if (!pwd) return;
     try {
       // Apply transpose to the source before saving
       const transposedSource = transposeChordProSource(source, transpose);
       const parsed = parseChordPro(transposedSource, song.sourcePath ?? 'inline');
-      setSong({ ...parsed, id: song.id });
-      setEditText(transposedSource);
-      setEditError(null);
-      setIsEditing(false);
-      setTranspose(0); // Reset transpose after applying
 
       // Save to backend
       try {
+        setIsSaving(true);
         if (song.sourcePath) {
           // Existing song - update it
           const filename = song.sourcePath.split('/').pop();
-          if (filename) {
-            const response = await fetch(`/api/songs/${filename}`, {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${pwd}`,
-              },
-              body: JSON.stringify({ content: transposedSource }),
-            });
-            
-            if (response.status === 401) {
-              setIsAuthenticated(false);
-              setAdminPassword(null);
-              throw new Error('Unauthorized');
-            }
-
-            if (!response.ok) {
-              throw new Error('Failed to save song to backend');
-            }
-            console.log('Song saved to backend');
-            refreshIndex();
+          if (!filename) {
+            throw new Error('Failed to determine the song filename.');
           }
+
+          const response = await fetch(`/api/songs/${filename}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${pwd}`,
+            },
+            body: JSON.stringify({ content: transposedSource }),
+          });
+          
+          if (response.status === 401) {
+            setIsAuthenticated(false);
+            setAdminPassword(null);
+            throw new Error('Unauthorized');
+          }
+
+          if (!response.ok) {
+            throw new Error(await getResponseError(response, 'Failed to save song to the backend.'));
+          }
+          const result: SaveResponse = await response.json();
+
+          setSong({ ...parsed, id: song.id });
+          setEditText(transposedSource);
+          setEditError(null);
+          setIsEditing(false);
+          setTranspose(0);
+          await refreshIndex();
+          showSaveToast(result.sync);
         } else {
           // New song - create it
           const response = await fetch(`/api/songs/create`, {
@@ -386,18 +493,23 @@ export default function App() {
           }
 
           if (!response.ok) {
-            throw new Error('Failed to create song on backend');
+            throw new Error(await getResponseError(response, 'Failed to create the song on the backend.'));
           }
           
-          const result = await response.json();
-          console.log('Song created:', result.id);
-          
-          // Refresh index and select the new song
-          refreshIndex(result.id);
+          const result: SaveResponse = await response.json();
+
+          setEditText(transposedSource);
+          setEditError(null);
+          setIsEditing(false);
+          setTranspose(0);
+          await refreshIndex(result.id);
+          showSaveToast(result.sync);
         }
       } catch (backendErr) {
         console.error('Backend save failed:', backendErr);
-        alert('Failed to save to backend. Is the backend server running?');
+        alert((backendErr as Error).message || 'Failed to save to the backend. Is the backend server running?');
+      } finally {
+        setIsSaving(false);
       }
     } catch (err) {
       setEditError((err as Error).message ?? 'Failed to parse song');
@@ -435,8 +547,9 @@ export default function App() {
       }
 
       if (!response.ok) {
-        throw new Error('Failed to delete song');
+        throw new Error(await getResponseError(response, 'Failed to delete song'));
       }
+      const result: SaveResponse = await response.json();
 
       // Select another song or clear selection
       const nextIndex = index.filter(s => s.id !== song.id);
@@ -451,7 +564,7 @@ export default function App() {
       refreshIndex();
       
       setIsEditing(false);
-      alert('Song deleted successfully');
+      showSaveToast(result.sync);
     } catch (err) {
       alert('Failed to delete song: ' + (err as Error).message);
     }
@@ -603,9 +716,10 @@ export default function App() {
                   onSave={applyEdit}
                   onCancel={() => setIsEditing(false)}
                   onDelete={handleDelete}
+                  isSaving={isSaving}
                 />
                 {editError && <div className="error">{editError}</div>}
-                <div className="note" style={{ marginTop: 8 }}>Edits stay local; rerun build to persist to disk.</div>
+                <div className="note" style={{ marginTop: 8 }}>Edits save to the content repo immediately and then sync to GitHub automatically.</div>
               </div>
             ) : (
               <div className="song-container">
@@ -616,6 +730,24 @@ export default function App() {
         ) : (
           <p>Loading song...</p>
         )}
+      </div>
+      <div
+        ref={saveIndicatorRef}
+        className={`save-toast ${saveToast.visible ? 'visible' : ''} ${saveToast.kind}`}
+        role="status"
+        aria-live="polite"
+        aria-label={saveToast.visible ? saveToast.message : undefined}
+      >
+        <div key={saveToastTick} className="save-toast-icon">
+          {saveToast.kind === 'success' ? (
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 12.5 10 16.5 18 7.5" />
+            </svg>
+          ) : (
+            <span aria-hidden="true">!</span>
+          )}
+        </div>
+        <div className="save-toast-label">{saveToast.message}</div>
       </div>
     </div>
   );
