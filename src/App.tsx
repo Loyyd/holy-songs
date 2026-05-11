@@ -39,7 +39,7 @@ function SongView({ song, transpose, highlightQuery, isContextSensitive }: { son
       <>
         {parts.map((part, i) => 
           regex.test(part) ? (
-            <mark key={i} style={{ backgroundColor: '#fbbf24', padding: '2px 0' }}>{part}</mark>
+            <mark key={i} style={{ backgroundColor: 'rgba(216, 152, 16, 0.28)', color: 'var(--brand-blue)', padding: '2px 0' }}>{part}</mark>
           ) : (
             <span key={i}>{part}</span>
           )
@@ -573,25 +573,17 @@ export default function App() {
   return (
     <div className="app-shell">
       <div className="card">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-          <h1 style={{ margin: 0 }}>Holy Songs</h1>
-          <span 
-            onClick={() => !isAuthenticated && checkAuth()}
-            style={{ 
-              cursor: isAuthenticated ? 'default' : 'pointer',
-              fontSize: '20px',
-              display: 'flex',
-              alignItems: 'center',
-              userSelect: 'none'
-            }}
-            title={isAuthenticated ? 'Authenticated' : 'Login'}
-          >
-            {isAuthenticated ? (
-              <span style={{ color: '#eab308' }}>👑</span>
-            ) : (
-              <span style={{ color: '#ef4444' }}>🔑</span>
-            )}
-          </span>
+        <div className="brand-heading">
+          <img
+            className="brand-logo"
+            src={`${import.meta.env.BASE_URL}logo-black.png`}
+            alt=""
+            aria-hidden="true"
+          />
+          <h1 className="brand-title" aria-label="Holy Songs">
+            <span className="brand-title-holy">Holy</span>
+            <span className="brand-title-songs">Songs</span>
+          </h1>
         </div>
         <p style={{ margin: '0 0 12px' }}>Search, view, and transpose songs.</p>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '12px' }}>
@@ -687,8 +679,8 @@ export default function App() {
               <button 
                 onClick={() => setAutoScroll(!autoScroll)}
                 style={{ 
-                  background: autoScroll ? '#0f172a' : '#f8fafc',
-                  color: autoScroll ? '#f8fafc' : '#0f172a'
+                  background: autoScroll ? 'var(--brand-blue)' : 'var(--surface-muted)',
+                  color: autoScroll ? '#ffffff' : 'var(--brand-blue)'
                 }}
               >
                 {autoScroll ? 'Stop scroll' : 'Autoscroll'}

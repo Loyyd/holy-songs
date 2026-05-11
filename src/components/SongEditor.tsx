@@ -229,19 +229,19 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
             margin-bottom: 1rem;
             position: sticky;
             top: 0;
-            background: #f8fafc;
+            background: var(--surface-muted);
             z-index: 100;
             padding: 10px 0;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid var(--border-soft);
         }
         .toolbar-group {
             display: flex;
             gap: 0.5rem;
         }
         .toolbar-group button.primary {
-            background: #0f172a;
+            background: var(--brand-blue);
             color: white;
-            border-color: #0f172a;
+            border-color: var(--brand-blue);
         }
         .editor-content {
           overflow-x: auto;
@@ -251,7 +251,7 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
             font-size: 15px;
             background: white;
             color: inherit;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-soft);
             padding: 1rem;
             min-height: 400px;
             resize: vertical;
@@ -269,7 +269,7 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
         .directive-editor input {
             font-family: inherit;
             font-weight: bold;
-            color: #64748b;
+            color: var(--brand-gold);
             background: transparent;
             border: none;
             padding: 0;
@@ -278,17 +278,17 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
         }
         .section-action-button {
           background: #fff;
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--border-soft);
           padding: 0.15rem 0.5rem;
           font-size: 0.7rem;
-          color: #64748b;
+          color: var(--brand-blue);
           border-radius: 6px;
           cursor: pointer;
           white-space: nowrap;
         }
         .section-action-button:hover {
-          background: #f8fafc;
-          color: #0f172a;
+          background: rgba(216, 152, 16, 0.13);
+          color: var(--brand-blue);
         }
         .chords-layer {
           position: absolute;
@@ -303,7 +303,7 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
           position: absolute;
           font-weight: 700;
           font-size: 0.9em;
-          color: #0f172a;
+          color: var(--brand-blue);
           cursor: grab;
           pointer-events: auto;
           transform: translateX(-50%);
@@ -313,7 +313,7 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
           line-height: 1;
         }
         .chord-pill:hover {
-            color: #fbbf24;
+            color: var(--brand-gold);
         }
         .chord-pill:active {
           cursor: grabbing;
@@ -332,15 +332,15 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
           letter-spacing: 0;
         }
         .lyrics-input:focus {
-          background: rgba(0, 0, 0, 0.02);
-          border-bottom-color: #cbd5e1;
+          background: rgba(216, 152, 16, 0.08);
+          border-bottom-color: var(--brand-gold);
         }
         .drop-indicator {
           position: absolute;
           top: -1.5em;
           width: 2px;
           height: 2.8em;
-          background-color: #fbbf24;
+          background-color: var(--brand-gold);
           pointer-events: none;
           z-index: 5;
         }
@@ -349,17 +349,17 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
           right: 0.25rem;
           top: -0.4rem; /* sit in the chords area */
           background: #fff;
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--border-soft);
           padding: 0.15rem 0.5rem;
           font-size: 0.75rem;
-          color: #64748b;
+          color: var(--brand-blue);
           border-radius: 6px;
           cursor: pointer;
           z-index: 20;
         }
         .clear-chords-button:hover {
-          background: #f8fafc;
-          color: #0f172a;
+          background: rgba(216, 152, 16, 0.13);
+          color: var(--brand-blue);
         }
       `}</style>
     </div>
