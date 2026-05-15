@@ -18,6 +18,12 @@ type SaveResponse = {
   sync?: SyncStatus;
 };
 
+type RefreshResponse = {
+  ok: boolean;
+  changed: boolean;
+  message?: string;
+};
+
 type SaveToast = {
   visible: boolean;
   kind: 'success' | 'warning';
@@ -122,6 +128,7 @@ export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [adminPassword, setAdminPassword] = useState<string | null>(null);
   const [isSaving, setIsSaving] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [saveToast, setSaveToast] = useState<SaveToast>({
     visible: false,
     kind: 'success',
@@ -214,6 +221,18 @@ export default function App() {
     return fallbackMessage;
   };
 
+  const loadSong = (id: string) => {
+    return fetch(`${import.meta.env.BASE_URL}data/songs/${id}.json`, { cache: 'no-store' })
+      .then((res) => res.json())
+      .then((data: SongData) => {
+        setSong(data);
+        setEditText(data.source ?? '');
+        setIsEditing(false);
+        setEditError(null);
+        return data;
+      });
+  };
+
   // Autoscroll effect
   useEffect(() => {
     if (!autoScroll) return;
@@ -266,16 +285,8 @@ export default function App() {
   useEffect(() => {
     if (!selectedId) return;
     if (selectedId.startsWith('new-song-')) return;
-    
-    fetch(`${import.meta.env.BASE_URL}data/songs/${selectedId}.json`, { cache: 'no-store' })
-      .then((res) => res.json())
-      .then((data: SongData) => {
-        setSong(data);
-        setEditText(data.source ?? '');
-        setIsEditing(false);
-        setEditError(null);
-      })
-      .catch((err) => console.error(err));
+
+    loadSong(selectedId).catch((err) => console.error(err));
   }, [selectedId]);
 
   // Fetch fresh content from backend when editing starts
@@ -427,6 +438,60 @@ export default function App() {
     setIsEditing(true);
     setEditError(null);
     setTranspose(0);
+  };
+
+  const refreshFromGithub = async () => {
+    if (isRefreshing) return;
+    const pwd = checkAuth();
+    if (!pwd) return;
+
+    try {
+      setIsRefreshing(true);
+      const response = await fetch('/api/refresh', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${pwd}`,
+        },
+      });
+
+      if (response.status === 401) {
+        setIsAuthenticated(false);
+        setAdminPassword(null);
+        throw new Error('Unauthorized');
+      }
+
+      if (!response.ok) {
+        throw new Error(await getResponseError(response, 'Failed to refresh from GitHub.'));
+      }
+
+      const result: RefreshResponse = await response.json();
+      if (!result.ok) {
+        throw new Error(result.message || 'Failed to refresh from GitHub.');
+      }
+
+      await refreshIndex(selectedId ?? undefined);
+      if (selectedId && !selectedId.startsWith('new-song-')) {
+        await loadSong(selectedId);
+      }
+
+      setSaveToastTick((tick) => tick + 1);
+      setSaveToast({
+        visible: true,
+        kind: 'success',
+        message: result.changed ? 'Refreshed from GitHub' : 'Already up to date',
+      });
+      if (saveToastTimeoutRef.current !== null) {
+        window.clearTimeout(saveToastTimeoutRef.current);
+      }
+      saveToastTimeoutRef.current = window.setTimeout(() => {
+        setSaveToast((toast) => ({ ...toast, visible: false }));
+        saveToastTimeoutRef.current = null;
+      }, 2200);
+    } catch (err) {
+      alert('Failed to refresh from GitHub: ' + (err as Error).message);
+    } finally {
+      setIsRefreshing(false);
+    }
   };
 
   const applyEdit = async (source: string = editText) => {
@@ -684,6 +749,9 @@ export default function App() {
                 }}
               >
                 {autoScroll ? 'Stop scroll' : 'Autoscroll'}
+              </button>
+              <button onClick={refreshFromGithub} disabled={isRefreshing}>
+                {isRefreshing ? 'Refreshing...' : 'Refresh'}
               </button>
               {autoScroll && (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexBasis: '100%', marginTop: '8px' }}>

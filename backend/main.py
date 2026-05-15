@@ -281,6 +281,43 @@ class ReviewedRequest(BaseModel):
     song_id: str
     reviewed: bool
 
+@app.post("/api/refresh")
+def refresh_from_github(_admin=Depends(verify_admin)):
+    """Pull the content repository from GitHub and rebuild generated song data."""
+    if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
+        message = "Cannot refresh: CONTENT_REPO_DIR is not a git repository."
+        print(message)
+        return {"ok": False, "changed": False, "message": message}
+
+    try:
+        remote_name = os.environ.get("CONTENT_REPO_PUSH_REMOTE", "origin")
+        branch = os.environ.get("CONTENT_REPO_PUSH_BRANCH")
+        if not branch:
+            branch = subprocess.run(
+                ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+                cwd=CONTENT_REPO_DIR,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout.strip()
+
+        user_name, user_email = get_git_identity()
+        changed = rebase_content_repo(remote_name, branch, user_name, user_email)
+        rebuild_songs()
+
+        if changed:
+            message = "Content repo refreshed from GitHub."
+        else:
+            message = "Content repo already up to date; song data rebuilt."
+        print(message)
+        return {"ok": True, "changed": changed, "message": message}
+    except subprocess.CalledProcessError as error:
+        stderr = (error.stderr or "").strip()
+        stdout = (error.stdout or "").strip()
+        message = f"Content repo refresh failed: {stderr or stdout or error}"
+        print(message)
+        return {"ok": False, "changed": False, "message": message}
+
 @app.get("/api/songs")
 def list_songs():
     songs = []
