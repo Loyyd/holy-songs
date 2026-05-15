@@ -181,6 +181,35 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
         )
 
         push_target = build_push_target(remote_name)
+
+        # The content repository can move independently of the running editor,
+        # for example if another browser session or maintainer pushes first.
+        # Rebase this editor commit onto the current branch head before
+        # pushing so one remote-side commit does not wedge every later save.
+        subprocess.run(
+            ["git", "fetch", push_target, branch],
+            cwd=CONTENT_REPO_DIR,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        subprocess.run(
+            [
+                "git",
+                "-c",
+                f"user.name={user_name}",
+                "-c",
+                f"user.email={user_email}",
+                "rebase",
+                "-X",
+                "theirs",
+                "FETCH_HEAD",
+            ],
+            cwd=CONTENT_REPO_DIR,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
         subprocess.run(
             ["git", "push", push_target, f"HEAD:{branch}"],
             cwd=CONTENT_REPO_DIR,
