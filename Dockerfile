@@ -16,11 +16,13 @@ RUN npm run build:app
 # Stage 2: Final image
 FROM node:20-slim
 
-# Install Python and other necessary tools
+# Install Python, Git, and other necessary tools
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
+    git \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
