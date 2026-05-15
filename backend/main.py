@@ -117,6 +117,50 @@ def get_git_identity() -> tuple[str, str]:
     user_email = os.environ.get("CONTENT_REPO_GIT_USER_EMAIL", DEFAULT_GIT_USER_EMAIL)
     return user_name, user_email
 
+def rebase_content_repo(remote_name: str, branch: str, user_name: str, user_email: str) -> bool:
+    push_target = build_push_target(remote_name)
+    before = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+    subprocess.run(
+        ["git", "fetch", push_target, branch],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    subprocess.run(
+        [
+            "git",
+            "-c",
+            f"user.name={user_name}",
+            "-c",
+            f"user.email={user_email}",
+            "rebase",
+            "-X",
+            "theirs",
+            "FETCH_HEAD",
+        ],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+    after = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    return before != after
+
 def sync_content_repo(changed_path: str, action: str) -> dict:
     if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
         message = "Skipping content repo sync: CONTENT_REPO_DIR is not a git repository."
@@ -147,6 +191,7 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
                 text=True,
             ).stdout.strip()
 
+        user_name, user_email = get_git_identity()
         subprocess.run(["git", "add", "--", rel_path], cwd=CONTENT_REPO_DIR, check=True)
 
         staged = subprocess.run(
@@ -157,12 +202,17 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
             text=True,
         ).stdout.strip()
         if not staged:
+            remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
+            if remote_changed:
+                rebuild_songs()
+                message = f"Content repo refreshed from GitHub for {rel_path}."
+                print(message)
+                return {"ok": True, "pushed": False, "message": message}
             message = f"No content repo changes to sync for {rel_path}."
             print(message)
             return {"ok": True, "pushed": False, "message": message}
 
         commit_message = f"{action}: {os.path.basename(rel_path)} via Holy Songs editor"
-        user_name, user_email = get_git_identity()
         subprocess.run(
             [
                 "git",
@@ -181,35 +231,7 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
         )
 
         push_target = build_push_target(remote_name)
-
-        # The content repository can move independently of the running editor,
-        # for example if another browser session or maintainer pushes first.
-        # Rebase this editor commit onto the current branch head before
-        # pushing so one remote-side commit does not wedge every later save.
-        subprocess.run(
-            ["git", "fetch", push_target, branch],
-            cwd=CONTENT_REPO_DIR,
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-        subprocess.run(
-            [
-                "git",
-                "-c",
-                f"user.name={user_name}",
-                "-c",
-                f"user.email={user_email}",
-                "rebase",
-                "-X",
-                "theirs",
-                "FETCH_HEAD",
-            ],
-            cwd=CONTENT_REPO_DIR,
-            check=True,
-            capture_output=True,
-            text=True,
-        )
+        remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
         subprocess.run(
             ["git", "push", push_target, f"HEAD:{branch}"],
             cwd=CONTENT_REPO_DIR,
@@ -217,6 +239,8 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
             capture_output=True,
             text=True,
         )
+        if remote_changed:
+            rebuild_songs()
         message = f"Content repo synced successfully for {rel_path}."
         print(message)
         return {"ok": True, "pushed": True, "message": message}
