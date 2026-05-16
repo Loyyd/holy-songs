@@ -288,16 +288,20 @@ button:disabled {
 }
 
 .refresh-button {
-  display: inline-grid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   place-items: center;
-  width: 34px;
-  height: 34px;
-  padding: 0;
+  width: 32px;
+  min-width: 32px;
+  height: auto;
+  padding: 6px;
+  line-height: 1;
 }
 
 .refresh-button img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   display: block;
 }
 
