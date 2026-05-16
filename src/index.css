@@ -134,11 +134,12 @@ textarea:focus {
 
 input[type="range"] {
   padding: 0;
-  height: 24px;
+  height: 18px;
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
+  display: block;
 }
 
 input[type="range"]::-webkit-slider-track {
@@ -151,12 +152,12 @@ input[type="range"]::-webkit-slider-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background: var(--brand-gold);
   border-radius: 50%;
   cursor: pointer;
-  margin-top: -6px;
+  margin-top: -5px;
   border: 2px solid #ffffff;
   box-shadow: 0 0 0 1px rgba(0, 32, 80, 0.18);
 }
@@ -169,8 +170,8 @@ input[type="range"]::-moz-range-track {
 }
 
 input[type="range"]::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background: var(--brand-gold);
   border-radius: 50%;
   cursor: pointer;
@@ -309,6 +310,19 @@ button:disabled {
   align-items: center;
   gap: 8px;
   flex-basis: 100%;
+}
+
+.speed-slider {
+  flex: 1;
+  min-width: 140px;
+}
+
+.speed-value {
+  min-width: 44px;
+  color: var(--brand-blue);
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  text-align: right;
 }
 
 .song-subtitle {

@@ -148,7 +148,8 @@ export default function App() {
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
   const [autoScroll, setAutoScroll] = useState(false);
-  const [scrollSpeed, setScrollSpeed] = useState(0.15); // Default subtle speed (pixels per frame)
+  const [scrollSpeed, setScrollSpeed] = useState(0.15);
+  const scrollSpeedRef = useRef(scrollSpeed);
   const saveToastTimeoutRef = useRef<number | null>(null);
   const saveIndicatorRef = useRef<HTMLDivElement | null>(null);
   const cursorPositionRef = useRef({ x: 0, y: 0 });
@@ -262,31 +263,36 @@ export default function App() {
       });
   };
 
+  useEffect(() => {
+    scrollSpeedRef.current = scrollSpeed;
+  }, [scrollSpeed]);
+
   // Autoscroll effect
   useEffect(() => {
     if (!autoScroll) return;
-    
+
     let animationFrameId: number;
-    let accumulatedScroll = 0;
-    
-    const scroll = () => {
-      accumulatedScroll += scrollSpeed;
-      
-      // Only scroll when we've accumulated at least 1 pixel
-      if (accumulatedScroll >= 1) {
-        const pixelsToScroll = Math.floor(accumulatedScroll);
-        window.scrollBy(0, pixelsToScroll);
-        accumulatedScroll -= pixelsToScroll;
+    let previousTimestamp: number | null = null;
+
+    const scroll = (timestamp: number) => {
+      if (previousTimestamp === null) {
+        previousTimestamp = timestamp;
       }
+
+      const elapsedSeconds = Math.min((timestamp - previousTimestamp) / 1000, 0.1);
+      previousTimestamp = timestamp;
+      const pixelsToScroll = scrollSpeedRef.current * 60 * elapsedSeconds;
+      window.scrollBy({ top: pixelsToScroll });
+
       animationFrameId = requestAnimationFrame(scroll);
     };
-    
+
     animationFrameId = requestAnimationFrame(scroll);
-    
+
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
-  }, [autoScroll, scrollSpeed]);
+  }, [autoScroll]);
 
   useEffect(() => {
     refreshIndex();
@@ -833,12 +839,12 @@ export default function App() {
                     type="range"
                     min="0.05"
                     max="0.5"
-                    step="0.05"
+                    step="0.01"
                     value={scrollSpeed}
-                    onChange={(e) => setScrollSpeed(parseFloat(e.target.value))}
-                    style={{ flex: 1, padding: 0, height: '24px' }}
+                    onChange={(event) => setScrollSpeed(parseFloat(event.target.value))}
+                    className="speed-slider"
                   />
-                  <span style={{ fontSize: '14px', minWidth: '40px' }}>{scrollSpeed.toFixed(2)}x</span>
+                  <span className="speed-value">{scrollSpeed.toFixed(2)}x</span>
                 </div>
               )}
             </div>
