@@ -346,6 +346,29 @@ button:disabled {
   background: transparent;
 }
 
+.transpose-label-full,
+.transpose-label-short {
+  display: inline-block;
+}
+
+.transpose-label-short {
+  display: none;
+}
+
+.transpose-control:hover .transpose-label-full,
+.transpose-control:focus-within .transpose-label-full,
+.transpose-control.is-open .transpose-label-full,
+.transpose-control.is-transposed .transpose-label-full {
+  display: none;
+}
+
+.transpose-control:hover .transpose-label-short,
+.transpose-control:focus-within .transpose-label-short,
+.transpose-control.is-open .transpose-label-short,
+.transpose-control.is-transposed .transpose-label-short {
+  display: inline-block;
+}
+
 .transpose-control.is-open,
 .transpose-control.is-transposed {
   border-color: rgba(216, 152, 16, 0.72);

@@ -779,7 +779,8 @@ export default function App() {
                     title="Transpose"
                     aria-label="Open transpose controls"
                   >
-                    Tr.
+                    <span className="transpose-label-full">Transpose</span>
+                    <span className="transpose-label-short">Tr.</span>
                   </button>
                   <button
                     className="transpose-step"
