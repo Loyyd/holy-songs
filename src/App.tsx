@@ -128,6 +128,7 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [song, setSong] = useState<SongData | null>(null);
   const [transpose, setTranspose] = useState(0);
+  const [isTransposeOpen, setIsTransposeOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState('');
   const [editError, setEditError] = useState<string | null>(null);
@@ -151,6 +152,27 @@ export default function App() {
   const saveToastTimeoutRef = useRef<number | null>(null);
   const saveIndicatorRef = useRef<HTMLDivElement | null>(null);
   const cursorPositionRef = useRef({ x: 0, y: 0 });
+
+  useEffect(() => {
+    if (transpose === 0) {
+      setIsTransposeOpen(false);
+    }
+  }, [transpose]);
+
+  const adjustTranspose = (delta: number) => {
+    setTranspose((current) => current + delta);
+    setIsTransposeOpen(true);
+  };
+
+  const resetOrOpenTranspose = () => {
+    if (transpose !== 0) {
+      setTranspose(0);
+      setIsTransposeOpen(false);
+      return;
+    }
+
+    setIsTransposeOpen(true);
+  };
 
   const refreshIndex = (selectId?: string) => {
     return fetch(`${import.meta.env.BASE_URL}data/songs.index.json`, { cache: 'no-store' })
@@ -741,11 +763,41 @@ export default function App() {
                 <h2 style={{ margin: 0 }}>{song.title}</h2>
                 <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
               </div>
-              <span className="chip">Transpose: {transpose >= 0 ? `+${transpose}` : transpose}</span>
-              <div className="controls">
-                <button onClick={() => setTranspose((n) => n - 1)}>-</button>
-                <button onClick={() => setTranspose(0)}>Reset</button>
-                <button onClick={() => setTranspose((n) => n + 1)}>+</button>
+              <div
+                className={`transpose-control ${isTransposeOpen ? 'is-open' : ''} ${transpose !== 0 ? 'is-transposed' : ''}`}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                    setIsTransposeOpen(false);
+                  }
+                }}
+              >
+                <button
+                  className="transpose-step transpose-step-left"
+                  onClick={() => adjustTranspose(-1)}
+                  tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
+                  title="Transpose down"
+                  aria-label="Transpose down"
+                >
+                  -
+                </button>
+                <button
+                  className="transpose-main"
+                  onClick={resetOrOpenTranspose}
+                  onFocus={() => setIsTransposeOpen(true)}
+                  title={transpose === 0 ? 'Transpose' : 'Reset transpose'}
+                  aria-label={transpose === 0 ? 'Open transpose controls' : 'Reset transpose'}
+                >
+                  {transpose === 0 ? 'Transpose' : `Reset ${transpose > 0 ? `+${transpose}` : transpose}`}
+                </button>
+                <button
+                  className="transpose-step transpose-step-right"
+                  onClick={() => adjustTranspose(1)}
+                  tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
+                  title="Transpose up"
+                  aria-label="Transpose up"
+                >
+                  +
+                </button>
               </div>
               <button onClick={() => setIsEditing((open) => !open)}>
                 {isEditing ? 'Close' : 'Edit'}
