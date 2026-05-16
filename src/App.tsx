@@ -159,18 +159,18 @@ export default function App() {
     }
   }, [transpose]);
 
-  const adjustTranspose = (delta: number) => {
-    setTranspose((current) => current + delta);
-    setIsTransposeOpen(true);
+  const adjustTranspose = (delta: number, button?: HTMLButtonElement) => {
+    setTranspose((current) => {
+      const next = current + delta;
+      setIsTransposeOpen(next !== 0);
+      if (next === 0) {
+        window.setTimeout(() => button?.blur(), 0);
+      }
+      return next;
+    });
   };
 
-  const resetOrOpenTranspose = () => {
-    if (transpose !== 0) {
-      setTranspose(0);
-      setIsTransposeOpen(false);
-      return;
-    }
-
+  const openTranspose = () => {
     setIsTransposeOpen(true);
   };
 
@@ -758,70 +758,75 @@ export default function App() {
       <div className="card">
         {song ? (
           <>
-            <div className="controls" style={{ marginBottom: 12 }}>
+            <div className="song-header">
               <div className="song-heading">
                 <h2 style={{ margin: 0 }}>{song.title}</h2>
                 <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
               </div>
-              <div
-                className={`transpose-control ${isTransposeOpen ? 'is-open' : ''} ${transpose !== 0 ? 'is-transposed' : ''}`}
-                onBlur={(event) => {
-                  if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
-                    setIsTransposeOpen(false);
-                  }
-                }}
-              >
-                <button
-                  className="transpose-step transpose-step-left"
-                  onClick={() => adjustTranspose(-1)}
-                  tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
-                  title="Transpose down"
-                  aria-label="Transpose down"
+              <div className="song-actions">
+                <div
+                  className={`transpose-control ${isTransposeOpen ? 'is-open' : ''} ${transpose !== 0 ? 'is-transposed' : ''}`}
+                  onBlur={(event) => {
+                    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                      setIsTransposeOpen(false);
+                    }
+                  }}
                 >
-                  -
+                  <button
+                    className="transpose-main"
+                    onClick={openTranspose}
+                    onFocus={() => setIsTransposeOpen(true)}
+                    title="Transpose"
+                    aria-label="Open transpose controls"
+                  >
+                    Tr.
+                  </button>
+                  <button
+                    className="transpose-step"
+                    onClick={(event) => adjustTranspose(-1, event.currentTarget)}
+                    tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
+                    title="Transpose down"
+                    aria-label="Transpose down"
+                  >
+                    -
+                  </button>
+                  <span className="transpose-value" aria-label={`Transpose ${transpose}`}>
+                    {transpose > 0 ? `+${transpose}` : transpose}
+                  </span>
+                  <button
+                    className="transpose-step"
+                    onClick={(event) => adjustTranspose(1, event.currentTarget)}
+                    tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
+                    title="Transpose up"
+                    aria-label="Transpose up"
+                  >
+                    +
+                  </button>
+                </div>
+                <button onClick={() => setIsEditing((open) => !open)}>
+                  {isEditing ? 'Close' : 'Edit'}
                 </button>
                 <button
-                  className="transpose-main"
-                  onClick={resetOrOpenTranspose}
-                  onFocus={() => setIsTransposeOpen(true)}
-                  title={transpose === 0 ? 'Transpose' : 'Reset transpose'}
-                  aria-label={transpose === 0 ? 'Open transpose controls' : 'Reset transpose'}
+                  onClick={() => setAutoScroll(!autoScroll)}
+                  style={{
+                    background: autoScroll ? 'var(--brand-blue)' : 'var(--surface-muted)',
+                    color: autoScroll ? '#ffffff' : 'var(--brand-blue)'
+                  }}
                 >
-                  {transpose === 0 ? 'Transpose' : `Reset ${transpose > 0 ? `+${transpose}` : transpose}`}
+                  {autoScroll ? 'Stop scroll' : 'Autoscroll'}
                 </button>
                 <button
-                  className="transpose-step transpose-step-right"
-                  onClick={() => adjustTranspose(1)}
-                  tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
-                  title="Transpose up"
-                  aria-label="Transpose up"
+                  className="refresh-button"
+                  onClick={refreshFromGithub}
+                  disabled={isRefreshing}
+                  title="Refresh from GitHub"
+                  aria-label="Refresh from GitHub"
                 >
-                  +
+                  <img src={`${import.meta.env.BASE_URL}refresh.png`} alt="" aria-hidden="true" />
                 </button>
               </div>
-              <button onClick={() => setIsEditing((open) => !open)}>
-                {isEditing ? 'Close' : 'Edit'}
-              </button>
-              <button 
-                onClick={() => setAutoScroll(!autoScroll)}
-                style={{ 
-                  background: autoScroll ? 'var(--brand-blue)' : 'var(--surface-muted)',
-                  color: autoScroll ? '#ffffff' : 'var(--brand-blue)'
-                }}
-              >
-                {autoScroll ? 'Stop scroll' : 'Autoscroll'}
-              </button>
-              <button
-                className="refresh-button"
-                onClick={refreshFromGithub}
-                disabled={isRefreshing}
-                title="Refresh from GitHub"
-                aria-label="Refresh from GitHub"
-              >
-                <img src={`${import.meta.env.BASE_URL}refresh.png`} alt="" aria-hidden="true" />
-              </button>
               {autoScroll && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexBasis: '100%', marginTop: '8px' }}>
+                <div className="autoscroll-speed">
                   <label style={{ fontSize: '14px', whiteSpace: 'nowrap' }}>Speed:</label>
                   <input
                     type="range"

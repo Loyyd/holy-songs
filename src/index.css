@@ -274,11 +274,41 @@ button:disabled {
   flex-wrap: wrap;
 }
 
+.song-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
 .song-heading {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  min-width: 180px;
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.song-heading h2 {
+  overflow-wrap: anywhere;
+}
+
+.song-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.autoscroll-speed {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-basis: 100%;
 }
 
 .song-subtitle {
@@ -288,15 +318,10 @@ button:disabled {
 }
 
 .transpose-control {
-  position: relative;
-  z-index: 4;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   flex: 0 0 auto;
-  min-width: 92px;
   height: 32px;
-  isolation: isolate;
 }
 
 .transpose-main,
@@ -307,48 +332,68 @@ button:disabled {
 }
 
 .transpose-main {
-  min-width: 92px;
-  padding: 6px 10px;
+  min-width: 38px;
+  padding: 6px 8px;
   font-weight: 650;
   background: var(--surface-muted);
 }
 
+.transpose-control.is-open .transpose-main,
 .transpose-control.is-transposed .transpose-main {
   border-color: rgba(216, 152, 16, 0.72);
   background: rgba(216, 152, 16, 0.13);
 }
 
+.transpose-step,
+.transpose-value {
+  max-width: 0;
+  margin-left: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-width 150ms ease, margin-left 150ms ease, opacity 150ms ease;
+}
+
 .transpose-step {
-  --step-x: 0;
-  position: absolute;
-  top: 50%;
-  width: 32px;
-  min-width: 32px;
+  width: 0;
+  min-width: 0;
   padding: 0;
+  border-width: 0;
   font-size: 18px;
   font-weight: 700;
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(var(--step-x), -50%) scale(0.88);
-  transition: opacity 150ms ease, transform 150ms ease, border-color 150ms ease;
 }
 
-.transpose-step-left {
-  left: 0;
-  --step-x: calc(-100% - 4px);
-}
-
-.transpose-step-right {
-  right: 0;
-  --step-x: calc(100% + 4px);
+.transpose-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  color: var(--brand-blue);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .transpose-control:hover .transpose-step,
 .transpose-control:focus-within .transpose-step,
-.transpose-control.is-open .transpose-step {
+.transpose-control.is-open .transpose-step,
+.transpose-control.is-transposed .transpose-step {
+  width: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  margin-left: 4px;
+  border-width: 1px;
   opacity: 1;
   pointer-events: auto;
-  transform: translate(var(--step-x), -50%) scale(1);
+}
+
+.transpose-control:hover .transpose-value,
+.transpose-control:focus-within .transpose-value,
+.transpose-control.is-open .transpose-value,
+.transpose-control.is-transposed .transpose-value {
+  max-width: 34px;
+  margin-left: 4px;
+  opacity: 1;
 }
 
 .refresh-button {
@@ -364,8 +409,8 @@ button:disabled {
 }
 
 .refresh-button img {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   display: block;
 }
 
@@ -374,30 +419,55 @@ button:disabled {
     gap: 6px;
   }
 
+  .song-header {
+    gap: 8px;
+  }
+
   .song-heading {
     flex-basis: 100%;
   }
 
-  .transpose-control.is-open,
-  .transpose-control.is-transposed {
-    margin-left: 36px;
-    margin-right: 36px;
+  .song-actions {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
 @media (hover: none) {
   .transpose-control:hover .transpose-step {
+    width: 0;
+    min-width: 0;
+    max-width: 0;
+    margin-left: 0;
+    border-width: 0;
     opacity: 0;
     pointer-events: none;
-    transform: translate(var(--step-x), -50%) scale(0.88);
+  }
+
+  .transpose-control:hover .transpose-value {
+    max-width: 0;
+    margin-left: 0;
+    opacity: 0;
   }
 
   .transpose-control.is-open .transpose-step,
   .transpose-control.is-transposed .transpose-step,
   .transpose-control:focus-within .transpose-step {
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+    margin-left: 4px;
+    border-width: 1px;
     opacity: 1;
     pointer-events: auto;
-    transform: translate(var(--step-x), -50%) scale(1);
+  }
+
+  .transpose-control.is-open .transpose-value,
+  .transpose-control.is-transposed .transpose-value,
+  .transpose-control:focus-within .transpose-value {
+    max-width: 34px;
+    margin-left: 4px;
+    opacity: 1;
   }
 }
 
