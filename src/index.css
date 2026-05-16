@@ -274,9 +274,40 @@ button:disabled {
   flex-wrap: wrap;
 }
 
+.song-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 180px;
+}
+
+.song-subtitle {
+  color: rgba(0, 32, 80, 0.68);
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.refresh-button {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+}
+
+.refresh-button img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 @media (max-width: 640px) {
   .controls {
     gap: 6px;
+  }
+
+  .song-heading {
+    flex-basis: 100%;
   }
 }
 

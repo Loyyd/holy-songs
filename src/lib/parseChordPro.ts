@@ -59,6 +59,7 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
   const lines = raw.split(/\r?\n/);
   let title = 'Untitled';
   let key: string | undefined;
+  let interpret: string | undefined;
   let reviewed: boolean | undefined;
   const sections: SongSection[] = [];
   let currentSection: SongSection = { name: 'Verse', lines: [] };
@@ -82,6 +83,8 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
         title = val;
       } else if (tagLower === 'key') {
         key = val;
+      } else if (tagLower === 'interpret' || tagLower === 'interpreter' || tagLower === 'artist') {
+        interpret = val;
       } else if (tagLower === 'reviewed') {
         reviewed = val.toLowerCase() === 'true';
       } else if (tagLower === 'section') {
@@ -108,6 +111,7 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
     id,
     title,
     key,
+    interpret,
     reviewed,
     sections,
     sourcePath,

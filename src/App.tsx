@@ -115,6 +115,13 @@ function SongView({ song, transpose, highlightQuery, isContextSensitive }: { son
   );
 }
 
+function songSubtitle(song: { key?: string; interpret?: string }) {
+  const pieces = [];
+  if (song.key) pieces.push(`Key: ${song.key}`);
+  if (song.interpret) pieces.push(song.interpret);
+  return pieces.join(' • ');
+}
+
 export default function App() {
   const [query, setQuery] = useState('');
   const [index, setIndex] = useState<SongIndexEntry[]>([]);
@@ -695,7 +702,7 @@ export default function App() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
                     <div style={{ fontWeight: 700 }}>{entry.title}</div>
-                    <div style={{ fontSize: 13, opacity: 0.75 }}>Key: {entry.key ?? '—'}</div>
+                    <div style={{ fontSize: 13, opacity: 0.75 }}>{songSubtitle(entry) || 'Key: —'}</div>
                   </div>
                   <div style={{ display: 'flex', gap: '4px' }}>
                     <span
@@ -730,8 +737,10 @@ export default function App() {
         {song ? (
           <>
             <div className="controls" style={{ marginBottom: 12 }}>
-              <h2 style={{ margin: 0 }}>{song.title}</h2>
-              <span className="chip">Key: {song.key ?? '—'}</span>
+              <div className="song-heading">
+                <h2 style={{ margin: 0 }}>{song.title}</h2>
+                <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
+              </div>
               <span className="chip">Transpose: {transpose >= 0 ? `+${transpose}` : transpose}</span>
               <div className="controls">
                 <button onClick={() => setTranspose((n) => n - 1)}>-</button>
@@ -739,7 +748,7 @@ export default function App() {
                 <button onClick={() => setTranspose((n) => n + 1)}>+</button>
               </div>
               <button onClick={() => setIsEditing((open) => !open)}>
-                {isEditing ? 'Close editor' : 'Edit chords/lyrics'}
+                {isEditing ? 'Close' : 'Edit'}
               </button>
               <button 
                 onClick={() => setAutoScroll(!autoScroll)}
@@ -750,8 +759,14 @@ export default function App() {
               >
                 {autoScroll ? 'Stop scroll' : 'Autoscroll'}
               </button>
-              <button onClick={refreshFromGithub} disabled={isRefreshing}>
-                {isRefreshing ? 'Refreshing...' : 'Refresh'}
+              <button
+                className="refresh-button"
+                onClick={refreshFromGithub}
+                disabled={isRefreshing}
+                title="Refresh from GitHub"
+                aria-label="Refresh from GitHub"
+              >
+                <img src={`${import.meta.env.BASE_URL}refresh.png`} alt="" aria-hidden="true" />
               </button>
               {autoScroll && (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexBasis: '100%', marginTop: '8px' }}>

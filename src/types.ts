@@ -17,6 +17,7 @@ export interface SongData {
   id: string;
   title: string;
   key?: string;
+  interpret?: string;
   reviewed?: boolean;
   sections: SongSection[];
   sourcePath: string | null;
@@ -27,6 +28,7 @@ export interface SongIndexEntry {
   id: string;
   title: string;
   key?: string;
+  interpret?: string;
   reviewed?: boolean;
   sections: string[];
 }

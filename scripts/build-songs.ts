@@ -57,6 +57,7 @@ async function build() {
       id: song.id,
       title: song.title,
       key: song.key,
+      interpret: song.interpret,
       reviewed: song.reviewed,
       sections: song.sections.flatMap((section) =>
         section.lines.map((line) => line.raw).filter((line) => line.trim() !== '')
