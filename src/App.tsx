@@ -30,6 +30,10 @@ type SaveToast = {
   message: string;
 };
 
+function isTemporaryNewSongId(id: string | null | undefined) {
+  return typeof id === 'string' && /^new-song-\d+$/.test(id);
+}
+
 function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
   if (!song || !song.sections) return <div className="song">No content</div>;
 
@@ -325,7 +329,7 @@ export default function App() {
 
   useEffect(() => {
     if (!selectedId) return;
-    if (selectedId.startsWith('new-song-')) return;
+    if (isTemporaryNewSongId(selectedId)) return;
 
     loadSong(selectedId).catch((err) => console.error(err));
   }, [selectedId]);
@@ -511,7 +515,7 @@ export default function App() {
       }
 
       await refreshIndex(selectedId ?? undefined);
-      if (selectedId && !selectedId.startsWith('new-song-')) {
+      if (selectedId && !isTemporaryNewSongId(selectedId)) {
         await loadSong(selectedId);
       }
 
