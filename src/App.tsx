@@ -272,6 +272,7 @@ export default function App() {
     if (!autoScroll) return;
 
     let animationFrameId: number;
+    let accumulatedScroll = 0;
     let previousTimestamp: number | null = null;
 
     const scroll = (timestamp: number) => {
@@ -281,8 +282,13 @@ export default function App() {
 
       const elapsedSeconds = Math.min((timestamp - previousTimestamp) / 1000, 0.1);
       previousTimestamp = timestamp;
-      const pixelsToScroll = scrollSpeedRef.current * 60 * elapsedSeconds;
-      window.scrollBy({ top: pixelsToScroll });
+      accumulatedScroll += scrollSpeedRef.current * 60 * elapsedSeconds;
+
+      if (accumulatedScroll >= 1) {
+        const pixelsToScroll = Math.floor(accumulatedScroll);
+        window.scrollBy(0, pixelsToScroll);
+        accumulatedScroll -= pixelsToScroll;
+      }
 
       animationFrameId = requestAnimationFrame(scroll);
     };
