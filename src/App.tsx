@@ -30,6 +30,16 @@ type SaveToast = {
   message: string;
 };
 
+type AppRoute =
+  | { mode: 'browse' }
+  | { mode: 'edit'; id: string };
+
+function parseAppRoute(): AppRoute {
+  const params = new URLSearchParams(window.location.search);
+  const editId = params.get('edit');
+  return editId ? { mode: 'edit', id: editId } : { mode: 'browse' };
+}
+
 function isTemporaryNewSongId(id: string | null | undefined) {
   return typeof id === 'string' && /^new-song-\d+$/.test(id);
 }
@@ -127,13 +137,13 @@ function songSubtitle(song: { key?: string; interpret?: string }) {
 }
 
 export default function App() {
+  const [route, setRoute] = useState<AppRoute>(() => parseAppRoute());
   const [query, setQuery] = useState('');
   const [index, setIndex] = useState<SongIndexEntry[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [song, setSong] = useState<SongData | null>(null);
   const [transpose, setTranspose] = useState(0);
   const [isTransposeOpen, setIsTransposeOpen] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState('');
   const [editError, setEditError] = useState<string | null>(null);
   const [contextSensitive, setContextSensitive] = useState(false);
@@ -157,6 +167,7 @@ export default function App() {
   const saveToastTimeoutRef = useRef<number | null>(null);
   const saveIndicatorRef = useRef<HTMLDivElement | null>(null);
   const cursorPositionRef = useRef({ x: 0, y: 0 });
+  const isEditing = route.mode === 'edit';
 
   useEffect(() => {
     if (transpose === 0) {
@@ -261,15 +272,36 @@ export default function App() {
       .then((data: SongData) => {
         setSong(data);
         setEditText(data.source ?? '');
-        setIsEditing(false);
         setEditError(null);
         return data;
       });
   };
 
+  const navigateToBrowse = () => {
+    window.history.pushState({}, '', window.location.pathname);
+    setRoute({ mode: 'browse' });
+  };
+
+  const navigateToEdit = (id: string) => {
+    const nextUrl = `${window.location.pathname}?edit=${encodeURIComponent(id)}`;
+    window.history.pushState({}, '', nextUrl);
+    setRoute({ mode: 'edit', id });
+    setEditError(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     scrollSpeedRef.current = scrollSpeed;
   }, [scrollSpeed]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setRoute(parseAppRoute());
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Autoscroll effect
   useEffect(() => {
@@ -307,6 +339,13 @@ export default function App() {
   useEffect(() => {
     refreshIndex();
   }, []);
+
+  useEffect(() => {
+    if (route.mode === 'edit' && route.id !== selectedId) {
+      setSelectedId(route.id);
+      setTranspose(0);
+    }
+  }, [route, selectedId]);
 
   useEffect(() => {
     const initialX = window.innerWidth / 2;
@@ -480,9 +519,9 @@ export default function App() {
     setSong(newSong);
     setSelectedId(newSong.id);
     setEditText(newSongTemplate);
-    setIsEditing(true);
     setEditError(null);
     setTranspose(0);
+    navigateToEdit(newSong.id);
   };
 
   const refreshFromGithub = async () => {
@@ -581,9 +620,9 @@ export default function App() {
           setSong({ ...parsed, id: song.id });
           setEditText(transposedSource);
           setEditError(null);
-          setIsEditing(false);
           setTranspose(0);
           await refreshIndex();
+          navigateToBrowse();
           showSaveToast(result.sync);
         } else {
           // New song - create it
@@ -610,9 +649,9 @@ export default function App() {
 
           setEditText(transposedSource);
           setEditError(null);
-          setIsEditing(false);
           setTranspose(0);
           await refreshIndex(result.id);
+          navigateToBrowse();
           showSaveToast(result.sync);
         }
       } catch (backendErr) {
@@ -629,8 +668,8 @@ export default function App() {
   const handleDelete = async () => {
     if (!song || !song.sourcePath) {
       // For unsaved new songs, just cancel
-      setIsEditing(false);
       setSelectedId(index.length > 0 ? index[0].id : null);
+      navigateToBrowse();
       return;
     }
 
@@ -673,12 +712,89 @@ export default function App() {
       // Refresh index from server
       refreshIndex();
       
-      setIsEditing(false);
+      navigateToBrowse();
       showSaveToast(result.sync);
     } catch (err) {
       alert('Failed to delete song: ' + (err as Error).message);
     }
   };
+
+  const handleCancelEdit = () => {
+    if (isTemporaryNewSongId(selectedId)) {
+      setSelectedId(index.length > 0 ? index[0].id : null);
+      setSong(null);
+    }
+    setEditError(null);
+    navigateToBrowse();
+  };
+
+  const saveToastElement = (
+    <div
+      ref={saveIndicatorRef}
+      className={`save-toast ${saveToast.visible ? 'visible' : ''} ${saveToast.kind}`}
+      role="status"
+      aria-live="polite"
+      aria-label={saveToast.visible ? saveToast.message : undefined}
+    >
+      <div key={saveToastTick} className="save-toast-icon">
+        {saveToast.kind === 'success' ? (
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 12.5 10 16.5 18 7.5" />
+          </svg>
+        ) : (
+          <span aria-hidden="true">!</span>
+        )}
+      </div>
+      <div className="save-toast-label">{saveToast.message}</div>
+    </div>
+  );
+
+  if (isEditing) {
+    return (
+      <div className="edit-page-shell">
+        <div className="edit-page-card">
+          <div className="edit-page-header">
+            <div className="brand-heading edit-page-brand">
+              <img
+                className="brand-logo"
+                src={`${import.meta.env.BASE_URL}logo-black.png`}
+                alt=""
+                aria-hidden="true"
+              />
+              <h1 className="brand-title" aria-label="Holy Songs">
+                <span className="brand-title-holy">Holy</span>
+                <span className="brand-title-songs">Songs</span>
+              </h1>
+            </div>
+            <button onClick={handleCancelEdit} disabled={isSaving}>
+              Back to song
+            </button>
+          </div>
+
+          {song ? (
+            <>
+              <div className="edit-page-title">
+                <h2>{isTemporaryNewSongId(song.id) ? 'Create Song' : `Edit ${song.title}`}</h2>
+                <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
+              </div>
+              <SongEditor
+                initialSource={editText}
+                onSave={applyEdit}
+                onCancel={handleCancelEdit}
+                onDelete={handleDelete}
+                isSaving={isSaving}
+              />
+              {editError && <div className="error">{editError}</div>}
+              <div className="note edit-page-note">Edits save to the content repo immediately and then sync to GitHub automatically.</div>
+            </>
+          ) : (
+            <p>Loading editor...</p>
+          )}
+        </div>
+        {saveToastElement}
+      </div>
+    );
+  }
 
   return (
     <div className="app-shell">
@@ -820,8 +936,8 @@ export default function App() {
                     +
                   </button>
                 </div>
-                <button onClick={() => setIsEditing((open) => !open)}>
-                  {isEditing ? 'Close' : 'Edit'}
+                <button onClick={() => song && navigateToEdit(song.id)}>
+                  Edit
                 </button>
                 <button
                   onClick={() => setAutoScroll(!autoScroll)}
@@ -858,46 +974,15 @@ export default function App() {
                 </div>
               )}
             </div>
-            {isEditing ? (
-              <div className="editor-container">
-                <SongEditor
-                  initialSource={editText}
-                  onSave={applyEdit}
-                  onCancel={() => setIsEditing(false)}
-                  onDelete={handleDelete}
-                  isSaving={isSaving}
-                />
-                {editError && <div className="error">{editError}</div>}
-                <div className="note" style={{ marginTop: 8 }}>Edits save to the content repo immediately and then sync to GitHub automatically.</div>
-              </div>
-            ) : (
-              <div className="song-container">
-                <SongView song={song} transpose={transpose} highlightQuery={query} isContextSensitive={contextSensitive} />
-              </div>
-            )}
+            <div className="song-container">
+              <SongView song={song} transpose={transpose} highlightQuery={query} isContextSensitive={contextSensitive} />
+            </div>
           </>
         ) : (
           <p>Loading song...</p>
         )}
       </div>
-      <div
-        ref={saveIndicatorRef}
-        className={`save-toast ${saveToast.visible ? 'visible' : ''} ${saveToast.kind}`}
-        role="status"
-        aria-live="polite"
-        aria-label={saveToast.visible ? saveToast.message : undefined}
-      >
-        <div key={saveToastTick} className="save-toast-icon">
-          {saveToast.kind === 'success' ? (
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6 12.5 10 16.5 18 7.5" />
-            </svg>
-          ) : (
-            <span aria-hidden="true">!</span>
-          )}
-        </div>
-        <div className="save-toast-label">{saveToast.message}</div>
-      </div>
+      {saveToastElement}
     </div>
   );
 }

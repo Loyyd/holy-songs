@@ -40,6 +40,66 @@ a {
   }
 }
 
+.edit-page-shell {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 20px 40px;
+}
+
+.edit-page-card {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 32, 80, 0.08);
+}
+
+.edit-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.edit-page-brand {
+  margin-bottom: 0;
+}
+
+.edit-page-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.edit-page-title h2 {
+  margin: 0;
+}
+
+.edit-page-note {
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+  .edit-page-shell {
+    padding: 14px 12px 28px;
+  }
+
+  .edit-page-card {
+    padding: 14px;
+  }
+
+  .edit-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .card {
   background: white;
   border: 1px solid var(--border-soft);

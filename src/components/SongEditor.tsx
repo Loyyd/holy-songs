@@ -15,6 +15,10 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
   const [mode, setMode] = useState<'visual' | 'raw'>('visual');
   const [copiedChords, setCopiedChords] = useState<Array<{ line: number; chords: Array<{ name: string; index: number }> }> | null>(null);
   const [copiedSectionName, setCopiedSectionName] = useState<string | null>(null);
+
+  useEffect(() => {
+    setSource(initialSource);
+  }, [initialSource]);
   
   const lines = source.split(/\r?\n/);
 
