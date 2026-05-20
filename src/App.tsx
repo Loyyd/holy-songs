@@ -121,8 +121,8 @@ function SongView({ song, transpose, highlightQuery, isContextSensitive }: { son
 
 function songSubtitle(song: { key?: string; interpret?: string }) {
   const pieces = [];
-  if (song.key) pieces.push(`Key: ${song.key}`);
   if (song.interpret) pieces.push(`by ${song.interpret}`);
+  if (song.key) pieces.push(`Key: ${song.key}`);
   return pieces.join(' • ');
 }
 
