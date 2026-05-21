@@ -25,7 +25,6 @@
     ];
 
     environment = {
-      ADMIN_PASSWORD = "change-me";
       SONGS_DIR = "/app/content-repo/songs";
       CONTENT_REPO_DIR = "/app/content-repo";
       SONGS_OUTPUT_DIR = "/app/dist/data";

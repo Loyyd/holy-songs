@@ -1,22 +1,14 @@
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 import os
 import subprocess
 import re
-import secrets
 from urllib.parse import quote
 
 app = FastAPI()
-security = HTTPBearer()
-
-def verify_admin(credentials: HTTPAuthorizationCredentials = Depends(security)):
-    admin_password = os.environ.get("ADMIN_PASSWORD", "truelove")
-    if not secrets.compare_digest(credentials.credentials, admin_password):
-        raise HTTPException(status_code=401, detail="Invalid or missing password")
-    return credentials.credentials
 
 # Allow CORS for frontend development
 app.add_middleware(
@@ -282,7 +274,7 @@ class ReviewedRequest(BaseModel):
     reviewed: bool
 
 @app.post("/api/refresh")
-def refresh_from_github(_admin=Depends(verify_admin)):
+def refresh_from_github():
     """Pull the content repository from GitHub and rebuild generated song data."""
     if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
         message = "Cannot refresh: CONTENT_REPO_DIR is not a git repository."
@@ -328,7 +320,7 @@ def list_songs():
     return {"songs": sorted(songs)}
 
 @app.post("/api/songs/create")
-def create_song(song: SongContent, _admin=Depends(verify_admin)):
+def create_song(song: SongContent):
     """Create a new song file with auto-generated filename from title"""
     # Extract title from content
     title_match = re.search(r'\{title:\s*([^}]+)\}', song.content, re.IGNORECASE)
@@ -380,7 +372,7 @@ def get_song(filename: str):
 
 @app.post("/api/songs/{filename}")
 @app.put("/api/songs/{filename}")
-def update_song(filename: str, song: SongContent, _admin=Depends(verify_admin)):
+def update_song(filename: str, song: SongContent):
     """Update an existing song file"""
     # Basic security check to prevent directory traversal
     if ".." in filename or "/" in filename or "\\" in filename:
@@ -404,7 +396,7 @@ def update_song(filename: str, song: SongContent, _admin=Depends(verify_admin)):
     return {"message": "Song updated successfully", "filename": filename, "sync": sync}
 
 @app.delete("/api/songs/{filename}")
-def delete_song(filename: str, _admin=Depends(verify_admin)):
+def delete_song(filename: str):
     """Delete a song file"""
     # Basic security check to prevent directory traversal
     if ".." in filename or "/" in filename or "\\" in filename:
@@ -491,7 +483,7 @@ def update_reviewed_in_file(filepath: str, reviewed: bool) -> bool:
     return True
 
 @app.post("/api/reviewed")
-def update_reviewed(request: ReviewedRequest, _admin=Depends(verify_admin)):
+def update_reviewed(request: ReviewedRequest):
     """Update the reviewed status of a song in its .pro file"""
     filepath = find_song_file_by_id(request.song_id)
     
@@ -506,6 +498,14 @@ def update_reviewed(request: ReviewedRequest, _admin=Depends(verify_admin)):
         return {"success": True, "message": "Reviewed status updated", "reviewed": request.reviewed, "sync": sync}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/edit/{song_id:path}")
+def serve_edit_page(song_id: str):
+    """Serve the SPA shell for direct edit-page loads."""
+    index_path = os.path.join(DIST_DIR, "index.html")
+    if not os.path.exists(index_path):
+        raise HTTPException(status_code=404, detail="Frontend not built")
+    return FileResponse(index_path)
 
 # Mount the static files from dist/ directory (production)
 if os.path.exists(DIST_DIR):

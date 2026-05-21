@@ -9,7 +9,6 @@ services:
       - ./backend:/app/backend
       - ./dist:/app/dist
     environment:
-      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-truelove}
       - SONGS_DIR=/app/content-repo/songs
       - CONTENT_REPO_DIR=/app/content-repo
       - SONGS_OUTPUT_DIR=/app/dist/data

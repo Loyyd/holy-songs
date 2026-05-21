@@ -35,14 +35,29 @@ type AppRoute =
   | { mode: 'edit'; id: string };
 
 function parseAppRoute(): AppRoute {
+  const editPathMatch = window.location.pathname.match(/^\/edit\/([^/]+)\/?$/);
+  if (editPathMatch) {
+    return { mode: 'edit', id: decodeURIComponent(editPathMatch[1]) };
+  }
+
   const params = new URLSearchParams(window.location.search);
   const editId = params.get('edit');
   return editId ? { mode: 'edit', id: editId } : { mode: 'browse' };
 }
 
 function isTemporaryNewSongId(id: string | null | undefined) {
-  return typeof id === 'string' && /^new-song-\d+$/.test(id);
+  return id === 'new' || (typeof id === 'string' && /^new-song-\d+$/.test(id));
 }
+
+const NEW_SONG_TEMPLATE = `{title: New Song}
+{key: C}
+
+{section: Verse 1}
+
+
+{section: Chorus}
+
+`;
 
 function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
   if (!song || !song.sections) return <div className="song">No content</div>;
@@ -147,8 +162,6 @@ export default function App() {
   const [editText, setEditText] = useState('');
   const [editError, setEditError] = useState<string | null>(null);
   const [contextSensitive, setContextSensitive] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [adminPassword, setAdminPassword] = useState<string | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [saveToast, setSaveToast] = useState<SaveToast>({
@@ -203,17 +216,6 @@ export default function App() {
         return data;
       })
       .catch((err) => console.error('Failed to refresh index:', err));
-  };
-
-  const checkAuth = (): string | null => {
-    if (isAuthenticated && adminPassword) return adminPassword;
-    const password = window.prompt('Enter password to save changes:');
-    if (password) {
-      setAdminPassword(password);
-      setIsAuthenticated(true);
-      return password;
-    }
-    return null;
   };
 
   const positionSaveIndicator = (x: number, y: number) => {
@@ -278,16 +280,11 @@ export default function App() {
   };
 
   const navigateToBrowse = () => {
-    window.history.pushState({}, '', window.location.pathname);
-    setRoute({ mode: 'browse' });
+    window.location.assign('/');
   };
 
   const navigateToEdit = (id: string) => {
-    const nextUrl = `${window.location.pathname}?edit=${encodeURIComponent(id)}`;
-    window.history.pushState({}, '', nextUrl);
-    setRoute({ mode: 'edit', id });
-    setEditError(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.location.assign(`/edit/${encodeURIComponent(id)}`);
   };
 
   useEffect(() => {
@@ -373,6 +370,25 @@ export default function App() {
     loadSong(selectedId).catch((err) => console.error(err));
   }, [selectedId]);
 
+  useEffect(() => {
+    if (route.mode !== 'edit' || !isTemporaryNewSongId(route.id)) return;
+
+    const newSong: SongData = {
+      id: route.id,
+      title: 'New Song',
+      key: 'C',
+      sections: [],
+      source: NEW_SONG_TEMPLATE,
+      sourcePath: null
+    };
+
+    setSong(newSong);
+    setSelectedId(route.id);
+    setEditText(NEW_SONG_TEMPLATE);
+    setEditError(null);
+    setTranspose(0);
+  }, [route]);
+
   // Fetch fresh content from backend when editing starts
   useEffect(() => {
     if (isEditing && song?.sourcePath) {
@@ -429,8 +445,6 @@ export default function App() {
   };
 
   const toggleFlag = (id: string, currentReviewed: boolean | undefined) => {
-    const pwd = checkAuth();
-    if (!pwd) return;
     const newReviewed = !currentReviewed;
     
     // Optimistically update the index
@@ -448,16 +462,10 @@ export default function App() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${pwd}`,
       },
       body: JSON.stringify({ song_id: id, reviewed: newReviewed }),
     })
       .then(async (res) => {
-        if (res.status === 401) {
-          setIsAuthenticated(false);
-          setAdminPassword(null);
-          throw new Error('Unauthorized');
-        }
         if (!res.ok) {
           throw new Error(await getResponseError(res, 'Failed to update reviewed status'));
         }
@@ -496,53 +504,17 @@ export default function App() {
   };
 
   const handleCreateNewSong = () => {
-    if (!checkAuth()) return;
-    const newSongTemplate = `{title: New Song}
-{key: C}
-
-{section: Verse 1}
-
-
-{section: Chorus}
-
-`;
-    
-    const newSong: SongData = {
-      id: 'new-song-' + Date.now(),
-      title: 'New Song',
-      key: 'C',
-      sections: [],
-      source: newSongTemplate,
-      sourcePath: null
-    };
-    
-    setSong(newSong);
-    setSelectedId(newSong.id);
-    setEditText(newSongTemplate);
-    setEditError(null);
-    setTranspose(0);
-    navigateToEdit(newSong.id);
+    navigateToEdit('new');
   };
 
   const refreshFromGithub = async () => {
     if (isRefreshing) return;
-    const pwd = checkAuth();
-    if (!pwd) return;
 
     try {
       setIsRefreshing(true);
       const response = await fetch('/api/refresh', {
         method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${pwd}`,
-        },
       });
-
-      if (response.status === 401) {
-        setIsAuthenticated(false);
-        setAdminPassword(null);
-        throw new Error('Unauthorized');
-      }
 
       if (!response.ok) {
         throw new Error(await getResponseError(response, 'Failed to refresh from GitHub.'));
@@ -580,8 +552,6 @@ export default function App() {
 
   const applyEdit = async (source: string = editText) => {
     if (!song || isSaving) return;
-    const pwd = checkAuth();
-    if (!pwd) return;
     try {
       // Apply transpose to the source before saving
       const transposedSource = transposeChordProSource(source, transpose);
@@ -601,16 +571,9 @@ export default function App() {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': `Bearer ${pwd}`,
             },
             body: JSON.stringify({ content: transposedSource }),
           });
-          
-          if (response.status === 401) {
-            setIsAuthenticated(false);
-            setAdminPassword(null);
-            throw new Error('Unauthorized');
-          }
 
           if (!response.ok) {
             throw new Error(await getResponseError(response, 'Failed to save song to the backend.'));
@@ -630,16 +593,9 @@ export default function App() {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': `Bearer ${pwd}`,
             },
             body: JSON.stringify({ content: transposedSource }),
           });
-          
-          if (response.status === 401) {
-            setIsAuthenticated(false);
-            setAdminPassword(null);
-            throw new Error('Unauthorized');
-          }
 
           if (!response.ok) {
             throw new Error(await getResponseError(response, 'Failed to create the song on the backend.'));
@@ -677,23 +633,11 @@ export default function App() {
       return;
     }
 
-    const pwd = checkAuth();
-    if (!pwd) return;
-
     try {
       const filename = song.sourcePath.split('/').pop();
       const response = await fetch(`/api/songs/${filename}`, {
         method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${pwd}`,
-        },
       });
-
-      if (response.status === 401) {
-        setIsAuthenticated(false);
-        setAdminPassword(null);
-        throw new Error('Unauthorized');
-      }
 
       if (!response.ok) {
         throw new Error(await getResponseError(response, 'Failed to delete song'));
