@@ -26,7 +26,7 @@ type RefreshResponse = {
 
 type SaveToast = {
   visible: boolean;
-  kind: 'success' | 'warning';
+  kind: 'success' | 'warning' | 'error';
   message: string;
 };
 
@@ -178,8 +178,6 @@ export default function App() {
   const [scrollSpeed, setScrollSpeed] = useState(0.15);
   const scrollSpeedRef = useRef(scrollSpeed);
   const saveToastTimeoutRef = useRef<number | null>(null);
-  const saveIndicatorRef = useRef<HTMLDivElement | null>(null);
-  const cursorPositionRef = useRef({ x: 0, y: 0 });
   const isEditing = route.mode === 'edit';
 
   useEffect(() => {
@@ -218,14 +216,6 @@ export default function App() {
       .catch((err) => console.error('Failed to refresh index:', err));
   };
 
-  const positionSaveIndicator = (x: number, y: number) => {
-    cursorPositionRef.current = { x, y };
-    if (saveIndicatorRef.current) {
-      saveIndicatorRef.current.style.setProperty('--cursor-x', `${x}px`);
-      saveIndicatorRef.current.style.setProperty('--cursor-y', `${y}px`);
-    }
-  };
-
   const getSaveMessage = (sync?: SyncStatus) => {
     if (!sync) {
       return { kind: 'warning' as const, message: 'Saved locally, backup status unknown' };
@@ -239,18 +229,24 @@ export default function App() {
     return { kind: 'success' as const, message: 'Saved and backed up' };
   };
 
-  const showSaveToast = (sync?: SyncStatus) => {
+  const showToast = (nextToast: Omit<SaveToast, 'visible'>) => {
     if (saveToastTimeoutRef.current !== null) {
       window.clearTimeout(saveToastTimeoutRef.current);
     }
-    const nextToast = getSaveMessage(sync);
-    positionSaveIndicator(cursorPositionRef.current.x, cursorPositionRef.current.y);
     setSaveToastTick((tick) => tick + 1);
     setSaveToast({ visible: true, ...nextToast });
     saveToastTimeoutRef.current = window.setTimeout(() => {
       setSaveToast((toast) => ({ ...toast, visible: false }));
       saveToastTimeoutRef.current = null;
-    }, 2200);
+    }, nextToast.kind === 'error' ? 3600 : 2600);
+  };
+
+  const showSaveToast = (sync?: SyncStatus) => {
+    showToast(getSaveMessage(sync));
+  };
+
+  const showFailureToast = (message: string) => {
+    showToast({ kind: 'error', message });
   };
 
   const getResponseError = async (response: Response, fallbackMessage: string) => {
@@ -345,18 +341,7 @@ export default function App() {
   }, [route, selectedId]);
 
   useEffect(() => {
-    const initialX = window.innerWidth / 2;
-    const initialY = window.innerHeight / 2;
-    positionSaveIndicator(initialX, initialY);
-
-    const handlePointerMove = (event: PointerEvent) => {
-      positionSaveIndicator(event.clientX, event.clientY);
-    };
-
-    window.addEventListener('pointermove', handlePointerMove, { passive: true });
-
     return () => {
-      window.removeEventListener('pointermove', handlePointerMove);
       if (saveToastTimeoutRef.current !== null) {
         window.clearTimeout(saveToastTimeoutRef.current);
       }
@@ -530,21 +515,12 @@ export default function App() {
         await loadSong(selectedId);
       }
 
-      setSaveToastTick((tick) => tick + 1);
-      setSaveToast({
-        visible: true,
+      showToast({
         kind: 'success',
         message: result.changed ? 'Refreshed from GitHub' : 'Already up to date',
       });
-      if (saveToastTimeoutRef.current !== null) {
-        window.clearTimeout(saveToastTimeoutRef.current);
-      }
-      saveToastTimeoutRef.current = window.setTimeout(() => {
-        setSaveToast((toast) => ({ ...toast, visible: false }));
-        saveToastTimeoutRef.current = null;
-      }, 2200);
     } catch (err) {
-      alert('Failed to refresh from GitHub: ' + (err as Error).message);
+      showFailureToast('Failed to refresh from GitHub');
     } finally {
       setIsRefreshing(false);
     }
@@ -612,12 +588,16 @@ export default function App() {
         }
       } catch (backendErr) {
         console.error('Backend save failed:', backendErr);
-        alert((backendErr as Error).message || 'Failed to save to the backend. Is the backend server running?');
+        const message = (backendErr as Error).message || 'Failed to save changes';
+        setEditError(message);
+        showFailureToast(message);
       } finally {
         setIsSaving(false);
       }
     } catch (err) {
-      setEditError((err as Error).message ?? 'Failed to parse song');
+      const message = (err as Error).message ?? 'Failed to parse song';
+      setEditError(message);
+      showFailureToast(message);
     }
   };
 
@@ -659,7 +639,7 @@ export default function App() {
       navigateToBrowse();
       showSaveToast(result.sync);
     } catch (err) {
-      alert('Failed to delete song: ' + (err as Error).message);
+      showFailureToast('Failed to delete song');
     }
   };
 
@@ -674,7 +654,6 @@ export default function App() {
 
   const saveToastElement = (
     <div
-      ref={saveIndicatorRef}
       className={`save-toast ${saveToast.visible ? 'visible' : ''} ${saveToast.kind}`}
       role="status"
       aria-live="polite"
@@ -685,6 +664,8 @@ export default function App() {
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6 12.5 10 16.5 18 7.5" />
           </svg>
+        ) : saveToast.kind === 'error' ? (
+          <span aria-hidden="true">×</span>
         ) : (
           <span aria-hidden="true">!</span>
         )}
@@ -698,19 +679,7 @@ export default function App() {
       <div className="edit-page-shell">
         <div className="edit-page-card">
           <div className="edit-page-header">
-            <div className="brand-heading edit-page-brand">
-              <img
-                className="brand-logo"
-                src={`${import.meta.env.BASE_URL}logo-black.png`}
-                alt=""
-                aria-hidden="true"
-              />
-              <h1 className="brand-title" aria-label="Holy Songs">
-                <span className="brand-title-holy">Holy</span>
-                <span className="brand-title-songs">Songs</span>
-              </h1>
-            </div>
-            <button onClick={handleCancelEdit} disabled={isSaving}>
+            <button className="edit-back-button" onClick={handleCancelEdit} disabled={isSaving}>
               Back to song
             </button>
           </div>
