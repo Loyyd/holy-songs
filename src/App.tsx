@@ -682,6 +682,14 @@ export default function App() {
             <button className="edit-back-button" onClick={handleCancelEdit} disabled={isSaving}>
               Back to song
             </button>
+            <div className="edit-page-actions">
+              <button className="primary" onClick={() => applyEdit(editText)} disabled={!song || isSaving}>
+                {isSaving ? 'Saving...' : 'Save Changes'}
+              </button>
+              <button className="danger" onClick={handleDelete} disabled={!song || isSaving}>
+                Delete
+              </button>
+            </div>
           </div>
 
           {song ? (
@@ -691,11 +699,8 @@ export default function App() {
                 <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
               </div>
               <SongEditor
-                initialSource={editText}
-                onSave={applyEdit}
-                onCancel={handleCancelEdit}
-                onDelete={handleDelete}
-                isSaving={isSaving}
+                source={editText}
+                onChange={setEditText}
               />
               {editError && <div className="error">{editError}</div>}
               <div className="note edit-page-note">Edits save to the content repo immediately and then sync to GitHub automatically.</div>

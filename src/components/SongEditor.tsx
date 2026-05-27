@@ -1,31 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { parseTokens, serializeTokens } from '../lib/parseChordPro';
-import { SongLineToken } from '../types';
+import { parseTokens } from '../lib/parseChordPro';
 
 interface SongEditorProps {
-  initialSource: string;
-  onSave: (source: string) => void | Promise<void>;
-  onCancel: () => void;
-  onDelete?: () => void;
-  isSaving?: boolean;
+  source: string;
+  onChange: (source: string) => void;
 }
 
-export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving = false }: SongEditorProps) {
-  const [source, setSource] = useState(initialSource);
-  const [mode, setMode] = useState<'visual' | 'raw'>('visual');
+export function SongEditor({ source, onChange }: SongEditorProps) {
   const [copiedChords, setCopiedChords] = useState<Array<{ line: number; chords: Array<{ name: string; index: number }> }> | null>(null);
   const [copiedSectionName, setCopiedSectionName] = useState<string | null>(null);
-
-  useEffect(() => {
-    setSource(initialSource);
-  }, [initialSource]);
   
   const lines = source.split(/\r?\n/);
 
   const handleLineChange = (index: number, newLine: string) => {
     const newLines = [...lines];
     newLines[index] = newLine;
-    setSource(newLines.join('\n'));
+    onChange(newLines.join('\n'));
   };
 
   // Find which section a line belongs to
@@ -151,36 +141,24 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
       lyricsLineIndex++;
     }
 
-    setSource(newLines.join('\n'));
+    onChange(newLines.join('\n'));
   };
 
   return (
     <div className="song-editor">
-      <div className="editor-toolbar">
-        <div className="toolbar-group">
-            <button onClick={() => setMode(m => m === 'visual' ? 'raw' : 'visual')}>
-                {mode === 'visual' ? 'Raw Text' : 'Visual Editor'}
-            </button>
-        </div>
-        <div className="toolbar-group">
-            <button className="primary" onClick={() => onSave(source)} disabled={isSaving}>
-                {isSaving ? 'Saving...' : 'Save Changes'}
-            </button>
-            <button onClick={onCancel} disabled={isSaving}>Cancel</button>
-            {onDelete && (
-                <button 
-                    onClick={onDelete}
-                    disabled={isSaving}
-                    style={{ backgroundColor: '#fee2e2', color: '#991b1b', borderColor: '#fecaca' }}
-                >
-                    Delete
-                </button>
-            )}
-        </div>
-      </div>
-      
-      {mode === 'visual' ? (
-        <div className="editor-content song">
+      <div className="editor-split">
+        <section className="editor-pane raw-pane" aria-label="Raw ChordPro source">
+          <div className="editor-pane-heading">Raw text</div>
+          <textarea
+              className="raw-editor"
+              value={source}
+              onChange={e => onChange(e.target.value)}
+              spellCheck={false}
+          />
+        </section>
+        <section className="editor-pane visual-pane" aria-label="Visual song editor">
+          <div className="editor-pane-heading">Visual editor</div>
+          <div className="editor-content song">
             {lines.map((line, i) => {
                 const trimmed = line.trim();
                 if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
@@ -210,45 +188,44 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
                     />
                 );
             })}
-        </div>
-      ) : (
-        <textarea
-            className="raw-editor"
-            value={source}
-            onChange={e => setSource(e.target.value)}
-            spellCheck={false}
-        />
-      )}
+          </div>
+        </section>
+      </div>
 
       <style>{`
         .song-editor {
+          min-width: 0;
+        }
+        .editor-split {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          gap: 1rem;
+          align-items: stretch;
+        }
+        .editor-pane {
+          min-width: 0;
           display: flex;
           flex-direction: column;
-          gap: 1rem;
+          gap: 0.55rem;
         }
-        .editor-toolbar {
-            display: flex;
-            justify-content: space-between;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            position: sticky;
-            top: 0;
-            background: var(--surface-muted);
-            z-index: 100;
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border-soft);
-        }
-        .toolbar-group {
-            display: flex;
-            gap: 0.5rem;
-        }
-        .toolbar-group button.primary {
-            background: var(--brand-blue);
-            color: white;
-            border-color: var(--brand-blue);
+        .editor-pane-heading {
+          color: var(--brand-blue-soft);
+          font-size: 0.82rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0;
         }
         .editor-content {
           overflow-x: auto;
+          min-height: 560px;
+          max-height: calc(100vh - 245px);
+          padding: 1rem;
+          border: 1px solid var(--border-soft);
+          border-radius: 8px;
+          background: white;
+        }
+        .visual-pane .editor-content {
+          overflow-y: auto;
         }
         .raw-editor {
             font-family: 'IBM Plex Mono', monospace;
@@ -257,9 +234,25 @@ export function SongEditor({ initialSource, onSave, onCancel, onDelete, isSaving
             color: inherit;
             border: 1px solid var(--border-soft);
             padding: 1rem;
-            min-height: 400px;
-            resize: vertical;
+            min-height: 560px;
+            max-height: calc(100vh - 245px);
+            resize: none;
             border-radius: 8px;
+            line-height: 1.45;
+            width: 100%;
+            flex: 1;
+            overflow: auto;
+            white-space: pre;
+        }
+        @media (max-width: 900px) {
+          .editor-split {
+            grid-template-columns: 1fr;
+          }
+          .raw-editor,
+          .editor-content {
+            min-height: 380px;
+            max-height: none;
+          }
         }
         .line-editor {
           position: relative;

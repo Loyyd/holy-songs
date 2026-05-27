@@ -47,7 +47,7 @@ a {
 }
 
 .edit-page-card {
-  width: min(100%, 1100px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   background: white;
   border: 1px solid var(--border-soft);
@@ -59,7 +59,7 @@ a {
 .edit-page-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 16px;
   padding-bottom: 14px;
   margin-bottom: 16px;
@@ -72,6 +72,29 @@ a {
   border-color: rgba(0, 32, 80, 0.2);
   background: #ffffff;
   color: var(--brand-blue);
+  font-weight: 700;
+}
+
+.edit-page-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.edit-page-actions .primary {
+  min-height: 40px;
+  border-color: var(--brand-blue);
+  background: var(--brand-blue);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.edit-page-actions .danger {
+  min-height: 40px;
+  border-color: #fecaca;
+  background: #fee2e2;
+  color: #991b1b;
   font-weight: 700;
 }
 
@@ -101,6 +124,16 @@ a {
 
   .edit-page-header {
     align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .edit-page-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .edit-page-actions button {
+    flex: 1;
   }
 }
 
