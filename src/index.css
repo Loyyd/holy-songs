@@ -59,16 +59,14 @@ a {
 .edit-page-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px;
   padding-bottom: 14px;
   margin-bottom: 16px;
   border-bottom: 1px solid var(--border-soft);
 }
 
-.edit-back-button {
-  min-height: 40px;
-  padding-inline: 14px;
+.edit-cancel-button {
   border-color: rgba(0, 32, 80, 0.2);
   background: #ffffff;
   color: var(--brand-blue);
@@ -79,11 +77,14 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: auto;
+}
+
+.edit-page-actions button {
+  padding: 6px 10px;
+  line-height: 1.2;
 }
 
 .edit-page-actions .primary {
-  min-height: 40px;
   border-color: var(--brand-blue);
   background: var(--brand-blue);
   color: #ffffff;
@@ -91,11 +92,16 @@ a {
 }
 
 .edit-page-actions .danger {
-  min-height: 40px;
   border-color: #fecaca;
   background: #fee2e2;
   color: #991b1b;
   font-weight: 700;
+}
+
+.edit-page-actions .primary:disabled {
+  border-color: #cbd5e1;
+  background: #e5e7eb;
+  color: #64748b;
 }
 
 .edit-page-title {
@@ -336,7 +342,7 @@ button:hover:not(:disabled) {
 
 button:disabled {
   opacity: 0.6;
-  cursor: wait;
+  cursor: not-allowed;
 }
 
 .star-icon {
@@ -358,33 +364,11 @@ button:disabled {
   transform: scale(1.15);
 }
 
-.flag-icon {
-  font-size: 16px;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.2s;
-  padding: 4px;
-  line-height: 1;
-}
-
-.flag-icon.not-reviewed {
-  color: #ef4444;
-  filter: grayscale(0%);
-}
-
-.flag-icon.reviewed {
-  color: #22c55e;
-  filter: hue-rotate(100deg) saturate(1.5);
-}
-
-.flag-icon:hover {
-  transform: scale(1.15);
-}
-
 .song-list button.active {
   border-color: var(--brand-blue);
   background: var(--brand-blue);
   color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(216, 152, 16, 0.24);
 }
 
 .controls {
@@ -794,11 +778,8 @@ button:disabled {
 }
 
 .line {
-  margin-bottom: 2px;
-}
-
-.line.has-chords {
   line-height: 2.4;
+  margin-bottom: 2px;
 }
 
 .token {

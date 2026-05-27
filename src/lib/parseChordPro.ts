@@ -60,7 +60,6 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
   let title = 'Untitled';
   let key: string | undefined;
   let interpret: string | undefined;
-  let reviewed: boolean | undefined;
   const sections: SongSection[] = [];
   let currentSection: SongSection = { name: 'Verse', lines: [] };
   let isDefaultSection = true; // Track if we're still on the default section
@@ -85,8 +84,6 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
         key = val;
       } else if (tagLower === 'interpret' || tagLower === 'interpreter' || tagLower === 'artist') {
         interpret = val;
-      } else if (tagLower === 'reviewed') {
-        reviewed = val.toLowerCase() === 'true';
       } else if (tagLower === 'section') {
         commitSection();
         currentSection = { name: val, lines: [] };
@@ -112,7 +109,6 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
     title,
     key,
     interpret,
-    reviewed,
     sections,
     sourcePath,
     source: raw

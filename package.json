@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/dev.mjs",
+    "dev:frontend": "vite",
+    "dev:backend": "python3 backend/main.py",
     "build:songs": "tsx scripts/build-songs.ts",
     "build:app": "vite build",
     "build": "npm run build:songs && npm run build:app",

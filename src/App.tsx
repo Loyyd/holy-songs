@@ -59,6 +59,9 @@ const NEW_SONG_TEMPLATE = `{title: New Song}
 
 `;
 
+const LAST_SELECTED_ID_KEY = 'holy-songs:last-selected-id';
+const LAST_QUERY_KEY = 'holy-songs:last-query';
+
 function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
   if (!song || !song.sections) return <div className="song">No content</div>;
 
@@ -153,13 +156,14 @@ function songSubtitle(song: { key?: string; interpret?: string }) {
 
 export default function App() {
   const [route, setRoute] = useState<AppRoute>(() => parseAppRoute());
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(() => sessionStorage.getItem(LAST_QUERY_KEY) ?? '');
   const [index, setIndex] = useState<SongIndexEntry[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [song, setSong] = useState<SongData | null>(null);
   const [transpose, setTranspose] = useState(0);
   const [isTransposeOpen, setIsTransposeOpen] = useState(false);
   const [editText, setEditText] = useState('');
+  const [lastSavedText, setLastSavedText] = useState('');
   const [editError, setEditError] = useState<string | null>(null);
   const [contextSensitive, setContextSensitive] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -178,7 +182,9 @@ export default function App() {
   const [scrollSpeed, setScrollSpeed] = useState(0.15);
   const scrollSpeedRef = useRef(scrollSpeed);
   const saveToastTimeoutRef = useRef<number | null>(null);
+  const selectedSongButtonRef = useRef<HTMLButtonElement | null>(null);
   const isEditing = route.mode === 'edit';
+  const hasUnsavedChanges = editText !== lastSavedText || transpose !== 0;
 
   useEffect(() => {
     if (transpose === 0) {
@@ -209,7 +215,8 @@ export default function App() {
         if (selectId) {
           setSelectedId(selectId);
         } else if (!selectedId && data.length > 0) {
-          setSelectedId(data[0].id);
+          const savedSelectedId = sessionStorage.getItem(LAST_SELECTED_ID_KEY);
+          setSelectedId(savedSelectedId && data.some((entry) => entry.id === savedSelectedId) ? savedSelectedId : data[0].id);
         }
         return data;
       })
@@ -270,13 +277,15 @@ export default function App() {
       .then((data: SongData) => {
         setSong(data);
         setEditText(data.source ?? '');
+        setLastSavedText(data.source ?? '');
         setEditError(null);
         return data;
       });
   };
 
   const navigateToBrowse = () => {
-    window.location.assign('/');
+    window.history.pushState(null, '', '/');
+    setRoute({ mode: 'browse' });
   };
 
   const navigateToEdit = (id: string) => {
@@ -334,6 +343,16 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    sessionStorage.setItem(LAST_QUERY_KEY, query);
+  }, [query]);
+
+  useEffect(() => {
+    if (selectedId && !isTemporaryNewSongId(selectedId)) {
+      sessionStorage.setItem(LAST_SELECTED_ID_KEY, selectedId);
+    }
+  }, [selectedId]);
+
+  useEffect(() => {
     if (route.mode === 'edit' && route.id !== selectedId) {
       setSelectedId(route.id);
       setTranspose(0);
@@ -370,6 +389,7 @@ export default function App() {
     setSong(newSong);
     setSelectedId(route.id);
     setEditText(NEW_SONG_TEMPLATE);
+    setLastSavedText(NEW_SONG_TEMPLATE);
     setEditError(null);
     setTranspose(0);
   }, [route]);
@@ -387,6 +407,7 @@ export default function App() {
                 .then(data => {
                     if (data.content) {
                         setEditText(data.content);
+                        setLastSavedText(data.content);
                     }
                 })
                 .catch(err => {
@@ -416,6 +437,17 @@ export default function App() {
     return [...starredSongs, ...unstarredSongs];
   }, [results, starred]);
 
+  useEffect(() => {
+    if (isEditing || !selectedId) return;
+
+    window.requestAnimationFrame(() => {
+      selectedSongButtonRef.current?.scrollIntoView({
+        block: 'nearest',
+        inline: 'nearest'
+      });
+    });
+  }, [isEditing, selectedId, sortedResults]);
+
   const toggleStar = (id: string) => {
     setStarred(prev => {
       const next = new Set(prev);
@@ -427,60 +459,6 @@ export default function App() {
       localStorage.setItem('starred-songs', JSON.stringify([...next]));
       return next;
     });
-  };
-
-  const toggleFlag = (id: string, currentReviewed: boolean | undefined) => {
-    const newReviewed = !currentReviewed;
-    
-    // Optimistically update the index
-    setIndex(prev => prev.map(entry => 
-      entry.id === id ? { ...entry, reviewed: newReviewed } : entry
-    ));
-    
-    // Also update the current song if it's selected
-    if (song && song.id === id) {
-      setSong({ ...song, reviewed: newReviewed });
-    }
-    
-    // Sync with backend
-    fetch('/api/reviewed', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ song_id: id, reviewed: newReviewed }),
-    })
-      .then(async (res) => {
-        if (!res.ok) {
-          throw new Error(await getResponseError(res, 'Failed to update reviewed status'));
-        }
-        return res.json();
-      })
-      .then((data) => {
-        if (data.success) {
-          refreshIndex();
-          showSaveToast(data.sync);
-        } else {
-          console.error('Failed to update reviewed status:', data.error);
-          // Revert on error
-          setIndex(prev => prev.map(entry => 
-            entry.id === id ? { ...entry, reviewed: currentReviewed } : entry
-          ));
-          if (song && song.id === id) {
-            setSong({ ...song, reviewed: currentReviewed });
-          }
-        }
-      })
-      .catch((err) => {
-        console.error('Failed to sync reviewed status with backend:', err);
-        // Revert on error
-        setIndex(prev => prev.map(entry => 
-          entry.id === id ? { ...entry, reviewed: currentReviewed } : entry
-        ));
-        if (song && song.id === id) {
-          setSong({ ...song, reviewed: currentReviewed });
-        }
-      });
   };
 
   const handleSelect = (id: string) => {
@@ -527,7 +505,7 @@ export default function App() {
   };
 
   const applyEdit = async (source: string = editText) => {
-    if (!song || isSaving) return;
+    if (!song || isSaving || !hasUnsavedChanges) return;
     try {
       // Apply transpose to the source before saving
       const transposedSource = transposeChordProSource(source, transpose);
@@ -556,12 +534,12 @@ export default function App() {
           }
           const result: SaveResponse = await response.json();
 
-          setSong({ ...parsed, id: song.id });
+          setSong({ ...parsed, id: song.id, sourcePath: song.sourcePath });
           setEditText(transposedSource);
+          setLastSavedText(transposedSource);
           setEditError(null);
           setTranspose(0);
-          await refreshIndex();
-          navigateToBrowse();
+          await refreshIndex(song.id);
           showSaveToast(result.sync);
         } else {
           // New song - create it
@@ -578,12 +556,18 @@ export default function App() {
           }
           
           const result: SaveResponse = await response.json();
+          const nextId = result.id ?? parsed.id;
+          const sourcePath = result.filename ?? `${nextId}.pro`;
 
+          setSong({ ...parsed, id: nextId, sourcePath });
+          setSelectedId(nextId);
           setEditText(transposedSource);
+          setLastSavedText(transposedSource);
           setEditError(null);
           setTranspose(0);
-          await refreshIndex(result.id);
-          navigateToBrowse();
+          await refreshIndex(nextId);
+          window.history.replaceState(null, '', `/edit/${encodeURIComponent(nextId)}`);
+          setRoute({ mode: 'edit', id: nextId });
           showSaveToast(result.sync);
         }
       } catch (backendErr) {
@@ -679,11 +663,11 @@ export default function App() {
       <div className="edit-page-shell">
         <div className="edit-page-card">
           <div className="edit-page-header">
-            <button className="edit-back-button" onClick={handleCancelEdit} disabled={isSaving}>
-              Back to song
-            </button>
             <div className="edit-page-actions">
-              <button className="primary" onClick={() => applyEdit(editText)} disabled={!song || isSaving}>
+              <button className="edit-cancel-button" onClick={handleCancelEdit} disabled={isSaving}>
+                Cancel
+              </button>
+              <button className="primary" onClick={() => applyEdit(editText)} disabled={!song || isSaving || !hasUnsavedChanges}>
                 {isSaving ? 'Saving...' : 'Save Changes'}
               </button>
               <button className="danger" onClick={handleDelete} disabled={!song || isSaving}>
@@ -769,6 +753,7 @@ export default function App() {
             <li key={entry.id}>
               <button
                 className={entry.id === selectedId ? 'active' : ''}
+                ref={entry.id === selectedId ? selectedSongButtonRef : null}
                 onClick={() => handleSelect(entry.id)}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -786,16 +771,6 @@ export default function App() {
                       title={starred.has(entry.id) ? 'Unstar song' : 'Star song'}
                     >
                       {starred.has(entry.id) ? '★' : '☆'}
-                    </span>
-                    <span
-                      className={`flag-icon ${entry.reviewed ? 'reviewed' : 'not-reviewed'}`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        toggleFlag(entry.id, entry.reviewed);
-                      }}
-                      title={entry.reviewed ? 'Mark as not reviewed' : 'Mark as reviewed'}
-                    >
-                      🚩
                     </span>
                   </div>
                 </div>

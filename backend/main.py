@@ -24,13 +24,19 @@ DIST_DIR = os.path.join(BASE_DIR, "dist")
 DIST_DATA_DIR = os.path.join(DIST_DIR, "data")
 DIST_INDEX_PATH = os.path.join(DIST_DATA_DIR, "songs.index.json")
 
+def has_chordpro_files(directory: str) -> bool:
+    try:
+        return any(entry.endswith(".pro") for entry in os.listdir(directory))
+    except OSError:
+        return False
+
 def resolve_songs_dir() -> str:
     configured_dir = os.environ.get("SONGS_DIR")
     if configured_dir:
         return os.path.abspath(configured_dir)
 
     local_dir = os.path.join(BASE_DIR, "songs")
-    if os.path.isdir(local_dir):
+    if os.path.isdir(local_dir) and has_chordpro_files(local_dir):
         return local_dir
 
     sibling_dir = os.path.abspath(os.path.join(BASE_DIR, "..", "holy-songs-content", "songs"))
@@ -153,6 +159,16 @@ def rebase_content_repo(remote_name: str, branch: str, user_name: str, user_emai
     ).stdout.strip()
     return before != after
 
+def content_repo_has_uncommitted_changes() -> bool:
+    status = subprocess.run(
+        ["git", "status", "--porcelain"],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    return bool(status)
+
 def sync_content_repo(changed_path: str, action: str) -> dict:
     if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
         message = "Skipping content repo sync: CONTENT_REPO_DIR is not a git repository."
@@ -223,7 +239,9 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
         )
 
         push_target = build_push_target(remote_name)
-        remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
+        remote_changed = False
+        if not content_repo_has_uncommitted_changes():
+            remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
         subprocess.run(
             ["git", "push", push_target, f"HEAD:{branch}"],
             cwd=CONTENT_REPO_DIR,
@@ -268,10 +286,6 @@ def validate_song_path(filepath: str):
 
 class SongContent(BaseModel):
     content: str
-
-class ReviewedRequest(BaseModel):
-    song_id: str
-    reviewed: bool
 
 @app.post("/api/refresh")
 def refresh_from_github():
@@ -439,65 +453,6 @@ def find_song_file_by_id(song_id: str) -> str | None:
             if slug == song_id:
                 return filepath
     return None
-
-def update_reviewed_in_file(filepath: str, reviewed: bool) -> bool:
-    """Update or add {reviewed: } directive in a .pro file"""
-    with open(filepath, "r", encoding="utf-8") as f:
-        content = f.read()
-    
-    reviewed_value = "true" if reviewed else "false"
-    
-    # Check if {reviewed: } already exists
-    if re.search(r'\{reviewed:\s*[^}]+\}', content, re.IGNORECASE):
-        # Update existing
-        new_content = re.sub(
-            r'\{reviewed:\s*[^}]+\}',
-            f'{{reviewed: {reviewed_value}}}',
-            content,
-            flags=re.IGNORECASE
-        )
-    else:
-        # Add after {key: } or {title: }
-        key_match = re.search(r'(\{key:\s*[^}]+\})', content, re.IGNORECASE)
-        if key_match:
-            # Add after key
-            new_content = content.replace(
-                key_match.group(1),
-                f'{key_match.group(1)}\n{{reviewed: {reviewed_value}}}'
-            )
-        else:
-            # Add after title
-            title_match = re.search(r'(\{title:\s*[^}]+\})', content, re.IGNORECASE)
-            if title_match:
-                new_content = content.replace(
-                    title_match.group(1),
-                    f'{title_match.group(1)}\n{{reviewed: {reviewed_value}}}'
-                )
-            else:
-                # Add at the beginning
-                new_content = f'{{reviewed: {reviewed_value}}}\n{content}'
-    
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(new_content)
-    
-    return True
-
-@app.post("/api/reviewed")
-def update_reviewed(request: ReviewedRequest):
-    """Update the reviewed status of a song in its .pro file"""
-    filepath = find_song_file_by_id(request.song_id)
-    
-    if not filepath:
-        raise HTTPException(status_code=404, detail=f"Song with ID '{request.song_id}' not found")
-    
-    try:
-        update_reviewed_in_file(filepath, request.reviewed)
-        # Trigger rebuild synchronously
-        rebuild_songs()
-        sync = sync_content_repo(filepath, "Update reviewed status")
-        return {"success": True, "message": "Reviewed status updated", "reviewed": request.reviewed, "sync": sync}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/edit/{song_id:path}")
 def serve_edit_page(song_id: str):

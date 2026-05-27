@@ -45,6 +45,7 @@ async function build() {
     songs.push(song);
   }
 
+  await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
   await ensureDir(OUTPUT_DIR);
 
   const index: SongIndexEntry[] = [];
@@ -58,7 +59,6 @@ async function build() {
       title: song.title,
       key: song.key,
       interpret: song.interpret,
-      reviewed: song.reviewed,
       sections: song.sections.flatMap((section) =>
         section.lines.map((line) => line.raw).filter((line) => line.trim() !== '')
       )
