@@ -1,7 +1,11 @@
 # Stage 1: Build the frontend
 FROM node:20-slim AS builder
 
+ARG VCS_REF=unknown
+
 WORKDIR /app
+
+ENV VITE_GIT_SHA=$VCS_REF
 
 # Install build dependencies
 COPY package*.json ./
@@ -15,6 +19,8 @@ RUN npm run build:app
 
 # Stage 2: Final image
 FROM node:20-slim
+
+ARG VCS_REF=unknown
 
 # Install Python, Git, and other necessary tools
 RUN apt-get update && apt-get install -y \
@@ -52,6 +58,7 @@ RUN mkdir -p /app/songs /app/dist/data && chmod -R 777 /app/songs /app/dist /app
 # Set environment variables
 ENV NODE_ENV=production
 ENV SONGS_OUTPUT_DIR=/app/dist/data
+ENV GIT_SHA=$VCS_REF
 
 # Expose the backend/frontend port
 EXPOSE 8000

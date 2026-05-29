@@ -23,6 +23,8 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DIST_DIR = os.path.join(BASE_DIR, "dist")
 DIST_DATA_DIR = os.path.join(DIST_DIR, "data")
 DIST_INDEX_PATH = os.path.join(DIST_DATA_DIR, "songs.index.json")
+GIT_SHA = os.environ.get("GIT_SHA", "unknown")
+IMAGE_REF = os.environ.get("IMAGE_REF", "unknown")
 
 def has_chordpro_files(directory: str) -> bool:
     try:
@@ -286,6 +288,10 @@ def validate_song_path(filepath: str):
 
 class SongContent(BaseModel):
     content: str
+
+@app.get("/api/version")
+def get_version():
+    return {"git_sha": GIT_SHA, "image_ref": IMAGE_REF}
 
 @app.post("/api/refresh")
 def refresh_from_github():
