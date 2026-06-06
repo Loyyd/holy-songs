@@ -49,14 +49,20 @@ function isTemporaryNewSongId(id: string | null | undefined) {
   return id === 'new' || (typeof id === 'string' && /^new-song-\d+$/.test(id));
 }
 
-const NEW_SONG_TEMPLATE = `{title: New Song}
+const NEW_SONG_TEMPLATE = `{title: Example Song Title}
 {key: C}
 
 {section: Verse 1}
-
+[C]Write the first line of your verse
+[G]Add another lyric line here
+[Am]Let the melody keep moving
+[F]And shape the words with care
 
 {section: Chorus}
-
+[F]This is the chorus line
+[C]Lift it up and sing
+[G]Repeat the words that matter
+[C]Then bring the song back home
 `;
 
 const LAST_SELECTED_ID_KEY = 'holy-songs:last-selected-id';
@@ -214,9 +220,13 @@ export default function App() {
         setIndex(data);
         if (selectId) {
           setSelectedId(selectId);
-        } else if (!selectedId && data.length > 0) {
-          const savedSelectedId = sessionStorage.getItem(LAST_SELECTED_ID_KEY);
-          setSelectedId(savedSelectedId && data.some((entry) => entry.id === savedSelectedId) ? savedSelectedId : data[0].id);
+        } else if (data.length > 0 && parseAppRoute().mode !== 'edit') {
+          setSelectedId((currentSelectedId) => {
+            if (currentSelectedId) return currentSelectedId;
+
+            const savedSelectedId = sessionStorage.getItem(LAST_SELECTED_ID_KEY);
+            return savedSelectedId && data.some((entry) => entry.id === savedSelectedId) ? savedSelectedId : data[0].id;
+          });
         }
         return data;
       })
@@ -379,7 +389,7 @@ export default function App() {
 
     const newSong: SongData = {
       id: route.id,
-      title: 'New Song',
+      title: 'Example Song Title',
       key: 'C',
       sections: [],
       source: NEW_SONG_TEMPLATE,
@@ -663,9 +673,15 @@ export default function App() {
       <div className="edit-page-shell">
         <div className="edit-page-card">
           <div className="edit-page-header">
+            {song && (
+              <div className="edit-page-title">
+                <h2>{isTemporaryNewSongId(song.id) ? 'Create Song' : `Edit ${song.title}`}</h2>
+                <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
+              </div>
+            )}
             <div className="edit-page-actions">
               <button className="edit-cancel-button" onClick={handleCancelEdit} disabled={isSaving}>
-                Cancel
+                Back
               </button>
               <button className="primary" onClick={() => applyEdit(editText)} disabled={!song || isSaving || !hasUnsavedChanges}>
                 {isSaving ? 'Saving...' : 'Save Changes'}
@@ -678,10 +694,6 @@ export default function App() {
 
           {song ? (
             <>
-              <div className="edit-page-title">
-                <h2>{isTemporaryNewSongId(song.id) ? 'Create Song' : `Edit ${song.title}`}</h2>
-                <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
-              </div>
               <SongEditor
                 source={editText}
                 onChange={setEditText}
