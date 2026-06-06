@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, Header, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -8,12 +8,26 @@ import subprocess
 import re
 from urllib.parse import quote
 
+from backend.utils import sanitize_filename
+
 app = FastAPI()
+
+
+def parse_cors_origins() -> list[str]:
+    configured = os.environ.get("CORS_ORIGINS", "")
+    origins = [origin.strip() for origin in configured.split(",") if origin.strip()]
+    if origins:
+        return origins
+    return [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ]
+
 
 # Allow CORS for frontend development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origin
+    allow_origins=parse_cors_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -25,6 +39,32 @@ DIST_DATA_DIR = os.path.join(DIST_DIR, "data")
 DIST_INDEX_PATH = os.path.join(DIST_DATA_DIR, "songs.index.json")
 GIT_SHA = os.environ.get("GIT_SHA", "unknown")
 IMAGE_REF = os.environ.get("IMAGE_REF", "unknown")
+ADMIN_TOKEN = os.environ.get("HOLY_SONGS_ADMIN_TOKEN", "").strip()
+
+
+def require_write_access(
+    authorization: str | None = Header(default=None),
+    x_admin_token: str | None = Header(default=None),
+):
+    if not ADMIN_TOKEN:
+        return
+
+    bearer_prefix = "Bearer "
+    provided_token = x_admin_token if isinstance(x_admin_token, str) else None
+    if isinstance(authorization, str) and authorization.startswith(bearer_prefix):
+        provided_token = authorization[len(bearer_prefix):].strip()
+
+    if not provided_token:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Admin token required",
+        )
+
+    if provided_token != ADMIN_TOKEN:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Invalid admin token",
+        )
 
 def has_chordpro_files(directory: str) -> bool:
     try:
@@ -269,18 +309,6 @@ def ensure_generated_song_data():
     if os.path.exists(SONGS_DIR) and not os.path.exists(DIST_INDEX_PATH):
         rebuild_songs()
 
-def sanitize_filename(title: str) -> str:
-    """Convert song title to a valid filename"""
-    # Convert to lowercase and replace spaces with hyphens
-    filename = title.lower().strip()
-    # Remove special characters, keep only alphanumeric, hyphens, and spaces
-    filename = re.sub(r'[^a-z0-9\s-]', '', filename)
-    # Replace multiple spaces/hyphens with single hyphen
-    filename = re.sub(r'[\s-]+', '-', filename)
-    # Remove leading/trailing hyphens
-    filename = filename.strip('-')
-    return filename if filename else 'untitled-song'
-
 def validate_song_path(filepath: str):
     """Ensure the file path is within the songs directory"""
     if os.path.commonpath([os.path.abspath(filepath), SONGS_DIR]) != SONGS_DIR:
@@ -293,7 +321,7 @@ class SongContent(BaseModel):
 def get_version():
     return {"git_sha": GIT_SHA, "image_ref": IMAGE_REF}
 
-@app.post("/api/refresh")
+@app.post("/api/refresh", dependencies=[Depends(require_write_access)])
 def refresh_from_github():
     """Pull the content repository from GitHub and rebuild generated song data."""
     if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
@@ -339,7 +367,7 @@ def list_songs():
                 songs.append(filename)
     return {"songs": sorted(songs)}
 
-@app.post("/api/songs/create")
+@app.post("/api/songs/create", dependencies=[Depends(require_write_access)])
 def create_song(song: SongContent):
     """Create a new song file with auto-generated filename from title"""
     # Extract title from content
@@ -390,8 +418,8 @@ def get_song(filename: str):
     
     return {"content": content}
 
-@app.post("/api/songs/{filename}")
-@app.put("/api/songs/{filename}")
+@app.post("/api/songs/{filename}", dependencies=[Depends(require_write_access)])
+@app.put("/api/songs/{filename}", dependencies=[Depends(require_write_access)])
 def update_song(filename: str, song: SongContent):
     """Update an existing song file"""
     # Basic security check to prevent directory traversal
@@ -415,7 +443,7 @@ def update_song(filename: str, song: SongContent):
     
     return {"message": "Song updated successfully", "filename": filename, "sync": sync}
 
-@app.delete("/api/songs/{filename}")
+@app.delete("/api/songs/{filename}", dependencies=[Depends(require_write_access)])
 def delete_song(filename: str):
     """Delete a song file"""
     # Basic security check to prevent directory traversal

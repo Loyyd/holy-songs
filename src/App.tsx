@@ -67,6 +67,7 @@ const NEW_SONG_TEMPLATE = `{title: Example Song Title}
 
 const LAST_SELECTED_ID_KEY = 'holy-songs:last-selected-id';
 const LAST_QUERY_KEY = 'holy-songs:last-query';
+const ADMIN_TOKEN_KEY = 'holy-songs:admin-token';
 
 function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
   if (!song || !song.sections) return <div className="song">No content</div>;
@@ -180,6 +181,7 @@ export default function App() {
     message: 'Saved',
   });
   const [saveToastTick, setSaveToastTick] = useState(0);
+  const [adminToken, setAdminToken] = useState(() => localStorage.getItem(ADMIN_TOKEN_KEY) ?? '');
   const [starred, setStarred] = useState<Set<string>>(() => {
     const saved = localStorage.getItem('starred-songs');
     return saved ? new Set(JSON.parse(saved)) : new Set();
@@ -279,6 +281,57 @@ export default function App() {
       // Ignore JSON parsing issues and use the fallback below.
     }
     return fallbackMessage;
+  };
+
+  const getWriteHeaders = (includeJson = false, token = adminToken) => {
+    const headers: Record<string, string> = {};
+    if (includeJson) {
+      headers['Content-Type'] = 'application/json';
+    }
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
+    return headers;
+  };
+
+  const promptForAdminToken = (message: string) => {
+    const token = window.prompt(message)?.trim();
+    if (!token) {
+      return null;
+    }
+    localStorage.setItem(ADMIN_TOKEN_KEY, token);
+    setAdminToken(token);
+    return token;
+  };
+
+  const fetchWithAdminRetry = async (url: string, init: RequestInit = {}, includeJson = false) => {
+    const request = (token = adminToken) =>
+      fetch(url, {
+        ...init,
+        headers: getWriteHeaders(includeJson, token),
+      });
+
+    let response = await request();
+    const responseText = response.status === 403 ? await response.clone().text() : '';
+    const needsToken = response.status === 401;
+    const invalidToken = response.status === 403 && responseText.includes('Invalid admin token');
+
+    if (!needsToken && !invalidToken) {
+      return response;
+    }
+
+    if (invalidToken) {
+      localStorage.removeItem(ADMIN_TOKEN_KEY);
+      setAdminToken('');
+    }
+
+    const nextToken = promptForAdminToken(invalidToken ? 'Invalid admin token. Enter admin token:' : 'Admin token required:');
+    if (!nextToken) {
+      return response;
+    }
+
+    response = await request(nextToken);
+    return response;
   };
 
   const loadSong = (id: string) => {
@@ -485,7 +538,7 @@ export default function App() {
 
     try {
       setIsRefreshing(true);
-      const response = await fetch('/api/refresh', {
+      const response = await fetchWithAdminRetry('/api/refresh', {
         method: 'POST',
       });
 
@@ -531,13 +584,10 @@ export default function App() {
             throw new Error('Failed to determine the song filename.');
           }
 
-          const response = await fetch(`/api/songs/${filename}`, {
+          const response = await fetchWithAdminRetry(`/api/songs/${filename}`, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
             body: JSON.stringify({ content: transposedSource }),
-          });
+          }, true);
 
           if (!response.ok) {
             throw new Error(await getResponseError(response, 'Failed to save song to the backend.'));
@@ -553,13 +603,10 @@ export default function App() {
           showSaveToast(result.sync);
         } else {
           // New song - create it
-          const response = await fetch(`/api/songs/create`, {
+          const response = await fetchWithAdminRetry(`/api/songs/create`, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
             body: JSON.stringify({ content: transposedSource }),
-          });
+          }, true);
 
           if (!response.ok) {
             throw new Error(await getResponseError(response, 'Failed to create the song on the backend.'));
@@ -609,7 +656,7 @@ export default function App() {
 
     try {
       const filename = song.sourcePath.split('/').pop();
-      const response = await fetch(`/api/songs/${filename}`, {
+      const response = await fetchWithAdminRetry(`/api/songs/${filename}`, {
         method: 'DELETE',
       });
 

@@ -29,7 +29,9 @@
       CONTENT_REPO_DIR = "/app/content-repo";
       SONGS_OUTPUT_DIR = "/app/dist/data";
       # Set this with a secret mechanism in real deployments.
+      HOLY_SONGS_ADMIN_TOKEN = "";
       GITHUB_TOKEN = "";
+      CORS_ORIGINS = "https://songs.example.com";
       CONTENT_REPO_GIT_USER_NAME = "Holy Songs Bot";
       CONTENT_REPO_GIT_USER_EMAIL = "holy-songs-bot@local";
     };
