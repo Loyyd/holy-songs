@@ -25,7 +25,10 @@ export function transposeChord(chord: string, steps: number): string {
   if (!match) return chord;
   const [, root, suffix] = match;
   const transposedRoot = transposeRoot(root, steps);
-  return `${transposedRoot}${suffix}`;
+  const transposedSuffix = suffix.replace(/\/([A-G](?:#|b)?)$/g, (_match, bassRoot: string) => {
+    return `/${transposeRoot(bassRoot, steps)}`;
+  });
+  return `${transposedRoot}${transposedSuffix}`;
 }
 
 export function transposeTokens(tokens: { chord: string | null; lyric: string }[], steps: number) {
@@ -39,7 +42,10 @@ export function transposeDelta(fromKey: string | undefined, toKey: string | unde
   const from = NOTE_SEQUENCE.indexOf(normalizeRoot(fromKey));
   const to = NOTE_SEQUENCE.indexOf(normalizeRoot(toKey));
   if (from === -1 || to === -1) return 0;
-  return to - from;
+  const delta = to - from;
+  if (delta > 6) return delta - NOTE_SEQUENCE.length;
+  if (delta < -6) return delta + NOTE_SEQUENCE.length;
+  return delta;
 }
 
 export function transposeChordProSource(source: string, steps: number): string {

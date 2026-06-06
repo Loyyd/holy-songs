@@ -1,197 +1,83 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Fuse from 'fuse.js';
-import { SongData, SongIndexEntry, SongLineToken } from './types';
-import { transposeTokens, transposeChordProSource } from './lib/chords';
+import type { SongData } from './types';
+import { transposeChordProSource } from './lib/chords';
 import { parseChordPro } from './lib/parseChordPro';
 import { SongEditor } from './components/SongEditor';
-
-type SyncStatus = {
-  ok: boolean;
-  pushed: boolean;
-  message?: string;
-};
-
-type SaveResponse = {
-  id?: string;
-  filename?: string;
-  message?: string;
-  sync?: SyncStatus;
-};
-
-type RefreshResponse = {
-  ok: boolean;
-  changed: boolean;
-  message?: string;
-};
-
-type SaveToast = {
-  visible: boolean;
-  kind: 'success' | 'warning' | 'error';
-  message: string;
-};
-
-type AppRoute =
-  | { mode: 'browse' }
-  | { mode: 'edit'; id: string };
-
-function parseAppRoute(): AppRoute {
-  const editPathMatch = window.location.pathname.match(/^\/edit\/([^/]+)\/?$/);
-  if (editPathMatch) {
-    return { mode: 'edit', id: decodeURIComponent(editPathMatch[1]) };
-  }
-
-  const params = new URLSearchParams(window.location.search);
-  const editId = params.get('edit');
-  return editId ? { mode: 'edit', id: editId } : { mode: 'browse' };
-}
-
-function isTemporaryNewSongId(id: string | null | undefined) {
-  return id === 'new' || (typeof id === 'string' && /^new-song-\d+$/.test(id));
-}
-
-const NEW_SONG_TEMPLATE = `{title: Example Song Title}
-{key: C}
-
-{section: Verse 1}
-[C]Write the first line of your verse
-[G]Add another lyric line here
-[Am]Let the melody keep moving
-[F]And shape the words with care
-
-{section: Chorus}
-[F]This is the chorus line
-[C]Lift it up and sing
-[G]Repeat the words that matter
-[C]Then bring the song back home
-`;
-
-const LAST_SELECTED_ID_KEY = 'holy-songs:last-selected-id';
-const LAST_QUERY_KEY = 'holy-songs:last-query';
-const ADMIN_TOKEN_KEY = 'holy-songs:admin-token';
-
-function SongView({ song, transpose, highlightQuery, isContextSensitive }: { song: SongData; transpose: number; highlightQuery?: string; isContextSensitive?: boolean }) {
-  if (!song || !song.sections) return <div className="song">No content</div>;
-
-  const highlightLyric = (lyric: string) => {
-    if (!highlightQuery || !isContextSensitive || lyric.trim() === '') {
-      return lyric;
-    }
-
-    const regex = new RegExp(`(${highlightQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-    const parts = lyric.split(regex);
-
-    return (
-      <>
-        {parts.map((part, i) => 
-          regex.test(part) ? (
-            <mark key={i} style={{ backgroundColor: 'rgba(216, 152, 16, 0.28)', color: 'var(--brand-blue)', padding: '2px 0' }}>{part}</mark>
-          ) : (
-            <span key={i}>{part}</span>
-          )
-        )}
-      </>
-    );
-  };
-
-  return (
-    <div className="song">
-      {song.sections.map((section, sectionIdx) => (
-        <div key={`${song.id}-section-${sectionIdx}`}>
-          <div className="section-title">{section.name}</div>
-          {section.lines.map((line, idx) => {
-            const transposedTokens = transposeTokens(line.tokens, transpose);
-            const hasAnyChord = transposedTokens.some(t => t.chord);
-            
-            // Merge chord tokens with following lyric tokens
-            // e.g., [{chord: "E", lyric: ""}, {chord: null, lyric: "Grace"}] 
-            //    -> [{chord: "E", lyric: "Grace"}]
-            const mergedTokens: { chord: string | null; lyric: string }[] = [];
-            let pendingChord: string | null = null;
-            
-            for (const token of transposedTokens) {
-              if (token.chord && !token.lyric) {
-                // Chord with no lyric - save it for the next token
-                pendingChord = token.chord;
-              } else if (pendingChord) {
-                // Apply pending chord to this token
-                mergedTokens.push({ chord: pendingChord, lyric: token.lyric || '' });
-                pendingChord = null;
-              } else {
-                mergedTokens.push({ chord: token.chord, lyric: token.lyric || '' });
-              }
-            }
-            // Handle trailing chord with no lyric
-            if (pendingChord) {
-              mergedTokens.push({ chord: pendingChord, lyric: '' });
-            }
-            
-            return (
-              <div className={`line ${hasAnyChord ? 'has-chords' : ''}`} key={`${song.id}-${sectionIdx}-line-${idx}`}>
-                {mergedTokens.map((token, i) => {
-                  // Calculate minimum width needed for the chord to prevent overlap
-                  const chordLength = token.chord ? token.chord.length : 0;
-                  const lyricLength = token.lyric.length;
-                  // Add padding if chord is longer than lyric to prevent overlap
-                  const needsPadding = chordLength > lyricLength;
-                  const paddingAmount = needsPadding ? chordLength - lyricLength : 0;
-                  
-                  return (
-                    <span key={i} className="token">
-                      {token.chord && <span className="chord">{token.chord}</span>}
-                      <span className="lyric">
-                        {highlightLyric(token.lyric)}
-                        {needsPadding && <span className="chord-spacer">{'\u00A0'.repeat(paddingAmount)}</span>}
-                      </span>
-                    </span>
-                  );
-                })}
-              </div>
-            );
-          })}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function songSubtitle(song: { key?: string; interpret?: string }) {
-  const pieces = [];
-  if (song.interpret) pieces.push(`by ${song.interpret}`);
-  if (song.key) pieces.push(`Key: ${song.key}`);
-  return pieces.join(' • ');
-}
+import { SaveToast } from './components/SaveToast';
+import { SongList } from './components/SongList';
+import { SongToolbar } from './components/SongToolbar';
+import { SongView } from './components/SongView';
+import {
+  LAST_QUERY_KEY,
+  LAST_SELECTED_ID_KEY,
+  NEW_SONG_TEMPLATE,
+  STARRED_SONGS_KEY,
+  isTemporaryNewSongId,
+  parseAppRoute,
+  songSubtitle,
+} from './appUtils';
+import type { AppRoute } from './appUtils';
+import { useSaveToast } from './hooks/useSaveToast';
+import { useSelectedSong } from './hooks/useSelectedSong';
+import { useSongSaving } from './hooks/useSongSaving';
+import type { SyncJobStatus } from './hooks/useSongSaving';
+import { useSongIndex } from './hooks/useSongIndex';
 
 export default function App() {
   const [route, setRoute] = useState<AppRoute>(() => parseAppRoute());
   const [query, setQuery] = useState(() => sessionStorage.getItem(LAST_QUERY_KEY) ?? '');
-  const [index, setIndex] = useState<SongIndexEntry[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [song, setSong] = useState<SongData | null>(null);
   const [transpose, setTranspose] = useState(0);
   const [isTransposeOpen, setIsTransposeOpen] = useState(false);
-  const [editText, setEditText] = useState('');
-  const [lastSavedText, setLastSavedText] = useState('');
-  const [editError, setEditError] = useState<string | null>(null);
   const [contextSensitive, setContextSensitive] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
-  const [isRefreshing, setIsRefreshing] = useState(false);
-  const [saveToast, setSaveToast] = useState<SaveToast>({
-    visible: false,
-    kind: 'success',
-    message: 'Saved',
-  });
-  const [saveToastTick, setSaveToastTick] = useState(0);
-  const [adminToken, setAdminToken] = useState(() => localStorage.getItem(ADMIN_TOKEN_KEY) ?? '');
   const [starred, setStarred] = useState<Set<string>>(() => {
-    const saved = localStorage.getItem('starred-songs');
+    const saved = localStorage.getItem(STARRED_SONGS_KEY);
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
   const [autoScroll, setAutoScroll] = useState(false);
   const [scrollSpeed, setScrollSpeed] = useState(0.15);
+
   const scrollSpeedRef = useRef(scrollSpeed);
-  const saveToastTimeoutRef = useRef<number | null>(null);
   const selectedSongButtonRef = useRef<HTMLButtonElement | null>(null);
   const isEditing = route.mode === 'edit';
+
+  const {
+    index,
+    setIndex,
+    refreshIndex,
+    getInitialSelectedId,
+    shouldRestoreSelection,
+  } = useSongIndex();
+  const {
+    song,
+    setSong,
+    editText,
+    setEditText,
+    lastSavedText,
+    setLastSavedText,
+    editError,
+    setEditError,
+    loadSong,
+    setSongSource,
+  } = useSelectedSong(selectedId, isEditing);
+  const {
+    isSaving,
+    isRefreshing,
+    saveExistingSong,
+    createSong,
+    deleteSong,
+    refreshFromGithub,
+    pollSyncJob,
+  } = useSongSaving();
+  const {
+    saveToast,
+    saveToastTick,
+    showToast,
+    showSaveToast,
+    showFailureToast,
+  } = useSaveToast();
+
   const hasUnsavedChanges = editText !== lastSavedText || transpose !== 0;
 
   useEffect(() => {
@@ -199,161 +85,6 @@ export default function App() {
       setIsTransposeOpen(false);
     }
   }, [transpose]);
-
-  const adjustTranspose = (delta: number, button?: HTMLButtonElement) => {
-    setTranspose((current) => {
-      const next = current + delta;
-      setIsTransposeOpen(next !== 0);
-      if (next === 0) {
-        window.setTimeout(() => button?.blur(), 0);
-      }
-      return next;
-    });
-  };
-
-  const openTranspose = () => {
-    setIsTransposeOpen(true);
-  };
-
-  const refreshIndex = (selectId?: string) => {
-    return fetch(`${import.meta.env.BASE_URL}data/songs.index.json`, { cache: 'no-store' })
-      .then((res) => res.json())
-      .then((data: SongIndexEntry[]) => {
-        setIndex(data);
-        if (selectId) {
-          setSelectedId(selectId);
-        } else if (data.length > 0 && parseAppRoute().mode !== 'edit') {
-          setSelectedId((currentSelectedId) => {
-            if (currentSelectedId) return currentSelectedId;
-
-            const savedSelectedId = sessionStorage.getItem(LAST_SELECTED_ID_KEY);
-            return savedSelectedId && data.some((entry) => entry.id === savedSelectedId) ? savedSelectedId : data[0].id;
-          });
-        }
-        return data;
-      })
-      .catch((err) => console.error('Failed to refresh index:', err));
-  };
-
-  const getSaveMessage = (sync?: SyncStatus) => {
-    if (!sync) {
-      return { kind: 'warning' as const, message: 'Saved locally, backup status unknown' };
-    }
-    if (!sync.ok) {
-      return { kind: 'warning' as const, message: 'Saved locally, GitHub backup failed' };
-    }
-    if (!sync.pushed) {
-      return { kind: 'success' as const, message: 'Saved locally, no backup changes' };
-    }
-    return { kind: 'success' as const, message: 'Saved and backed up' };
-  };
-
-  const showToast = (nextToast: Omit<SaveToast, 'visible'>) => {
-    if (saveToastTimeoutRef.current !== null) {
-      window.clearTimeout(saveToastTimeoutRef.current);
-    }
-    setSaveToastTick((tick) => tick + 1);
-    setSaveToast({ visible: true, ...nextToast });
-    saveToastTimeoutRef.current = window.setTimeout(() => {
-      setSaveToast((toast) => ({ ...toast, visible: false }));
-      saveToastTimeoutRef.current = null;
-    }, nextToast.kind === 'error' ? 3600 : 2600);
-  };
-
-  const showSaveToast = (sync?: SyncStatus) => {
-    showToast(getSaveMessage(sync));
-  };
-
-  const showFailureToast = (message: string) => {
-    showToast({ kind: 'error', message });
-  };
-
-  const getResponseError = async (response: Response, fallbackMessage: string) => {
-    try {
-      const data = await response.json();
-      if (typeof data?.detail === 'string' && data.detail.trim() !== '') {
-        return data.detail;
-      }
-      if (typeof data?.message === 'string' && data.message.trim() !== '') {
-        return data.message;
-      }
-    } catch {
-      // Ignore JSON parsing issues and use the fallback below.
-    }
-    return fallbackMessage;
-  };
-
-  const getWriteHeaders = (includeJson = false, token = adminToken) => {
-    const headers: Record<string, string> = {};
-    if (includeJson) {
-      headers['Content-Type'] = 'application/json';
-    }
-    if (token) {
-      headers.Authorization = `Bearer ${token}`;
-    }
-    return headers;
-  };
-
-  const promptForAdminToken = (message: string) => {
-    const token = window.prompt(message)?.trim();
-    if (!token) {
-      return null;
-    }
-    localStorage.setItem(ADMIN_TOKEN_KEY, token);
-    setAdminToken(token);
-    return token;
-  };
-
-  const fetchWithAdminRetry = async (url: string, init: RequestInit = {}, includeJson = false) => {
-    const request = (token = adminToken) =>
-      fetch(url, {
-        ...init,
-        headers: getWriteHeaders(includeJson, token),
-      });
-
-    let response = await request();
-    const responseText = response.status === 403 ? await response.clone().text() : '';
-    const needsToken = response.status === 401;
-    const invalidToken = response.status === 403 && responseText.includes('Invalid admin token');
-
-    if (!needsToken && !invalidToken) {
-      return response;
-    }
-
-    if (invalidToken) {
-      localStorage.removeItem(ADMIN_TOKEN_KEY);
-      setAdminToken('');
-    }
-
-    const nextToken = promptForAdminToken(invalidToken ? 'Invalid admin token. Enter admin token:' : 'Admin token required:');
-    if (!nextToken) {
-      return response;
-    }
-
-    response = await request(nextToken);
-    return response;
-  };
-
-  const loadSong = (id: string) => {
-    return fetch(`${import.meta.env.BASE_URL}data/songs/${id}.json`, { cache: 'no-store' })
-      .then((res) => res.json())
-      .then((data: SongData) => {
-        setSong(data);
-        setEditText(data.source ?? '');
-        setLastSavedText(data.source ?? '');
-        setEditError(null);
-        return data;
-      });
-  };
-
-  const navigateToBrowse = () => {
-    window.history.pushState(null, '', '/');
-    setRoute({ mode: 'browse' });
-  };
-
-  const navigateToEdit = (id: string) => {
-    window.location.assign(`/edit/${encodeURIComponent(id)}`);
-  };
 
   useEffect(() => {
     scrollSpeedRef.current = scrollSpeed;
@@ -368,7 +99,6 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  // Autoscroll effect
   useEffect(() => {
     if (!autoScroll) return;
 
@@ -402,10 +132,6 @@ export default function App() {
   }, [autoScroll]);
 
   useEffect(() => {
-    refreshIndex();
-  }, []);
-
-  useEffect(() => {
     sessionStorage.setItem(LAST_QUERY_KEY, query);
   }, [query]);
 
@@ -416,26 +142,17 @@ export default function App() {
   }, [selectedId]);
 
   useEffect(() => {
+    if (index.length > 0 && shouldRestoreSelection()) {
+      setSelectedId((currentSelectedId) => getInitialSelectedId(index, currentSelectedId));
+    }
+  }, [getInitialSelectedId, index, shouldRestoreSelection]);
+
+  useEffect(() => {
     if (route.mode === 'edit' && route.id !== selectedId) {
       setSelectedId(route.id);
       setTranspose(0);
     }
   }, [route, selectedId]);
-
-  useEffect(() => {
-    return () => {
-      if (saveToastTimeoutRef.current !== null) {
-        window.clearTimeout(saveToastTimeoutRef.current);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!selectedId) return;
-    if (isTemporaryNewSongId(selectedId)) return;
-
-    loadSong(selectedId).catch((err) => console.error(err));
-  }, [selectedId]);
 
   useEffect(() => {
     if (route.mode !== 'edit' || !isTemporaryNewSongId(route.id)) return;
@@ -446,46 +163,20 @@ export default function App() {
       key: 'C',
       sections: [],
       source: NEW_SONG_TEMPLATE,
-      sourcePath: null
+      sourcePath: null,
     };
 
-    setSong(newSong);
+    setSongSource(newSong, NEW_SONG_TEMPLATE);
     setSelectedId(route.id);
-    setEditText(NEW_SONG_TEMPLATE);
-    setLastSavedText(NEW_SONG_TEMPLATE);
-    setEditError(null);
     setTranspose(0);
-  }, [route]);
-
-  // Fetch fresh content from backend when editing starts
-  useEffect(() => {
-    if (isEditing && song?.sourcePath) {
-        const filename = song.sourcePath.split('/').pop();
-        if (filename) {
-            fetch(`/api/songs/${filename}`)
-                .then(res => {
-                    if (res.ok) return res.json();
-                    throw new Error('Failed to fetch from backend');
-                })
-                .then(data => {
-                    if (data.content) {
-                        setEditText(data.content);
-                        setLastSavedText(data.content);
-                    }
-                })
-                .catch(err => {
-                    console.warn("Backend not available or error fetching:", err);
-                });
-        }
-    }
-  }, [isEditing, song]);
+  }, [route, setSongSource]);
 
   const fuse = useMemo(() => {
     if (index.length === 0) return null;
     return new Fuse(index, {
       keys: contextSensitive ? ['title', 'sections'] : ['title'],
       threshold: 0.35,
-      includeScore: true
+      includeScore: true,
     });
   }, [index, contextSensitive]);
 
@@ -495,8 +186,8 @@ export default function App() {
   }, [fuse, index, query]);
 
   const sortedResults = useMemo(() => {
-    const starredSongs = results.filter(song => starred.has(song.id));
-    const unstarredSongs = results.filter(song => !starred.has(song.id));
+    const starredSongs = results.filter((entry) => starred.has(entry.id));
+    const unstarredSongs = results.filter((entry) => !starred.has(entry.id));
     return [...starredSongs, ...unstarredSongs];
   }, [results, starred]);
 
@@ -506,20 +197,40 @@ export default function App() {
     window.requestAnimationFrame(() => {
       selectedSongButtonRef.current?.scrollIntoView({
         block: 'nearest',
-        inline: 'nearest'
+        inline: 'nearest',
       });
     });
   }, [isEditing, selectedId, sortedResults]);
 
+  const adjustTranspose = (delta: number, button?: HTMLButtonElement) => {
+    setTranspose((current) => {
+      const next = current + delta;
+      setIsTransposeOpen(next !== 0);
+      if (next === 0) {
+        window.setTimeout(() => button?.blur(), 0);
+      }
+      return next;
+    });
+  };
+
+  const navigateToBrowse = () => {
+    window.history.pushState(null, '', '/');
+    setRoute({ mode: 'browse' });
+  };
+
+  const navigateToEdit = (id: string) => {
+    window.location.assign(`/edit/${encodeURIComponent(id)}`);
+  };
+
   const toggleStar = (id: string) => {
-    setStarred(prev => {
+    setStarred((prev) => {
       const next = new Set(prev);
       if (next.has(id)) {
         next.delete(id);
       } else {
         next.add(id);
       }
-      localStorage.setItem('starred-songs', JSON.stringify([...next]));
+      localStorage.setItem(STARRED_SONGS_KEY, JSON.stringify([...next]));
       return next;
     });
   };
@@ -533,86 +244,71 @@ export default function App() {
     navigateToEdit('new');
   };
 
-  const refreshFromGithub = async () => {
-    if (isRefreshing) return;
+  const refreshIndexAfterSync = async (selectId?: string, reloadSelectedSong = true) => {
+    const { data } = await refreshIndex(selectId);
+    if (selectId) {
+      setSelectedId(selectId);
+    } else if (data.length > 0 && shouldRestoreSelection()) {
+      setSelectedId((currentSelectedId) => getInitialSelectedId(data, currentSelectedId));
+    }
 
+    if (reloadSelectedSong && selectId && !isTemporaryNewSongId(selectId)) {
+      await loadSong(selectId).catch((err) => console.error(err));
+    }
+  };
+
+  const settleBackgroundSync = async (sync: SyncJobStatus | undefined, selectId?: string, reloadSelectedSong = true) => {
+    showSaveToast(sync);
     try {
-      setIsRefreshing(true);
-      const response = await fetchWithAdminRetry('/api/refresh', {
-        method: 'POST',
-      });
-
-      if (!response.ok) {
-        throw new Error(await getResponseError(response, 'Failed to refresh from GitHub.'));
+      const finalStatus = await pollSyncJob(sync);
+      if (finalStatus) {
+        showSaveToast(finalStatus);
       }
+      await refreshIndexAfterSync(selectId, reloadSelectedSong);
+    } catch (err) {
+      console.warn('Background sync status failed:', err);
+      showToast({ kind: 'warning', message: 'Saved locally, sync status unknown' });
+    }
+  };
 
-      const result: RefreshResponse = await response.json();
-      if (!result.ok) {
-        throw new Error(result.message || 'Failed to refresh from GitHub.');
-      }
+  const handleRefreshFromGithub = async () => {
+    try {
+      const result = await refreshFromGithub();
+      if (!result) return;
 
-      await refreshIndex(selectedId ?? undefined);
-      if (selectedId && !isTemporaryNewSongId(selectedId)) {
-        await loadSong(selectedId);
-      }
-
+      await refreshIndexAfterSync(selectedId ?? undefined);
       showToast({
         kind: 'success',
         message: result.changed ? 'Refreshed from GitHub' : 'Already up to date',
       });
     } catch (err) {
       showFailureToast('Failed to refresh from GitHub');
-    } finally {
-      setIsRefreshing(false);
     }
   };
 
   const applyEdit = async (source: string = editText) => {
     if (!song || isSaving || !hasUnsavedChanges) return;
     try {
-      // Apply transpose to the source before saving
       const transposedSource = transposeChordProSource(source, transpose);
       const parsed = parseChordPro(transposedSource, song.sourcePath ?? 'inline');
 
-      // Save to backend
       try {
-        setIsSaving(true);
         if (song.sourcePath) {
-          // Existing song - update it
           const filename = song.sourcePath.split('/').pop();
           if (!filename) {
             throw new Error('Failed to determine the song filename.');
           }
 
-          const response = await fetchWithAdminRetry(`/api/songs/${filename}`, {
-            method: 'POST',
-            body: JSON.stringify({ content: transposedSource }),
-          }, true);
-
-          if (!response.ok) {
-            throw new Error(await getResponseError(response, 'Failed to save song to the backend.'));
-          }
-          const result: SaveResponse = await response.json();
+          const result = await saveExistingSong(filename, transposedSource);
 
           setSong({ ...parsed, id: song.id, sourcePath: song.sourcePath });
           setEditText(transposedSource);
           setLastSavedText(transposedSource);
           setEditError(null);
           setTranspose(0);
-          await refreshIndex(song.id);
-          showSaveToast(result.sync);
+          void settleBackgroundSync(result.sync, song.id, false);
         } else {
-          // New song - create it
-          const response = await fetchWithAdminRetry(`/api/songs/create`, {
-            method: 'POST',
-            body: JSON.stringify({ content: transposedSource }),
-          }, true);
-
-          if (!response.ok) {
-            throw new Error(await getResponseError(response, 'Failed to create the song on the backend.'));
-          }
-          
-          const result: SaveResponse = await response.json();
+          const result = await createSong(transposedSource);
           const nextId = result.id ?? parsed.id;
           const sourcePath = result.filename ?? `${nextId}.pro`;
 
@@ -622,18 +318,15 @@ export default function App() {
           setLastSavedText(transposedSource);
           setEditError(null);
           setTranspose(0);
-          await refreshIndex(nextId);
           window.history.replaceState(null, '', `/edit/${encodeURIComponent(nextId)}`);
           setRoute({ mode: 'edit', id: nextId });
-          showSaveToast(result.sync);
+          void settleBackgroundSync(result.sync, nextId, false);
         }
       } catch (backendErr) {
         console.error('Backend save failed:', backendErr);
         const message = (backendErr as Error).message || 'Failed to save changes';
         setEditError(message);
         showFailureToast(message);
-      } finally {
-        setIsSaving(false);
       }
     } catch (err) {
       const message = (err as Error).message ?? 'Failed to parse song';
@@ -644,7 +337,6 @@ export default function App() {
 
   const handleDelete = async () => {
     if (!song || !song.sourcePath) {
-      // For unsaved new songs, just cancel
       setSelectedId(index.length > 0 ? index[0].id : null);
       navigateToBrowse();
       return;
@@ -656,29 +348,22 @@ export default function App() {
 
     try {
       const filename = song.sourcePath.split('/').pop();
-      const response = await fetchWithAdminRetry(`/api/songs/${filename}`, {
-        method: 'DELETE',
-      });
-
-      if (!response.ok) {
-        throw new Error(await getResponseError(response, 'Failed to delete song'));
+      if (!filename) {
+        throw new Error('Failed to determine the song filename.');
       }
-      const result: SaveResponse = await response.json();
 
-      // Select another song or clear selection
-      const nextIndex = index.filter(s => s.id !== song.id);
+      const result = await deleteSong(filename);
+      const nextIndex = index.filter((entry) => entry.id !== song.id);
+      setIndex(nextIndex);
       if (nextIndex.length > 0) {
         setSelectedId(nextIndex[0].id);
       } else {
         setSelectedId(null);
         setSong(null);
       }
-      
-      // Refresh index from server
-      refreshIndex();
-      
+
       navigateToBrowse();
-      showSaveToast(result.sync);
+      void settleBackgroundSync(result.sync, nextIndex[0]?.id, false);
     } catch (err) {
       showFailureToast('Failed to delete song');
     }
@@ -693,27 +378,7 @@ export default function App() {
     navigateToBrowse();
   };
 
-  const saveToastElement = (
-    <div
-      className={`save-toast ${saveToast.visible ? 'visible' : ''} ${saveToast.kind}`}
-      role="status"
-      aria-live="polite"
-      aria-label={saveToast.visible ? saveToast.message : undefined}
-    >
-      <div key={saveToastTick} className="save-toast-icon">
-        {saveToast.kind === 'success' ? (
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 12.5 10 16.5 18 7.5" />
-          </svg>
-        ) : saveToast.kind === 'error' ? (
-          <span aria-hidden="true">×</span>
-        ) : (
-          <span aria-hidden="true">!</span>
-        )}
-      </div>
-      <div className="save-toast-label">{saveToast.message}</div>
-    </div>
-  );
+  const saveToastElement = <SaveToast toast={saveToast} tick={saveToastTick} />;
 
   if (isEditing) {
     return (
@@ -746,7 +411,7 @@ export default function App() {
                 onChange={setEditText}
               />
               {editError && <div className="error">{editError}</div>}
-              <div className="note edit-page-note">Edits save to the content repo immediately and then sync to GitHub automatically.</div>
+              <div className="note edit-page-note">Edits save locally immediately and sync to GitHub in the background.</div>
             </>
           ) : (
             <p>Loading editor...</p>
@@ -759,173 +424,38 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      <div className="card">
-        <div className="brand-heading">
-          <img
-            className="brand-logo"
-            src={`${import.meta.env.BASE_URL}logo-black.png`}
-            alt=""
-            aria-hidden="true"
-          />
-          <h1 className="brand-title" aria-label="Holy Songs">
-            <span className="brand-title-holy">Holy</span>
-            <span className="brand-title-songs">Songs</span>
-          </h1>
-        </div>
-        <p style={{ margin: '0 0 12px' }}>Search, view, and transpose songs.</p>
-        <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '12px' }}>
-          <input
-            placeholder="Search title or lyrics..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            style={{ flex: 1 }}
-          />
-          <label style={{ display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap' }}>
-            <input
-              type="checkbox"
-              checked={contextSensitive}
-              onChange={(e) => setContextSensitive(e.target.checked)}
-              style={{ width: 'auto', padding: 0, border: 'none', cursor: 'pointer' }}
-            />
-            <span style={{ fontSize: '14px' }}>Context sensitive</span>
-          </label>
-          <button 
-            onClick={handleCreateNewSong}
-            style={{ 
-              width: '32px', 
-              height: '32px', 
-              padding: '0',
-              fontSize: '18px',
-              fontWeight: 'bold',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexShrink: 0
-            }}
-            title="Create new song"
-          >
-            +
-          </button>
-        </div>
-        <ul className="song-list">
-          {sortedResults.map((entry) => (
-            <li key={entry.id}>
-              <button
-                className={entry.id === selectedId ? 'active' : ''}
-                ref={entry.id === selectedId ? selectedSongButtonRef : null}
-                onClick={() => handleSelect(entry.id)}
-              >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <div>
-                    <div style={{ fontWeight: 700 }}>{entry.title}</div>
-                    <div style={{ fontSize: 13, opacity: 0.75 }}>{songSubtitle(entry) || 'Key: —'}</div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '4px' }}>
-                    <span
-                      className={`star-icon ${starred.has(entry.id) ? 'filled' : ''}`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        toggleStar(entry.id);
-                      }}
-                      title={starred.has(entry.id) ? 'Unstar song' : 'Star song'}
-                    >
-                      {starred.has(entry.id) ? '★' : '☆'}
-                    </span>
-                  </div>
-                </div>
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <SongList
+        entries={sortedResults}
+        selectedId={selectedId}
+        starred={starred}
+        query={query}
+        contextSensitive={contextSensitive}
+        selectedSongButtonRef={selectedSongButtonRef}
+        onQueryChange={setQuery}
+        onContextSensitiveChange={setContextSensitive}
+        onCreateNewSong={handleCreateNewSong}
+        onSelect={handleSelect}
+        onToggleStar={toggleStar}
+      />
 
       <div className="card">
         {song ? (
           <>
-            <div className="song-header">
-              <div className="song-heading">
-                <h2 style={{ margin: 0 }}>{song.title}</h2>
-                <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
-              </div>
-              <div className="song-actions">
-                <div
-                  className={`transpose-control ${isTransposeOpen ? 'is-open' : ''} ${transpose !== 0 ? 'is-transposed' : ''}`}
-                  onBlur={(event) => {
-                    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
-                      setIsTransposeOpen(false);
-                    }
-                  }}
-                >
-                  <button
-                    className="transpose-main"
-                    onClick={openTranspose}
-                    onFocus={() => setIsTransposeOpen(true)}
-                    title="Transpose"
-                    aria-label="Open transpose controls"
-                  >
-                    <span className="transpose-label-full">Transpose</span>
-                    <span className="transpose-label-short">Tr.</span>
-                  </button>
-                  <button
-                    className="transpose-step"
-                    onClick={(event) => adjustTranspose(-1, event.currentTarget)}
-                    tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
-                    title="Transpose down"
-                    aria-label="Transpose down"
-                  >
-                    -
-                  </button>
-                  <span className="transpose-value" aria-label={`Transpose ${transpose}`}>
-                    {transpose > 0 ? `+${transpose}` : transpose}
-                  </span>
-                  <button
-                    className="transpose-step"
-                    onClick={(event) => adjustTranspose(1, event.currentTarget)}
-                    tabIndex={isTransposeOpen || transpose !== 0 ? 0 : -1}
-                    title="Transpose up"
-                    aria-label="Transpose up"
-                  >
-                    +
-                  </button>
-                </div>
-                <button onClick={() => song && navigateToEdit(song.id)}>
-                  Edit
-                </button>
-                <button
-                  onClick={() => setAutoScroll(!autoScroll)}
-                  style={{
-                    background: autoScroll ? 'var(--brand-blue)' : 'var(--surface-muted)',
-                    color: autoScroll ? '#ffffff' : 'var(--brand-blue)'
-                  }}
-                >
-                  {autoScroll ? 'Stop scroll' : 'Autoscroll'}
-                </button>
-                <button
-                  className="refresh-button"
-                  onClick={refreshFromGithub}
-                  disabled={isRefreshing}
-                  title="Refresh from GitHub"
-                  aria-label="Refresh from GitHub"
-                >
-                  <img src={`${import.meta.env.BASE_URL}refresh.png`} alt="" aria-hidden="true" />
-                </button>
-              </div>
-              {autoScroll && (
-                <div className="autoscroll-speed">
-                  <label style={{ fontSize: '14px', whiteSpace: 'nowrap' }}>Speed:</label>
-                  <input
-                    type="range"
-                    min="0.05"
-                    max="0.5"
-                    step="0.01"
-                    value={scrollSpeed}
-                    onChange={(event) => setScrollSpeed(parseFloat(event.target.value))}
-                    className="speed-slider"
-                  />
-                  <span className="speed-value">{scrollSpeed.toFixed(2)}x</span>
-                </div>
-              )}
-            </div>
+            <SongToolbar
+              song={song}
+              transpose={transpose}
+              isTransposeOpen={isTransposeOpen}
+              autoScroll={autoScroll}
+              scrollSpeed={scrollSpeed}
+              isRefreshing={isRefreshing}
+              onOpenTranspose={() => setIsTransposeOpen(true)}
+              onSetTransposeOpen={setIsTransposeOpen}
+              onAdjustTranspose={adjustTranspose}
+              onEdit={() => navigateToEdit(song.id)}
+              onToggleAutoScroll={() => setAutoScroll(!autoScroll)}
+              onScrollSpeedChange={setScrollSpeed}
+              onRefresh={handleRefreshFromGithub}
+            />
             <div className="song-container">
               <SongView song={song} transpose={transpose} highlightQuery={query} isContextSensitive={contextSensitive} />
             </div>

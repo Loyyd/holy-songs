@@ -308,12 +308,41 @@ export function SongEditor({ source, onChange }: SongEditorProps) {
           z-index: 10;
           user-select: none;
           line-height: 1;
+          background: transparent;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          padding: 0.08rem 0.15rem;
+          font-family: inherit;
         }
-        .chord-pill:hover {
+        .chord-pill:hover,
+        .chord-pill:focus-visible,
+        .chord-pill.is-selected {
             color: var(--brand-gold);
+            background: rgba(216, 152, 16, 0.11);
+            border-color: rgba(216, 152, 16, 0.32);
+            outline: none;
         }
         .chord-pill:active {
           cursor: grabbing;
+        }
+        .chord-edit-input {
+          position: absolute;
+          top: -0.35rem;
+          z-index: 30;
+          transform: translateX(-50%);
+          width: 5.5rem;
+          min-width: 4.25rem;
+          max-width: 7rem;
+          border: 1px solid var(--brand-gold);
+          border-radius: 5px;
+          background: white;
+          color: var(--brand-blue);
+          box-shadow: 0 8px 18px rgba(20, 32, 54, 0.14);
+          font: inherit;
+          font-weight: 700;
+          line-height: 1.1;
+          padding: 0.16rem 0.28rem;
+          outline: none;
         }
         .lyrics-input {
           font-family: inherit;
@@ -413,7 +442,17 @@ function DirectiveEditor({ line, onChange, isSectionDirective, onCopySection, on
 
 function LineEditor({ line, onChange }: LineEditorProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const lyricsInputRef = useRef<HTMLInputElement>(null);
+  const editInputRef = useRef<HTMLInputElement>(null);
+  const skipNextBlurCommitRef = useRef(false);
+  const measureCanvasRef = useRef<HTMLCanvasElement | null>(null);
   const [dropIndex, setDropIndex] = useState<number | null>(null);
+  const [selectedChordIndex, setSelectedChordIndex] = useState<number | null>(null);
+  const [editingChord, setEditingChord] = useState<{
+    chordIndex: number | null;
+    charIndex: number;
+    value: string;
+  } | null>(null);
   
   // Parse line into lyrics and chords with positions
   const tokens = parseTokens(line);
@@ -463,6 +502,131 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     onChange(result);
   };
 
+  const getMeasureContext = () => {
+    if (!measureCanvasRef.current) {
+      measureCanvasRef.current = document.createElement('canvas');
+    }
+
+    const context = measureCanvasRef.current.getContext('2d');
+    const input = lyricsInputRef.current;
+    if (!context || !input) return null;
+
+    const style = window.getComputedStyle(input);
+    context.font = style.font;
+    context.letterSpacing = style.letterSpacing === 'normal' ? '0px' : style.letterSpacing;
+    return context;
+  };
+
+  const getCharPositions = (text = lyrics) => {
+    const context = getMeasureContext();
+    if (!context) {
+      return Array.from({ length: text.length + 1 }, (_, index) => index * 9.6);
+    }
+
+    return Array.from({ length: text.length + 1 }, (_, index) =>
+      context.measureText(text.slice(0, index)).width
+    );
+  };
+
+  const getCharX = (index: number) => {
+    const charPositions = getCharPositions();
+    const clampedIndex = Math.max(0, Math.min(index, charPositions.length - 1));
+    return charPositions[clampedIndex] ?? 0;
+  };
+
+  const getCharIndexFromClientX = (clientX: number) => {
+    if (!containerRef.current) return 0;
+
+    const rect = containerRef.current.getBoundingClientRect();
+    const offsetX = clientX - rect.left - leftPad;
+    const charPositions = getCharPositions();
+
+    for (let i = 0; i < charPositions.length - 1; i++) {
+      const midpoint = (charPositions[i] + charPositions[i + 1]) / 2;
+      if (offsetX < midpoint) return i;
+    }
+
+    return lyrics.length;
+  };
+
+  const moveChord = (chordIndex: number, newIndex: number) => {
+    const chordToMove = chords[chordIndex];
+    if (!chordToMove) return;
+
+    const newChords = [...chords];
+    newChords[chordIndex] = {
+      ...chordToMove,
+      index: Math.max(0, Math.min(newIndex, lyrics.length))
+    };
+    reconstructLine(lyrics, newChords);
+  };
+
+  const deleteChord = (chordIndex: number) => {
+    const newChords = [...chords];
+    newChords.splice(chordIndex, 1);
+    setSelectedChordIndex(null);
+    setEditingChord(null);
+    reconstructLine(lyrics, newChords);
+  };
+
+  const startEditingChord = (chordIndex: number) => {
+    const chord = chords[chordIndex];
+    if (!chord) return;
+    skipNextBlurCommitRef.current = false;
+    setSelectedChordIndex(chordIndex);
+    setEditingChord({ chordIndex, charIndex: chord.index, value: chord.name });
+  };
+
+  const startAddingChord = (charIndex: number) => {
+    skipNextBlurCommitRef.current = false;
+    setSelectedChordIndex(null);
+    setEditingChord({ chordIndex: null, charIndex, value: '' });
+  };
+
+  const commitChordEdit = () => {
+    if (!editingChord) return;
+    skipNextBlurCommitRef.current = true;
+
+    const newName = editingChord.value.trim();
+    if (editingChord.chordIndex === null) {
+      if (newName) {
+        reconstructLine(lyrics, [
+          ...chords,
+          { name: newName, index: editingChord.charIndex, originalTokenIndex: -1 }
+        ]);
+      }
+      setEditingChord(null);
+      return;
+    }
+
+    if (!newName) {
+      deleteChord(editingChord.chordIndex);
+      return;
+    }
+
+    const chord = chords[editingChord.chordIndex];
+    if (!chord) {
+      setEditingChord(null);
+      return;
+    }
+
+    const newChords = [...chords];
+    newChords[editingChord.chordIndex] = { ...chord, name: newName };
+    setEditingChord(null);
+    reconstructLine(lyrics, newChords);
+  };
+
+  const cancelChordEdit = () => {
+    skipNextBlurCommitRef.current = true;
+    setEditingChord(null);
+  };
+
+  useEffect(() => {
+    if (!editingChord || !editInputRef.current) return;
+    editInputRef.current.focus();
+    editInputRef.current.select();
+  }, [editingChord?.chordIndex, editingChord?.charIndex]);
+
   const handleDragStart = (e: React.DragEvent, chordIndex: number) => {
     e.dataTransfer.setData('chordIndex', chordIndex.toString());
     e.dataTransfer.effectAllowed = 'move';
@@ -472,13 +636,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
     
-    if (!containerRef.current) return;
-    
-    const rect = containerRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left - leftPad;
-    const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
-    
-    setDropIndex(newCharIndex);
+    setDropIndex(getCharIndexFromClientX(e.clientX));
   };
   
   const handleDragLeave = () => {
@@ -494,64 +652,70 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     const chordArrIndex = parseInt(chordIdxStr, 10);
     const chordToMove = chords[chordArrIndex];
     
-    if (!containerRef.current) return;
-    
-    // Calculate new character index based on mouse position
-    const rect = containerRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left - leftPad;
-    
-    const newCharIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
-    
-    // Update chords array
-    const newChords = [...chords];
-    newChords[chordArrIndex] = { ...chordToMove, index: newCharIndex };
-    
-    reconstructLine(lyrics, newChords);
+    if (!containerRef.current || !chordToMove) return;
+
+    moveChord(chordArrIndex, getCharIndexFromClientX(e.clientX));
   };
 
   const handleChordClick = (e: React.MouseEvent, index: number) => {
     e.stopPropagation();
-    const chord = chords[index];
-    const newName = prompt('Edit chord (clear to delete):', chord.name);
-    if (newName === null) return; // Cancelled
-    
-    const newChords = [...chords];
-    if (newName.trim() === '') {
-        // Delete chord
-        newChords.splice(index, 1);
-    } else {
-        newChords[index] = { ...chord, name: newName };
-    }
-    reconstructLine(lyrics, newChords);
+    startEditingChord(index);
   };
 
   const handleLayerClick = (e: React.MouseEvent) => {
-    if (!containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left - leftPad;
-    const charIndex = Math.max(0, Math.min(Math.round(offsetX / charWidth), lyrics.length));
-    
-    const name = prompt('Add chord:');
-    if (name) {
-        const newChords = [...chords, { name, index: charIndex, originalTokenIndex: -1 }];
-        reconstructLine(lyrics, newChords);
+    if (!containerRef.current || e.target !== e.currentTarget) return;
+    startAddingChord(getCharIndexFromClientX(e.clientX));
+  };
+
+  const handleChordKeyDown = (e: React.KeyboardEvent, chordIndex: number) => {
+    const chord = chords[chordIndex];
+    if (!chord) return;
+
+    if (e.key === 'Enter' || e.key === 'F2') {
+      e.preventDefault();
+      startEditingChord(chordIndex);
+    } else if (e.key === 'Delete' || e.key === 'Backspace') {
+      e.preventDefault();
+      deleteChord(chordIndex);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      const delta = e.key === 'ArrowLeft' ? -1 : 1;
+      moveChord(chordIndex, chord.index + delta * (e.shiftKey ? 4 : 1));
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      moveChord(chordIndex, 0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      moveChord(chordIndex, lyrics.length);
+    } else if (e.key === 'Escape') {
+      setSelectedChordIndex(null);
     }
   };
 
-  // Measure char width on mount
-  const [charWidth, setCharWidth] = useState(9.6); // Default for IBM Plex Mono 16px approx
-  useEffect(() => {
-    const measureSpan = document.createElement('span');
-    measureSpan.style.fontFamily = 'IBM Plex Mono, monospace';
-    measureSpan.style.fontSize = '16px';
-    measureSpan.style.visibility = 'hidden';
-    measureSpan.style.position = 'absolute';
-    measureSpan.textContent = 'M';
-    document.body.appendChild(measureSpan);
-    const width = measureSpan.getBoundingClientRect().width;
-    setCharWidth(width);
-    document.body.removeChild(measureSpan);
-  }, []);
+  const handleEditKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      commitChordEdit();
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      cancelChordEdit();
+    } else if (
+      (e.key === 'Delete' || e.key === 'Backspace') &&
+      editingChord?.chordIndex !== null &&
+      editingChord?.value === ''
+    ) {
+      e.preventDefault();
+      deleteChord(editingChord.chordIndex);
+    }
+  };
+
+  const handleEditBlur = () => {
+    if (skipNextBlurCommitRef.current) {
+      skipNextBlurCommitRef.current = false;
+      return;
+    }
+    commitChordEdit();
+  };
 
   // Increased left pad to ensure first chord (which is centered at index 0) doesn't clip
   const leftPad = 14;
@@ -567,7 +731,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
       {dropIndex !== null && (
         <div 
             className="drop-indicator" 
-            style={{ left: `${dropIndex * charWidth + leftPad}px` }}
+            style={{ left: `${getCharX(dropIndex) + leftPad}px` }}
         />
       )}
       <div 
@@ -576,18 +740,35 @@ function LineEditor({ line, onChange }: LineEditorProps) {
         style={{ left: `${leftPad}px` }}
       >
         {chords.map((chord, i) => (
-          <div
+          <button
             key={i}
-            className="chord-pill"
-            style={{ left: `${chord.index * charWidth}px` }}
+            className={`chord-pill${selectedChordIndex === i ? ' is-selected' : ''}`}
+            style={{ left: `${getCharX(chord.index)}px` }}
             draggable
+            type="button"
             onDragStart={(e) => handleDragStart(e, i)}
             onClick={(e) => handleChordClick(e, i)}
-            title="Drag to move, click to edit"
+            onFocus={() => setSelectedChordIndex(i)}
+            onKeyDown={(e) => handleChordKeyDown(e, i)}
+            title="Drag to move, click to edit, arrow keys to nudge"
           >
             {chord.name}
-          </div>
+          </button>
         ))}
+        {editingChord && (
+          <input
+            ref={editInputRef}
+            className="chord-edit-input"
+            value={editingChord.value}
+            onChange={(e) => setEditingChord({ ...editingChord, value: e.target.value })}
+            onClick={(e) => e.stopPropagation()}
+            onBlur={handleEditBlur}
+            onKeyDown={handleEditKeyDown}
+            spellCheck={false}
+            style={{ left: `${getCharX(editingChord.charIndex)}px` }}
+            aria-label={editingChord.chordIndex === null ? 'Add chord' : 'Edit chord'}
+          />
+        )}
       </div>
       {/* Clear chords button (right side) */}
       {chords.length > 0 && (
@@ -600,6 +781,7 @@ function LineEditor({ line, onChange }: LineEditorProps) {
         </button>
       )}
       <input
+        ref={lyricsInputRef}
         className="lyrics-input"
         value={lyrics}
         onChange={handleLyricsChange}

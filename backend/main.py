@@ -4,8 +4,12 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import os
+import queue
 import subprocess
 import re
+import threading
+import time
+import uuid
 from urllib.parse import quote
 
 from backend.utils import sanitize_filename
@@ -106,19 +110,31 @@ CONTENT_REPO_DIR = resolve_content_repo_dir()
 DEFAULT_GIT_USER_NAME = "Holy Songs Bot"
 DEFAULT_GIT_USER_EMAIL = "holy-songs-bot@local"
 
-def rebuild_songs():
-    # Only rebuild songs, no deployment
+def rebuild_songs() -> dict:
+    """Build generated song data without deploying."""
     try:
-        # In production, rebuild to dist/data directly for instant updates
         env = os.environ.copy()
         if os.path.exists(DIST_DIR):
             env["SONGS_OUTPUT_DIR"] = DIST_DATA_DIR
         env["SONGS_DIR"] = SONGS_DIR
         
-        subprocess.run(["npm", "run", "build:songs"], cwd=BASE_DIR, check=True, env=env)
-        print("Build script executed successfully.")
+        subprocess.run(
+            ["npm", "run", "build:songs"],
+            cwd=BASE_DIR,
+            check=True,
+            env=env,
+            capture_output=True,
+            text=True,
+        )
+        message = "Build script executed successfully."
+        print(message)
+        return {"ok": True, "message": message}
     except subprocess.CalledProcessError as e:
-        print(f"Error during build: {e}")
+        stderr = (e.stderr or "").strip()
+        stdout = (e.stdout or "").strip()
+        message = f"Error during build: {stderr or stdout or e}"
+        print(message)
+        return {"ok": False, "message": message}
 
 def build_push_target(remote_name: str) -> str:
     github_token = os.environ.get("GITHUB_TOKEN")
@@ -304,8 +320,131 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
         return {"ok": False, "pushed": False, "message": message}
 
 
+SYNC_JOB_STATES = {"saved_locally", "rebuilding", "syncing", "synced", "failed"}
+sync_job_queue: "queue.Queue[str]" = queue.Queue()
+sync_jobs: dict[str, dict] = {}
+sync_jobs_lock = threading.Lock()
+sync_worker_started = False
+sync_worker_lock = threading.Lock()
+
+
+def public_job_status(job: dict) -> dict:
+    status = {
+        "job_id": job["job_id"],
+        "status": job["status"],
+        "action": job["action"],
+        "filename": os.path.basename(job["changed_path"]),
+        "message": job.get("message"),
+        "ok": job.get("ok"),
+        "pushed": job.get("pushed", False),
+        "created_at": job["created_at"],
+        "updated_at": job["updated_at"],
+    }
+    return status
+
+
+def update_sync_job(job_id: str, **changes):
+    with sync_jobs_lock:
+        job = sync_jobs.get(job_id)
+        if not job:
+            return
+        if "status" in changes and changes["status"] not in SYNC_JOB_STATES:
+            raise ValueError(f"Invalid sync job status: {changes['status']}")
+        job.update(changes)
+        job["updated_at"] = time.time()
+
+
+def run_sync_job(job_id: str):
+    with sync_jobs_lock:
+        job = sync_jobs.get(job_id)
+        if not job:
+            return
+        changed_path = job["changed_path"]
+        action = job["action"]
+
+    update_sync_job(
+        job_id,
+        status="rebuilding",
+        message="Saved locally. Rebuilding song data...",
+    )
+    build_result = rebuild_songs()
+    if not build_result["ok"]:
+        update_sync_job(
+            job_id,
+            status="failed",
+            ok=False,
+            pushed=False,
+            message=build_result["message"],
+        )
+        return
+
+    update_sync_job(
+        job_id,
+        status="syncing",
+        message="Song data rebuilt. Syncing content repo...",
+    )
+    sync_result = sync_content_repo(changed_path, action)
+    if sync_result.get("ok"):
+        update_sync_job(
+            job_id,
+            status="synced",
+            ok=True,
+            pushed=sync_result.get("pushed", False),
+            message=sync_result.get("message") or "Content repo synced.",
+        )
+    else:
+        update_sync_job(
+            job_id,
+            status="failed",
+            ok=False,
+            pushed=False,
+            message=sync_result.get("message") or "Content repo sync failed.",
+        )
+
+
+def sync_worker_loop():
+    while True:
+        job_id = sync_job_queue.get()
+        try:
+            run_sync_job(job_id)
+        finally:
+            sync_job_queue.task_done()
+
+
+def ensure_sync_worker_started():
+    global sync_worker_started
+    with sync_worker_lock:
+        if sync_worker_started:
+            return
+        worker = threading.Thread(target=sync_worker_loop, name="content-sync-worker", daemon=True)
+        worker.start()
+        sync_worker_started = True
+
+
+def enqueue_content_sync(changed_path: str, action: str) -> dict:
+    ensure_sync_worker_started()
+    now = time.time()
+    job_id = uuid.uuid4().hex
+    job = {
+        "job_id": job_id,
+        "status": "saved_locally",
+        "action": action,
+        "changed_path": changed_path,
+        "message": "Saved locally. Waiting to rebuild song data...",
+        "ok": None,
+        "pushed": False,
+        "created_at": now,
+        "updated_at": now,
+    }
+    with sync_jobs_lock:
+        sync_jobs[job_id] = job
+    sync_job_queue.put(job_id)
+    return public_job_status(job)
+
+
 @app.on_event("startup")
 def ensure_generated_song_data():
+    ensure_sync_worker_started()
     if os.path.exists(SONGS_DIR) and not os.path.exists(DIST_INDEX_PATH):
         rebuild_songs()
 
@@ -320,6 +459,16 @@ class SongContent(BaseModel):
 @app.get("/api/version")
 def get_version():
     return {"git_sha": GIT_SHA, "image_ref": IMAGE_REF}
+
+
+@app.get("/api/sync-jobs/{job_id}")
+def get_sync_job(job_id: str):
+    with sync_jobs_lock:
+        job = sync_jobs.get(job_id)
+        if not job:
+            raise HTTPException(status_code=404, detail="Sync job not found")
+        return public_job_status(job.copy())
+
 
 @app.post("/api/refresh", dependencies=[Depends(require_write_access)])
 def refresh_from_github():
@@ -343,7 +492,9 @@ def refresh_from_github():
 
         user_name, user_email = get_git_identity()
         changed = rebase_content_repo(remote_name, branch, user_name, user_email)
-        rebuild_songs()
+        build_result = rebuild_songs()
+        if not build_result["ok"]:
+            return {"ok": False, "changed": changed, "message": build_result["message"]}
 
         if changed:
             message = "Content repo refreshed from GitHub."
@@ -393,14 +544,12 @@ def create_song(song: SongContent):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(song.content)
     
-    # Trigger rebuild synchronously for instant updates
-    rebuild_songs()
-    sync = sync_content_repo(filepath, "Create song")
+    sync = enqueue_content_sync(filepath, "Create song")
     
     # The ID is the base filename without extension
     song_id = os.path.splitext(filename)[0]
     
-    return {"message": "Song created successfully", "filename": filename, "id": song_id, "sync": sync}
+    return {"message": "Song saved locally", "filename": filename, "id": song_id, "sync": sync}
 
 @app.get("/api/songs/{filename}")
 def get_song(filename: str):
@@ -437,11 +586,9 @@ def update_song(filename: str, song: SongContent):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(song.content)
     
-    # Trigger rebuild synchronously
-    rebuild_songs()
-    sync = sync_content_repo(filepath, "Update song")
+    sync = enqueue_content_sync(filepath, "Update song")
     
-    return {"message": "Song updated successfully", "filename": filename, "sync": sync}
+    return {"message": "Song saved locally", "filename": filename, "sync": sync}
 
 @app.delete("/api/songs/{filename}", dependencies=[Depends(require_write_access)])
 def delete_song(filename: str):
@@ -460,11 +607,9 @@ def delete_song(filename: str):
     
     os.remove(filepath)
     
-    # Trigger rebuild synchronously
-    rebuild_songs()
-    sync = sync_content_repo(filepath, "Delete song")
+    sync = enqueue_content_sync(filepath, "Delete song")
     
-    return {"message": "Song deleted successfully", "sync": sync}
+    return {"message": "Song deleted locally", "sync": sync}
 
 def find_song_file_by_id(song_id: str) -> str | None:
     """Find a .pro file by song ID (slug of title)"""

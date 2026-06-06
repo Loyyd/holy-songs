@@ -20,6 +20,30 @@ async function hasChordProFiles(dir: string) {
   }
 }
 
+function assertUniqueSongIds(songs: SongData[]) {
+  const songsById = new Map<string, SongData[]>();
+
+  for (const song of songs) {
+    const existing = songsById.get(song.id) || [];
+    existing.push(song);
+    songsById.set(song.id, existing);
+  }
+
+  const duplicates = [...songsById.entries()].filter(([, songsForId]) => songsForId.length > 1);
+  if (duplicates.length === 0) return;
+
+  const details = duplicates
+    .map(([id, songsForId]) => {
+      const sources = songsForId
+        .map((song) => `${song.title} (${song.sourcePath || 'unknown source'})`)
+        .join(', ');
+      return `- ${id}: ${sources}`;
+    })
+    .join('\n');
+
+  throw new Error(`Duplicate song id(s) detected. Rename the title or source before building:\n${details}`);
+}
+
 async function build() {
   const localDir = path.resolve('songs');
   const siblingDir = path.resolve('..', 'holy-songs-content', 'songs');
@@ -44,6 +68,8 @@ async function build() {
     const song = parseChordPro(raw, path.relative(process.cwd(), fullPath));
     songs.push(song);
   }
+
+  assertUniqueSongIds(songs);
 
   await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
   await ensureDir(OUTPUT_DIR);

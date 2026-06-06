@@ -11,7 +11,8 @@
     "build:app": "vite build",
     "build": "npm run build:songs && npm run build:app",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/lib/*.test.ts"
   },
   "dependencies": {
     "fuse.js": "^7.0.0",
