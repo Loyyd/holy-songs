@@ -316,7 +316,8 @@ export function SongEditor({ source, onChange }: SongEditorProps) {
         }
         .chord-pill:hover,
         .chord-pill:focus-visible,
-        .chord-pill.is-selected {
+        .chord-pill.is-selected,
+        .chord-pill.is-touch-dragging {
             color: var(--brand-gold);
             background: rgba(216, 152, 16, 0.11);
             border-color: rgba(216, 152, 16, 0.32);
@@ -387,6 +388,45 @@ export function SongEditor({ source, onChange }: SongEditorProps) {
           background: rgba(216, 152, 16, 0.13);
           color: var(--brand-blue);
         }
+        @media (hover: none), (pointer: coarse) {
+          .line-editor {
+            margin-top: 2.8em;
+            min-height: 2em;
+          }
+          .chords-layer {
+            top: -2.25em;
+            height: 2.25em;
+          }
+          .chord-pill {
+            min-width: 2.5rem;
+            min-height: 2rem;
+            padding: 0.38rem 0.45rem;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.92);
+            border-color: rgba(30, 45, 72, 0.12);
+            box-shadow: 0 4px 12px rgba(20, 32, 54, 0.08);
+            touch-action: none;
+          }
+          .chord-pill.is-touch-dragging {
+            cursor: grabbing;
+            box-shadow: 0 8px 18px rgba(20, 32, 54, 0.16);
+          }
+          .chord-edit-input {
+            top: -0.1rem;
+            min-width: 5.5rem;
+            min-height: 2rem;
+            padding: 0.35rem 0.45rem;
+            border-radius: 6px;
+          }
+          .drop-indicator {
+            top: -2.25em;
+            height: 3.4em;
+          }
+          .clear-chords-button {
+            top: -0.15rem;
+            min-height: 2rem;
+          }
+        }
       `}</style>
     </div>
   );
@@ -441,13 +481,26 @@ function DirectiveEditor({ line, onChange, isSectionDirective, onCopySection, on
 }
 
 function LineEditor({ line, onChange }: LineEditorProps) {
+  const LONG_PRESS_MS = 450;
+  const TOUCH_DRAG_THRESHOLD_PX = 8;
   const containerRef = useRef<HTMLDivElement>(null);
   const lyricsInputRef = useRef<HTMLInputElement>(null);
   const editInputRef = useRef<HTMLInputElement>(null);
   const skipNextBlurCommitRef = useRef(false);
+  const suppressNextClickRef = useRef(false);
+  const longPressTimeoutRef = useRef<number | null>(null);
+  const touchDragRef = useRef<{
+    pointerId: number;
+    chordIndex: number;
+    startX: number;
+    startY: number;
+    isDragging: boolean;
+    didLongPress: boolean;
+  } | null>(null);
   const measureCanvasRef = useRef<HTMLCanvasElement | null>(null);
   const [dropIndex, setDropIndex] = useState<number | null>(null);
   const [selectedChordIndex, setSelectedChordIndex] = useState<number | null>(null);
+  const [touchDraggingChordIndex, setTouchDraggingChordIndex] = useState<number | null>(null);
   const [editingChord, setEditingChord] = useState<{
     chordIndex: number | null;
     charIndex: number;
@@ -627,6 +680,20 @@ function LineEditor({ line, onChange }: LineEditorProps) {
     editInputRef.current.select();
   }, [editingChord?.chordIndex, editingChord?.charIndex]);
 
+  useEffect(() => {
+    return () => {
+      if (longPressTimeoutRef.current !== null) {
+        window.clearTimeout(longPressTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const clearLongPressTimer = () => {
+    if (longPressTimeoutRef.current === null) return;
+    window.clearTimeout(longPressTimeoutRef.current);
+    longPressTimeoutRef.current = null;
+  };
+
   const handleDragStart = (e: React.DragEvent, chordIndex: number) => {
     e.dataTransfer.setData('chordIndex', chordIndex.toString());
     e.dataTransfer.effectAllowed = 'move';
@@ -659,7 +726,102 @@ function LineEditor({ line, onChange }: LineEditorProps) {
 
   const handleChordClick = (e: React.MouseEvent, index: number) => {
     e.stopPropagation();
+    if (suppressNextClickRef.current) {
+      suppressNextClickRef.current = false;
+      return;
+    }
     startEditingChord(index);
+  };
+
+  const handleChordPointerDown = (e: React.PointerEvent<HTMLButtonElement>, chordIndex: number) => {
+    if (e.pointerType === 'mouse') return;
+    const chord = chords[chordIndex];
+    if (!chord) return;
+
+    e.stopPropagation();
+    e.currentTarget.setPointerCapture(e.pointerId);
+    setSelectedChordIndex(chordIndex);
+    touchDragRef.current = {
+      pointerId: e.pointerId,
+      chordIndex,
+      startX: e.clientX,
+      startY: e.clientY,
+      isDragging: false,
+      didLongPress: false
+    };
+
+    clearLongPressTimer();
+    longPressTimeoutRef.current = window.setTimeout(() => {
+      longPressTimeoutRef.current = null;
+      const touchDrag = touchDragRef.current;
+      if (!touchDrag || touchDrag.pointerId !== e.pointerId || touchDrag.isDragging) return;
+
+      touchDrag.didLongPress = true;
+      suppressNextClickRef.current = true;
+      startEditingChord(chordIndex);
+    }, LONG_PRESS_MS);
+  };
+
+  const handleChordPointerMove = (e: React.PointerEvent<HTMLButtonElement>) => {
+    const touchDrag = touchDragRef.current;
+    if (!touchDrag || touchDrag.pointerId !== e.pointerId) return;
+
+    e.stopPropagation();
+    if (touchDrag.didLongPress) return;
+
+    const deltaX = e.clientX - touchDrag.startX;
+    const deltaY = e.clientY - touchDrag.startY;
+    const distance = Math.hypot(deltaX, deltaY);
+
+    if (!touchDrag.isDragging && distance >= TOUCH_DRAG_THRESHOLD_PX) {
+      touchDrag.isDragging = true;
+      suppressNextClickRef.current = true;
+      clearLongPressTimer();
+      setEditingChord(null);
+      setTouchDraggingChordIndex(touchDrag.chordIndex);
+    }
+
+    if (touchDrag.isDragging) {
+      e.preventDefault();
+      setDropIndex(getCharIndexFromClientX(e.clientX));
+    }
+  };
+
+  const handleChordPointerUp = (e: React.PointerEvent<HTMLButtonElement>) => {
+    const touchDrag = touchDragRef.current;
+    if (!touchDrag || touchDrag.pointerId !== e.pointerId) return;
+
+    e.stopPropagation();
+    clearLongPressTimer();
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    }
+
+    if (touchDrag.isDragging) {
+      e.preventDefault();
+      moveChord(touchDrag.chordIndex, getCharIndexFromClientX(e.clientX));
+      setDropIndex(null);
+      setTouchDraggingChordIndex(null);
+      suppressNextClickRef.current = true;
+    } else if (touchDrag.didLongPress) {
+      suppressNextClickRef.current = true;
+    } else {
+      setSelectedChordIndex(touchDrag.chordIndex);
+      suppressNextClickRef.current = true;
+    }
+
+    touchDragRef.current = null;
+  };
+
+  const handleChordPointerCancel = (e: React.PointerEvent<HTMLButtonElement>) => {
+    const touchDrag = touchDragRef.current;
+    if (!touchDrag || touchDrag.pointerId !== e.pointerId) return;
+
+    clearLongPressTimer();
+    setDropIndex(null);
+    setTouchDraggingChordIndex(null);
+    suppressNextClickRef.current = true;
+    touchDragRef.current = null;
   };
 
   const handleLayerClick = (e: React.MouseEvent) => {
@@ -742,15 +904,19 @@ function LineEditor({ line, onChange }: LineEditorProps) {
         {chords.map((chord, i) => (
           <button
             key={i}
-            className={`chord-pill${selectedChordIndex === i ? ' is-selected' : ''}`}
+            className={`chord-pill${selectedChordIndex === i ? ' is-selected' : ''}${touchDraggingChordIndex === i ? ' is-touch-dragging' : ''}`}
             style={{ left: `${getCharX(chord.index)}px` }}
             draggable
             type="button"
             onDragStart={(e) => handleDragStart(e, i)}
             onClick={(e) => handleChordClick(e, i)}
+            onPointerDown={(e) => handleChordPointerDown(e, i)}
+            onPointerMove={handleChordPointerMove}
+            onPointerUp={handleChordPointerUp}
+            onPointerCancel={handleChordPointerCancel}
             onFocus={() => setSelectedChordIndex(i)}
             onKeyDown={(e) => handleChordKeyDown(e, i)}
-            title="Drag to move, click to edit, arrow keys to nudge"
+            title="Drag to move, click or long-press to edit, arrow keys to nudge"
           >
             {chord.name}
           </button>
