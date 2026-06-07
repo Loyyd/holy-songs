@@ -64,4 +64,4 @@ ENV GIT_SHA=$VCS_REF
 EXPOSE 8000
 
 # Start the application
-CMD ["python3", "backend/main.py"]
+CMD ["python3", "-m", "backend.main"]

@@ -6,7 +6,7 @@ const commands = [
   {
     name: 'backend',
     command: isWindows ? 'python' : 'python3',
-    args: ['backend/main.py']
+    args: ['-m', 'backend.main']
   },
   {
     name: 'frontend',

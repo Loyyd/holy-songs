@@ -1,0 +1,22 @@
+# Frontend Dockerfile for Vite build output served by Nginx
+FROM node:20-slim AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+
+COPY index.html ./
+COPY public/ ./public/
+COPY src/ ./src/
+COPY tsconfig*.json ./
+COPY vite.config.* ./
+
+RUN npm run build:app
+
+FROM nginx:alpine
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 80

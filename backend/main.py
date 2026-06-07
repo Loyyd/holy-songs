@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+from contextlib import asynccontextmanager
 import os
 import queue
 import subprocess
@@ -14,7 +15,16 @@ from urllib.parse import quote
 
 from backend.utils import sanitize_filename
 
-app = FastAPI()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    ensure_sync_worker_started()
+    if os.path.exists(SONGS_DIR) and not os.path.exists(DIST_INDEX_PATH):
+        rebuild_songs()
+    yield
+
+
+app = FastAPI(lifespan=lifespan)
 
 
 def parse_cors_origins() -> list[str]:
@@ -441,12 +451,6 @@ def enqueue_content_sync(changed_path: str, action: str) -> dict:
     sync_job_queue.put(job_id)
     return public_job_status(job)
 
-
-@app.on_event("startup")
-def ensure_generated_song_data():
-    ensure_sync_worker_started()
-    if os.path.exists(SONGS_DIR) and not os.path.exists(DIST_INDEX_PATH):
-        rebuild_songs()
 
 def validate_song_path(filepath: str):
     """Ensure the file path is within the songs directory"""

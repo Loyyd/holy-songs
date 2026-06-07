@@ -4,10 +4,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.backend
+    command: ["python3", "-m", "backend.main"]
+    ports:
+      - "8000:8000"
     volumes:
       - ../holy-songs-content:/app/content-repo
       - ./backend:/app/backend
-      - ./dist:/app/dist
+      - song-data:/app/dist/data
     environment:
       - SONGS_DIR=/app/content-repo/songs
       - CONTENT_REPO_DIR=/app/content-repo
@@ -19,12 +22,16 @@ services:
 
   # The Frontend (Nginx serving static files)
   frontend:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
-      - ./dist:/usr/share/nginx/html:ro
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - song-data:/usr/share/nginx/html/data:ro
     depends_on:
       - backend
     restart: unless-stopped
+
+volumes:
+  song-data:

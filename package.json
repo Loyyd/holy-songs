@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "dev:frontend": "vite",
-    "dev:backend": "python3 backend/main.py",
+    "dev:backend": "python3 -m backend.main",
     "build:songs": "tsx scripts/build-songs.ts",
     "build:app": "vite build",
     "build": "npm run build:songs && npm run build:app",
