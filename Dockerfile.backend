@@ -2,6 +2,7 @@
 FROM node:20-slim
 
 ARG VCS_REF=unknown
+ARG IMAGE_REF=unknown
 
 # Install Python and other necessary tools
 RUN apt-get update && apt-get install -y \
@@ -39,6 +40,7 @@ RUN mkdir -p /app/songs /app/dist/data && chmod -R 777 /app/songs /app/dist
 ENV NODE_ENV=production
 ENV SONGS_OUTPUT_DIR=/app/dist/data
 ENV GIT_SHA=$VCS_REF
+ENV IMAGE_REF=$IMAGE_REF
 
 # Expose the backend port
 EXPOSE 8000

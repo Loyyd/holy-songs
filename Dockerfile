@@ -2,6 +2,7 @@
 FROM node:20-slim AS builder
 
 ARG VCS_REF=unknown
+ARG IMAGE_REF=unknown
 
 WORKDIR /app
 
@@ -21,6 +22,7 @@ RUN npm run build:app
 FROM node:20-slim
 
 ARG VCS_REF=unknown
+ARG IMAGE_REF=unknown
 
 # Install Python, Git, and other necessary tools
 RUN apt-get update && apt-get install -y \
@@ -59,6 +61,7 @@ RUN mkdir -p /app/songs /app/dist/data && chmod -R 777 /app/songs /app/dist /app
 ENV NODE_ENV=production
 ENV SONGS_OUTPUT_DIR=/app/dist/data
 ENV GIT_SHA=$VCS_REF
+ENV IMAGE_REF=$IMAGE_REF
 
 # Expose the backend/frontend port
 EXPOSE 8000
