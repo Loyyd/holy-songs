@@ -85,7 +85,7 @@ jobs:
       packages: read
 
     env:
-      NOMAD_ADDR: http://100.64.0.5:4646
+      NOMAD_ADDR: ${{ secrets.NOMAD_ADDR }}
       NOMAD_SKIP_VERIFY: "true"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
       NOMAD_DATACENTERS: homelab
@@ -110,6 +110,26 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate deployment secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          missing=0
+          for name in \
+            NOMAD_ADDR \
+            NOMAD_TOKEN \
+            HOLY_SONGS_ADMIN_TOKEN \
+            CONTENT_REPO_GITHUB_TOKEN
+          do
+            if [[ -z "${!name:-}" ]]; then
+              echo "::error title=Missing deployment secret::${name} is required"
+              missing=1
+            fi
+          done
+
+          exit "${missing}"
 
       - name: Resolve image digest
         id: image
@@ -138,14 +158,6 @@ jobs:
 
           echo "Timed out waiting for ${image_tag}" >&2
           exit 1
-
-      - name: Join Headscale tailnet
-        uses: tailscale/github-action@v4
-        with:
-          authkey: ${{ secrets.HEADSCALE_AUTHKEY }}
-          hostname: holy-songs-deploy-${{ github.run_id }}
-          args: --login-server=https://headscale.bcgen.ie --accept-dns=true
-          ping: 100.64.0.5
 
       - name: Render Nomad job
         shell: bash
@@ -184,7 +196,6 @@ jobs:
         shell: bash
         run: |
           docker run --rm \
-            --network host \
             -e "NOMAD_ADDR=${NOMAD_ADDR}" \
             -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
             -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
@@ -197,7 +208,6 @@ jobs:
         shell: bash
         run: |
           docker run --rm \
-            --network host \
             -e "NOMAD_ADDR=${NOMAD_ADDR}" \
             -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
             -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
