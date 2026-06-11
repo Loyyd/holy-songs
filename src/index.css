@@ -423,6 +423,25 @@ button:disabled {
   flex-basis: 100%;
 }
 
+.floating-autoscroll-stop {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  right: max(16px, env(safe-area-inset-right));
+  z-index: 70;
+  min-height: 40px;
+  padding: 9px 14px;
+  border-color: rgba(216, 152, 16, 0.62);
+  background: var(--brand-blue);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0, 32, 80, 0.22);
+}
+
+.floating-autoscroll-stop:hover:not(:disabled) {
+  border-color: var(--brand-gold);
+  background: var(--brand-blue-soft);
+}
+
 .speed-slider {
   flex: 1;
   min-width: 140px;
@@ -590,6 +609,13 @@ button:disabled {
   .song-actions {
     width: 100%;
     margin-left: 0;
+  }
+
+  .floating-autoscroll-stop {
+    top: max(12px, env(safe-area-inset-top));
+    right: max(12px, env(safe-area-inset-right));
+    min-height: 44px;
+    padding: 10px 14px;
   }
 }
 

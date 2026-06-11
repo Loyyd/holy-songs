@@ -464,6 +464,16 @@ export default function App() {
           <p>Loading song...</p>
         )}
       </div>
+      {autoScroll && (
+        <button
+          className="floating-autoscroll-stop"
+          onClick={() => setAutoScroll(false)}
+          type="button"
+          aria-label="Disable autoscroll"
+        >
+          Stop scroll
+        </button>
+      )}
       {saveToastElement}
     </div>
   );
