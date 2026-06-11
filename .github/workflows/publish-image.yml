@@ -1,7 +1,12 @@
-name: Publish Docker image
+name: Docker Image
 
 on:
   push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
     branches:
       - main
   workflow_dispatch:
@@ -10,46 +15,213 @@ permissions:
   contents: read
   packages: write
 
+concurrency:
+  group: docker-image-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   IMAGE_NAME: ghcr.io/loyyd/holy-songs
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v4
+        uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
+        uses: docker/setup-buildx-action@v3
 
       - name: Log in to GHCR
-        uses: docker/login-action@v4
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract image metadata
+      - name: Docker metadata
         id: meta
-        uses: docker/metadata-action@v6
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.IMAGE_NAME }}
           tags: |
+            type=sha,format=short,prefix=
             type=raw,value=main,enable={{is_default_branch}}
-            type=sha,prefix=
+            type=ref,event=tag
 
-      - name: Build and push image
-        uses: docker/build-push-action@v7
+      - name: Capture build info
+        id: build-info
+        shell: bash
+        run: |
+          echo "created=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
+          echo "short_sha=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+
+      - name: Build and publish
+        uses: docker/build-push-action@v6
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          file: Dockerfile
           build-args: |
             VCS_REF=${{ github.sha }}
+            IMAGE_REF=${{ env.IMAGE_NAME }}:${{ steps.build-info.outputs.short_sha }}
+            BUILD_CREATED=${{ steps.build-info.outputs.created }}
+            BUILD_SOURCE=${{ github.server_url }}/${{ github.repository }}
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy-nomad:
+    name: Deploy to Nomad
+    runs-on: ubuntu-latest
+    needs: build
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
+
+    permissions:
+      contents: read
+      packages: read
+
+    env:
+      NOMAD_ADDR: http://100.64.0.5:4646
+      NOMAD_SKIP_VERIFY: "true"
+      NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
+      NOMAD_DATACENTERS: homelab
+      HOLY_SONGS_DOMAIN: holysongs.bcgen.ie
+      TRAEFIK_ENTRYPOINT: websecure
+      TRAEFIK_CERT_RESOLVER: letsencrypt
+      CONTENT_REPO_HOST_PATH: /srv/holy-songs-content
+      HOLY_SONGS_ADMIN_TOKEN: ${{ secrets.HOLY_SONGS_ADMIN_TOKEN }}
+      CONTENT_REPO_GITHUB_TOKEN: ${{ secrets.CONTENT_REPO_GITHUB_TOKEN }}
+      CONTENT_REPO_GIT_USER_NAME: Holy Songs Bot
+      CONTENT_REPO_GIT_USER_EMAIL: holy-songs-bot@local
+      CONTENT_REPO_PUSH_REMOTE: origin
+      CONTENT_REPO_PUSH_BRANCH: main
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Resolve image digest
+        id: image
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          short_sha="${GITHUB_SHA::7}"
+          image_tag="${IMAGE_NAME}:${short_sha}"
+
+          for attempt in {1..30}; do
+            digest="$(
+              docker buildx imagetools inspect "${image_tag}" --format '{{json .Manifest}}' 2>/dev/null \
+                | jq -r '.digest // empty'
+            )"
+
+            if [[ "${digest}" == sha256:* ]]; then
+              echo "image=${image_tag}@${digest}" >> "${GITHUB_OUTPUT}"
+              echo "Resolved ${image_tag}@${digest}"
+              exit 0
+            fi
+
+            echo "Image ${image_tag} is not visible yet; retrying..."
+            sleep 10
+          done
+
+          echo "Timed out waiting for ${image_tag}" >&2
+          exit 1
+
+      - name: Join Headscale tailnet
+        uses: tailscale/github-action@v4
+        with:
+          authkey: ${{ secrets.HEADSCALE_AUTHKEY }}
+          hostname: holy-songs-deploy-${{ github.run_id }}
+          args: --login-server=https://headscale.bcgen.ie --accept-dns=true
+          ping: 100.64.0.5
+
+      - name: Render Nomad job
+        shell: bash
+        env:
+          DEPLOY_REF: ${{ steps.image.outputs.image }}
+          GITHUB_TOKEN: ${{ env.CONTENT_REPO_GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          escape_sed_replacement() {
+            printf '%s' "$1" | sed -e 's/[\/&]/\\&/g'
+          }
+
+          rendered_job="deploy/holy-songs.rendered.nomad.hcl"
+          cp deploy/holy-songs.nomad.hcl.tpl "${rendered_job}"
+
+          for name in \
+            NOMAD_DATACENTERS \
+            HOLY_SONGS_DOMAIN \
+            TRAEFIK_ENTRYPOINT \
+            TRAEFIK_CERT_RESOLVER \
+            DEPLOY_REF \
+            CONTENT_REPO_HOST_PATH \
+            HOLY_SONGS_ADMIN_TOKEN \
+            GITHUB_TOKEN \
+            CONTENT_REPO_GIT_USER_NAME \
+            CONTENT_REPO_GIT_USER_EMAIL \
+            CONTENT_REPO_PUSH_REMOTE \
+            CONTENT_REPO_PUSH_BRANCH
+          do
+            value="$(escape_sed_replacement "${!name:-}")"
+            sed -i "s/\${${name}}/${value}/g" "${rendered_job}"
+          done
+
+      - name: Plan Nomad deployment
+        shell: bash
+        run: |
+          docker run --rm \
+            --network host \
+            -e "NOMAD_ADDR=${NOMAD_ADDR}" \
+            -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
+            -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
+            -v "${PWD}:/workspace:ro" \
+            -w /workspace \
+            hashicorp/nomad:1.11.2 \
+            job plan deploy/holy-songs.rendered.nomad.hcl || true
+
+      - name: Run Nomad deployment
+        shell: bash
+        run: |
+          docker run --rm \
+            --network host \
+            -e "NOMAD_ADDR=${NOMAD_ADDR}" \
+            -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
+            -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
+            -v "${PWD}:/workspace:ro" \
+            -w /workspace \
+            hashicorp/nomad:1.11.2 \
+            job run deploy/holy-songs.rendered.nomad.hcl
+
+      - name: Verify deployed revision
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for attempt in {1..36}; do
+            revision="$(curl -fsSL "https://${HOLY_SONGS_DOMAIN}/api/version" | jq -r '.git_sha // empty' || true)"
+
+            if [[ "${revision}" == "${GITHUB_SHA}" ]]; then
+              echo "Verified deployed revision ${revision}"
+              exit 0
+            fi
+
+            echo "Production reports ${revision:-unknown}; waiting for ${GITHUB_SHA}..."
+            sleep 5
+          done
+
+          echo "Could not verify deployed revision ${GITHUB_SHA}" >&2
+          exit 1
