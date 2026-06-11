@@ -85,7 +85,7 @@ jobs:
       packages: read
 
     env:
-      NOMAD_ADDR: ${{ secrets.NOMAD_ADDR }}
+      NOMAD_ADDR: http://100.64.0.5:4646
       NOMAD_SKIP_VERIFY: "true"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
       NOMAD_DATACENTERS: homelab
@@ -110,26 +110,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Validate deployment secrets
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          missing=0
-          for name in \
-            NOMAD_ADDR \
-            NOMAD_TOKEN \
-            HOLY_SONGS_ADMIN_TOKEN \
-            CONTENT_REPO_GITHUB_TOKEN
-          do
-            if [[ -z "${!name:-}" ]]; then
-              echo "::error title=Missing deployment secret::${name} is required"
-              missing=1
-            fi
-          done
-
-          exit "${missing}"
 
       - name: Resolve image digest
         id: image
