@@ -10,3 +10,4 @@ public/data/
 .ssh
 .build-server
 .build-server.*
+AGENTS.md
