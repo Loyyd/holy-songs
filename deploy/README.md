@@ -2,7 +2,7 @@
 
 This deploys the single production image from `Dockerfile`. The container serves
 both the frontend and backend on port `8000`, which is what the Nomad job exposes
-behind Traefik for `holysongs.bcgen.ie`.
+behind Traefik for `holy-songs.bcgen.ie`.
 
 GitHub Actions publishes the image and deploys it directly to Nomad with a Nomad
 token. It does not join a Headscale/Tailscale network, so `NOMAD_ADDR` must be an
@@ -42,7 +42,7 @@ DEPLOY_REF="ghcr.io/loyyd/holy-songs:latest" npm run deploy:nomad
 Useful overrides:
 
 - `NOMAD_DATACENTERS`: defaults to `dc1`
-- `HOLY_SONGS_DOMAIN`: defaults to `holysongs.bcgen.ie`
+- `HOLY_SONGS_DOMAIN`: defaults to `holy-songs.bcgen.ie`
 - `TRAEFIK_ENTRYPOINT`: defaults to `websecure`
 - `TRAEFIK_CERT_RESOLVER`: defaults to `letsencrypt`
 - `PLATFORMS`: defaults to `linux/amd64`
