@@ -85,20 +85,10 @@ jobs:
       packages: read
 
     env:
-      NOMAD_ADDR: ${{ secrets.NOMAD_ADDR }}
+      NOMAD_ADDR: https://nomad.bcgen.ie
       NOMAD_SKIP_VERIFY: "true"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
-      NOMAD_DATACENTERS: homelab
       HOLY_SONGS_DOMAIN: holysongs.bcgen.ie
-      TRAEFIK_ENTRYPOINT: websecure
-      TRAEFIK_CERT_RESOLVER: letsencrypt
-      CONTENT_REPO_HOST_PATH: /srv/holy-songs-content
-      HOLY_SONGS_ADMIN_TOKEN: ${{ secrets.HOLY_SONGS_ADMIN_TOKEN }}
-      CONTENT_REPO_GITHUB_TOKEN: ${{ secrets.CONTENT_REPO_GITHUB_TOKEN }}
-      CONTENT_REPO_GIT_USER_NAME: Holy Songs Bot
-      CONTENT_REPO_GIT_USER_EMAIL: holy-songs-bot@local
-      CONTENT_REPO_PUSH_REMOTE: origin
-      CONTENT_REPO_PUSH_BRANCH: main
 
     steps:
       - name: Checkout
@@ -118,10 +108,7 @@ jobs:
 
           missing=0
           for name in \
-            NOMAD_ADDR \
-            NOMAD_TOKEN \
-            HOLY_SONGS_ADMIN_TOKEN \
-            CONTENT_REPO_GITHUB_TOKEN
+            NOMAD_TOKEN
           do
             if [[ -z "${!name:-}" ]]; then
               echo "::error title=Missing deployment secret::${name} is required"
@@ -159,38 +146,23 @@ jobs:
           echo "Timed out waiting for ${image_tag}" >&2
           exit 1
 
-      - name: Render Nomad job
+      - name: Render current Nomad job with new image
         shell: bash
         env:
           DEPLOY_REF: ${{ steps.image.outputs.image }}
-          GITHUB_TOKEN: ${{ env.CONTENT_REPO_GITHUB_TOKEN }}
         run: |
           set -euo pipefail
 
-          escape_sed_replacement() {
-            printf '%s' "$1" | sed -e 's/[\/&]/\\&/g'
-          }
-
-          rendered_job="deploy/holy-songs.rendered.nomad.hcl"
-          cp deploy/holy-songs.nomad.hcl.tpl "${rendered_job}"
-
-          for name in \
-            NOMAD_DATACENTERS \
-            HOLY_SONGS_DOMAIN \
-            TRAEFIK_ENTRYPOINT \
-            TRAEFIK_CERT_RESOLVER \
-            DEPLOY_REF \
-            CONTENT_REPO_HOST_PATH \
-            HOLY_SONGS_ADMIN_TOKEN \
-            GITHUB_TOKEN \
-            CONTENT_REPO_GIT_USER_NAME \
-            CONTENT_REPO_GIT_USER_EMAIL \
-            CONTENT_REPO_PUSH_REMOTE \
-            CONTENT_REPO_PUSH_BRANCH
-          do
-            value="$(escape_sed_replacement "${!name:-}")"
-            sed -i "s/\${${name}}/${value}/g" "${rendered_job}"
-          done
+          rendered_job="deploy/holy-songs.rendered.nomad.json"
+          docker run --rm \
+            -e "NOMAD_ADDR=${NOMAD_ADDR}" \
+            -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
+            -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
+            hashicorp/nomad:1.11.2 \
+            job inspect -json holy-songs \
+            | jq --arg image "${DEPLOY_REF}" \
+              '(.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Config.image) = $image' \
+              > "${rendered_job}"
 
       - name: Plan Nomad deployment
         shell: bash
@@ -202,7 +174,7 @@ jobs:
             -v "${PWD}:/workspace:ro" \
             -w /workspace \
             hashicorp/nomad:1.11.2 \
-            job plan deploy/holy-songs.rendered.nomad.hcl || true
+            job plan -json deploy/holy-songs.rendered.nomad.json || true
 
       - name: Run Nomad deployment
         shell: bash
@@ -214,7 +186,7 @@ jobs:
             -v "${PWD}:/workspace:ro" \
             -w /workspace \
             hashicorp/nomad:1.11.2 \
-            job run deploy/holy-songs.rendered.nomad.hcl
+            job run -json deploy/holy-songs.rendered.nomad.json
 
       - name: Verify deployed revision
         shell: bash
