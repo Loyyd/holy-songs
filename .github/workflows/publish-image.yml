@@ -154,39 +154,53 @@ jobs:
           set -euo pipefail
 
           rendered_job="deploy/holy-songs.rendered.nomad.json"
-          docker run --rm \
-            -e "NOMAD_ADDR=${NOMAD_ADDR}" \
-            -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
-            -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
-            hashicorp/nomad:1.11.2 \
-            job inspect -json holy-songs \
+          curl_args=(-fsS)
+          if [[ "${NOMAD_SKIP_VERIFY}" == "true" ]]; then
+            curl_args+=(-k)
+          fi
+
+          curl "${curl_args[@]}" \
+            -H "X-Nomad-Token: ${NOMAD_TOKEN}" \
+            "${NOMAD_ADDR}/v1/job/holy-songs" \
             | jq --arg image "${DEPLOY_REF}" \
-              '(.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Config.image) = $image' \
+              '(.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Config.image) = $image | {Job: .}' \
               > "${rendered_job}"
 
       - name: Plan Nomad deployment
         shell: bash
         run: |
-          docker run --rm \
-            -e "NOMAD_ADDR=${NOMAD_ADDR}" \
-            -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
-            -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
-            -v "${PWD}:/workspace:ro" \
-            -w /workspace \
-            hashicorp/nomad:1.11.2 \
-            job plan -json deploy/holy-songs.rendered.nomad.json || true
+          set -euo pipefail
+
+          curl_args=(-fsS)
+          if [[ "${NOMAD_SKIP_VERIFY}" == "true" ]]; then
+            curl_args+=(-k)
+          fi
+
+          curl "${curl_args[@]}" \
+            -X POST \
+            -H "X-Nomad-Token: ${NOMAD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data @deploy/holy-songs.rendered.nomad.json \
+            "${NOMAD_ADDR}/v1/job/holy-songs/plan" \
+            | jq .
 
       - name: Run Nomad deployment
         shell: bash
         run: |
-          docker run --rm \
-            -e "NOMAD_ADDR=${NOMAD_ADDR}" \
-            -e "NOMAD_SKIP_VERIFY=${NOMAD_SKIP_VERIFY}" \
-            -e "NOMAD_TOKEN=${NOMAD_TOKEN}" \
-            -v "${PWD}:/workspace:ro" \
-            -w /workspace \
-            hashicorp/nomad:1.11.2 \
-            job run -json deploy/holy-songs.rendered.nomad.json
+          set -euo pipefail
+
+          curl_args=(-fsS)
+          if [[ "${NOMAD_SKIP_VERIFY}" == "true" ]]; then
+            curl_args+=(-k)
+          fi
+
+          curl "${curl_args[@]}" \
+            -X POST \
+            -H "X-Nomad-Token: ${NOMAD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data @deploy/holy-songs.rendered.nomad.json \
+            "${NOMAD_ADDR}/v1/jobs" \
+            | jq .
 
       - name: Verify deployed revision
         shell: bash
