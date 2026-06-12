@@ -85,9 +85,10 @@ jobs:
       packages: read
 
     env:
-      NOMAD_ADDR: https://nomad.bcgen.ie
-      NOMAD_SKIP_VERIFY: "true"
+      NOMAD_ADDR: http://100.64.0.5:4646
+      NOMAD_SKIP_VERIFY: "false"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
+      HEADSCALE_AUTHKEY: ${{ secrets.HEADSCALE_AUTHKEY }}
       HOLY_SONGS_DOMAIN: holy-songs.bcgen.ie
 
     steps:
@@ -108,7 +109,8 @@ jobs:
 
           missing=0
           for name in \
-            NOMAD_TOKEN
+            NOMAD_TOKEN \
+            HEADSCALE_AUTHKEY
           do
             if [[ -z "${!name:-}" ]]; then
               echo "::error title=Missing deployment secret::${name} is required"
@@ -145,6 +147,14 @@ jobs:
 
           echo "Timed out waiting for ${image_tag}" >&2
           exit 1
+
+      - name: Join Headscale tailnet
+        uses: tailscale/github-action@v4
+        with:
+          authkey: ${{ secrets.HEADSCALE_AUTHKEY }}
+          hostname: holy-songs-deploy-${{ github.run_id }}
+          args: --login-server=https://headscale.bcgen.ie --accept-dns=true
+          ping: 100.64.0.5
 
       - name: Render current Nomad job with new image
         shell: bash
