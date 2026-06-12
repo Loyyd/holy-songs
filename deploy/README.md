@@ -4,16 +4,16 @@ This deploys the single production image from `Dockerfile`. The container serves
 both the frontend and backend on port `8000`, which is what the Nomad job exposes
 behind Traefik for `holy-songs.bcgen.ie`.
 
-GitHub Actions publishes the image and deploys it directly to Nomad with a Nomad
-token. It does not join a Headscale/Tailscale network, so `NOMAD_ADDR` must be an
-address that GitHub-hosted runners can reach.
+GitHub Actions publishes the image, joins the Headscale tailnet, and deploys it
+directly to Nomad with a Nomad token.
 
 Required GitHub Actions secrets:
 
-- `NOMAD_ADDR`: reachable Nomad API address, for example `https://nomad.example.com`
 - `NOMAD_TOKEN`: Nomad token with permission to plan/run the `holy-songs` job
-- `HOLY_SONGS_ADMIN_TOKEN`: admin token exposed to the running app
-- `CONTENT_REPO_GITHUB_TOKEN`: token used by the running app to sync song content
+- `HEADSCALE_AUTHKEY`: Headscale/Tailscale auth key for joining the tailnet
+
+The workflow preserves the currently registered Nomad job and only updates the
+`holy-songs` task image, so app runtime secrets stay in Nomad.
 
 Run from the repo root:
 
