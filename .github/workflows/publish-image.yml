@@ -88,7 +88,7 @@ jobs:
       NOMAD_ADDR: https://nomad.bcgen.ie
       NOMAD_SKIP_VERIFY: "true"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
-      HOLY_SONGS_DOMAIN: holysongs.bcgen.ie
+      HOLY_SONGS_DOMAIN: holy-songs.bcgen.ie
 
     steps:
       - name: Checkout
