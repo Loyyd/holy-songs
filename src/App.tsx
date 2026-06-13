@@ -8,6 +8,7 @@ import { SaveToast } from './components/SaveToast';
 import { SongList } from './components/SongList';
 import { SongToolbar } from './components/SongToolbar';
 import { SongView } from './components/SongView';
+import { SongMeta } from './components/SongMeta';
 import {
   LAST_QUERY_KEY,
   LAST_SELECTED_ID_KEY,
@@ -15,7 +16,6 @@ import {
   STARRED_SONGS_KEY,
   isTemporaryNewSongId,
   parseAppRoute,
-  songSubtitle,
 } from './appUtils';
 import type { AppRoute } from './appUtils';
 import { useSaveToast } from './hooks/useSaveToast';
@@ -174,7 +174,7 @@ export default function App() {
   const fuse = useMemo(() => {
     if (index.length === 0) return null;
     return new Fuse(index, {
-      keys: contextSensitive ? ['title', 'sections'] : ['title'],
+      keys: contextSensitive ? ['title', 'categories', 'sections'] : ['title', 'categories'],
       threshold: 0.35,
       includeScore: true,
     });
@@ -388,7 +388,7 @@ export default function App() {
             {song && (
               <div className="edit-page-title">
                 <h2>{isTemporaryNewSongId(song.id) ? 'Create Song' : `Edit ${song.title}`}</h2>
-                <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
+                <SongMeta song={song} />
               </div>
             )}
             <div className="edit-page-actions">

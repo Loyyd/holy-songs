@@ -1,5 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { CATEGORY_SUGGESTIONS } from '../appUtils';
 import { parseTokens } from '../lib/parseChordPro';
+import {
+  addSongCategoryToSource,
+  getSongCategoriesFromSource,
+  normalizeCategoryName,
+  removeSongCategoryFromSource,
+} from '../lib/songCategories';
+import { CategoryChips } from './CategoryChips';
 
 interface SongEditorProps {
   source: string;
@@ -9,8 +17,23 @@ interface SongEditorProps {
 export function SongEditor({ source, onChange }: SongEditorProps) {
   const [copiedChords, setCopiedChords] = useState<Array<{ line: number; chords: Array<{ name: string; index: number }> }> | null>(null);
   const [copiedSectionName, setCopiedSectionName] = useState<string | null>(null);
+  const [categoryInput, setCategoryInput] = useState('');
   
   const lines = source.split(/\r?\n/);
+  const categories = getSongCategoriesFromSource(source);
+
+  const handleAddCategory = (event?: React.FormEvent) => {
+    event?.preventDefault();
+    const category = normalizeCategoryName(categoryInput);
+    if (!category) return;
+
+    onChange(addSongCategoryToSource(source, category));
+    setCategoryInput('');
+  };
+
+  const handleRemoveCategory = (category: string) => {
+    onChange(removeSongCategoryFromSource(source, category));
+  };
 
   const handleLineChange = (index: number, newLine: string) => {
     const newLines = [...lines];
@@ -146,6 +169,26 @@ export function SongEditor({ source, onChange }: SongEditorProps) {
 
   return (
     <div className="song-editor">
+      <section className="category-editor" aria-label="Song categories">
+        <div className="category-editor-current">
+          <CategoryChips categories={categories} onRemove={handleRemoveCategory} />
+          {categories.length === 0 && <span className="category-editor-empty">No categories</span>}
+        </div>
+        <form className="category-editor-form" onSubmit={handleAddCategory}>
+          <input
+            value={categoryInput}
+            onChange={(event) => setCategoryInput(event.target.value)}
+            placeholder="Add category"
+            list="category-suggestions"
+          />
+          <datalist id="category-suggestions">
+            {CATEGORY_SUGGESTIONS.map((category) => (
+              <option key={category} value={category} />
+            ))}
+          </datalist>
+          <button type="submit">Add</button>
+        </form>
+      </section>
       <div className="editor-split">
         <section className="editor-pane raw-pane" aria-label="Raw ChordPro source">
           <div className="editor-pane-heading">Raw text</div>
@@ -195,6 +238,46 @@ export function SongEditor({ source, onChange }: SongEditorProps) {
       <style>{`
         .song-editor {
           min-width: 0;
+        }
+        .category-editor {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+          gap: 0.75rem;
+          align-items: center;
+          margin-bottom: 1rem;
+          padding: 0.75rem;
+          border: 1px solid var(--border-soft);
+          border-radius: 8px;
+          background: var(--surface-muted);
+        }
+        .category-editor-current {
+          min-width: 0;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          flex-wrap: wrap;
+        }
+        .category-editor-empty {
+          color: rgba(0, 32, 80, 0.58);
+          font-size: 0.88rem;
+        }
+        .category-editor-form {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          gap: 0.5rem;
+          align-items: center;
+        }
+        .category-editor-form input {
+          min-width: 0;
+          background: #ffffff;
+        }
+        .category-editor-form button {
+          height: 38px;
+        }
+        @media (max-width: 720px) {
+          .category-editor {
+            grid-template-columns: 1fr;
+          }
         }
         .editor-split {
           display: grid;

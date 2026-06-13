@@ -379,6 +379,10 @@ button:disabled {
   box-shadow: 0 0 0 3px rgba(216, 152, 16, 0.24);
 }
 
+.song-list button.active .song-subtitle {
+  color: rgba(255, 255, 255, 0.82);
+}
+
 .controls {
   display: flex;
   gap: 8px;
@@ -460,6 +464,52 @@ button:disabled {
   color: rgba(0, 32, 80, 0.68);
   font-size: 13px;
   line-height: 1.25;
+}
+
+.song-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.category-chips {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.category-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  min-height: 22px;
+  padding: 2px 7px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.category-chip-remove {
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .transpose-control {

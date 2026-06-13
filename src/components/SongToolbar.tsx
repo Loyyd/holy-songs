@@ -1,5 +1,5 @@
 import type { SongData } from '../types';
-import { songSubtitle } from '../appUtils';
+import { SongMeta } from './SongMeta';
 
 interface SongToolbarProps {
   song: SongData;
@@ -36,7 +36,7 @@ export function SongToolbar({
     <div className="song-header">
       <div className="song-heading">
         <h2 style={{ margin: 0 }}>{song.title}</h2>
-        <div className="song-subtitle">{songSubtitle(song) || 'Key: —'}</div>
+        <SongMeta song={song} />
       </div>
       <div className="song-actions">
         <div

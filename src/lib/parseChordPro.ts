@@ -1,4 +1,5 @@
 import { SongData, SongLine, SongLineToken, SongSection } from '../types';
+import { dedupeCategories, parseCategoryList } from './songCategories';
 
 export function slugify(input: string): string {
   return input
@@ -60,6 +61,7 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
   let title = 'Untitled';
   let key: string | undefined;
   let interpret: string | undefined;
+  const categories: string[] = [];
   const sections: SongSection[] = [];
   let currentSection: SongSection = { name: 'Verse', lines: [] };
   let isDefaultSection = true; // Track if we're still on the default section
@@ -84,6 +86,8 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
         key = val;
       } else if (tagLower === 'interpret' || tagLower === 'interpreter' || tagLower === 'artist') {
         interpret = val;
+      } else if (tagLower === 'category' || tagLower === 'categories') {
+        categories.push(...parseCategoryList(val));
       } else if (tagLower === 'section') {
         commitSection();
         currentSection = { name: val, lines: [] };
@@ -109,6 +113,7 @@ export function parseChordPro(raw: string, sourcePath = 'inline'): SongData {
     title,
     key,
     interpret,
+    categories: dedupeCategories(categories),
     sections,
     sourcePath,
     source: raw
