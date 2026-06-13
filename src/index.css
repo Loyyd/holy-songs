@@ -85,6 +85,7 @@ a {
   justify-content: flex-end;
   gap: 8px;
   flex: 0 0 auto;
+  flex-wrap: wrap;
 }
 
 .edit-page-actions button {
@@ -110,6 +111,31 @@ a {
   border-color: #cbd5e1;
   background: #e5e7eb;
   color: #64748b;
+}
+
+.category-add-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.category-add-control input {
+  width: 112px;
+  height: 30px;
+  padding: 5px 8px;
+  border-radius: 7px;
+  font-size: 13px;
+  background: #ffffff;
+}
+
+.category-add-control button {
+  height: 30px;
+  padding: 4px 8px;
+  border-color: rgba(0, 32, 80, 0.14);
+  background: #ffffff;
+  color: rgba(0, 32, 80, 0.72);
+  font-size: 13px;
+  font-weight: 650;
 }
 
 .edit-page-title {
@@ -144,6 +170,15 @@ a {
   .edit-page-actions {
     width: 100%;
     margin-left: 0;
+  }
+
+  .category-add-control {
+    width: 100%;
+  }
+
+  .category-add-control input {
+    flex: 1;
+    width: auto;
   }
 
   .edit-page-actions button {
@@ -477,39 +512,39 @@ button:disabled {
 .category-chips {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .category-chip {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
   max-width: 100%;
-  min-height: 22px;
-  padding: 2px 7px;
-  border: 1px solid transparent;
-  border-radius: 999px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 650;
   line-height: 1.2;
   overflow-wrap: anywhere;
 }
 
 .category-chip-remove {
-  display: inline-grid;
-  place-items: center;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
+  display: inline;
+  width: auto;
+  height: auto;
+  min-width: 0;
   padding: 0;
   border: 0;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
+  border-radius: 0;
+  background: transparent;
   color: currentColor;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   line-height: 1;
+  opacity: 0.58;
 }
 
 .transpose-control {

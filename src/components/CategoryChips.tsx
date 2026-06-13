@@ -18,8 +18,6 @@ export function CategoryChips({ categories, onRemove }: CategoryChipsProps) {
             key={category}
             className="category-chip"
             style={{
-              backgroundColor: colors.background,
-              borderColor: colors.border,
               color: colors.color,
             }}
           >
