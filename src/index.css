@@ -616,8 +616,9 @@ button:disabled {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    top: max(12px, env(safe-area-inset-top));
+    top: auto;
     right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
     min-height: 44px;
     padding: 10px 14px;
   }
