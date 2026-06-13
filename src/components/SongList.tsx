@@ -1,6 +1,6 @@
 import type { RefObject } from 'react';
-import { songSubtitle } from '../appUtils';
 import type { SongIndexEntry } from '../types';
+import { SongMeta } from './SongMeta';
 
 interface SongListProps {
   entries: SongIndexEntry[];
@@ -46,7 +46,7 @@ export function SongList({
       <p style={{ margin: '0 0 12px' }}>Search, view, and transpose songs.</p>
       <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '12px' }}>
         <input
-          placeholder="Search title or lyrics..."
+          placeholder="Search title, category, or lyrics..."
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
           style={{ flex: 1 }}
@@ -89,7 +89,7 @@ export function SongList({
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <div style={{ fontWeight: 700 }}>{entry.title}</div>
-                  <div style={{ fontSize: 13, opacity: 0.75 }}>{songSubtitle(entry) || 'Key: —'}</div>
+                  <SongMeta song={entry} />
                 </div>
                 <div style={{ display: 'flex', gap: '4px' }}>
                   <span

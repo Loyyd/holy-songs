@@ -32,6 +32,8 @@ describe('parseChordPro', () => {
         '{title: Amazing Grace}',
         '{key: Bb}',
         '{artist: John Newton}',
+        '{category: Holy Songs}',
+        '{categories: Worship, BC Originals}',
         '{section: Verse}',
         '[Bb]Amazing [Eb]grace',
         '{section: Chorus}',
@@ -44,6 +46,7 @@ describe('parseChordPro', () => {
     assert.equal(song.title, 'Amazing Grace');
     assert.equal(song.key, 'Bb');
     assert.equal(song.interpret, 'John Newton');
+    assert.deepEqual(song.categories, ['Holy Songs', 'Worship', 'BC Originals']);
     assert.equal(song.sourcePath, 'songs/amazing-grace.pro');
     assert.equal(song.sections.length, 2);
     assert.equal(song.sections[0].name, 'Verse');
