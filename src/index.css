@@ -424,6 +424,7 @@ button:disabled {
 }
 
 .floating-autoscroll-stop {
+  display: none;
   position: fixed;
   top: max(16px, env(safe-area-inset-top));
   right: max(16px, env(safe-area-inset-right));
@@ -612,6 +613,9 @@ button:disabled {
   }
 
   .floating-autoscroll-stop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     top: max(12px, env(safe-area-inset-top));
     right: max(12px, env(safe-area-inset-right));
     min-height: 44px;
