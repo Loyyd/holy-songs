@@ -3,6 +3,7 @@ import Fuse from 'fuse.js';
 import type { SongData } from './types';
 import { transposeChordProSource } from './lib/chords';
 import { parseChordPro } from './lib/parseChordPro';
+import { addSongCategoryToSource, normalizeCategoryName } from './lib/songCategories';
 import { SongEditor } from './components/SongEditor';
 import { SaveToast } from './components/SaveToast';
 import { SongList } from './components/SongList';
@@ -14,6 +15,7 @@ import {
   LAST_SELECTED_ID_KEY,
   NEW_SONG_TEMPLATE,
   STARRED_SONGS_KEY,
+  CATEGORY_SUGGESTIONS,
   isTemporaryNewSongId,
   parseAppRoute,
 } from './appUtils';
@@ -31,6 +33,7 @@ export default function App() {
   const [transpose, setTranspose] = useState(0);
   const [isTransposeOpen, setIsTransposeOpen] = useState(false);
   const [contextSensitive, setContextSensitive] = useState(false);
+  const [categoryInput, setCategoryInput] = useState('');
   const [starred, setStarred] = useState<Set<string>>(() => {
     const saved = localStorage.getItem(STARRED_SONGS_KEY);
     return saved ? new Set(JSON.parse(saved)) : new Set();
@@ -190,6 +193,15 @@ export default function App() {
     const unstarredSongs = results.filter((entry) => !starred.has(entry.id));
     return [...starredSongs, ...unstarredSongs];
   }, [results, starred]);
+
+  const editHeaderSong = useMemo(() => {
+    if (!isEditing || !song) return song;
+    return {
+      ...parseChordPro(editText, song.sourcePath ?? 'inline'),
+      id: song.id,
+      sourcePath: song.sourcePath,
+    };
+  }, [editText, isEditing, song]);
 
   useEffect(() => {
     if (isEditing || !selectedId) return;
@@ -378,6 +390,15 @@ export default function App() {
     navigateToBrowse();
   };
 
+  const handleAddCategory = (event: React.FormEvent) => {
+    event.preventDefault();
+    const category = normalizeCategoryName(categoryInput);
+    if (!category) return;
+
+    setEditText((current) => addSongCategoryToSource(current, category));
+    setCategoryInput('');
+  };
+
   const saveToastElement = <SaveToast toast={saveToast} tick={saveToastTick} />;
 
   if (isEditing) {
@@ -385,13 +406,30 @@ export default function App() {
       <div className="edit-page-shell">
         <div className="edit-page-card">
           <div className="edit-page-header">
-            {song && (
+            {editHeaderSong && (
               <div className="edit-page-title">
-                <h2>{isTemporaryNewSongId(song.id) ? 'Create Song' : `Edit ${song.title}`}</h2>
-                <SongMeta song={song} />
+                <h2>{isTemporaryNewSongId(editHeaderSong.id) ? 'Create Song' : `Edit ${editHeaderSong.title}`}</h2>
+                <SongMeta song={editHeaderSong} />
               </div>
             )}
             <div className="edit-page-actions">
+              <form className="category-add-control" onSubmit={handleAddCategory}>
+                <input
+                  value={categoryInput}
+                  onChange={(event) => setCategoryInput(event.target.value)}
+                  placeholder="Category"
+                  list="category-suggestions"
+                  disabled={!song || isSaving}
+                />
+                <datalist id="category-suggestions">
+                  {CATEGORY_SUGGESTIONS.map((category) => (
+                    <option key={category} value={category} />
+                  ))}
+                </datalist>
+                <button type="submit" disabled={!song || isSaving || normalizeCategoryName(categoryInput) === ''}>
+                  Add category
+                </button>
+              </form>
               <button className="edit-cancel-button" onClick={handleCancelEdit} disabled={isSaving}>
                 Back
               </button>
