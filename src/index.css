@@ -411,7 +411,6 @@ button:disabled {
   border-color: var(--brand-blue);
   background: var(--brand-blue);
   color: #ffffff;
-  box-shadow: 0 0 0 3px rgba(216, 152, 16, 0.24);
 }
 
 .song-list button.active .song-subtitle {
