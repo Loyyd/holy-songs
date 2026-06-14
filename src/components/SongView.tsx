@@ -64,6 +64,7 @@ export function SongView({ song, transpose, highlightQuery, isContextSensitive }
                   const chordLength = token.chord ? token.chord.length : 0;
                   const lyricLength = token.lyric.length;
                   const needsPadding = chordLength > lyricLength;
+                  const isChordOnly = Boolean(token.chord && lyricLength === 0);
                   const paddingAmount = needsPadding ? chordLength - lyricLength : 0;
 
                   return (
@@ -71,7 +72,8 @@ export function SongView({ song, transpose, highlightQuery, isContextSensitive }
                       {token.chord && <span className="chord">{token.chord}</span>}
                       <span className="lyric">
                         {highlightLyric(token.lyric)}
-                        {needsPadding && <span className="chord-spacer">{'\u00A0'.repeat(paddingAmount)}</span>}
+                        {isChordOnly && <span className="chord-flow-spacer" aria-hidden="true">{token.chord}</span>}
+                        {needsPadding && !isChordOnly && <span className="chord-spacer">{'\u00A0'.repeat(paddingAmount)}</span>}
                       </span>
                     </span>
                   );
