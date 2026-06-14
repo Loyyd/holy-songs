@@ -62,18 +62,23 @@ export function SongView({ song, transpose, highlightQuery, isContextSensitive }
               <div className={`line ${hasAnyChord ? 'has-chords' : ''}`} key={`${song.id}-${sectionIdx}-line-${idx}`}>
                 {mergedTokens.map((token, i) => {
                   const chordLength = token.chord ? token.chord.length : 0;
-                  const lyricLength = token.lyric.length;
+                  const leadingWhitespace = token.chord ? token.lyric.match(/^\s+/)?.[0] ?? '' : '';
+                  const lyricText = token.chord ? token.lyric.slice(leadingWhitespace.length) : token.lyric;
+                  const lyricLength = lyricText.length;
                   const needsPadding = chordLength > lyricLength;
                   const isChordOnly = Boolean(token.chord && lyricLength === 0);
                   const paddingAmount = needsPadding ? chordLength - lyricLength : 0;
 
                   return (
-                    <span key={i} className="token">
-                      {token.chord && <span className="chord">{token.chord}</span>}
-                      <span className="lyric">
-                        {highlightLyric(token.lyric)}
-                        {isChordOnly && <span className="chord-flow-spacer" aria-hidden="true">{token.chord}</span>}
-                        {needsPadding && !isChordOnly && <span className="chord-spacer">{'\u00A0'.repeat(paddingAmount)}</span>}
+                    <span key={i}>
+                      {leadingWhitespace && <span className="lyric">{leadingWhitespace}</span>}
+                      <span className="token">
+                        {token.chord && <span className="chord">{token.chord}</span>}
+                        <span className="lyric">
+                          {highlightLyric(lyricText)}
+                          {isChordOnly && <span className="chord-flow-spacer" aria-hidden="true">{token.chord}</span>}
+                          {needsPadding && !isChordOnly && <span className="chord-spacer">{'\u00A0'.repeat(paddingAmount)}</span>}
+                        </span>
                       </span>
                     </span>
                   );
