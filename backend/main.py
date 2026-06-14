@@ -21,6 +21,7 @@ async def lifespan(app: FastAPI):
     ensure_sync_worker_started()
     if os.path.exists(SONGS_DIR) and not os.path.exists(DIST_INDEX_PATH):
         rebuild_songs()
+    recover_pending_content_repo_backup()
     yield
 
 
@@ -260,6 +261,15 @@ def push_content_repo_if_needed(remote_name: str, branch: str) -> bool:
         text=True,
     )
     return True
+
+def recover_pending_content_repo_backup() -> dict | None:
+    if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
+        return None
+    if not os.path.exists(SONGS_DIR):
+        return None
+
+    print("Checking for pending local song edits to back up.")
+    return sync_content_repo(SONGS_DIR, "Recover local song changes")
 
 def sync_content_repo(changed_path: str, action: str) -> dict:
     if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):

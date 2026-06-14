@@ -128,3 +128,25 @@ def test_sync_pushes_pending_local_commits_when_file_has_no_new_diff(monkeypatch
     assert result["pushed"] is True
     remote_log = run_git(remote, "log", "--oneline", "main").stdout
     assert "Update song: country-roads.pro via Holy Songs editor" in remote_log
+
+
+def test_recover_pending_content_repo_backup_commits_and_pushes_saved_song(monkeypatch, tmp_path):
+    repo, remote, song_path = init_content_repo(tmp_path)
+    song_path.write_text("{title: Country Roads}\n{key: A}\n", encoding="utf-8")
+    (repo / ".DS_Store").write_text("finder metadata", encoding="utf-8")
+
+    monkeypatch.setattr(main, "CONTENT_REPO_DIR", str(repo))
+    monkeypatch.setattr(main, "SONGS_DIR", str(repo / "songs"))
+    monkeypatch.setattr(main, "rebuild_songs", lambda: {"ok": True, "message": "rebuilt"})
+    monkeypatch.setenv("CONTENT_REPO_PUSH_REMOTE", "origin")
+    monkeypatch.setenv("CONTENT_REPO_PUSH_BRANCH", "main")
+    monkeypatch.delenv("GITHUB_TOKEN", raising=False)
+    monkeypatch.delenv("CONTENT_REPO_PUSH_REMOTE_URL", raising=False)
+
+    result = main.recover_pending_content_repo_backup()
+
+    assert result["ok"] is True
+    assert result["pushed"] is True
+    remote_show = run_git(remote, "show", "main:songs/country-roads.pro").stdout
+    assert "{key: A}" in remote_show
+    assert ".DS_Store" not in run_git(remote, "ls-tree", "-r", "--name-only", "main").stdout
