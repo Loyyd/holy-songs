@@ -150,3 +150,20 @@ def test_recover_pending_content_repo_backup_commits_and_pushes_saved_song(monke
     remote_show = run_git(remote, "show", "main:songs/country-roads.pro").stdout
     assert "{key: A}" in remote_show
     assert ".DS_Store" not in run_git(remote, "ls-tree", "-r", "--name-only", "main").stdout
+
+
+def test_ensure_content_repo_safe_directory_adds_missing_path(monkeypatch):
+    calls = []
+    monkeypatch.setattr(main, "CONTENT_REPO_DIR", "/app/songs")
+
+    def fake_run(args, **kwargs):
+        calls.append(args)
+        if args[:4] == ["git", "config", "--global", "--get-all"]:
+            return subprocess.CompletedProcess(args, 1, stdout="/other/repo\n", stderr="")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(main.subprocess, "run", fake_run)
+
+    main.ensure_content_repo_safe_directory()
+
+    assert ["git", "config", "--global", "--add", "safe.directory", "/app/songs"] in calls

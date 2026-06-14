@@ -121,6 +121,26 @@ CONTENT_REPO_DIR = resolve_content_repo_dir()
 DEFAULT_GIT_USER_NAME = "Holy Songs Bot"
 DEFAULT_GIT_USER_EMAIL = "holy-songs-bot@local"
 
+def ensure_content_repo_safe_directory():
+    if not CONTENT_REPO_DIR:
+        return
+
+    safe_directories = subprocess.run(
+        ["git", "config", "--global", "--get-all", "safe.directory"],
+        check=False,
+        capture_output=True,
+        text=True,
+    ).stdout.splitlines()
+    if CONTENT_REPO_DIR in safe_directories:
+        return
+
+    subprocess.run(
+        ["git", "config", "--global", "--add", "safe.directory", CONTENT_REPO_DIR],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
 def rebuild_songs() -> dict:
     """Build generated song data without deploying."""
     try:
@@ -278,6 +298,8 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
         return {"ok": False, "pushed": False, "message": message}
 
     try:
+        ensure_content_repo_safe_directory()
+
         try:
             rel_path = os.path.relpath(os.path.abspath(changed_path), CONTENT_REPO_DIR)
         except ValueError:
@@ -528,6 +550,8 @@ def refresh_from_github():
         return {"ok": False, "changed": False, "message": message}
 
     try:
+        ensure_content_repo_safe_directory()
+
         remote_name = os.environ.get("CONTENT_REPO_PUSH_REMOTE", "origin")
         branch = os.environ.get("CONTENT_REPO_PUSH_BRANCH")
         if not branch:
