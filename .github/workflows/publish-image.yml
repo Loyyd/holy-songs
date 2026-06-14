@@ -89,6 +89,7 @@ jobs:
       NOMAD_SKIP_VERIFY: "false"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
       HEADSCALE_AUTHKEY: ${{ secrets.HEADSCALE_AUTHKEY }}
+      CONTENT_REPO_GITHUB_TOKEN: ${{ secrets.CONTENT_REPO_GITHUB_TOKEN }}
       HOLY_SONGS_DOMAIN: holy-songs.bcgen.ie
 
     steps:
@@ -110,7 +111,8 @@ jobs:
           missing=0
           for name in \
             NOMAD_TOKEN \
-            HEADSCALE_AUTHKEY
+            HEADSCALE_AUTHKEY \
+            CONTENT_REPO_GITHUB_TOKEN
           do
             if [[ -z "${!name:-}" ]]; then
               echo "::error title=Missing deployment secret::${name} is required"
@@ -173,7 +175,9 @@ jobs:
             -H "X-Nomad-Token: ${NOMAD_TOKEN}" \
             "${NOMAD_ADDR}/v1/job/holy-songs" \
             | jq --arg image "${DEPLOY_REF}" \
-              '(.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Config.image) = $image | {Job: .}' \
+              '(.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Config.image) = $image
+              | (.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Env.GITHUB_TOKEN) = env.CONTENT_REPO_GITHUB_TOKEN
+              | {Job: .}' \
               > "${rendered_job}"
 
       - name: Plan Nomad deployment
