@@ -16,7 +16,10 @@ function getSyncMessage(sync?: SyncJobStatus) {
     return { kind: 'success' as const, message: 'Song data rebuilt, syncing backup' };
   }
   if (sync.status === 'failed' || !sync.ok) {
-    return { kind: 'warning' as const, message: 'Saved locally, GitHub backup failed' };
+    return {
+      kind: 'warning' as const,
+      message: sync.message?.trim() || 'Saved locally, GitHub backup failed',
+    };
   }
   if (!sync.pushed) {
     return { kind: 'success' as const, message: 'Saved locally, no backup changes' };

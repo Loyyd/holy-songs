@@ -227,15 +227,39 @@ def rebase_content_repo(remote_name: str, branch: str, user_name: str, user_emai
     ).stdout.strip()
     return before != after
 
-def content_repo_has_uncommitted_changes() -> bool:
+def content_repo_has_uncommitted_tracked_changes() -> bool:
     status = subprocess.run(
-        ["git", "status", "--porcelain"],
+        ["git", "status", "--porcelain", "--untracked-files=no"],
         cwd=CONTENT_REPO_DIR,
         check=True,
         capture_output=True,
         text=True,
     ).stdout.strip()
     return bool(status)
+
+def content_repo_has_unpushed_commits() -> bool:
+    count = subprocess.run(
+        ["git", "rev-list", "--count", "FETCH_HEAD..HEAD"],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    return int(count or "0") > 0
+
+def push_content_repo_if_needed(remote_name: str, branch: str) -> bool:
+    if not content_repo_has_unpushed_commits():
+        return False
+
+    push_target = build_push_target(remote_name)
+    subprocess.run(
+        ["git", "push", push_target, f"HEAD:{branch}"],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return True
 
 def sync_content_repo(changed_path: str, action: str) -> dict:
     if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
@@ -279,11 +303,20 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
         ).stdout.strip()
         if not staged:
             remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
+            pushed = push_content_repo_if_needed(remote_name, branch)
             if remote_changed:
                 rebuild_songs()
+                if pushed:
+                    message = f"Content repo refreshed from GitHub and pending commits were synced for {rel_path}."
+                    print(message)
+                    return {"ok": True, "pushed": True, "message": message}
                 message = f"Content repo refreshed from GitHub for {rel_path}."
                 print(message)
                 return {"ok": True, "pushed": False, "message": message}
+            if pushed:
+                message = f"Pending content repo commits synced successfully for {rel_path}."
+                print(message)
+                return {"ok": True, "pushed": True, "message": message}
             message = f"No content repo changes to sync for {rel_path}."
             print(message)
             return {"ok": True, "pushed": False, "message": message}
@@ -308,15 +341,17 @@ def sync_content_repo(changed_path: str, action: str) -> dict:
 
         push_target = build_push_target(remote_name)
         remote_changed = False
-        if not content_repo_has_uncommitted_changes():
+        if not content_repo_has_uncommitted_tracked_changes():
             remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
-        subprocess.run(
-            ["git", "push", push_target, f"HEAD:{branch}"],
-            cwd=CONTENT_REPO_DIR,
-            check=True,
-            capture_output=True,
-            text=True,
-        )
+            push_content_repo_if_needed(remote_name, branch)
+        else:
+            subprocess.run(
+                ["git", "push", push_target, f"HEAD:{branch}"],
+                cwd=CONTENT_REPO_DIR,
+                check=True,
+                capture_output=True,
+                text=True,
+            )
         if remote_changed:
             rebuild_songs()
         message = f"Content repo synced successfully for {rel_path}."

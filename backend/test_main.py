@@ -1,5 +1,6 @@
 import pytest
 import queue
+import subprocess
 
 import backend.main as main
 from backend.utils import sanitize_filename
@@ -68,3 +69,62 @@ def test_run_sync_job_marks_failed_when_rebuild_fails(monkeypatch, tmp_path):
     assert job["status"] == "failed"
     assert job["ok"] is False
     assert job["message"] == "Build failed"
+
+
+def run_git(cwd, *args):
+    return subprocess.run(
+        ["git", *args],
+        cwd=cwd,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+
+def init_content_repo(tmp_path):
+    remote = tmp_path / "remote.git"
+    repo = tmp_path / "content"
+    run_git(tmp_path, "init", "--bare", str(remote))
+    run_git(tmp_path, "init", "-b", "main", str(repo))
+    run_git(repo, "config", "user.name", "Test User")
+    run_git(repo, "config", "user.email", "test@example.com")
+    run_git(repo, "remote", "add", "origin", str(remote))
+
+    songs_dir = repo / "songs"
+    songs_dir.mkdir()
+    song_path = songs_dir / "country-roads.pro"
+    song_path.write_text("{title: Country Roads}\n", encoding="utf-8")
+    run_git(repo, "add", "songs/country-roads.pro")
+    run_git(repo, "commit", "-m", "Initial song")
+    run_git(repo, "push", "-u", "origin", "main")
+    return repo, remote, song_path
+
+
+def test_untracked_files_do_not_block_content_repo_rebase(monkeypatch, tmp_path):
+    repo, _remote, _song_path = init_content_repo(tmp_path)
+    (repo / ".DS_Store").write_text("finder metadata", encoding="utf-8")
+    monkeypatch.setattr(main, "CONTENT_REPO_DIR", str(repo))
+
+    assert main.content_repo_has_uncommitted_tracked_changes() is False
+
+
+def test_sync_pushes_pending_local_commits_when_file_has_no_new_diff(monkeypatch, tmp_path):
+    repo, remote, song_path = init_content_repo(tmp_path)
+    song_path.write_text("{title: Country Roads}\n{key: A}\n", encoding="utf-8")
+    run_git(repo, "add", "songs/country-roads.pro")
+    run_git(repo, "commit", "-m", "Update song: country-roads.pro via Holy Songs editor")
+    (repo / ".DS_Store").write_text("finder metadata", encoding="utf-8")
+
+    monkeypatch.setattr(main, "CONTENT_REPO_DIR", str(repo))
+    monkeypatch.setattr(main, "rebuild_songs", lambda: {"ok": True, "message": "rebuilt"})
+    monkeypatch.setenv("CONTENT_REPO_PUSH_REMOTE", "origin")
+    monkeypatch.setenv("CONTENT_REPO_PUSH_BRANCH", "main")
+    monkeypatch.delenv("GITHUB_TOKEN", raising=False)
+    monkeypatch.delenv("CONTENT_REPO_PUSH_REMOTE_URL", raising=False)
+
+    result = main.sync_content_repo(str(song_path), "Update song")
+
+    assert result["ok"] is True
+    assert result["pushed"] is True
+    remote_log = run_git(remote, "log", "--oneline", "main").stdout
+    assert "Update song: country-roads.pro via Holy Songs editor" in remote_log
