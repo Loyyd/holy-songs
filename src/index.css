@@ -933,12 +933,27 @@ button:disabled {
   pointer-events: none;
 }
 
+.chord-flow-spacer {
+  display: inline-block;
+  visibility: hidden;
+  font-weight: 700;
+  font-size: 0.9em;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 2px 4px;
+  pointer-events: none;
+}
+
 @media (max-width: 640px) {
   .song {
     font-size: 15px;
   }
   
   .chord {
+    font-size: 0.85em;
+  }
+
+  .chord-flow-spacer {
     font-size: 0.85em;
   }
 }
