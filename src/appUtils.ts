@@ -34,9 +34,9 @@ export type CategoryColors = {
 
 const CATEGORY_COLOR_PRESETS: Record<string, CategoryColors> = {
   'holy songs': {
-    background: '#e0f2fe',
-    border: '#7dd3fc',
-    color: '#075985',
+    background: '#fef3c7',
+    border: '#d4af37',
+    color: '#b8860b',
   },
   worship: {
     background: '#fef3c7',

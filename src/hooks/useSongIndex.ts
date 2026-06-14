@@ -8,9 +8,10 @@ export function useSongIndex() {
   const refreshIndex = useCallback((selectId?: string) => {
     return fetch(`${import.meta.env.BASE_URL}data/songs.index.json`, { cache: 'no-store' })
       .then((res) => res.json())
-      .then((data: SongIndexEntry[]) => {
-        setIndex(data);
-        return { data, selectId };
+      .then((data: unknown) => {
+        const indexData = Array.isArray(data) ? (data as SongIndexEntry[]) : [];
+        setIndex(indexData);
+        return { data: indexData, selectId };
       })
       .catch((err) => {
         console.error('Failed to refresh index:', err);
