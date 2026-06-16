@@ -5,12 +5,14 @@ both the frontend and backend on port `8000`, which is what the Nomad job expose
 behind Traefik for `holy-songs.bcgen.ie`.
 
 GitHub Actions publishes the image, joins the Headscale tailnet, and deploys it
-directly to Nomad with a Nomad token.
+directly to Nomad with a Nomad token. The workflow uses the same Nomad API
+address as Accounta: `http://100.64.0.5:4646`.
 
 Required GitHub Actions secrets:
 
 - `NOMAD_TOKEN`: Nomad token with permission to plan/run the `holy-songs` job
 - `HEADSCALE_AUTHKEY`: Headscale/Tailscale auth key for joining the tailnet
+- `CONTENT_REPO_GITHUB_TOKEN`: token used by the running app to sync song content
 
 The workflow preserves the currently registered Nomad job and only updates the
 `holy-songs` task image, so app runtime secrets stay in Nomad.
