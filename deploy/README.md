@@ -12,17 +12,18 @@ Required GitHub Actions secrets:
 
 - `NOMAD_TOKEN`: Nomad token with permission to plan/run the `holy-songs` job
 - `HEADSCALE_AUTHKEY`: Headscale/Tailscale auth key for joining the tailnet
-- `CONTENT_REPO_GITHUB_TOKEN`: token used by the running app to sync song content
 
-The workflow preserves the currently registered Nomad job and only updates the
-`holy-songs` task image, so app runtime secrets stay in Nomad.
+The workflow preserves the currently registered Nomad job, updates the
+`holy-songs` task image, and keeps the content repo GitHub token out of GitHub
+Actions. The running task reads `GITHUB_TOKEN` from OpenBao at
+`kv/data/services/holy-songs/shared`, with sops+age as the source of truth in
+`private-cloud-federation/platform/compose/secrets/services/holy-songs/shared.enc.env`.
 
 Run from the repo root:
 
 ```bash
 export NOMAD_ADDR="https://your-nomad.example.com"
 export GHCR_TOKEN="..." # token with write:packages, or use an existing docker login
-export GITHUB_TOKEN="..." # optional, for content repo push/pull from the running app
 export HOLY_SONGS_ADMIN_TOKEN="..."
 export CONTENT_REPO_HOST_PATH="/srv/holy-songs-content"
 
@@ -51,3 +52,18 @@ Useful overrides:
 - `BUILD_ONLY=1`: build and push images without running Nomad
 - `SKIP_TESTS=1`: skip local test checks
 - `SKIP_GHCR_LOGIN=1`: assume Docker is already logged in to GHCR
+
+## Content repo token rotation
+
+If the content repo PAT is exposed, revoke the leaked token in GitHub, create a
+new fine-grained token for the content repository with the minimum contents
+permissions the app needs, update `GITHUB_TOKEN` in the sops file above, and
+publish the sops tree into OpenBao with:
+
+```bash
+cd ../private-cloud-federation
+BAO_TOKEN="..." SOPS_AGE_KEY_FILE="..." deploy/openbao/scripts/import_sops_tree.sh
+```
+
+After the OpenBao write, redeploy or restart `holy-songs` so Nomad re-renders the
+`secrets/github-token.env` template for the app task.

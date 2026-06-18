@@ -2,6 +2,16 @@ job "holy-songs" {
   datacenters = ["${NOMAD_DATACENTERS}"]
   type        = "service"
 
+  meta {
+    secrets = jsonencode({
+      "kv/services/holy-songs/shared" = {
+        sops   = "platform/compose/secrets/services/holy-songs/shared.enc.env"
+        keys   = ["GITHUB_TOKEN"]
+        subset = true
+      }
+    })
+  }
+
   group "app" {
     count = 1
 
@@ -36,6 +46,15 @@ job "holy-songs" {
     task "app" {
       driver = "docker"
 
+      identity {
+        env  = true
+        file = true
+      }
+
+      vault {
+        role = "workload-holy-songs"
+      }
+
       config {
         image      = "${DEPLOY_REF}"
         ports      = ["http"]
@@ -52,11 +71,21 @@ job "holy-songs" {
         SONGS_OUTPUT_DIR                  = "/app/dist/data"
         CORS_ORIGINS                      = "https://${HOLY_SONGS_DOMAIN}"
         HOLY_SONGS_ADMIN_TOKEN            = "${HOLY_SONGS_ADMIN_TOKEN}"
-        GITHUB_TOKEN                      = "${GITHUB_TOKEN}"
         CONTENT_REPO_GIT_USER_NAME        = "${CONTENT_REPO_GIT_USER_NAME}"
         CONTENT_REPO_GIT_USER_EMAIL       = "${CONTENT_REPO_GIT_USER_EMAIL}"
         CONTENT_REPO_PUSH_REMOTE          = "${CONTENT_REPO_PUSH_REMOTE}"
         CONTENT_REPO_PUSH_BRANCH          = "${CONTENT_REPO_PUSH_BRANCH}"
+      }
+
+      template {
+        data        = <<-EOF
+          {{ with secret "kv/data/services/holy-songs/shared" }}{{ with .Data.data }}
+          GITHUB_TOKEN={{ .GITHUB_TOKEN }}
+          {{ end }}{{ end }}
+        EOF
+        destination = "secrets/github-token.env"
+        env         = true
+        change_mode = "restart"
       }
 
       resources {

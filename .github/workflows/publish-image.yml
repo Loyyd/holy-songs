@@ -89,7 +89,6 @@ jobs:
       NOMAD_SKIP_VERIFY: "false"
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
       HEADSCALE_AUTHKEY: ${{ secrets.HEADSCALE_AUTHKEY }}
-      CONTENT_REPO_GITHUB_TOKEN: ${{ secrets.CONTENT_REPO_GITHUB_TOKEN }}
       HOLY_SONGS_DOMAIN: holy-songs.bcgen.ie
 
     steps:
@@ -111,8 +110,7 @@ jobs:
           missing=0
           for name in \
             NOMAD_TOKEN \
-            HEADSCALE_AUTHKEY \
-            CONTENT_REPO_GITHUB_TOKEN
+            HEADSCALE_AUTHKEY
           do
             if [[ -z "${!name:-}" ]]; then
               echo "::error title=Missing deployment secret::${name} is required"
@@ -166,6 +164,12 @@ jobs:
           set -euo pipefail
 
           rendered_job="deploy/holy-songs.rendered.nomad.json"
+          github_token_template="$(cat <<'EOF'
+          {{ with secret "kv/data/services/holy-songs/shared" }}{{ with .Data.data }}
+          GITHUB_TOKEN={{ .GITHUB_TOKEN }}
+          {{ end }}{{ end }}
+          EOF
+          )"
           curl_args=(-fsS)
           if [[ "${NOMAD_SKIP_VERIFY}" == "true" ]]; then
             curl_args+=(-k)
@@ -174,11 +178,43 @@ jobs:
           curl "${curl_args[@]}" \
             -H "X-Nomad-Token: ${NOMAD_TOKEN}" \
             "${NOMAD_ADDR}/v1/job/holy-songs" \
-            | jq --arg image "${DEPLOY_REF}" \
-              '(.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Config.image) = $image
-              | (.TaskGroups[].Tasks[] | select(.Name == "holy-songs") | .Env.GITHUB_TOKEN) = env.CONTENT_REPO_GITHUB_TOKEN
+            | jq --arg image "${DEPLOY_REF}" --arg githubTokenTemplate "${github_token_template}" \
+              'def app_task: .Name == "holy-songs" or .Name == "app";
+              if ([.TaskGroups[].Tasks[] | select(app_task)] | length) == 0 then
+                error("holy-songs app task not found")
+              else
+                .TaskGroups |= map(
+                  .Tasks |= map(
+                    if app_task then
+                      .Config.image = $image
+                      | .Env = ((.Env // {}) | del(.GITHUB_TOKEN))
+                      | .Identity = ((.Identity // {}) + {Env: true, File: true})
+                      | .Vault = ((.Vault // {}) + {Role: "workload-holy-songs"})
+                      | .Templates = (
+                          ((.Templates // []) | map(select(.DestPath != "secrets/github-token.env")))
+                          + [{
+                              EmbeddedTmpl: $githubTokenTemplate,
+                              DestPath: "secrets/github-token.env",
+                              Envvars: true,
+                              ChangeMode: "restart"
+                            }]
+                        )
+                    else
+                      .
+                    end
+                  )
+                )
+              end
               | {Job: .}' \
               > "${rendered_job}"
+
+          jq -e '
+            [
+              .Job.TaskGroups[].Tasks[]
+              | select((.Name == "holy-songs" or .Name == "app") and ((.Env // {}) | has("GITHUB_TOKEN")))
+            ]
+            | length == 0
+          ' "${rendered_job}" >/dev/null
 
       - name: Plan Nomad deployment
         shell: bash
