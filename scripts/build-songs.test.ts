@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
+import { gunzipSync } from 'node:zlib';
 
 const projectDir = fileURLToPath(new URL('..', import.meta.url));
 const buildScript = path.join(projectDir, 'scripts', 'build-songs.ts');
@@ -234,6 +235,63 @@ test('switches index and songs as one directory generation', async (t) => {
     await fs.readFile(path.join(firstGeneration, 'songs', 'changing-song.json'), 'utf8'),
     firstSong
   );
+  await assertNoPublishDebris(fixture.outputDir);
+});
+
+test('rebuilds incrementally, shares unchanged output and skips no-op publishes', async (t) => {
+  const fixture = await makeBuildFixture();
+  t.after(() => fs.rm(fixture.root, { recursive: true, force: true }));
+
+  const stablePath = path.join(fixture.songsDir, 'stable-song.pro');
+  const changingPath = path.join(fixture.songsDir, 'changing-song.pro');
+  await fs.writeFile(stablePath, '{title: Stable Song}\n[G]holy words\n', 'utf8');
+  await fs.writeFile(changingPath, '{title: Changing Song}\n{key: C}\n[C]old words\n', 'utf8');
+
+  assert.equal(runBuild(fixture.songsDir, fixture.outputDir).status, 0);
+  const firstGeneration = await activeGeneration(fixture.outputDir);
+  const stableJson = path.join('songs', 'stable-song.json');
+  const firstStable = await fs.stat(path.join(firstGeneration, stableJson));
+
+  // Precompressed siblings decode to the exact published JSON.
+  for (const file of ['songs.index.json', stableJson]) {
+    assert.equal(
+      gunzipSync(await fs.readFile(path.join(firstGeneration, `${file}.gz`))).toString('utf8'),
+      await fs.readFile(path.join(firstGeneration, file), 'utf8')
+    );
+  }
+
+  const unchanged = runBuild(fixture.songsDir, fixture.outputDir);
+  assert.equal(unchanged.status, 0);
+  assert.match(unchanged.stdout, /unchanged/);
+  assert.equal(await activeGeneration(fixture.outputDir), firstGeneration);
+
+  await fs.writeFile(changingPath, '{title: Changing Song}\n{key: D}\n[D]new words\n', 'utf8');
+  const incremental = runBuild(fixture.songsDir, fixture.outputDir);
+  assert.equal(incremental.status, 0);
+  assert.match(incremental.stdout, /Built 2 song\(s\), 1 regenerated/);
+  const secondGeneration = await activeGeneration(fixture.outputDir);
+  assert.notEqual(secondGeneration, firstGeneration);
+  assert.equal((await fs.stat(path.join(secondGeneration, stableJson))).ino, firstStable.ino);
+
+  const index = JSON.parse(await fs.readFile(path.join(fixture.outputDir, 'songs.index.json'), 'utf8'));
+  assert.deepEqual(
+    index.map((entry: { id: string; key?: string }) => [entry.id, entry.key]).sort(),
+    [['changing-song', 'D'], ['stable-song', undefined]]
+  );
+  assert.equal(
+    JSON.parse(await fs.readFile(path.join(firstGeneration, 'songs', 'changing-song.json'), 'utf8')).key,
+    'C'
+  );
+
+  await fs.writeFile(
+    path.join(fixture.songsDir, 'duplicate.pro'),
+    '{title: Stable Song}\n[A]other words\n',
+    'utf8'
+  );
+  const duplicate = runBuild(fixture.songsDir, fixture.outputDir);
+  assert.notEqual(duplicate.status, 0);
+  assert.match(duplicate.stderr, /Duplicate song id/);
+  assert.equal(await activeGeneration(fixture.outputDir), secondGeneration);
   await assertNoPublishDebris(fixture.outputDir);
 });
 

@@ -1,6 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { randomUUID } from 'node:crypto';
+import { createHash, randomUUID } from 'node:crypto';
+import { promisify } from 'node:util';
+import { gzip as gzipCallback } from 'node:zlib';
 import { parseChordPro } from '../src/lib/parseChordPro';
 import { SongData, SongIndexEntry } from '../src/types';
 
@@ -13,6 +15,40 @@ const INDEX_PATH = path.join(OUTPUT_BASE_DIR, 'songs.index.json');
 const GENERATIONS_DIR = path.join(OUTPUT_PARENT_DIR, `.${OUTPUT_NAME}-generations`);
 const JOURNAL_PATH = path.join(GENERATIONS_DIR, '.publish-journal.json');
 const RETAINED_PREVIOUS_GENERATIONS = 2;
+// Lives inside each generation; the backend never serves dot-files from /data.
+const MANIFEST_NAME = '.build-manifest.json';
+const SONG_GZIP_LEVEL = 9;
+// The index is recompressed on every save; level 9 takes ~2.5x longer for ~1% gain.
+const INDEX_GZIP_LEVEL = 6;
+// Inputs whose changes invalidate cached parse results.
+const BUILDER_INPUTS = [
+  '../scripts/build-songs.ts',
+  '../src/lib/parseChordPro.ts',
+  '../src/lib/songCategories.ts',
+  '../src/types.ts',
+];
+
+const gzip = promisify(gzipCallback);
+
+type ManifestSource = { hash: string; id: string };
+
+type BuildManifest = {
+  version: 1;
+  builder: string;
+  sources: Record<string, ManifestSource>;
+};
+
+type SourceFile = { sourcePath: string; raw: string; hash: string };
+
+type BuiltSong = {
+  id: string;
+  title: string;
+  sourcePath: string;
+  hash: string;
+  entry: SongIndexEntry;
+  // null when the active generation already holds identical output.
+  song: SongData | null;
+};
 
 type PreviousOutput =
   | { kind: 'missing' }
@@ -64,6 +100,67 @@ async function writeFileDurably(file: string, content: string) {
   }
 }
 
+// Staged files may be hard links into the active generation, so they are
+// unlinked and recreated rather than truncated in place.
+async function replaceFileDurably(file: string, content: string | Buffer) {
+  await fs.rm(file, { force: true });
+  const handle = await fs.open(file, 'wx');
+  try {
+    await handle.writeFile(content);
+    await handle.sync();
+  } finally {
+    await handle.close();
+  }
+}
+
+function sha256(content: string) {
+  return createHash('sha256').update(content).digest('hex');
+}
+
+async function builderFingerprint() {
+  const hash = createHash('sha256');
+  try {
+    for (const input of BUILDER_INPUTS) {
+      hash.update(await fs.readFile(new URL(input, import.meta.url)));
+    }
+  } catch {
+    // Without a reliable fingerprint, never reuse cached output.
+    hash.update(randomUUID());
+  }
+  return hash.digest('hex');
+}
+
+async function readActiveManifest(builder: string): Promise<BuildManifest | null> {
+  try {
+    const manifest = JSON.parse(
+      await fs.readFile(path.join(OUTPUT_BASE_DIR, MANIFEST_NAME), 'utf8')
+    ) as Partial<BuildManifest>;
+    if (manifest.version !== 1 || manifest.builder !== builder || !manifest.sources) return null;
+    return manifest as BuildManifest;
+  } catch {
+    return null;
+  }
+}
+
+async function readActiveIndex() {
+  try {
+    const raw = await fs.readFile(INDEX_PATH, 'utf8');
+    const entries = JSON.parse(raw);
+    if (!Array.isArray(entries)) return null;
+    return { raw, byId: new Map((entries as SongIndexEntry[]).map((entry) => [entry.id, entry])) };
+  } catch {
+    return null;
+  }
+}
+
+async function activeSongFiles() {
+  try {
+    return new Set(await fs.readdir(OUTPUT_DIR));
+  } catch {
+    return new Set<string>();
+  }
+}
+
 async function syncDirectoryTree(directory: string) {
   const entries = await fs.readdir(directory, { withFileTypes: true });
   for (const entry of entries) {
@@ -93,8 +190,8 @@ async function hasChordProFiles(dir: string) {
   }
 }
 
-function assertUniqueSongIds(songs: SongData[]) {
-  const songsById = new Map<string, SongData[]>();
+function assertUniqueSongIds(songs: Pick<BuiltSong, 'id' | 'title' | 'sourcePath'>[]) {
+  const songsById = new Map<string, Pick<BuiltSong, 'id' | 'title' | 'sourcePath'>[]>();
 
   for (const song of songs) {
     const existing = songsById.get(song.id) || [];
@@ -292,22 +389,32 @@ function injectFailure(point: string) {
   throw new Error(`Injected song build failure at ${point}`);
 }
 
-async function copyRetainedSongs(stagingSongsDir: string) {
+async function linkRetainedSongs(stagingSongsDir: string) {
+  let entries;
   try {
-    const entries = await fs.readdir(OUTPUT_DIR, { withFileTypes: true });
-    await Promise.all(
-      entries
-        .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
-        .map((entry) =>
-          fs.copyFile(path.join(OUTPUT_DIR, entry.name), path.join(stagingSongsDir, entry.name))
-        )
-    );
+    entries = await fs.readdir(OUTPUT_DIR, { withFileTypes: true });
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return;
+    throw error;
   }
+  // Generation files are immutable once published, so sharing inodes is safe
+  // and avoids rewriting (and fsyncing) every unchanged song on each save.
+  await Promise.all(
+    entries
+      .filter((entry) => entry.isFile() && /\.json(?:\.gz)?$/.test(entry.name))
+      .map(async (entry) => {
+        const source = path.join(OUTPUT_DIR, entry.name);
+        const target = path.join(stagingSongsDir, entry.name);
+        try {
+          await fs.link(source, target);
+        } catch {
+          await fs.copyFile(source, target);
+        }
+      })
+  );
 }
 
-async function stageBuild(songs: SongData[], index: SongIndexEntry[]) {
+async function stageBuild(changedSongs: SongData[], indexJson: string, manifest: BuildManifest) {
   await ensureDir(GENERATIONS_DIR);
   const stagingDir = await fs.mkdtemp(path.join(GENERATIONS_DIR, '.build-'));
   await fs.chmod(stagingDir, 0o755);
@@ -319,20 +426,25 @@ async function stageBuild(songs: SongData[], index: SongIndexEntry[]) {
     // Every generation contains the current songs plus historical JSON files.
     // A browser holding an older cached index can therefore still resolve all
     // of its /data/songs/<id>.json URLs after the pointer switches.
-    await copyRetainedSongs(stagingSongsDir);
+    await linkRetainedSongs(stagingSongsDir);
     await Promise.all(
-      songs.map((song) =>
-        writeFileDurably(
-          path.join(stagingSongsDir, `${song.id}.json`),
-          JSON.stringify(song, null, 2)
-        )
-      )
+      changedSongs.map(async (song) => {
+        const json = JSON.stringify(song);
+        const target = path.join(stagingSongsDir, `${song.id}.json`);
+        await replaceFileDurably(target, json);
+        await replaceFileDurably(`${target}.gz`, await gzip(json, { level: SONG_GZIP_LEVEL }));
+      })
     );
     await syncDirectory(stagingSongsDir);
 
     // The index is written last inside the private generation. Only a complete,
     // validated generation is ever made visible by publishStagedBuild.
-    await writeFileDurably(stagingIndexPath, JSON.stringify(index, null, 2));
+    await replaceFileDurably(
+      `${stagingIndexPath}.gz`,
+      await gzip(indexJson, { level: INDEX_GZIP_LEVEL })
+    );
+    await replaceFileDurably(path.join(stagingDir, MANIFEST_NAME), JSON.stringify(manifest));
+    await replaceFileDurably(stagingIndexPath, indexJson);
     await syncDirectory(stagingDir);
     if (!(await isCompleteGeneration(stagingDir))) {
       throw new Error('Staged song catalogue failed validation.');
@@ -499,23 +611,31 @@ async function build() {
 
   await recoverInterruptedPublish();
 
-  const entries = await fs.readdir(songsDir);
-  const songs: SongData[] = [];
+  const builder = await builderFingerprint();
+  const [previousManifest, activeIndex, publishedSongFiles] = await Promise.all([
+    readActiveManifest(builder),
+    readActiveIndex(),
+    activeSongFiles(),
+  ]);
 
-  for (const entry of entries) {
-    if (!entry.endsWith('.pro')) continue;
-    const fullPath = path.join(songsDir, entry);
-    const raw = await fs.readFile(fullPath, 'utf8');
-    const song = parseChordPro(raw, path.relative(process.cwd(), fullPath));
-    songs.push(song);
-  }
+  const entries = (await fs.readdir(songsDir)).filter((entry) => entry.endsWith('.pro'));
+  const sources: SourceFile[] = await Promise.all(
+    entries.map(async (entry) => {
+      const fullPath = path.join(songsDir, entry);
+      const raw = await fs.readFile(fullPath, 'utf8');
+      return { sourcePath: path.relative(process.cwd(), fullPath), raw, hash: sha256(raw) };
+    })
+  );
 
-  assertUniqueSongIds(songs);
+  const built: BuiltSong[] = sources.map(({ sourcePath, raw, hash }) => {
+    const cached = previousManifest?.sources[sourcePath];
+    const cachedEntry = cached && cached.hash === hash ? activeIndex?.byId.get(cached.id) : undefined;
+    if (cached && cachedEntry && publishedSongFiles.has(`${cached.id}.json`)) {
+      return { id: cached.id, title: cachedEntry.title, sourcePath, hash, entry: cachedEntry, song: null };
+    }
 
-  const index: SongIndexEntry[] = [];
-
-  for (const song of songs) {
-    index.push({
+    const song = parseChordPro(raw, sourcePath);
+    const entry: SongIndexEntry = {
       id: song.id,
       title: song.title,
       key: song.key,
@@ -523,13 +643,34 @@ async function build() {
       categories: song.categories,
       sections: song.sections.flatMap((section) =>
         section.lines.map((line) => line.raw).filter((line) => line.trim() !== '')
-      )
-    });
+      ),
+    };
+    return { id: song.id, title: song.title, sourcePath, hash, entry, song };
+  });
+
+  assertUniqueSongIds(built);
+
+  const indexJson = JSON.stringify(built.map((song) => song.entry));
+  const changedSongs = built.flatMap((song) => (song.song ? [song.song] : []));
+  if (
+    changedSongs.length === 0 &&
+    previousManifest &&
+    Object.keys(previousManifest.sources).length === built.length &&
+    activeIndex?.raw === indexJson &&
+    (await pathState(`${INDEX_PATH}.gz`))
+  ) {
+    console.log(`Song catalogue unchanged (${built.length} song(s)).`);
+    return;
   }
 
-  const staged = await stageBuild(songs, index);
+  const manifest: BuildManifest = {
+    version: 1,
+    builder,
+    sources: Object.fromEntries(built.map((song) => [song.sourcePath, { hash: song.hash, id: song.id }])),
+  };
+  const staged = await stageBuild(changedSongs, indexJson, manifest);
   await publishStagedBuild(staged);
-  console.log(`Built ${songs.length} song(s).`);
+  console.log(`Built ${built.length} song(s), ${changedSongs.length} regenerated.`);
 }
 
 build().catch((err) => {
