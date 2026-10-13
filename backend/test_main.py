@@ -69,7 +69,8 @@ def test_rebuild_songs_uses_configured_output_directory(monkeypatch, tmp_path):
     result = main.rebuild_songs()
 
     assert result["ok"] is True
-    assert captured["command"] == ["npm", "run", "build:songs"]
+    assert captured["command"][1:] == ["--import", "tsx", os.path.join("scripts", "build-songs.ts")]
+    assert captured["kwargs"]["cwd"] == main.BASE_DIR
     assert captured["kwargs"]["env"]["SONGS_OUTPUT_DIR"] == str(output_dir)
     assert captured["kwargs"]["env"]["SONGS_DIR"] == str(songs_dir)
 
@@ -533,14 +534,14 @@ def test_sync_failure_redacts_token_from_result_job_and_log(monkeypatch, tmp_pat
     monkeypatch.setenv("GITHUB_TOKEN", token)
     monkeypatch.setenv("CONTENT_REPO_PUSH_BRANCH", "main")
 
-    def fail_rebase(*_args, **_kwargs):
+    def fail_fetch(*_args, **_kwargs):
         raise subprocess.CalledProcessError(
             128,
             ["git", "fetch", credential_url, "main"],
             stderr=f"fatal: authentication failed for {credential_url}; token={token}",
         )
 
-    monkeypatch.setattr(main, "rebase_content_repo", fail_rebase)
+    monkeypatch.setattr(main, "fetch_content_repo", fail_fetch)
 
     result = main.sync_content_repo(str(song_path), "Update song")
     with main.sync_jobs_lock:
@@ -771,3 +772,163 @@ def test_rebase_conflict_aborts_without_picking_a_winner(monkeypatch, tmp_path):
     assert song_path.read_text(encoding="utf-8") == local_content
     assert run_git(repo, "status", "--porcelain").stdout == ""
     assert not (repo / ".git" / "rebase-merge").exists()
+
+
+def publish_catalogue_generation(tmp_path, name, index_json):
+    import gzip
+
+    generation = tmp_path / ".data-generations" / name
+    (generation / "songs").mkdir(parents=True)
+    (generation / "songs.index.json").write_text(index_json, encoding="utf-8")
+    (generation / "songs.index.json.gz").write_bytes(gzip.compress(index_json.encode("utf-8")))
+    (generation / ".build-manifest.json").write_text("{}", encoding="utf-8")
+    link = tmp_path / "data"
+    temporary_link = tmp_path / f".data-link-{name}"
+    temporary_link.symlink_to(generation.relative_to(tmp_path))
+    os.replace(temporary_link, link)
+    return link
+
+
+def test_catalogue_uses_precompressed_gzip_and_content_etags(monkeypatch, tmp_path):
+    from fastapi.testclient import TestClient
+
+    index_json = '[{"id":"grace","title":"Grace","sections":["holy words"]}]' * 40
+    output_dir = publish_catalogue_generation(tmp_path, "generation-1", index_json)
+    monkeypatch.setattr(main, "SONGS_OUTPUT_DIR", str(output_dir))
+    client = TestClient(main.app)
+
+    compressed = client.get("/data/songs.index.json", headers={"Accept-Encoding": "gzip"})
+    assert compressed.status_code == 200
+    assert compressed.headers["content-encoding"] == "gzip"
+    assert int(compressed.headers["content-length"]) < len(index_json)
+    assert compressed.text == index_json
+    assert compressed.headers["cache-control"] == main.CATALOGUE_CACHE_CONTROL
+    assert "Accept-Encoding" in compressed.headers["vary"]
+    etag = compressed.headers["etag"]
+    assert etag.startswith('W/"')
+
+    identity = client.get("/data/songs.index.json", headers={"Accept-Encoding": "identity"})
+    assert "content-encoding" not in identity.headers
+    assert identity.text == index_json
+    assert identity.headers["etag"] == etag
+
+    not_modified = client.get(
+        "/data/songs.index.json",
+        headers={"If-None-Match": etag, "Accept-Encoding": "gzip"},
+    )
+    assert not_modified.status_code == 304
+    assert not_modified.content == b""
+    assert not_modified.headers["etag"] == etag
+
+    # A republished but identical index keeps its validator; a change replaces it.
+    publish_catalogue_generation(tmp_path, "generation-2", index_json)
+    same = client.get("/data/songs.index.json", headers={"If-None-Match": etag})
+    assert same.status_code == 304
+    publish_catalogue_generation(tmp_path, "generation-3", index_json + " ")
+    changed = client.get("/data/songs.index.json", headers={"If-None-Match": etag})
+    assert changed.status_code == 200
+    assert changed.headers["etag"] != etag
+
+    assert client.get("/data/.build-manifest.json").status_code == 404
+    assert client.get("/data/songs/missing.json").status_code == 404
+    assert client.get("/data/..%2F..%2Fsecret.json").status_code == 404
+
+
+@pytest.mark.parametrize("header,expected", [
+    ("gzip, deflate, br", True),
+    ("br;q=1.0, gzip;q=0.5", True),
+    ("gzip;q=0", False),
+    ("identity", False),
+    (None, False),
+])
+def test_accepts_gzip(header, expected):
+    assert main.accepts_gzip(header) is expected
+
+
+def configure_sync_repo(monkeypatch, repo):
+    monkeypatch.setattr(main, "CONTENT_REPO_DIR", str(repo))
+    monkeypatch.setattr(main, "ensure_content_repo_safe_directory", lambda: None)
+    monkeypatch.setenv("CONTENT_REPO_PUSH_REMOTE", "origin")
+    monkeypatch.setenv("CONTENT_REPO_PUSH_BRANCH", "main")
+    monkeypatch.delenv("GITHUB_TOKEN", raising=False)
+    monkeypatch.delenv("CONTENT_REPO_TOKEN", raising=False)
+    monkeypatch.delenv("CONTENT_REPO_PUSH_REMOTE_URL", raising=False)
+
+
+def test_song_mutation_lock_is_free_during_network_fetch(monkeypatch, tmp_path):
+    import threading
+
+    repo, remote, song_path = init_content_repo(tmp_path)
+    configure_sync_repo(monkeypatch, repo)
+    monkeypatch.setattr(main, "rebuild_songs", lambda: {"ok": True, "message": "rebuilt"})
+    song_path.write_text("{title: Country Roads}\n{key: G}\n", encoding="utf-8")
+
+    fetch_started = threading.Event()
+    release_fetch = threading.Event()
+    real_fetch = main.fetch_content_repo
+
+    def slow_fetch(*args):
+        fetch_started.set()
+        assert release_fetch.wait(5)
+        real_fetch(*args)
+
+    monkeypatch.setattr(main, "fetch_content_repo", slow_fetch)
+    results = []
+    worker = threading.Thread(
+        target=lambda: results.append(main.sync_content_repo(str(song_path), "Update song"))
+    )
+    worker.start()
+    try:
+        assert fetch_started.wait(5)
+        # A save (or editor read) can proceed while the remote is slow.
+        assert main.song_mutation_lock.acquire(timeout=1)
+        main.song_mutation_lock.release()
+    finally:
+        release_fetch.set()
+        worker.join(5)
+
+    assert results[0]["ok"] is True
+    assert results[0]["pushed"] is True
+    assert "{key: G}" in run_git(remote, "show", "main:songs/country-roads.pro").stdout
+
+
+def test_queued_sync_jobs_share_one_fetch_validation_and_push(monkeypatch, tmp_path):
+    repo, remote, song_path = init_content_repo(tmp_path)
+    configure_sync_repo(monkeypatch, repo)
+    second_song = repo / "songs" / "amazing-grace.pro"
+    song_path.write_text("{title: Country Roads}\n{key: E}\n", encoding="utf-8")
+    second_song.write_text("{title: Amazing Grace}\n", encoding="utf-8")
+
+    calls = {"build": 0, "fetch": 0, "push": 0}
+    real_fetch = main.fetch_content_repo
+    real_push = main.push_content_repo_if_needed
+
+    def count(name, function):
+        def wrapper(*args):
+            calls[name] += 1
+            return function(*args)
+        return wrapper
+
+    monkeypatch.setattr(main, "fetch_content_repo", count("fetch", real_fetch))
+    monkeypatch.setattr(main, "push_content_repo_if_needed", count("push", real_push))
+    monkeypatch.setattr(main, "rebuild_songs", count("build", lambda: {"ok": True, "message": "rebuilt"}))
+    monkeypatch.setattr(main, "ensure_sync_worker_started", lambda: None)
+    monkeypatch.setattr(main, "sync_job_queue", queue.Queue())
+    with main.sync_jobs_lock:
+        main.sync_jobs.clear()
+
+    first = main.enqueue_content_sync(str(song_path), "Update song", rebuild_required=False)
+    second = main.enqueue_content_sync(str(second_song), "Create song", rebuild_required=False)
+    assert main.sync_job_queue.get_nowait() == first["job_id"]
+    main.sync_job_queue.task_done()
+
+    main.run_sync_job(first["job_id"])
+
+    assert calls == {"build": 1, "fetch": 1, "push": 1}
+    assert main.sync_job_queue.empty()
+    with main.sync_jobs_lock:
+        statuses = [main.sync_jobs[job["job_id"]]["status"] for job in (first, second)]
+    assert statuses == ["synced", "synced"]
+    remote_log = run_git(remote, "log", "--format=%s", "main").stdout
+    assert "Update song: country-roads.pro via Holy Songs editor" in remote_log
+    assert "Create song: amazing-grace.pro via Holy Songs editor" in remote_log

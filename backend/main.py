@@ -1,10 +1,13 @@
 from fastapi import Depends, FastAPI, Header, HTTPException, WebSocket, WebSocketDisconnect, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
+from starlette.requests import Request as HTTPRequest
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from contextlib import asynccontextmanager, contextmanager
+from functools import lru_cache
+from typing import Callable
 import asyncio
 import hashlib
 import json
@@ -12,6 +15,8 @@ import os
 import queue
 import subprocess
 import re
+import shutil
+import stat
 import tempfile
 import threading
 import time
@@ -408,8 +413,11 @@ def run_git_transport(args: list[str], **kwargs) -> subprocess.CompletedProcess:
             command = ["git", "-c", "credential.helper=", *args]
         return subprocess.run(command, **kwargs)
 
+configured_safe_directories: set[str] = set()
+
+
 def ensure_content_repo_safe_directory():
-    if not CONTENT_REPO_DIR:
+    if not CONTENT_REPO_DIR or CONTENT_REPO_DIR in configured_safe_directories:
         return
 
     safe_directories = subprocess.run(
@@ -418,18 +426,26 @@ def ensure_content_repo_safe_directory():
         capture_output=True,
         text=True,
     ).stdout.splitlines()
-    if CONTENT_REPO_DIR in safe_directories:
-        return
+    if CONTENT_REPO_DIR not in safe_directories:
+        subprocess.run(
+            ["git", "config", "--global", "--add", "safe.directory", CONTENT_REPO_DIR],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    configured_safe_directories.add(CONTENT_REPO_DIR)
 
-    subprocess.run(
-        ["git", "config", "--global", "--add", "safe.directory", CONTENT_REPO_DIR],
-        check=True,
-        capture_output=True,
-        text=True,
-    )
+def song_builder_command() -> list[str]:
+    # Launch tsx directly: going through npm added a second Node start-up per build.
+    return [shutil.which("node") or "node", "--import", "tsx", os.path.join("scripts", "build-songs.ts")]
+
 
 def rebuild_songs() -> dict:
-    """Build generated song data without deploying."""
+    """Build generated song data without deploying.
+
+    The builder is incremental: unchanged songs are reused from the active
+    generation and an unchanged catalogue is not republished.
+    """
     try:
         env = os.environ.copy()
         # The song builder never needs repository credentials.
@@ -438,15 +454,16 @@ def rebuild_songs() -> dict:
         env["SONGS_OUTPUT_DIR"] = SONGS_OUTPUT_DIR
         env["SONGS_DIR"] = SONGS_DIR
         
-        subprocess.run(
-            ["npm", "run", "build:songs"],
+        result = subprocess.run(
+            song_builder_command(),
             cwd=BASE_DIR,
             check=True,
             env=env,
             capture_output=True,
             text=True,
         )
-        message = "Build script executed successfully."
+        summary = (result.stdout or "").strip().splitlines()[-1:]
+        message = " ".join(["Build script executed successfully.", *summary])
         print(message)
         return {"ok": True, "message": message}
     except subprocess.CalledProcessError as e:
@@ -487,8 +504,24 @@ def get_git_identity() -> tuple[str, str]:
     user_email = os.environ.get("CONTENT_REPO_GIT_USER_EMAIL", DEFAULT_GIT_USER_EMAIL)
     return user_name, user_email
 
+def fetch_content_repo(remote_name: str, branch: str):
+    """Network-only step; it never touches the working tree, so it runs without song_mutation_lock."""
+    run_git_transport(
+        ["fetch", build_push_target(remote_name), branch],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+
 def rebase_content_repo(remote_name: str, branch: str, user_name: str, user_email: str) -> bool:
-    push_target = build_push_target(remote_name)
+    fetch_content_repo(remote_name, branch)
+    return rebase_onto_fetch_head(user_name, user_email)
+
+
+def rebase_onto_fetch_head(user_name: str, user_email: str) -> bool:
+    """Rewrites song files; callers must hold song_mutation_lock."""
     before = subprocess.run(
         ["git", "rev-parse", "HEAD"],
         cwd=CONTENT_REPO_DIR,
@@ -497,13 +530,6 @@ def rebase_content_repo(remote_name: str, branch: str, user_name: str, user_emai
         text=True,
     ).stdout.strip()
 
-    run_git_transport(
-        ["fetch", push_target, branch],
-        cwd=CONTENT_REPO_DIR,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
     try:
         subprocess.run(
             [
@@ -596,119 +622,158 @@ def failed_combined_rebuild_result(changed_path: str, build_result: dict) -> dic
     return {"ok": False, "pushed": False, "message": message}
 
 
-def sync_content_repo(changed_path: str, action: str) -> dict:
-    if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
-        message = "Skipping content repo sync: CONTENT_REPO_DIR is not a git repository."
-        print(message)
-        return {"ok": False, "pushed": False, "message": message}
-
+def content_repo_relative_path(changed_path: str) -> str | None:
     try:
-        ensure_content_repo_safe_directory()
+        rel_path = os.path.relpath(os.path.abspath(changed_path), CONTENT_REPO_DIR)
+    except ValueError:
+        return None
+    return None if rel_path.startswith("..") else rel_path
 
-        try:
-            rel_path = os.path.relpath(os.path.abspath(changed_path), CONTENT_REPO_DIR)
-        except ValueError:
-            message = f"Skipping content repo sync: {changed_path} is outside the content repo."
-            print(message)
-            return {"ok": False, "pushed": False, "message": message}
 
-        if rel_path.startswith(".."):
-            message = f"Skipping content repo sync: {changed_path} is outside the content repo."
-            print(message)
-            return {"ok": False, "pushed": False, "message": message}
-
-        remote_name = os.environ.get("CONTENT_REPO_PUSH_REMOTE", "origin")
-        branch = os.environ.get("CONTENT_REPO_PUSH_BRANCH")
-        if not branch:
-            branch = subprocess.run(
-                ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-                cwd=CONTENT_REPO_DIR,
-                check=True,
-                capture_output=True,
-                text=True,
-            ).stdout.strip()
-
-        user_name, user_email = get_git_identity()
-        subprocess.run(["git", "add", "--", rel_path], cwd=CONTENT_REPO_DIR, check=True)
-
-        staged = subprocess.run(
-            ["git", "diff", "--cached", "--name-only", "--", rel_path],
+def content_repo_push_target() -> tuple[str, str]:
+    remote_name = os.environ.get("CONTENT_REPO_PUSH_REMOTE", "origin")
+    branch = os.environ.get("CONTENT_REPO_PUSH_BRANCH")
+    if not branch:
+        branch = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
             cwd=CONTENT_REPO_DIR,
             check=True,
             capture_output=True,
             text=True,
         ).stdout.strip()
-        if not staged:
-            remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
-            has_unpushed_commits = content_repo_has_unpushed_commits()
-            if remote_changed or has_unpushed_commits:
-                build_result = rebuild_songs()
-                if not build_result.get("ok"):
-                    return failed_combined_rebuild_result(changed_path, build_result)
+    return remote_name, branch
 
-            # The push is intentionally after the build. Two independently valid
-            # branches can form an invalid catalogue (for example, duplicate IDs).
-            pushed = push_content_repo_if_needed(remote_name, branch)
-            if remote_changed:
-                if pushed:
-                    message = f"Content repo refreshed from GitHub and pending commits were synced for {rel_path}."
-                    print(message)
-                    return {"ok": True, "pushed": True, "message": message}
-                message = f"Content repo refreshed from GitHub for {rel_path}."
-                print(message)
-                return {"ok": True, "pushed": False, "message": message}
-            if pushed:
-                message = f"Pending content repo commits synced successfully for {rel_path}."
-                print(message)
-                return {"ok": True, "pushed": True, "message": message}
-            message = f"No content repo changes to sync for {rel_path}."
-            print(message)
-            return {"ok": True, "pushed": False, "message": message}
 
-        commit_message = f"{action}: {os.path.basename(rel_path)} via Holy Songs editor"
-        subprocess.run(
-            [
-                "git",
-                "-c",
-                f"user.name={user_name}",
-                "-c",
-                f"user.email={user_email}",
-                "commit",
-                "-m",
-                commit_message,
-            ],
-            cwd=CONTENT_REPO_DIR,
-            check=True,
-            capture_output=True,
-            text=True,
-        )
+def commit_content_change(rel_path: str, action: str, user_name: str, user_email: str) -> bool:
+    """Commit one changed path; callers must hold song_mutation_lock."""
+    subprocess.run(["git", "add", "--", rel_path], cwd=CONTENT_REPO_DIR, check=True)
+    staged = subprocess.run(
+        ["git", "diff", "--cached", "--name-only", "--", rel_path],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    if not staged:
+        return False
 
-        if content_repo_has_uncommitted_tracked_changes():
-            message = (
-                f"Content repo sync paused for {rel_path}: another tracked edit is still "
-                "waiting to be committed. The local commit was kept and nothing was pushed."
+    commit_message = f"{action}: {os.path.basename(rel_path)} via Holy Songs editor"
+    subprocess.run(
+        [
+            "git",
+            "-c",
+            f"user.name={user_name}",
+            "-c",
+            f"user.email={user_email}",
+            "commit",
+            "-m",
+            commit_message,
+        ],
+        cwd=CONTENT_REPO_DIR,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return True
+
+
+QueuedChange = tuple[str, str, bool]
+
+
+def sync_content_repo(
+    changed_path: str,
+    action: str,
+    *,
+    collect_queued_changes: "Callable[[], list[QueuedChange]] | None" = None,
+) -> dict:
+    """Commit, validate and push content changes.
+
+    Network fetch/push run under content_repo_lock only, so saves are never
+    blocked by the remote. Working-tree steps (commit, rebase, validation
+    build) additionally take song_mutation_lock. collect_queued_changes lets
+    the sync worker fold later queued saves into this run.
+    """
+    if not CONTENT_REPO_DIR or not os.path.isdir(os.path.join(CONTENT_REPO_DIR, ".git")):
+        message = "Skipping content repo sync: CONTENT_REPO_DIR is not a git repository."
+        print(message)
+        return {"ok": False, "pushed": False, "message": message}
+
+    with content_repo_lock:
+        try:
+            return _sync_content_repo_locked(changed_path, action, collect_queued_changes)
+        except subprocess.CalledProcessError as error:
+            message = redact_secrets(
+                f"Content repo sync failed for {changed_path}: {git_error_detail(error)}"
             )
             print(message)
             return {"ok": False, "pushed": False, "message": message}
 
-        remote_changed = rebase_content_repo(remote_name, branch, user_name, user_email)
+
+def _sync_content_repo_locked(changed_path: str, action: str, collect_queued_changes) -> dict:
+    ensure_content_repo_safe_directory()
+
+    rel_path = content_repo_relative_path(changed_path)
+    if rel_path is None:
+        message = f"Skipping content repo sync: {changed_path} is outside the content repo."
+        print(message)
+        return {"ok": False, "pushed": False, "message": message}
+
+    remote_name, branch = content_repo_push_target()
+    user_name, user_email = get_git_identity()
+    committed = False
+    rebuild_needed = False
+
+    def commit_queued_changes():
+        nonlocal committed, rebuild_needed
+        queued: list[QueuedChange] = collect_queued_changes() if collect_queued_changes else []
+        for queued_path, queued_action, queued_rebuild in queued:
+            queued_rel_path = content_repo_relative_path(queued_path)
+            if queued_rel_path is None:
+                continue
+            rebuild_needed = rebuild_needed or queued_rebuild
+            committed = commit_content_change(queued_rel_path, queued_action, user_name, user_email) or committed
+
+    with song_mutation_lock:
+        committed = commit_content_change(rel_path, action, user_name, user_email)
+        commit_queued_changes()
+
+    fetch_content_repo(remote_name, branch)
+
+    with song_mutation_lock:
+        # Saves made during the fetch are queued; commit them so the rebase sees a clean tree.
+        commit_queued_changes()
+        if content_repo_has_uncommitted_tracked_changes():
+            message = (
+                f"Content repo sync paused for {rel_path}: another tracked edit is still "
+                "waiting to be committed. Local commits were kept and nothing was pushed."
+            )
+            print(message)
+            return {"ok": False, "pushed": False, "message": message}
+
+        remote_changed = rebase_onto_fetch_head(user_name, user_email)
         has_unpushed_commits = content_repo_has_unpushed_commits()
-        if remote_changed or has_unpushed_commits:
+        if remote_changed or has_unpushed_commits or rebuild_needed:
+            # Two independently valid branches can form an invalid catalogue
+            # (for example, duplicate IDs), so the combined HEAD gates every push.
             build_result = rebuild_songs()
             if not build_result.get("ok"):
                 return failed_combined_rebuild_result(changed_path, build_result)
 
-        # Validation of the combined local/remote HEAD is the gate for every push.
-        pushed = push_content_repo_if_needed(remote_name, branch)
+    # Only this worker (under content_repo_lock) moves HEAD, so the validated
+    # commits are exactly what gets pushed even if saves land meanwhile.
+    pushed = push_content_repo_if_needed(remote_name, branch)
+    if committed:
         message = f"Content repo synced successfully for {rel_path}."
-        print(message)
-        return {"ok": True, "pushed": pushed, "message": message}
-    except subprocess.CalledProcessError as error:
-        message = redact_secrets(
-            f"Content repo sync failed for {changed_path}: {git_error_detail(error)}"
-        )
-        print(message)
-        return {"ok": False, "pushed": False, "message": message}
+    elif remote_changed and pushed:
+        message = f"Content repo refreshed from GitHub and pending commits were synced for {rel_path}."
+    elif remote_changed:
+        message = f"Content repo refreshed from GitHub for {rel_path}."
+    elif pushed:
+        message = f"Pending content repo commits synced successfully for {rel_path}."
+    else:
+        message = f"No content repo changes to sync for {rel_path}."
+    print(message)
+    return {"ok": True, "pushed": pushed, "message": message}
 
 
 SYNC_JOB_STATES = {"saved_locally", "rebuilding", "syncing", "synced", "failed"}
@@ -717,7 +782,11 @@ sync_jobs: dict[str, dict] = {}
 sync_jobs_lock = threading.Lock()
 sync_worker_started = False
 sync_worker_lock = threading.Lock()
+# Guards song files and catalogue publication. Hold it only for local work.
 song_mutation_lock = threading.RLock()
+# Serialises git operations (including network I/O). Lock order: acquire
+# content_repo_lock before song_mutation_lock, never while holding it.
+content_repo_lock = threading.RLock()
 
 
 def public_job_status(job: dict) -> dict:
@@ -748,6 +817,17 @@ def update_sync_job(job_id: str, **changes):
         job["updated_at"] = time.time()
 
 
+def drain_queued_sync_jobs() -> list[str]:
+    drained = []
+    while True:
+        try:
+            job_id = sync_job_queue.get_nowait()
+        except queue.Empty:
+            return drained
+        sync_job_queue.task_done()
+        drained.append(job_id)
+
+
 def run_sync_job(job_id: str):
     with sync_jobs_lock:
         job = sync_jobs.get(job_id)
@@ -755,35 +835,59 @@ def run_sync_job(job_id: str):
             return
         changed_path = job["changed_path"]
         action = job["action"]
-
-    with song_mutation_lock:
         rebuild_required = job.get("rebuild_required", True)
-        if rebuild_required:
-            update_sync_job(
-                job_id,
-                status="rebuilding",
-                message="Saved locally. Rebuilding song data...",
-            )
-            build_result = rebuild_songs()
-            if not build_result["ok"]:
-                update_sync_job(
-                    job_id,
-                    status="failed",
-                    ok=False,
-                    pushed=False,
-                    message=build_result["message"],
-                )
-                return
 
+    if rebuild_required:
         update_sync_job(
             job_id,
-            status="syncing",
-            message="Song data rebuilt. Syncing content repo...",
+            status="rebuilding",
+            message="Saved locally. Rebuilding song data...",
         )
-        sync_result = sync_content_repo(changed_path, action)
-        if sync_result.get("ok"):
+        with song_mutation_lock:
+            build_result = rebuild_songs()
+        if not build_result["ok"]:
             update_sync_job(
                 job_id,
+                status="failed",
+                ok=False,
+                pushed=False,
+                message=build_result["message"],
+            )
+            return
+
+    update_sync_job(
+        job_id,
+        status="syncing",
+        message="Song data rebuilt. Syncing content repo...",
+    )
+    batch = [job_id]
+
+    def collect_queued_changes() -> list[QueuedChange]:
+        # One fetch/rebase/validation/push then covers a burst of saves.
+        changes = []
+        for queued_id in drain_queued_sync_jobs():
+            with sync_jobs_lock:
+                queued = sync_jobs.get(queued_id)
+                if not queued:
+                    continue
+                changes.append(
+                    (queued["changed_path"], queued["action"], queued.get("rebuild_required", True))
+                )
+            batch.append(queued_id)
+            update_sync_job(
+                queued_id,
+                status="syncing",
+                message="Song data rebuilt. Syncing content repo...",
+            )
+        return changes
+
+    sync_result = sync_content_repo(
+        changed_path, action, collect_queued_changes=collect_queued_changes
+    )
+    for batch_job_id in batch:
+        if sync_result.get("ok"):
+            update_sync_job(
+                batch_job_id,
                 status="synced",
                 ok=True,
                 pushed=sync_result.get("pushed", False),
@@ -791,7 +895,7 @@ def run_sync_job(job_id: str):
             )
         else:
             update_sync_job(
-                job_id,
+                batch_job_id,
                 status="failed",
                 ok=False,
                 pushed=sync_result.get("pushed", False),
@@ -1148,8 +1252,7 @@ def get_sync_job(job_id: str):
 
 @app.post("/api/refresh", dependencies=[Depends(require_write_access)])
 def refresh_from_github():
-    with song_mutation_lock:
-        return _refresh_from_github()
+    return _refresh_from_github()
 
 
 def _refresh_from_github():
@@ -1159,36 +1262,28 @@ def _refresh_from_github():
         print(message)
         return {"ok": False, "changed": False, "message": message}
 
-    try:
-        ensure_content_repo_safe_directory()
+    with content_repo_lock:
+        try:
+            ensure_content_repo_safe_directory()
+            remote_name, branch = content_repo_push_target()
+            user_name, user_email = get_git_identity()
+            fetch_content_repo(remote_name, branch)
+            with song_mutation_lock:
+                changed = rebase_onto_fetch_head(user_name, user_email)
+                build_result = rebuild_songs()
+            if not build_result["ok"]:
+                return {"ok": False, "changed": changed, "message": build_result["message"]}
 
-        remote_name = os.environ.get("CONTENT_REPO_PUSH_REMOTE", "origin")
-        branch = os.environ.get("CONTENT_REPO_PUSH_BRANCH")
-        if not branch:
-            branch = subprocess.run(
-                ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-                cwd=CONTENT_REPO_DIR,
-                check=True,
-                capture_output=True,
-                text=True,
-            ).stdout.strip()
-
-        user_name, user_email = get_git_identity()
-        changed = rebase_content_repo(remote_name, branch, user_name, user_email)
-        build_result = rebuild_songs()
-        if not build_result["ok"]:
-            return {"ok": False, "changed": changed, "message": build_result["message"]}
-
-        if changed:
-            message = "Content repo refreshed from GitHub."
-        else:
-            message = "Content repo already up to date; song data rebuilt."
-        print(message)
-        return {"ok": True, "changed": changed, "message": message}
-    except subprocess.CalledProcessError as error:
-        message = f"Content repo refresh failed: {git_error_detail(error)}"
-        print(message)
-        return {"ok": False, "changed": False, "message": message}
+            if changed:
+                message = "Content repo refreshed from GitHub."
+            else:
+                message = "Content repo already up to date; song data rebuilt."
+            print(message)
+            return {"ok": True, "changed": changed, "message": message}
+        except subprocess.CalledProcessError as error:
+            message = f"Content repo refresh failed: {git_error_detail(error)}"
+            print(message)
+            return {"ok": False, "changed": False, "message": message}
 
 @app.get("/api/songs")
 def list_songs():
@@ -1319,6 +1414,85 @@ def find_song_file_by_id(song_id: str) -> str | None:
             if slug == song_id:
                 return filepath
     return None
+
+CATALOGUE_CACHE_CONTROL = cache_control_for_static_path("data/songs.index.json")
+
+
+@lru_cache(maxsize=4096)
+def catalogue_etag(filepath: str, inode: int, mtime_ns: int, size: int) -> str:
+    """Content-hash validator, so unchanged songs keep their ETag across rebuilds."""
+    digest = hashlib.sha256()
+    with open(filepath, "rb") as asset:
+        for chunk in iter(lambda: asset.read(1 << 20), b""):
+            digest.update(chunk)
+    # Weak because one validator covers both the identity and gzip encodings.
+    return f'W/"{digest.hexdigest()[:32]}"'
+
+
+def etag_matches(if_none_match: str | None, etag: str) -> bool:
+    if not if_none_match:
+        return False
+    opaque_tag = etag.removeprefix("W/")
+    return any(
+        candidate == "*" or candidate.removeprefix("W/") == opaque_tag
+        for candidate in (part.strip() for part in if_none_match.split(","))
+    )
+
+
+def accepts_gzip(accept_encoding: str | None) -> bool:
+    for item in (accept_encoding or "").split(","):
+        coding, *params = [part.strip() for part in item.split(";")]
+        if coding.lower() != "gzip":
+            continue
+        for param in params:
+            if param.lower().startswith("q="):
+                try:
+                    return float(param[2:]) > 0
+                except ValueError:
+                    return False
+        return True
+    return False
+
+
+@app.api_route("/data/{asset_path:path}", methods=["GET", "HEAD"])
+def serve_catalogue_asset(asset_path: str, request: HTTPRequest):
+    """Serve generated catalogue JSON with content ETags and precompressed gzip."""
+    parts = asset_path.split("/")
+    if not asset_path.endswith(".json") or any(not part or part.startswith(".") for part in parts):
+        raise HTTPException(status_code=404, detail="Not found")
+
+    # Resolve the publication symlink once so the JSON and its .gz sibling
+    # always come from the same immutable generation.
+    root = os.path.realpath(SONGS_OUTPUT_DIR)
+    filepath = os.path.realpath(os.path.join(root, *parts))
+    if os.path.commonpath([filepath, root]) != root:
+        raise HTTPException(status_code=404, detail="Not found")
+    try:
+        file_stat = os.stat(filepath)
+    except OSError:
+        raise HTTPException(status_code=404, detail="Not found")
+    if not stat.S_ISREG(file_stat.st_mode):
+        raise HTTPException(status_code=404, detail="Not found")
+
+    etag = catalogue_etag(filepath, file_stat.st_ino, file_stat.st_mtime_ns, file_stat.st_size)
+    headers = {
+        "ETag": etag,
+        "Cache-Control": CATALOGUE_CACHE_CONTROL,
+        "Vary": "Accept-Encoding",
+    }
+    if etag_matches(request.headers.get("if-none-match"), etag):
+        return Response(status_code=304, headers=headers)
+
+    compressed_path = f"{filepath}.gz"
+    if accepts_gzip(request.headers.get("accept-encoding")) and os.path.isfile(compressed_path):
+        return FileResponse(
+            compressed_path,
+            media_type="application/json",
+            headers={**headers, "Content-Encoding": "gzip"},
+        )
+    # Without a .gz sibling (legacy output) SelectiveGZipMiddleware compresses on the fly.
+    return FileResponse(filepath, media_type="application/json", headers=headers)
+
 
 @app.get("/edit/{song_id:path}")
 def serve_edit_page(song_id: str):

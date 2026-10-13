@@ -94,7 +94,7 @@
   }
 
   async function loadIndex() {
-    const response = await fetch('/data/songs.index.json', { cache: 'no-store' });
+    const response = await fetch('/data/songs.index.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Failed to load the song list.');
     index = await response.json() as SongIndexEntry[];
     const remembered = sessionStorage.getItem(LAST_SELECTED_ID_KEY);
